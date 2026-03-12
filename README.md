@@ -10,7 +10,7 @@ Herramienta de análisis de instalaciones Etendo/Openbravo on-premise para estim
 
 - **Plataforma y versión**: detecta si la instalación es Etendo o Openbravo, y la versión de core instalada.
 - **Módulos**: clasifica todos los módulos en 5 categorías según su origen y forma de gestión.
-- **Divergencias en core**: compara los archivos fuente del cliente contra una base limpia (etendo-core-25.4.11.zip) para detectar diferencias, ya sean customizaciones o desactualización de versión.
+- **Divergencias en core y módulos**: compara los archivos fuente del cliente contra una base limpia para detectar diferencias reales (customizaciones). El modo recomendado expande dinámicamente la versión exacta instalada via `./gradlew expand`, eliminando el ruido por gap de versión. Si no es posible, usa un zip estático como fallback.
 - **Score de migración**: calcula un puntaje de 0 a 100 con penalizaciones ponderadas por categoría y volumen de código.
 - **Reporte HTML**: genera un informe visual self-contained con metodología, detalles por módulo y divergencias de core.
 
@@ -37,17 +37,18 @@ etendo-migration-agent/
 ├── analyzer/
 │   ├── version_detector.py           # Detecta plataforma y versión de core
 │   ├── module_classifier.py          # Clasifica módulos por categoría
-│   ├── core_diff.py                  # Compara core contra base limpia (zip)
-│   ├── module_diff.py                # Compara módulos contra base limpia (zip)
+│   ├── core_diff.py                  # Compara core contra baseline (expandido o zip)
+│   ├── module_diff.py                # Compara módulos contra baseline (expandido o zip)
+│   ├── baseline_expander.py          # Genera build.gradle dinámico y corre ./gradlew expand
 │   └── migration_scorer.py           # Calcula score y breakdown de penalizaciones
 ├── runner/
 │   └── ssh_runner.py                 # Despliega y ejecuta el analyzer vía SSH
 ├── data/
 │   ├── supported_modules.json        # Catálogo de 174 módulos soportados por Etendo
 │   ├── etendo-base/
-│   │   └── etendo-core-25.4.11.zip   # Base de comparación del core
+│   │   └── etendo-core-25.4.11.zip   # Baseline estático de fallback para core
 │   └── modules-base/
-│       └── etendo-modules-latest.zip # Base de comparación de módulos soportados
+│       └── etendo-modules-latest.zip # Baseline estático de fallback para módulos
 ├── docs/
 │   └── manual_guide.md               # Guía de ejecución manual sin SSH
 └── requirements.txt
@@ -57,21 +58,56 @@ etendo-migration-agent/
 
 ## Uso
 
-### 1. Directamente en el servidor del cliente
+### 1. Análisis básico (fallback a zips estáticos)
 
-Copiar el repositorio completo al servidor y ejecutar:
+El modo más simple. El diff se hace contra los zips empaquetados en `data/`, que corresponden a la última versión publicada. Útil para una primera aproximación rápida.
 
 ```bash
 python3 analyze.py --path /ruta/a/etendo --client "Nombre del Cliente" --output reporte.json
 ```
 
-Luego, opcionalmente, generar el reporte HTML desde la misma máquina o desde local:
+### 2. Análisis con baseline exacto (recomendado)
+
+Genera dinámicamente un `build.gradle` con las versiones instaladas del cliente, corre `./gradlew expand` para obtener el código fuente exacto, y usa eso como base de comparación. Esto elimina el ruido por gap de versión y mide solo las customizaciones reales.
+
+Requiere que las credenciales de GitHub estén en el `gradle.properties` de la instalación (`githubUser` / `githubToken`), o pasarlas por CLI:
+
+```bash
+python3 analyze.py --path /ruta/a/etendo --client "Nombre del Cliente" \
+  --output reporte.json \
+  --expand-baseline
+```
+
+Con credenciales explícitas:
+
+```bash
+python3 analyze.py --path /ruta/a/etendo --client "Nombre del Cliente" \
+  --output reporte.json \
+  --expand-baseline \
+  --github-user miusuario \
+  --github-token ghp_xxx \
+  --verbose
+```
+
+Si la expansión falla (OOM, sin credenciales, timeout), el análisis continúa automáticamente usando el zip estático como fallback.
+
+### 3. Reutilizar un baseline ya expandido
+
+Si ya corriste `--expand-baseline` antes y querés evitar el tiempo de descarga, podés apuntar al directorio expandido directamente:
+
+```bash
+python3 analyze.py --path /ruta/a/etendo --client "Nombre del Cliente" \
+  --output reporte.json \
+  --baseline-dir /tmp/etendo-baseline-xyz
+```
+
+### 4. Generar el reporte HTML
 
 ```bash
 python3 report_html.py --input reporte.json --output reporte.html
 ```
 
-### 2. Vía SSH (desde tu máquina local)
+### 5. Vía SSH (desde tu máquina local)
 
 El runner despliega el analyzer en el servidor del cliente, lo ejecuta y recupera el JSON:
 
@@ -85,6 +121,28 @@ python runner/ssh_runner.py <hostname> <ruta_etendo> \
 ```
 
 Ver `docs/manual_guide.md` para instrucciones detalladas.
+
+---
+
+## Cómo funciona el baseline expandido
+
+El `baseline_expander.py` implementa la siguiente estrategia:
+
+1. Lee las credenciales de GitHub del `gradle.properties` del cliente.
+2. Detecta la versión del plugin Etendo Gradle desde el `build.gradle` del cliente.
+3. Detecta los bundles instalados y sus versiones exactas (desde `AD_MODULE.xml`).
+4. Genera un `build.gradle` mínimo con `supportJars=false` y las dependencias `moduleDeps` en las versiones instaladas.
+5. Copia el Gradle wrapper del cliente (cada instalación puede tener una versión diferente).
+6. Genera un `settings.gradle` con el repositorio del plugin de Etendo.
+7. Corre `yes Y | ./gradlew expand` en un directorio temporal.
+8. Devuelve el directorio con el código fuente expandido, que se usa como base del diff.
+
+El formato de cada dependencia en el `build.gradle` dinámico es:
+```groovy
+moduleDeps('com.etendoerp:financial.extensions:1.4.2@zip'){transitive=true}
+```
+
+El `@zip` le indica a Gradle que resuelva el artefacto como fuente (zip), no como JAR.
 
 ---
 
@@ -109,24 +167,27 @@ Ver `docs/manual_guide.md` para instrucciones detalladas.
   },
   "core_divergences": {
     "status": "modified",
-    "base_version": "25.4.11",
-    "modified_files": 700,
-    "diff_lines_added": 2795,
-    "diff_lines_removed": 5517,
+    "base_version": "24.2.6",
+    "baseline_type": "expanded",
+    "modified_files": 79,
+    "diff_lines_added": 1200,
+    "diff_lines_removed": 800,
     "files": [...]
   },
-  "migration_score": 17,
+  "migration_score": 34,
   "migratability": "very_hard",
   "score_breakdown": {
-    "core_divergences": -40.0,
+    "core_divergences": -15.0,
     "local_not_maintained": -20,
     "custom_modules": -9,
-    "local_maintained_divergences": -14.2,
-    "gradle_source_divergences": -4.7,
-    "jar_dependency_outdated": -3.0
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": -1.5
   }
 }
 ```
+
+El campo `baseline_type` indica el origen del baseline usado: `"expanded"` (versión exacta via gradlew) o `"zip"` (fallback estático).
 
 ---
 
@@ -156,3 +217,4 @@ Las customizaciones se ponderan por volumen de código (LOC):
 
 - Python 3.8+ (sin dependencias externas para el analyzer)
 - `paramiko` únicamente si se usa el runner SSH (`pip install -r requirements.txt`)
+- Para `--expand-baseline`: credenciales de GitHub con acceso al registry de Etendo y la instalación debe tener el Gradle wrapper (`gradlew`)

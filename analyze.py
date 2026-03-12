@@ -19,6 +19,7 @@ from analyzer.module_classifier import classify_modules
 from analyzer.core_diff import analyze_core
 from analyzer.module_diff import analyze_modules_diff
 from analyzer.migration_scorer import compute_score
+from analyzer.baseline_expander import expand_baseline
 
 
 def parse_args():
@@ -39,6 +40,33 @@ def parse_args():
         "--output",
         default="report.json",
         help="Output file path for the JSON report (default: report.json)",
+    )
+    parser.add_argument(
+        "--github-user",
+        default=None,
+        help="GitHub username for Etendo package registry (overrides gradle.properties)",
+    )
+    parser.add_argument(
+        "--github-token",
+        default=None,
+        help="GitHub token for Etendo package registry (overrides gradle.properties)",
+    )
+    parser.add_argument(
+        "--expand-baseline",
+        action="store_true",
+        default=False,
+        help="Run ./gradlew expand to obtain an exact-version baseline before diffing",
+    )
+    parser.add_argument(
+        "--baseline-dir",
+        default=None,
+        help="Path to a pre-expanded baseline directory (skips the gradlew expand step)",
+    )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        default=False,
+        help="Print gradlew output during baseline expansion",
     )
     return parser.parse_args()
 
@@ -75,12 +103,12 @@ def _custom_size_tier(loc: int) -> dict:
     return {"key": "large", "label": "> 8.000 LOC"}
 
 
-def _build_modules(etendo_root: str, client: str) -> dict:
+def _build_modules(etendo_root: str, client: str, baseline_dir: str = None) -> dict:
     modules = classify_modules(etendo_root, client)
 
     # Diff on gradle_source and local_maintained (source in /modules/)
     to_diff = modules["gradle_source"] + modules["local_maintained"]
-    diffs = analyze_modules_diff(etendo_root, to_diff)
+    diffs = analyze_modules_diff(etendo_root, to_diff, baseline_dir=baseline_dir)
     for category in ("gradle_source", "local_maintained"):
         for m in modules[category]:
             if m["java_package"] in diffs:
@@ -95,8 +123,35 @@ def _build_modules(etendo_root: str, client: str) -> dict:
     return modules
 
 
-def build_report(client: str, etendo_root: str) -> dict:
+def build_report(
+    client: str,
+    etendo_root: str,
+    github_user: str = None,
+    github_token: str = None,
+    expand: bool = False,
+    baseline_dir: str = None,
+    verbose: bool = False,
+) -> dict:
     platform = detect_version(etendo_root)
+
+    # ── Baseline expansion ────────────────────────────────────────────────────
+    effective_baseline = baseline_dir  # may be None (falls back to static zips)
+
+    if not effective_baseline and expand:
+        print("  Expanding exact-version baseline (./gradlew expand)…")
+        modules_prelim = classify_modules(etendo_root, client)
+        effective_baseline = expand_baseline(
+            etendo_root=etendo_root,
+            modules=modules_prelim,
+            core_version=platform.get("version"),
+            github_user=github_user,
+            github_token=github_token,
+            verbose=verbose,
+        )
+        if effective_baseline:
+            print(f"  Baseline expanded at: {effective_baseline}")
+        else:
+            print("  WARNING: baseline expansion failed — falling back to static zips.")
 
     report = {
         "client": {
@@ -104,8 +159,8 @@ def build_report(client: str, etendo_root: str) -> dict:
             "hostname": socket.gethostname(),
         },
         "platform": platform,
-        "modules": _build_modules(etendo_root, client),
-        "core_divergences": analyze_core(etendo_root),
+        "modules": _build_modules(etendo_root, client, baseline_dir=effective_baseline),
+        "core_divergences": analyze_core(etendo_root, baseline_dir=effective_baseline),
         "migration_score": None,
         "migratability": None,
         "score_breakdown": None,
@@ -130,7 +185,15 @@ def main():
     print(f"Analyzing installation at: {etendo_root}")
     print(f"Client: {args.client}")
 
-    report = build_report(client=args.client, etendo_root=etendo_root)
+    report = build_report(
+        client=args.client,
+        etendo_root=etendo_root,
+        github_user=args.github_user,
+        github_token=args.github_token,
+        expand=args.expand_baseline,
+        baseline_dir=args.baseline_dir,
+        verbose=args.verbose,
+    )
 
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)

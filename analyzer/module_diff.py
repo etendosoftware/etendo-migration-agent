@@ -24,9 +24,17 @@ TEXT_EXTENSIONS = {
     ".html", ".jrxml", ".javaxml", ".py", ".sh", ".txt", ".md",
 }
 
+# Files that contain only build-time metadata (e.g. timestamps) and should
+# not count as real divergences.
+_IGNORE_FILENAMES = {"etendo.artifact.properties"}
+
 
 def _is_text_file(path: str) -> bool:
     return Path(path).suffix.lower() in TEXT_EXTENSIONS
+
+
+def _should_ignore(filename: str) -> bool:
+    return filename in _IGNORE_FILENAMES
 
 
 def _read_lines(filepath: str) -> list:
@@ -79,6 +87,9 @@ def analyze_module(java_package: str, module_path: str, base_root: str) -> dict:
     # Walk base files — detect modified and deleted
     for dirpath, _, filenames in os.walk(base_module_path):
         for filename in filenames:
+            if _should_ignore(filename):
+                continue
+
             base_file = os.path.join(dirpath, filename)
             rel = os.path.relpath(base_file, base_module_path)
             client_file = os.path.join(module_path, rel)
@@ -106,6 +117,9 @@ def analyze_module(java_package: str, module_path: str, base_root: str) -> dict:
     # Walk client files — detect added
     for dirpath, _, filenames in os.walk(module_path):
         for filename in filenames:
+            if _should_ignore(filename):
+                continue
+
             client_file = os.path.join(dirpath, filename)
             rel = os.path.relpath(client_file, module_path)
             base_file = os.path.join(base_module_path, rel)
@@ -126,25 +140,44 @@ def analyze_module(java_package: str, module_path: str, base_root: str) -> dict:
     }
 
 
-def analyze_modules_diff(etendo_root: str, modules_to_diff: list) -> dict:
+def analyze_modules_diff(
+    etendo_root: str,
+    modules_to_diff: list,
+    baseline_dir: Optional[str] = None,
+) -> dict:
     """
-    Runs diff for a list of modules against the clean base zip.
+    Runs diff for a list of modules against the clean base.
 
     Args:
         etendo_root:     root of the client installation
         modules_to_diff: list of module dicts from module_classifier
                          (must have 'java_package' and 'path')
+        baseline_dir:    optional pre-expanded baseline directory (from baseline_expander).
+                         When provided, modules/<java_package>/ inside it are used as base.
+                         Falls back to the static zip if not provided or missing.
 
     Returns:
         {java_package: diff_result, ...}
     """
-    if not MODULES_BASE_ZIP.exists() or not modules_to_diff:
+    if not modules_to_diff:
         return {}
 
     results = {}
 
+    # ── Option 1: use pre-expanded baseline ──────────────────────────────────
+    if baseline_dir and os.path.isdir(os.path.join(baseline_dir, "modules")):
+        for module in modules_to_diff:
+            jp = module["java_package"]
+            diff = analyze_module(jp, module["path"], baseline_dir)
+            if diff is not None:
+                results[jp] = diff
+        return results
+
+    # ── Option 2: fall back to static zip ────────────────────────────────────
+    if not MODULES_BASE_ZIP.exists():
+        return {}
+
     with tempfile.TemporaryDirectory() as tmp:
-        # Extract only the modules we need (normalize to lowercase to match zip entries)
         needed = {m["java_package"].lower() for m in modules_to_diff}
 
         with zipfile.ZipFile(MODULES_BASE_ZIP) as zf:
