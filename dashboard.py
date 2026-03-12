@@ -60,6 +60,34 @@ def aggregate(records: list) -> dict:
     )
     most_common_version = version_counter.most_common(1)[0][0]
 
+    # Version range: min, max and normalized average position
+    def _ver_num(v):
+        try:
+            parts = [int(x) for x in str(v).split(".")]
+            return parts[0] * 10000 + (parts[1] if len(parts) > 1 else 0) * 100 + (parts[2] if len(parts) > 2 else 0)
+        except Exception:
+            return 0
+
+    valid_versions = [r.get("platform", {}).get("version") for r in records if r.get("platform", {}).get("version")]
+    if valid_versions:
+        sorted_versions = sorted(valid_versions, key=_ver_num)
+        min_version = sorted_versions[0]
+        max_version = sorted_versions[-1]
+        min_num = _ver_num(min_version)
+        max_num = _ver_num(max_version)
+        avg_num = sum(_ver_num(v) for v in valid_versions) / len(valid_versions)
+        version_avg_pct = round((avg_num - min_num) / (max_num - min_num) * 100, 1) if max_num != min_num else 50.0
+    else:
+        min_version = max_version = "—"
+        version_avg_pct = 50.0
+
+    # Platform breakdown (Etendo vs Openbravo)
+    platform_counter = Counter(
+        r.get("platform", {}).get("type", "etendo") for r in records
+    )
+    count_etendo = platform_counter.get("etendo", 0)
+    count_openbravo = platform_counter.get("openbravo", 0)
+
     # Score distribution
     dist = {"easy": 0, "moderate": 0, "hard": 0, "very_hard": 0}
     for r in records:
@@ -113,12 +141,16 @@ def aggregate(records: list) -> dict:
             "total": len(records),
             "avg_score": avg_score,
             "migratable": migratable,
-            "most_common_version": most_common_version,
+            "min_version": min_version,
+            "max_version": max_version,
+            "version_avg_pct": version_avg_pct,
+            "etendo": count_etendo,
+            "openbravo": count_openbravo,
         },
         "score_dist": {
             "labels": ["Fácil", "Moderada", "Difícil", "Muy difícil"],
             "values": [dist["easy"], dist["moderate"], dist["hard"], dist["very_hard"]],
-            "colors": ["#22c55e", "#f59e0b", "#f97316", "#ef4444"],
+            "colors": ["#86efac", "#fde68a", "#fed7aa", "#fca5a5"],
         },
         "version_dist": {
             "labels": [v for v, _ in version_items],
@@ -143,169 +175,231 @@ _CSS = """
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #f1f5f9;
+    background: #f8fafc;
+    color: #1e293b;
     min-height: 100vh;
 }
 a { color: inherit; text-decoration: none; }
 
 /* Header */
 .header {
-    background: #1e293b;
-    border-bottom: 1px solid #334155;
-    padding: 18px 32px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 32px;
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
 }
-.header-logo { font-size: 1.5rem; }
-.header h1 { font-size: 1.25rem; font-weight: 700; color: #f1f5f9; }
-.header-sub { font-size: 0.8rem; color: #64748b; margin-left: auto; }
+.header h1 { font-size: 1.1rem; font-weight: 600; color: #0f172a; }
+.header-sub { font-size: 0.78rem; color: #94a3b8; margin-left: auto; }
 
 /* Layout */
-.container { max-width: 1400px; margin: 0 auto; padding: 28px 24px; }
+.container { max-width: 1400px; margin: 0 auto; padding: 24px; }
 
 /* KPI Cards */
 .kpi-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin-bottom: 28px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
 }
 .kpi-card {
-    background: #1e293b;
-    border: 1px solid #334155;
-    border-radius: 12px;
-    padding: 20px 24px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 18px 20px;
 }
 .kpi-card .kpi-value {
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 700;
     line-height: 1;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
-.kpi-card .kpi-label { font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
-.kpi-card .kpi-icon { font-size: 1.4rem; margin-bottom: 10px; }
+.kpi-card .kpi-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* Platform split inside KPI card */
+.platform-split { display: flex; gap: 20px; margin-top: 6px; }
+.platform-split span { font-size: 0.85rem; font-weight: 600; color: #475569; }
+.platform-split strong { color: #1e293b; }
+
+/* Version range indicator */
+.ver-range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+.ver-range-track {
+    position: relative;
+    height: 4px;
+    background: #e2e8f0;
+    border-radius: 99px;
+    margin-bottom: 4px;
+}
+.ver-range-fill {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    background: #cbd5e1;
+    border-radius: 99px;
+    width: 100%;
+}
+.ver-range-marker {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background: #3b82f6;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(59,130,246,0.4);
+}
+.ver-range-marker::before {
+    content: '▲';
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8px;
+    color: #3b82f6;
+    line-height: 1;
+}
+.ver-avg-label {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #3b82f6;
+    font-weight: 600;
+    margin-top: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
 
 /* Charts */
 .charts-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-bottom: 16px;
+    gap: 12px;
+    margin-bottom: 12px;
 }
-.chart-full { margin-bottom: 16px; }
+.chart-full { margin-bottom: 12px; }
 .chart-card {
-    background: #1e293b;
-    border: 1px solid #334155;
-    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
     padding: 20px 24px;
 }
 .chart-card h2 {
-    font-size: 0.85rem;
+    font-size: 0.72rem;
     font-weight: 600;
     color: #94a3b8;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 16px;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
 }
 .chart-wrap { position: relative; height: 220px; }
-.chart-wrap-tall { position: relative; height: 280px; }
+.chart-wrap-tall { position: relative; height: 260px; }
 .chart-empty {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    color: #475569;
-    font-size: 0.85rem;
+    color: #cbd5e1;
+    font-size: 0.82rem;
 }
 
 /* Table */
 .table-card {
-    background: #1e293b;
-    border: 1px solid #334155;
-    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
     padding: 20px 24px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     overflow-x: auto;
 }
 .table-card h2 {
-    font-size: 0.85rem;
+    font-size: 0.72rem;
     font-weight: 600;
     color: #94a3b8;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     margin-bottom: 16px;
 }
 table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
 thead th {
     text-align: left;
-    padding: 8px 12px;
-    color: #64748b;
+    padding: 6px 12px;
+    color: #cbd5e1;
     font-weight: 600;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    border-bottom: 1px solid #334155;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid #f1f5f9;
     cursor: default;
 }
 thead th.sortable { cursor: pointer; user-select: none; }
 thead th.sortable:hover { color: #94a3b8; }
-tbody tr { border-bottom: 1px solid #1e293b; transition: background 0.15s; }
-tbody tr:hover { background: #253347; }
-tbody td { padding: 10px 12px; vertical-align: middle; }
-.td-name { font-weight: 600; }
-.td-version { color: #94a3b8; font-family: monospace; font-size: 0.82rem; }
-.td-num { text-align: right; }
-.td-num-warn { text-align: right; color: #f97316; font-weight: 600; }
-.td-num-purple { text-align: right; color: #a855f7; font-weight: 600; }
+tbody tr { border-bottom: 1px solid #f8fafc; transition: background 0.1s; }
+tbody tr:hover { background: #f8fafc; }
+tbody td { padding: 10px 12px; vertical-align: middle; color: #334155; }
+.td-name { font-weight: 600; color: #0f172a; }
+.td-version { color: #94a3b8; font-family: monospace; font-size: 0.8rem; }
+.td-num { text-align: right; color: #64748b; }
+.td-num-warn { text-align: right; color: #ea580c; font-weight: 600; }
+.td-num-purple { text-align: right; color: #7c3aed; font-weight: 600; }
 
 /* Badges */
 .score-badge {
     display: inline-block;
-    padding: 3px 10px;
-    border-radius: 20px;
+    padding: 2px 9px;
+    border-radius: 99px;
     font-weight: 700;
-    font-size: 0.85rem;
-    min-width: 42px;
+    font-size: 0.82rem;
+    min-width: 38px;
     text-align: center;
 }
 .mig-badge {
     display: inline-block;
-    padding: 3px 8px;
-    border-radius: 6px;
-    font-size: 0.75rem;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
 }
-.mig-easy    { background: #14532d; color: #22c55e; }
-.mig-mod     { background: #451a03; color: #f59e0b; }
-.mig-hard    { background: #431407; color: #f97316; }
-.mig-vhard   { background: #450a0a; color: #ef4444; }
+.mig-easy    { background: #f0fdf4; color: #16a34a; }
+.mig-mod     { background: #fefce8; color: #ca8a04; }
+.mig-hard    { background: #fff7ed; color: #ea580c; }
+.mig-vhard   { background: #fef2f2; color: #dc2626; }
 
 /* Report button */
 .btn-report {
-    background: #0ea5e9;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 5px 12px;
-    font-size: 0.78rem;
+    background: none;
+    color: #3b82f6;
+    border: 1px solid #bfdbfe;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.15s;
+    transition: all 0.15s;
     white-space: nowrap;
 }
-.btn-report:hover { background: #0284c7; }
-.btn-report:disabled { background: #334155; color: #475569; cursor: not-allowed; opacity: 0.5; }
+.btn-report:hover { background: #eff6ff; border-color: #93c5fd; }
+.btn-report:disabled { color: #cbd5e1; border-color: #e2e8f0; cursor: not-allowed; }
 
 /* Viewer panel */
 .viewer-backdrop {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.55);
+    background: rgba(15,23,42,0.25);
     z-index: 90;
 }
 .viewer-backdrop.open { display: block; }
@@ -314,36 +408,36 @@ tbody td { padding: 10px 12px; vertical-align: middle; }
     right: 0; top: 0;
     width: 62vw;
     height: 100vh;
-    background: #1e293b;
-    border-left: 1px solid #334155;
-    box-shadow: -8px 0 40px rgba(0,0,0,0.6);
+    background: #ffffff;
+    border-left: 1px solid #e2e8f0;
+    box-shadow: -4px 0 24px rgba(0,0,0,0.07);
     z-index: 100;
     display: flex;
     flex-direction: column;
     transform: translateX(100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.25s ease;
 }
 .viewer-panel.open { transform: translateX(0); }
 .viewer-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 20px;
-    border-bottom: 1px solid #334155;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f1f5f9;
     flex-shrink: 0;
 }
-.viewer-title { font-weight: 700; font-size: 0.95rem; }
+.viewer-title { font-weight: 600; font-size: 0.9rem; color: #0f172a; }
 .viewer-close {
     background: none;
-    border: 1px solid #334155;
+    border: 1px solid #e2e8f0;
     color: #94a3b8;
-    border-radius: 6px;
-    padding: 4px 10px;
+    border-radius: 5px;
+    padding: 3px 10px;
     cursor: pointer;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     transition: all 0.15s;
 }
-.viewer-close:hover { background: #334155; color: #f1f5f9; }
+.viewer-close:hover { background: #f1f5f9; color: #475569; }
 .viewer-frame { flex: 1; border: none; background: #fff; }
 
 @media (max-width: 900px) {
@@ -358,16 +452,16 @@ const D = window.DASHBOARD_DATA;
 
 // ── Score helpers ─────────────────────────────────────────────────────────
 function scoreColor(s) {
-    if (s >= 80) return '#22c55e';
-    if (s >= 60) return '#f59e0b';
-    if (s >= 40) return '#f97316';
-    return '#ef4444';
+    if (s >= 80) return '#15803d';
+    if (s >= 60) return '#a16207';
+    if (s >= 40) return '#c2410c';
+    return '#b91c1c';
 }
 function scoreBg(s) {
-    if (s >= 80) return '#14532d';
-    if (s >= 60) return '#451a03';
-    if (s >= 40) return '#431407';
-    return '#450a0a';
+    if (s >= 80) return '#dcfce7';
+    if (s >= 60) return '#fef9c3';
+    if (s >= 40) return '#ffedd5';
+    return '#fee2e2';
 }
 const MIG = {
     easy: ['mig-easy', 'Fácil'],
@@ -384,12 +478,17 @@ function renderKpis() {
     avgEl.textContent = avg;
     avgEl.style.color = scoreColor(avg);
     document.getElementById('kpi-migratable').textContent = D.kpis.migratable;
-    document.getElementById('kpi-version').textContent = D.kpis.most_common_version;
+    document.getElementById('kpi-ver-min').textContent = D.kpis.min_version;
+    document.getElementById('kpi-ver-max').textContent = D.kpis.max_version;
+    document.getElementById('kpi-ver-marker').style.left = D.kpis.version_avg_pct + '%';
+    document.getElementById('kpi-etendo-count').textContent = D.kpis.etendo;
+    document.getElementById('kpi-openbravo-count').textContent = D.kpis.openbravo;
 }
 
 // ── Chart.js global defaults ──────────────────────────────────────────────
-Chart.defaults.color = '#64748b';
-Chart.defaults.borderColor = '#334155';
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.borderColor = '#f1f5f9';
+Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
 
 function truncLabel(str, max) {
     return str.length > max ? str.slice(0, max) + '…' : str;
@@ -405,14 +504,25 @@ function renderScoreDist() {
             datasets: [{
                 data: D.score_dist.values,
                 backgroundColor: D.score_dist.colors,
-                borderWidth: 2,
-                borderColor: '#1e293b',
+                borderWidth: 0,
+                hoverOffset: 4,
             }]
         },
         options: {
-            cutout: '60%',
+            cutout: '68%',
             plugins: {
-                legend: { position: 'bottom', labels: { color: '#94a3b8', padding: 12, font: { size: 12 } } }
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        color: '#64748b',
+                        padding: 16,
+                        font: { size: 11 },
+                        boxWidth: 10,
+                        boxHeight: 10,
+                        usePointStyle: true,
+                        pointStyle: 'circle',
+                    }
+                }
             },
         }
     });
@@ -593,7 +703,6 @@ def render_html(data: dict, generated_at: str) -> str:
 <body>
 
 <div class="header">
-  <span class="header-logo">📊</span>
   <h1>Etendo Migration Dashboard</h1>
   <span class="header-sub">Generado: {generated_at}</span>
 </div>
@@ -603,24 +712,34 @@ def render_html(data: dict, generated_at: str) -> str:
   <!-- KPI Cards -->
   <div class="kpi-grid">
     <div class="kpi-card">
-      <div class="kpi-icon">🏢</div>
-      <div class="kpi-value" style="color:#0ea5e9" id="kpi-total">—</div>
-      <div class="kpi-label">Entornos analizados</div>
+      <div class="kpi-label" style="margin-bottom:8px">Entornos</div>
+      <div class="kpi-value" style="color:#0284c7" id="kpi-total">—</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-icon">🎯</div>
+      <div class="kpi-label" style="margin-bottom:8px">Score promedio</div>
       <div class="kpi-value" style="color:{avg_color()}" id="kpi-avg">—</div>
-      <div class="kpi-label">Score promedio</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-icon">✅</div>
-      <div class="kpi-value" style="color:#22c55e" id="kpi-migratable">—</div>
-      <div class="kpi-label">Potencialmente migrables</div>
+      <div class="kpi-label" style="margin-bottom:8px">Migrables</div>
+      <div class="kpi-value" style="color:#16a34a" id="kpi-migratable">—</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-icon">📦</div>
-      <div class="kpi-value" style="color:#a78bfa; font-size:1.4rem" id="kpi-version">—</div>
-      <div class="kpi-label">Versión más frecuente</div>
+      <div class="kpi-label" style="margin-bottom:12px">Rango de versiones</div>
+      <div class="ver-range-labels">
+        <span class="ver-min" id="kpi-ver-min">—</span>
+        <span class="ver-max" id="kpi-ver-max">—</span>
+      </div>
+      <div class="ver-range-track">
+        <div class="ver-range-marker" id="kpi-ver-marker" style="left:50%"></div>
+      </div>
+      <div class="ver-avg-label">promedio</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label" style="margin-bottom:12px">Plataforma</div>
+      <div class="platform-split">
+        <span>Etendo <strong id="kpi-etendo-count">—</strong></span>
+        <span>Openbravo <strong id="kpi-openbravo-count">—</strong></span>
+      </div>
     </div>
   </div>
 
