@@ -1,0 +1,122 @@
+{
+  "finance": {
+    "description": "Contabilidad, pagos, cobros, extractos bancarios, activos financieros",
+    "packages": [
+      "org.openbravo.financial",
+      "com.etendoerp.financial",
+      "org.openbravo.advpaymentmngt",
+      "com.etendoerp.advpaymentmngt",
+      "org.openbravo.module.finance",
+      "com.etendoerp.accounting"
+    ],
+    "tables": [
+      "C_INVOICE", "C_INVOICELINE", "C_PAYMENT", "C_DEBT_PAYMENT",
+      "FIN_PAYMENT", "FIN_PAYMENT_DETAIL", "FIN_PAYMENT_SCHEDULE",
+      "FIN_PAYMENT_SCHEDULEDETAIL", "FIN_BANKSTATEMENT", "FIN_BANKSTATEMENTLINE",
+      "FIN_FINANCIAL_ACCOUNT", "FIN_RECONCILIATION", "C_BANKSTATEMENT",
+      "C_BANKSTATEMENTLINE", "C_SETTLEMENT", "C_CASHBOOK", "C_CASH",
+      "C_REMITTANCE", "A_ASSET", "A_AMORTIZATION", "FACT_ACCT",
+      "C_GLJOURNAL", "C_GLJOURNALLINE", "GL_JOURNALBATCH"
+    ],
+    "windows": [
+      "%invoice%", "%payment%", "%financial%", "%accounting%", "%bank%",
+      "%remittance%", "%asset%", "%amortization%", "%journal%", "%ledger%",
+      "%settlement%", "%cash%", "%reconcil%", "%doubtful%debt%"
+    ]
+  },
+  "sales": {
+    "description": "Pedidos de venta, presupuestos, comisiones",
+    "packages": [
+      "org.openbravo.sales",
+      "com.etendoerp.sales",
+      "org.openbravo.module.sale"
+    ],
+    "tables": [
+      "C_ORDER", "C_ORDERLINE", "C_COMMISSION", "C_COMMISSIONDETAIL",
+      "C_RETURN_REASON", "C_QUOTATION"
+    ],
+    "windows": [
+      "%sales%order%", "%quotation%", "%commission%", "%return%"
+    ]
+  },
+  "procurement": {
+    "description": "Compras, requisiciones, proveedores",
+    "packages": [
+      "org.openbravo.procurement",
+      "com.etendoerp.procurement",
+      "org.openbravo.module.procurement"
+    ],
+    "tables": [
+      "M_REQUISITION", "M_REQUISITIONLINE", "M_MATCHINV", "M_MATCHPO"
+    ],
+    "windows": [
+      "%purchase%order%", "%requisition%", "%match%invoice%", "%match%po%",
+      "%goods%receipt%"
+    ]
+  },
+  "warehouse": {
+    "description": "Almacenes, inventario, movimientos, expediciones",
+    "packages": [
+      "org.openbravo.warehouse",
+      "com.etendoerp.warehouse",
+      "org.openbravo.module.warehouse"
+    ],
+    "tables": [
+      "M_INOUT", "M_INOUTLINE", "M_MOVEMENT", "M_MOVEMENTLINE",
+      "M_INVENTORY", "M_INVENTORYLINE", "M_LOCATOR", "M_WAREHOUSE",
+      "M_INTERNAL_CONSUMPTION", "M_INTERNAL_CONSUMPTIONLINE",
+      "M_TRANSACTION", "M_STORAGE_DETAIL"
+    ],
+    "windows": [
+      "%warehouse%", "%shipment%", "%goods%", "%inventory%", "%movement%",
+      "%storage%", "%locator%"
+    ]
+  },
+  "production": {
+    "description": "Fabricacion, planes de produccion, centros de trabajo",
+    "packages": [
+      "org.openbravo.manufacturing",
+      "com.etendoerp.production",
+      "org.openbravo.module.production"
+    ],
+    "tables": [
+      "MA_PROCESSPLAN", "MA_WORKEFFORT", "MA_WORKREQUIREMENT",
+      "MA_SEQUENCE", "MA_COSTCENTER", "MA_MACHINE", "MA_TOOLSET"
+    ],
+    "windows": [
+      "%production%", "%work%effort%", "%process%plan%", "%manufacturing%",
+      "%work%requirement%", "%cost%center%"
+    ]
+  },
+  "master_data": {
+    "description": "Terceros, productos, proyectos, precios",
+    "packages": [],
+    "tables": [
+      "C_BPARTNER", "C_BPARTNER_LOCATION", "C_BP_GROUP",
+      "M_PRODUCT", "M_PRODUCT_CATEGORY", "M_PRICELIST", "M_PRICELIST_VERSION",
+      "M_PRODUCTPRICE", "C_PROJECT", "C_PROJECTLINE", "C_UOM",
+      "C_TAX", "C_TAXCATEGORY", "C_CURRENCY", "C_CONVERSION_RATE"
+    ],
+    "windows": [
+      "%business%partner%", "%product%", "%price%list%", "%project%",
+      "%tax%", "%currency%", "%unit%of%measure%"
+    ]
+  },
+  "setup": {
+    "description": "Configuracion general, organizaciones, roles, alertas",
+    "packages": [
+      "org.openbravo.base",
+      "org.openbravo.service",
+      "org.openbravo.client"
+    ],
+    "tables": [
+      "AD_ORG", "AD_ROLE", "AD_USER", "AD_CLIENT",
+      "AD_ALERTRULE", "AD_ALERT", "AD_PREFERENCE",
+      "C_ACCTSCHEMA", "AD_SEQUENCE"
+    ],
+    "windows": [
+      "%organization%", "%role%", "%user%", "%client%", "%alert%",
+      "%preference%", "%general%setup%"
+    ]
+  }
+}

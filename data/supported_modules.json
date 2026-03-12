@@ -1,0 +1,1220 @@
+{
+  "_comment": "Official Etendo modules. Source of truth: extension-modules.gradle in each bundle repo.",
+  "modules": [
+    {
+      "java_package": "com.etendoerp.print.provider",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.print.provider.git",
+      "supported": true,
+      "latest_version": "1.2.0"
+    },
+    {
+      "java_package": "com.smf.ws.printdocument",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.ws.printdocument.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.printdocumentws",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.printdocumentws.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "org.openbravo.numbertoword",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "org.openbravo.numbertoword_en",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword_en.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.exos.erp.reportcachemanagement",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.exos.erp.reportcachemanagement.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.reactor",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.reactor.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.asyncprocess",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.asyncprocess.git",
+      "supported": true,
+      "latest_version": "2.6.1"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.security.template",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.advanced.security.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.security",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.advanced.security.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.dynamic.app",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.dynamic.app.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.smf.ean128",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.ean128.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.docker",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.docker.git",
+      "supported": true,
+      "latest_version": "2.9.0"
+    },
+    {
+      "java_package": "com.etendoerp.tomcat",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.tomcat.git",
+      "supported": true,
+      "latest_version": "2.9.0"
+    },
+    {
+      "java_package": "com.etendoerp.openapi",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.openapi.git",
+      "supported": true,
+      "latest_version": "2.5.0"
+    },
+    {
+      "java_package": "com.etendoerp.etendorx",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.etendorx.git",
+      "supported": true,
+      "latest_version": "3.15.1"
+    },
+    {
+      "java_package": "com.etendoerp.webhookevents",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.webhookevents.git",
+      "supported": true,
+      "latest_version": "2.6.1"
+    },
+    {
+      "java_package": "com.etendoerp.task",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.task.git",
+      "supported": true,
+      "latest_version": "3.15.1"
+    },
+    {
+      "java_package": "com.etendoerp.metadata.template",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.metadata.template.git",
+      "supported": true,
+      "latest_version": "0.8.1"
+    },
+    {
+      "java_package": "com.etendoerp.metadata",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.metadata.git",
+      "supported": true,
+      "latest_version": "0.14.1"
+    },
+    {
+      "java_package": "com.etendoerp.mainui",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.mainui.git",
+      "supported": true,
+      "latest_version": "0.14.1"
+    },
+    {
+      "java_package": "com.etendoerp.copilot",
+      "bundle": "com.etendoerp.copilot.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.copilot.git",
+      "supported": true,
+      "latest_version": "2.12.1"
+    },
+    {
+      "java_package": "com.etendoerp.copilot.toolpack",
+      "bundle": "com.etendoerp.copilot.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.copilot.toolpack.git",
+      "supported": true,
+      "latest_version": "2.12.1"
+    },
+    {
+      "java_package": "com.etendoerp.copilot.devassistant",
+      "bundle": "com.etendoerp.copilot.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.copilot.devassistant.git",
+      "supported": true,
+      "latest_version": "2.12.1"
+    },
+    {
+      "java_package": "com.etendoerp.subapp.copilot",
+      "bundle": "com.etendoerp.copilot.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.subapp.copilot.git",
+      "supported": true,
+      "latest_version": "2.12.1"
+    },
+    {
+      "java_package": "com.etendoerp.copilot.template",
+      "bundle": "com.etendoerp.copilot.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.copilot.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.copilot.agents",
+      "bundle": "com.etendoerp.copilot.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.copilot.agents.git",
+      "supported": true,
+      "latest_version": "2.12.1"
+    },
+    {
+      "java_package": "com.etendoerp.integration.powerbi",
+      "bundle": "com.etendoerp.etendobi.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.integration.powerbi.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.powerbi.queries",
+      "bundle": "com.etendoerp.etendobi.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.powerbi.queries.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.powerbi.inclusion.exclusion",
+      "bundle": "com.etendoerp.etendobi.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.powerbi.inclusion.exclusion.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.smf.currency.apiconfig",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.apiconfig.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.smf.currency.conversionrate",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.conversionrate.git",
+      "supported": true,
+      "latest_version": "2.5.0"
+    },
+    {
+      "java_package": "com.etendoerp.accounting.templates",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.templates.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.gljournal.advanced",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.advanced.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.bankingpool",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bankingpool.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.financial.reports.advanced.template",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.template.git",
+      "supported": true,
+      "latest_version": "1.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.financial.reports.advanced",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.git",
+      "supported": true,
+      "latest_version": "2.9.0"
+    },
+    {
+      "java_package": "com.etendoerp.payment.removal.template",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.payment.removal",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.intercompany",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.intercompany.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.smf.gljournal.reverse.template",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.smf.gljournal.reverse",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.smf.asset.amortization.report",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.asset.amortization.report.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.financial.docs.processing.template",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.financial.docs.processing",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.bulk.posting",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.posting.git",
+      "supported": true,
+      "latest_version": "2.4.1"
+    },
+    {
+      "java_package": "org.openbravo.financial.bpsettlement",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.bpsettlement.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.bpsettlement",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bpsettlement.git",
+      "supported": true,
+      "latest_version": "2.5.0"
+    },
+    {
+      "java_package": "com.etendoerp.gljournal.clone.template",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.gljournal.clone",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.vat.regularization",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.vat.regularization.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.bank.account.management.template",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bank.account.management.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.bank.account.management",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bank.account.management.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "org.openbravo.module.remittance.template",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "org.openbravo.module.remittance",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.git",
+      "supported": true,
+      "latest_version": "4.3.1"
+    },
+    {
+      "java_package": "com.etendoerp.automated.remittance",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.automated.remittance.git",
+      "supported": true,
+      "latest_version": "2.4.1"
+    },
+    {
+      "java_package": "com.etendoerp.accounting.dimensions.assets.template",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.dimensions.assets.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.accounting.dimensions.assets",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.dimensions.assets.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.financial.report.budget.template",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.report.budget.template.git",
+      "supported": true,
+      "latest_version": "1.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.financial.report.budget",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.report.budget.git",
+      "supported": true,
+      "latest_version": "1.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.adjust.invoice.tax",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.adjust.invoice.tax.git",
+      "supported": true,
+      "latest_version": "3.1.0"
+    },
+    {
+      "java_package": "com.etendoerp.adjust.invoice.tax.template",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.adjust.invoice.tax.template.git",
+      "supported": true,
+      "latest_version": "3.1.0"
+    },
+    {
+      "java_package": "com.etendoerp.account.structure.validation",
+      "bundle": "com.etendoerp.financial.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.account.structure.validation.git",
+      "supported": true,
+      "latest_version": "3.0.0"
+    },
+    {
+      "java_package": "com.etendoerp.stock.history",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.stock.history.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.reactivate.warehouse.documents.template",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.reactivate.warehouse.documents.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.reactivate.warehouse.documents",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.reactivate.warehouse.documents.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.product.operations",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.product.operations.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.automated.warehouse.reservation",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.automated.warehouse.reservation.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "org.openbravo.warehouse.structure",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.warehouse.structure.git",
+      "supported": true,
+      "latest_version": "3.3.0"
+    },
+    {
+      "java_package": "org.openbravo.warehouse.packing",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.warehouse.packing.git",
+      "supported": true,
+      "latest_version": "3.3.3"
+    },
+    {
+      "java_package": "org.openbravo.warehouse.pickinglist",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.warehouse.pickinglist.git",
+      "supported": true,
+      "latest_version": "3.4.5"
+    },
+    {
+      "java_package": "com.etendoerp.stock.logisticunit.template",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.stock.logisticunit.template.git",
+      "supported": true,
+      "latest_version": "1.1.0"
+    },
+    {
+      "java_package": "com.etendoerp.stock.logisticunit",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.stock.logisticunit.git",
+      "supported": true,
+      "latest_version": "1.3.3"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.warehouse.management",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.warehouse.management.git",
+      "supported": true,
+      "latest_version": "2.4.12"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.warehouse.management.template",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.warehouse.management.template.git",
+      "supported": true,
+      "latest_version": "1.2.12"
+    },
+    {
+      "java_package": "com.etendoerp.materialmgmt.rules",
+      "bundle": "com.etendoerp.warehouse.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.materialmgmt.rules.git",
+      "supported": true,
+      "latest_version": "1.0.1"
+    },
+    {
+      "java_package": "com.etendoerp.quotation.template",
+      "bundle": "com.etendoerp.sales.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.quotation.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.quotation",
+      "bundle": "com.etendoerp.sales.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.quotation.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.rappels.advanced.template",
+      "bundle": "com.etendoerp.sales.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.rappels.advanced.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.rappels.advanced",
+      "bundle": "com.etendoerp.sales.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.rappels.advanced.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.work.effort",
+      "bundle": "com.etendoerp.production.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.work.effort.git",
+      "supported": true,
+      "latest_version": "2.4.1"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.work.effort.template",
+      "bundle": "com.etendoerp.production.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.work.effort.template.git",
+      "supported": true,
+      "latest_version": "1.1.1"
+    },
+    {
+      "java_package": "com.etendoerp.materialmgmt.actions",
+      "bundle": "com.etendoerp.production.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.materialmgmt.actions.git",
+      "supported": true,
+      "latest_version": "1.0.0"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.businesspartner.template",
+      "bundle": "com.etendoerp.essentials.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.businesspartner.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.advanced.businesspartner",
+      "bundle": "com.etendoerp.essentials.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.businesspartner.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.bulk.completion",
+      "bundle": "com.etendoerp.essentials.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.completion.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.smf.mobile.scan",
+      "bundle": "com.etendoerp.mobile.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.mobile.scan.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.subapp.classic",
+      "bundle": "com.etendoerp.mobile.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.subapp.classic.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.subapp.docsmanager",
+      "bundle": "com.etendoerp.mobile.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.subapp.docsmanager.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.purchase.invoice.validations",
+      "bundle": "com.etendoerp.procurement.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.purchase.invoice.validations.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "org.openbravo.module.cuaderno43.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cuaderno43.es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "com.etendoerp.reportvaluationstock.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.reportvaluationstock.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "com.smf.jobs.defaults.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.defaults.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "com.smf.jobs.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "com.smf.securewebservices.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.securewebservices.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.advpaymentmngt.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.advpaymentmngt.es_es.git",
+      "supported": true,
+      "latest_version": "4.2.0"
+    },
+    {
+      "java_package": "org.openbravo.alerts.accounting30",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.git",
+      "supported": true,
+      "latest_version": "4.2.0"
+    },
+    {
+      "java_package": "org.openbravo.client.application.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.application.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.client.htmlwidget.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.htmlwidget.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.client.kernel.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.kernel.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.client.myob.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.myob.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.client.querylist.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.querylist.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.client.widgets.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.widgets.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.financial.paymentreport.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.paymentreport.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.localization.spain.referencedata.accounts",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.git",
+      "supported": true,
+      "latest_version": "4.2.0"
+    },
+    {
+      "java_package": "org.openbravo.localization.spain.referencedata.accounts.pymes",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.pymes.git",
+      "supported": true,
+      "latest_version": "4.2.0"
+    },
+    {
+      "java_package": "org.openbravo.localization.spain.referencedata.translation.ese",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.translation.ese.git",
+      "supported": true
+    },
+    {
+      "java_package": "org.openbravo.module.cifnifvalidator",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.cifnifvalidator.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.countryisocode",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.countryisocode.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.epigrafes.iae.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.epigrafes.iae.es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.eucountries",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.eucountries.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.organization.representative.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.organization.representative.es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.paymentmethod.type",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.paymentmethod.type.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.taxreportlauncher",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.reports.ordersawaitingdelivery.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.reports.ordersawaitingdelivery.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.service.datasource.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.datasource.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.service.integration.google.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.google.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.service.integration.openid.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.openid.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.spain.regions",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spain.regions.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentmethods.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.spanishdefaultdata.paymentterms",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentterms.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.userinterface.selector.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.selector.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.userinterface.smartclient.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.smartclient.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.utility.multiplebpselector",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.taximprovements.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es.git",
+      "supported": true,
+      "latest_version": "1.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.incoterms",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.incoterms.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.bptaxidkey",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.bptaxidkey.git",
+      "supported": true,
+      "latest_version": "1.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.cashvat",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cashvat.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.verifactu.template",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.verifactu.template.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "org.openbravo.finance.checkprinting",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.localization.spain.referencedata.taxes",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.finactvalidator.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.finactvalidator.es.git",
+      "supported": true,
+      "latest_version": "4.2.1"
+    },
+    {
+      "java_package": "org.openbravo.module.taximprovements.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es_es.git",
+      "supported": true,
+      "latest_version": "1.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.intrastat",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.git",
+      "supported": true,
+      "latest_version": "4.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.invoicesregisterbook",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.git",
+      "supported": true,
+      "latest_version": "3.3.0"
+    },
+    {
+      "java_package": "org.openbravo.module.invoicetaxreportenhanced30",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.git",
+      "supported": true,
+      "latest_version": "4.3.0"
+    },
+    {
+      "java_package": "org.openbravo.module.invoicetaxreportenhanced30.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.es_es.git",
+      "supported": true,
+      "latest_version": "4.3.0"
+    },
+    {
+      "java_package": "org.openbravo.module.taxreportlauncher.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.v3.translation.pack.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.v3.translation.pack.es_es.git",
+      "supported": true,
+      "latest_version": "4.2.0"
+    },
+    {
+      "java_package": "org.openbravo.alerts.accounting30.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.es_es.git",
+      "supported": true,
+      "latest_version": "4.2.0"
+    },
+    {
+      "java_package": "org.openbravo.utility.multiplebpselector.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.finance.checkprinting.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.localization.spain30",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain30.git",
+      "supported": true,
+      "latest_version": "4.2.1"
+    },
+    {
+      "java_package": "org.openbravo.module.aeat190.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.es.git",
+      "supported": true,
+      "latest_version": "4.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.aeat303.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.es.git",
+      "supported": true,
+      "latest_version": "2.5.0"
+    },
+    {
+      "java_package": "org.openbravo.module.aeat347apr.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.git",
+      "supported": true,
+      "latest_version": "5.3.0"
+    },
+    {
+      "java_package": "org.openbravo.module.aeat349.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat349.es.git",
+      "supported": true,
+      "latest_version": "3.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.aeat390.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.es.git",
+      "supported": true,
+      "latest_version": "4.4.0"
+    },
+    {
+      "java_package": "org.openbravo.module.invoicesregisterbook.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.es_es.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.estaxes.git",
+      "supported": true,
+      "latest_version": "4.3.0"
+    },
+    {
+      "java_package": "org.openbravo.module.intrastat.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.es_es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.intrastat.spain",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.spain.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.proflocalization.spain.dataset",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.proflocalization.spain.dataset.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "com.etendoerp.antifraud.template",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.antifraud.template.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.etendoerp.sif.general.template",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.sif.general.template.git",
+      "supported": true,
+      "latest_version": "2.6.0"
+    },
+    {
+      "java_package": "com.etendoerp.sif.general",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.sif.general.git",
+      "supported": true,
+      "latest_version": "2.8.0"
+    },
+    {
+      "java_package": "com.etendoerp.antifraud",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.antifraud.git",
+      "supported": true,
+      "latest_version": "2.6.0"
+    },
+    {
+      "java_package": "org.openbravo.module.aeat347apr.es.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.es_es.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "com.smf.ticketbai",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.ticketbai.git",
+      "supported": true,
+      "latest_version": "2.10.0"
+    },
+    {
+      "java_package": "com.etendoerp.verifactu",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.verifactu.git",
+      "supported": true,
+      "latest_version": "2.10.0"
+    },
+    {
+      "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.cashvat.git",
+      "supported": true,
+      "latest_version": "2.3.0"
+    },
+    {
+      "java_package": "org.openbravo.module.aeat190.cashvat.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.cashvat.es.git",
+      "supported": true,
+      "latest_version": "2.2.0"
+    },
+    {
+      "java_package": "org.openbravo.module.aeat303.cashvat.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.cashvat.es.git",
+      "supported": true,
+      "latest_version": "2.6.0"
+    },
+    {
+      "java_package": "org.openbravo.module.aeat347apr.cashvat.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.cashvat.es.git",
+      "supported": true,
+      "latest_version": "2.4.0"
+    },
+    {
+      "java_package": "org.openbravo.module.aeat390.cashvat.es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.cashvat.es.git",
+      "supported": true,
+      "latest_version": "2.5.0"
+    },
+    {
+      "java_package": "org.openbravo.module.sii",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.git",
+      "supported": true,
+      "latest_version": "2.9.0"
+    },
+    {
+      "java_package": "org.openbravo.module.sii.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.es_es.git",
+      "supported": true
+    },
+    {
+      "java_package": "org.openbravo.module.sii.template",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.template.git",
+      "supported": true
+    },
+    {
+      "java_package": "com.etendoerp.telemetry",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@github.com:etendosoftware/com.etendoerp.telemetry.git",
+      "supported": true,
+      "latest_version": "3.1.0"
+    },
+    {
+      "java_package": "com.smf.jasperutilities",
+      "bundle": "com.etendoerp.platform.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/com.smf.jasperutilities.git",
+      "supported": true,
+      "latest_version": "1.0.2"
+    },
+    {
+      "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.translation.eses.git",
+      "supported": true,
+      "latest_version": "4.2.0"
+    },
+    {
+      "java_package": "org.openbravo.numbertoword.es_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.es_es.git",
+      "supported": true,
+      "latest_version": "1.13.0"
+    },
+    {
+      "java_package": "org.openbravo.numbertoword_es",
+      "bundle": "com.etendoerp.localization.spain.extensions",
+      "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword_es.git",
+      "supported": true,
+      "latest_version": "1.13.0"
+    }
+  ]
+}
