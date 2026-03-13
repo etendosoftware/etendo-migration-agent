@@ -32,7 +32,17 @@ def load_reports(reports_dir: str) -> list:
             if "migration_score" not in report:
                 continue
             html_path = json_path.with_suffix(".html")
-            report["_html_file"] = html_path.name if html_path.exists() else None
+            if html_path.exists():
+                report["_html_file"] = html_path.name
+            else:
+                # fallback: look for a file named after the client
+                client_name = report.get("client", {}).get("name", "")
+                if client_name:
+                    safe = client_name.replace(" ", "-").replace("/", "-")
+                    alt = json_path.parent / f"{safe}.html"
+                    report["_html_file"] = alt.name if alt.exists() else None
+                else:
+                    report["_html_file"] = None
             report["_json_stem"] = json_path.stem
             results.append(report)
         except Exception:
@@ -94,7 +104,29 @@ def aggregate(records: list) -> dict:
         key = r.get("migratability") or "very_hard"
         dist[key] = dist.get(key, 0) + 1
 
-    # Version distribution (sorted by version desc)
+    # Version distribution grouped by major
+    from collections import defaultdict
+    major_groups = defaultdict(list)
+    for version, count in version_counter.items():
+        major = version.split(".")[0] if version != "—" else "—"
+        major_groups[major].append({"version": version, "count": count})
+
+    def _major_sort_key(m):
+        try:
+            return int(m)
+        except Exception:
+            return -1
+
+    version_grouped = []
+    for major in sorted(major_groups.keys(), key=_major_sort_key, reverse=True):
+        versions = sorted(major_groups[major], key=lambda x: x["version"], reverse=True)
+        version_grouped.append({
+            "major": major,
+            "total": sum(v["count"] for v in versions),
+            "versions": versions,
+        })
+
+    # Version distribution (sorted by version desc) — kept for legacy
     version_items = sorted(version_counter.items(), key=lambda x: x[0], reverse=True)
 
     # Top 10 local_not_maintained modules by frequency
@@ -156,6 +188,7 @@ def aggregate(records: list) -> dict:
             "labels": [v for v, _ in version_items],
             "values": [c for _, c in version_items],
         },
+        "version_dist_grouped": version_grouped,
         "top_nm_modules": {
             "labels": [pkg for pkg, _ in top10_nm],
             "values": [cnt for _, cnt in top10_nm],
@@ -440,6 +473,67 @@ tbody td { padding: 10px 12px; vertical-align: middle; color: #334155; }
 .viewer-close:hover { background: #f1f5f9; color: #475569; }
 .viewer-frame { flex: 1; border: none; background: #fff; }
 
+/* Version grouped tree */
+.ver-group { border-bottom: 1px solid #f1f5f9; }
+.ver-group:last-child { border-bottom: none; }
+.ver-group-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.1s;
+    border-radius: 6px;
+}
+.ver-group-header:hover { background: #f8fafc; }
+.ver-major {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0f172a;
+    font-family: monospace;
+    min-width: 32px;
+}
+.ver-count-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #0284c7;
+    background: #e0f2fe;
+    padding: 1px 8px;
+    border-radius: 99px;
+}
+.ver-toggle {
+    margin-left: auto;
+    font-size: 0.65rem;
+    color: #94a3b8;
+    transition: transform 0.2s;
+}
+.ver-group-body { padding: 0 4px 8px 16px; }
+.ver-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background 0.1s;
+}
+.ver-item:hover { background: #f8fafc; }
+.ver-version {
+    font-family: monospace;
+    font-size: 0.82rem;
+    color: #475569;
+}
+.ver-item-count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 1px 7px;
+    border-radius: 99px;
+    min-width: 24px;
+    text-align: center;
+}
+
 @media (max-width: 900px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); }
     .charts-row { grid-template-columns: 1fr; }
@@ -528,28 +622,39 @@ function renderScoreDist() {
     });
 }
 
-// ── Version distribution ──────────────────────────────────────────────────
+// ── Version distribution (grouped tree) ──────────────────────────────────
 function renderVersionDist() {
-    const ctx = document.getElementById('chart-version-dist').getContext('2d');
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: D.version_dist.labels,
-            datasets: [{
-                data: D.version_dist.values,
-                backgroundColor: '#0ea5e9',
-                borderRadius: 4,
-            }]
-        },
-        options: {
-            indexAxis: 'y',
-            plugins: { legend: { display: false } },
-            scales: {
-                x: { ticks: { stepSize: 1, color: '#64748b' }, grid: { color: '#1e293b' } },
-                y: { ticks: { color: '#94a3b8' }, grid: { display: false } }
-            }
-        }
-    });
+    const container = document.getElementById('version-dist-container');
+    const groups = D.version_dist_grouped;
+    if (!groups || !groups.length) {
+        container.innerHTML = '<div class="chart-empty">Sin datos</div>';
+        return;
+    }
+    container.innerHTML = groups.map((group, i) => `
+        <div class="ver-group">
+            <div class="ver-group-header" onclick="toggleVerGroup(${i})">
+                <span class="ver-major">v${group.major}</span>
+                <span class="ver-count-badge">${group.total} entorno${group.total !== 1 ? 's' : ''}</span>
+                <span class="ver-toggle" id="ver-toggle-${i}">▶</span>
+            </div>
+            <div class="ver-group-body" id="ver-group-body-${i}" style="display:none">
+                ${group.versions.map(v => `
+                    <div class="ver-item">
+                        <span class="ver-version">${v.version}</span>
+                        <span class="ver-item-count">${v.count}</span>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `).join('');
+}
+
+function toggleVerGroup(i) {
+    const body = document.getElementById('ver-group-body-' + i);
+    const toggle = document.getElementById('ver-toggle-' + i);
+    const isOpen = body.style.display !== 'none';
+    body.style.display = isOpen ? 'none' : 'block';
+    toggle.textContent = isOpen ? '▶' : '▼';
 }
 
 // ── Top local_not_maintained ──────────────────────────────────────────────
@@ -753,9 +858,7 @@ def render_html(data: dict, generated_at: str) -> str:
     </div>
     <div class="chart-card">
       <h2>Versiones de Etendo instaladas</h2>
-      <div class="chart-wrap">
-        <canvas id="chart-version-dist"></canvas>
-      </div>
+      <div id="version-dist-container"></div>
     </div>
   </div>
 

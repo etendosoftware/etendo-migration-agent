@@ -14,15 +14,20 @@ from pathlib import Path
 import paramiko
 
 
-ANALYZER_DIR = Path(__file__).parent.parent / "analyzer"
+PROJECT_ROOT = Path(__file__).parent.parent
+ANALYZER_DIR = PROJECT_ROOT / "analyzer"
+DATA_DIR = PROJECT_ROOT / "data"
 REMOTE_WORK_DIR = "/tmp/etendo_migration_agent"
 
 
 def _pack_analyzer(tmp_dir: str) -> str:
-    """Creates a tar.gz of the analyzer directory."""
+    """Creates a tar.gz of the analyzer directory, analyze.py entry point, and data/."""
     tar_path = os.path.join(tmp_dir, "analyzer.tar.gz")
     with tarfile.open(tar_path, "w:gz") as tar:
         tar.add(ANALYZER_DIR, arcname="analyzer")
+        tar.add(PROJECT_ROOT / "analyze.py", arcname="analyze.py")
+        if DATA_DIR.exists():
+            tar.add(DATA_DIR, arcname="data")
     return tar_path
 
 
@@ -30,6 +35,7 @@ def run_on_host(
     hostname: str,
     etendo_root: str,
     username: str,
+    client_name: str = None,
     password: str = None,
     key_path: str = None,
     port: int = 22,
@@ -74,8 +80,9 @@ def run_on_host(
     # Extract and run
     commands = [
         f"cd {REMOTE_WORK_DIR} && tar xzf analyzer.tar.gz",
-        f"python3 {REMOTE_WORK_DIR}/analyzer/etendo_diagnose.py "
-        f"--path {etendo_root} --output {REMOTE_WORK_DIR}/report.json",
+        f"python3 {REMOTE_WORK_DIR}/analyze.py "
+        f"--path {etendo_root} --output {REMOTE_WORK_DIR}/report.json"
+        + (f" --client \"{client_name}\"" if client_name else ""),
     ]
     for cmd in commands:
         _, stdout, stderr = client.exec_command(cmd)
@@ -117,6 +124,7 @@ if __name__ == "__main__":
     parser.add_argument("hostname")
     parser.add_argument("etendo_root")
     parser.add_argument("--user", required=True)
+    parser.add_argument("--client", help="Client name for the report")
     parser.add_argument("--password")
     parser.add_argument("--key", help="Path to SSH private key")
     parser.add_argument("--port", type=int, default=22)
@@ -127,6 +135,7 @@ if __name__ == "__main__":
         hostname=args.hostname,
         etendo_root=args.etendo_root,
         username=args.user,
+        client_name=args.client,
         password=args.password,
         key_path=args.key,
         port=args.port,

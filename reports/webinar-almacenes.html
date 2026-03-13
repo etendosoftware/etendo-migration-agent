@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etendo Migration Report — webinar-almacenes</title>
+  <style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       background: #f8fafc; color: #1e293b; font-size: 14px; }
+
+.page { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
+
+/* Header */
+.report-header { background: #1e293b; color: #f1f5f9; padding: 28px 32px;
+                 border-radius: 12px; margin-bottom: 24px; }
+.report-header h1 { font-size: 22px; font-weight: 700; }
+.report-header .sub { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+.header-meta { display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
+.meta-item { font-size: 13px; }
+.meta-item strong { color: #e2e8f0; }
+.meta-item span { color: #94a3b8; }
+
+/* Cards */
+.card { background: #fff; border-radius: 10px; border: 1px solid #e2e8f0;
+        padding: 20px 24px; margin-bottom: 20px; }
+.card h2 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 16px;
+           padding-bottom: 10px; border-bottom: 1px solid #f1f5f9; }
+
+/* Score section */
+.score-section { display: flex; gap: 32px; align-items: flex-start; flex-wrap: wrap; }
+.score-ring-wrap { text-align: center; }
+.score-ring { width: 120px; height: 120px; }
+.score-label { font-size: 14px; font-weight: 600; margin-top: 6px; }
+.score-right { flex: 1; min-width: 240px; }
+.breakdown-table { width: 100%; border-collapse: collapse; }
+.breakdown-table td { padding: 5px 4px; vertical-align: middle; }
+.bd-label { font-size: 12px; color: #475569; white-space: nowrap; width: 240px; }
+.bd-bar-cell { padding: 0 12px; }
+.bd-bar { height: 8px; background: #ef4444; border-radius: 4px; min-width: 4px; }
+.bd-val { font-size: 12px; font-weight: 600; color: #ef4444; text-align: right; white-space: nowrap; }
+
+/* Module pills */
+.module-pills { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+.module-pill { display: flex; align-items: center; gap: 8px; padding: 10px 16px;
+               border-radius: 8px; border: 1px solid #e2e8f0; background: #f8fafc; }
+.pill-icon { font-size: 18px; font-weight: 700; }
+.pill-info strong { display: block; font-size: 18px; font-weight: 700; }
+.pill-info span  { font-size: 11px; color: #6b7280; }
+
+/* Module blocks */
+.module-block { margin-bottom: 8px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+.module-header { display: flex; align-items: center; gap: 10px; padding: 12px 16px;
+                 cursor: pointer; background: #f8fafc; user-select: none; }
+.module-header:hover { background: #f1f5f9; }
+.cat-icon { font-size: 16px; font-weight: 700; width: 20px; text-align: center; }
+.cat-label { font-size: 13px; font-weight: 600; flex: 1; }
+.cat-count { font-size: 12px; font-weight: 700; color: #fff; padding: 2px 8px; border-radius: 12px; }
+.chevron { font-size: 12px; color: #9ca3af; transition: transform 0.2s; }
+.module-header.open .chevron { transform: rotate(180deg); }
+.module-body { display: none; padding: 0 16px 12px; }
+.module-body.open { display: block; }
+
+/* Module table */
+.mod-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.mod-row td { padding: 7px 4px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.mod-row:last-child td { border-bottom: none; }
+.mod-pkg { width: 50%; }
+.pkg { font-size: 12px; font-family: 'SF Mono', Consolas, monospace; color: #1e293b; word-break: break-all; }
+
+/* Version gap */
+.ver-row { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; margin-bottom: 3px; }
+.ver-installed { font-size: 12px; color: #475569; background: #f1f5f9; padding: 2px 7px;
+                 border-radius: 4px; font-family: 'SF Mono', Consolas, monospace; }
+.ver-latest { font-size: 12px; color: #1e293b; background: #e0f2fe; padding: 2px 7px;
+              border-radius: 4px; font-family: 'SF Mono', Consolas, monospace; font-weight: 600; }
+.gap-arrow-ok     { font-size: 11px; color: #22c55e; }
+.gap-arrow-patch  { font-size: 11px; color: #f59e0b; }
+.gap-arrow-minor  { font-size: 11px; color: #f97316; }
+.gap-arrow-major  { font-size: 11px; color: #ef4444; }
+.gap-badge { font-size: 10px; padding: 2px 6px; border-radius: 10px; font-weight: 600;
+             text-transform: uppercase; letter-spacing: 0.03em; }
+.gap-ok     { background: #dcfce7; color: #166534; }
+.gap-patch  { background: #fef9c3; color: #854d0e; }
+.gap-minor  { background: #ffedd5; color: #9a3412; }
+.gap-major  { background: #fee2e2; color: #991b1b; }
+
+.author { font-size: 11px; color: #9ca3af; margin-right: 4px; }
+.bundle { font-size: 11px; color: #3b82f6; background: #eff6ff; padding: 1px 6px; border-radius: 4px; }
+
+/* Diff badges */
+.mod-diff { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px; }
+.diff-badge { font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+.diff-badge.df    { background: #fef3c7; color: #92400e; }
+.diff-badge.add   { background: #dcfce7; color: #166534; }
+.diff-badge.del   { background: #fee2e2; color: #991b1b; }
+.diff-badge.lines { background: #f3f4f6; color: #374151; }
+
+/* Core */
+.core-note { font-size: 12px; color: #6b7280; background: #f8fafc; border: 1px solid #e2e8f0;
+             border-radius: 6px; padding: 8px 12px; margin-bottom: 16px; }
+.core-stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.stat-pill { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
+             padding: 10px 16px; text-align: center; }
+.stat-pill strong { display: block; font-size: 20px; font-weight: 700; color: #1e293b; }
+.stat-pill span   { font-size: 11px; color: #6b7280; }
+.stat-pill.add-pill strong { color: #16a34a; }
+.stat-pill.del-pill strong { color: #dc2626; }
+
+.file-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.file-table th { text-align: left; padding: 6px 8px; background: #f8fafc;
+                 border-bottom: 2px solid #e2e8f0; font-size: 11px; color: #6b7280;
+                 font-weight: 600; white-space: nowrap; }
+.file-table td { padding: 5px 8px; border-bottom: 1px solid #f8fafc; }
+.file-table tr:hover td { background: #f8fafc; }
+.file-path { font-family: 'SF Mono', Consolas, monospace; color: #1e293b; word-break: break-all; }
+.file-add  { color: #16a34a; font-weight: 600; text-align: right; white-space: nowrap; }
+.file-del  { color: #dc2626; font-weight: 600; text-align: right; white-space: nowrap; }
+.file-total{ color: #6b7280; text-align: right; white-space: nowrap; }
+.status-badge { font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+.status-added   { background: #dcfce7; color: #166534; }
+.status-deleted { background: #fee2e2; color: #991b1b; }
+
+.empty { color: #9ca3af; font-size: 13px; font-style: italic; padding: 8px 0; }
+.footer { text-align: center; font-size: 11px; color: #9ca3af; margin-top: 32px; }
+
+/* Custom module detail */
+.custom-detail { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.loc-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px;
+             background: #f3f4f6; color: #374151; font-family: 'SF Mono', Consolas, monospace; }
+.pen-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px;
+             background: #fef2f2; color: #991b1b; font-weight: 600; }
+.tier-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px; font-weight: 600;
+              text-transform: uppercase; letter-spacing: 0.03em; }
+.tier-micro  { background: #f0fdf4; color: #166534; }
+.tier-small  { background: #fefce8; color: #854d0e; }
+.tier-medium { background: #fff7ed; color: #9a3412; }
+.tier-large  { background: #fef2f2; color: #991b1b; }
+
+/* Methodology */
+.meth-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.meth-block { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px 20px; }
+.meth-title { font-size: 13px; font-weight: 700; color: #1e293b; margin-bottom: 12px;
+              padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; }
+.meth-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.meth-table th { text-align: left; padding: 5px 8px; background: #f1f5f9;
+                 border-bottom: 2px solid #e2e8f0; font-size: 11px; color: #6b7280;
+                 font-weight: 600; white-space: nowrap; }
+.meth-table td { padding: 6px 8px; border-bottom: 1px solid #f1f5f9; vertical-align: top; color: #374151; }
+.meth-table tr:last-child td { border-bottom: none; }
+.meth-note { font-size: 11px; color: #6b7280; margin-top: 10px; line-height: 1.5; }
+
+/* Category chips */
+.cat-chip { font-size: 10px; padding: 2px 8px; border-radius: 10px; font-weight: 600;
+            white-space: nowrap; }
+.chip-jar  { background: #e0f2fe; color: #0369a1; }
+.chip-src  { background: #dcfce7; color: #166534; }
+.chip-mnt  { background: #dbeafe; color: #1d4ed8; }
+.chip-nmnt { background: #ffedd5; color: #9a3412; }
+.chip-cust { background: #f3e8ff; color: #7e22ce; }
+
+/* Migratability badges */
+.mig-badge { font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+.mig-easy  { background: #dcfce7; color: #166534; }
+.mig-mod   { background: #fef9c3; color: #854d0e; }
+.mig-hard  { background: #ffedd5; color: #9a3412; }
+.mig-vhard { background: #fee2e2; color: #991b1b; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="report-header">
+    <h1>Etendo Migration Report</h1>
+    <div class="sub">Análisis de migración a SaaS</div>
+    <div class="header-meta">
+      <div class="meta-item"><span>Cliente </span><strong>webinar-almacenes</strong></div>
+      <div class="meta-item"><span>Hostname </span><strong>functional-webinar</strong></div>
+      <div class="meta-item"><span>Plataforma </span><strong>Etendo 25.4.11</strong></div>
+      <div class="meta-item"><span>Base de comparación </span><strong>v25.4.11</strong></div>
+      <div class="meta-item"><span>Módulos totales </span><strong>54</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-03-13 16:06</strong></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Metodología de puntuación</h2>
+    
+<div class="meth-grid">
+
+  <div class="meth-block">
+    <div class="meth-title">Categorías de módulos</div>
+    <table class="meth-table">
+      <thead><tr><th>Categoría</th><th>Descripción</th><th>Cómo se penaliza</th><th>Por qué</th></tr></thead>
+      <tbody>
+        <tr><td><span class="cat-chip chip-jar">Gradle JAR</span></td>
+            <td>Módulos resueltos como binarios (JARs) por Gradle. No tienen código fuente editable en la instalación.</td>
+            <td>Solo se penaliza si están desactualizados:<br>
+                −0.15 por módulo con gap <em>major</em> (máximo −3)<br>
+                −0.05 por módulo con gap <em>minor/patch</em> (máximo −1)</td>
+            <td>Actualizar un JAR es solo cambiar el número de versión en build.gradle. Sin riesgo de pérdida de código. Es el escenario ideal de migración.</td></tr>
+        <tr><td><span class="cat-chip chip-src">Gradle Sources</span></td>
+            <td>Módulos cuyo bundle está declarado en build.gradle pero tienen fuentes expandidas en /modules/. Deberían ser JAR pero alguien los desempaquetó.</td>
+            <td>−0.1 por cada archivo con diferencias respecto a la versión limpia (máximo −5 por módulo)</td>
+            <td>Tener el fuente local indica posibles divergencias. La penalización es baja porque el módulo sigue siendo soportado y la ruta de migración es volver a JAR.</td></tr>
+        <tr><td><span class="cat-chip chip-mnt">Local Mantenido</span></td>
+            <td>Módulo con código fuente en /modules/, reconocido en el catálogo de Etendo pero no declarado como dependencia Gradle. Puede tener divergencias respecto a la versión publicada.</td>
+            <td>−0.2 por cada archivo con diferencias respecto a la versión limpia (máximo −10 por módulo)</td>
+            <td>Mayor penalización que Gradle Sources porque no está gestionado como dependencia. Cada archivo divergente implica trabajo de análisis para determinar si es customización o desactualización.</td></tr>
+        <tr><td><span class="cat-chip chip-nmnt">Local sin Mant.</span></td>
+            <td>Módulo con código fuente en /modules/ que no aparece en el catálogo de Etendo. Puede ser de terceros, legacy de Openbravo, o un módulo abandonado.</td>
+            <td>−3 por módulo, independientemente del contenido (máximo −20)</td>
+            <td>Sin soporte oficial no hay ruta de actualización garantizada. Cada uno requiere evaluación manual para decidir si se reemplaza, se integra como customización, o se descarta.</td></tr>
+        <tr><td><span class="cat-chip chip-cust">Customización</span></td>
+            <td>Módulo desarrollado por o para el cliente (el java_package contiene el nombre del cliente o el segmento "custom"). Representa lógica de negocio propia.</td>
+            <td>Penalización escalonada por volumen de código (LOC). Ver tabla de tamaños. Máximo global −35.</td>
+            <td>Las customizaciones son el mayor obstáculo para migrar a SaaS: deben generalizarse o reescribirse. A mayor volumen de código, mayor el esfuerzo estimado de análisis y portabilidad.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="meth-block">
+    <div class="meth-title">Tamaño de customizaciones (LOC)</div>
+    <table class="meth-table">
+      <thead><tr><th>Tamaño</th><th>LOC</th><th>Penalización</th><th>Criterio</th></tr></thead>
+      <tbody>
+        <tr><td><span class="tier-badge tier-micro">micro</span></td>
+            <td>&lt; 500</td><td>−1</td>
+            <td>Adaptación puntual, fácil de generalizar.</td></tr>
+        <tr><td><span class="tier-badge tier-small">small</span></td>
+            <td>500 – 2.000</td><td>−4</td>
+            <td>Funcionalidad acotada, esfuerzo de análisis moderado.</td></tr>
+        <tr><td><span class="tier-badge tier-medium">medium</span></td>
+            <td>2.000 – 8.000</td><td>−9</td>
+            <td>Módulo con lógica propia. Requiere diseño para generalizar.</td></tr>
+        <tr><td><span class="tier-badge tier-large">large</span></td>
+            <td>&gt; 8.000</td><td>−16</td>
+            <td>Desarrollo significativo. Alta complejidad de migración.</td></tr>
+      </tbody>
+    </table>
+    <p class="meth-note">Máximo global de customizaciones: −35. El LOC se cuenta sobre archivos de texto
+    (.java, .xml, .sql, .js, .css, .html, .properties, .gradle, etc.).</p>
+  </div>
+
+  <div class="meth-block">
+    <div class="meth-title">Core y otros factores</div>
+    <table class="meth-table">
+      <thead><tr><th>Factor</th><th>Penalización</th></tr></thead>
+      <tbody>
+        <tr><td>Plataforma Openbravo (sin build.gradle)</td><td>−20 fijo</td></tr>
+        <tr><td>Archivos de core con diferencias</td><td>−0.5/archivo (máximo −25)</td></tr>
+        <tr><td>Líneas de diferencia en core (por cada 100)</td><td>−0.5 (máximo −15)</td></tr>
+      </tbody>
+    </table>
+    <p class="meth-note">Las diferencias en core incluyen tanto customizaciones como brecha de versión
+    (el cliente puede estar en una versión anterior a la base de comparación). El score parte de 100
+    y se le restan todas las penalizaciones.</p>
+  </div>
+
+  <div class="meth-block">
+    <div class="meth-title">Escala de migratabilidad</div>
+    <table class="meth-table">
+      <thead><tr><th>Score</th><th>Nivel</th><th>Significado</th></tr></thead>
+      <tbody>
+        <tr><td>80 – 100</td><td><span class="mig-badge mig-easy">Fácil</span></td>
+            <td>Migración directa. Principalmente actualizaciones de versión.</td></tr>
+        <tr><td>60 – 79</td><td><span class="mig-badge mig-mod">Moderada</span></td>
+            <td>Requiere trabajo de adaptación pero es manejable.</td></tr>
+        <tr><td>40 – 59</td><td><span class="mig-badge mig-hard">Difícil</span></td>
+            <td>Presencia significativa de customizaciones o módulos no mantenidos.</td></tr>
+        <tr><td>0 – 39</td><td><span class="mig-badge mig-vhard">Muy difícil</span></td>
+            <td>Customizaciones extensas o core muy divergente. Proyecto de mediano plazo.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+  </div>
+
+  <div class="card">
+    <h2>Puntuación de migración</h2>
+    <div class="score-section">
+      
+<div class="score-ring-wrap">
+  <svg viewBox="0 0 120 120" class="score-ring">
+    <circle cx="60" cy="60" r="54" fill="none" stroke="#e5e7eb" stroke-width="10"/>
+    <circle cx="60" cy="60" r="54" fill="none" stroke="#22c55e" stroke-width="10"
+      stroke-dasharray="335.9 3.4"
+      stroke-dashoffset="84.8"
+      stroke-linecap="round"/>
+    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#22c55e">99</text>
+    <text x="60" y="73" text-anchor="middle" font-size="9" fill="#6b7280">/100</text>
+  </svg>
+  <div class="score-label" style="color:#22c55e">Fácil</div>
+</div>
+      <div class="score-right">
+        <p style="font-size:13px;color:#475569;margin-bottom:12px;">Factores de penalización:</p>
+        
+<table class="breakdown-table">
+  <tbody>
+      <tr>
+        <td class="bd-label">Divergencias en core</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar" style="width:100.0%"></div>
+        </td>
+        <td class="bd-val">-0.5</td>
+      </tr>
+      <tr>
+        <td class="bd-label">Dependencias Gradle JAR desactualizadas</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar" style="width:18.5%"></div>
+        </td>
+        <td class="bd-val">-0.1</td>
+      </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Módulos (54)</h2>
+    <div class="module-pills">
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#0ea5e9">⬡</div>
+        <div class="pill-info">
+          <strong style="color:#0ea5e9">54</strong>
+          <span>Dependencias Gradle JAR</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#22c55e">✓</div>
+        <div class="pill-info">
+          <strong style="color:#22c55e">0</strong>
+          <span>Dependencias Gradle Sources</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#3b82f6">↑</div>
+        <div class="pill-info">
+          <strong style="color:#3b82f6">0</strong>
+          <span>Módulos Locales Mantenidos</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#f97316">⚠</div>
+        <div class="pill-info">
+          <strong style="color:#f97316">0</strong>
+          <span>Módulos Locales sin Mantenimiento</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#a855f7">✎</div>
+        <div class="pill-info">
+          <strong style="color:#a855f7">0</strong>
+          <span>Customizaciones</span>
+        </div>
+      </div></div>
+    
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #0ea5e9">
+    <span class="cat-icon" style="color:#0ea5e9">⬡</span>
+    <span class="cat-label">Dependencias Gradle JAR</span>
+    <span class="cat-count" style="background:#0ea5e9">54</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <table class='mod-table'><tbody>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.advanced.security</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.advanced.security.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.advanced.security.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.advanced.warehouse.management</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.4.12</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.4.12</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.advanced.warehouse.management.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.12</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v1.2.12</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.asyncprocess</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.6.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.6.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.automated.warehouse.reservation</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.bulk.completion</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.essentials.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.12.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.12.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot.agents</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.12.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.12.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot.devassistant</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.12.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.12.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot.extensions</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.12.1</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot.toolpack</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.12.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.12.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.docker</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.9.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.9.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.dynamic.app</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.etendorx</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.15.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v3.15.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.mainui</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.14.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v0.14.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.materialmgmt.rules</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v1.0.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.metadata</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.14.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v0.14.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.metadata.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.8.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v0.8.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.openapi</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.5.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.5.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.platform.extensions</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.15.1</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.platform.extensions.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.6.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.print.provider</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v1.2.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.printdocumentws</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.product.operations</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.product.operations.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.reactivate.warehouse.documents</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.4.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.reactivate.warehouse.documents.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.reactivate.warehouse.documents.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.reactor</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.stock.history</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.stock.history.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.stock.logisticunit</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.3</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v1.3.3</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.stock.logisticunit.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v1.1.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.subapp.copilot</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.12.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.12.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.task</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.15.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v3.15.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.telemetry</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.1.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v3.1.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.tomcat</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.9.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.9.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.warehouse.extensions</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.6.12</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.warehouse.extensions.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.webhookevents</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.6.1</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.6.1</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.webhookevents.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.exos.erp.reportcachemanagement</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Collaboration by gmunoz - EXOS Solutions S.L.
+To Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.ean128</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.4.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.ws.printdocument</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.numbertoword</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.numbertoword.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.6.0</span><span class="gap-arrow-minor">→</span><span class="ver-latest">v1.13.0</span><span class="gap-badge gap-minor">minor</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.numbertoword_en</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.numbertoword_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.6.0</span><span class="gap-arrow-minor">→</span><span class="ver-latest">v1.13.0</span><span class="gap-badge gap-minor">minor</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.warehouse.packing</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.3.3</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v3.3.3</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.warehouse.pickinglist</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.4.5</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v3.4.5</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.warehouse.structure</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.3.0</span><span class="gap-arrow-ok">→</span><span class="ver-latest">v3.3.0</span><span class="gap-badge gap-ok">al día</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr></tbody></table>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #22c55e">
+    <span class="cat-icon" style="color:#22c55e">✓</span>
+    <span class="cat-label">Dependencias Gradle Sources</span>
+    <span class="cat-count" style="background:#22c55e">0</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <p class='empty'>Sin módulos en esta categoría.</p>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #3b82f6">
+    <span class="cat-icon" style="color:#3b82f6">↑</span>
+    <span class="cat-label">Módulos Locales Mantenidos</span>
+    <span class="cat-count" style="background:#3b82f6">0</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <p class='empty'>Sin módulos en esta categoría.</p>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #f97316">
+    <span class="cat-icon" style="color:#f97316">⚠</span>
+    <span class="cat-label">Módulos Locales sin Mantenimiento</span>
+    <span class="cat-count" style="background:#f97316">0</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <p class='empty'>Sin módulos en esta categoría.</p>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #a855f7">
+    <span class="cat-icon" style="color:#a855f7">✎</span>
+    <span class="cat-label">Customizaciones</span>
+    <span class="cat-count" style="background:#a855f7">0</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <p class='empty'>Sin módulos en esta categoría.</p>
+  </div>
+</div>
+  </div>
+
+  <div class="card">
+    <h2>Divergencias en core (vs v25.4.11)</h2>
+    
+<p class="core-note">
+  Las diferencias incluyen tanto customizaciones como desactualización de versión.
+  Base de comparación: <strong>v25.4.11</strong>.
+</p>
+<div class="core-stats">
+  <div class="stat-pill"><strong>1</strong><span>con diferencias</span></div>
+  <div class="stat-pill"><strong>0</strong><span>archivos nuevos</span></div>
+  <div class="stat-pill"><strong>0</strong><span>archivos eliminados</span></div>
+  <div class="stat-pill add-pill"><strong>+8</strong><span>líneas</span></div>
+  <div class="stat-pill del-pill"><strong>-0</strong><span>líneas</span></div>
+</div>
+<table class="file-table">
+  <thead>
+    <tr><th>Archivo</th><th>Líneas +</th><th>Líneas -</th><th>Total</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="file-path">src-db/database/formalChangesScript.xml</td>
+      <td class="file-add">+8</td>
+      <td class="file-del">-0</td>
+      <td class="file-total">8</td>
+    </tr></tbody>
+</table>
+  </div>
+
+  <div class="footer">Generado por Etendo Migration Agent · 2026-03-13 16:06</div>
+</div>
+<script>
+function toggle(header) {
+  header.classList.toggle('open');
+  header.nextElementSibling.classList.toggle('open');
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var first = document.querySelector('.module-header');
+  if (first) toggle(first);
+});
+</script>
+</body>
+</html>

@@ -274,6 +274,67 @@ tbody td { padding: 10px 12px; vertical-align: middle; color: #334155; }
 .viewer-close:hover { background: #f1f5f9; color: #475569; }
 .viewer-frame { flex: 1; border: none; background: #fff; }
 
+/* Version grouped tree */
+.ver-group { border-bottom: 1px solid #f1f5f9; }
+.ver-group:last-child { border-bottom: none; }
+.ver-group-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.1s;
+    border-radius: 6px;
+}
+.ver-group-header:hover { background: #f8fafc; }
+.ver-major {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0f172a;
+    font-family: monospace;
+    min-width: 32px;
+}
+.ver-count-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #0284c7;
+    background: #e0f2fe;
+    padding: 1px 8px;
+    border-radius: 99px;
+}
+.ver-toggle {
+    margin-left: auto;
+    font-size: 0.65rem;
+    color: #94a3b8;
+    transition: transform 0.2s;
+}
+.ver-group-body { padding: 0 4px 8px 16px; }
+.ver-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background 0.1s;
+}
+.ver-item:hover { background: #f8fafc; }
+.ver-version {
+    font-family: monospace;
+    font-size: 0.82rem;
+    color: #475569;
+}
+.ver-item-count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 1px 7px;
+    border-radius: 99px;
+    min-width: 24px;
+    text-align: center;
+}
+
 @media (max-width: 900px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); }
     .charts-row { grid-template-columns: 1fr; }
@@ -285,7 +346,7 @@ tbody td { padding: 10px 12px; vertical-align: middle; color: #334155; }
 
 <div class="header">
   <h1>Etendo Migration Dashboard</h1>
-  <span class="header-sub">Generado: 12/03/2026 20:17</span>
+  <span class="header-sub">Generado: 13/03/2026 16:10</span>
 </div>
 
 <div class="container">
@@ -334,9 +395,7 @@ tbody td { padding: 10px 12px; vertical-align: middle; color: #334155; }
     </div>
     <div class="chart-card">
       <h2>Versiones de Etendo instaladas</h2>
-      <div class="chart-wrap">
-        <canvas id="chart-version-dist"></canvas>
-      </div>
+      <div id="version-dist-container"></div>
     </div>
   </div>
 
@@ -394,7 +453,7 @@ tbody td { padding: 10px 12px; vertical-align: middle; color: #334155; }
   <iframe class="viewer-frame" id="viewer-frame" src=""></iframe>
 </div>
 
-<script>window.DASHBOARD_DATA = {"kpis": {"total": 3, "avg_score": 61.0, "migratable": 1, "min_version": "24.2.6", "max_version": "25.4.0", "version_avg_pct": 34.1, "etendo": 3, "openbravo": 0}, "score_dist": {"labels": ["Fácil", "Moderada", "Difícil", "Muy difícil"], "values": [1, 0, 1, 1], "colors": ["#86efac", "#fde68a", "#fed7aa", "#fca5a5"]}, "version_dist": {"labels": ["25.4.0", "24.4.35", "24.2.6"], "values": [1, 1, 1]}, "top_nm_modules": {"labels": ["com.practicsbs.shopify", "com.practicsbs.shopify.template", "com.smf.edicom", "com.smf.edicom.csv", "eu.practics.javaextensionpoints", "eu.practics.mailogger", "com.openbravo.gps.finance.balanceexcelexport.report", "com.openbravo.gps.finance.balanceexcelexport.report.es_es", "com.openbravo.gps.idl.invoices", "com.openbravo.gps.idl.orders"], "values": [2, 2, 2, 2, 2, 2, 1, 1, 1, 1]}, "top_custom_by_loc": {"labels": ["glor_com.smf.gloria.customization", "com.smf.ladypipa.template"], "values": [183879, 34], "clients": ["Local Etendo24", "Ladypipa"]}, "clients": [{"name": "Local Etendo25", "version": "25.4.0", "score": 98, "migratability": "easy", "jar": 0, "source": 182, "local_maintained": 0, "not_maintained": 0, "custom": 0, "html_file": "local_etendo25.html"}, {"name": "Local Etendo24", "version": "24.4.35", "score": 51, "migratability": "hard", "jar": 0, "source": 32, "local_maintained": 1, "not_maintained": 6, "custom": 1, "html_file": "local_etendo24.html"}, {"name": "Ladypipa", "version": "24.2.6", "score": 34, "migratability": "very_hard", "jar": 121, "source": 4, "local_maintained": 4, "not_maintained": 25, "custom": 1, "html_file": "ladypipa.html"}]};</script>
+<script>window.DASHBOARD_DATA = {"kpis": {"total": 4, "avg_score": 70.5, "migratable": 2, "min_version": "24.2.6", "max_version": "25.4.11", "version_avg_pct": 50.5, "etendo": 4, "openbravo": 0}, "score_dist": {"labels": ["Fácil", "Moderada", "Difícil", "Muy difícil"], "values": [2, 0, 1, 1], "colors": ["#86efac", "#fde68a", "#fed7aa", "#fca5a5"]}, "version_dist": {"labels": ["25.4.11", "25.4.0", "24.4.35", "24.2.6"], "values": [1, 1, 1, 1]}, "version_dist_grouped": [{"major": "25", "total": 2, "versions": [{"version": "25.4.11", "count": 1}, {"version": "25.4.0", "count": 1}]}, {"major": "24", "total": 2, "versions": [{"version": "24.4.35", "count": 1}, {"version": "24.2.6", "count": 1}]}], "top_nm_modules": {"labels": ["com.practicsbs.shopify", "com.practicsbs.shopify.template", "com.smf.edicom", "com.smf.edicom.csv", "eu.practics.javaextensionpoints", "eu.practics.mailogger", "com.openbravo.gps.finance.balanceexcelexport.report", "com.openbravo.gps.finance.balanceexcelexport.report.es_es", "com.openbravo.gps.idl.invoices", "com.openbravo.gps.idl.orders"], "values": [2, 2, 2, 2, 2, 2, 1, 1, 1, 1]}, "top_custom_by_loc": {"labels": ["glor_com.smf.gloria.customization", "com.smf.ladypipa.template"], "values": [183879, 34], "clients": ["Local Etendo24", "Ladypipa"]}, "clients": [{"name": "webinar-almacenes", "version": "25.4.11", "score": 99, "migratability": "easy", "jar": 54, "source": 0, "local_maintained": 0, "not_maintained": 0, "custom": 0, "html_file": "webinar-almacenes.html"}, {"name": "Local Etendo25", "version": "25.4.0", "score": 98, "migratability": "easy", "jar": 0, "source": 182, "local_maintained": 0, "not_maintained": 0, "custom": 0, "html_file": "local_etendo25.html"}, {"name": "Local Etendo24", "version": "24.4.35", "score": 51, "migratability": "hard", "jar": 0, "source": 32, "local_maintained": 1, "not_maintained": 6, "custom": 1, "html_file": "local_etendo24.html"}, {"name": "Ladypipa", "version": "24.2.6", "score": 34, "migratability": "very_hard", "jar": 121, "source": 4, "local_maintained": 4, "not_maintained": 25, "custom": 1, "html_file": "ladypipa.html"}]};</script>
 <script>
 const D = window.DASHBOARD_DATA;
 
@@ -476,28 +535,39 @@ function renderScoreDist() {
     });
 }
 
-// ── Version distribution ──────────────────────────────────────────────────
+// ── Version distribution (grouped tree) ──────────────────────────────────
 function renderVersionDist() {
-    const ctx = document.getElementById('chart-version-dist').getContext('2d');
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: D.version_dist.labels,
-            datasets: [{
-                data: D.version_dist.values,
-                backgroundColor: '#0ea5e9',
-                borderRadius: 4,
-            }]
-        },
-        options: {
-            indexAxis: 'y',
-            plugins: { legend: { display: false } },
-            scales: {
-                x: { ticks: { stepSize: 1, color: '#64748b' }, grid: { color: '#1e293b' } },
-                y: { ticks: { color: '#94a3b8' }, grid: { display: false } }
-            }
-        }
-    });
+    const container = document.getElementById('version-dist-container');
+    const groups = D.version_dist_grouped;
+    if (!groups || !groups.length) {
+        container.innerHTML = '<div class="chart-empty">Sin datos</div>';
+        return;
+    }
+    container.innerHTML = groups.map((group, i) => `
+        <div class="ver-group">
+            <div class="ver-group-header" onclick="toggleVerGroup(${i})">
+                <span class="ver-major">v${group.major}</span>
+                <span class="ver-count-badge">${group.total} entorno${group.total !== 1 ? 's' : ''}</span>
+                <span class="ver-toggle" id="ver-toggle-${i}">▶</span>
+            </div>
+            <div class="ver-group-body" id="ver-group-body-${i}" style="display:none">
+                ${group.versions.map(v => `
+                    <div class="ver-item">
+                        <span class="ver-version">${v.version}</span>
+                        <span class="ver-item-count">${v.count}</span>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `).join('');
+}
+
+function toggleVerGroup(i) {
+    const body = document.getElementById('ver-group-body-' + i);
+    const toggle = document.getElementById('ver-toggle-' + i);
+    const isOpen = body.style.display !== 'none';
+    body.style.display = isOpen ? 'none' : 'block';
+    toggle.textContent = isOpen ? '▶' : '▼';
 }
 
 // ── Top local_not_maintained ──────────────────────────────────────────────
