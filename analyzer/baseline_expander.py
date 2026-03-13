@@ -160,6 +160,7 @@ def generate_build_gradle(
 etendo {{
     coreVersion = "{core_range}"
     supportJars = false
+    forceResolution = true
 }}
 
 dependencies {{
@@ -310,24 +311,26 @@ def expand_baseline(
             print("  ─────────────────────────────────────────────────────────")
             print()
 
-        # Run expand — use 'yes Y' to answer all interactive confirmations
-        # GRADLE_OPTS sets heap for the Gradle client process (not the daemon)
-        # --info shows which modules/artifacts are being downloaded
+        # Run expandCore and expandModules as separate invocations so that
+        # each task gets its own 'yes Y' pipe for interactive confirmations.
+        # GRADLE_OPTS sets heap for the Gradle client process (not the daemon).
         env = os.environ.copy()
         env["GRADLE_OPTS"] = "-Xmx6g -Dfile.encoding=UTF-8"
-        gradle_cmd = "yes Y | ./gradlew expand --info" if verbose else "yes Y | ./gradlew expand"
-        result = subprocess.run(
-            ["bash", "-c", gradle_cmd],
-            cwd=target,
-            capture_output=not verbose,
-            timeout=600,
-            env=env,
-        )
+        info_flag = " --info" if verbose else ""
 
-        if result.returncode != 0:
-            if not verbose and result.stderr:
-                print(f"WARNING: gradlew expand failed:\n{result.stderr[-2000:]}")
-            return None
+        for task in ("expandCore", "expandModules"):
+            step_cmd = f"yes Y | ./gradlew {task}{info_flag}"
+            step = subprocess.run(
+                ["bash", "-c", step_cmd],
+                cwd=target,
+                capture_output=not verbose,
+                timeout=600,
+                env=env,
+            )
+            if step.returncode != 0:
+                if not verbose and step.stderr:
+                    print(f"WARNING: gradlew {task} failed:\n{step.stderr[-2000:]}")
+                return None
 
         return target
 
