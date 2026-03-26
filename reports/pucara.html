@@ -1,0 +1,2886 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etendo Migration Report — Pucara Inversiones SA</title>
+  <style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       background: #f8fafc; color: #1e293b; font-size: 14px; }
+
+.page { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
+
+/* Header */
+.report-header { background: #1e293b; color: #f1f5f9; padding: 28px 32px;
+                 border-radius: 12px; margin-bottom: 24px; }
+.report-header h1 { font-size: 22px; font-weight: 700; }
+.report-header .sub { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+.header-meta { display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
+.meta-item { font-size: 13px; }
+.meta-item strong { color: #e2e8f0; }
+.meta-item span { color: #94a3b8; }
+
+/* Cards */
+.card { background: #fff; border-radius: 10px; border: 1px solid #e2e8f0;
+        padding: 20px 24px; margin-bottom: 20px; }
+.card h2 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 16px;
+           padding-bottom: 10px; border-bottom: 1px solid #f1f5f9; }
+
+/* Score section */
+.score-section { display: flex; gap: 32px; align-items: flex-start; flex-wrap: wrap; }
+.score-ring-wrap { text-align: center; }
+.score-ring { width: 120px; height: 120px; }
+.score-label { font-size: 14px; font-weight: 600; margin-top: 6px; }
+.score-right { flex: 1; min-width: 240px; }
+.breakdown-table { width: 100%; border-collapse: collapse; }
+.breakdown-table td { padding: 5px 4px; vertical-align: middle; }
+.bd-label { font-size: 12px; color: #475569; white-space: nowrap; width: 240px; }
+.bd-bar-cell { padding: 0 12px; }
+.bd-bar { height: 8px; background: #ef4444; border-radius: 4px; min-width: 4px; }
+.bd-val { font-size: 12px; font-weight: 600; color: #ef4444; text-align: right; white-space: nowrap; }
+
+/* Module pills */
+.module-pills { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+.module-pill { display: flex; align-items: center; gap: 8px; padding: 10px 16px;
+               border-radius: 8px; border: 1px solid #e2e8f0; background: #f8fafc; }
+.pill-icon { font-size: 18px; font-weight: 700; }
+.pill-info strong { display: block; font-size: 18px; font-weight: 700; }
+.pill-info span  { font-size: 11px; color: #6b7280; }
+
+/* Module blocks */
+.module-block { margin-bottom: 8px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+.module-header { display: flex; align-items: center; gap: 10px; padding: 12px 16px;
+                 cursor: pointer; background: #f8fafc; user-select: none; }
+.module-header:hover { background: #f1f5f9; }
+.cat-icon { font-size: 16px; font-weight: 700; width: 20px; text-align: center; }
+.cat-label { font-size: 13px; font-weight: 600; flex: 1; }
+.cat-count { font-size: 12px; font-weight: 700; color: #fff; padding: 2px 8px; border-radius: 12px; }
+.chevron { font-size: 12px; color: #9ca3af; transition: transform 0.2s; }
+.module-header.open .chevron { transform: rotate(180deg); }
+.module-body { display: none; padding: 0 16px 12px; }
+.module-body.open { display: block; }
+
+/* Module table */
+.mod-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.mod-row td { padding: 7px 4px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.mod-row:last-child td { border-bottom: none; }
+.mod-pkg { width: 50%; }
+.pkg { font-size: 12px; font-family: 'SF Mono', Consolas, monospace; color: #1e293b; word-break: break-all; }
+
+/* Version gap */
+.ver-row { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; margin-bottom: 3px; }
+.ver-installed { font-size: 12px; color: #475569; background: #f1f5f9; padding: 2px 7px;
+                 border-radius: 4px; font-family: 'SF Mono', Consolas, monospace; }
+.ver-latest { font-size: 12px; color: #1e293b; background: #e0f2fe; padding: 2px 7px;
+              border-radius: 4px; font-family: 'SF Mono', Consolas, monospace; font-weight: 600; }
+.gap-arrow-ok     { font-size: 11px; color: #22c55e; }
+.gap-arrow-patch  { font-size: 11px; color: #f59e0b; }
+.gap-arrow-minor  { font-size: 11px; color: #f97316; }
+.gap-arrow-major  { font-size: 11px; color: #ef4444; }
+.gap-badge { font-size: 10px; padding: 2px 6px; border-radius: 10px; font-weight: 600;
+             text-transform: uppercase; letter-spacing: 0.03em; }
+.gap-ok     { background: #dcfce7; color: #166534; }
+.gap-patch  { background: #fef9c3; color: #854d0e; }
+.gap-minor  { background: #ffedd5; color: #9a3412; }
+.gap-major  { background: #fee2e2; color: #991b1b; }
+
+.author { font-size: 11px; color: #9ca3af; margin-right: 4px; }
+.bundle { font-size: 11px; color: #3b82f6; background: #eff6ff; padding: 1px 6px; border-radius: 4px; }
+
+/* Diff badges */
+.mod-diff { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px; }
+.diff-badge { font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+.diff-badge.df    { background: #fef3c7; color: #92400e; }
+.diff-badge.add   { background: #dcfce7; color: #166534; }
+.diff-badge.del   { background: #fee2e2; color: #991b1b; }
+.diff-badge.lines { background: #f3f4f6; color: #374151; }
+
+/* Core */
+.core-note { font-size: 12px; color: #6b7280; background: #f8fafc; border: 1px solid #e2e8f0;
+             border-radius: 6px; padding: 8px 12px; margin-bottom: 16px; }
+.core-stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.stat-pill { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
+             padding: 10px 16px; text-align: center; }
+.stat-pill strong { display: block; font-size: 20px; font-weight: 700; color: #1e293b; }
+.stat-pill span   { font-size: 11px; color: #6b7280; }
+.stat-pill.add-pill strong { color: #16a34a; }
+.stat-pill.del-pill strong { color: #dc2626; }
+
+.file-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.file-table th { text-align: left; padding: 6px 8px; background: #f8fafc;
+                 border-bottom: 2px solid #e2e8f0; font-size: 11px; color: #6b7280;
+                 font-weight: 600; white-space: nowrap; }
+.file-table td { padding: 5px 8px; border-bottom: 1px solid #f8fafc; }
+.file-table tr:hover td { background: #f8fafc; }
+.file-path { font-family: 'SF Mono', Consolas, monospace; color: #1e293b; word-break: break-all; }
+.file-add  { color: #16a34a; font-weight: 600; text-align: right; white-space: nowrap; }
+.file-del  { color: #dc2626; font-weight: 600; text-align: right; white-space: nowrap; }
+.file-total{ color: #6b7280; text-align: right; white-space: nowrap; }
+.status-badge { font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+.status-added   { background: #dcfce7; color: #166534; }
+.status-deleted { background: #fee2e2; color: #991b1b; }
+
+.empty { color: #9ca3af; font-size: 13px; font-style: italic; padding: 8px 0; }
+.footer { text-align: center; font-size: 11px; color: #9ca3af; margin-top: 32px; }
+
+/* Custom module detail */
+.custom-detail { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.loc-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px;
+             background: #f3f4f6; color: #374151; font-family: 'SF Mono', Consolas, monospace; }
+.pen-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px;
+             background: #fef2f2; color: #991b1b; font-weight: 600; }
+.tier-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px; font-weight: 600;
+              text-transform: uppercase; letter-spacing: 0.03em; }
+.tier-micro  { background: #f0fdf4; color: #166534; }
+.tier-small  { background: #fefce8; color: #854d0e; }
+.tier-medium { background: #fff7ed; color: #9a3412; }
+.tier-large  { background: #fef2f2; color: #991b1b; }
+
+/* Methodology */
+.meth-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.meth-block { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px 20px; }
+.meth-title { font-size: 13px; font-weight: 700; color: #1e293b; margin-bottom: 12px;
+              padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; }
+.meth-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.meth-table th { text-align: left; padding: 5px 8px; background: #f1f5f9;
+                 border-bottom: 2px solid #e2e8f0; font-size: 11px; color: #6b7280;
+                 font-weight: 600; white-space: nowrap; }
+.meth-table td { padding: 6px 8px; border-bottom: 1px solid #f1f5f9; vertical-align: top; color: #374151; }
+.meth-table tr:last-child td { border-bottom: none; }
+.meth-note { font-size: 11px; color: #6b7280; margin-top: 10px; line-height: 1.5; }
+
+/* Category chips */
+.cat-chip { font-size: 10px; padding: 2px 8px; border-radius: 10px; font-weight: 600;
+            white-space: nowrap; }
+.chip-jar  { background: #e0f2fe; color: #0369a1; }
+.chip-src  { background: #dcfce7; color: #166534; }
+.chip-mnt  { background: #dbeafe; color: #1d4ed8; }
+.chip-nmnt { background: #ffedd5; color: #9a3412; }
+.chip-cust { background: #f3e8ff; color: #7e22ce; }
+
+/* Migratability badges */
+.mig-badge { font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+.mig-easy  { background: #dcfce7; color: #166534; }
+.mig-mod   { background: #fef9c3; color: #854d0e; }
+.mig-hard  { background: #ffedd5; color: #9a3412; }
+.mig-vhard { background: #fee2e2; color: #991b1b; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="report-header">
+    <h1>Etendo Migration Report</h1>
+    <div class="sub">Análisis de migración a SaaS</div>
+    <div class="header-meta">
+      <div class="meta-item"><span>Cliente </span><strong>Pucara Inversiones SA</strong></div>
+      <div class="meta-item"><span>Hostname </span><strong>franco</strong></div>
+      <div class="meta-item"><span>Plataforma </span><strong>Etendo 24.3.7</strong></div>
+      <div class="meta-item"><span>Base de comparación </span><strong>v25.4.11</strong></div>
+      <div class="meta-item"><span>Módulos totales </span><strong>178</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-03-26 12:14</strong></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Metodología de puntuación</h2>
+    
+<div class="meth-grid">
+
+  <div class="meth-block">
+    <div class="meth-title">Categorías de módulos</div>
+    <table class="meth-table">
+      <thead><tr><th>Categoría</th><th>Descripción</th><th>Cómo se penaliza</th><th>Por qué</th></tr></thead>
+      <tbody>
+        <tr><td><span class="cat-chip chip-jar">Gradle JAR</span></td>
+            <td>Módulos resueltos como binarios (JARs) por Gradle. No tienen código fuente editable en la instalación.</td>
+            <td>Solo se penaliza si están desactualizados:<br>
+                −0.15 por módulo con gap <em>major</em> (máximo −3)<br>
+                −0.05 por módulo con gap <em>minor/patch</em> (máximo −1)</td>
+            <td>Actualizar un JAR es solo cambiar el número de versión en build.gradle. Sin riesgo de pérdida de código. Es el escenario ideal de migración.</td></tr>
+        <tr><td><span class="cat-chip chip-src">Gradle Sources</span></td>
+            <td>Módulos cuyo bundle está declarado en build.gradle pero tienen fuentes expandidas en /modules/. Deberían ser JAR pero alguien los desempaquetó.</td>
+            <td>−0.1 por cada archivo con diferencias respecto a la versión limpia (máximo −5 por módulo)</td>
+            <td>Tener el fuente local indica posibles divergencias. La penalización es baja porque el módulo sigue siendo soportado y la ruta de migración es volver a JAR.</td></tr>
+        <tr><td><span class="cat-chip chip-mnt">Local Mantenido</span></td>
+            <td>Módulo con código fuente en /modules/, reconocido en el catálogo de Etendo pero no declarado como dependencia Gradle. Puede tener divergencias respecto a la versión publicada.</td>
+            <td>−0.2 por cada archivo con diferencias respecto a la versión limpia (máximo −10 por módulo)</td>
+            <td>Mayor penalización que Gradle Sources porque no está gestionado como dependencia. Cada archivo divergente implica trabajo de análisis para determinar si es customización o desactualización.</td></tr>
+        <tr><td><span class="cat-chip chip-nmnt">Local sin Mant.</span></td>
+            <td>Módulo con código fuente en /modules/ que no aparece en el catálogo de Etendo. Puede ser de terceros, legacy de Openbravo, o un módulo abandonado.</td>
+            <td>−3 por módulo, independientemente del contenido (máximo −20)</td>
+            <td>Sin soporte oficial no hay ruta de actualización garantizada. Cada uno requiere evaluación manual para decidir si se reemplaza, se integra como customización, o se descarta.</td></tr>
+        <tr><td><span class="cat-chip chip-cust">Customización</span></td>
+            <td>Módulo desarrollado por o para el cliente (el java_package contiene el nombre del cliente o el segmento "custom"). Representa lógica de negocio propia.</td>
+            <td>Penalización escalonada por volumen de código (LOC). Ver tabla de tamaños. Máximo global −35.</td>
+            <td>Las customizaciones son el mayor obstáculo para migrar a SaaS: deben generalizarse o reescribirse. A mayor volumen de código, mayor el esfuerzo estimado de análisis y portabilidad.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="meth-block">
+    <div class="meth-title">Tamaño de customizaciones (LOC)</div>
+    <table class="meth-table">
+      <thead><tr><th>Tamaño</th><th>LOC</th><th>Penalización</th><th>Criterio</th></tr></thead>
+      <tbody>
+        <tr><td><span class="tier-badge tier-micro">micro</span></td>
+            <td>&lt; 500</td><td>−1</td>
+            <td>Adaptación puntual, fácil de generalizar.</td></tr>
+        <tr><td><span class="tier-badge tier-small">small</span></td>
+            <td>500 – 2.000</td><td>−4</td>
+            <td>Funcionalidad acotada, esfuerzo de análisis moderado.</td></tr>
+        <tr><td><span class="tier-badge tier-medium">medium</span></td>
+            <td>2.000 – 8.000</td><td>−9</td>
+            <td>Módulo con lógica propia. Requiere diseño para generalizar.</td></tr>
+        <tr><td><span class="tier-badge tier-large">large</span></td>
+            <td>&gt; 8.000</td><td>−16</td>
+            <td>Desarrollo significativo. Alta complejidad de migración.</td></tr>
+      </tbody>
+    </table>
+    <p class="meth-note">Máximo global de customizaciones: −35. El LOC se cuenta sobre archivos de texto
+    (.java, .xml, .sql, .js, .css, .html, .properties, .gradle, etc.).</p>
+  </div>
+
+  <div class="meth-block">
+    <div class="meth-title">Core y otros factores</div>
+    <table class="meth-table">
+      <thead><tr><th>Factor</th><th>Penalización</th></tr></thead>
+      <tbody>
+        <tr><td>Plataforma Openbravo (sin build.gradle)</td><td>−20 fijo</td></tr>
+        <tr><td>Archivos de core con diferencias</td><td>−0.5/archivo (máximo −25)</td></tr>
+        <tr><td>Líneas de diferencia en core (por cada 100)</td><td>−0.5 (máximo −15)</td></tr>
+      </tbody>
+    </table>
+    <p class="meth-note">Las diferencias en core incluyen tanto customizaciones como brecha de versión
+    (el cliente puede estar en una versión anterior a la base de comparación). El score parte de 100
+    y se le restan todas las penalizaciones.</p>
+  </div>
+
+  <div class="meth-block">
+    <div class="meth-title">Escala de migratabilidad</div>
+    <table class="meth-table">
+      <thead><tr><th>Score</th><th>Nivel</th><th>Significado</th></tr></thead>
+      <tbody>
+        <tr><td>80 – 100</td><td><span class="mig-badge mig-easy">Fácil</span></td>
+            <td>Migración directa. Principalmente actualizaciones de versión.</td></tr>
+        <tr><td>60 – 79</td><td><span class="mig-badge mig-mod">Moderada</span></td>
+            <td>Requiere trabajo de adaptación pero es manejable.</td></tr>
+        <tr><td>40 – 59</td><td><span class="mig-badge mig-hard">Difícil</span></td>
+            <td>Presencia significativa de customizaciones o módulos no mantenidos.</td></tr>
+        <tr><td>0 – 39</td><td><span class="mig-badge mig-vhard">Muy difícil</span></td>
+            <td>Customizaciones extensas o core muy divergente. Proyecto de mediano plazo.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+  </div>
+
+  <div class="card">
+    <h2>Puntuación de migración</h2>
+    <div class="score-section">
+      
+<div class="score-ring-wrap">
+  <svg viewBox="0 0 120 120" class="score-ring">
+    <circle cx="60" cy="60" r="54" fill="none" stroke="#e5e7eb" stroke-width="10"/>
+    <circle cx="60" cy="60" r="54" fill="none" stroke="#ef4444" stroke-width="10"
+      stroke-dasharray="0.0 339.3"
+      stroke-dashoffset="84.8"
+      stroke-linecap="round"/>
+    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#ef4444">0</text>
+    <text x="60" y="73" text-anchor="middle" font-size="9" fill="#6b7280">/100</text>
+  </svg>
+  <div class="score-label" style="color:#ef4444">Muy difícil</div>
+</div>
+      <div class="score-right">
+        <p style="font-size:13px;color:#475569;margin-bottom:12px;">Factores de penalización:</p>
+        
+<table class="breakdown-table">
+  <tbody>
+      <tr>
+        <td class="bd-label">Divergencias en core</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar" style="width:79.7%"></div>
+        </td>
+        <td class="bd-val">-40.0</td>
+      </tr>
+      <tr>
+        <td class="bd-label">Módulos locales sin mantenimiento</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar" style="width:39.8%"></div>
+        </td>
+        <td class="bd-val">-20.0</td>
+      </tr>
+      <tr>
+        <td class="bd-label">Divergencias en módulos locales mantenidos</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar" style="width:100.0%"></div>
+        </td>
+        <td class="bd-val">-50.2</td>
+      </tr>
+      <tr>
+        <td class="bd-label">Dependencias Gradle JAR desactualizadas</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar" style="width:1.5%"></div>
+        </td>
+        <td class="bd-val">-0.8</td>
+      </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Módulos (178)</h2>
+    <div class="module-pills">
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#0ea5e9">⬡</div>
+        <div class="pill-info">
+          <strong style="color:#0ea5e9">5</strong>
+          <span>Dependencias Gradle JAR</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#22c55e">✓</div>
+        <div class="pill-info">
+          <strong style="color:#22c55e">0</strong>
+          <span>Dependencias Gradle Sources</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#3b82f6">↑</div>
+        <div class="pill-info">
+          <strong style="color:#3b82f6">61</strong>
+          <span>Módulos Locales Mantenidos</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#f97316">⚠</div>
+        <div class="pill-info">
+          <strong style="color:#f97316">112</strong>
+          <span>Módulos Locales sin Mantenimiento</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#a855f7">✎</div>
+        <div class="pill-info">
+          <strong style="color:#a855f7">0</strong>
+          <span>Customizaciones</span>
+        </div>
+      </div></div>
+    
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #0ea5e9">
+    <span class="cat-icon" style="color:#0ea5e9">⬡</span>
+    <span class="cat-label">Dependencias Gradle JAR</span>
+    <span class="cat-count" style="background:#0ea5e9">5</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <table class='mod-table'><tbody>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.openapi</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.5.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.sif.general</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.9.1</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.8.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.sif.general.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.6.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.ean128</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.7.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.mobile.scan</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.8.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.mobile.extensions</span>
+        
+      </td>
+    </tr></tbody></table>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #22c55e">
+    <span class="cat-icon" style="color:#22c55e">✓</span>
+    <span class="cat-label">Dependencias Gradle Sources</span>
+    <span class="cat-count" style="background:#22c55e">0</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <p class='empty'>Sin módulos en esta categoría.</p>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #3b82f6">
+    <span class="cat-icon" style="color:#3b82f6">↑</span>
+    <span class="cat-label">Módulos Locales Mantenidos</span>
+    <span class="cat-count" style="background:#3b82f6">61</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <table class='mod-table'><tbody>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.dynamic.app</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.9.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">3 con diferencias</span>
+        <span class="diff-badge add">+70 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+4 / -4 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.integration.powerbi</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.7.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.etendobi.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">4 con diferencias</span>
+        <span class="diff-badge add">+82 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+6 / -6 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.powerbi.inclusion.exclusion</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.7.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.etendobi.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">4 con diferencias</span>
+        <span class="diff-badge add">+70 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+5 / -5 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.powerbi.queries</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.8.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.etendobi.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">3 con diferencias</span>
+        <span class="diff-badge add">+104 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+100 / -100 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.printdocumentws</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.11.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">3 con diferencias</span>
+        <span class="diff-badge add">+97 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+5 / -5 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.reportvaluationstock.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.9.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+89 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.subapp.classic</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.mobile.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+74 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+5 / -5 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.webhookevents</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.15.1</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.6.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">15 con diferencias</span>
+        <span class="diff-badge add">+95 nuevos</span>
+        <span class="diff-badge del">-12 eliminados</span>
+        <span class="diff-badge lines">+24 / -24 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.jasperutilities</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span><span class="gap-arrow-patch">→</span><span class="ver-latest">v1.0.2</span><span class="gap-badge gap-patch">patch</span></div>
+        <span class='author'>SMF</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">4 con diferencias</span>
+        <span class="diff-badge add">+87 nuevos</span>
+        <span class="diff-badge del">-11 eliminados</span>
+        <span class="diff-badge lines">+271 / -119 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.ws.printdocument</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.11.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+68 nuevos</span>
+        <span class="diff-badge del">-2 eliminados</span>
+        <span class="diff-badge lines">+5 / -4 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.advpaymentmngt.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.alerts.accounting30</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.500</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.application.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1400</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -22 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.htmlwidget.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+117 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.kernel.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.myob.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.301</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.querylist.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.widgets.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.financial.paymentreport.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.localization.spain.referencedata.accounts</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.localization.spain.referencedata.accounts.pymes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.localization.spain.referencedata.taxes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.204400</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">5 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+11 / -5815 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.localization.spain.referencedata.translation.eses</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.14.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+92 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+3 / -3 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.localization.spain30</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.21.1</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+104 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+18 / -18 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.aeat303.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.8.204900</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.5.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">14 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-16 eliminados</span>
+        <span class="diff-badge lines">+860 / -70728 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.aeat347apr.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v4.4.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v5.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">11 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-6 eliminados</span>
+        <span class="diff-badge lines">+36 / -1083 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.aeat390.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.3.204200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">28 con diferencias</span>
+        <span class="diff-badge add">+31 nuevos</span>
+        <span class="diff-badge del">-15 eliminados</span>
+        <span class="diff-badge lines">+4908 / -33766 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.bptaxidkey</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.0.300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v1.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+93 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.cashvat</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.201</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">6 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+6 / -6 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.cifnifvalidator</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.204100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-5 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.cifnifvalidator.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+108 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.countryisocode</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.cuaderno43.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+27 nuevos</span>
+        <span class="diff-badge del">-5 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.epigrafes.iae.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">16 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-4 eliminados</span>
+        <span class="diff-badge lines">+5 / -896 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.eucountries</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+29 nuevos</span>
+        <span class="diff-badge del">-5 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.finactvalidator.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.1.204100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+29 nuevos</span>
+        <span class="diff-badge del">-5 eliminados</span>
+        <span class="diff-badge lines">+45 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.invoiceTaxReportEnhanced30</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.800</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">4 con diferencias</span>
+        <span class="diff-badge add">+45 nuevos</span>
+        <span class="diff-badge del">-21 eliminados</span>
+        <span class="diff-badge lines">+5244 / -74 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.invoicesregisterbook</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.5.204100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v3.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">17 con diferencias</span>
+        <span class="diff-badge add">+29 nuevos</span>
+        <span class="diff-badge del">-11 eliminados</span>
+        <span class="diff-badge lines">+2629 / -2590 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.organization.representative.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.paymentmethod.type</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.12.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+97 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+3 / -3 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.sii</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.34.2</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.9.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>IMonferrer @ Opentix</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">24 con diferencias</span>
+        <span class="diff-badge add">+236 nuevos</span>
+        <span class="diff-badge del">-4 eliminados</span>
+        <span class="diff-badge lines">+871 / -81 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.sii.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.34.2</span></div>
+        <span class='author'>IMonferrer @ Opentix</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.sii.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.34.2</span></div>
+        <span class='author'>IMonferrer @ Opentix</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.taximprovements.ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.0.700</span><span class="gap-arrow-major">→</span><span class="ver-latest">v1.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+43 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.taximprovements.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.0.204100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v1.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+41 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.taxreportlauncher</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.500</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">4 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-5 eliminados</span>
+        <span class="diff-badge lines">+10 / -9 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.taxreportlauncher.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+37 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.numbertoword</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+121 nuevos</span>
+        <span class="diff-badge del">-5 eliminados</span>
+        <span class="diff-badge lines">+3 / -3 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.numbertoword_en</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>This is a packaging in a module done by Openbravo SLU of the code snippet "POS - Number To Words In Ticket (Spanish)" by Macumbero and Zil__, published on Openbravo wiki,http://wiki.openbravo.com/wiki/POS_-_Number_To_Words_In_Ticket_(Spanish) and used under Creative Commons Attribution-ShareAlike 2.5 Spain License: http://creativecommons.org/licenses/by-sa/2.5/es/.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+109 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+6 / -5 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.numbertoword_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span><span class="gap-arrow-minor">→</span><span class="ver-latest">v1.13.0</span><span class="gap-badge gap-minor">minor</span></div>
+        <span class='author'>This is a packaging in a module done by Openbravo SLU of the code snippet "POS - Number To Words In Ticket (Spanish)" by Macumbero and Zil__, published on Openbravo wiki,http://wiki.openbravo.com/wiki/POS_-_Number_To_Words_In_Ticket_(Spanish) and used under Creative Commons Attribution-ShareAlike 2.5 Spain License: http://creativecommons.org/licenses/by-sa/2.5/es/.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+50 nuevos</span>
+        <span class="diff-badge del">-5 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.reports.ordersawaitingdelivery.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+38 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+22 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.service.datasource.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.service.integration.google.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+32 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+10 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.service.integration.openid.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+50 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+46 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.spain.regions</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.userinterface.selector.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.212000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+31 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+8 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.userinterface.smartclient.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -6 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.utility.multiplebpselector</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+28 nuevos</span>
+        <span class="diff-badge del">-5 eliminados</span>
+        <span class="diff-badge lines">+3 / -3 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.v3.translation.pack.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.4.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+115 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.warehouse.pickinglist</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.3000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v3.4.5</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">33 con diferencias</span>
+        <span class="diff-badge add">+31 nuevos</span>
+        <span class="diff-badge del">-77 eliminados</span>
+        <span class="diff-badge lines">+2080 / -2092 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.warehouse.structure</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v3.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">3 con diferencias</span>
+        <span class="diff-badge add">+103 nuevos</span>
+        <span class="diff-badge del">-4 eliminados</span>
+        <span class="diff-badge lines">+3 / -2 líneas</span>
+      </div>
+      </td>
+    </tr></tbody></table>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #f97316">
+    <span class="cat-icon" style="color:#f97316">⚠</span>
+    <span class="cat-label">Módulos Locales sin Mantenimiento</span>
+    <span class="cat-count" style="background:#f97316">112</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <table class='mod-table'><tbody>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.commons.utils</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Matias Lopez</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.integration.powerbi.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.quicksalesorder</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.quicksalesorder.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.quicksalesorder.geolocalization</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.quicksalesorder.geolocalization.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.waha</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.waha.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.webhookevents.es_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.openbravo.gps.finance.balanceexcelexport.report</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.6</span></div>
+        <span class='author'>GPS</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.openbravo.gps.printandsend</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.100</span></div>
+        <span class='author'>Openbravo - GPS</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.alertrecipient</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>smf</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.almacenes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.budgetbybrand</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.5</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.customizationshipmentinout</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.generalledger.originalcurrency</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.info.attributeset</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.0.1</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.ipsa.exclude</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.ipsa.producto</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.multipleorgselector</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.multiselectoruser1</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.multiselectorwarehouse</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.phs.warehouse.verificationcontrol</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.activos</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.agenda</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.bpartner</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.bpartnertabsectemplate</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.changeorg</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.commission</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.contabilidad</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.contabilidadstock</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.2</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationcommision</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationconsignee</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationincidencias</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationproject</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizations_only_ipsa</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationsbpartner</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.3</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationsutils</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.fiscalaccounting</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.globalcustomizations</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.idls</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.import_order</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.informes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.informesaduana</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.informestock</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.intercompany</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.2</span></div>
+        <span class='author'>smf</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.licitacion</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.2</span></div>
+        <span class='author'>smf</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.marcapropia</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.margentarifas</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.marketing</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>smf</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.prestashop</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.pricelist</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.project</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.2</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.projectprogress</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.regsanitario</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.reportprint</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.saleswidget</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.5</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.templateipsa</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.2</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.templatepresta</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.templatestock</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.utility</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.vendor</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.7</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.reactive.goods</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF Consulting S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.template.almacenes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.tegik.warehouse.pickinglist.es_MX</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.0.5</span></div>
+        <span class='author'>TEGIK</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pms.costing</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Dixan Hernández Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pms.discount</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pms.multilang</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Dixan Hernández Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pms.paymentevd</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.3</span></div>
+        <span class='author'>Dixan Hernández Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pms.projects</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Dixan Hernández Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.alerts</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.appventas</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.ascomercial</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.2</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.cartascred</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.contabilidad</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.customizationsphs</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.idl</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Ricardo García Lara</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.incidencias</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.licitacion</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.marketing</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.pagosregsan</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.pedcomp</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.4</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.preventas</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span></div>
+        <span class='author'>Ricardo García Lara</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.proccom</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.productos</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.proyectos</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.reclama</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.regmarcas</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.reportes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span></div>
+        <span class='author'>Dixan Hernàndez Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.tercerosycontactos</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.2</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">eu.practics.javaextensionpoints</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.8</span></div>
+        <span class='author'>Practics Business Solutions, S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">eu.practics.prestashop</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.145</span></div>
+        <span class='author'>Practics Business Solutions, S.L</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">eu.practics.prestashop.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.42</span></div>
+        <span class='author'>Practics Business Solutions, S.L</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.bankstatement.importer.generic.csv</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.100</span></div>
+        <span class='author'>Openbravo SLU</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.analytics</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.9000</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.financial.dimensionalpandlreport</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.6.300</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.financial.dimensionalreports</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.6.100</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.idl</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.211001</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.interco</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.1.600</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.materialmgmt.freightmgmt</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.700</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.idljava</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.0</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.invoicematchingalgorithm</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.0.301</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.discounts</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.202201</span></div>
+        <span class='author'>Openbravo SLU</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.discounts.es_ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.300</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.util.javax.xml.soap</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.0</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.util.saaj.impl</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.5.0</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.utility.draganddropselector3lists</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.100</span></div>
+        <span class='author'>Openbravo SLU</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.utility.draganddropselector3listsimplementation</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.301</span></div>
+        <span class='author'>Openbravo SLU</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.utility.hqlquerytool</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.0.200</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.utility.opencsv</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #a855f7">
+    <span class="cat-icon" style="color:#a855f7">✎</span>
+    <span class="cat-label">Customizaciones</span>
+    <span class="cat-count" style="background:#a855f7">0</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <p class='empty'>Sin módulos en esta categoría.</p>
+  </div>
+</div>
+  </div>
+
+  <div class="card">
+    <h2>Divergencias en core (vs v25.4.11)</h2>
+    
+<p class="core-note">
+  Las diferencias incluyen tanto customizaciones como desactualización de versión.
+  Base de comparación: <strong>v25.4.11</strong>.
+</p>
+<div class="core-stats">
+  <div class="stat-pill"><strong>695</strong><span>con diferencias</span></div>
+  <div class="stat-pill"><strong>26</strong><span>archivos nuevos</span></div>
+  <div class="stat-pill"><strong>60</strong><span>archivos eliminados</span></div>
+  <div class="stat-pill add-pill"><strong>+10043</strong><span>líneas</span></div>
+  <div class="stat-pill del-pill"><strong>-11027</strong><span>líneas</span></div>
+</div>
+<table class="file-table">
+  <thead>
+    <tr><th>Archivo</th><th>Líneas +</th><th>Líneas -</th><th>Total</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="file-path">src-db/database/formalChangesScript.xml</td>
+      <td class="file-add">+6608</td>
+      <td class="file-del">-0</td>
+      <td class="file-total">6608</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/sourcedata/AD_COLUMN.xml</td>
+      <td class="file-add">+26</td>
+      <td class="file-del">-2282</td>
+      <td class="file-total">2308</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/sourcedata/AD_FIELD.xml</td>
+      <td class="file-add">+24</td>
+      <td class="file-del">-1363</td>
+      <td class="file-total">1387</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/src/com/smf/securewebservices/utils/SecureWebServicesUtils.java</td>
+      <td class="file-add">+153</td>
+      <td class="file-del">-505</td>
+      <td class="file-total">658</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/datasource/StockReservationPickAndEditDataSource.java</td>
+      <td class="file-add">+238</td>
+      <td class="file-del">-306</td>
+      <td class="file-total">544</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/src/com/smf/jobs/Action.java</td>
+      <td class="file-add">+156</td>
+      <td class="file-del">-254</td>
+      <td class="file-total">410</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/utility/reporting/printing/PrintController.java</td>
+      <td class="file-add">+74</td>
+      <td class="file-del">-309</td>
+      <td class="file-total">383</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/sourcedata/OBUISEL_SELECTOR_FIELD.xml</td>
+      <td class="file-add">+3</td>
+      <td class="file-del">-345</td>
+      <td class="file-total">348</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/src/com/smf/securewebservices/service/BaseSecureWebServiceServlet.java</td>
+      <td class="file-add">+171</td>
+      <td class="file-del">-175</td>
+      <td class="file-total">346</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/functions/M_INOUT_POST.xml</td>
+      <td class="file-add">+39</td>
+      <td class="file-del">-241</td>
+      <td class="file-total">280</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/functions/C_INVOICE_POST.xml</td>
+      <td class="file-add">+19</td>
+      <td class="file-del">-238</td>
+      <td class="file-total">257</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/sourcedata/AD_TEXTINTERFACES.xml</td>
+      <td class="file-add">+132</td>
+      <td class="file-del">-77</td>
+      <td class="file-total">209</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/web/org.openbravo.client.application/js/process/ob-parameter-window-view.js</td>
+      <td class="file-add">+72</td>
+      <td class="file-del">-103</td>
+      <td class="file-total">175</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/sourcedata/AD_MESSAGE.xml</td>
+      <td class="file-add">+2</td>
+      <td class="file-del">-170</td>
+      <td class="file-total">172</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.advpaymentmngt/web/org.openbravo.advpaymentmngt/js/ob-aprm-addPayment.js</td>
+      <td class="file-add">+12</td>
+      <td class="file-del">-156</td>
+      <td class="file-total">168</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/sourcedata/AD_REF_SEARCH_COLUMN.xml</td>
+      <td class="file-add">+0</td>
+      <td class="file-del">-164</td>
+      <td class="file-total">164</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/sourcedata/AD_TAB.xml</td>
+      <td class="file-add">+0</td>
+      <td class="file-del">-160</td>
+      <td class="file-total">160</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/base/secureApp/LoginHandler.java</td>
+      <td class="file-add">+83</td>
+      <td class="file-del">-76</td>
+      <td class="file-total">159</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/src/org/openbravo/client/application/report/BaseReportActionHandler.java</td>
+      <td class="file-add">+13</td>
+      <td class="file-del">-146</td>
+      <td class="file-total">159</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/ad_actionButton/CreateFrom.java</td>
+      <td class="file-add">+34</td>
+      <td class="file-del">-114</td>
+      <td class="file-total">148</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/hooks/PrintControllerHook.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/hooks/DataSourceFilterHook.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/hooks/PrintControllerHookManager.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/hooks/PrintControllerHookPrioritizer.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/datasource/StockSelectorDispatcherHQLTransformer.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/ad_callouts/BusinessPartnerDocTypeValidation.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/businessUtility/BpDocTypeUtils.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/businessUtility/BpDocTypeResolver.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/hook/ShipmentLinesFromReservationHookManager.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/hook/ShipmentLinesFromReservationHook.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/ad_process/SalesMatchingHistory.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/event/LandedCostDuplicateReceiptValidator.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/event/BPartnerDocTypeEventHandler.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/materialmgmt/refinventory/DefaultProcessorProvider.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/materialmgmt/refinventory/RefInvProcessorProvider.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/materialmgmt/refinventory/StockSelectorFilterProvider.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/materialmgmt/refinventory/DefaultBoxFilterProvider.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/com/etendoerp/common/rest/MessagesTrlWebService.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/triggers/C_CANCELPRICEAD_TO_INVOICE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/triggers/M_MATCHSO_TRG.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/triggers/M_MATCHSI_TRG.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/functions/C_BP_GET_DOCTYPE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/functions/M_GET_NO_TRX_PRD_COST_LATEST.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/tables/M_MATCHSO.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/tables/M_MATCHSI.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/tables/C_BPARTNER_DOCTYPE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/lib/commons-collections-3.2.2.jar <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/model/functions/C_ORDER_POST1.xml.orig <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/sourcedata/AD_MODULE.xml.rej <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/sourcedata/AD_MODULE.xml.orig <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/lib/dbsourcemanager.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-wad/build/classes/com/etendoerp/sif/general/reference/wad/controls/WADFileBLOB.class <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/test/commons-lang-2.6.jar <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/src/org/openbravo/client/application/process/dto/TrlButtonDTO.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.client.application/src/com/etendoerp/client/application/UIComponentProvider.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.client.application/web/com.etendoerp.client.application/js/sales-order-tab-link.js <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.client.application/web/com.etendoerp.client.application/js/direct-tab-link.js <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.client.application/src-db/database/sourcedata/AD_PACKAGE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.client.application/src-db/database/sourcedata/AD_MODULE_DEPENDENCY.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.client.application/src-db/database/sourcedata/AD_MODULE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.client.application/src-db/database/sourcedata/AD_MODULE_DBPREFIX.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/hqlinjections/AccountingFactEndYearTransformer.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/llms.txt <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/src/com/smf/jobs/interfaces/PostActionHook.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/src/com/smf/jobs/interfaces/PreActionHook.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/src-db/database/sourcedata/AD_DATASET_TABLE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs.defaults/src/com/smf/jobs/defaults/Utils/ProcessUtils.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REF_LIST.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REFERENCE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_PREFERENCE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/jboss-annotations-api_1.3_spec-1.0.0.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/weld-core-impl-3.1.1.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/weld-spi-3.1.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/jboss-interceptors-api_1.2_spec-1.0.0.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/cdi-api-2.0.SP1.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/weld-environment-common-3.1.1.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/weld-servlet-core-3.1.1.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/jboss-classfilewriter-1.2.4.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/lib/runtime/httpcore-4.4.9.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/lib/runtime/httpmime-4.5.5.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/lib/runtime/httpclient-4.5.5.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/actionHandler/AddPaymentOnProcessActionHandlerPATCH.patch <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-util/modulescript/src/com.etendoerp.legacy.advancedpaymentmngt.modulescript/RenameSequenceFunctions.java <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/build/classes/com/etendoerp/legacy/advancedpaymentmngt/modulescript/RenameSequenceFunctions.class <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/excludeFilter.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_NEXTNO.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_NEXT.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_DOC.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_DOCTYPE.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/lib/runtime/rsql-parser-2.1.0.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/lib/runtime/java-jwt-3.1.0.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/classes/org/openbravo/buildvalidation/RemoveRebuildAppender.class <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/RemoveCostingRuleProcessExecutionsData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/PaymentGLItemCheckData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DatabaseVersionCheckData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicatedClientWarehouseValueData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DatabaseDecimalNumberCheckData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicatedOrgModuleDatasetsData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicatedCharacteristicNameData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicateDocExchangeRateData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/GLJournalAccountingCheckData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/AccountingTabsData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicatedJavaPackageData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/PreferenceConflictData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/User1ReadyData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicatedPriceListVersionData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr></tbody>
+</table>
+  </div>
+
+  <div class="footer">Generado por Etendo Migration Agent · 2026-03-26 12:14</div>
+</div>
+<script>
+function toggle(header) {
+  header.classList.toggle('open');
+  header.nextElementSibling.classList.toggle('open');
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var first = document.querySelector('.module-header');
+  if (first) toggle(first);
+});
+</script>
+</body>
+</html>
