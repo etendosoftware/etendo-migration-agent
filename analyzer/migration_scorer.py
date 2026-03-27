@@ -3,25 +3,39 @@ migration_scorer.py — Calculates a migration score and migratability label.
 
 Score: 0–100 (higher = easier to migrate to SaaS)
 
+All penalties are based on volume of custom code (LOC / diff lines),
+NOT on file counts.
+
 Penalties applied:
-  - Platform is Openbravo (not Etendo)         → -20
-  - Core divergences:
-      per divergent file                        → -0.5 (capped at -25)
-      per 100 diff lines (added+removed)        → -0.5 (capped at -15)
-  - Modules not maintained by Etendo            → -3 per module (capped at -20)
-  - Custom modules                              → -5 per module (capped at -25)
-  - Etendo-maintained modules with divergences:
-      per divergent file in module              → -0.2 (capped at -10 per module)
-  - Gradle-dependency modules with divergences:
-      per divergent file in module              → -0.1 (capped at -5 per module)
-  - JAR dependencies outdated (major gap)       → -0.15 per module (capped at -3)
-  - JAR dependencies outdated (minor/patch gap) → -0.05 per module (capped at -1)
+  - Platform is Openbravo (not Etendo)              → -20
+
+  - Core divergences (diff lines added+removed):
+      < 1.000 lines                                  →  -5
+      1.000 – 5.000 lines                            → -12
+      5.000 – 20.000 lines                           → -20
+      > 20.000 lines                                 → -25 (cap)
+
+  - Local not-maintained modules                     → -3 per module (cap -20)
+
   - Custom modules — tier-based LOC penalty:
-      micro  < 500 LOC                          →  -1
-      small  500–2.000 LOC                      →  -4
-      medium 2.000–8.000 LOC                    →  -9
-      large  > 8.000 LOC                        → -16
-      global cap                                → -35
+      micro  < 500 LOC                               →  -1
+      small  500 – 2.000 LOC                         →  -4
+      medium 2.000 – 8.000 LOC                       →  -9
+      large  > 8.000 LOC                             → -16
+      global cap                                     → -35
+
+  - Local maintained modules with custom code
+    (diff lines per module):
+      0 – 50 lines    (noise / formatting)           →   0
+      50 – 200 lines                                 →  -1
+      200 – 1.000 lines                              →  -3
+      1.000 – 5.000 lines                            →  -6
+      > 5.000 lines                                  → -10
+      global cap across all maintained modules       → -15
+
+NOT penalized (easy to resolve via update):
+  - Gradle source modules with divergences           →   0
+  - JAR dependencies outdated                        →   0
 
 Migratability labels:
   80–100  easy
@@ -30,47 +44,36 @@ Migratability labels:
   0–39    very_hard
 """
 
-from typing import Optional
-
 
 def _clamp(value: float, lo: float = 0.0, hi: float = 100.0) -> float:
     return max(lo, min(hi, value))
 
 
-def _parse_version(v):
-    if not v:
-        return ()
-    try:
-        return tuple(int(x) for x in str(v).split("."))
-    except ValueError:
-        return ()
+def _core_lines_penalty(diff_lines: int) -> float:
+    if diff_lines < 1_000:
+        return 5.0
+    if diff_lines < 5_000:
+        return 12.0
+    if diff_lines < 20_000:
+        return 20.0
+    return 25.0
 
 
-def _version_gap(installed, latest) -> str:
-    """Returns 'none', 'patch', 'minor', or 'major'."""
-    iv = _parse_version(installed)
-    lv = _parse_version(latest)
-    if not iv or not lv or lv <= iv:
-        return "none"
-    if len(iv) >= 1 and len(lv) >= 1 and lv[0] > iv[0]:
-        return "major"
-    if len(iv) >= 2 and len(lv) >= 2 and lv[1] > iv[1]:
-        return "minor"
-    return "patch"
-
-
-def _module_diff_penalty(modules: list, penalty_per_file: float, cap: float) -> float:
-    total = 0.0
-    for m in modules:
-        diff = m.get("diff")
-        if diff:
-            total += min(diff.get("modified_files", 0) * penalty_per_file, cap)
-    return total
+def _maintained_module_penalty(diff_lines: int) -> float:
+    if diff_lines <= 50:
+        return 0.0
+    if diff_lines <= 200:
+        return 1.0
+    if diff_lines <= 1_000:
+        return 3.0
+    if diff_lines <= 5_000:
+        return 6.0
+    return 10.0
 
 
 def compute_score(report: dict) -> dict:
     """
-    Receives the full report dict (before score is populated) and returns:
+    Receives the full report dict and returns:
       {"migration_score": int, "migratability": str, "score_breakdown": {...}}
     """
     score = 100.0
@@ -84,20 +87,13 @@ def compute_score(report: dict) -> dict:
     else:
         breakdown["openbravo_platform"] = 0
 
-    # --- Core divergences ---
+    # --- Core divergences (line-based) ---
     core = report.get("core_divergences", {})
-    core_penalty = 0.0
-
-    modified_files = core.get("modified_files") or 0
-    files_penalty = _clamp(modified_files * 0.5, 0, 25)
-    core_penalty += files_penalty
-
     diff_lines = (core.get("diff_lines_added") or 0) + (core.get("diff_lines_removed") or 0)
-    lines_penalty = _clamp((diff_lines / 100) * 0.5, 0, 15)
-    core_penalty += lines_penalty
-
+    core_penalty = _core_lines_penalty(diff_lines) if core.get("status") == "modified" else 0.0
     score -= core_penalty
     breakdown["core_divergences"] = round(-core_penalty, 2) or 0
+    breakdown["core_diff_lines"] = diff_lines
 
     # --- Local not-maintained modules ---
     not_maintained = report.get("modules", {}).get("local_not_maintained", [])
@@ -128,30 +124,22 @@ def compute_score(report: dict) -> dict:
     breakdown["custom_modules"] = round(-custom_penalty, 2) or 0
     breakdown["custom_modules_detail"] = custom_detail
 
-    # --- Local maintained modules with divergences ---
+    # --- Local maintained modules — line-based penalty, global cap -15 ---
     local_maintained = report.get("modules", {}).get("local_maintained", [])
-    em_penalty = _module_diff_penalty(local_maintained, 0.2, 10)
+    em_penalty = 0.0
+    for m in local_maintained:
+        diff = m.get("diff") or {}
+        lines = (diff.get("diff_lines_added") or 0) + (diff.get("diff_lines_removed") or 0)
+        em_penalty += _maintained_module_penalty(lines)
+    em_penalty = _clamp(em_penalty, 0, 15)
     score -= em_penalty
     breakdown["local_maintained_divergences"] = round(-em_penalty, 2) or 0
 
-    # --- Gradle source modules with divergences ---
-    gradle_source = report.get("modules", {}).get("gradle_source", [])
-    gd_penalty = _module_diff_penalty(gradle_source, 0.1, 5)
-    score -= gd_penalty
-    breakdown["gradle_source_divergences"] = round(-gd_penalty, 2) or 0
+    # --- Gradle source modules — no penalty (outdated != customized) ---
+    breakdown["gradle_source_divergences"] = 0
 
-    # --- JAR dependencies — penalize only for version gap ---
-    jar_deps = report.get("modules", {}).get("gradle_jar", [])
-    jar_major = jar_minor = 0
-    for m in jar_deps:
-        gap = _version_gap(m.get("version"), m.get("latest_version"))
-        if gap == "major":
-            jar_major += 1
-        elif gap in ("minor", "patch"):
-            jar_minor += 1
-    jar_penalty = _clamp(jar_major * 0.15, 0, 3) + _clamp(jar_minor * 0.05, 0, 1)
-    score -= jar_penalty
-    breakdown["jar_dependency_outdated"] = round(-jar_penalty, 2) or 0
+    # --- JAR dependencies — no penalty (JARs are a positive signal) ---
+    breakdown["jar_dependency_outdated"] = 0
 
     final_score = max(0, round(score))
 

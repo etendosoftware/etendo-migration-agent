@@ -3918,7 +3918,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes",
         "path": "/opt/EtendoERP/modules/org.openbravo.localization.spain.referencedata.taxes",
-        "name": "Taxes: configuration for Spain (Impuestos para Espa\u00f1a)",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -3973,7 +3973,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
         "path": "/opt/EtendoERP/modules/org.openbravo.localization.spain.referencedata.translation.eses",
-        "name": "Translation: Spanish-Spain (es_ES) espa\u00f1ol-Espa\u00f1a",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
         "version": "3.9.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -4022,7 +4022,7 @@
       {
         "java_package": "org.openbravo.localization.spain30",
         "path": "/opt/EtendoERP/modules/org.openbravo.localization.spain30",
-        "name": "Localization pack Spain (Espa\u00f1a)",
+        "name": "Localization pack Spain (España)",
         "version": "3.15.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -4629,7 +4629,7 @@
       {
         "java_package": "org.openbravo.module.bptaxidkey",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.bptaxidkey",
-        "name": "Tipo de N\u00famero de Identificaci\u00f3n de Tercero",
+        "name": "Tipo de Número de Identificación de Tercero",
         "version": "0.8.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -4880,7 +4880,7 @@
       {
         "java_package": "org.openbravo.module.epigrafes.iae.es",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.epigrafes.iae.es",
-        "name": "I.A.E. Epigraphs (Ep\u00edgrafes del I.A.E.)",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
         "version": "1.8.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -4978,7 +4978,7 @@
       {
         "java_package": "org.openbravo.module.finactvalidator.es",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.finactvalidator.es",
-        "name": "Validador de n\u00famero de cuenta financiera",
+        "name": "Validador de número de cuenta financiera",
         "version": "3.9.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -5167,7 +5167,7 @@
       {
         "java_package": "org.openbravo.module.intrastat.es_es",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.intrastat.es_es",
-        "name": "Intrastat \u2013 Spanish translation",
+        "name": "Intrastat – Spanish translation",
         "version": "1.9.0",
         "author": "Openbravo S.L.U",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -5393,7 +5393,7 @@
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.invoicesregisterbook.estaxes",
-        "name": "Configuraci\u00f3n de Impuestos para el Libro de Facturas",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
         "version": "3.9.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -6916,7 +6916,7 @@
       {
         "java_package": "org.openbravo.module.taximprovements.es_es",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.taximprovements.es_es",
-        "name": "M\u00f3dulo de Impuestos para Espa\u00f1a mejorado",
+        "name": "Módulo de Impuestos para España mejorado",
         "version": "0.8.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -7155,7 +7155,7 @@
       {
         "java_package": "org.openbravo.proflocalization.spain.dataset",
         "path": "/opt/EtendoERP/modules/org.openbravo.proflocalization.spain.dataset",
-        "name": "Professional Localization pack Spain (Espa\u00f1a) Datasets",
+        "name": "Professional Localization pack Spain (España) Datasets",
         "version": "1.13.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -7406,7 +7406,7 @@
       {
         "java_package": "org.openbravo.spain.regions",
         "path": "/opt/EtendoERP/modules/org.openbravo.spain.regions",
-        "name": "Provincias de Espa\u00f1a",
+        "name": "Provincias de España",
         "version": "1.8.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -7455,7 +7455,7 @@
       {
         "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
         "path": "/opt/EtendoERP/modules/org.openbravo.spanishdefaultdata.paymentmethods",
-        "name": "M\u00e9todos de Pago",
+        "name": "Métodos de Pago",
         "version": "1.9.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -9481,7 +9481,7 @@
       {
         "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
         "path": "/opt/EtendoERP/modules/com.etendoerp.advanced.bpsettlement.es_es",
-        "name": "Liquidaci\u00f3n Avanzada de Socios Comerciales",
+        "name": "Liquidación Avanzada de Socios Comerciales",
         "version": "1.2.0",
         "author": "Etendo Software"
       },
@@ -9509,7 +9509,7 @@
       {
         "java_package": "com.etendoerp.bulk.posting.es_es",
         "path": "/opt/EtendoERP/modules/com.etendoerp.bulk.posting.es_es",
-        "name": "Contabilizaci\u00f3n Masiva",
+        "name": "Contabilización Masiva",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
@@ -9530,7 +9530,7 @@
       {
         "java_package": "com.etendoerp.payment.removal.es_es",
         "path": "/opt/EtendoERP/modules/com.etendoerp.payment.removal.es_es",
-        "name": "Eliminaci\u00f3n de Pagos",
+        "name": "Eliminación de Pagos",
         "version": "1.5.0",
         "author": "Etendo Software"
       },
@@ -9586,21 +9586,21 @@
       {
         "java_package": "com.smf.currency.apiconfig.es_es",
         "path": "/opt/EtendoERP/modules/com.smf.currency.apiconfig.es_es",
-        "name": "Configuraci\u00f3n de la API de Moneda",
+        "name": "Configuración de la API de Moneda",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.smf.currency.conversionrate.es_es",
         "path": "/opt/EtendoERP/modules/com.smf.currency.conversionrate.es_es",
-        "name": "Descargador de Tasa de Conversi\u00f3n",
+        "name": "Descargador de Tasa de Conversión",
         "version": "1.3.0",
         "author": null
       },
       {
         "java_package": "com.smf.gljournal.reverse.es_es",
         "path": "/opt/EtendoERP/modules/com.smf.gljournal.reverse.es_es",
-        "name": "Anulaci\u00f3n de Asientos Manuales",
+        "name": "Anulación de Asientos Manuales",
         "version": "1.1.0",
         "author": null
       },
@@ -9765,7 +9765,7 @@
       {
         "java_package": "org.openbravo.module.einvoice.es_ES",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.einvoice.es_ES",
-        "name": "Facturaci\u00f3n Electr\u00f3nica",
+        "name": "Facturación Electrónica",
         "version": "0.1.204000",
         "author": "Openbravo SLU"
       },
@@ -9779,14 +9779,14 @@
       {
         "java_package": "org.openbravo.module.facturae31",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.facturae31",
-        "name": "Facturaci\u00f3n Electr\u00f3nica - Facturae 3.1",
+        "name": "Facturación Electrónica - Facturae 3.1",
         "version": "0.3.100",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.facturae32",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.facturae32",
-        "name": "Facturaci\u00f3n Electr\u00f3nica - Facturae 3.2",
+        "name": "Facturación Electrónica - Facturae 3.2",
         "version": "0.1.100",
         "author": "Openbravo S.L.U."
       },
@@ -9807,7 +9807,7 @@
       {
         "java_package": "org.openbravo.proflocalization.spain30",
         "path": "/opt/EtendoERP/modules/org.openbravo.proflocalization.spain30",
-        "name": "Professional Localization pack Spain (Espa\u00f1a)",
+        "name": "Professional Localization pack Spain (España)",
         "version": "3.32.0",
         "author": "Openbravo S.L.U."
       },
@@ -9895,7 +9895,7 @@
         "line_count": 5237,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       }
     ]
@@ -15087,11 +15087,12 @@
       }
     ]
   },
-  "migration_score": 0,
+  "migration_score": 37,
   "migratability": "very_hard",
   "score_breakdown": {
     "openbravo_platform": 0,
-    "core_divergences": -40.0,
+    "core_divergences": -20.0,
+    "core_diff_lines": 17991,
     "local_not_maintained": -20,
     "custom_modules": -10.0,
     "custom_modules_detail": [
@@ -15106,12 +15107,12 @@
         "java_package": "es.cjokin.template",
         "line_count": 5237,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       }
     ],
-    "local_maintained_divergences": -11.0,
-    "gradle_source_divergences": -44.8,
+    "local_maintained_divergences": -13.0,
+    "gradle_source_divergences": 0,
     "jar_dependency_outdated": 0
   }
 }

@@ -174,15 +174,18 @@ El `@zip` le indica a Gradle que resuelva el artefacto como fuente (zip), no com
     "diff_lines_removed": 800,
     "files": [...]
   },
-  "migration_score": 34,
-  "migratability": "very_hard",
+  "migration_score": 67,
+  "migratability": "moderate",
   "score_breakdown": {
-    "core_divergences": -15.0,
+    "openbravo_platform": 0,
+    "core_divergences": -12,
+    "core_diff_lines": 3925,
     "local_not_maintained": -20,
-    "custom_modules": -9,
+    "custom_modules": -1,
+    "custom_modules_detail": [...],
     "local_maintained_divergences": 0,
     "gradle_source_divergences": 0,
-    "jar_dependency_outdated": -1.5
+    "jar_dependency_outdated": 0
   }
 }
 ```
@@ -193,7 +196,7 @@ El campo `baseline_type` indica el origen del baseline usado: `"expanded"` (vers
 
 ## Score de migración
 
-El score parte de **100** y se le restan penalizaciones por cada factor de riesgo.
+El score parte de **100** y se le restan penalizaciones basadas en **volumen de código customizado** (líneas de diff), no en cantidad de archivos.
 
 | Score | Nivel | Significado |
 |---|---|---|
@@ -202,14 +205,45 @@ El score parte de **100** y se le restan penalizaciones por cada factor de riesg
 | 40–59 | Difícil | Presencia significativa de customizaciones o módulos no mantenidos. |
 | 0–39 | Muy difícil | Customizaciones extensas o core muy divergente. |
 
-Las customizaciones se ponderan por volumen de código (LOC):
+### Penalizaciones
+
+**Plataforma Openbravo:** −20 fijo.
+
+**Divergencias en core** (líneas diff añadidas + eliminadas):
+
+| Volumen | Penalización |
+|---|---|
+| < 1.000 líneas | −5 |
+| 1.000 – 5.000 líneas | −12 |
+| 5.000 – 20.000 líneas | −20 |
+| > 20.000 líneas | −25 (cap) |
+
+> Nota: con baseline ZIP estático (fallback), el diff incluye cambios propios de la diferencia de versión. La penalización es más precisa cuando se usa `--expand-baseline`.
+
+**Módulos sin mantenimiento:** −3 por módulo (cap −20).
+
+**Módulos de customización** (LOC total del módulo):
 
 | Tamaño | LOC | Penalización |
 |---|---|---|
 | micro | < 500 | −1 |
-| small | 500–2.000 | −4 |
-| medium | 2.000–8.000 | −9 |
+| small | 500 – 2.000 | −4 |
+| medium | 2.000 – 8.000 | −9 |
 | large | > 8.000 | −16 |
+| — | cap global | −35 |
+
+**Módulos mantenidos con código customizado** (líneas diff por módulo):
+
+| Volumen diff | Penalización |
+|---|---|
+| 0 – 50 líneas | 0 (ruido/formato) |
+| 50 – 200 líneas | −1 |
+| 200 – 1.000 líneas | −3 |
+| 1.000 – 5.000 líneas | −6 |
+| > 5.000 líneas | −10 |
+| — | cap global −15 |
+
+**No penalizan:** módulos Gradle Source desactualizados (actualización simple) ni dependencias JAR desactualizadas (señal positiva de gestión con Gradle).
 
 ---
 

@@ -165,7 +165,7 @@
         "latest_version": "2.2.0",
         "bundle": "com.etendoerp.localization.spain.extensions",
         "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.es_es.git",
-        "name": "Intrastat \u2013 Spanish translation",
+        "name": "Intrastat – Spanish translation",
         "version": "1.15.0",
         "author": "Openbravo S.L.U"
       },
@@ -255,7 +255,7 @@
         "latest_version": "2.4.0",
         "bundle": "com.etendoerp.localization.spain.extensions",
         "git_url": "git@bitbucket.org:koodu_software/org.openbravo.proflocalization.spain.dataset.git",
-        "name": "Professional Localization pack Spain (Espa\u00f1a) Datasets",
+        "name": "Professional Localization pack Spain (España) Datasets",
         "version": "1.18.0",
         "author": "Openbravo SLU"
       },
@@ -265,7 +265,7 @@
         "latest_version": "2.2.0",
         "bundle": "com.etendoerp.localization.spain.extensions",
         "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentmethods.git",
-        "name": "M\u00e9todos de Pago",
+        "name": "Métodos de Pago",
         "version": "1.13.0",
         "author": "Openbravo S.L.U."
       },
@@ -3186,7 +3186,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes",
         "path": "/home/valeria/Documents/Entornos/Pazo/Etendo/modules/org.openbravo.localization.spain.referencedata.taxes",
-        "name": "Taxes: configuration for Spain (Impuestos para Espa\u00f1a)",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
         "version": "1.2.204500",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -3499,7 +3499,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
         "path": "/home/valeria/Documents/Entornos/Pazo/Etendo/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
-        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja Espa\u00f1a)",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
         "version": "1.3.101",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -3722,7 +3722,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.translation.ese",
         "path": "/home/valeria/Documents/Entornos/Pazo/Etendo/modules/org.openbravo.localization.spain.referencedata.translation.ese",
-        "name": "Translation: Spanish-Spain (es_ES) espa\u00f1ol-Espa\u00f1a",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
         "version": "3.13.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -3732,7 +3732,7 @@
       {
         "java_package": "org.openbravo.localization.spain30",
         "path": "/home/valeria/Documents/Entornos/Pazo/Etendo/modules/org.openbravo.localization.spain30",
-        "name": "Localization pack Spain (Espa\u00f1a)",
+        "name": "Localization pack Spain (España)",
         "version": "3.20.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -6687,7 +6687,7 @@
       {
         "java_package": "org.openbravo.module.bptaxidkey",
         "path": "/home/valeria/Documents/Entornos/Pazo/Etendo/modules/org.openbravo.module.bptaxidkey",
-        "name": "Tipo de N\u00famero de Identificaci\u00f3n de Tercero",
+        "name": "Tipo de Número de Identificación de Tercero",
         "version": "0.11.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -8511,7 +8511,7 @@
       {
         "java_package": "org.openbravo.module.epigrafes.iae.es",
         "path": "/home/valeria/Documents/Entornos/Pazo/Etendo/modules/org.openbravo.module.epigrafes.iae.es",
-        "name": "I.A.E. Epigraphs (Ep\u00edgrafes del I.A.E.)",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
         "version": "1.0.253000",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -9323,7 +9323,7 @@
       {
         "java_package": "org.openbravo.module.finactvalidator.es",
         "path": "/home/valeria/Documents/Entornos/Pazo/Etendo/modules/org.openbravo.module.finactvalidator.es",
-        "name": "Validador de n\u00famero de cuenta financiera",
+        "name": "Validador de número de cuenta financiera",
         "version": "3.1.204100",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -9799,7 +9799,7 @@
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
         "path": "/home/valeria/Documents/Entornos/Pazo/Etendo/modules/org.openbravo.module.invoicesregisterbook.estaxes",
-        "name": "Configuraci\u00f3n de Impuestos para el Libro de Facturas",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
         "version": "3.14.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -11010,7 +11010,7 @@
       {
         "java_package": "org.openbravo.module.taximprovements.es_ES",
         "path": "/home/valeria/Documents/Entornos/Pazo/Etendo/modules/org.openbravo.module.taximprovements.es_ES",
-        "name": "M\u00f3dulo de Impuestos para Espa\u00f1a mejorado",
+        "name": "Módulo de Impuestos para España mejorado",
         "version": "0.0.204100",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -13099,7 +13099,7 @@
       {
         "java_package": "org.openbravo.spain.regions",
         "path": "/home/valeria/Documents/Entornos/Pazo/Etendo/modules/org.openbravo.spain.regions",
-        "name": "Provincias de Espa\u00f1a",
+        "name": "Provincias de España",
         "version": "1.0.200",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -20621,7 +20621,7 @@
         "line_count": 3181,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -20645,7 +20645,7 @@
         "line_count": 5118,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -20657,7 +20657,7 @@
         "line_count": 1122,
         "custom_size": {
           "key": "small",
-          "label": "500\u20132.000 LOC"
+          "label": "500–2.000 LOC"
         }
       },
       {
@@ -20669,7 +20669,7 @@
         "line_count": 609,
         "custom_size": {
           "key": "small",
-          "label": "500\u20132.000 LOC"
+          "label": "500–2.000 LOC"
         }
       },
       {
@@ -20681,7 +20681,7 @@
         "line_count": 4198,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       }
     ]
@@ -24973,11 +24973,12 @@
       }
     ]
   },
-  "migration_score": 0,
+  "migration_score": 10,
   "migratability": "very_hard",
   "score_breakdown": {
     "openbravo_platform": 0,
-    "core_divergences": -40.0,
+    "core_divergences": -20.0,
+    "core_diff_lines": 13915,
     "local_not_maintained": -20,
     "custom_modules": -35,
     "custom_modules_detail": [
@@ -24992,7 +24993,7 @@
         "java_package": "com.smf.pazo.customizationgramalla",
         "line_count": 3181,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
@@ -25006,33 +25007,33 @@
         "java_package": "com.smf.pazo.reportetrazabilidad",
         "line_count": 5118,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.pazo.reportpayment",
         "line_count": 1122,
         "size_tier": "small",
-        "size_label": "500\u20132.000 LOC",
+        "size_label": "500–2.000 LOC",
         "penalty": -4
       },
       {
         "java_package": "com.smf.pazo.template",
         "line_count": 609,
         "size_tier": "small",
-        "size_label": "500\u20132.000 LOC",
+        "size_label": "500–2.000 LOC",
         "penalty": -4
       },
       {
         "java_package": "com.smf.pazo.valuedstockreport",
         "line_count": 4198,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       }
     ],
-    "local_maintained_divergences": -17.2,
-    "gradle_source_divergences": -15.3,
-    "jar_dependency_outdated": -3
+    "local_maintained_divergences": -15,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
   }
 }

@@ -1756,7 +1756,7 @@
         "line_count": 1830,
         "custom_size": {
           "key": "small",
-          "label": "500\u20132.000 LOC"
+          "label": "500–2.000 LOC"
         }
       }
     ]
@@ -6186,11 +6186,12 @@
       }
     ]
   },
-  "migration_score": 26,
+  "migration_score": 36,
   "migratability": "very_hard",
   "score_breakdown": {
     "openbravo_platform": 0,
-    "core_divergences": -40.0,
+    "core_divergences": -25.0,
+    "core_diff_lines": 54225,
     "local_not_maintained": -20,
     "custom_modules": -4.0,
     "custom_modules_detail": [
@@ -6198,11 +6199,11 @@
         "java_package": "biz.cleardrop.ssc.customization",
         "line_count": 1830,
         "size_tier": "small",
-        "size_label": "500\u20132.000 LOC",
+        "size_label": "500–2.000 LOC",
         "penalty": -4
       }
     ],
-    "local_maintained_divergences": -9.6,
+    "local_maintained_divergences": -15,
     "gradle_source_divergences": 0,
     "jar_dependency_outdated": 0
   }

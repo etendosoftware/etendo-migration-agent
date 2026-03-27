@@ -8534,7 +8534,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/org.openbravo.localization.spain.referencedata.taxes",
-        "name": "Taxes: configuration for Spain (Impuestos para Espa\u00f1a)",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
         "version": "1.2.204400",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -8769,7 +8769,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/org.openbravo.localization.spain.referencedata.translation.eses",
-        "name": "Translation: Spanish-Spain (es_ES) espa\u00f1ol-Espa\u00f1a",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
         "version": "3.14.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -9352,7 +9352,7 @@
       {
         "java_package": "org.openbravo.localization.spain30",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/org.openbravo.localization.spain30",
-        "name": "Localization pack Spain (Espa\u00f1a)",
+        "name": "Localization pack Spain (España)",
         "version": "3.21.1",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -11126,7 +11126,7 @@
       {
         "java_package": "org.openbravo.module.bptaxidkey",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/org.openbravo.module.bptaxidkey",
-        "name": "Tipo de N\u00famero de Identificaci\u00f3n de Tercero",
+        "name": "Tipo de Número de Identificación de Tercero",
         "version": "0.0.300",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -13316,7 +13316,7 @@
       {
         "java_package": "org.openbravo.module.epigrafes.iae.es",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/org.openbravo.module.epigrafes.iae.es",
-        "name": "I.A.E. Epigraphs (Ep\u00edgrafes del I.A.E.)",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
         "version": "1.0.100",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -13852,7 +13852,7 @@
       {
         "java_package": "org.openbravo.module.finactvalidator.es",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/org.openbravo.module.finactvalidator.es",
-        "name": "Validador de n\u00famero de cuenta financiera",
+        "name": "Validador de número de cuenta financiera",
         "version": "3.1.204100",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -17629,7 +17629,7 @@
       {
         "java_package": "org.openbravo.module.taximprovements.es_ES",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/org.openbravo.module.taximprovements.es_ES",
-        "name": "M\u00f3dulo de Impuestos para Espa\u00f1a mejorado",
+        "name": "Módulo de Impuestos para España mejorado",
         "version": "0.0.204100",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -21323,7 +21323,7 @@
       {
         "java_package": "org.openbravo.spain.regions",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/org.openbravo.spain.regions",
-        "name": "Provincias de Espa\u00f1a",
+        "name": "Provincias de España",
         "version": "1.0.200",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -24563,7 +24563,7 @@
       {
         "java_package": "com.smf.almacenes",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.smf.almacenes",
-        "name": "Gesti\u00f3n de Picking y Packing",
+        "name": "Gestión de Picking y Packing",
         "version": "1.0.1",
         "author": "SMF"
       },
@@ -24633,7 +24633,7 @@
       {
         "java_package": "com.smf.phs.warehouse.verificationcontrol",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.smf.phs.warehouse.verificationcontrol",
-        "name": "Control y Verificaci\u00f3n en Almac\u00e9n",
+        "name": "Control y Verificación en Almacén",
         "version": "1.0.0",
         "author": null
       },
@@ -24738,7 +24738,7 @@
       {
         "java_package": "com.smf.pucara.customizationsutils",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.smf.pucara.customizationsutils",
-        "name": "M\u00f3dulo Funciones \u00datiles IPSA",
+        "name": "Módulo Funciones Útiles IPSA",
         "version": "1.0.0",
         "author": null
       },
@@ -24943,7 +24943,7 @@
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pms.costing",
         "name": "Costos (Global)",
         "version": "1.0.0",
-        "author": "Dixan Hern\u00e1ndez Matos"
+        "author": "Dixan Hernández Matos"
       },
       {
         "java_package": "com.wps.pms.discount",
@@ -24955,72 +24955,72 @@
       {
         "java_package": "com.wps.pms.multilang",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pms.multilang",
-        "name": "M\u00f3dulo de Plantillas Multi Lenguaje",
+        "name": "Módulo de Plantillas Multi Lenguaje",
         "version": "1.0.0",
-        "author": "Dixan Hern\u00e1ndez Matos"
+        "author": "Dixan Hernández Matos"
       },
       {
         "java_package": "com.wps.pms.paymentevd",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pms.paymentevd",
-        "name": "M\u00f3dulo de Evidencias de Pago",
+        "name": "Módulo de Evidencias de Pago",
         "version": "1.0.3",
-        "author": "Dixan Hern\u00e1ndez Matos"
+        "author": "Dixan Hernández Matos"
       },
       {
         "java_package": "com.wps.pms.projects",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pms.projects",
         "name": "Proyectos (Global)",
         "version": "1.0.0",
-        "author": "Dixan Hern\u00e1ndez Matos"
+        "author": "Dixan Hernández Matos"
       },
       {
         "java_package": "com.wps.pucara.alerts",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.alerts",
         "name": "Alertas",
         "version": "1.0.0",
-        "author": "Elizabeth Rey Garc\u00eda"
+        "author": "Elizabeth Rey García"
       },
       {
         "java_package": "com.wps.pucara.appventas",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.appventas",
         "name": "Modificaciones APP Ventas",
         "version": "1.0.0",
-        "author": "Elizabeth Rey Garc\u00eda"
+        "author": "Elizabeth Rey García"
       },
       {
         "java_package": "com.wps.pucara.ascomercial",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.ascomercial",
         "name": "Asignacion Comercial",
         "version": "1.0.2",
-        "author": "Elizabeth Rey Garc\u00eda"
+        "author": "Elizabeth Rey García"
       },
       {
         "java_package": "com.wps.pucara.cartascred",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.cartascred",
-        "name": "Cartas de Cr\u00e9dito",
+        "name": "Cartas de Crédito",
         "version": "1.1.0",
         "author": "Wiliam Pereira Santiago"
       },
       {
         "java_package": "com.wps.pucara.contabilidad",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.contabilidad",
-        "name": "Gesti\u00f3n Contabilidad",
+        "name": "Gestión Contabilidad",
         "version": "1.0.0",
-        "author": "Elizabeth Rey Garc\u00eda"
+        "author": "Elizabeth Rey García"
       },
       {
         "java_package": "com.wps.pucara.customizationsphs",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.customizationsphs",
         "name": "Customizaciones Pucara Hercam Supermix",
         "version": "1.1.0",
-        "author": "Elizabeth Rey Garc\u00eda"
+        "author": "Elizabeth Rey García"
       },
       {
         "java_package": "com.wps.pucara.idl",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.idl",
         "name": "Custom Import",
         "version": "1.0.0",
-        "author": "Ricardo Garc\u00eda Lara"
+        "author": "Ricardo García Lara"
       },
       {
         "java_package": "com.wps.pucara.incidencias",
@@ -25032,9 +25032,9 @@
       {
         "java_package": "com.wps.pucara.licitacion",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.licitacion",
-        "name": "Modificaciones Licitaci\u00f3n",
+        "name": "Modificaciones Licitación",
         "version": "1.0.0",
-        "author": "Elizabeth Rey Garc\u00eda"
+        "author": "Elizabeth Rey García"
       },
       {
         "java_package": "com.wps.pucara.marketing",
@@ -25060,9 +25060,9 @@
       {
         "java_package": "com.wps.pucara.preventas",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.preventas",
-        "name": "Previsi\u00f3n de Ventas",
+        "name": "Previsión de Ventas",
         "version": "1.0.1",
-        "author": "Ricardo Garc\u00eda Lara"
+        "author": "Ricardo García Lara"
       },
       {
         "java_package": "com.wps.pucara.proccom",
@@ -25076,7 +25076,7 @@
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.productos",
         "name": "Gestionar Productos",
         "version": "1.3.0",
-        "author": "Elizabeth Rey Garc\u00eda"
+        "author": "Elizabeth Rey García"
       },
       {
         "java_package": "com.wps.pucara.proyectos",
@@ -25102,16 +25102,16 @@
       {
         "java_package": "com.wps.pucara.reportes",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.reportes",
-        "name": "Gesti\u00f3n Reportes",
+        "name": "Gestión Reportes",
         "version": "1.0.0",
-        "author": "Elizabeth Rey Garc\u00eda"
+        "author": "Elizabeth Rey García"
       },
       {
         "java_package": "com.wps.pucara.template",
         "path": "/home/franco/workspace-rodri/pucara-pre-pro/etendo/modules/com.wps.pucara.template",
         "name": "Plantilla Modificaciones Pucara",
         "version": "1.0.1",
-        "author": "Dixan Hern\u00e0ndez Matos"
+        "author": "Dixan Hernàndez Matos"
       },
       {
         "java_package": "com.wps.pucara.tercerosycontactos",
@@ -29970,16 +29970,17 @@
       }
     ]
   },
-  "migration_score": 0,
-  "migratability": "very_hard",
+  "migration_score": 40,
+  "migratability": "hard",
   "score_breakdown": {
     "openbravo_platform": 0,
-    "core_divergences": -40.0,
+    "core_divergences": -25.0,
+    "core_diff_lines": 21070,
     "local_not_maintained": -20,
     "custom_modules": 0,
     "custom_modules_detail": [],
-    "local_maintained_divergences": -50.2,
+    "local_maintained_divergences": -15,
     "gradle_source_divergences": 0,
-    "jar_dependency_outdated": -0.75
+    "jar_dependency_outdated": 0
   }
 }

@@ -134,7 +134,7 @@ def aggregate(records: list) -> dict:
     for r in records:
         for mod in r.get("modules", {}).get("local_not_maintained", []):
             nm_counter[mod.get("java_package", "?")] += 1
-    top10_nm = nm_counter.most_common(10)
+    top10_nm = nm_counter.most_common(50)
 
     # Top 10 custom modules by LOC
     all_custom = []
@@ -154,9 +154,14 @@ def aggregate(records: list) -> dict:
     for r in records:
         score = r.get("migration_score") or 0
         mods = r.get("modules", {})
+        core = r.get("core_divergences", {})
+        client_version = r.get("platform", {}).get("version") or "—"
+        base_version = core.get("base_version") or "—"
+        baseline_type = core.get("baseline_type") or "zip"
+        baseline_exact = baseline_type == "expanded" or base_version == client_version
         clients.append({
             "name": r.get("client", {}).get("name", r.get("_json_stem", "?")),
-            "version": r.get("platform", {}).get("version") or "—",
+            "version": client_version,
             "score": score,
             "migratability": r.get("migratability") or "very_hard",
             "jar": len(mods.get("gradle_jar", [])),
@@ -165,6 +170,8 @@ def aggregate(records: list) -> dict:
             "not_maintained": len(mods.get("local_not_maintained", [])),
             "custom": len(mods.get("custom", [])),
             "html_file": r.get("_html_file"),
+            "base_version": base_version,
+            "baseline_exact": baseline_exact,
         })
     clients.sort(key=lambda x: x["score"], reverse=True)
 
@@ -473,6 +480,24 @@ tbody td { padding: 10px 12px; vertical-align: middle; color: #334155; }
 .viewer-close:hover { background: #f1f5f9; color: #475569; }
 .viewer-frame { flex: 1; border: none; background: #fff; }
 
+/* Baseline badges */
+.baseline-badge {
+    font-family: monospace;
+    font-size: 0.78rem;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.baseline-exact {
+    background: #f0fdf4;
+    color: #16a34a;
+}
+.baseline-approx {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
 /* Version grouped tree */
 .ver-group { border-bottom: 1px solid #f1f5f9; }
 .ver-group:last-child { border-bottom: none; }
@@ -738,9 +763,13 @@ function renderTable() {
         const btn = c.html_file
             ? `<button class="btn-report" onclick="openViewer('${c.html_file}', '${c.name.replace(/'/g,"\\'")}')">Ver reporte</button>`
             : `<button class="btn-report" disabled>Sin reporte</button>`;
+        const baseLabel = c.baseline_exact
+            ? `<span class="baseline-badge baseline-exact" title="Baseline exacto">${c.base_version}</span>`
+            : `<span class="baseline-badge baseline-approx" title="Baseline aproximado (ZIP estático)">${c.base_version} ⚠</span>`;
         return `<tr>
             <td class="td-name">${c.name}</td>
             <td class="td-version">${c.version}</td>
+            <td>${baseLabel}</td>
             <td><span class="score-badge" style="background:${scoreBg(c.score)};color:${scoreColor(c.score)}">${c.score}</span></td>
             <td><span class="mig-badge ${migClass}">${migLabel}</span></td>
             <td class="td-num">${c.jar}</td>
@@ -865,8 +894,8 @@ def render_html(data: dict, generated_at: str) -> str:
   <!-- Chart: Top local_not_maintained -->
   <div class="chart-full">
     <div class="chart-card">
-      <h2>Top módulos sin mantenimiento — frecuencia entre clientes</h2>
-      <div class="chart-wrap-tall" id="chart-nm-wrap">
+      <h2>Top 50 módulos sin mantenimiento — frecuencia entre clientes</h2>
+      <div style="position:relative;height:900px;" id="chart-nm-wrap">
         <canvas id="chart-nm"></canvas>
       </div>
     </div>
@@ -890,6 +919,7 @@ def render_html(data: dict, generated_at: str) -> str:
         <tr>
           <th>Cliente</th>
           <th>Versión</th>
+          <th>Base comparación</th>
           <th class="sortable" onclick="toggleSort()">Score<span id="sort-icon"> ↓</span></th>
           <th>Migratabilidad</th>
           <th class="td-num" title="Gradle JAR">JAR</th>
