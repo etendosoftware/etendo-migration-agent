@@ -37,8 +37,20 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .breakdown-table td { padding: 5px 4px; vertical-align: middle; }
 .bd-label { font-size: 12px; color: #475569; white-space: nowrap; width: 240px; }
 .bd-bar-cell { padding: 0 12px; }
-.bd-bar { height: 8px; background: #ef4444; border-radius: 4px; min-width: 4px; }
-.bd-val { font-size: 12px; font-weight: 600; color: #ef4444; text-align: right; white-space: nowrap; }
+.bd-bar { height: 8px; border-radius: 4px; min-width: 4px; }
+.bd-bar-base { background: #22c55e; }
+.bd-bar-neg  { background: #ef4444; }
+.bd-val { font-size: 12px; font-weight: 600; text-align: right; white-space: nowrap; }
+.bd-val-base { color: #22c55e; }
+.bd-val-neg  { color: #ef4444; }
+.bd-val-result { font-size: 14px; }
+.bd-row-base td { padding-bottom: 8px; }
+.bd-row-sep td { padding: 4px 0; }
+.bd-sep-line { border-top: 1px solid #e2e8f0; }
+.bd-row-total td { padding-top: 4px; }
+.bd-label-total  { font-weight: 600; color: #334155; }
+.bd-row-result td { padding-top: 8px; border-top: 2px solid #e2e8f0; }
+.bd-label-result { font-weight: 700; font-size: 13px; color: #0f172a; }
 
 /* Module pills */
 .module-pills { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
@@ -194,7 +206,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <div class="meta-item"><span>Plataforma </span><strong>Etendo 25.1.6</strong></div>
       <div class="meta-item"><span>Base de comparación </span><strong>v25.4.11</strong></div>
       <div class="meta-item"><span>Módulos totales </span><strong>171</strong></div>
-      <div class="meta-item"><span>Generado </span><strong>2026-03-27 19:52</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-03-27 19:56</strong></div>
     </div>
   </div>
 
@@ -313,47 +325,44 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         
 <table class="breakdown-table">
   <tbody>
-      <tr>
+      <tr class="bd-row-base">
+        <td class="bd-label">Puntuación base</td>
+        <td class="bd-bar-cell"><div class="bd-bar bd-bar-base" style="width:100%"></div></td>
+        <td class="bd-val bd-val-base">100</td>
+      </tr>
+      <tr class="bd-row-penalty">
         <td class="bd-label">Divergencias en core</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar" style="width:0.2%"></div>
+          <div class="bd-bar bd-bar-neg" style="width:57.1%"></div>
         </td>
-        <td class="bd-val">-20.0</td>
+        <td class="bd-val bd-val-neg">-20.0</td>
       </tr>
-      <tr>
-        <td class="bd-label">core_diff_lines</td>
-        <td class="bd-bar-cell">
-          <div class="bd-bar" style="width:100.0%"></div>
-        </td>
-        <td class="bd-val">+12755.0</td>
-      </tr>
-      <tr>
+      <tr class="bd-row-penalty">
         <td class="bd-label">Módulos locales sin mantenimiento</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar" style="width:0.2%"></div>
+          <div class="bd-bar bd-bar-neg" style="width:65.7%"></div>
         </td>
-        <td class="bd-val">-23.0</td>
+        <td class="bd-val bd-val-neg">-23.0</td>
       </tr>
-      <tr>
-        <td class="bd-label">local_not_maintained_translations</td>
-        <td class="bd-bar-cell">
-          <div class="bd-bar" style="width:0.2%"></div>
-        </td>
-        <td class="bd-val">+21.0</td>
-      </tr>
-      <tr>
-        <td class="bd-label">local_not_maintained_regular</td>
-        <td class="bd-bar-cell">
-          <div class="bd-bar" style="width:0.3%"></div>
-        </td>
-        <td class="bd-val">+34.0</td>
-      </tr>
-      <tr>
+      <tr class="bd-row-penalty">
         <td class="bd-label">Customizaciones</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar" style="width:0.3%"></div>
+          <div class="bd-bar bd-bar-neg" style="width:100.0%"></div>
         </td>
-        <td class="bd-val">-35.0</td>
+        <td class="bd-val bd-val-neg">-35.0</td>
+      </tr>
+      <tr class="bd-row-sep"><td colspan="3"><div class="bd-sep-line"></div></td></tr>
+      <tr class="bd-row-total">
+        <td class="bd-label bd-label-total">Total penalizaciones</td>
+        <td class="bd-bar-cell"></td>
+        <td class="bd-val bd-val-neg">-78.0</td>
+      </tr>
+      <tr class="bd-row-result">
+        <td class="bd-label bd-label-result">Score final</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar bd-bar-result" style="width:22%;background:#ef4444"></div>
+        </td>
+        <td class="bd-val bd-val-result" style="color:#ef4444">22</td>
       </tr>
   </tbody>
 </table>
@@ -2905,7 +2914,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 </table>
   </div>
 
-  <div class="footer">Generado por Etendo Migration Agent · 2026-03-27 19:52</div>
+  <div class="footer">Generado por Etendo Migration Agent · 2026-03-27 19:56</div>
 </div>
 <script>
 function toggle(header) {

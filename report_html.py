@@ -159,23 +159,65 @@ def render_score_ring(score, label):
 </div>"""
 
 
-def render_breakdown(breakdown):
-    # filter out detail sub-keys (lists/dicts)
-    numeric = {k: v for k, v in breakdown.items() if isinstance(v, (int, float))}
+def render_breakdown(breakdown, final_score):
+    # Keys to show (in order), excluding internal/detail keys
+    _SKIP = {"custom_modules_detail", "core_diff_lines",
+             "local_not_maintained_translations", "local_not_maintained_regular"}
+    _ORDER = [
+        "openbravo_platform",
+        "core_divergences",
+        "local_not_maintained",
+        "custom_modules",
+        "local_maintained_divergences",
+        "gradle_source_divergences",
+        "jar_dependency_outdated",
+    ]
+
+    numeric = {k: v for k, v in breakdown.items()
+               if k not in _SKIP and isinstance(v, (int, float))}
+    total_penalty = sum(v for v in numeric.values() if v < 0)
     max_abs = max((abs(v) for v in numeric.values()), default=1) or 1
+
     rows = ""
-    for key, val in numeric.items():
-        if val == 0:
+    # Base score row
+    rows += f"""
+      <tr class="bd-row-base">
+        <td class="bd-label">Puntuación base</td>
+        <td class="bd-bar-cell"><div class="bd-bar bd-bar-base" style="width:100%"></div></td>
+        <td class="bd-val bd-val-base">100</td>
+      </tr>"""
+
+    # Penalty rows (ordered, skip zeroes)
+    for key in _ORDER:
+        val = numeric.get(key)
+        if val is None or val == 0:
             continue
         pct = abs(val) / max_abs * 100
         rows += f"""
-      <tr>
+      <tr class="bd-row-penalty">
         <td class="bd-label">{breakdown_label(key)}</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar" style="width:{pct:.1f}%"></div>
+          <div class="bd-bar bd-bar-neg" style="width:{pct:.1f}%"></div>
         </td>
-        <td class="bd-val">{val:+.1f}</td>
+        <td class="bd-val bd-val-neg">{val:+.1f}</td>
       </tr>"""
+
+    # Separator + total penalty
+    rows += f"""
+      <tr class="bd-row-sep"><td colspan="3"><div class="bd-sep-line"></div></td></tr>
+      <tr class="bd-row-total">
+        <td class="bd-label bd-label-total">Total penalizaciones</td>
+        <td class="bd-bar-cell"></td>
+        <td class="bd-val bd-val-neg">{total_penalty:+.1f}</td>
+      </tr>
+      <tr class="bd-row-result">
+        <td class="bd-label bd-label-result">Score final</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar bd-bar-result" style="width:{final_score}%;background:{score_color(final_score)}"></div>
+        </td>
+        <td class="bd-val bd-val-result" style="color:{score_color(final_score)}">{final_score}</td>
+      </tr>"""
+
     return f"""
 <table class="breakdown-table">
   <tbody>{rows}
@@ -449,8 +491,20 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .breakdown-table td { padding: 5px 4px; vertical-align: middle; }
 .bd-label { font-size: 12px; color: #475569; white-space: nowrap; width: 240px; }
 .bd-bar-cell { padding: 0 12px; }
-.bd-bar { height: 8px; background: #ef4444; border-radius: 4px; min-width: 4px; }
-.bd-val { font-size: 12px; font-weight: 600; color: #ef4444; text-align: right; white-space: nowrap; }
+.bd-bar { height: 8px; border-radius: 4px; min-width: 4px; }
+.bd-bar-base { background: #22c55e; }
+.bd-bar-neg  { background: #ef4444; }
+.bd-val { font-size: 12px; font-weight: 600; text-align: right; white-space: nowrap; }
+.bd-val-base { color: #22c55e; }
+.bd-val-neg  { color: #ef4444; }
+.bd-val-result { font-size: 14px; }
+.bd-row-base td { padding-bottom: 8px; }
+.bd-row-sep td { padding: 4px 0; }
+.bd-sep-line { border-top: 1px solid #e2e8f0; }
+.bd-row-total td { padding-top: 4px; }
+.bd-label-total  { font-weight: 600; color: #334155; }
+.bd-row-result td { padding-top: 8px; border-top: 2px solid #e2e8f0; }
+.bd-label-result { font-weight: 700; font-size: 13px; color: #0f172a; }
 
 /* Module pills */
 .module-pills { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
@@ -673,7 +727,7 @@ def render(report):
       {render_score_ring(score, report.get('migratability', ''))}
       <div class="score-right">
         <p style="font-size:13px;color:#475569;margin-bottom:12px;">Factores de penalización:</p>
-        {render_breakdown(breakdown)}
+        {render_breakdown(breakdown, score)}
       </div>
     </div>
   </div>
