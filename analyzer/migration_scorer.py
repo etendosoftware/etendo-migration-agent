@@ -109,21 +109,23 @@ def compute_score(report: dict) -> dict:
     breakdown["local_not_maintained_regular"] = len(nm_regular)
 
     # --- Custom modules — tier-based LOC penalty ---
+    # Translation packs within custom modules penalize a flat -0.5 regardless of LOC
     _TIER_PENALTY = {"micro": 1, "small": 4, "medium": 9, "large": 16}
     custom = report.get("modules", {}).get("custom", [])
     custom_penalty = 0.0
     custom_detail = []
     for m in custom:
+        is_trans = bool(_LOCALE_RE.search(m.get("java_package", "")))
         tier_key = (m.get("custom_size") or {}).get("key", "medium")
         tier_label = (m.get("custom_size") or {}).get("label", "desconocido")
         loc = m.get("line_count", 0)
-        pen = _TIER_PENALTY.get(tier_key, 9)
+        pen = 0.5 if is_trans else _TIER_PENALTY.get(tier_key, 9)
         custom_penalty += pen
         custom_detail.append({
             "java_package": m["java_package"],
             "line_count": loc,
-            "size_tier": tier_key,
-            "size_label": tier_label,
+            "size_tier": "translation" if is_trans else tier_key,
+            "size_label": "Traducción" if is_trans else tier_label,
             "penalty": -pen,
         })
     custom_penalty = _clamp(custom_penalty, 0, 35)

@@ -211,7 +211,8 @@ def render_module_row(mod, show_diff=True, is_custom=False):
         tier_key  = size.get("key", "")
         tier_lbl  = size.get("label", "—")
         tier_cls  = {"micro": "tier-micro", "small": "tier-small",
-                     "medium": "tier-medium", "large": "tier-large"}.get(tier_key, "tier-medium")
+                     "medium": "tier-medium", "large": "tier-large",
+                     "translation": "tier-translation"}.get(tier_key, "tier-medium")
         tier_penalties = {"micro": 1, "small": 4, "medium": 9, "large": 16}
         pen = tier_penalties.get(tier_key, 9)
         custom_html = f"""
@@ -558,9 +559,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .tier-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px; font-weight: 600;
               text-transform: uppercase; letter-spacing: 0.03em; }
 .tier-micro  { background: #f0fdf4; color: #166534; }
-.tier-small  { background: #fefce8; color: #854d0e; }
-.tier-medium { background: #fff7ed; color: #9a3412; }
-.tier-large  { background: #fef2f2; color: #991b1b; }
+.tier-small       { background: #fefce8; color: #854d0e; }
+.tier-medium      { background: #fff7ed; color: #9a3412; }
+.tier-large       { background: #fef2f2; color: #991b1b; }
+.tier-translation { background: #f1f5f9; color: #64748b; }
 
 /* Methodology */
 .meth-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }

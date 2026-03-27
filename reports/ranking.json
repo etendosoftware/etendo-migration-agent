@@ -19957,9 +19957,9 @@
       {
         "java_package": "com.smf.ranking.rectify.invoice.es_ES",
         "line_count": 100,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
       },
       {
         "java_package": "com.smf.ranking.remittance",

@@ -8035,9 +8035,9 @@
       {
         "java_package": "com.exos.acico.es_ES",
         "line_count": 2237,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
       },
       {
         "java_package": "com.exos.acico.template",
@@ -8056,9 +8056,9 @@
       {
         "java_package": "com.exos.acico.webservices.es_ES",
         "line_count": 115,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
       },
       {
         "java_package": "com.smf.acico.brokerreport",

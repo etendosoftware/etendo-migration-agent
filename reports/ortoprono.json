@@ -23743,9 +23743,9 @@
       {
         "java_package": "org.openbravo.ortoprono.es_ES",
         "line_count": 13756,
-        "size_tier": "large",
-        "size_label": "> 8.000 LOC",
-        "penalty": -16
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
       },
       {
         "java_package": "ortoprono.CustomizationTemplate",

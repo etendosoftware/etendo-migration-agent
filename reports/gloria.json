@@ -18355,9 +18355,9 @@
       {
         "java_package": "com.smf.gloria.customization.es_es",
         "line_count": 1080,
-        "size_tier": "small",
-        "size_label": "500–2.000 LOC",
-        "penalty": -4
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
       },
       {
         "java_package": "com.smf.gloria.dispacthmanagement.ES_es",
@@ -18411,9 +18411,9 @@
       {
         "java_package": "com.smf.gloria.generate.purchaseorder.es_ES",
         "line_count": 663,
-        "size_tier": "small",
-        "size_label": "500–2.000 LOC",
-        "penalty": -4
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
       },
       {
         "java_package": "com.smf.gloria.integracion.truckwheel",

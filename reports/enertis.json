@@ -12260,9 +12260,9 @@
       {
         "java_package": "com.smf.enertis.multiphaseproject.en_US",
         "line_count": 135,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
       },
       {
         "java_package": "com.smf.enertis.project.customization",
@@ -12274,9 +12274,9 @@
       {
         "java_package": "com.smf.enertis.project.customization.es_ES",
         "line_count": 4253,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
       },
       {
         "java_package": "com.smf.enertis.project.customization.template",
