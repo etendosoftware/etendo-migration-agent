@@ -124,6 +124,20 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .empty { color: #9ca3af; font-size: 13px; font-style: italic; padding: 8px 0; }
 .footer { text-align: center; font-size: 11px; color: #9ca3af; margin-top: 32px; }
 
+/* Translation badge */
+.translation-badge {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: #f1f5f9;
+    color: #64748b;
+    font-weight: 600;
+    vertical-align: middle;
+    letter-spacing: 0.02em;
+}
+
 /* Custom module detail */
 .custom-detail { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
 .loc-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px;
@@ -179,7 +193,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <div class="meta-item"><span>Plataforma </span><strong>Etendo 24.3.1</strong></div>
       <div class="meta-item"><span>Base de comparación </span><strong>v25.4.11</strong></div>
       <div class="meta-item"><span>Módulos totales </span><strong>127</strong></div>
-      <div class="meta-item"><span>Generado </span><strong>2026-03-27 14:34</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-03-27 15:32</strong></div>
     </div>
   </div>
 
@@ -285,10 +299,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   <svg viewBox="0 0 120 120" class="score-ring">
     <circle cx="60" cy="60" r="54" fill="none" stroke="#e5e7eb" stroke-width="10"/>
     <circle cx="60" cy="60" r="54" fill="none" stroke="#ef4444" stroke-width="10"
-      stroke-dasharray="74.6 264.6"
+      stroke-dasharray="64.5 274.8"
       stroke-dashoffset="84.8"
       stroke-linecap="round"/>
-    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#ef4444">22</text>
+    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#ef4444">19</text>
     <text x="60" y="73" text-anchor="middle" font-size="9" fill="#6b7280">/100</text>
   </svg>
   <div class="score-label" style="color:#ef4444">Muy difícil</div>
@@ -317,7 +331,21 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <td class="bd-bar-cell">
           <div class="bd-bar" style="width:0.1%"></div>
         </td>
-        <td class="bd-val">-20.0</td>
+        <td class="bd-val">-23.0</td>
+      </tr>
+      <tr>
+        <td class="bd-label">local_not_maintained_translations</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar" style="width:0.1%"></div>
+        </td>
+        <td class="bd-val">+17.0</td>
+      </tr>
+      <tr>
+        <td class="bd-label">local_not_maintained_regular</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar" style="width:0.4%"></div>
+        </td>
+        <td class="bd-val">+87.0</td>
       </tr>
       <tr>
         <td class="bd-label">Customizaciones</td>
@@ -428,7 +456,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   <div class="module-body">
     <table class='mod-table'><tbody>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.advpaymentmngt.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.advpaymentmngt.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v3.0.1000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -443,7 +471,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.client.application.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.application.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.1300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -458,7 +486,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.client.htmlwidget.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.htmlwidget.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.1</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         
@@ -473,7 +501,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.client.kernel.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.kernel.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.5</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -488,7 +516,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.client.myob.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.myob.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.301</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -503,7 +531,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.client.querylist.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.querylist.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         
@@ -518,7 +546,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.client.widgets.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.widgets.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         
@@ -533,7 +561,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.financial.paymentreport.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.financial.paymentreport.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -563,7 +591,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.reports.ordersawaitingdelivery.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.reports.ordersawaitingdelivery.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -578,7 +606,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.service.datasource.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.service.datasource.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -593,7 +621,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.service.integration.google.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.service.integration.google.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -608,7 +636,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.service.integration.openid.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.service.integration.openid.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -623,7 +651,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.userinterface.selector.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.userinterface.selector.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -638,7 +666,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.userinterface.smartclient.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.userinterface.smartclient.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.0.300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo S.L.U.</span>
@@ -653,7 +681,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">org.openbravo.v3.translation.pack.es_ES</span></td>
+      <td class="mod-pkg"><span class="pkg">org.openbravo.v3.translation.pack.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v3.4.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
         <span class='author'>Openbravo SLU</span>
@@ -1105,7 +1133,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.advanced.pay.recei.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.advanced.pay.recei.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.1</span></div>
         <span class='author'>Tegik</span>
@@ -1249,7 +1277,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.html.widget.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.html.widget.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1267,7 +1295,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.integration.google.api.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.integration.google.api.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1276,7 +1304,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.json.datasource.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.json.datasource.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1330,7 +1358,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.openid.service.integration.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.openid.service.integration.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1339,7 +1367,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.order.awaiting.delivery.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.order.awaiting.delivery.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1348,7 +1376,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.payment.repor.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.payment.repor.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1357,7 +1385,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.query.list.widget.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.query.list.widget.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1366,7 +1394,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.smartclient.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.smartclient.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1384,7 +1412,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.translate.principalcore.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.translate.principalcore.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1393,7 +1421,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.translation.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.translation.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v4.2.0</span></div>
         <span class='author'>Tegik</span>
@@ -1402,7 +1430,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.user.application.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.user.application.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1411,7 +1439,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.user.interface.kernel.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.user.interface.kernel.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1420,7 +1448,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.user.interface.selector.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.user.interface.selector.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1429,7 +1457,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.warehouse.pickinglist.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.warehouse.pickinglist.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v0.0.5</span></div>
         <span class='author'>TEGIK</span>
@@ -1438,7 +1466,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.widget.collection.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.widget.collection.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -1447,7 +1475,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       </td>
     </tr>
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">com.tegik.workspace.widget.es_MX</span></td>
+      <td class="mod-pkg"><span class="pkg">com.tegik.workspace.widget.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
       <td class="mod-meta">
         <div class="ver-row"><span class="ver-installed">v1.9.0</span></div>
         <span class='author'>Tegik</span>
@@ -2175,7 +2203,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 </table>
   </div>
 
-  <div class="footer">Generado por Etendo Migration Agent · 2026-03-27 14:34</div>
+  <div class="footer">Generado por Etendo Migration Agent · 2026-03-27 15:32</div>
 </div>
 <script>
 function toggle(header) {

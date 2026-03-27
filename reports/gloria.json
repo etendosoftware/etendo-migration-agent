@@ -18305,7 +18305,9 @@
     "openbravo_platform": -20,
     "core_divergences": -25.0,
     "core_diff_lines": 89036,
-    "local_not_maintained": -20,
+    "local_not_maintained": -23,
+    "local_not_maintained_translations": 21,
+    "local_not_maintained_regular": 117,
     "custom_modules": -35,
     "custom_modules_detail": [
       {

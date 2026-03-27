@@ -8000,13 +8000,15 @@
       }
     ]
   },
-  "migration_score": 25,
+  "migration_score": 22,
   "migratability": "very_hard",
   "score_breakdown": {
     "openbravo_platform": 0,
     "core_divergences": -20.0,
     "core_diff_lines": 16875,
-    "local_not_maintained": -20,
+    "local_not_maintained": -23,
+    "local_not_maintained_translations": 13,
+    "local_not_maintained_regular": 33,
     "custom_modules": -35,
     "custom_modules_detail": [
       {

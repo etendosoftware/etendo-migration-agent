@@ -96,10 +96,17 @@ def compute_score(report: dict) -> dict:
     breakdown["core_diff_lines"] = diff_lines
 
     # --- Local not-maintained modules ---
+    # Translation packs (java_package ends with _xx_XX locale) penalize much less
+    import re as _re
+    _LOCALE_RE = _re.compile(r'[._][a-z]{2}[._][a-zA-Z]{2}$')
     not_maintained = report.get("modules", {}).get("local_not_maintained", [])
-    nm_penalty = _clamp(len(not_maintained) * 3, 0, 20)
+    nm_regular = [m for m in not_maintained if not _LOCALE_RE.search(m.get("java_package", ""))]
+    nm_translations = [m for m in not_maintained if _LOCALE_RE.search(m.get("java_package", ""))]
+    nm_penalty = _clamp(len(nm_regular) * 3, 0, 20) + _clamp(len(nm_translations) * 0.3, 0, 3)
     score -= nm_penalty
     breakdown["local_not_maintained"] = round(-nm_penalty, 2)
+    breakdown["local_not_maintained_translations"] = len(nm_translations)
+    breakdown["local_not_maintained_regular"] = len(nm_regular)
 
     # --- Custom modules — tier-based LOC penalty ---
     _TIER_PENALTY = {"micro": 1, "small": 4, "medium": 9, "large": 16}

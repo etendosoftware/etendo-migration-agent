@@ -6193,6 +6193,8 @@
     "core_divergences": -25.0,
     "core_diff_lines": 54225,
     "local_not_maintained": -20,
+    "local_not_maintained_translations": 0,
+    "local_not_maintained_regular": 58,
     "custom_modules": -4.0,
     "custom_modules_detail": [
       {

@@ -221,9 +221,14 @@ def render_module_row(mod, show_diff=True, is_custom=False):
         <span class="pen-badge">penalización: {pen:+d}</span>
       </div>"""
 
+    import re as _re
+    _LOCALE_RE = _re.compile(r'[._][a-z]{2}[._][a-zA-Z]{2}$')
+    is_translation = bool(_LOCALE_RE.search(mod.get('java_package', '')))
+    translation_badge = "<span class='translation-badge'>🌐 traducción</span>" if is_translation else ""
+
     return f"""
     <tr class="mod-row">
-      <td class="mod-pkg"><span class="pkg">{mod['java_package']}</span></td>
+      <td class="mod-pkg"><span class="pkg">{mod['java_package']}</span>{translation_badge}</td>
       <td class="mod-meta">
         <div class="ver-row">{ver_html}</div>
         {"<span class='author'>" + author + "</span>" if author else ""}
@@ -529,6 +534,20 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
 .empty { color: #9ca3af; font-size: 13px; font-style: italic; padding: 8px 0; }
 .footer { text-align: center; font-size: 11px; color: #9ca3af; margin-top: 32px; }
+
+/* Translation badge */
+.translation-badge {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: #f1f5f9;
+    color: #64748b;
+    font-weight: 600;
+    vertical-align: middle;
+    letter-spacing: 0.02em;
+}
 
 /* Custom module detail */
 .custom-detail { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }

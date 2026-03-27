@@ -129,12 +129,15 @@ def aggregate(records: list) -> dict:
     # Version distribution (sorted by version desc) — kept for legacy
     version_items = sorted(version_counter.items(), key=lambda x: x[0], reverse=True)
 
-    # Top 10 local_not_maintained modules by frequency
+    # Top 50 local_not_maintained modules by frequency (translations flagged)
+    import re as _re
+    _LOCALE_RE = _re.compile(r'[._][a-z]{2}[._][a-zA-Z]{2}$')
     nm_counter = Counter()
     for r in records:
         for mod in r.get("modules", {}).get("local_not_maintained", []):
             nm_counter[mod.get("java_package", "?")] += 1
     top10_nm = nm_counter.most_common(50)
+    nm_translations = {pkg for pkg, _ in top10_nm if _LOCALE_RE.search(pkg)}
 
     # Top 10 custom modules by LOC
     all_custom = []
@@ -199,6 +202,7 @@ def aggregate(records: list) -> dict:
         "top_nm_modules": {
             "labels": [pkg for pkg, _ in top10_nm],
             "values": [cnt for _, cnt in top10_nm],
+            "is_translation": [pkg in nm_translations for pkg, _ in top10_nm],
         },
         "top_custom_by_loc": {
             "labels": [m["label"] for m in top10_custom],
@@ -689,6 +693,7 @@ function renderNmModules() {
         wrap.innerHTML = '<div class="chart-empty">Sin módulos sin mantenimiento</div>';
         return;
     }
+    const colors = D.top_nm_modules.is_translation.map(t => t ? '#94a3b8' : '#f97316');
     const ctx = document.getElementById('chart-nm').getContext('2d');
     new Chart(ctx, {
         type: 'bar',
@@ -696,13 +701,23 @@ function renderNmModules() {
             labels: D.top_nm_modules.labels.map(l => truncLabel(l, 50)),
             datasets: [{
                 data: D.top_nm_modules.values,
-                backgroundColor: '#f97316',
+                backgroundColor: colors,
                 borderRadius: 4,
             }]
         },
         options: {
             indexAxis: 'y',
-            plugins: { legend: { display: false } },
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: (ctx) => {
+                            const isTrans = D.top_nm_modules.is_translation[ctx.dataIndex];
+                            return ` ${ctx.parsed.x} cliente${ctx.parsed.x !== 1 ? 's' : ''}${isTrans ? ' — traducción' : ''}`;
+                        }
+                    }
+                }
+            },
             scales: {
                 x: { ticks: { stepSize: 1, color: '#64748b' }, grid: { color: '#1e293b' } },
                 y: { ticks: { color: '#94a3b8', font: { size: 11 } }, grid: { display: false } }
