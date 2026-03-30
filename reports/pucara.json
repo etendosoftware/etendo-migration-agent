@@ -29970,11 +29970,11 @@
       }
     ]
   },
-  "migration_score": 38,
-  "migratability": "very_hard",
+  "migration_score": 48,
+  "migratability": "hard",
   "score_breakdown": {
     "openbravo_platform": 0,
-    "core_divergences": -25.0,
+    "core_divergences": -15.0,
     "core_diff_lines": 21070,
     "local_not_maintained": -22.4,
     "local_not_maintained_translations": 8,

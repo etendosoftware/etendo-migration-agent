@@ -18303,7 +18303,7 @@
   "migratability": "very_hard",
   "score_breakdown": {
     "openbravo_platform": -20,
-    "core_divergences": -25.0,
+    "core_divergences": -15.0,
     "core_diff_lines": 89036,
     "local_not_maintained": -23,
     "local_not_maintained_translations": 21,

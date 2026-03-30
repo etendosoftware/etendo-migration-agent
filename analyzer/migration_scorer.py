@@ -3,19 +3,14 @@ migration_scorer.py — Calculates a migration score and migratability label.
 
 Score: 0–100 (higher = easier to migrate to SaaS)
 
-All penalties are based on volume of custom code (LOC / diff lines),
-NOT on file counts.
-
 Penalties applied:
-  - Platform is Openbravo (not Etendo)              → -20
+  - Platform is Openbravo (not Etendo)              → -20 fixed
 
   - Core divergences (diff lines added+removed):
-      < 1.000 lines                                  →  -5
-      1.000 – 5.000 lines                            → -12
-      5.000 – 20.000 lines                           → -20
-      > 20.000 lines                                 → -25 (cap)
+      -0.5 per 100 lines (cap -15)
 
   - Local not-maintained modules                     → -3 per module (cap -20)
+    Translation packs                               → -0.3 per module (cap -3)
 
   - Custom modules — tier-based LOC penalty:
       micro  < 500 LOC                               →  -1
@@ -50,13 +45,8 @@ def _clamp(value: float, lo: float = 0.0, hi: float = 100.0) -> float:
 
 
 def _core_lines_penalty(diff_lines: int) -> float:
-    if diff_lines < 1_000:
-        return 5.0
-    if diff_lines < 5_000:
-        return 12.0
-    if diff_lines < 20_000:
-        return 20.0
-    return 25.0
+    """−0.5 per 100 lines, capped at 15."""
+    return min((diff_lines / 100) * 0.5, 15.0)
 
 
 def _maintained_module_penalty(diff_lines: int) -> float:

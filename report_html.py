@@ -176,7 +176,7 @@ def render_breakdown(breakdown, final_score):
     # local_not_maintained = regular cap (-20) + translations cap (-3) = -23
     _CAPS = {
         "openbravo_platform":           -20,
-        "core_divergences":             -25,
+        "core_divergences":             -15,
         "local_not_maintained":         -23,
         "custom_modules":               -35,
         "local_maintained_divergences": -15,
@@ -440,7 +440,6 @@ def render_methodology():
       <thead><tr><th>Factor</th><th>Penalización</th></tr></thead>
       <tbody>
         <tr><td>Plataforma Openbravo (sin build.gradle)</td><td>−20 fijo</td></tr>
-        <tr><td>Archivos de core con diferencias</td><td>−0.5/archivo (máximo −25)</td></tr>
         <tr><td>Líneas de diferencia en core (por cada 100)</td><td>−0.5 (máximo −15)</td></tr>
       </tbody>
     </table>
