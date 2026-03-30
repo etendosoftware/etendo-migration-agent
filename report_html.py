@@ -282,6 +282,11 @@ def render_module_row(mod, show_diff=True, is_custom=False):
     is_translation = bool(_LOCALE_RE.search(mod.get('java_package', '')))
     translation_badge = "<span class='translation-badge'>🌐 traducción</span>" if is_translation else ""
 
+    usage_score = mod.get("usage_score")
+    usage_html = ""
+    if usage_score is not None:
+        usage_html = f'<div style="margin-top:4px">{_usage_score_html(usage_score)}</div>'
+
     return f"""
     <tr class="mod-row">
       <td class="mod-pkg"><span class="pkg">{mod['java_package']}</span>{translation_badge}</td>
@@ -289,7 +294,7 @@ def render_module_row(mod, show_diff=True, is_custom=False):
         <div class="ver-row">{ver_html}</div>
         {"<span class='author'>" + author + "</span>" if author else ""}
         {"<span class='bundle'>" + bundle + "</span>" if bundle else ""}
-        {diff_html}{custom_html}
+        {diff_html}{custom_html}{usage_html}
       </td>
     </tr>"""
 
@@ -478,14 +483,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .page { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
 
 /* Header */
-.report-header { background: #1e293b; color: #f1f5f9; padding: 28px 32px;
-                 border-radius: 12px; margin-bottom: 24px; }
-.report-header h1 { font-size: 22px; font-weight: 700; }
-.report-header .sub { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+.report-header { background: #fff; border: 1px solid #e2e8f0; border-top: 4px solid #3b82f6;
+                 color: #0f172a; padding: 28px 32px; border-radius: 12px; margin-bottom: 24px; }
+.report-header h1 { font-size: 22px; font-weight: 700; color: #0f172a; }
+.report-header .sub { font-size: 13px; color: #6b7280; margin-top: 6px; }
 .header-meta { display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
 .meta-item { font-size: 13px; }
-.meta-item strong { color: #e2e8f0; }
-.meta-item span { color: #94a3b8; }
+.meta-item strong { color: #1e293b; }
+.meta-item span { color: #6b7280; }
 
 /* Cards */
 .card { background: #fff; border-radius: 10px; border: 1px solid #e2e8f0;
@@ -663,7 +668,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 /* ── Custom Assessor ────────────────────────────────────────────────────── */
 .asmnt-meta { font-size: 12px; color: #64748b; margin-bottom: 16px; }
 .asmnt-section-label { font-size: 11px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.5px; color: #94a3b8; margin: 18px 0 10px; }
+  letter-spacing: 0.5px; color: #6b7280; margin: 18px 0 10px; }
 .asmnt-badge { display: inline-block; padding: 2px 8px; border-radius: 4px;
   font-size: 11px; font-weight: 600; letter-spacing: 0.3px; }
 .asmnt-trivial  { background: #dcfce7; color: #166534; }
@@ -684,14 +689,31 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .asmnt-rec  { color: #0f172a; font-size: 12px; }
 .asmnt-row-high td { background: #fff5f5; }
 .asmnt-row-med  td { background: #fffbeb; }
-.asmnt-effort-box { background: #1e293b; color: #f1f5f9; border-radius: 8px;
+.asmnt-effort-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
   padding: 14px 20px; margin-top: 12px; display: flex; gap: 32px; flex-wrap: wrap; }
 .asmnt-stat { text-align: center; }
-.asmnt-stat-total { border-left: 1px solid #334155; padding-left: 32px; }
-.asmnt-stat-val       { font-size: 22px; font-weight: 700; color: #38bdf8; }
+.asmnt-stat-total { border-left: 1px solid #e2e8f0; padding-left: 32px; }
+.asmnt-stat-val       { font-size: 22px; font-weight: 700; color: #3b82f6; }
 .asmnt-stat-val-total { font-size: 22px; font-weight: 700; color: #f97316; }
-.asmnt-stat-lbl { font-size: 11px; color: #94a3b8; margin-top: 2px; }
-.asmnt-note { font-size: 11px; color: #94a3b8; margin-top: 10px; }
+.asmnt-stat-lbl { font-size: 11px; color: #6b7280; margin-top: 2px; }
+.asmnt-note { font-size: 11px; color: #6b7280; margin-top: 10px; }
+.asmnt-mx-tag { font-size: 11px; background: #eff6ff; color: #3b82f6; border: 1px solid #bfdbfe;
+  padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+.asmnt-elim-cand { background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+.asmnt-row-elim td { background: #fef9f9; opacity: 0.85; }
+.asmnt-upstream  { background: #d1fae5; color: #065f46; }
+.asmnt-already   { background: #dbeafe; color: #1e40af; }
+.asmnt-elim      { background: #fee2e2; color: #991b1b; }
+.asmnt-stat-saved { border-left: 2px solid #22c55e; padding-left: 12px; }
+.usage-score { font-size: 12px; white-space: nowrap; }
+.usage-score-null { color: #9ca3af; font-style: italic; font-size: 11px; }
+.usage-score-zero { background: #f1f5f9; color: #9ca3af; font-size: 10px; padding: 2px 6px; border-radius: 4px; }
+.usage-bar { height: 4px; background: #e5e7eb; border-radius: 2px; margin-top: 3px; width: 60px; }
+.usage-fill { height: 4px; border-radius: 2px; }
+.win-group { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 3px; }
+.win-tag { font-size: 10px; padding: 1px 5px; border-radius: 3px; }
+.win-used   { background: #d1fae5; color: #065f46; }
+.win-unused { background: #fee2e2; color: #991b1b; }
 """
 
 JS = """
@@ -731,6 +753,9 @@ def _abadge(cls, label):
 
 
 def _effort_tag(s):
+    # Normalize: replace "days", "day", "días", "dia" with "U.E."
+    import re as _re
+    s = _re.sub(r'\b(days?|d[íi]as?)\b', 'U.E.', str(s), flags=_re.IGNORECASE)
     return f'<span class="asmnt-effort">{s}</span>'
 
 
@@ -738,6 +763,41 @@ def _fmt_effort_range(lo, hi):
     if lo == hi:
         return f"{lo:.0f}"
     return f"{lo:.0f}–{hi:.0f}"
+
+
+def _usage_score_html(score):
+    """Renders a usage score badge (1-10) with color gradient and bar."""
+    if score is None:
+        return '<span class="usage-score usage-score-null">sin datos</span>'
+    score = int(score)
+    if score == 0:
+        color = "#6b7280"
+        label = "sin uso"
+        return f'<span class="usage-score usage-score-zero">{label}</span>'
+    # Color: red (1-3) → orange (4-6) → green (7-10)
+    if score <= 3:
+        color = "#ef4444"
+    elif score <= 6:
+        color = "#f59e0b"
+    else:
+        color = "#22c55e"
+    bars = "█" * score + "░" * (10 - score)
+    return (f'<span class="usage-score" style="color:{color}">'
+            f'<strong>{score}</strong>/10</span>'
+            f'<div class="usage-bar" title="{score}/10">'
+            f'<div class="usage-fill" style="width:{score*10}%;background:{color}"></div></div>')
+
+
+def _windows_html(used, unused):
+    """Renders used/unused window lists compactly."""
+    parts = []
+    if used:
+        items = "".join(f'<span class="win-tag win-used">{w}</span>' for w in used)
+        parts.append(f'<div class="win-group">{items}</div>')
+    if unused:
+        items = "".join(f'<span class="win-tag win-unused">{w}</span>' for w in unused)
+        parts.append(f'<div class="win-group">{items}</div>')
+    return "".join(parts) if parts else ""
 
 
 def render_assessment(assessment):
@@ -749,30 +809,38 @@ def render_assessment(assessment):
     unm_items    = assessment.get("unmaintained_modules", [])
     effort       = assessment.get("effort_summary", {})
     generated    = assessment.get("generated", "")
+    mx_instance  = assessment.get("mixpanel_source_instance")
+    mx_range     = assessment.get("mixpanel_date_range", "90 días")
+
+    mixpanel_tag = ""
+    if mx_instance:
+        mixpanel_tag = (f'<span class="asmnt-mx-tag">📊 Mixpanel: <strong>{mx_instance}</strong>'
+                        f' / últimos {mx_range}</span>')
 
     # ── Core section ──────────────────────────────────────────────────────
     core_html = ""
     if core_items:
         rows = ""
         for item in core_items:
+            conclusion = item.get("conclusion", "eliminate")
             cx  = item.get("complexity", "minor")
+            _CONCLUSION_CLS = {"upstream": "asmnt-upstream", "already_upstream": "asmnt-already", "eliminate": "asmnt-elim"}
+            _CONCLUSION_LBL = {"upstream": "Upstream", "already_upstream": "Ya en Etendo", "eliminate": "Eliminar"}
             rows += f"""
           <tr>
             <td>
               <strong>{item.get('name','')}</strong>
               <div class="asmnt-desc">{item.get('description','')}</div>
             </td>
-            <td><span class="asmnt-badge asmnt-type">{item.get('type','')}</span></td>
-            <td>{_abadge(_COMPLEXITY_CLS.get(cx,'asmnt-minor'), cx.capitalize())}</td>
+            <td>{_abadge(_CONCLUSION_CLS.get(conclusion,'asmnt-elim'), _CONCLUSION_LBL.get(conclusion, conclusion))}</td>
+            <td>{item.get('justification','')}</td>
             <td>{_effort_tag(item.get('effort_days','?'))}</td>
-            <td class="asmnt-rec">{item.get('recommendation','')}</td>
           </tr>"""
         core_html = f"""
       <div class="asmnt-section-label">1 · Modificaciones al Core</div>
       <table class="asmnt-table">
         <thead><tr>
-          <th>Customización</th><th>Tipo</th><th>Complejidad</th>
-          <th>Esfuerzo</th><th>Acción recomendada</th>
+          <th>Customización</th><th>Conclusión</th><th>Justificación</th><th>Esfuerzo</th>
         </tr></thead>
         <tbody>{rows}</tbody>
       </table>"""
@@ -782,12 +850,26 @@ def render_assessment(assessment):
     if custom_items:
         rows = ""
         for item in custom_items:
-            risk = item.get("risk", "low")
+            cx    = item.get("complexity", "minor")
+            gen   = item.get("generalization", "client_specific")
+            elim  = item.get("elimination_candidate", False)
+            score = item.get("usage_score")
+            used  = item.get("windows_used", [])
+            unused = item.get("windows_unused", [])
+            row_cls = "asmnt-row-elim" if elim else ""
+            elim_badge = '<span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>' if elim else ""
+            _GEN_CLS = {"bundle_candidate": "asmnt-upstream", "client_specific": "asmnt-minor", "redundant": "asmnt-already"}
+            _GEN_LBL = {"bundle_candidate": "Bundle candidato", "client_specific": "Específico cliente", "redundant": "Redundante"}
             rows += f"""
-          <tr class="{_RISK_ROW.get(risk, '')}">
-            <td><strong>{item.get('java_package','')}</strong></td>
-            <td>{item.get('function','')}</td>
-            <td>{_abadge(_RISK_CLS.get(risk,'asmnt-trivial'), risk.capitalize())}</td>
+          <tr class="{row_cls}">
+            <td>
+              <strong>{item.get('java_package','')}</strong> {elim_badge}
+              <div class="asmnt-desc">{item.get('description','')}</div>
+              {_windows_html(used, unused)}
+            </td>
+            <td>{_abadge(_GEN_CLS.get(gen,'asmnt-minor'), _GEN_LBL.get(gen, gen))}</td>
+            <td>{_abadge(_COMPLEXITY_CLS.get(cx,'asmnt-minor'), cx.capitalize())}</td>
+            <td>{_usage_score_html(score)}</td>
             <td>{_effort_tag(item.get('effort_days','?'))}</td>
             <td class="asmnt-rec">{item.get('recommendation','')}</td>
           </tr>"""
@@ -795,8 +877,8 @@ def render_assessment(assessment):
       <div class="asmnt-section-label">2 · Módulos Custom</div>
       <table class="asmnt-table">
         <thead><tr>
-          <th>Módulo</th><th>Función</th><th>Riesgo</th>
-          <th>Esfuerzo</th><th>Recomendación</th>
+          <th>Módulo</th><th>Generalización</th><th>Complejidad</th>
+          <th>Uso</th><th>Esfuerzo</th><th>Recomendación</th>
         </tr></thead>
         <tbody>{rows}</tbody>
       </table>"""
@@ -808,12 +890,21 @@ def render_assessment(assessment):
         for item in unm_items:
             risk   = item.get("risk", "low")
             repl   = "✅" if item.get("has_official_replacement") else "❌"
+            elim   = item.get("elimination_candidate", False)
+            score  = item.get("usage_score")
+            used   = item.get("windows_used", [])
+            row_cls = "asmnt-row-elim" if elim else _RISK_ROW.get(risk, '')
+            elim_badge = '<span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>' if elim else ""
             rows += f"""
-          <tr class="{_RISK_ROW.get(risk, '')}">
-            <td><strong>{item.get('java_package','')}</strong></td>
-            <td>{item.get('function','')}</td>
+          <tr class="{row_cls}">
+            <td>
+              <strong>{item.get('java_package','')}</strong> {elim_badge}
+              <div class="asmnt-desc">{item.get('function','')}</div>
+              {_windows_html(used, [])}
+            </td>
             <td>{_abadge(_RISK_CLS.get(risk,'asmnt-trivial'), risk.capitalize())}</td>
             <td style="text-align:center;font-size:14px">{repl}</td>
+            <td>{_usage_score_html(score)}</td>
             <td>{_effort_tag(item.get('effort_days','?'))}</td>
             <td class="asmnt-rec">{item.get('recommendation','')}</td>
           </tr>"""
@@ -821,8 +912,8 @@ def render_assessment(assessment):
       <div class="asmnt-section-label">3 · Módulos sin Mantenimiento</div>
       <table class="asmnt-table">
         <thead><tr>
-          <th>Módulo</th><th>Función</th><th>Riesgo</th>
-          <th>Reemplazo</th><th>Esfuerzo</th><th>Recomendación</th>
+          <th>Módulo</th><th>Riesgo</th><th>Reemplazo</th>
+          <th>Uso</th><th>Esfuerzo</th><th>Recomendación</th>
         </tr></thead>
         <tbody>{rows}</tbody>
       </table>"""
@@ -836,30 +927,43 @@ def render_assessment(assessment):
     u_hi  = effort.get("unmaintained_max", 0)
     t_lo  = effort.get("total_min", 0)
     t_hi  = effort.get("total_max", 0)
+    elim_count = effort.get("elimination_candidates", 0)
+    saved_lo   = effort.get("effort_saved_eliminating_min", 0)
+    saved_hi   = effort.get("effort_saved_eliminating_max", 0)
+
+    saved_html = ""
+    if elim_count:
+        saved_html = f"""
+        <div class="asmnt-stat asmnt-stat-saved">
+          <div class="asmnt-stat-val" style="color:#22c55e">−{_fmt_effort_range(saved_lo, saved_hi)}</div>
+          <div class="asmnt-stat-lbl">U.E. ahorradas · {elim_count} módulos a eliminar</div>
+        </div>"""
 
     effort_html = f"""
       <div class="asmnt-section-label" style="margin-top:24px">Esfuerzo Total Estimado</div>
       <div class="asmnt-effort-box">
         <div class="asmnt-stat">
           <div class="asmnt-stat-val">{_fmt_effort_range(c_lo, c_hi)}</div>
-          <div class="asmnt-stat-lbl">días · Core</div>
+          <div class="asmnt-stat-lbl">U.E. · Core</div>
         </div>
         <div class="asmnt-stat">
           <div class="asmnt-stat-val">{_fmt_effort_range(cu_lo, cu_hi)}</div>
-          <div class="asmnt-stat-lbl">días · Módulos custom</div>
+          <div class="asmnt-stat-lbl">U.E. · Módulos custom</div>
         </div>
         <div class="asmnt-stat">
           <div class="asmnt-stat-val">{_fmt_effort_range(u_lo, u_hi)}</div>
-          <div class="asmnt-stat-lbl">días · Sin mantenimiento</div>
+          <div class="asmnt-stat-lbl">U.E. · Sin mantenimiento</div>
         </div>
         <div class="asmnt-stat asmnt-stat-total">
           <div class="asmnt-stat-val-total">{_fmt_effort_range(t_lo, t_hi)}</div>
-          <div class="asmnt-stat-lbl">días · Total</div>
+          <div class="asmnt-stat-lbl">U.E. · Total</div>
         </div>
+        {saved_html}
       </div>
       <p class="asmnt-note">
-        * Días de desarrollo para un desarrollador Etendo con experiencia.
+        * U.E. = Unidades de Esfuerzo. Con asistencia de IA el esfuerzo real puede ser significativamente menor.
         Rango bajo = módulo oficial de reemplazo disponible. Rango alto = desarrollo desde cero.
+        Los módulos marcados con 🗑 se recomienda eliminar en lugar de migrar (sin uso registrado en Mixpanel).
       </p>"""
 
     return f"""
@@ -867,7 +971,7 @@ def render_assessment(assessment):
     <h2>🔬 Análisis de Customizaciones</h2>
     <p class="asmnt-meta">
       Generado por <strong>etendo-custom-assessor v{assessment.get('assessor_version','1.0')}</strong>
-      · {generated}
+      · {generated} {mixpanel_tag}
     </p>
     {core_html}
     {custom_html}

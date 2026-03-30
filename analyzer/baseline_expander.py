@@ -235,6 +235,155 @@ def _copy_gradle_wrapper(etendo_root: str, target_dir: str) -> bool:
     return True
 
 
+# ── setup-only entry point ────────────────────────────────────────────────────
+
+def setup_baseline(
+    etendo_root: str,
+    modules: dict,
+    core_version: str,
+    github_user: Optional[str] = None,
+    github_token: Optional[str] = None,
+) -> Optional[str]:
+    """
+    Creates the baseline directory with all necessary build files but does NOT
+    run Gradle. Returns the path so the caller can print manual instructions.
+    """
+    client_props = _read_gradle_properties(etendo_root)
+    github_user  = github_user  or client_props.get("githubUser")
+    github_token = github_token or client_props.get("githubToken")
+
+    if not github_user or not github_token:
+        print("ERROR: No GitHub credentials found (githubUser / githubToken in gradle.properties).")
+        return None
+    if not core_version:
+        print("ERROR: Core version could not be detected.")
+        return None
+
+    plugin_version  = _detect_plugin_version(etendo_root)
+    bundle_versions = resolve_bundle_versions(etendo_root, modules)
+
+    if not bundle_versions:
+        print("WARNING: No bundles found to expand.")
+        return None
+
+    target = tempfile.mkdtemp(prefix="etendo-baseline-")
+
+    with open(os.path.join(target, "build.gradle"), "w") as f:
+        f.write(generate_build_gradle(core_version, plugin_version, bundle_versions))
+    with open(os.path.join(target, "gradle.properties"), "w") as f:
+        f.write(generate_gradle_properties(github_user, github_token, extra_props=client_props))
+    with open(os.path.join(target, "settings.gradle"), "w") as f:
+        f.write(generate_settings_gradle(github_user, github_token))
+
+    if not _copy_gradle_wrapper(etendo_root, target):
+        print("ERROR: Gradle wrapper not found in client installation.")
+        return None
+
+    print(f"Platform:       etendo {core_version}")
+    print(f"Plugin version: {plugin_version}")
+    print(f"Bundles:        {len(bundle_versions)}")
+
+    return target
+
+
+# ── interactive gradle runner ─────────────────────────────────────────────────
+
+def _run_gradle_interactive(
+    task: str,
+    cwd: str,
+    env: dict,
+    info_flag: str,
+    verbose: bool,
+    timeout: int = 1800,
+) -> bool:
+    """
+    Runs ./gradlew <task> inside a real pseudo-terminal (pty) so that the
+    Etendo Gradle plugin's interactive prompts (which read from /dev/tty) are
+    answered automatically with 'Y'.
+
+    Returns True on success (exit code 0), False otherwise.
+    """
+    import pty
+    import select
+    import errno
+
+    cmd = ["bash", "-c", f"./gradlew {task}{info_flag}"]
+    output_lines: list = []
+
+    master_fd, slave_fd = pty.openpty()
+    try:
+        proc = subprocess.Popen(
+            cmd,
+            cwd=cwd,
+            env=env,
+            stdin=slave_fd,
+            stdout=slave_fd,
+            stderr=slave_fd,
+        )
+        os.close(slave_fd)
+        slave_fd = -1
+
+        deadline = __import__("time").time() + timeout
+        buf = b""
+        while True:
+            remaining = deadline - __import__("time").time()
+            if remaining <= 0:
+                proc.kill()
+                print(f"WARNING: gradlew {task} timed out ({timeout // 60} min).")
+                return False
+
+            try:
+                r, _, _ = select.select([master_fd], [], [], min(remaining, 5.0))
+            except (OSError, ValueError):
+                break  # master_fd closed (child exited)
+
+            if r:
+                try:
+                    chunk = os.read(master_fd, 4096)
+                except OSError as e:
+                    if e.errno in (errno.EIO, errno.EBADF):
+                        break  # child closed the pty
+                    raise
+                buf += chunk
+                if verbose:
+                    try:
+                        print(chunk.decode("utf-8", errors="replace"), end="", flush=True)
+                    except Exception:
+                        pass
+                else:
+                    output_lines.append(chunk)
+
+                # Answer any Y/N prompt automatically
+                text = buf.decode("utf-8", errors="replace")
+                if "?" in text or "[Y/n]" in text.lower() or "[y/N]" in text.lower():
+                    try:
+                        os.write(master_fd, b"Y\n")
+                    except OSError:
+                        pass
+                    buf = b""
+
+            proc.poll()
+            if proc.returncode is not None and not r:
+                break
+
+        proc.wait(timeout=10)
+        if proc.returncode != 0 and not verbose and output_lines:
+            tail = b"".join(output_lines[-10:]).decode("utf-8", errors="replace")
+            print(f"WARNING: gradlew {task} failed (rc={proc.returncode}):\n{tail[-2000:]}")
+        return proc.returncode == 0
+
+    finally:
+        try:
+            os.close(master_fd)
+        except OSError:
+            pass
+        if slave_fd != -1:
+            try:
+                os.close(slave_fd)
+            except OSError:
+                pass
+
+
 # ── main entry point ──────────────────────────────────────────────────────────
 
 def expand_baseline(
@@ -319,23 +468,14 @@ def expand_baseline(
         info_flag = " --info" if verbose else ""
 
         for task in ("expandCore", "expandModules"):
-            step_cmd = f"yes Y | ./gradlew {task}{info_flag}"
-            step = subprocess.run(
-                ["bash", "-c", step_cmd],
-                cwd=target,
-                capture_output=not verbose,
-                timeout=600,
-                env=env,
-            )
-            if step.returncode != 0:
-                if not verbose and step.stderr:
-                    print(f"WARNING: gradlew {task} failed:\n{step.stderr[-2000:]}")
+            ok = _run_gradle_interactive(task, target, env, info_flag, verbose)
+            if not ok:
                 return None
 
         return target
 
     except subprocess.TimeoutExpired:
-        print("WARNING: gradlew expand timed out (10 min).")
+        print("WARNING: gradlew expand timed out.")
         return None
     except Exception as e:
         print(f"WARNING: baseline expansion error: {e}")

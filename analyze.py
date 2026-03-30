@@ -19,7 +19,7 @@ from analyzer.module_classifier import classify_modules
 from analyzer.core_diff import analyze_core
 from analyzer.module_diff import analyze_modules_diff
 from analyzer.migration_scorer import compute_score
-from analyzer.baseline_expander import expand_baseline
+from analyzer.baseline_expander import expand_baseline, setup_baseline
 
 
 def parse_args():
@@ -56,6 +56,12 @@ def parse_args():
         action="store_true",
         default=False,
         help="Run ./gradlew expand to obtain an exact-version baseline before diffing",
+    )
+    parser.add_argument(
+        "--setup-baseline",
+        action="store_true",
+        default=False,
+        help="Create the baseline directory and print the commands to expand manually, then exit",
     )
     parser.add_argument(
         "--baseline-dir",
@@ -181,6 +187,37 @@ def main():
     if not Path(etendo_root).is_dir():
         print(f"ERROR: path '{etendo_root}' does not exist or is not a directory")
         sys.exit(1)
+
+    # --setup-baseline: create the directory with build files and print manual commands
+    if args.setup_baseline:
+        from analyzer.module_classifier import classify_modules
+        from analyzer.version_detector import detect_version
+        platform = detect_version(etendo_root)
+        modules = classify_modules(etendo_root, args.client)
+        baseline_dir = setup_baseline(
+            etendo_root=etendo_root,
+            modules=modules,
+            core_version=platform.get("version"),
+            github_user=args.github_user,
+            github_token=args.github_token,
+        )
+        if baseline_dir:
+            print()
+            print("─" * 60)
+            print("Baseline directory created. Run these commands manually:")
+            print()
+            print(f"  cd {baseline_dir}")
+            print( "  yes Y | ./gradlew expandCore")
+            print( "  yes Y | ./gradlew expandModules")
+            print()
+            print("Once finished, generate the report with:")
+            print()
+            print(f"  python3 analyze.py --path {etendo_root} \\")
+            print(f"    --client {args.client} \\")
+            print(f"    --output reports/{args.client}.json \\")
+            print(f"    --baseline-dir {baseline_dir}")
+            print("─" * 60)
+        sys.exit(0)
 
     print(f"Analyzing installation at: {etendo_root}")
     print(f"Client: {args.client}")
