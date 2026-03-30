@@ -1582,7 +1582,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.localization.spain.referencedata.taxes",
-        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "name": "Taxes: configuration for Spain (Impuestos para Espa\u00f1a)",
         "version": "1.2.1400",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -1667,7 +1667,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
-        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja Espa\u00f1a)",
         "version": "1.0.300",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -1746,7 +1746,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.translation.esES",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.localization.spain.referencedata.translation.esES",
-        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "name": "Translation: Spanish-Spain (es_ES) espa\u00f1ol-Espa\u00f1a",
         "version": "3.0.1001",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -1933,7 +1933,7 @@
       {
         "java_package": "org.openbravo.localization.spain30",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.localization.spain30",
-        "name": "Localization pack Spain (España)",
+        "name": "Localization pack Spain (Espa\u00f1a)",
         "version": "3.6.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -3390,7 +3390,7 @@
       {
         "java_package": "org.openbravo.module.bptaxidkey",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.module.bptaxidkey",
-        "name": "Tipo de Número de Identificación de Tercero",
+        "name": "Tipo de N\u00famero de Identificaci\u00f3n de Tercero",
         "version": "0.0.200",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -3834,7 +3834,7 @@
       {
         "java_package": "org.openbravo.module.epigrafes.iae.es",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.module.epigrafes.iae.es",
-        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "name": "I.A.E. Epigraphs (Ep\u00edgrafes del I.A.E.)",
         "version": "1.0.9",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -4076,7 +4076,7 @@
       {
         "java_package": "org.openbravo.module.finactvalidator.es",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.module.finactvalidator.es",
-        "name": "Validador de número de cuenta financiera",
+        "name": "Validador de n\u00famero de cuenta financiera",
         "version": "3.1.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -4807,7 +4807,7 @@
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.module.invoicesregisterbook.estaxes",
-        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "name": "Configuraci\u00f3n de Impuestos para el Libro de Facturas",
         "version": "3.0.301",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -7767,7 +7767,7 @@
       {
         "java_package": "org.openbravo.module.taximprovements.es_ES",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.module.taximprovements.es_ES",
-        "name": "Módulo de Impuestos para España mejorado",
+        "name": "M\u00f3dulo de Impuestos para Espa\u00f1a mejorado",
         "version": "0.0.100",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -8442,7 +8442,7 @@
       {
         "java_package": "org.openbravo.spain.regions",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.spain.regions",
-        "name": "Provincias de España",
+        "name": "Provincias de Espa\u00f1a",
         "version": "1.0.5",
         "author": "Openbravo SL",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -8515,7 +8515,7 @@
       {
         "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.spanishdefaultdata.paymentmethods",
-        "name": "Métodos de Pago",
+        "name": "M\u00e9todos de Pago",
         "version": "1.1.2",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -10003,7 +10003,7 @@
       {
         "java_package": "org.openbravo.module.einvoice.es_ES",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.module.einvoice.es_ES",
-        "name": "Facturación Electrónica",
+        "name": "Facturaci\u00f3n Electr\u00f3nica",
         "version": "0.1.0",
         "author": "Openbravo SL"
       },
@@ -10017,14 +10017,14 @@
       {
         "java_package": "org.openbravo.module.facturae31",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.module.facturae31",
-        "name": "Facturación Electrónica - Facturae 3.1",
+        "name": "Facturaci\u00f3n Electr\u00f3nica - Facturae 3.1",
         "version": "0.3.0",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.facturae32",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.module.facturae32",
-        "name": "Facturación Electrónica - Facturae 3.2",
+        "name": "Facturaci\u00f3n Electr\u00f3nica - Facturae 3.2",
         "version": "0.1.0",
         "author": "Openbravo S.L.U."
       },
@@ -10052,7 +10052,7 @@
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
-        "name": "Configuración IVA de Caja para el Libro de Facturas",
+        "name": "Configuraci\u00f3n IVA de Caja para el Libro de Facturas",
         "version": "1.0.200",
         "author": "Openbravo S.L.U."
       },
@@ -10080,7 +10080,7 @@
       {
         "java_package": "org.openbravo.proflocalization.spain30.cashvat",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/org.openbravo.proflocalization.spain30.cashvat",
-        "name": "Professional Localization pack Spain (España) Cash VAT",
+        "name": "Professional Localization pack Spain (Espa\u00f1a) Cash VAT",
         "version": "1.13.0",
         "author": "Openbravo S.L.U."
       },
@@ -10234,7 +10234,7 @@
       {
         "java_package": "com.smf.ortoprono.accounting.customization.template",
         "path": "/home/valentino/Environments/Ortoprono/Ortoprono_20251008/modules/com.smf.ortoprono.accounting.customization.template",
-        "name": "Template módulo de contabilidad",
+        "name": "Template m\u00f3dulo de contabilidad",
         "version": "1.0.0",
         "author": null,
         "line_count": 297,
@@ -10252,7 +10252,7 @@
         "line_count": 5020,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -10264,7 +10264,7 @@
         "line_count": 912,
         "custom_size": {
           "key": "small",
-          "label": "500–2.000 LOC"
+          "label": "500\u20132.000 LOC"
         }
       },
       {
@@ -10312,7 +10312,7 @@
         "line_count": 2569,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       }
     ]
@@ -23691,11 +23691,8 @@
   "migratability": "very_hard",
   "score_breakdown": {
     "openbravo_platform": -20,
-    "core_divergences": -25.0,
-    "core_diff_lines": 213149,
-    "local_not_maintained": -22.4,
-    "local_not_maintained_translations": 8,
-    "local_not_maintained_regular": 54,
+    "core_divergences": -40.0,
+    "local_not_maintained": -20,
     "custom_modules": -35,
     "custom_modules_detail": [
       {
@@ -23716,14 +23713,14 @@
         "java_package": "com.smf.ortoprono.customization",
         "line_count": 5020,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.ortoprono.prestashop",
         "line_count": 912,
         "size_tier": "small",
-        "size_label": "500–2.000 LOC",
+        "size_label": "500\u20132.000 LOC",
         "penalty": -4
       },
       {
@@ -23743,19 +23740,19 @@
       {
         "java_package": "org.openbravo.ortoprono.es_ES",
         "line_count": 13756,
-        "size_tier": "translation",
-        "size_label": "Traducción",
-        "penalty": -0.5
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
       },
       {
         "java_package": "ortoprono.CustomizationTemplate",
         "line_count": 2569,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       }
     ],
-    "local_maintained_divergences": -15,
+    "local_maintained_divergences": -94.0,
     "gradle_source_divergences": 0,
     "jar_dependency_outdated": 0
   }

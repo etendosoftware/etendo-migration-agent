@@ -2120,5 +2120,339 @@ document.addEventListener('DOMContentLoaded', function() {
   if (first) toggle(first);
 });
 </script>
+
+<!-- ===== CUSTOM ASSESSOR SECTION ===== -->
+<style>
+.assessor-section { margin-top: 8px; }
+.assessor-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; letter-spacing: 0.3px; }
+.badge-trivial   { background: #dcfce7; color: #166534; }
+.badge-minor     { background: #fef9c3; color: #854d0e; }
+.badge-major     { background: #fee2e2; color: #991b1b; }
+.badge-critical  { background: #fce7f3; color: #9d174d; }
+.badge-info      { background: #e0f2fe; color: #075985; }
+.badge-warn      { background: #fff7ed; color: #9a3412; }
+.effort-tag { font-size: 11px; color: #64748b; background: #f1f5f9; padding: 2px 7px; border-radius: 4px; margin-left: 6px; }
+.assessor-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.assessor-table th { text-align: left; padding: 7px 10px; background: #f8fafc; color: #64748b; font-weight: 600; border-bottom: 2px solid #e2e8f0; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; }
+.assessor-table td { padding: 8px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.assessor-table tr:last-child td { border-bottom: none; }
+.assessor-table tr:hover td { background: #f8fafc; }
+.assessor-desc { color: #475569; font-size: 12px; margin-top: 3px; }
+.assessor-action { color: #0f172a; font-size: 12px; }
+.section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #94a3b8; margin-bottom: 10px; margin-top: 18px; }
+.total-effort-box { background: #1e293b; color: #f1f5f9; border-radius: 8px; padding: 14px 20px; margin-top: 16px; display: flex; gap: 32px; flex-wrap: wrap; }
+.effort-stat { text-align: center; }
+.effort-stat .val { font-size: 22px; font-weight: 700; color: #38bdf8; }
+.effort-stat .lbl { font-size: 11px; color: #94a3b8; margin-top: 2px; }
+.risk-row-high td { background: #fff5f5; }
+.risk-row-med  td { background: #fffbeb; }
+</style>
+
+<div class="card assessor-section">
+  <h2>🔬 Custom Assessor — Análisis de Customizaciones</h2>
+  <p style="font-size:12px;color:#64748b;margin-bottom:16px;">
+    Análisis semántico de modificaciones al core, módulos custom y módulos sin mantenimiento.
+    Generado por <strong>etendo-custom-assessor v1.0</strong> · Etendo 24.2.6 · 2026-03-30
+  </p>
+
+  <!-- ===== 1. CORE MODIFICATIONS ===== -->
+  <div class="section-label">1 · Modificaciones al Core (98 archivos · 3 925 líneas)</div>
+  <table class="assessor-table">
+    <thead>
+      <tr>
+        <th>Customización</th>
+        <th>Tipo</th>
+        <th>Complejidad</th>
+        <th>Esfuerzo estimado</th>
+        <th>Acción recomendada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <strong>PrintController Hook Framework</strong>
+          <div class="assessor-desc">
+            3 nuevas clases Java inyectadas en el core: <code>PrintControllerHook</code> (interface),
+            <code>PrintControllerHookManager</code> (CDI manager con pre/post process) y
+            <code>PrintControllerHookPrioritizer</code>. Permite extender el flujo de impresión
+            de documentos con lógica pre/post configurable y priorizada. ~300 LOC.
+          </div>
+        </td>
+        <td><span class="assessor-badge badge-info">Nueva infraestructura</span></td>
+        <td><span class="assessor-badge badge-minor">Medium</span></td>
+        <td><span class="effort-tag">3–5 días</span></td>
+        <td class="assessor-action">
+          Mover a módulo propio (<code>com.smf.ladypipa.printcontroller</code>).
+          Las clases son autónomas (CDI + interface) y no modifican lógica core existente — migración limpia.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>FileUpload Column EventHandler</strong>
+          <div class="assessor-desc">
+            <code>FileUploadColumnEventHandler.java</code> en <code>org.openbravo.client.application</code>.
+            EventHandler que impide asignar referencias de tipo "File Upload" a columnas de ventanas estándar
+            (solo permitido en ProcessDefinition). ~94 LOC.
+          </div>
+        </td>
+        <td><span class="assessor-badge badge-info">EventHandler / Validación</span></td>
+        <td><span class="assessor-badge badge-trivial">Trivial</span></td>
+        <td><span class="effort-tag">0.5 días</span></td>
+        <td class="assessor-action">
+          Mover a <code>com.smf.ladypipa.template</code>. Es un EventHandler estándar Etendo
+          (extiende <code>EntityPersistenceEventObserver</code>), sin dependencias de core.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>ProcessFileUpload UI + JS</strong>
+          <div class="assessor-desc">
+            <code>ProcessFileUploadUIDefinition.java</code> (kernel, ~30 LOC) y
+            <code>ob-formitem-processfileupload.js</code> (web, ~79 LOC).
+            Extiende el framework UI de Etendo para soportar un nuevo tipo de campo "file upload"
+            en formularios de Process Definitions.
+          </div>
+        </td>
+        <td><span class="assessor-badge badge-info">UI Extension (Java + JS)</span></td>
+        <td><span class="assessor-badge badge-minor">Minor</span></td>
+        <td><span class="effort-tag">1.5 días</span></td>
+        <td class="assessor-action">
+          Mover a módulo propio junto con el EventHandler. Requiere registrar el
+          <code>UIDefinition</code> vía Weld. Analizar si Etendo moderno ya provee
+          file upload nativo en ProcessDefinition antes de migrar.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>ProcessUtils (smf.jobs.defaults)</strong>
+          <div class="assessor-desc">
+            <code>ProcessUtils.java</code> en <code>com.smf.jobs.defaults</code>.
+            Clase utilitaria para Jobs masivos: consolida éxitos/errores en un único
+            <code>ActionResult</code>. ~87 LOC. Patrón <code>massiveMessageHandler</code>.
+          </div>
+        </td>
+        <td><span class="assessor-badge badge-info">Utility / Jobs</span></td>
+        <td><span class="assessor-badge badge-trivial">Trivial</span></td>
+        <td><span class="effort-tag">0.5 días</span></td>
+        <td class="assessor-action">
+          Mover a módulo custom. Verificar si <code>com.smf.jobs</code> ya incluyó
+          utilidades similares en versiones recientes antes de duplicar.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>OBUIAPP Process Trigger (DB)</strong>
+          <div class="assessor-desc">
+            <code>OBUIAPP_PROCESS_MOD_TRG.xml</code> en <code>org.openbravo.client.application</code>.
+            Trigger de base de datos sobre la tabla de Process Definitions. ~94 LOC de definición XML.
+          </div>
+        </td>
+        <td><span class="assessor-badge badge-warn">DB Trigger</span></td>
+        <td><span class="assessor-badge badge-minor">Minor</span></td>
+        <td><span class="effort-tag">1 día</span></td>
+        <td class="assessor-action">
+          Evaluar si el trigger fue añadido upstream en versiones posteriores de Etendo.
+          Si es nuevo, mover a módulo propio con trigger registrado en sourcedata.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Report HTML Filter Pages (~79 archivos)</strong>
+          <div class="assessor-desc">
+            Filtros HTML clásicos de reportes Jasper modificados: <em>Sales Dimensional, Invoice Customer/Vendor,
+            Sales Order, Purchase Dimensional, Asset Depreciation, Payment Report, Cash Operations</em>, etc.
+            Cambios repetitivos (~10–65 líneas por archivo): probable adición de filtros de dimensión/organización
+            o campos de fecha. Archivos en <code>src/org/openbravo/erpCommon/ad_reports/</code>.
+          </div>
+        </td>
+        <td><span class="assessor-badge badge-info">UI Report Filters (Legacy)</span></td>
+        <td><span class="assessor-badge badge-minor">Minor</span></td>
+        <td><span class="effort-tag">2–3 días</span></td>
+        <td class="assessor-action">
+          Estos son templates HTML clásicos (arquitectura pre-React). En Etendo moderno los reportes
+          migran a React. <strong>Recomendación:</strong> no migrar las modificaciones legacy;
+          en su lugar identificar qué filtros se agregaron y replicarlos en la nueva arquitectura
+          cuando se actualice el cliente a la versión React.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>formalChangesScript.xml (data migration)</strong>
+          <div class="assessor-desc">
+            ~200 entradas <code>columnDataChange</code> en <code>AD_MESSAGE.ISINCLUDEINI18N = 'N'</code>.
+            Script auto-generado por Etendo durante un upgrade de versión. No es una customización real.
+          </div>
+        </td>
+        <td><span class="assessor-badge badge-info">DB Data Migration</span></td>
+        <td><span class="assessor-badge badge-trivial">Sin impacto</span></td>
+        <td><span class="effort-tag">0 días</span></td>
+        <td class="assessor-action">
+          Artefacto de upgrade. No requiere acción en migración a SaaS.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ===== 2. CUSTOM MODULE ===== -->
+  <div class="section-label">2 · Módulo Custom</div>
+  <table class="assessor-table">
+    <thead>
+      <tr>
+        <th>Módulo</th>
+        <th>Tipo</th>
+        <th>Complejidad</th>
+        <th>Esfuerzo estimado</th>
+        <th>Observaciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <strong>com.smf.ladypipa.template</strong>
+          <div class="assessor-desc">
+            Módulo template del cliente (tipo T). Solo contiene <code>AD_MODULE.xml</code>
+            y <code>configScript.xml</code>. Sin código fuente Java ni lógica de negocio. 34 LOC.
+          </div>
+        </td>
+        <td><span class="assessor-badge badge-info">Template / Placeholder</span></td>
+        <td><span class="assessor-badge badge-trivial">Trivial</span></td>
+        <td><span class="effort-tag">0 días</span></td>
+        <td class="assessor-action">
+          Ya existe como módulo Etendo estándar. Sirve como contenedor para futuras
+          customizaciones. Es el destino correcto donde mover el código del core.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ===== 3. UNMAINTAINED MODULES ===== -->
+  <div class="section-label">3 · Módulos sin Mantenimiento (21 regulares + 4 traducciones)</div>
+  <table class="assessor-table">
+    <thead>
+      <tr>
+        <th>Módulo</th>
+        <th>Funcionalidad</th>
+        <th>Riesgo</th>
+        <th>Esfuerzo estimado</th>
+        <th>Recomendación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="risk-row-high">
+        <td><strong>com.practicsbs.shopify</strong><br><small>+ template</small></td>
+        <td>Integración con Shopify (e-commerce)</td>
+        <td><span class="assessor-badge badge-major">Alto</span></td>
+        <td><span class="effort-tag">10–20 días</span></td>
+        <td class="assessor-action">Funcionalidad crítica sin equivalente oficial. Evaluar si Etendo SaaS provee conector nativo o usar middleware (Zapier/Make). Si no, reconstruir como módulo mantenido.</td>
+      </tr>
+      <tr class="risk-row-high">
+        <td><strong>com.smf.edicom</strong><br><small>+ csv</small></td>
+        <td>EDI (Electronic Data Interchange) + procesado CSV</td>
+        <td><span class="assessor-badge badge-major">Alto</span></td>
+        <td><span class="effort-tag">5–10 días</span></td>
+        <td class="assessor-action">Integración EDI propietaria (EDICOM). Verificar si el cliente sigue activo en EDI. Si sí, evaluar actualizar a módulo EDICOM oficial de Etendo marketplace.</td>
+      </tr>
+      <tr class="risk-row-high">
+        <td><strong>org.openbravo.sepa.iso20022</strong><br><small>+ camt + directdebit + credittransfer</small></td>
+        <td>Framework SEPA bancario (4 módulos)</td>
+        <td><span class="assessor-badge badge-major">Alto</span></td>
+        <td><span class="effort-tag">3–5 días</span></td>
+        <td class="assessor-action">SEPA es funcionalidad bancaria crítica. Verificar si el bundle <strong>Financial Extensions</strong> de Etendo (ya instalado como JAR) incluye SEPA nativo. Si es así, estos módulos son redundantes.</td>
+      </tr>
+      <tr class="risk-row-med">
+        <td><strong>org.openbravo.materialmgmt.freightmgmt</strong><br><small>+ es_es</small></td>
+        <td>Gestión de fletes y transporte</td>
+        <td><span class="assessor-badge badge-minor">Medio</span></td>
+        <td><span class="effort-tag">3–5 días</span></td>
+        <td class="assessor-action">Funcionalidad de logística. Evaluar si el cliente usa activamente la gestión de fletes. Si sí, buscar alternativa en Etendo marketplace o migrar datos a módulo mantenido.</td>
+      </tr>
+      <tr class="risk-row-med">
+        <td><strong>org.openbravo.module.invoicematchingalgorithm</strong><br><small>+ sepamatchingalgorithm</small></td>
+        <td>Algoritmos de conciliación de facturas y SEPA</td>
+        <td><span class="assessor-badge badge-minor">Medio</span></td>
+        <td><span class="effort-tag">2–3 días</span></td>
+        <td class="assessor-action">Verificar si Financial Extensions incluye algoritmos de matching equivalentes. Probable reemplazo nativo disponible.</td>
+      </tr>
+      <tr class="risk-row-med">
+        <td><strong>com.openbravo.gps.finance.balanceexcelexport.report</strong><br><small>+ es_es</small></td>
+        <td>Exportación PyG y Balance a Excel</td>
+        <td><span class="assessor-badge badge-minor">Medio</span></td>
+        <td><span class="effort-tag">2–3 días</span></td>
+        <td class="assessor-action">Funcionalidad de reporting financiero. Evaluar si el cliente puede usar exportación Excel nativa de Etendo o una herramienta BI externa.</td>
+      </tr>
+      <tr class="risk-row-med">
+        <td><strong>org.openbravo.bankstatement.importer.generic.csv</strong><br><small>+ es_es</small></td>
+        <td>Importador genérico de estados bancarios CSV</td>
+        <td><span class="assessor-badge badge-minor">Medio</span></td>
+        <td><span class="effort-tag">1–2 días</span></td>
+        <td class="assessor-action">Verificar si Advanced Bank Account Management (ya instalado) incluye importación CSV. Probable sustitución directa.</td>
+      </tr>
+      <tr>
+        <td><strong>eu.practics.javaextensionpoints</strong></td>
+        <td>Framework de puntos de extensión Java</td>
+        <td><span class="assessor-badge badge-trivial">Bajo</span></td>
+        <td><span class="effort-tag">1–2 días</span></td>
+        <td class="assessor-action">Evaluar qué extensiones dependen de este framework. Si no hay uso activo, eliminar.</td>
+      </tr>
+      <tr>
+        <td><strong>eu.practics.mailogger</strong></td>
+        <td>Logger de emails enviados</td>
+        <td><span class="assessor-badge badge-trivial">Bajo</span></td>
+        <td><span class="effort-tag">0.5 días</span></td>
+        <td class="assessor-action">Funcionalidad de auditoría de correos. Puede reemplazarse con el log nativo de Etendo o eliminarse si no es requerimiento activo.</td>
+      </tr>
+      <tr>
+        <td><strong>org.openbravo.financialmgmt.accounting.report.notposted</strong></td>
+        <td>Reporte de transacciones no contabilizadas</td>
+        <td><span class="assessor-badge badge-trivial">Bajo</span></td>
+        <td><span class="effort-tag">1 día</span></td>
+        <td class="assessor-action">Reporte contable. Verificar si Etendo tiene reporte equivalente nativo. Si no, evaluar recrear como reporte Jasper en módulo mantenido.</td>
+      </tr>
+      <tr>
+        <td><strong>org.openbravo.idl</strong><br><small>+ idljava + idl.invoices + idl.orders + es_ES</small></td>
+        <td>Initial Data Load (carga inicial de datos)</td>
+        <td><span class="assessor-badge badge-trivial">Bajo</span></td>
+        <td><span class="effort-tag">0 días</span></td>
+        <td class="assessor-action">Módulos de carga inicial de datos históricos. Probablemente sin uso activo en producción. <strong>Recomendación: eliminar.</strong></td>
+      </tr>
+      <tr>
+        <td><strong>org.openbravo.utility.opencsv</strong></td>
+        <td>Librería OpenCSV (utilidad)</td>
+        <td><span class="assessor-badge badge-trivial">Bajo</span></td>
+        <td><span class="effort-tag">0 días</span></td>
+        <td class="assessor-action">Dependencia de librería CSV. Verificar si otros módulos la usan. Etendo moderno incluye OpenCSV como dependencia transitiva.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ===== EFFORT SUMMARY ===== -->
+  <div class="section-label" style="margin-top:24px;">Resumen de Esfuerzo Total Estimado</div>
+  <div class="total-effort-box">
+    <div class="effort-stat">
+      <div class="val">6.5–10</div>
+      <div class="lbl">días · Core a módulo</div>
+    </div>
+    <div class="effort-stat">
+      <div class="val">0</div>
+      <div class="lbl">días · Módulo custom</div>
+    </div>
+    <div class="effort-stat">
+      <div class="val">20–35</div>
+      <div class="lbl">días · Módulos sin mant.</div>
+    </div>
+    <div class="effort-stat" style="border-left:1px solid #334155;padding-left:32px;">
+      <div class="val" style="color:#f97316;">27–45</div>
+      <div class="lbl">días · Total estimado</div>
+    </div>
+  </div>
+
+  <p style="font-size:11px;color:#94a3b8;margin-top:12px;">
+    * Estimaciones en días de desarrollo para un desarrollador Etendo con experiencia.
+    Los rangos altos asumen que no existe módulo de reemplazo y requieren desarrollo desde cero.
+    Los rangos bajos asumen que existe un módulo oficial equivalente que solo requiere migración de datos.
+  </p>
+</div>
+<!-- ===== END CUSTOM ASSESSOR SECTION ===== -->
+
 </body>
 </html>
