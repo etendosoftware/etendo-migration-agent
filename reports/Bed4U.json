@@ -3997,7 +3997,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.localization.spain.referencedata.taxes",
-        "name": "Taxes: configuration for Spain (Impuestos para Espa\u00f1a)",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
         "version": "1.15.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -4040,7 +4040,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
-        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja Espa\u00f1a)",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
         "version": "1.9.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -4083,7 +4083,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.localization.spain.referencedata.translation.eses",
-        "name": "Translation: Spanish-Spain (es_ES) espa\u00f1ol-Espa\u00f1a",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
         "version": "3.13.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -4126,7 +4126,7 @@
       {
         "java_package": "org.openbravo.localization.spain30",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.localization.spain30",
-        "name": "Localization pack Spain (Espa\u00f1a)",
+        "name": "Localization pack Spain (España)",
         "version": "3.20.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -4851,7 +4851,7 @@
       {
         "java_package": "org.openbravo.module.bptaxidkey",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.module.bptaxidkey",
-        "name": "Tipo de N\u00famero de Identificaci\u00f3n de Tercero",
+        "name": "Tipo de Número de Identificación de Tercero",
         "version": "0.11.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -5145,7 +5145,7 @@
       {
         "java_package": "org.openbravo.module.epigrafes.iae.es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.module.epigrafes.iae.es",
-        "name": "I.A.E. Epigraphs (Ep\u00edgrafes del I.A.E.)",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -5231,7 +5231,7 @@
       {
         "java_package": "org.openbravo.module.finactvalidator.es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.module.finactvalidator.es",
-        "name": "Validador de n\u00famero de cuenta financiera",
+        "name": "Validador de número de cuenta financiera",
         "version": "3.12.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -5384,7 +5384,7 @@
       {
         "java_package": "org.openbravo.module.intrastat.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.module.intrastat.es_es",
-        "name": "Intrastat \u2013 Spanish translation",
+        "name": "Intrastat – Spanish translation",
         "version": "1.14.1",
         "author": "Openbravo S.L.U",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -5586,7 +5586,7 @@
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.module.invoicesregisterbook.estaxes",
-        "name": "Configuraci\u00f3n de Impuestos para el Libro de Facturas",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
         "version": "3.13.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -6623,7 +6623,7 @@
       {
         "java_package": "org.openbravo.module.taximprovements.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.module.taximprovements.es_es",
-        "name": "M\u00f3dulo de Impuestos para Espa\u00f1a mejorado",
+        "name": "Módulo de Impuestos para España mejorado",
         "version": "0.11.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -6806,7 +6806,7 @@
       {
         "java_package": "org.openbravo.proflocalization.spain.dataset",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.proflocalization.spain.dataset",
-        "name": "Professional Localization pack Spain (Espa\u00f1a) Datasets",
+        "name": "Professional Localization pack Spain (España) Datasets",
         "version": "1.17.1",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -7027,7 +7027,7 @@
       {
         "java_package": "org.openbravo.spain.regions",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.spain.regions",
-        "name": "Provincias de Espa\u00f1a",
+        "name": "Provincias de España",
         "version": "1.11.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -7070,7 +7070,7 @@
       {
         "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.spanishdefaultdata.paymentmethods",
-        "name": "M\u00e9todos de Pago",
+        "name": "Métodos de Pago",
         "version": "1.12.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -7460,7 +7460,7 @@
       {
         "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/com.etendoerp.advanced.bpsettlement.es_es",
-        "name": "Liquidaci\u00f3n Avanzada de Socios Comerciales",
+        "name": "Liquidación Avanzada de Socios Comerciales",
         "version": "1.2.0",
         "author": "Etendo Software"
       },
@@ -7495,7 +7495,7 @@
       {
         "java_package": "com.etendoerp.bulk.posting.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/com.etendoerp.bulk.posting.es_es",
-        "name": "Contabilizaci\u00f3n Masiva",
+        "name": "Contabilización Masiva",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
@@ -7516,7 +7516,7 @@
       {
         "java_package": "com.etendoerp.payment.removal.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/com.etendoerp.payment.removal.es_es",
-        "name": "Eliminaci\u00f3n de Pagos",
+        "name": "Eliminación de Pagos",
         "version": "1.5.0",
         "author": "Etendo Software"
       },
@@ -7551,7 +7551,7 @@
       {
         "java_package": "com.openbravo.gps.finance.balanceexcelexport.report.es_ES",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/com.openbravo.gps.finance.balanceexcelexport.report.es_ES",
-        "name": "PyG y Balance exportaci\u00f3n a excel",
+        "name": "PyG y Balance exportación a excel",
         "version": "1.0.1",
         "author": "GPS"
       },
@@ -7635,14 +7635,14 @@
       {
         "java_package": "com.smf.currency.apiconfig.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/com.smf.currency.apiconfig.es_es",
-        "name": "Configuraci\u00f3n de la API de Moneda",
+        "name": "Configuración de la API de Moneda",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.smf.currency.conversionrate.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/com.smf.currency.conversionrate.es_es",
-        "name": "Descargador de Tasa de Conversi\u00f3n",
+        "name": "Descargador de Tasa de Conversión",
         "version": "1.3.0",
         "author": null
       },
@@ -7656,14 +7656,14 @@
       {
         "java_package": "com.smf.gljournal.reverse.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/com.smf.gljournal.reverse.es_es",
-        "name": "Anulaci\u00f3n de Asientos Manuales",
+        "name": "Anulación de Asientos Manuales",
         "version": "1.1.0",
         "author": null
       },
       {
         "java_package": "com.smf.goodsreceipt.createfromorder",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/com.smf.goodsreceipt.createfromorder",
-        "name": "Crear Albar\u00e1n Proveedor desde Pedido de Compra",
+        "name": "Crear Albarán Proveedor desde Pedido de Compra",
         "version": "1.0.0",
         "author": null
       },
@@ -7726,7 +7726,7 @@
       {
         "java_package": "com.smf.ticketbai.es_ES",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/com.smf.ticketbai.es_ES",
-        "name": "Modulo de traduccion al espa\u00f1ol de TicketBAI",
+        "name": "Modulo de traduccion al español de TicketBAI",
         "version": "1.0.0",
         "author": null
       },
@@ -7810,7 +7810,7 @@
       {
         "java_package": "org.openbravo.module.einvoice.es_ES",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.module.einvoice.es_ES",
-        "name": "Facturaci\u00f3n Electr\u00f3nica",
+        "name": "Facturación Electrónica",
         "version": "0.1.204000",
         "author": "Openbravo SLU"
       },
@@ -7824,14 +7824,14 @@
       {
         "java_package": "org.openbravo.module.facturae31",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.module.facturae31",
-        "name": "Facturaci\u00f3n Electr\u00f3nica - Facturae 3.1",
+        "name": "Facturación Electrónica - Facturae 3.1",
         "version": "0.3.100",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.facturae32",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.module.facturae32",
-        "name": "Facturaci\u00f3n Electr\u00f3nica - Facturae 3.2",
+        "name": "Facturación Electrónica - Facturae 3.2",
         "version": "0.1.0",
         "author": "Openbravo S.L.U."
       },
@@ -7866,7 +7866,7 @@
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
-        "name": "Configuraci\u00f3n IVA de Caja para el Libro de Facturas",
+        "name": "Configuración IVA de Caja para el Libro de Facturas",
         "version": "1.2.0",
         "author": "Openbravo S.L.U."
       },
@@ -7894,7 +7894,7 @@
       {
         "java_package": "org.openbravo.proflocalization.spain30.cashvat",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/Bed4U/Etendo/modules/org.openbravo.proflocalization.spain30.cashvat",
-        "name": "Professional Localization pack Spain (Espa\u00f1a) Cash VAT",
+        "name": "Professional Localization pack Spain (España) Cash VAT",
         "version": "1.18.0",
         "author": "Openbravo S.L.U."
       },
@@ -8001,7 +8001,7 @@
         "line_count": 2759,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -8061,7 +8061,7 @@
         "line_count": 2343,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -8085,7 +8085,7 @@
         "line_count": 3669,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -8121,7 +8121,7 @@
         "line_count": 7139,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -8157,7 +8157,7 @@
         "line_count": 4008,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -8169,7 +8169,7 @@
         "line_count": 2438,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -8181,7 +8181,7 @@
         "line_count": 5218,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -8217,7 +8217,7 @@
         "line_count": 607,
         "custom_size": {
           "key": "small",
-          "label": "500\u20132.000 LOC"
+          "label": "500–2.000 LOC"
         }
       }
     ]
@@ -12742,21 +12742,21 @@
         "java_package": "com.smf.bed4u.alertwidget.es_ES",
         "line_count": 121,
         "size_tier": "translation",
-        "size_label": "Traducci\u00f3n",
+        "size_label": "Traducción",
         "penalty": -0.5
       },
       {
         "java_package": "com.smf.bed4u.contract.dimensions",
         "line_count": 2759,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.bed4u.contract.dimensions.es_ES",
         "line_count": 155,
         "size_tier": "translation",
-        "size_label": "Traducci\u00f3n",
+        "size_label": "Traducción",
         "penalty": -0.5
       },
       {
@@ -12784,28 +12784,28 @@
         "java_package": "com.smf.bed4u.dimensional",
         "line_count": 2343,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.bed4u.dimensional.es_ES",
         "line_count": 126,
         "size_tier": "translation",
-        "size_label": "Traducci\u00f3n",
+        "size_label": "Traducción",
         "penalty": -0.5
       },
       {
         "java_package": "com.smf.bed4u.invoicebutton",
         "line_count": 3669,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.bed4u.invoicebutton.es_ES",
         "line_count": 115,
         "size_tier": "translation",
-        "size_label": "Traducci\u00f3n",
+        "size_label": "Traducción",
         "penalty": -0.5
       },
       {
@@ -12819,14 +12819,14 @@
         "java_package": "com.smf.bed4u.ledger",
         "line_count": 7139,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.bed4u.ledger.es_ES",
         "line_count": 153,
         "size_tier": "translation",
-        "size_label": "Traducci\u00f3n",
+        "size_label": "Traducción",
         "penalty": -0.5
       },
       {
@@ -12840,28 +12840,28 @@
         "java_package": "com.smf.bed4u.printing.reports",
         "line_count": 4008,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.bed4u.remittanceselector",
         "line_count": 2438,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.bed4u.report.trialbalance",
         "line_count": 5218,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.bed4u.report.trialbalance.es_ES",
         "line_count": 153,
         "size_tier": "translation",
-        "size_label": "Traducci\u00f3n",
+        "size_label": "Traducción",
         "penalty": -0.5
       },
       {
@@ -12875,7 +12875,7 @@
         "java_package": "com.smf.bed4u.template",
         "line_count": 607,
         "size_tier": "small",
-        "size_label": "500\u20132.000 LOC",
+        "size_label": "500–2.000 LOC",
         "penalty": -4
       }
     ],

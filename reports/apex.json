@@ -3173,7 +3173,7 @@
       {
         "java_package": "com.openbravo.gps.projects.multipleemployeeselector",
         "path": "/opt/EtendoERP/modules/com.openbravo.gps.projects.multipleemployeeselector",
-        "name": "Selector m\u00faltiple de empleados",
+        "name": "Selector múltiple de empleados",
         "version": "1.0.1",
         "author": "Openbravo GPS"
       },
@@ -3333,7 +3333,7 @@
         "line_count": 512,
         "custom_size": {
           "key": "small",
-          "label": "500\u20132.000 LOC"
+          "label": "500–2.000 LOC"
         }
       },
       {
@@ -3369,7 +3369,7 @@
         "line_count": 2027,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -3405,7 +3405,7 @@
         "line_count": 538,
         "custom_size": {
           "key": "small",
-          "label": "500\u20132.000 LOC"
+          "label": "500–2.000 LOC"
         }
       },
       {
@@ -3417,7 +3417,7 @@
         "line_count": 676,
         "custom_size": {
           "key": "small",
-          "label": "500\u20132.000 LOC"
+          "label": "500–2.000 LOC"
         }
       },
       {
@@ -3429,7 +3429,7 @@
         "line_count": 2099,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -3453,7 +3453,7 @@
         "line_count": 1837,
         "custom_size": {
           "key": "small",
-          "label": "500\u20132.000 LOC"
+          "label": "500–2.000 LOC"
         }
       },
       {
@@ -3465,7 +3465,7 @@
         "line_count": 6659,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -3501,7 +3501,7 @@
         "line_count": 4261,
         "custom_size": {
           "key": "medium",
-          "label": "2.000\u20138.000 LOC"
+          "label": "2.000–8.000 LOC"
         }
       },
       {
@@ -3513,7 +3513,7 @@
         "line_count": 1289,
         "custom_size": {
           "key": "small",
-          "label": "500\u20132.000 LOC"
+          "label": "500–2.000 LOC"
         }
       },
       {
@@ -3537,7 +3537,7 @@
         "line_count": 1294,
         "custom_size": {
           "key": "small",
-          "label": "500\u20132.000 LOC"
+          "label": "500–2.000 LOC"
         }
       }
     ]
@@ -8337,7 +8337,7 @@
         "java_package": "com.openbravo.gps.apex.customizations",
         "line_count": 512,
         "size_tier": "small",
-        "size_label": "500\u20132.000 LOC",
+        "size_label": "500–2.000 LOC",
         "penalty": -4
       },
       {
@@ -8358,7 +8358,7 @@
         "java_package": "com.openbravo.gps.apex.procurement",
         "line_count": 2027,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
@@ -8379,21 +8379,21 @@
         "java_package": "com.openbravo.gps.apex.referencedata.product",
         "line_count": 538,
         "size_tier": "small",
-        "size_label": "500\u20132.000 LOC",
+        "size_label": "500–2.000 LOC",
         "penalty": -4
       },
       {
         "java_package": "com.openbravo.gps.apex.referencedata.roleoverviewer",
         "line_count": 676,
         "size_tier": "small",
-        "size_label": "500\u20132.000 LOC",
+        "size_label": "500–2.000 LOC",
         "penalty": -4
       },
       {
         "java_package": "com.openbravo.gps.apex.referencedata.roles",
         "line_count": 2099,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
@@ -8407,14 +8407,14 @@
         "java_package": "com.openbravo.gps.apex.template",
         "line_count": 1837,
         "size_tier": "small",
-        "size_label": "500\u20132.000 LOC",
+        "size_label": "500–2.000 LOC",
         "penalty": -4
       },
       {
         "java_package": "com.openbravo.gps.apex.warehouse",
         "line_count": 6659,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
@@ -8435,14 +8435,14 @@
         "java_package": "com.smf.apex.customization",
         "line_count": 4261,
         "size_tier": "medium",
-        "size_label": "2.000\u20138.000 LOC",
+        "size_label": "2.000–8.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.apex.legacycolumns",
         "line_count": 1289,
         "size_tier": "small",
-        "size_label": "500\u20132.000 LOC",
+        "size_label": "500–2.000 LOC",
         "penalty": -4
       },
       {
@@ -8456,7 +8456,7 @@
         "java_package": "org.openbravo.custom.massprocessexpenses",
         "line_count": 1294,
         "size_tier": "small",
-        "size_label": "500\u20132.000 LOC",
+        "size_label": "500–2.000 LOC",
         "penalty": -4
       }
     ],

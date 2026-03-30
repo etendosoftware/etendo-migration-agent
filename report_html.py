@@ -172,6 +172,17 @@ def render_breakdown(breakdown, final_score):
         "gradle_source_divergences",
         "jar_dependency_outdated",
     ]
+    # Maximum cap for each penalty category (from scoring formula)
+    # local_not_maintained = regular cap (-20) + translations cap (-3) = -23
+    _CAPS = {
+        "openbravo_platform":           -20,
+        "core_divergences":             -25,
+        "local_not_maintained":         -23,
+        "custom_modules":               -35,
+        "local_maintained_divergences": -15,
+        "gradle_source_divergences":    -15,
+        "jar_dependency_outdated":      -10,
+    }
 
     numeric = {k: v for k, v in breakdown.items()
                if k not in _SKIP and isinstance(v, (int, float))}
@@ -192,6 +203,8 @@ def render_breakdown(breakdown, final_score):
         val = numeric.get(key)
         if val is None or val == 0:
             continue
+        cap = _CAPS.get(key)
+        cap_html = f'<span class="bd-cap"> / {cap:.0f}</span>' if cap else ""
         pct = abs(val) / max_abs * 100
         rows += f"""
       <tr class="bd-row-penalty">
@@ -199,7 +212,7 @@ def render_breakdown(breakdown, final_score):
         <td class="bd-bar-cell">
           <div class="bd-bar bd-bar-neg" style="width:{pct:.1f}%"></div>
         </td>
-        <td class="bd-val bd-val-neg">{val:+.1f}</td>
+        <td class="bd-val bd-val-neg">{val:+.1f}{cap_html}</td>
       </tr>"""
 
     # Separator + total penalty
@@ -497,6 +510,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .bd-val { font-size: 12px; font-weight: 600; text-align: right; white-space: nowrap; }
 .bd-val-base { color: #22c55e; }
 .bd-val-neg  { color: #ef4444; }
+.bd-cap { font-size: 11px; font-weight: 400; color: #9ca3af; }
 .bd-val-result { font-size: 14px; }
 .bd-row-base td { padding-bottom: 8px; }
 .bd-row-sep td { padding: 4px 0; }
@@ -646,6 +660,39 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .mig-mod   { background: #fef9c3; color: #854d0e; }
 .mig-hard  { background: #ffedd5; color: #9a3412; }
 .mig-vhard { background: #fee2e2; color: #991b1b; }
+
+/* ── Custom Assessor ────────────────────────────────────────────────────── */
+.asmnt-meta { font-size: 12px; color: #64748b; margin-bottom: 16px; }
+.asmnt-section-label { font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.5px; color: #94a3b8; margin: 18px 0 10px; }
+.asmnt-badge { display: inline-block; padding: 2px 8px; border-radius: 4px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.3px; }
+.asmnt-trivial  { background: #dcfce7; color: #166534; }
+.asmnt-minor    { background: #fef9c3; color: #854d0e; }
+.asmnt-major    { background: #fee2e2; color: #991b1b; }
+.asmnt-critical { background: #fce7f3; color: #9d174d; }
+.asmnt-type     { background: #e0f2fe; color: #075985; }
+.asmnt-effort { font-size: 11px; color: #64748b; background: #f1f5f9;
+  padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.asmnt-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.asmnt-table th { text-align: left; padding: 7px 10px; background: #f8fafc;
+  color: #64748b; font-weight: 600; border-bottom: 2px solid #e2e8f0;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; }
+.asmnt-table td { padding: 8px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.asmnt-table tr:last-child td { border-bottom: none; }
+.asmnt-table tr:hover td { background: #f8fafc; }
+.asmnt-desc { color: #475569; font-size: 12px; margin-top: 3px; }
+.asmnt-rec  { color: #0f172a; font-size: 12px; }
+.asmnt-row-high td { background: #fff5f5; }
+.asmnt-row-med  td { background: #fffbeb; }
+.asmnt-effort-box { background: #1e293b; color: #f1f5f9; border-radius: 8px;
+  padding: 14px 20px; margin-top: 12px; display: flex; gap: 32px; flex-wrap: wrap; }
+.asmnt-stat { text-align: center; }
+.asmnt-stat-total { border-left: 1px solid #334155; padding-left: 32px; }
+.asmnt-stat-val       { font-size: 22px; font-weight: 700; color: #38bdf8; }
+.asmnt-stat-val-total { font-size: 22px; font-weight: 700; color: #f97316; }
+.asmnt-stat-lbl { font-size: 11px; color: #94a3b8; margin-top: 2px; }
+.asmnt-note { font-size: 11px; color: #94a3b8; margin-top: 10px; }
 """
 
 JS = """
@@ -660,16 +707,187 @@ document.addEventListener('DOMContentLoaded', function() {
 """
 
 
+# ── assessment render ─────────────────────────────────────────────────────────
+
+_COMPLEXITY_CLS = {
+    "trivial":  "asmnt-trivial",
+    "minor":    "asmnt-minor",
+    "major":    "asmnt-major",
+    "critical": "asmnt-critical",
+}
+_RISK_CLS = {
+    "low":    "asmnt-trivial",
+    "medium": "asmnt-minor",
+    "high":   "asmnt-major",
+}
+_RISK_ROW = {
+    "high":   " asmnt-row-high",
+    "medium": " asmnt-row-med",
+    "low":    "",
+}
+
+
+def _abadge(cls, label):
+    return f'<span class="asmnt-badge {cls}">{label}</span>'
+
+
+def _effort_tag(s):
+    return f'<span class="asmnt-effort">{s}</span>'
+
+
+def _fmt_effort_range(lo, hi):
+    if lo == hi:
+        return f"{lo:.0f}"
+    return f"{lo:.0f}–{hi:.0f}"
+
+
+def render_assessment(assessment):
+    if not assessment:
+        return ""
+
+    core_items   = assessment.get("core_customizations", [])
+    custom_items = assessment.get("custom_modules", [])
+    unm_items    = assessment.get("unmaintained_modules", [])
+    effort       = assessment.get("effort_summary", {})
+    generated    = assessment.get("generated", "")
+
+    # ── Core section ──────────────────────────────────────────────────────
+    core_html = ""
+    if core_items:
+        rows = ""
+        for item in core_items:
+            cx  = item.get("complexity", "minor")
+            rows += f"""
+          <tr>
+            <td>
+              <strong>{item.get('name','')}</strong>
+              <div class="asmnt-desc">{item.get('description','')}</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-type">{item.get('type','')}</span></td>
+            <td>{_abadge(_COMPLEXITY_CLS.get(cx,'asmnt-minor'), cx.capitalize())}</td>
+            <td>{_effort_tag(item.get('effort_days','?'))}</td>
+            <td class="asmnt-rec">{item.get('recommendation','')}</td>
+          </tr>"""
+        core_html = f"""
+      <div class="asmnt-section-label">1 · Modificaciones al Core</div>
+      <table class="asmnt-table">
+        <thead><tr>
+          <th>Customización</th><th>Tipo</th><th>Complejidad</th>
+          <th>Esfuerzo</th><th>Acción recomendada</th>
+        </tr></thead>
+        <tbody>{rows}</tbody>
+      </table>"""
+
+    # ── Custom modules section ────────────────────────────────────────────
+    custom_html = ""
+    if custom_items:
+        rows = ""
+        for item in custom_items:
+            risk = item.get("risk", "low")
+            rows += f"""
+          <tr class="{_RISK_ROW.get(risk, '')}">
+            <td><strong>{item.get('java_package','')}</strong></td>
+            <td>{item.get('function','')}</td>
+            <td>{_abadge(_RISK_CLS.get(risk,'asmnt-trivial'), risk.capitalize())}</td>
+            <td>{_effort_tag(item.get('effort_days','?'))}</td>
+            <td class="asmnt-rec">{item.get('recommendation','')}</td>
+          </tr>"""
+        custom_html = f"""
+      <div class="asmnt-section-label">2 · Módulos Custom</div>
+      <table class="asmnt-table">
+        <thead><tr>
+          <th>Módulo</th><th>Función</th><th>Riesgo</th>
+          <th>Esfuerzo</th><th>Recomendación</th>
+        </tr></thead>
+        <tbody>{rows}</tbody>
+      </table>"""
+
+    # ── Unmaintained modules section ──────────────────────────────────────
+    unm_html = ""
+    if unm_items:
+        rows = ""
+        for item in unm_items:
+            risk   = item.get("risk", "low")
+            repl   = "✅" if item.get("has_official_replacement") else "❌"
+            rows += f"""
+          <tr class="{_RISK_ROW.get(risk, '')}">
+            <td><strong>{item.get('java_package','')}</strong></td>
+            <td>{item.get('function','')}</td>
+            <td>{_abadge(_RISK_CLS.get(risk,'asmnt-trivial'), risk.capitalize())}</td>
+            <td style="text-align:center;font-size:14px">{repl}</td>
+            <td>{_effort_tag(item.get('effort_days','?'))}</td>
+            <td class="asmnt-rec">{item.get('recommendation','')}</td>
+          </tr>"""
+        unm_html = f"""
+      <div class="asmnt-section-label">3 · Módulos sin Mantenimiento</div>
+      <table class="asmnt-table">
+        <thead><tr>
+          <th>Módulo</th><th>Función</th><th>Riesgo</th>
+          <th>Reemplazo</th><th>Esfuerzo</th><th>Recomendación</th>
+        </tr></thead>
+        <tbody>{rows}</tbody>
+      </table>"""
+
+    # ── Effort summary ────────────────────────────────────────────────────
+    c_lo  = effort.get("core_min", 0)
+    c_hi  = effort.get("core_max", 0)
+    cu_lo = effort.get("custom_min", 0)
+    cu_hi = effort.get("custom_max", 0)
+    u_lo  = effort.get("unmaintained_min", 0)
+    u_hi  = effort.get("unmaintained_max", 0)
+    t_lo  = effort.get("total_min", 0)
+    t_hi  = effort.get("total_max", 0)
+
+    effort_html = f"""
+      <div class="asmnt-section-label" style="margin-top:24px">Esfuerzo Total Estimado</div>
+      <div class="asmnt-effort-box">
+        <div class="asmnt-stat">
+          <div class="asmnt-stat-val">{_fmt_effort_range(c_lo, c_hi)}</div>
+          <div class="asmnt-stat-lbl">días · Core</div>
+        </div>
+        <div class="asmnt-stat">
+          <div class="asmnt-stat-val">{_fmt_effort_range(cu_lo, cu_hi)}</div>
+          <div class="asmnt-stat-lbl">días · Módulos custom</div>
+        </div>
+        <div class="asmnt-stat">
+          <div class="asmnt-stat-val">{_fmt_effort_range(u_lo, u_hi)}</div>
+          <div class="asmnt-stat-lbl">días · Sin mantenimiento</div>
+        </div>
+        <div class="asmnt-stat asmnt-stat-total">
+          <div class="asmnt-stat-val-total">{_fmt_effort_range(t_lo, t_hi)}</div>
+          <div class="asmnt-stat-lbl">días · Total</div>
+        </div>
+      </div>
+      <p class="asmnt-note">
+        * Días de desarrollo para un desarrollador Etendo con experiencia.
+        Rango bajo = módulo oficial de reemplazo disponible. Rango alto = desarrollo desde cero.
+      </p>"""
+
+    return f"""
+  <div class="card">
+    <h2>🔬 Análisis de Customizaciones</h2>
+    <p class="asmnt-meta">
+      Generado por <strong>etendo-custom-assessor v{assessment.get('assessor_version','1.0')}</strong>
+      · {generated}
+    </p>
+    {core_html}
+    {custom_html}
+    {unm_html}
+    {effort_html}
+  </div>"""
+
+
 # ── main render ───────────────────────────────────────────────────────────────
 
 def render(report):
-    client   = report.get("client", {})
-    platform = report.get("platform", {})
-    score    = report.get("migration_score", 0)
-    label    = report.get("migratability", "")
-    breakdown= report.get("score_breakdown", {})
-    modules  = report.get("modules", {})
-    core     = report.get("core_divergences", {})
+    client     = report.get("client", {})
+    platform   = report.get("platform", {})
+    score      = report.get("migration_score", 0)
+    label      = report.get("migratability", "")
+    breakdown  = report.get("score_breakdown", {})
+    modules    = report.get("modules", {})
+    core       = report.get("core_divergences", {})
+    assessment = report.get("custom_assessment")
 
     total_modules = sum(len(v) for v in modules.values())
     generated = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -742,6 +960,8 @@ def render(report):
     <h2>Divergencias en core (vs v{core_version})</h2>
     {render_core(core)}
   </div>
+
+  {render_assessment(assessment) if assessment else ""}
 
   <div class="footer">Generado por Etendo Migration Agent · {generated}</div>
 </div>

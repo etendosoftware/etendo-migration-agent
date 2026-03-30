@@ -43,6 +43,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .bd-val { font-size: 12px; font-weight: 600; text-align: right; white-space: nowrap; }
 .bd-val-base { color: #22c55e; }
 .bd-val-neg  { color: #ef4444; }
+.bd-cap { font-size: 11px; font-weight: 400; color: #9ca3af; }
 .bd-val-result { font-size: 14px; }
 .bd-row-base td { padding-bottom: 8px; }
 .bd-row-sep td { padding: 4px 0; }
@@ -192,6 +193,39 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .mig-mod   { background: #fef9c3; color: #854d0e; }
 .mig-hard  { background: #ffedd5; color: #9a3412; }
 .mig-vhard { background: #fee2e2; color: #991b1b; }
+
+/* ── Custom Assessor ────────────────────────────────────────────────────── */
+.asmnt-meta { font-size: 12px; color: #64748b; margin-bottom: 16px; }
+.asmnt-section-label { font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.5px; color: #94a3b8; margin: 18px 0 10px; }
+.asmnt-badge { display: inline-block; padding: 2px 8px; border-radius: 4px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.3px; }
+.asmnt-trivial  { background: #dcfce7; color: #166534; }
+.asmnt-minor    { background: #fef9c3; color: #854d0e; }
+.asmnt-major    { background: #fee2e2; color: #991b1b; }
+.asmnt-critical { background: #fce7f3; color: #9d174d; }
+.asmnt-type     { background: #e0f2fe; color: #075985; }
+.asmnt-effort { font-size: 11px; color: #64748b; background: #f1f5f9;
+  padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.asmnt-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.asmnt-table th { text-align: left; padding: 7px 10px; background: #f8fafc;
+  color: #64748b; font-weight: 600; border-bottom: 2px solid #e2e8f0;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; }
+.asmnt-table td { padding: 8px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.asmnt-table tr:last-child td { border-bottom: none; }
+.asmnt-table tr:hover td { background: #f8fafc; }
+.asmnt-desc { color: #475569; font-size: 12px; margin-top: 3px; }
+.asmnt-rec  { color: #0f172a; font-size: 12px; }
+.asmnt-row-high td { background: #fff5f5; }
+.asmnt-row-med  td { background: #fffbeb; }
+.asmnt-effort-box { background: #1e293b; color: #f1f5f9; border-radius: 8px;
+  padding: 14px 20px; margin-top: 12px; display: flex; gap: 32px; flex-wrap: wrap; }
+.asmnt-stat { text-align: center; }
+.asmnt-stat-total { border-left: 1px solid #334155; padding-left: 32px; }
+.asmnt-stat-val       { font-size: 22px; font-weight: 700; color: #38bdf8; }
+.asmnt-stat-val-total { font-size: 22px; font-weight: 700; color: #f97316; }
+.asmnt-stat-lbl { font-size: 11px; color: #94a3b8; margin-top: 2px; }
+.asmnt-note { font-size: 11px; color: #94a3b8; margin-top: 10px; }
 </style>
 </head>
 <body>
@@ -206,7 +240,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <div class="meta-item"><span>Plataforma </span><strong>Etendo 25.4.0</strong></div>
       <div class="meta-item"><span>Base de comparación </span><strong>v25.4.11</strong></div>
       <div class="meta-item"><span>Módulos totales </span><strong>223</strong></div>
-      <div class="meta-item"><span>Generado </span><strong>2026-03-30 13:33</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-03-30 15:07</strong></div>
     </div>
   </div>
 
@@ -312,10 +346,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   <svg viewBox="0 0 120 120" class="score-ring">
     <circle cx="60" cy="60" r="54" fill="none" stroke="#e5e7eb" stroke-width="10"/>
     <circle cx="60" cy="60" r="54" fill="none" stroke="#ef4444" stroke-width="10"
-      stroke-dasharray="33.9 305.4"
+      stroke-dasharray="57.7 281.6"
       stroke-dashoffset="84.8"
       stroke-linecap="round"/>
-    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#ef4444">10</text>
+    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#ef4444">17</text>
     <text x="60" y="73" text-anchor="middle" font-size="9" fill="#6b7280">/100</text>
   </svg>
   <div class="score-label" style="color:#ef4444">Muy difícil</div>
@@ -333,43 +367,36 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <tr class="bd-row-penalty">
         <td class="bd-label">Divergencias en core</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar bd-bar-neg" style="width:81.4%"></div>
+          <div class="bd-bar bd-bar-neg" style="width:71.4%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-28.5</td>
+        <td class="bd-val bd-val-neg">-25.0<span class="bd-cap"> / -25</span></td>
       </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Módulos locales sin mantenimiento</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar bd-bar-neg" style="width:57.1%"></div>
+          <div class="bd-bar bd-bar-neg" style="width:65.7%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-20.0</td>
+        <td class="bd-val bd-val-neg">-23.0<span class="bd-cap"> / -23</span></td>
       </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Customizaciones</td>
         <td class="bd-bar-cell">
           <div class="bd-bar bd-bar-neg" style="width:100.0%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-35.0</td>
-      </tr>
-      <tr class="bd-row-penalty">
-        <td class="bd-label">Divergencias en dependencias Gradle Sources</td>
-        <td class="bd-bar-cell">
-          <div class="bd-bar bd-bar-neg" style="width:18.6%"></div>
-        </td>
-        <td class="bd-val bd-val-neg">-6.5</td>
+        <td class="bd-val bd-val-neg">-35.0<span class="bd-cap"> / -35</span></td>
       </tr>
       <tr class="bd-row-sep"><td colspan="3"><div class="bd-sep-line"></div></td></tr>
       <tr class="bd-row-total">
         <td class="bd-label bd-label-total">Total penalizaciones</td>
         <td class="bd-bar-cell"></td>
-        <td class="bd-val bd-val-neg">-90.0</td>
+        <td class="bd-val bd-val-neg">-83.0</td>
       </tr>
       <tr class="bd-row-result">
         <td class="bd-label bd-label-result">Score final</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar bd-bar-result" style="width:10%;background:#ef4444"></div>
+          <div class="bd-bar bd-bar-result" style="width:17%;background:#ef4444"></div>
         </td>
-        <td class="bd-val bd-val-result" style="color:#ef4444">10</td>
+        <td class="bd-val bd-val-result" style="color:#ef4444">17</td>
       </tr>
   </tbody>
 </table>
@@ -3507,7 +3534,9 @@ To Futit Services S.L.</span>
 </table>
   </div>
 
-  <div class="footer">Generado por Etendo Migration Agent · 2026-03-30 13:33</div>
+  
+
+  <div class="footer">Generado por Etendo Migration Agent · 2026-03-30 15:07</div>
 </div>
 <script>
 function toggle(header) {

@@ -43,6 +43,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .bd-val { font-size: 12px; font-weight: 600; text-align: right; white-space: nowrap; }
 .bd-val-base { color: #22c55e; }
 .bd-val-neg  { color: #ef4444; }
+.bd-cap { font-size: 11px; font-weight: 400; color: #9ca3af; }
 .bd-val-result { font-size: 14px; }
 .bd-row-base td { padding-bottom: 8px; }
 .bd-row-sep td { padding: 4px 0; }
@@ -192,6 +193,39 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .mig-mod   { background: #fef9c3; color: #854d0e; }
 .mig-hard  { background: #ffedd5; color: #9a3412; }
 .mig-vhard { background: #fee2e2; color: #991b1b; }
+
+/* ── Custom Assessor ────────────────────────────────────────────────────── */
+.asmnt-meta { font-size: 12px; color: #64748b; margin-bottom: 16px; }
+.asmnt-section-label { font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.5px; color: #94a3b8; margin: 18px 0 10px; }
+.asmnt-badge { display: inline-block; padding: 2px 8px; border-radius: 4px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.3px; }
+.asmnt-trivial  { background: #dcfce7; color: #166534; }
+.asmnt-minor    { background: #fef9c3; color: #854d0e; }
+.asmnt-major    { background: #fee2e2; color: #991b1b; }
+.asmnt-critical { background: #fce7f3; color: #9d174d; }
+.asmnt-type     { background: #e0f2fe; color: #075985; }
+.asmnt-effort { font-size: 11px; color: #64748b; background: #f1f5f9;
+  padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.asmnt-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.asmnt-table th { text-align: left; padding: 7px 10px; background: #f8fafc;
+  color: #64748b; font-weight: 600; border-bottom: 2px solid #e2e8f0;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; }
+.asmnt-table td { padding: 8px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.asmnt-table tr:last-child td { border-bottom: none; }
+.asmnt-table tr:hover td { background: #f8fafc; }
+.asmnt-desc { color: #475569; font-size: 12px; margin-top: 3px; }
+.asmnt-rec  { color: #0f172a; font-size: 12px; }
+.asmnt-row-high td { background: #fff5f5; }
+.asmnt-row-med  td { background: #fffbeb; }
+.asmnt-effort-box { background: #1e293b; color: #f1f5f9; border-radius: 8px;
+  padding: 14px 20px; margin-top: 12px; display: flex; gap: 32px; flex-wrap: wrap; }
+.asmnt-stat { text-align: center; }
+.asmnt-stat-total { border-left: 1px solid #334155; padding-left: 32px; }
+.asmnt-stat-val       { font-size: 22px; font-weight: 700; color: #38bdf8; }
+.asmnt-stat-val-total { font-size: 22px; font-weight: 700; color: #f97316; }
+.asmnt-stat-lbl { font-size: 11px; color: #94a3b8; margin-top: 2px; }
+.asmnt-note { font-size: 11px; color: #94a3b8; margin-top: 10px; }
 </style>
 </head>
 <body>
@@ -206,7 +240,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <div class="meta-item"><span>Plataforma </span><strong>Etendo 24.4.22</strong></div>
       <div class="meta-item"><span>Base de comparación </span><strong>v25.4.11</strong></div>
       <div class="meta-item"><span>Módulos totales </span><strong>148</strong></div>
-      <div class="meta-item"><span>Generado </span><strong>2026-03-27 19:56</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-03-30 15:07</strong></div>
     </div>
   </div>
 
@@ -335,28 +369,28 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <td class="bd-bar-cell">
           <div class="bd-bar bd-bar-neg" style="width:57.1%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-20.0</td>
+        <td class="bd-val bd-val-neg">-20.0<span class="bd-cap"> / -25</span></td>
       </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Módulos locales sin mantenimiento</td>
         <td class="bd-bar-cell">
           <div class="bd-bar bd-bar-neg" style="width:58.9%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-20.6</td>
+        <td class="bd-val bd-val-neg">-20.6<span class="bd-cap"> / -23</span></td>
       </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Customizaciones</td>
         <td class="bd-bar-cell">
           <div class="bd-bar bd-bar-neg" style="width:100.0%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-35.0</td>
+        <td class="bd-val bd-val-neg">-35.0<span class="bd-cap"> / -35</span></td>
       </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Divergencias en módulos locales mantenidos</td>
         <td class="bd-bar-cell">
           <div class="bd-bar bd-bar-neg" style="width:42.9%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-15.0</td>
+        <td class="bd-val bd-val-neg">-15.0<span class="bd-cap"> / -15</span></td>
       </tr>
       <tr class="bd-row-sep"><td colspan="3"><div class="bd-sep-line"></div></td></tr>
       <tr class="bd-row-total">
@@ -2630,7 +2664,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 </table>
   </div>
 
-  <div class="footer">Generado por Etendo Migration Agent · 2026-03-27 19:56</div>
+  
+
+  <div class="footer">Generado por Etendo Migration Agent · 2026-03-30 15:07</div>
 </div>
 <script>
 function toggle(header) {

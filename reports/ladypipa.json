@@ -2857,5 +2857,401 @@
     "local_maintained_divergences": 0,
     "gradle_source_divergences": 0,
     "jar_dependency_outdated": 0
+  },
+  "custom_assessment": {
+    "assessor_version": "1.0",
+    "generated": "2026-03-30",
+    "core_customizations": [
+      {
+        "name": "Script de cambios formales de base de datos",
+        "description": "Archivo XML autogenerado por las herramientas de exportación de Etendo que registra los cambios formales acumulados en el esquema de base de datos (ALTER TABLE, triggers, índices) a lo largo de los ciclos de desarrollo en esta instancia. Contiene 1.198 líneas añadidas y 150 eliminadas.",
+        "files": [
+          "src-db/database/formalChangesScript.xml"
+        ],
+        "lines_changed": 1348,
+        "conclusion": "eliminate",
+        "justification": "Este archivo es un artefacto de migración autogenerado, específico de cada entorno, que nunca debe comprometerse en el core. Será regenerado de forma limpia tras una actualización correcta a la versión destino.",
+        "effort_days": "0 días"
+      },
+      {
+        "name": "Framework de Hooks para el Controlador de Impresión",
+        "description": "Añade un sistema de extensión basado en CDI para el flujo de impresión de documentos. Define la interfaz PrintControllerHook con métodos preProcess/postProcess, una clase abstracta PrintControllerHookPrioritizer para controlar el orden de ejecución, y un PrintControllerHookManager que recopila, ordena por prioridad e invoca todos los hooks registrados, gestionando errores mediante PrintControllerHookException.",
+        "files": [
+          "src/org/openbravo/common/hooks/PrintControllerHook.java",
+          "src/org/openbravo/common/hooks/PrintControllerHookManager.java",
+          "src/org/openbravo/common/hooks/PrintControllerHookPrioritizer.java"
+        ],
+        "lines_changed": 296,
+        "conclusion": "upstream",
+        "justification": "Es un patrón de punto de extensión genérico y bien diseñado que permite a cualquier módulo inyectar lógica antes o después de la impresión de documentos sin modificar el core. No contiene ninguna lógica específica del cliente y aportaría valor a toda la comunidad Etendo si se propone al equipo de core.",
+        "effort_days": "2-3 días"
+      },
+      {
+        "name": "Referencia de tipo 'Carga de Fichero' para Definiciones de Proceso",
+        "description": "Añade soporte para parámetros de carga de fichero en los formularios de Definición de Proceso. Incluye: un widget SmartClient (OBProcessFileUpload) con validación de tamaño máximo configurable mediante preferencia de sistema, una clase Java UIDefinition para registrar el tipo de widget, y un manejador de eventos que impide asignar la referencia de carga de fichero a columnas de ventanas estándar (solo está disponible para parámetros de ProcessDefinition).",
+        "files": [
+          "modules_core/org.openbravo.client.application/web/org.openbravo.client.application/js/form/formitem/ob-formitem-processfileupload.js",
+          "modules_core/org.openbravo.client.kernel/src/org/openbravo/client/kernel/reference/ProcessFileUploadUIDefinition.java",
+          "modules_core/org.openbravo.client.application/src/org/openbravo/client/application/event/FileUploadColumnEventHandler.java"
+        ],
+        "lines_changed": 203,
+        "conclusion": "already_upstream",
+        "justification": "Esta funcionalidad (carga de ficheros en Definiciones de Proceso) ya está incorporada en las versiones actuales del core de Etendo/Openbravo (los ficheros llevan copyright 2022 Openbravo SLU), por lo que se trata de un backport de una mejora upstream. Tras la actualización al core actual, estas modificaciones pueden eliminarse sin pérdida de funcionalidad.",
+        "effort_days": "1-2 días"
+      },
+      {
+        "name": "Trigger de integridad de módulo OBUIAPP_PROCESS_MOD_TRG (modificado)",
+        "description": "Modificación del trigger de la tabla OBUIAPP_PROCESS que protege la integridad durante el desarrollo de módulos. El cambio añade la columna EM_SMFMU_Scan a la lista de campos que no pueden modificarse cuando un módulo no está en modo desarrollo, junto con una clase de prueba unitaria (ProcessTest.java) con 540 líneas.",
+        "files": [
+          "modules_core/org.openbravo.client.application/src-db/database/model/triggers/OBUIAPP_PROCESS_MOD_TRG.xml",
+          "modules_core/org.openbravo.client.application/src-test/org/openbravo/client/application/test/db/model/triggers/ProcessTest.java"
+        ],
+        "lines_changed": 634,
+        "conclusion": "upstream",
+        "justification": "Añadir el campo EM_SMFMU_Scan al trigger de integridad de módulo es una corrección necesaria cuando módulos SMF introducen columnas en OBUIAPP_PROCESS; es una mejora genérica que debería contribuirse al core para que otras instalaciones que usen los mismos módulos SMF funcionen correctamente.",
+        "effort_days": "1-2 días"
+      },
+      {
+        "name": "Clase utilitaria ProcessUtils para SMF Jobs Defaults",
+        "description": "Añade una clase utilitaria estática ProcessUtils al módulo com.smf.jobs.defaults con dos métodos reutilizables: massiveMessageHandler (consolida el resultado de éxito/error/aviso de un job cuando procesa múltiples registros) y updateResult (incrementa contadores de errores o éxitos según el tipo de mensaje OBError).",
+        "files": [
+          "modules_core/com.smf.jobs.defaults/src/com/smf/jobs/defaults/Utils/ProcessUtils.java"
+        ],
+        "lines_changed": 87,
+        "conclusion": "upstream",
+        "justification": "Esta utilidad encapsula un patrón ampliamente necesario para el manejo de resultados en jobs masivos de Etendo; es completamente genérica, sin lógica específica del cliente, y es adecuada para incluirse en com.smf.jobs.defaults upstream y evitar que cada instalación la duplique.",
+        "effort_days": "1 día"
+      },
+      {
+        "name": "Configuración del algoritmo de cifrado JWT en Secure Web Services",
+        "description": "Añade una nueva referencia de lista 'Algoritmo de Cifrado' (valores HS256 / ES256) y una preferencia de sistema SMFSWS_EncryptionAlgorithm (con valor por defecto ES256) al módulo com.smf.securewebservices, permitiendo a los administradores seleccionar el algoritmo de firma JWT desde el Diccionario de Aplicación en lugar de tenerlo codificado de forma fija.",
+        "files": [
+          "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REFERENCE.xml",
+          "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REF_LIST.xml",
+          "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_PREFERENCE.xml"
+        ],
+        "lines_changed": 68,
+        "conclusion": "already_upstream",
+        "justification": "El módulo com.smf.securewebservices ha sido mantenido activamente por Etendo y este selector de algoritmo JWT ya está incorporado en las versiones oficiales recientes; los cambios aquí son un backport aplicado sobre una versión antigua del módulo. Tras la actualización, el módulo oficial ofrece esta capacidad de forma nativa.",
+        "effort_days": "0.5 días"
+      },
+      {
+        "name": "Plantillas HTML legacy de filtros para informes Jasper (ad_reports / ad_forms)",
+        "description": "Aproximadamente 80 ficheros HTML de pantallas de filtro para informes Jasper clásicos han sido modificados. El cambio predominante en todos los ficheros es añadir un selector obligatorio de Organización (inpOrg / inpOrganizacion) a los formularios de filtro de informes, junto con su validación JavaScript correspondiente. Afecta a informes de ventas, compras, finanzas, almacén y producción.",
+        "files": [
+          "src/org/openbravo/erpCommon/ad_reports/ReportSalesDimensionalAnalyzeJRFilter.html",
+          "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesJRFilter.html",
+          "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderInvoicedJasper.html",
+          "src/org/openbravo/erpCommon/ad_reports/GeneralAccountingReports.html",
+          "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorDimensionalAnalysesFilterJR.html",
+          "src/org/openbravo/erpCommon/ad_reports/*.html (todos los restantes)",
+          "src/org/openbravo/erpCommon/ad_forms/*.html",
+          "modules_core/org.openbravo.financial.paymentreport/src/org/openbravo/financial/paymentreport/erpCommon/ad_reports/PaymentReport.html",
+          "modules_core/org.openbravo.reports.ordersawaitingdelivery/src/org/openbravo/reports/ordersawaitingdelivery/erpCommon/ad_reports/ReportOrderNotShipped.html"
+        ],
+        "lines_changed": 650,
+        "conclusion": "eliminate",
+        "justification": "Son plantillas HTML legacy de la interfaz pre-React para pantallas de filtro de informes Jasper; la arquitectura actual de Etendo las reemplaza completamente con Definiciones de Proceso basadas en React. La lógica de filtro por organización que añaden es trivialmente reproducible en la interfaz moderna sin ningún parche al core. Todos estos ficheros deben descartarse y los informes migrarse a formularios de parámetros React.",
+        "effort_days": "3-5 días"
+      }
+    ],
+    "custom_modules": [
+      {
+        "java_package": "com.smf.ladypipa.template",
+        "name": "Módulo plantilla de Ladypipa",
+        "description": "Módulo de tipo plantilla (Type=T) que actúa como contenedor para los cambios de configuración específicos del cliente. Actualmente contiene un único fichero configScript.xml que reasigna la tabla AD_TABLE 203 (C_Order) a una ventana diferente (del ID personalizado 800001 a la ventana estándar 130), corrigiendo una personalización previa de la asignación de ventana del Pedido de Venta.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "effort_days": "0.5-1 día",
+        "recommendation": "Revisar la sobreescritura del ID de ventana en configScript.xml durante la migración: si la ventana 800001 ya no existe en el entorno actualizado, esta sobreescritura quedará resuelta por la actualización o causará un error de migración. Validar y eliminar una vez confirmada la asignación de ventana correcta en la nueva versión."
+      }
+    ],
+    "unmaintained_modules": [
+      {
+        "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
+        "name": "Exportación de PyG y Balance a Excel",
+        "function": "Exporta los estados financieros de Pérdidas y Ganancias y Balance de Situación a formato Excel mediante Apache POI.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Reports Advanced (com.etendoerp.financial.reports.advanced)",
+        "generalization": "bundle_candidate",
+        "effort_days": "3-5 días",
+        "recommendation": "Evaluar si Financial Reports Advanced (ya instalado) cubre la exportación a Excel requerida. Si la cobertura es completa, dar de baja este módulo. Si se necesita un formato específico de árbol contable, migrar la lógica como extensión de informe dentro del bundle Financial Extensions."
+      },
+      {
+        "java_package": "com.openbravo.gps.finance.balanceexcelexport.report.es_es",
+        "name": "PyG y Balance exportación a Excel (traducción ES)",
+        "function": "Módulo de traducción al español del módulo de exportación de PyG y Balance a Excel.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Traducción ES de Financial Reports Advanced",
+        "generalization": "redundant",
+        "effort_days": "0 días",
+        "recommendation": "Eliminar junto con su módulo padre; no requiere migración independiente."
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.invoices",
+        "name": "Extensión de Carga Inicial de Datos para Facturas",
+        "function": "Proporciona funcionalidad de importación masiva de registros de facturas mediante el framework IDL.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "effort_days": "2-3 días",
+        "recommendation": "Depende de org.openbravo.idl (también sin mantenimiento). Evaluar si la importación de facturas sigue en uso operativo; en caso afirmativo, migrar la lógica de importación a un módulo de integración Etendo o utilizar la API REST para la ingesta de datos."
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.orders",
+        "name": "Extensión de Carga Inicial de Datos para Pedidos",
+        "function": "Proporciona funcionalidad de importación masiva de pedidos de venta y compra mediante el framework IDL.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "effort_days": "2-3 días",
+        "recommendation": "Misma cadena de dependencias que IDL Facturas. Evaluar el uso actual y, si sigue siendo necesario, migrar la lógica de importación de pedidos a la API REST o a un conector ETL mantenido."
+      },
+      {
+        "java_package": "com.practicsbs.shopify",
+        "name": "Integración con Shopify",
+        "function": "Conector bidireccional Etendo–Shopify que sincroniza productos, clientes, inventario, pedidos, devoluciones y tarjetas regalo entre el ERP Etendo y la plataforma de e-commerce Shopify mediante las APIs REST y GraphQL de Shopify.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "effort_days": "10-15 días",
+        "recommendation": "Se trata de una integración de gran tamaño (51 clases Java) que cubre un flujo de negocio crítico para Ladypipa. Las opciones son: (a) mantenerla como módulo Etendo independiente actualizado a las nuevas APIs del core, o (b) evaluar el framework de Conectores Etendo / EtendoRX como destino de migración. Las consultas GraphQL y los manejadores de webhooks deben auditarse por compatibilidad con los cambios de versión de la API de Shopify. Mínimo 10 días para migrar y volver a probar el flujo completo extremo a extremo."
+      },
+      {
+        "java_package": "com.practicsbs.shopify.template",
+        "name": "Plantilla de la Integración con Shopify",
+        "function": "Módulo plantilla (Type=T) que empaqueta los datos de configuración de la integración Shopify: listas de referencia, preferencias y configuraciones de ventana específicas de la instalación Shopify de este cliente.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "effort_days": "1-2 días",
+        "recommendation": "Migrar junto con el módulo principal de Shopify; toda la configuración debe revalidarse contra el entorno actualizado. Mantener como módulo plantilla del cliente."
+      },
+      {
+        "java_package": "com.smf.edicom",
+        "name": "Integración EDI con Edicom (SMF EDI)",
+        "function": "Integra Etendo con la plataforma EDI de Edicom mediante servicios web SOAP, permitiendo el intercambio automatizado de facturas electrónicas, pedidos y albaranes en formato EDI.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "effort_days": "5-8 días",
+        "recommendation": "Es un conector operativo clave (7 clases Java con cliente SOAP completo). Verificar si Edicom ha actualizado su API SOAP desde la construcción de este módulo; en caso afirmativo, el SOAPManager requerirá actualizaciones. Migrar empaquetándolo como módulo Etendo mantenido con control de versiones y probar todos los tipos de documentos EDI en un entorno de preproducción."
+      },
+      {
+        "java_package": "com.smf.edicom.csv",
+        "name": "Procesamiento CSV para Edicom",
+        "function": "Extensión del módulo SMF EDI que gestiona el análisis y procesamiento de documentos EDI en formato CSV.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "effort_days": "1-2 días",
+        "recommendation": "Migrar junto con com.smf.edicom como subcomponente. Depende de org.openbravo.utility.opencsv."
+      },
+      {
+        "java_package": "eu.practics.javaextensionpoints",
+        "name": "Puntos de Extensión Java",
+        "function": "Proporciona un mecanismo de punto de extensión basado en base de datos que permite invocar listas ordenadas de clases Java en tiempo de ejecución sin modificar el código fuente, similar a un registro de plugins/estrategias almacenado en el Diccionario de Aplicación.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Sistema CDI de Eventos/Hooks de Etendo (EntityPersistenceEventObserver, PrintControllerHookManager)",
+        "generalization": "bundle_candidate",
+        "effort_days": "3-5 días",
+        "recommendation": "Este módulo implementa un patrón que ahora está cubierto de forma nativa por el framework de hooks CDI de Etendo. Auditar todos los lugares del código que llaman a JavaExtensionPointExecutor.call() y refactorizarlos para usar interfaces de hook inyectadas por CDI. Dar de baja este módulo una vez completada la migración."
+      },
+      {
+        "java_package": "eu.practics.mailogger",
+        "name": "Registrador de Correo (Mail Logger)",
+        "function": "Proporciona una librería reutilizable de notificaciones por correo electrónico para procesos en segundo plano: recopila entradas de log de información, aviso y error durante la ejecución y envía un resumen HTML formateado a los destinatarios configurados al finalizar.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "effort_days": "2-3 días",
+        "recommendation": "Es una utilidad bien diseñada y autocontenida sin lógica específica del cliente. Podría contribuirse a la Comunidad Etendo como módulo auxiliar de notificaciones. Para la migración, reempaquetarlo como módulo Etendo mantenido; el código de envío de correo debe auditarse contra la API EmailManager actual de Etendo."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+        "name": "Importador Genérico de Extractos Bancarios CSV",
+        "function": "Importa registros de extractos bancarios en Etendo desde ficheros CSV genéricos, permitiendo la conciliación bancaria automatizada desde cualquier banco que exporte extractos en CSV.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Advanced Bank Account Management (com.etendoerp.advanced.bank.account.management)",
+        "generalization": "redundant",
+        "effort_days": "2-3 días",
+        "recommendation": "Advanced Bank Account Management (ya instalado) cubre la importación de extractos bancarios CSV de forma nativa. Validar el formato CSV soportado por el módulo oficial contra los formatos bancarios en uso; si son compatibles, dar de baja este módulo y configurar el importador oficial."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv.es_es",
+        "name": "Importador Genérico de Extractos Bancarios CSV – Traducción Español",
+        "function": "Traducción al español (ES) del módulo importador genérico de extractos bancarios CSV.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Traducción ES de Advanced Bank Account Management",
+        "generalization": "redundant",
+        "effort_days": "0 días",
+        "recommendation": "Eliminar junto con el módulo padre."
+      },
+      {
+        "java_package": "org.openbravo.financialmgmt.accounting.report.notposted",
+        "name": "Transacciones No Contabilizadas",
+        "function": "Proporciona un informe y fuente de datos que lista todos los documentos contables que aún no han sido contabilizados en el libro mayor, ayudando a los contables a identificar atrasos en la contabilización.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Reports Advanced (com.etendoerp.financial.reports.advanced)",
+        "generalization": "redundant",
+        "effort_days": "1-2 días",
+        "recommendation": "El bundle Financial Reports Advanced (ya instalado) incluye una vista equivalente de Transacciones No Contabilizadas. Verificar la cobertura y dar de baja este módulo para eliminar una deuda técnica de mantenimiento."
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "name": "Carga Inicial de Datos (IDL)",
+        "function": "Módulo framework principal para la importación masiva de datos maestros y transaccionales (productos, socios comerciales, facturas, pedidos) en Etendo desde fuentes externas mediante un motor de importación basado en XML/CSV.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "effort_days": "5-8 días",
+        "recommendation": "Este módulo de la era Openbravo (44 clases Java) no tiene un sustituto directo mantenido por Etendo. Si las importaciones masivas de datos siguen en uso operativo activo, migrar a un enfoque de integración moderno usando la API REST de Etendo o flujos EtendoRX. Si se usó solo para migraciones puntuales de datos históricos, documentar el proceso y archivar el módulo sin migración."
+      },
+      {
+        "java_package": "org.openbravo.idl.translation.es_ES",
+        "name": "Carga Inicial de Datos – Traducción Español",
+        "function": "Traducción al español (ES) del framework IDL.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "effort_days": "0 días",
+        "recommendation": "Eliminar junto con el módulo padre."
+      },
+      {
+        "java_package": "org.openbravo.materialmgmt.freightmgmt",
+        "name": "Gestión de Portes y Transporte",
+        "function": "Gestiona los costes de transporte, transportistas y el cálculo/asignación de gastos de envío en pedidos de venta y albaranes.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "effort_days": "3-5 días",
+        "recommendation": "No existe un sustituto oficial de Etendo para la gestión de portes en este momento. Migrar como módulo independiente mantenido; revisar todos los patrones de servlet y acceso a datos por compatibilidad con los cambios de API del core Etendo 24.x."
+      },
+      {
+        "java_package": "org.openbravo.materialmgmt.freightmgmt.es_es",
+        "name": "Gestión de Portes y Transporte – Traducción Español",
+        "function": "Traducción al español (ES) del módulo de Gestión de Portes y Transporte.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "effort_days": "0 días",
+        "recommendation": "Migrar junto con el módulo padre."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "name": "Extensión IDL para Java",
+        "function": "Extiende el framework IDL con procesadores de importación escritos en Java, permitiendo lógica de transformación programática durante las operaciones de carga de datos.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "effort_days": "1-2 días",
+        "recommendation": "Estrechamente acoplado a org.openbravo.idl. Migrar o archivar junto con el módulo IDL principal."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicematchingalgorithm",
+        "name": "Algoritmo Avanzado de Conciliación de Facturas",
+        "function": "Proporciona un algoritmo mejorado de conciliación factura-pago que mejora la reconciliación automática de facturas con pagos bancarios más allá de la lógica estándar de Etendo.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "Advanced Business Partner Settlement (com.etendoerp.advanced.bpsettlement)",
+        "generalization": "redundant",
+        "effort_days": "2-3 días",
+        "recommendation": "El módulo Advanced Business Partner Settlement (ya instalado) proporciona capacidades mejoradas de conciliación de pagos. Validar que su comportamiento cubre los casos de uso gestionados por este módulo legacy y luego darlo de baja."
+      },
+      {
+        "java_package": "org.openbravo.module.sepamatchingalgorithm",
+        "name": "Algoritmo de Conciliación SEPA",
+        "function": "Algoritmo especializado de conciliación de pagos para entradas de extracto bancario en formato SEPA, que analiza los campos de referencia SEPA para asociar automáticamente pagos con facturas.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "Automated Remittance (com.etendoerp.automated.remittance) + Advanced Bank Account Management",
+        "generalization": "redundant",
+        "effort_days": "2-3 días",
+        "recommendation": "Automated Remittance y Advanced Bank Account Management (ambos ya instalados) gestionan la remesa y conciliación basada en SEPA. Verificar la cobertura de todos los casos de uso SEPA y dar de baja este módulo legacy."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "name": "Framework SEPA ISO 20022 y Utilidades",
+        "function": "Módulo framework base SEPA ISO 20022 que proporciona utilidades compartidas, constructores de mensajes y modelos de datos utilizados por todos los submódulos SEPA (transferencia de crédito, adeudo directo, extracto bancario).",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "Automated Remittance (com.etendoerp.automated.remittance)",
+        "generalization": "redundant",
+        "effort_days": "3-5 días",
+        "recommendation": "El bundle Automated Remittance (ya instalado) incluye soporte nativo para SEPA ISO 20022. Migrar toda la funcionalidad SEPA al bundle oficial y dar de baja los cuatro módulos SEPA legacy como grupo, tras realizar pruebas de aceptación exhaustivas sobre los ciclos de pago SEPA."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.camt",
+        "name": "Extracto Bancario SEPA CAMT.053 (Bank-to-Customer Statement)",
+        "function": "Analiza e importa ficheros XML de extracto bancario SEPA CAMT.053 (más de 90 clases Java JAXB) para reconciliar transacciones bancarias con los pagos de Etendo.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "Advanced Bank Account Management (com.etendoerp.advanced.bank.account.management)",
+        "generalization": "redundant",
+        "effort_days": "3-5 días",
+        "recommendation": "Advanced Bank Account Management soporta la importación de extractos CAMT. Migrar el procesamiento CAMT al módulo oficial; es el componente SEPA legacy de mayor complejidad y requiere pruebas de regresión exhaustivas sobre la importación de extractos bancarios."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "Adeudo Directo SEPA Cliente-Banco (CORE y B2B)",
+        "function": "Genera ficheros XML SEPA Direct Debit PAIN.008 (esquemas CORE y B2B) para el envío de remesas de adeudo directo al banco.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "Automated Remittance (com.etendoerp.automated.remittance)",
+        "generalization": "redundant",
+        "effort_days": "3-5 días",
+        "recommendation": "Dar de baja tras confirmar que Automated Remittance cubre la generación de ficheros de adeudo directo CORE y B2B en los formatos requeridos por el banco de Ladypipa."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "Transferencia de Crédito SEPA Cliente-Banco (PAIN.001)",
+        "function": "Genera ficheros XML SEPA Credit Transfer PAIN.001 para el envío de órdenes de pago masivas al banco.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "Automated Remittance (com.etendoerp.automated.remittance)",
+        "generalization": "redundant",
+        "effort_days": "3-5 días",
+        "recommendation": "Dar de baja tras confirmar que Automated Remittance genera ficheros PAIN.001 en el formato aceptado por el banco de Ladypipa."
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "name": "Librería OpenCSV",
+        "function": "Empaqueta la librería OpenCSV como módulo Etendo, proporcionando utilidades de análisis y escritura CSV a otros módulos (utilizado por Edicom CSV e importadores de extractos bancarios).",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "effort_days": "0.5 días",
+        "recommendation": "OpenCSV está disponible como dependencia estándar Maven/Gradle en Etendo 24.x. Reemplazar la dependencia de módulo con una dependencia Gradle directa sobre opencsv y dar de baja este módulo envoltorio."
+      }
+    ],
+    "effort_summary": {
+      "core_min": 7.5,
+      "core_max": 12.5,
+      "custom_min": 0.5,
+      "custom_max": 1.0,
+      "unmaintained_min": 53.5,
+      "unmaintained_max": 82.5,
+      "total_min": 61.5,
+      "total_max": 96.0
+    }
   }
 }
