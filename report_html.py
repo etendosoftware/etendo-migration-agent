@@ -169,19 +169,15 @@ def render_breakdown(breakdown, final_score):
         "local_not_maintained",
         "custom_modules",
         "local_maintained_divergences",
-        "gradle_source_divergences",
-        "jar_dependency_outdated",
     ]
-    # Maximum cap for each penalty category (from scoring formula)
-    # local_not_maintained = regular cap (-20) + translations cap (-3) = -23
+    # Maximum cap per category — suman exactamente -100 (score mínimo = 0)
+    # gradle_source y jar_dependency no se muestran: nunca penalizan por diseño
     _CAPS = {
         "openbravo_platform":           -20,
         "core_divergences":             -15,
-        "local_not_maintained":         -23,
+        "local_not_maintained":         -20,
         "custom_modules":               -35,
-        "local_maintained_divergences": -15,
-        "gradle_source_divergences":    -15,
-        "jar_dependency_outdated":      -10,
+        "local_maintained_divergences": -10,
     }
 
     numeric = {k: v for k, v in breakdown.items()
@@ -198,15 +194,23 @@ def render_breakdown(breakdown, final_score):
         <td class="bd-val bd-val-base">100</td>
       </tr>"""
 
-    # Penalty rows (ordered, skip zeroes)
+    # Penalty rows (ordered) — always show all categories
     for key in _ORDER:
         val = numeric.get(key)
-        if val is None or val == 0:
+        if val is None:
             continue
         cap = _CAPS.get(key)
-        cap_html = f'<span class="bd-cap"> / {cap:.0f}</span>' if cap else ""
-        pct = abs(val) / max_abs * 100
-        rows += f"""
+        if val == 0:
+            rows += f"""
+      <tr class="bd-row-ok">
+        <td class="bd-label">{breakdown_label(key)}</td>
+        <td class="bd-bar-cell"><span class="bd-ok-badge">✓ sin penalización</span></td>
+        <td class="bd-val bd-val-ok">0</td>
+      </tr>"""
+        else:
+            cap_html = f'<span class="bd-cap"> / {cap:.0f}</span>' if cap else ""
+            pct = abs(val) / max_abs * 100
+            rows += f"""
       <tr class="bd-row-penalty">
         <td class="bd-label">{breakdown_label(key)}</td>
         <td class="bd-bar-cell">
@@ -216,12 +220,13 @@ def render_breakdown(breakdown, final_score):
       </tr>"""
 
     # Separator + total penalty
+    max_penalty = sum(_CAPS[k] for k in _ORDER if k in _CAPS)
     rows += f"""
       <tr class="bd-row-sep"><td colspan="3"><div class="bd-sep-line"></div></td></tr>
       <tr class="bd-row-total">
         <td class="bd-label bd-label-total">Total penalizaciones</td>
         <td class="bd-bar-cell"></td>
-        <td class="bd-val bd-val-neg">{total_penalty:+.1f}</td>
+        <td class="bd-val bd-val-neg">{total_penalty:+.1f}<span class="bd-cap"> / {max_penalty:.0f}</span></td>
       </tr>
       <tr class="bd-row-result">
         <td class="bd-label bd-label-result">Score final</td>
@@ -406,7 +411,7 @@ def render_methodology():
             <td>Mayor penalización que Gradle Sources porque no está gestionado como dependencia. Cada archivo divergente implica trabajo de análisis para determinar si es customización o desactualización.</td></tr>
         <tr><td><span class="cat-chip chip-nmnt">Local sin Mant.</span></td>
             <td>Módulo con código fuente en /modules/ que no aparece en el catálogo de Etendo. Puede ser de terceros, legacy de Openbravo, o un módulo abandonado.</td>
-            <td>−3 por módulo, independientemente del contenido (máximo −20)</td>
+            <td>−3 por módulo regular, −0.3 por pack de traducción (cap conjunto −20)</td>
             <td>Sin soporte oficial no hay ruta de actualización garantizada. Cada uno requiere evaluación manual para decidir si se reemplaza, se integra como customización, o se descarta.</td></tr>
         <tr><td><span class="cat-chip chip-cust">Customización</span></td>
             <td>Módulo desarrollado por o para el cliente (el java_package contiene el nombre del cliente o el segmento "custom"). Representa lógica de negocio propia.</td>
@@ -435,22 +440,23 @@ def render_methodology():
             <td>Desarrollo significativo. Alta complejidad de migración.</td></tr>
       </tbody>
     </table>
-    <p class="meth-note">Máximo global de customizaciones: −35. El LOC se cuenta sobre archivos de texto
-    (.java, .xml, .sql, .js, .css, .html, .properties, .gradle, etc.).</p>
+    <p class="meth-note">Cap global de customizaciones: −35. El LOC se cuenta sobre archivos de texto
+    (.java, .xml, .sql, .js, .css, .html, .properties, .gradle, etc.). Los packs de traducción penalizan −0.5 fijo sin importar el tamaño.</p>
   </div>
 
   <div class="meth-block">
     <div class="meth-title">Core y otros factores</div>
     <table class="meth-table">
-      <thead><tr><th>Factor</th><th>Penalización</th></tr></thead>
+      <thead><tr><th>Factor</th><th>Penalización</th><th>Cap</th></tr></thead>
       <tbody>
-        <tr><td>Plataforma Openbravo (sin build.gradle)</td><td>−20 fijo</td></tr>
-        <tr><td>Líneas de diferencia en core (por cada 100)</td><td>−0.5 (máximo −15)</td></tr>
+        <tr><td>Plataforma Openbravo (sin build.gradle)</td><td>−20 fijo</td><td>−20</td></tr>
+        <tr><td>Líneas de diferencia en core (por cada 100 líneas)</td><td>−0.5</td><td>−15</td></tr>
+        <tr><td>Módulos mantenidos con divergencias (por módulo)</td><td>−1 / −3 / −6 / −10 según volumen</td><td>−10</td></tr>
       </tbody>
     </table>
-    <p class="meth-note">Las diferencias en core incluyen tanto customizaciones como brecha de versión
-    (el cliente puede estar en una versión anterior a la base de comparación). El score parte de 100
-    y se le restan todas las penalizaciones.</p>
+    <p class="meth-note">El score parte de 100 y se le restan todas las penalizaciones. La penalización
+    máxima posible es <strong>−100</strong>, por lo que el score mínimo es 0. Los módulos Gradle Source
+    desactualizados y las dependencias JAR no penalizan — se resuelven con una actualización estándar.</p>
   </div>
 
   <div class="meth-block">
@@ -514,6 +520,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .bd-val { font-size: 12px; font-weight: 600; text-align: right; white-space: nowrap; }
 .bd-val-base { color: #22c55e; }
 .bd-val-neg  { color: #ef4444; }
+.bd-val-ok   { color: #22c55e; }
+.bd-ok-badge { font-size: 11px; color: #22c55e; font-weight: 500; }
+.bd-row-ok td { opacity: 0.75; }
 .bd-cap { font-size: 11px; font-weight: 400; color: #9ca3af; }
 .bd-val-result { font-size: 14px; }
 .bd-row-base td { padding-bottom: 8px; }

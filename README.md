@@ -2,15 +2,32 @@
 
 Herramienta de análisis de instalaciones Etendo/Openbravo on-premise para estimar el esfuerzo de migración a SaaS. Genera un reporte JSON + HTML con diagnóstico técnico completo: módulos, divergencias de core, score de migrabilidad, assessment profundo de customizaciones y análisis de preparación para la nueva UI de Etendo.
 
-**Requiere Python 3.8+. Para el análisis de uso real se requiere el MCP de Mixpanel (ver abajo).**
+---
+
+## Primeros pasos
+
+### 1. Clonar el repositorio
+
+```bash
+git clone git@github.com:etendosoftware/etendo-migration-agent.git
+cd etendo-migration-agent
+```
+
+### 2. Abrir Claude Code en el directorio raíz
+
+```bash
+claude
+```
+
+Las skills del proyecto (`.claude/skills/`) se cargan automáticamente al iniciar Claude Code en este directorio.
 
 ---
 
 ## Requisitos
 
-- Python 3.8+ (sin dependencias externas para el analyzer)
-- Para `--expand-baseline`: credenciales de GitHub con acceso al registry de Etendo y Gradle wrapper (`gradlew`) en la instalación
-- Para los Pasos 5 y 6: Claude Code con las skills del proyecto disponibles (incluidas en `.claude/skills/` — no requieren instalación adicional)
+- Python 3.8+ (sin dependencias externas)
+- Para el Paso 2: credenciales de GitHub con acceso al registry de Etendo y Gradle wrapper (`gradlew`) en la instalación del cliente
+- Para los Pasos 5 y 6: Claude Code corriendo en el directorio raíz del proyecto (las skills se incluyen en `.claude/skills/`)
 - Para el Paso 6: MCP de Mixpanel configurado en Claude Code (ver abajo)
 
 ### Configuración del MCP de Mixpanel
@@ -46,17 +63,19 @@ El Paso 6 requiere el MCP de Mixpanel conectado a Claude Code como **integració
 
 ## Flujo completo de análisis
 
-El análisis se realiza en **6 etapas** en orden. Las primeras 4 son automáticas; las últimas 2 las ejecuta el agente IA de Claude.
+El análisis se realiza en **7 etapas** en orden. Los pasos 1–4 son automáticos (CLI); los pasos 5–6 los ejecuta el agente IA de Claude; el paso 7 refresca el dashboard global.
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│  1. Setup baseline      analyze.py --setup-baseline             │
-│  2. Expandir módulos    ./gradlew expandCore + expandModules    │
-│  3. Generar JSON        analyze.py --baseline-dir ...           │
-│  4. Generar HTML        report_html.py                          │
-│  5. Assessment IA       /etendo-customisation-expert <cliente>  │
-│  6. Análisis de uso     /etendo-mixpanel-usage <cliente>        │
-└─────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────┐
+│  0. Clonar repo + abrir Claude Code en el directorio raíz                │
+│  1. Setup baseline      analyze.py --setup-baseline                      │
+│  2. Expandir módulos    ./gradlew expandCore + ./gradlew expandModules   │
+│  3. Generar JSON        analyze.py --baseline-dir ...                    │
+│  4. Generar HTML        report_html.py                                   │
+│  5. Assessment IA       /etendo-customisation-expert <cliente>           │
+│  6. Análisis de uso     /etendo-mixpanel-usage <cliente>                 │
+│  7. Refrescar dashboard python3 dashboard.py                             │
+└──────────────────────────────────────────────────────────────────────────┘
 ```
 
 ### Paso 1 — Setup del baseline
@@ -67,7 +86,7 @@ Genera el `build.gradle` dinámico con las versiones exactas instaladas del clie
 python3 analyze.py --path /ruta/a/etendo --client "Nombre Cliente" --setup-baseline
 ```
 
-Salida: crea un directorio temporal en `/tmp/etendo-baseline-<hash>/` e imprime los comandos del paso siguiente.
+Salida: crea un directorio en `baselines/etendo-baseline-<hash>/` dentro del proyecto e imprime los comandos del paso siguiente.
 
 ### Paso 2 — Expandir módulos
 
@@ -89,7 +108,7 @@ python3 analyze.py \
   --path /ruta/a/etendo \
   --client "Nombre Cliente" \
   --output reports/cliente.json \
-  --baseline-dir /tmp/etendo-baseline-<hash>
+  --baseline-dir baselines/etendo-baseline-<hash>
 ```
 
 Con credenciales explícitas:
@@ -99,7 +118,7 @@ python3 analyze.py \
   --path /ruta/a/etendo \
   --client "Nombre Cliente" \
   --output reports/cliente.json \
-  --baseline-dir /tmp/etendo-baseline-<hash> \
+  --baseline-dir baselines/etendo-baseline-<hash> \
   --github-user miusuario \
   --github-token ghp_xxx \
   --verbose
@@ -351,7 +370,7 @@ El análisis siempre busca en `src/`, `modules/` y `modules_core/`. Las dependen
 
 ## Score de migración
 
-El score parte de **100** y se descuentan penalizaciones basadas en **volumen de código customizado** (líneas de diff), no en cantidad de archivos.
+El score parte de **100** y se descuentan penalizaciones basadas en **volumen de código customizado** (líneas de diff), no en cantidad de archivos. La penalización máxima posible es **−100**, por lo que el score mínimo alcanzable es 0.
 
 | Score | Nivel | Significado |
 |---|---|---|
@@ -362,41 +381,19 @@ El score parte de **100** y se descuentan penalizaciones basadas en **volumen de
 
 ### Penalizaciones
 
-**Plataforma Openbravo:** −20 fijo.
+Las 5 categorías de penalización suman un cap máximo total de **−100**:
 
-**Divergencias en core** (líneas diff añadidas + eliminadas):
-
-| Volumen | Penalización |
-|---|---|
-| < 1.000 líneas | −5 |
-| 1.000 – 5.000 líneas | −12 |
-| 5.000 – 20.000 líneas | −20 |
-| > 20.000 líneas | −25 (cap) |
-
-**Módulos sin mantenimiento:** −3 por módulo (cap −20).
-
-**Módulos de customización** (LOC total del módulo):
-
-| Tamaño | LOC | Penalización |
+| Categoría | Criterio | Cap |
 |---|---|---|
-| micro | < 500 | −1 |
-| small | 500 – 2.000 | −4 |
-| medium | 2.000 – 8.000 | −9 |
-| large | > 8.000 | −16 |
-| — | cap global | −35 |
+| Plataforma Openbravo | −20 fijo si la instalación es Openbravo (no Etendo) | −20 |
+| Divergencias en core | −0,5 por cada 100 líneas diff (añadidas + eliminadas) | −15 |
+| Módulos sin mantenimiento | −3 por módulo regular, −0,3 por pack de traducción | −20 |
+| Módulos de customización | −1/−4/−9/−16 según tamaño (micro/small/medium/large) | −35 |
+| Módulos mantenidos con divergencias | −1/−3/−6/−10 según volumen de diff por módulo | −10 |
 
-**Módulos mantenidos con divergencias** (líneas diff por módulo):
-
-| Volumen diff | Penalización |
-|---|---|
-| 0 – 50 líneas | 0 (ruido/formato) |
-| 50 – 200 líneas | −1 |
-| 200 – 1.000 líneas | −3 |
-| 1.000 – 5.000 líneas | −6 |
-| > 5.000 líneas | −10 |
-| — | cap global −15 |
-
-**No penalizan:** módulos Gradle Source desactualizados (actualización simple) ni dependencias JAR desactualizadas.
+**No penalizan** (son señal positiva o se resuelven con una actualización estándar):
+- Módulos Gradle Source desactualizados
+- Dependencias JAR desactualizadas
 
 ---
 

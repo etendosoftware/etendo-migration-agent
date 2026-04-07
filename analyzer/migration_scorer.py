@@ -2,22 +2,25 @@
 migration_scorer.py — Calculates a migration score and migratability label.
 
 Score: 0–100 (higher = easier to migrate to SaaS)
+Maximum total penalty: -100 (score floor = 0)
 
 Penalties applied:
-  - Platform is Openbravo (not Etendo)              → -20 fixed
+  - Platform is Openbravo (not Etendo)              → -20 fixed          (cap -20)
 
   - Core divergences (diff lines added+removed):
-      -0.5 per 100 lines (cap -15)
+      -0.5 per 100 lines                             (cap -15)
 
-  - Local not-maintained modules                     → -3 per module (cap -20)
-    Translation packs                               → -0.3 per module (cap -3)
+  - Local not-maintained modules:
+      regular modules                               → -3 per module
+      translation packs                             → -0.3 per module
+      combined cap                                                        (cap -20)
 
   - Custom modules — tier-based LOC penalty:
       micro  < 500 LOC                               →  -1
       small  500 – 2.000 LOC                         →  -4
       medium 2.000 – 8.000 LOC                       →  -9
       large  > 8.000 LOC                             → -16
-      global cap                                     → -35
+      global cap                                                          (cap -35)
 
   - Local maintained modules with custom code
     (diff lines per module):
@@ -26,9 +29,9 @@ Penalties applied:
       200 – 1.000 lines                              →  -3
       1.000 – 5.000 lines                            →  -6
       > 5.000 lines                                  → -10
-      global cap across all maintained modules       → -15
+      global cap across all maintained modules                            (cap -10)
 
-NOT penalized (easy to resolve via update):
+NOT penalized (resolved via standard update, not customizations):
   - Gradle source modules with divergences           →   0
   - JAR dependencies outdated                        →   0
 
@@ -92,7 +95,7 @@ def compute_score(report: dict) -> dict:
     not_maintained = report.get("modules", {}).get("local_not_maintained", [])
     nm_regular = [m for m in not_maintained if not _LOCALE_RE.search(m.get("java_package", ""))]
     nm_translations = [m for m in not_maintained if _LOCALE_RE.search(m.get("java_package", ""))]
-    nm_penalty = _clamp(len(nm_regular) * 3, 0, 20) + _clamp(len(nm_translations) * 0.3, 0, 3)
+    nm_penalty = _clamp(len(nm_regular) * 3 + len(nm_translations) * 0.3, 0, 20)
     score -= nm_penalty
     breakdown["local_not_maintained"] = round(-nm_penalty, 2)
     breakdown["local_not_maintained_translations"] = len(nm_translations)
@@ -130,7 +133,7 @@ def compute_score(report: dict) -> dict:
         diff = m.get("diff") or {}
         lines = (diff.get("diff_lines_added") or 0) + (diff.get("diff_lines_removed") or 0)
         em_penalty += _maintained_module_penalty(lines)
-    em_penalty = _clamp(em_penalty, 0, 15)
+    em_penalty = _clamp(em_penalty, 0, 10)
     score -= em_penalty
     breakdown["local_maintained_divergences"] = round(-em_penalty, 2) or 0
 
