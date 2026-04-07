@@ -266,7 +266,12 @@ def setup_baseline(
         print("WARNING: No bundles found to expand.")
         return None
 
-    target = tempfile.mkdtemp(prefix="etendo-baseline-")
+    baselines_dir = Path(__file__).parent.parent / "baselines"
+    baselines_dir.mkdir(exist_ok=True)
+    import string, random
+    suffix = "".join(random.choices(string.ascii_lowercase + string.digits, k=8))
+    target = str(baselines_dir / f"etendo-baseline-{suffix}")
+    os.makedirs(target, exist_ok=True)
 
     with open(os.path.join(target, "build.gradle"), "w") as f:
         f.write(generate_build_gradle(core_version, plugin_version, bundle_versions))
@@ -430,7 +435,15 @@ def expand_baseline(
 
     # Set up working directory
     cleanup = work_dir is None
-    target = work_dir or tempfile.mkdtemp(prefix="etendo-baseline-")
+    if work_dir:
+        target = work_dir
+    else:
+        baselines_dir = Path(__file__).parent.parent / "baselines"
+        baselines_dir.mkdir(exist_ok=True)
+        import string, random
+        suffix = "".join(random.choices(string.ascii_lowercase + string.digits, k=8))
+        target = str(baselines_dir / f"etendo-baseline-{suffix}")
+        os.makedirs(target, exist_ok=True)
 
     try:
         # Write build files

@@ -980,6 +980,172 @@ def render_assessment(assessment):
   </div>"""
 
 
+# ── ui_readiness ─────────────────────────────────────────────────────────────
+
+def priority_color(p):
+    return {
+        "critica": "#ef4444",
+        "alta":    "#f97316",
+        "media":   "#f59e0b",
+        "no_aplica": "#9ca3af",
+    }.get(p, "#6b7280")
+
+
+def priority_label_es(p):
+    return {
+        "critica":  "Crítica",
+        "alta":     "Alta",
+        "media":    "Media",
+        "no_aplica": "No aplica",
+    }.get(p, p)
+
+
+def global_status_html(status, summary):
+    cfg = {
+        "blocked": ("#ef4444", "BLOQUEADA — hay features críticas pendientes"),
+        "partial":  ("#f59e0b", "PARCIAL — hay features de alta prioridad pendientes"),
+        "ready":    ("#22c55e", "LISTA — solo features opcionales pendientes"),
+    }.get(status, ("#9ca3af", status))
+    color, text = cfg
+    counts = (
+        f'<span style="color:#ef4444;font-weight:700">{summary.get("critica",0)} críticas</span>'
+        f'<span style="color:#6b7280"> · </span>'
+        f'<span style="color:#f97316;font-weight:700">{summary.get("alta",0)} altas</span>'
+        f'<span style="color:#6b7280"> · </span>'
+        f'<span style="color:#f59e0b;font-weight:700">{summary.get("media",0)} medias</span>'
+        f'<span style="color:#6b7280"> · </span>'
+        f'<span style="color:#9ca3af">{summary.get("no_aplica",0)} no aplica</span>'
+    )
+    return f"""
+<div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap;">
+  <span style="background:{color};color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;letter-spacing:.5px;">{text}</span>
+  <span style="font-size:13px;">{counts}</span>
+</div>"""
+
+
+def _evidence_html(code_evidence):
+    """Renders full code evidence list as a collapsible <details> block."""
+    if not code_evidence:
+        return ""
+    total = sum(len(e.get("files", [])) for e in code_evidence)
+    if total == 0:
+        return ""
+    inner = ""
+    for ev in code_evidence:
+        files = ev.get("files", [])
+        if not files:
+            continue
+        inner += f'<div style="font-size:10px;color:#64748b;margin-top:4px;font-style:italic;">{ev["description"]} ({len(files)})</div>'
+        inner += '<ul style="margin:2px 0 4px 12px;padding:0;font-size:10px;color:#94a3b8;">'
+        for fp in files:
+            # Show module name + filename for readability
+            parts = fp.replace("\\", "/").split("/")
+            try:
+                mod_idx = parts.index("modules")
+                display = "/".join(parts[mod_idx:mod_idx+2]) + "/…/" + parts[-1]
+            except ValueError:
+                display = "/".join(parts[-3:])
+            inner += f"<li style='list-style:disc;margin-left:10px;'>{display}</li>"
+        inner += "</ul>"
+    return f"""<details style="margin-top:4px;cursor:pointer;">
+  <summary style="font-size:11px;color:#3b82f6;list-style:none;">{total} archivo(s) encontrado(s) ▸</summary>
+  {inner}
+</details>"""
+
+
+def _ui_feature_rows(features):
+    rows = ""
+    for f in features:
+        pct = f.get("completion_pct", 0)
+        color = priority_color(f["priority"])
+        pct_color = score_color(pct)
+        bar_width = max(pct, 3)
+        evidence_html = _evidence_html(f.get("code_evidence", []))
+        rows += f"""
+      <tr>
+        <td style="font-size:12px;color:#64748b;white-space:nowrap;padding:8px 10px;">{f['section']}</td>
+        <td style="padding:8px 10px;">
+          <span style="font-weight:600;font-size:13px;">{f['title']}</span>
+          <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">{f['status']}</span>
+        </td>
+        <td style="padding:8px 10px;white-space:nowrap;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+              <div style="width:{bar_width}%;height:100%;background:{pct_color};border-radius:3px;"></div>
+            </div>
+            <span style="font-size:12px;color:{pct_color};font-weight:600;">{pct}%</span>
+          </div>
+        </td>
+        <td style="padding:8px 10px;font-size:12px;color:#475569;">
+          {f.get('reason','')}
+          {evidence_html}
+        </td>
+      </tr>"""
+    return rows
+
+
+def render_ui_readiness(readiness):
+    if not readiness:
+        return ""
+    summary = readiness.get("summary", {})
+    status  = readiness.get("global_status", "blocked")
+    features = readiness.get("features", [])
+    generated = readiness.get("generated", "")
+
+    PRIORITY_ORDER = ["critica", "alta", "media", "no_aplica"]
+
+    groups = {}
+    for p in PRIORITY_ORDER:
+        groups[p] = [f for f in features if f.get("priority") == p]
+
+    group_cfg = {
+        "critica":  ("#ef4444", "Críticas",  True),
+        "alta":     ("#f97316", "Altas",     True),
+        "media":    ("#f59e0b", "Medias",    False),
+        "no_aplica":("#9ca3af", "No aplica", False),
+    }
+
+    blocks_html = ""
+    for p, (color, label_text, open_default) in group_cfg.items():
+        group = groups.get(p, [])
+        if not group:
+            continue
+        open_class = " open" if open_default else ""
+        rows = _ui_feature_rows(group)
+        blocks_html += f"""
+<div class="module-block">
+  <div class="module-header{open_class}" onclick="toggle(this)" style="border-left:4px solid {color}">
+    <span class="cat-icon" style="color:{color}">{'●' if p in ('critica','alta') else '○'}</span>
+    <span class="cat-label">{label_text}</span>
+    <span class="cat-count" style="background:{color}">{len(group)}</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body{open_class}">
+    <table style="width:100%;border-collapse:collapse;">
+      <thead>
+        <tr style="background:#f8fafc;font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;">
+          <th style="padding:7px 10px;text-align:left;font-weight:600;">Sección</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;">Feature</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;">Avance</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;">Por qué es relevante</th>
+        </tr>
+      </thead>
+      <tbody>{rows}
+      </tbody>
+    </table>
+  </div>
+</div>"""
+
+    return f"""
+<div class="card">
+  <h2>Preparación para nueva UI
+    <span style="font-size:12px;font-weight:400;color:#94a3b8;margin-left:8px;">generado {generated}</span>
+  </h2>
+  {global_status_html(status, summary)}
+  {blocks_html}
+</div>"""
+
+
 # ── main render ───────────────────────────────────────────────────────────────
 
 def render(report):
@@ -990,7 +1156,8 @@ def render(report):
     breakdown  = report.get("score_breakdown", {})
     modules    = report.get("modules", {})
     core       = report.get("core_divergences", {})
-    assessment = report.get("custom_assessment")
+    assessment   = report.get("custom_assessment")
+    ui_readiness = report.get("ui_readiness")
 
     total_modules = sum(len(v) for v in modules.values())
     generated = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -1065,6 +1232,8 @@ def render(report):
   </div>
 
   {render_assessment(assessment) if assessment else ""}
+
+  {render_ui_readiness(ui_readiness) if ui_readiness else ""}
 
   <div class="footer">Generado por Etendo Migration Agent · {generated}</div>
 </div>

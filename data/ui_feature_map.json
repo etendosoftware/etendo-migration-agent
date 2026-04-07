@@ -1,0 +1,399 @@
+[
+  {
+    "section": "4",
+    "title": "Display Logic — Bug @field_name@ syntax",
+    "status": "BUG ACTIVO",
+    "completion_pct": 65,
+    "tier": "critica",
+    "description": "La sintaxis @field_name@ en display logic genera errores JS. Afecta visibilidad condicional de campos y tabs.",
+    "always": true,
+    "code_signatures": [],
+    "note": "Universal: cualquier instalación con ventanas usa display logic."
+  },
+  {
+    "section": "2.3",
+    "title": "Amount Field — Precisión por moneda",
+    "status": "PARCIAL",
+    "completion_pct": 65,
+    "tier": "critica",
+    "description": "Decimales del campo Amount deben seguir la moneda del documento. Separadores de miles por locale.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[12\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Amount (reference ID 12)"}
+    ]
+  },
+  {
+    "section": "2.18",
+    "title": "Selector Out Parameters",
+    "status": "PARCIAL",
+    "completion_pct": 70,
+    "tier": "critica",
+    "description": "Al seleccionar un registro el selector debe poblar múltiples campos via isoutparameter='Y'.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "ISOUTPARAMETER><!\\[CDATA\\[Y\\]", "files": "*.xml", "description": "Campos configurados como out parameter en selectores"}
+    ]
+  },
+  {
+    "section": "18",
+    "title": "Application Forms (ad_form) — Formularios standalone",
+    "status": "NOT DONE",
+    "completion_pct": 15,
+    "tier": "critica",
+    "description": "Formularios standalone con layout custom (Initial Client Setup, Create Invoices from Orders, GL Posting, etc.).",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "", "files": "AD_FORM.xml", "description": "Archivos AD_FORM.xml con formularios standalone definidos"}
+    ]
+  },
+  {
+    "section": "26",
+    "title": "Tab Default Filters y Sort Order",
+    "status": "NOT DONE",
+    "completion_pct": 20,
+    "tier": "critica",
+    "description": "HQLFILTERCLAUSE/ORDERBYCLAUSE en tabs no enviados por TabBuilder al UI.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "HQLFILTERCLAUSE><!\\[CDATA\\[", "files": "AD_TAB.xml", "description": "Tabs con filtros HQL configurados"},
+      {"pattern": "ORDERBYCLAUSE><!\\[CDATA\\[", "files": "AD_TAB.xml", "description": "Tabs con orden por defecto configurado"}
+    ]
+  },
+  {
+    "section": "3.A.2b",
+    "title": "Background Processes — Monitor y Scheduling",
+    "status": "NOT DONE",
+    "completion_pct": 10,
+    "tier": "critica",
+    "description": "Gestión y monitoreo de procesos en background. Sin esto no se pueden ver logs ni programar ejecuciones.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "ISBACKGROUND><!\\[CDATA\\[Y\\]", "files": "AD_PROCESS.xml", "description": "Procesos configurados para ejecución en background"},
+      {"pattern": "implements DalBaseProcess", "files": "*.java", "description": "Clases Java que implementan procesos de background"},
+      {"pattern": "extends ProcessBundle", "files": "*.java", "description": "Clases Java tipo ProcessBundle (background)"}
+    ]
+  },
+  {
+    "section": "2.B.2",
+    "title": "Posted Button — 3 estados contables",
+    "status": "PARCIAL",
+    "completion_pct": 30,
+    "tier": "critica",
+    "description": "Botón Posted con 3 estados: No Contabilizado / Contabilizado / Error. Post/unpost y link a visor de asientos.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "COLUMNNAME><!\\[CDATA\\[Posted\\]", "files": "AD_COLUMN.xml", "description": "Columna Posted en tablas de documentos contables"},
+      {"pattern": "Fact_Acct", "files": "*.java", "description": "Clases Java que generan asientos contables"}
+    ]
+  },
+  {
+    "section": "2.22",
+    "title": "Button Processing — Decision tree",
+    "status": "PARCIAL",
+    "completion_pct": 45,
+    "tier": "alta",
+    "description": "Lógica centralizada para distinguir Process Definition vs Legacy vs Hardcoded buttons.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[28\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Button (reference ID 28)"}
+    ]
+  },
+  {
+    "section": "25",
+    "title": "Default Value Expressions",
+    "status": "PARCIAL",
+    "completion_pct": 45,
+    "tier": "alta",
+    "description": "DEFAULTVALUE con @var@ disponible en JSON pero UI no lo lee client-side.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "DEFAULTVALUE><!\\[CDATA\\[@", "files": "AD_COLUMN.xml", "description": "Columnas con defaults dinámicos usando sintaxis @var@"}
+    ]
+  },
+  {
+    "section": "3.A.2c",
+    "title": "Manual Action Processes — Namespace OB.*",
+    "status": "BLOQUEADO",
+    "completion_pct": 40,
+    "tier": "alta",
+    "description": "Procesos JS con namespaces OB.OpenClose.*, OB.OBWPL.*, etc. No existen en React.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "OB\\.OpenClose", "files": "*.js", "description": "Llamadas al namespace OB.OpenClose (period open/close)"},
+      {"pattern": "OB\\.OBWPL", "files": "*.js", "description": "Llamadas al namespace OB.OBWPL (warehouse picking lists)"},
+      {"pattern": "OB\\.APRM", "files": "*.js", "description": "Llamadas al namespace OB.APRM (payment management)"},
+      {"pattern": "OB\\.[A-Z][A-Z]", "files": "*.js", "description": "Llamadas a namespaces OB.* en procesos JS"}
+    ]
+  },
+  {
+    "section": "3.B.2",
+    "title": "Process Definition Manual JS",
+    "status": "BLOQUEADO",
+    "completion_pct": 25,
+    "tier": "alta",
+    "description": "Process Definitions con generación de UI via JavaScript custom. Requiere decisión arquitectónica.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "UIPATTERN><!\\[CDATA\\[M\\]", "files": "AD_PROCESS.xml", "description": "Procesos con UI pattern Manual (generación JS)"}
+    ]
+  },
+  {
+    "section": "2.B.6-9",
+    "title": "Hardcoded HTML Processes",
+    "status": "NOT DONE",
+    "completion_pct": 20,
+    "tier": "alta",
+    "description": "Procesos hardcoded no implementados: Process Invoice (APRM), Execute Payment, Reconcile, Close Year, Process Shipment.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "FIN_PaymentProcess", "files": "*.java", "description": "Proceso de pago APRM"},
+      {"pattern": "M_InOut_Post", "files": "*.java", "description": "Proceso de confirmación de albarán/shipment"},
+      {"pattern": "FIN_Reconciliation", "files": "*.java", "description": "Proceso de conciliación bancaria"},
+      {"pattern": "CloseBooks", "files": "*.java", "description": "Proceso de cierre de ejercicio contable"}
+    ]
+  },
+  {
+    "section": "2.6",
+    "title": "Price Field — Precisión 4+ decimales",
+    "status": "PARCIAL",
+    "completion_pct": 60,
+    "tier": "alta",
+    "description": "Campo Price con precisión de 4+ decimales. Recálculo via callout no validado.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[800008\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Price (reference ID 800008)"}
+    ]
+  },
+  {
+    "section": "2.29",
+    "title": "PAttribute — Lote/Serie/Variantes",
+    "status": "PARCIAL",
+    "completion_pct": 55,
+    "tier": "alta",
+    "description": "Selector de Attribute Set para lotes, números de serie y variantes. Mandatory en popup no validado.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[35\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo PAttribute (reference ID 35)"},
+      {"pattern": "M_AttributeSetInstance_ID", "files": "*.xml", "description": "Referencias a instancias de atributos (lote/serie)"}
+    ]
+  },
+  {
+    "section": "1.4",
+    "title": "Pick and Execute — Validación inline y single-select",
+    "status": "PARCIAL",
+    "completion_pct": 55,
+    "tier": "media",
+    "description": "Proceso en dos fases: Filtrar/Seleccionar → Ejecutar. Falta validación mandatory inline y modo single-select.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "WINDOWTYPE><!\\[CDATA\\[OBUIAPP_PickAndExecute\\]", "files": "AD_WINDOW.xml", "description": "Ventanas de tipo Pick and Execute"}
+    ]
+  },
+  {
+    "section": "2.17",
+    "title": "Search Field — Popup con columnas",
+    "status": "PARCIAL",
+    "completion_pct": 55,
+    "tier": "media",
+    "description": "Campo Search con popup selector. Falta: columnas configuradas, limpieza de selección.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[30\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Search (reference ID 30)"}
+    ]
+  },
+  {
+    "section": "21",
+    "title": "Workspace / Dashboard (My Openbravo)",
+    "status": "NOT DONE",
+    "completion_pct": 5,
+    "tier": "media",
+    "description": "Dashboard personalizable con widgets. Sin esto los usuarios no tienen página de inicio con KPIs.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "extends WidgetProvider", "files": "*.java", "description": "Clases Java que registran widgets en el dashboard"},
+      {"pattern": "OBUIAPP_Widget_Class", "files": "*.xml", "description": "Clases de widget registradas en el dashboard"}
+    ]
+  },
+  {
+    "section": "33",
+    "title": "View Personalization (Saved Views)",
+    "status": "NOT DONE",
+    "completion_pct": 10,
+    "tier": "media",
+    "description": "Layouts personalizados por usuario/rol. Toolbar buttons personalization y manageviews ausentes.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "OBUIAPP_UIPersonalization", "files": "*.xml", "description": "Configuración de personalización de UI por usuario/rol"}
+    ]
+  },
+  {
+    "section": "2.B.4",
+    "title": "ChangeProjectStatus",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Botón de transición de estado de proyecto. Sin esto los proyectos no cambian de estado en nueva UI.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "ChangeProjectStatus", "files": "*.java", "description": "Proceso Java de cambio de estado de proyecto"},
+      {"pattern": "ChangeProjectStatus", "files": "*.xml", "description": "Proceso AD de cambio de estado de proyecto"}
+    ]
+  },
+  {
+    "section": "2.25",
+    "title": "Rich Text Area (WYSIWYG)",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Editor HTML WYSIWYG para campos de texto enriquecido.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[7CB371C1\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Rich Text (reference ID 7CB371C1)"}
+    ]
+  },
+  {
+    "section": "2.26",
+    "title": "Image Field (ad_image)",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Campo de referencia a imagen (tabla ad_image). Imágenes de productos, logos.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[32\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Image referencia (reference ID 32)"}
+    ]
+  },
+  {
+    "section": "2.27",
+    "title": "Image BLOB",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Imagen almacenada inline como BLOB en columna de base de datos.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[4AA6C3BE\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Image BLOB (reference ID 4AA6C3BE)"}
+    ]
+  },
+  {
+    "section": "2.28",
+    "title": "Link Field (URL)",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Campo URL con validación y renderizado como link clickeable.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[800101\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Link/URL (reference ID 800101)"}
+    ]
+  },
+  {
+    "section": "2.34",
+    "title": "Upload File",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Campo de carga de archivos con drag-and-drop en formularios.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[715C53D4\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Upload File (reference ID 715C53D4)"}
+    ]
+  },
+  {
+    "section": "31",
+    "title": "Data Import System",
+    "status": "NOT DONE",
+    "completion_pct": 20,
+    "tier": "media",
+    "description": "Importación masiva desde CSV/Excel. Sin esto la carga de datos debe hacerse via API o Classic UI.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "UIPATTERN><!\\[CDATA\\[I\\]", "files": "AD_PROCESS.xml", "description": "Procesos de tipo Import en AD"}
+    ]
+  },
+  {
+    "section": "34",
+    "title": "Calendar Views",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Vista de calendario/timeline para registros con fechas.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "OBUIAPP_Calendar", "files": "*.xml", "description": "Configuración de vistas de calendario en AD"},
+      {"pattern": "ob-calendar", "files": "*.js", "description": "Implementación JavaScript de vista de calendario"}
+    ]
+  },
+  {
+    "section": "3.B.5",
+    "title": "RX Actions (EtendoRX async)",
+    "status": "PARCIAL",
+    "completion_pct": 40,
+    "tier": "media",
+    "description": "Ejecución de procesos async via EtendoRX. Flujo de polling y manejo de indisponibilidad.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "UIPATTERN><!\\[CDATA\\[ETRX_RxAction\\]", "files": "AD_PROCESS.xml", "description": "Procesos AD con tipo RX Action de EtendoRX"}
+    ]
+  },
+  {
+    "section": "2.14",
+    "title": "Button List Field",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Selector multi-opción renderizado como grupo de botones (no dropdown).",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[FF808181\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Button List (reference ID FF808181)"}
+    ]
+  },
+  {
+    "section": "2.35",
+    "title": "Color Field",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Selector de color para variantes de producto, categorías, marcas.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[27\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Color (reference ID 27)"}
+    ]
+  },
+  {
+    "section": "2.36",
+    "title": "Assignment Field",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Diálogo de asignación de recursos (franjas horarias, capacidad).",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[33\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Assignment (reference ID 33)"}
+    ]
+  },
+  {
+    "section": "2.19",
+    "title": "Multi Selector (OBUISEL_Multi)",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "Selector múltiple tipo tag/chip. Para relaciones many-to-many en formularios.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[87E6CFF8\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo Multi Selector (reference ID 87E6CFF8)"}
+    ]
+  },
+  {
+    "section": "2.20",
+    "title": "SelectorAsLink (OBUISEL_SelectorAsLink)",
+    "status": "NOT DONE",
+    "completion_pct": 0,
+    "tier": "media",
+    "description": "FK renderizado como link clickeable en lugar de dropdown.",
+    "always": false,
+    "code_signatures": [
+      {"pattern": "AD_REFERENCE_ID><!\\[CDATA\\[80B16307\\]", "files": "AD_COLUMN.xml", "description": "Columnas de tipo SelectorAsLink (reference ID 80B16307)"}
+    ]
+  }
+]
