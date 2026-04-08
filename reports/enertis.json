@@ -3862,7 +3862,8 @@
         "priority": "critica",
         "reason": "Se encontraron 41 pestañas con DISPLAYLOGIC que controla su visibilidad. Esta funcionalidad NO existe en el nuevo UI. Las pestañas que solo deben mostrarse en ciertos contextos (ej. pestaña de dimensiones de proyecto solo cuando aplica) quedarán visibles siempre o requerirán reescritura de la lógica.",
         "ad_count": 41,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 2.7
       },
       {
         "section": "5.2",
@@ -3872,7 +3873,8 @@
         "priority": "critica",
         "reason": "Se encontraron 39 pestañas marcadas como ISREADONLY=Y. En el nuevo UI no existe implementación de pestañas de solo lectura — todos los registros aparecen editables. Esto es un problema de seguridad y UX para este cliente que tiene pestañas de auditoría y de documentos contabilizados que no deben editarse.",
         "ad_count": 39,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 6.5
       },
       {
         "section": "21",
@@ -3882,7 +3884,8 @@
         "priority": "critica",
         "reason": "Se encontraron 34 archivos XML con referencias a widgets OBKMO o LinkedItem. El módulo de dashboard con widgets personalizables (My Openbravo) NO existe en el nuevo UI. Para este cliente esto incluye dashboards de seguimiento de proyectos GPS y financiero.",
         "ad_count": 34,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 6.8
       },
       {
         "section": "AD_FORM",
@@ -3892,7 +3895,8 @@
         "priority": "critica",
         "reason": "Se encontraron 31 Application Forms (AD_FORM) registrados en el AD. Estos formularios de interfaz JavaScript personalizada (ej. conciliación bancaria, informes de pago SEPA, gestión de remesas) NO tienen equivalente en el nuevo UI. Cada uno requiere reescritura completa como Process Definition o componente React.",
         "ad_count": 31,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 6.2
       },
       {
         "section": "6",
@@ -3902,7 +3906,8 @@
         "priority": "critica",
         "reason": "Se encontraron 96 columnas con callouts asociados. Los callouts son el mecanismo principal para lógica de negocio en tiempo real (recálculo de importes, validaciones de campo, propagación de valores). En el nuevo UI, los callouts del namespace OB.* no están implementados. Para este cliente, los módulos GPS de proyectos usan callouts extensivamente en los formularios de presupuestación y seguimiento de proyectos.",
         "ad_count": 96,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 4.8
       },
       {
         "section": "14",
@@ -3912,7 +3917,8 @@
         "priority": "critica",
         "reason": "Se encontraron 1.016 columnas con READONLYLOGIC definida. Esta lógica que hace un campo editable o no según condiciones (ej. solo editable en estado Draft) NO está implementada en el nuevo UI. Es particularmente crítica para los documentos transaccionales donde los campos deben bloquearse una vez contabilizados.",
         "ad_count": 1016,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 5.1
       },
       {
         "section": "4",
@@ -3922,7 +3928,8 @@
         "priority": "critica",
         "reason": "Se encontraron 2.417 campos con DISPLAYLOGIC definida en el AD. Esta lógica condicional que muestra/oculta campos según el estado del documento o valores de otros campos NO está implementada en el nuevo UI. Dado que los módulos GPS de proyectos de este cliente hacen uso intensivo de display logic para controlar formularios complejos de proyectos y presupuestos, el impacto es muy alto.",
         "ad_count": 2417,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 4.8
       },
       {
         "section": "23",
@@ -3932,7 +3939,8 @@
         "priority": "critica",
         "reason": "Se encontraron 242 campos marcados como ISSHOWNINSTATUSBAR=Y. La barra de estado que muestra campos clave (estado del documento, total del pedido, cliente) en la parte inferior del formulario NO está implementada en el nuevo UI. Para este cliente es esencial al operar con documentos transaccionales donde el estado y totales deben estar siempre visibles.",
         "ad_count": 242,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 4.8
       },
       {
         "section": "2.B",
@@ -3942,7 +3950,8 @@
         "priority": "critica",
         "reason": "Se encontraron 54 columnas con botones hardcoded (DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus). Estos botones ejecutan lógica de negocio crítica (contabilización, creación de líneas desde documentos, cambio de estado). En el nuevo UI, estos flujos no están completamente implementados — especialmente ChangeProjectStatus del módulo GPS de proyectos de este cliente.",
         "ad_count": 54,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 5.4
       },
       {
         "section": "1.2",
@@ -3952,7 +3961,8 @@
         "priority": "critica",
         "reason": "Este cliente tiene 40 ventanas Transaction (pedidos, facturas, albaranes, pagos, proyectos GPS). El flujo DocAction (Draft→Complete→Post) y la máquina de estados no está completo en el nuevo UI. Con 54 columnas DocAction/Posted/CreateFrom en el AD, el bloqueo es transversal a toda la operativa financiera y de proyectos.",
         "ad_count": 40,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 4.0
       },
       {
         "section": "7",
@@ -3962,7 +3972,8 @@
         "priority": "critica",
         "reason": "El cliente opera con flujos documentales completos (facturas, albaranes, pedidos, pagos, proyectos) que requieren la máquina de estados DocAction. Con 54 botones hardcoded y 40 ventanas Transaction, la gestión de estados Draft→Complete→Booked→Voided es fundamental. El nuevo UI no implementa completamente los estados intermedios ni los controles de edición por estado.",
         "ad_count": 54,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "25",
@@ -3972,7 +3983,8 @@
         "priority": "critica",
         "reason": "Se encontraron 4.724 columnas con DEFAULTVALUE definido. Incluyen expresiones SQL, variables de sesión (@AD_USER_ID@, @#AD_ORG_ID@) y funciones JavaScript. El nuevo UI interpreta parcialmente estas expresiones pero hay casos no cubiertos, especialmente SQL defaults y expresiones con variables de contexto complejas usadas en módulos GPS de proyectos.",
         "ad_count": 4724,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "1.4",
@@ -3982,7 +3994,8 @@
         "priority": "critica",
         "reason": "Este cliente tiene 46 ventanas PickAndExecute y 88 procesos OBUIAPP de este tipo. Son críticos para flujos de selección masiva (liquidaciones de gastos, gestión de proyectos GPS, asignaciones de dimensiones). La implementación en el nuevo UI es parcial y no cubre todos los casos de uso.",
         "ad_count": 134,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 4.5
       },
       {
         "section": "3",
@@ -3992,7 +4005,8 @@
         "priority": "critica",
         "reason": "Este cliente tiene 366 procesos legacy (AD_PROCESS, UI patterns M y S) y 137 procesos OBUIAPP (88 PickAndExecute, 30 tipo A, 8 Report). Los procesos legacy con UIPATTERN=S (popup de parámetros SmartClient) no tienen equivalente completo en el nuevo UI. Los procesos OBUIAPP_Report tampoco están cubiertos en el nuevo UI.",
         "ad_count": 503,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 5.0
       },
       {
         "section": "8",
@@ -4002,7 +4016,8 @@
         "priority": "critica",
         "reason": "Se encontraron 180 selectores OBUISEL en el AD. Los módulos GPS (proyectos, gastos, dimensiones) hacen uso extensivo de selectores para búsqueda de proyectos, empleados y centros de coste. La funcionalidad de out-parameters (rellenar múltiples campos al seleccionar) y los filtros dinámicos de selector tienen soporte parcial en el nuevo UI.",
         "ad_count": 180,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 3.6
       },
       {
         "section": "33",
@@ -4012,7 +4027,8 @@
         "priority": "alta",
         "reason": "La personalización de vistas guardadas (columnas visibles, orden, filtros predefinidos) es una función muy usada en instalaciones con muchas ventanas. El nuevo UI tiene soporte parcial. Para este cliente con 354 ventanas y usuarios de distintos perfiles, la falta de personalización impacta la productividad.",
         "ad_count": 354,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "1.3",
@@ -4022,7 +4038,8 @@
         "priority": "alta",
         "reason": "Este cliente tiene 10 ventanas de tipo Query. Son ventanas de reporting y consulta pura. El nuevo UI soporta parcialmente el modo grid-only; las vistas de consulta con parámetros complejos requieren verificación adicional.",
         "ad_count": 10,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "22",
@@ -4032,7 +4049,8 @@
         "priority": "alta",
         "reason": "Se encontraron 1.542 campos asignados a field groups (secciones colapsables). El nuevo UI soporta field groups pero la lógica de colapso/expansión y el layout no es idéntico al SmartClient. Para este cliente con formularios de proyectos muy largos, la organización visual por secciones es importante.",
         "ad_count": 1542,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 5.1
       },
       {
         "section": "29",
@@ -4042,7 +4060,8 @@
         "priority": "media",
         "reason": "Se encontró 1 pestaña con HASTREE=Y. El uso de tree views es mínimo en esta instalación. No es un bloqueante crítico aunque la funcionalidad no está disponible en el nuevo UI.",
         "ad_count": 1,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "9",
@@ -4052,7 +4071,8 @@
         "priority": "media",
         "reason": "Las vistas de grid básicas están implementadas en el nuevo UI. El filtrado, ordenación y paginación funcionan. La edición inline en grid tiene soporte parcial. Para este cliente con muchas ventanas Maintain, esto no es un bloqueante crítico.",
         "ad_count": 354,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "12",
@@ -4062,7 +4082,8 @@
         "priority": "media",
         "reason": "El menú de navegación con 557 entradas está implementado en el nuevo UI. La estructura jerárquica y la búsqueda funcionan correctamente. No es un bloqueante para este cliente.",
         "ad_count": 557,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "1.1",
@@ -4072,7 +4093,8 @@
         "priority": "media",
         "reason": "Este cliente tiene 258 ventanas de tipo Maintain. El CRUD básico está implementado en el nuevo UI, aunque hay aspectos menores (ej. auditoría, filtros avanzados) que aún se verifican.",
         "ad_count": 258,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 5.2
       },
       {
         "section": "11",
@@ -4082,8 +4104,11 @@
         "priority": "no_aplica",
         "reason": "La autenticación, login/logout, cambio de contraseña y gestión de sesión están completamente implementados en el nuevo UI. No aplica como bloqueante.",
         "ad_count": 0,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       }
-    ]
+    ],
+    "ui_migration_score": 60,
+    "ui_label": "partial"
   }
 }

@@ -3592,7 +3592,8 @@
         "priority": "critica",
         "reason": "Se encontraron 104 pestañas con DISPLAYLOGIC en el core de Etendo 26.1.0. Esta funcionalidad controla qué pestañas son visibles según el contexto (ej. pestaña 'Retenciones' solo visible en documentos de tipo retenido). NO existe en el nuevo UI — las pestañas se muestran siempre, generando confusión y potenciales errores de flujo.",
         "ad_count": 104,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 6.9
       },
       {
         "section": "5.2",
@@ -3602,7 +3603,8 @@
         "priority": "critica",
         "reason": "Se encontraron 40 pestañas marcadas ISREADONLY=Y en el core de Etendo 26.1.0. Son pestañas de auditoría y vistas consolidadas que no deben editarse. El nuevo UI no implementa el modo read-only por pestaña — todos los registros aparecen editables, creando riesgo de modificaciones accidentales en datos de auditoría.",
         "ad_count": 40,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 6.7
       },
       {
         "section": "AD_FORM",
@@ -3612,7 +3614,8 @@
         "priority": "critica",
         "reason": "Se encontraron 28 Application Forms en el core de Etendo 26.1.0. Incluyen formularios críticos como la conciliación bancaria, gestión de remesas SEPA, informes de pago y el asistente de importación de extractos. Cada uno requiere reescritura completa en React para el nuevo UI — no hay mecanismo de compatibilidad.",
         "ad_count": 28,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 5.6
       },
       {
         "section": "4b",
@@ -3622,7 +3625,8 @@
         "priority": "critica",
         "reason": "Se encontraron 1.550 columnas con READONLYLOGIC en el core de Etendo 26.1.0. Es el mecanismo que bloquea la edición de campos según el estado del documento (ej. un pedido completado no debe ser editable). Sin readonlylogic, los usuarios pueden modificar datos de documentos ya contabilizados, lo que rompe la integridad contable.",
         "ad_count": 1550,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 7.8
       },
       {
         "section": "6",
@@ -3632,7 +3636,8 @@
         "priority": "critica",
         "reason": "Se encontraron 95 columnas con callouts en el core de Etendo 26.1.0. Los callouts son el mecanismo estándar para lógica de negocio en tiempo real: recálculo de impuestos al cambiar el producto, actualización de descuentos al cambiar el cliente, validación de cuentas contables. Sin callouts, los formularios transaccionales básicos del ERP (Pedido de Venta, Factura) no funcionan correctamente.",
         "ad_count": 95,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 4.8
       },
       {
         "section": "4",
@@ -3642,7 +3647,8 @@
         "priority": "critica",
         "reason": "Se encontraron 3.603 campos con DISPLAYLOGIC en el core de Etendo 26.1.0. Esta es la base estándar del ERP — cada ventana de documento usa display logic para controlar la visibilidad de campos según el estado (Draft/Complete/Posted), tipo de documento, o valores de otros campos. Sin display logic, formularios como Pedidos de Venta, Facturas o Pagos son inutilizables ya que mostrarían todos los campos siempre.",
         "ad_count": 3603,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 7.2
       },
       {
         "section": "23",
@@ -3652,7 +3658,8 @@
         "priority": "critica",
         "reason": "Se encontraron 315 campos marcados ISSHOWNINSTATUSBAR=Y en el core de Etendo 26.1.0. La barra de estado muestra información clave siempre visible (estado del documento, total de la factura, tercero, moneda). En documentos transaccionales es esencial para el trabajo diario. El nuevo UI no la implementa.",
         "ad_count": 315,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 6.3
       },
       {
         "section": "2.B",
@@ -3662,7 +3669,8 @@
         "priority": "critica",
         "reason": "Se encontraron 61 columnas con botones hardcoded en el core de Etendo 26.1.0. Estos botones ejecutan lógica de negocio crítica del ERP base: contabilización de asientos, creación de líneas desde pedido, regla de pago, confirmación de albarán. Representan puntos de bloqueo para cualquier cliente que migre a SaaS sin que el nuevo UI los implemente completamente.",
         "ad_count": 61,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 6.1
       },
       {
         "section": "1.2",
@@ -3672,7 +3680,8 @@
         "priority": "critica",
         "reason": "La instalación base de Etendo 26.1.0 tiene 59 ventanas Transaction (pedidos, facturas, albaranes, remesas, pagos, asientos contables) y 61 columnas con botones hardcoded (DocAction, Posted, CreateFrom, PaymentRule). Toda la operativa financiera y de compras/ventas depende del flujo DocAction. El nuevo UI no tiene implementado el flujo completo de estados de documento — este es el bloqueante principal para cualquier cliente en SaaS.",
         "ad_count": 59,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 5.9
       },
       {
         "section": "7",
@@ -3682,7 +3691,8 @@
         "priority": "critica",
         "reason": "Con 59 ventanas Transaction y 61 botones DocAction/Posted/CreateFrom/PaymentRule, la máquina de estados de documentos es el corazón del ERP. Los flujos Draft→Complete→Posted→Reversed son fundamentales para facturas, pedidos, pagos y asientos. El nuevo UI no implementa completamente los estados intermedios, los controles de edición por estado, ni la lógica de botones hardcoded.",
         "ad_count": 61,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "25",
@@ -3692,7 +3702,8 @@
         "priority": "critica",
         "reason": "Se encontraron 7.317 columnas con DEFAULTVALUE en el core de Etendo 26.1.0. Incluyen variables de sesión (@#AD_ORG_ID@, @AD_USER_ID@), expresiones SQL y valores calculados. El nuevo UI interpreta parcialmente estas expresiones — los SQL defaults y algunas variables de contexto complejas aún no están cubiertos, lo que causa que campos clave no se inicialicen correctamente al crear registros.",
         "ad_count": 7317,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "1.4",
@@ -3702,7 +3713,8 @@
         "priority": "critica",
         "reason": "La instalación base tiene 93 ventanas PickAndExecute y 186 procesos OBUIAPP de este tipo — total 279 instancias. Son críticos para flujos de gestión masiva: liquidaciones de gastos, aprobación de facturas, generación de pagos SEPA, conciliaciones. La implementación en el nuevo UI es parcial y no cubre todos los patrones de uso del framework SmartClient.",
         "ad_count": 279,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 9.3
       },
       {
         "section": "3",
@@ -3712,7 +3724,8 @@
         "priority": "critica",
         "reason": "El core de Etendo 26.1.0 tiene 391 procesos legacy (AD_PROCESS, patrones M y S) y 470 procesos OBUIAPP (186 PickAndExecute, 206 tipo A, 17 Report, 58 Maintain, 3 ETRX_RxAction). Total 861 definiciones de proceso. Los procesos legacy con UIPATTERN=S (popup de parámetros SmartClient) no tienen equivalente completo en el nuevo UI. Los OBUIAPP_Report tampoco están cubiertos. Esto afecta toda la suite de informes del ERP.",
         "ad_count": 861,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 8.6
       },
       {
         "section": "8",
@@ -3722,7 +3735,8 @@
         "priority": "critica",
         "reason": "Se encontraron 341 selectores OBUISEL en el core de Etendo 26.1.0. Los selectores avanzados son usados en todos los formularios transaccionales para buscar productos, terceros, cuentas contables, proyectos. La funcionalidad de filtros dinámicos y out-parameters (rellenar múltiples campos al seleccionar un valor) tiene soporte parcial en el nuevo UI.",
         "ad_count": 341,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 6.8
       },
       {
         "section": "21",
@@ -3732,7 +3746,8 @@
         "priority": "alta",
         "reason": "Se encontraron 28 archivos XML con referencias a widgets KMO/WidgetClass en el core de Etendo 26.1.0. El dashboard personalizable con indicadores de negocio NO existe en el nuevo UI. Para la instalación base afecta widgets estándar de seguimiento financiero y de actividad.",
         "ad_count": 28,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 5.6
       },
       {
         "section": "1.3",
@@ -3742,7 +3757,8 @@
         "priority": "alta",
         "reason": "Existen 14 ventanas de tipo Query en el core de Etendo 26.1.0. Son ventanas de consulta y reporting puro. El nuevo UI soporta parcialmente el modo grid-only; los parámetros de filtro avanzados y las ventanas Query de informes financieros requieren verificación adicional.",
         "ad_count": 14,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "22",
@@ -3752,7 +3768,8 @@
         "priority": "alta",
         "reason": "Se encontraron 2.226 campos asignados a field groups en el core de Etendo 26.1.0. Los field groups organizan los formularios en secciones temáticas colapsables (ej. 'Información fiscal', 'Datos contables', 'Dimensiones'). El nuevo UI soporta field groups pero el comportamiento de colapso y el layout no replica exactamente el SmartClient.",
         "ad_count": 2226,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 7.4
       },
       {
         "section": "29",
@@ -3762,7 +3779,8 @@
         "priority": "media",
         "reason": "Se encontró 1 pestaña con HASTREE=Y en el core de Etendo 26.1.0. Uso mínimo — no es un bloqueante crítico aunque la funcionalidad no existe en el nuevo UI.",
         "ad_count": 1,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "12",
@@ -3772,7 +3790,8 @@
         "priority": "media",
         "reason": "El menú con 760 entradas está implementado en el nuevo UI. La estructura jerárquica y la búsqueda de opciones funcionan correctamente. No es un bloqueante.",
         "ad_count": 760,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       },
       {
         "section": "1.1",
@@ -3782,7 +3801,8 @@
         "priority": "media",
         "reason": "La instalación base de Etendo 26.1.0 tiene 407 ventanas de tipo Maintain. El CRUD básico está implementado en el nuevo UI. Esta es la instalación de referencia — confirma que el nuevo UI soporta la funcionalidad base de ventanas Maintain.",
         "ad_count": 407,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": 8.1
       },
       {
         "section": "11",
@@ -3792,9 +3812,12 @@
         "priority": "no_aplica",
         "reason": "Login, logout, cambio de contraseña y gestión de roles están completamente implementados en el nuevo UI. No aplica como bloqueante.",
         "ad_count": 0,
-        "code_evidence": []
+        "code_evidence": [],
+        "usage_score": null
       }
     ],
-    "note": "Esta es la instalación base de Etendo 26.1.0 (sin customizaciones de cliente). Los conteos de AD XML reflejan el ERP estándar — cualquier cliente que migre a SaaS necesita que el nuevo UI soporte todas estas features del core."
+    "note": "Esta es la instalación base de Etendo 26.1.0 (sin customizaciones de cliente). Los conteos de AD XML reflejan el ERP estándar — cualquier cliente que migre a SaaS necesita que el nuevo UI soporte todas estas features del core.",
+    "ui_migration_score": 47,
+    "ui_label": "needs_work"
   }
 }

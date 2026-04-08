@@ -263,7 +263,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <div class="meta-item"><span>Plataforma </span><strong>Etendo 23.4.4</strong></div>
       <div class="meta-item"><span>Base de comparación </span><strong>vexpanded</strong></div>
       <div class="meta-item"><span>Módulos totales </span><strong>177</strong></div>
-      <div class="meta-item"><span>Generado </span><strong>2026-04-08 18:13</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-04-08 18:38</strong></div>
     </div>
   </div>
 
@@ -2936,7 +2936,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Específico cliente</span></td>
             <td><span class="asmnt-badge asmnt-critical">Critical</span></td>
-            <td><span class="usage-score" style="color:#ef4444"><strong>2</strong>/10</span><div class="usage-bar" title="2/10"><div class="usage-fill" style="width:20%;background:#ef4444"></div></div></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:20%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">2.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">18h</span></td><td><span class="asmnt-effort asmnt-effort-saas">40h</span></td>
             <td class="asmnt-rec">Para Ruta A: actualizar imports de commons-lang (1h), migrar POI HSSF a POI 5 (8h), verificar Hibernate y opencsv (3h), testing (6h). Para Ruta B: evaluar qué funcionalidades de negocio son prescindibles vs cuáles migrar a bundles oficiales de Etendo (proyectos, pagos).</td>
           </tr>
@@ -2948,7 +2953,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-upstream">Bundle candidato</span></td>
             <td><span class="asmnt-badge asmnt-minor">Minor</span></td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Para Ruta A: recompilar los 5 archivos .jasper con JasperReports 6.17 (2h) y verificar el EventHandler CIF (1h) + testing (1h). Para Ruta B: la validación de CIF duplicado es bundle_candidate — podría integrarse en el módulo de terceros estándar de Etendo. Los reportes Jasper deben re-implementarse en el sistema de impresión moderno de Etendo.</td>
           </tr>
@@ -2960,7 +2970,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-upstream">Bundle candidato</span></td>
             <td><span class="asmnt-badge asmnt-minor">Minor</span></td>
-            <td><span class="usage-score" style="color:#ef4444"><strong>1</strong>/10</span><div class="usage-bar" title="1/10"><div class="usage-fill" style="width:10%;background:#ef4444"></div></div></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Para Ruta A: verificar compilación con Etendo 25.4.x (1h) y testing funcional del callout (2h) — no hay breaking changes críticos. Para Ruta B: la lógica de dimensiones podría generalizarse como extensión del módulo de dimensiones analíticas de Etendo si la codificación por carácter de proyecto key es un patrón útil para otros clientes.</td>
           </tr>
@@ -2972,7 +2987,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Específico cliente</span></td>
             <td><span class="asmnt-badge asmnt-trivial">Trivial</span></td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
             <td class="asmnt-rec">Para Ruta A: verificar compatibilidad del modelo de base de datos con la versión 25.4.x (1h). Para Ruta B: evaluar si la estructura de datos de multifase puede simplificarse o si el módulo de proyectos de Etendo 25.x ya cubre este caso de uso.</td>
           </tr>
@@ -2984,7 +3004,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Específico cliente</span></td>
             <td><span class="asmnt-badge asmnt-trivial">Trivial</span></td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
             <td class="asmnt-rec">Sin acción requerida. Se actualiza automáticamente al actualizar las dependencias declaradas.</td>
           </tr>
@@ -2996,7 +3021,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Específico cliente</span></td>
             <td><span class="asmnt-badge asmnt-trivial">Trivial</span></td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
             <td class="asmnt-rec">Actualizar en conjunto con com.smf.enertis.project.customization. Sin cambios de API que afecten.</td>
           </tr>
@@ -3008,7 +3038,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Específico cliente</span></td>
             <td><span class="asmnt-badge asmnt-trivial">Trivial</span></td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
             <td class="asmnt-rec">Sigue el destino del módulo principal.</td>
           </tr>
@@ -3020,7 +3055,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Específico cliente</span></td>
             <td><span class="asmnt-badge asmnt-trivial">Trivial</span></td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
             <td class="asmnt-rec">Sigue el destino del módulo principal.</td>
           </tr></tbody>
@@ -3044,7 +3084,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">16h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Forquear y actualizar el módulo a Etendo 25.4.x. Contactar con Etendo para verificar si hay un módulo oficial de SEPA en el roadmap.</td>
           </tr>
@@ -3056,7 +3101,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">12h</span></td><td><span class="asmnt-effort asmnt-effort-saas">6h</span></td>
             <td class="asmnt-rec">Actualizar junto con el módulo SEPA Core. Prioridad legal alta.</td>
           </tr>
@@ -3068,7 +3118,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">12h</span></td><td><span class="asmnt-effort asmnt-effort-saas">6h</span></td>
             <td class="asmnt-rec">Actualizar junto con el módulo SEPA Core.</td>
           </tr>
@@ -3080,7 +3135,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">16h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Facturae es obligación legal creciente en España. Forquear y actualizar. Evaluar soluciones SaaS de terceros para Facturae en el escenario de migración a SaaS.</td>
           </tr>
@@ -3092,7 +3152,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
             <td class="asmnt-rec">Actualizar junto con módulo base Facturae.</td>
           </tr>
@@ -3104,7 +3169,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
             <td class="asmnt-rec">Actualizar junto con módulo base Facturae.</td>
           </tr>
@@ -3116,7 +3186,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">12h</span></td><td><span class="asmnt-effort asmnt-effort-saas">6h</span></td>
             <td class="asmnt-rec">Obligación fiscal. Forquear y actualizar. Verificar si Etendo tiene un módulo AEAT moderno en el marketplace.</td>
           </tr>
@@ -3128,7 +3203,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Verificar si el cliente sigue usando este formato o ha migrado a SEPA Core Direct Debit.</td>
           </tr>
@@ -3140,7 +3220,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
             <td class="asmnt-rec">Verificar si es posible migrar a SEPA Credit Transfer y deprecar este módulo.</td>
           </tr>
@@ -3152,7 +3237,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
             <td class="asmnt-rec">Forquear y actualizar junto con el resto de cuadernos AEB.</td>
           </tr>
@@ -3164,7 +3254,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Actualizar como dependencia del módulo Facturae.</td>
           </tr>
@@ -3176,7 +3271,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="usage-score" style="color:#f59e0b"><strong>5</strong>/10</span><div class="usage-bar" title="5/10"><div class="usage-fill" style="width:50%;background:#f59e0b"></div></div></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:50%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">5.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">20h</span></td>
             <td class="asmnt-rec">Módulo con uso activo (score=5). Forquear y actualizar. Para Ruta B evaluar si Etendo Expense Reports puede cubrir las necesidades con configuración.</td>
           </tr>
@@ -3188,7 +3288,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">16h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Evaluar si el módulo oficial de proyectos de Etendo 25.x cubre las funcionalidades. Si no, forquear y actualizar.</td>
           </tr>
@@ -3200,7 +3305,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score" style="color:#ef4444"><strong>1</strong>/10</span><div class="usage-bar" title="1/10"><div class="usage-fill" style="width:10%;background:#ef4444"></div></div></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">12h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Forquear y actualizar. Evaluar si funcionalidad puede cubrirse con el módulo HCM de Etendo.</td>
           </tr>
@@ -3212,7 +3322,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score" style="color:#ef4444"><strong>2</strong>/10</span><div class="usage-bar" title="2/10"><div class="usage-fill" style="width:20%;background:#ef4444"></div></div></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:20%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">2.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Con uso activo (score=2). Actualizar a Jira REST API v3 y verificar compatibilidad con Etendo 25.4.x. Bundle candidate para el marketplace de Etendo.</td>
           </tr>
@@ -3224,7 +3339,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">10h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Actualizar API de POI (8h) + testing (2h). Para Ruta B: evaluar si los reportes de Financial Extensions de Etendo cubren las necesidades.</td>
           </tr>
@@ -3236,7 +3356,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Verificar compatibilidad con Etendo 25.4.x. Este módulo es dependencia del módulo custom principal.</td>
           </tr>
@@ -3248,7 +3373,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Forquear y verificar compatibilidad. Sin uso registrado en Mixpanel — confirmar con el cliente si sigue activo.</td>
           </tr>
@@ -3260,7 +3390,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Sin uso registrado en Mixpanel. Evaluar eliminar en favor de la integración Jira ya instalada.</td>
           </tr>
@@ -3272,7 +3407,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Auditar y actualizar. Sin uso registrado — confirmar si sigue siendo necesario.</td>
           </tr>
@@ -3284,7 +3424,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Verificar si Financial Extensions de Etendo cubre esta funcionalidad. Si es así, migrar la configuración y eliminar.</td>
           </tr>
@@ -3296,7 +3441,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
             <td class="asmnt-rec">Verificar cobertura en Financial Extensions de Etendo.</td>
           </tr>
@@ -3308,7 +3458,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Auditar uso real. Sin datos de Mixpanel — puede ser un módulo técnico interno.</td>
           </tr>
@@ -3320,7 +3475,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
             <td class="asmnt-rec">Para Ruta B: migrar a la API de adjuntos de Etendo RX. Más segura, mantenida y RESTful.</td>
           </tr>
@@ -3332,7 +3492,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Actualizar en conjunto con com.openbravo.gps.followup.economics.</td>
           </tr>
@@ -3344,7 +3509,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Sin uso en Mixpanel. Verificar si sigue activo.</td>
           </tr>
@@ -3356,7 +3526,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
             <td class="asmnt-rec">Si opencsv no está en el classpath de 25.4.x, añadir la dependencia directamente en build.gradle del módulo de customización.</td>
           </tr>
@@ -3368,7 +3543,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="usage-score usage-score-zero">sin uso</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Para Ruta B: reemplazar IDL por el framework de importación moderno de Etendo o una integración via Etendo RX.</td>
           </tr>
@@ -3380,7 +3560,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="usage-score usage-score-null">sin datos</span></td>
+            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
             <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
             <td class="asmnt-rec">Siguen automáticamente sus módulos oficiales. Actualizar junto con los bundles de Etendo.</td>
           </tr>
@@ -3392,7 +3572,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="usage-score usage-score-null">sin datos</span></td>
+            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
             <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
             <td class="asmnt-rec">Desinstalar antes de actualizar. Sin uso registrado y marcados como candidatos a eliminación.</td>
           </tr></tbody>
@@ -3456,6 +3636,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   <h2>Preparación para nueva UI
     <span style="font-size:12px;font-weight:400;color:#94a3b8;margin-left:8px;">generado 2026-04-08</span>
   </h2>
+  <div style="display:flex;align-items:center;gap:20px;margin-bottom:20px;flex-wrap:wrap;">
+  <div style="display:flex;flex-direction:column;align-items:center;background:#fef9c3;border-radius:12px;padding:10px 22px;min-width:110px;">
+    <span style="font-size:32px;font-weight:800;color:#854d0e;line-height:1;">60</span>
+    <span style="font-size:10px;font-weight:600;color:#854d0e;letter-spacing:.5px;margin-top:2px;">UI SCORE</span>
+  </div>
+  <div style="flex:1;min-width:160px;">
+    <div style="font-size:13px;font-weight:700;color:#854d0e;margin-bottom:6px;">PARCIALMENTE PREPARADO</div>
+    <div style="width:100%;max-width:240px;height:8px;background:#e5e7eb;border-radius:4px;overflow:hidden;">
+      <div style="width:60%;height:100%;background:#854d0e;border-radius:4px;transition:width .4s;"></div>
+    </div>
+    <div style="font-size:11px;color:#6b7280;margin-top:4px;">Qué tan preparada está la nueva UI para este cliente (0=no preparada, 100=totalmente preparada)</div>
+  </div>
+</div>
   
 <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap;">
   <span style="background:#ef4444;color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;letter-spacing:.5px;">BLOQUEADA — hay features críticas pendientes</span>
@@ -3475,7 +3668,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <tr style="background:#f8fafc;font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;">
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Sección</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Feature</th>
-          <th style="padding:7px 10px;text-align:left;font-weight:600;">Avance</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="Intensidad de uso en el AD de este cliente (0=no usado, 10=máximo)">Uso</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="% completado en el nuevo UI de Etendo">Avance UI</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Por qué es relevante</th>
         </tr>
       </thead>
@@ -3486,12 +3680,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Tab Display Logic — Visibilidad condicional de pestañas</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">NOT DONE</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:27%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">2.7</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:3%;height:100%;background:#ef4444;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#ef4444;font-weight:600;">0%</span>
+            <span style="font-size:11px;color:#ef4444;font-weight:600;">0%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3505,12 +3705,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Read-Only Tabs — Pestañas de solo lectura</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">NOT DONE</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:65%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">6.5</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:3%;height:100%;background:#ef4444;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#ef4444;font-weight:600;">0%</span>
+            <span style="font-size:11px;color:#ef4444;font-weight:600;">0%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3524,12 +3730,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Workspace / Dashboard (My Openbravo) — Widgets y KMO</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">NOT DONE</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:68%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">6.8</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:3%;height:100%;background:#ef4444;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#ef4444;font-weight:600;">0%</span>
+            <span style="font-size:11px;color:#ef4444;font-weight:600;">0%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3543,12 +3755,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Application Forms (AD_FORM) — Formularios JavaScript especiales</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">NOT DONE</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:62%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">6.2</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:3%;height:100%;background:#ef4444;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#ef4444;font-weight:600;">0%</span>
+            <span style="font-size:11px;color:#ef4444;font-weight:600;">0%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3562,12 +3780,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Callouts — Lógica server-side en cambio de campo</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">NOT DONE</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:48%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">4.8</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:5%;height:100%;background:#ef4444;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#ef4444;font-weight:600;">5%</span>
+            <span style="font-size:11px;color:#ef4444;font-weight:600;">5%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3581,12 +3805,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">ReadOnly Logic — Editabilidad condicional de campos</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">NOT DONE</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:51%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">5.1</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:5%;height:100%;background:#ef4444;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#ef4444;font-weight:600;">5%</span>
+            <span style="font-size:11px;color:#ef4444;font-weight:600;">5%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3600,12 +3830,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Display Logic — Visibilidad condicional de campos</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">NOT DONE</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:48%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">4.8</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:10%;height:100%;background:#ef4444;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#ef4444;font-weight:600;">10%</span>
+            <span style="font-size:11px;color:#ef4444;font-weight:600;">10%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3619,12 +3855,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Status Bar — Barra de estado inferior con campos resumen</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">NOT DONE</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:48%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">4.8</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:10%;height:100%;background:#ef4444;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#ef4444;font-weight:600;">10%</span>
+            <span style="font-size:11px;color:#ef4444;font-weight:600;">10%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3638,12 +3880,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Botones Hardcoded (DocAction, Posted, CreateFrom, PaymentRule) — HTML clásico</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">PARCIAL</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:54%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">5.4</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:35%;height:100%;background:#ef4444;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#ef4444;font-weight:600;">35%</span>
+            <span style="font-size:11px;color:#ef4444;font-weight:600;">35%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3657,12 +3905,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Ventanas Transaction (T) — Máquina de estados de documentos</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">PARCIAL</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:40%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">4.0</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:40%;height:100%;background:#f97316;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#f97316;font-weight:600;">40%</span>
+            <span style="font-size:11px;color:#f97316;font-weight:600;">40%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3676,12 +3930,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Máquina de estados de documentos (DocAction / Estado del documento)</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">PARCIAL</span>
         </td>
+        <td style="padding:8px 10px;"><span style="color:#d1d5db;font-size:11px;">—</span></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:40%;height:100%;background:#f97316;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#f97316;font-weight:600;">40%</span>
+            <span style="font-size:11px;color:#f97316;font-weight:600;">40%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3695,12 +3950,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Expresiones de valor por defecto (DEFAULTVALUE)</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">PARCIAL</span>
         </td>
+        <td style="padding:8px 10px;"><span style="color:#d1d5db;font-size:11px;">—</span></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:45%;height:100%;background:#f97316;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#f97316;font-weight:600;">45%</span>
+            <span style="font-size:11px;color:#f97316;font-weight:600;">45%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3714,12 +3970,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Pick and Execute (OBUIAPP_PickAndExecute) — Procesos de selección múltiple</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">PARCIAL</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:45%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">4.5</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:50%;height:100%;background:#f97316;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#f97316;font-weight:600;">50%</span>
+            <span style="font-size:11px;color:#f97316;font-weight:600;">50%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3733,12 +3995,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Definiciones de Proceso — Legacy AD_PROCESS vs OBUIAPP_PROCESS</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">PARCIAL</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:50%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">5.0</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:55%;height:100%;background:#f97316;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#f97316;font-weight:600;">55%</span>
+            <span style="font-size:11px;color:#f97316;font-weight:600;">55%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3752,12 +4020,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Selectores OBUISEL — Selectores avanzados con filtro y out-params</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">PARCIAL</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:36%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">3.6</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:55%;height:100%;background:#f97316;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#f97316;font-weight:600;">55%</span>
+            <span style="font-size:11px;color:#f97316;font-weight:600;">55%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3782,7 +4056,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <tr style="background:#f8fafc;font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;">
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Sección</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Feature</th>
-          <th style="padding:7px 10px;text-align:left;font-weight:600;">Avance</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="Intensidad de uso en el AD de este cliente (0=no usado, 10=máximo)">Uso</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="% completado en el nuevo UI de Etendo">Avance UI</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Por qué es relevante</th>
         </tr>
       </thead>
@@ -3793,12 +4068,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Personalización de vistas (Saved Views)</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">PARCIAL</span>
         </td>
+        <td style="padding:8px 10px;"><span style="color:#d1d5db;font-size:11px;">—</span></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:40%;height:100%;background:#f97316;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#f97316;font-weight:600;">40%</span>
+            <span style="font-size:11px;color:#f97316;font-weight:600;">40%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3812,12 +4088,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Ventanas Query/Info (Q) — Vistas de solo consulta</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">PARCIAL</span>
         </td>
+        <td style="padding:8px 10px;"><span style="color:#d1d5db;font-size:11px;">—</span></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:60%;height:100%;background:#f59e0b;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#f59e0b;font-weight:600;">60%</span>
+            <span style="font-size:11px;color:#f59e0b;font-weight:600;">60%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3831,12 +4108,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Field Groups — Secciones colapsables en formularios</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">PARCIAL</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:51%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">5.1</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:60%;height:100%;background:#f59e0b;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#f59e0b;font-weight:600;">60%</span>
+            <span style="font-size:11px;color:#f59e0b;font-weight:600;">60%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3861,7 +4144,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <tr style="background:#f8fafc;font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;">
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Sección</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Feature</th>
-          <th style="padding:7px 10px;text-align:left;font-weight:600;">Avance</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="Intensidad de uso en el AD de este cliente (0=no usado, 10=máximo)">Uso</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="% completado en el nuevo UI de Etendo">Avance UI</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Por qué es relevante</th>
         </tr>
       </thead>
@@ -3872,12 +4156,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Tree Views — Vistas de árbol jerárquico</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">NOT DONE</span>
         </td>
+        <td style="padding:8px 10px;"><span style="color:#d1d5db;font-size:11px;">—</span></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:3%;height:100%;background:#ef4444;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#ef4444;font-weight:600;">0%</span>
+            <span style="font-size:11px;color:#ef4444;font-weight:600;">0%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3891,12 +4176,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Vistas de Grid/Lista — Ordenación, filtrado, paginación, edición inline</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">DONE</span>
         </td>
+        <td style="padding:8px 10px;"><span style="color:#d1d5db;font-size:11px;">—</span></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:80%;height:100%;background:#22c55e;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#22c55e;font-weight:600;">80%</span>
+            <span style="font-size:11px;color:#22c55e;font-weight:600;">80%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3910,12 +4196,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Menú de Navegación — Sistema de menú y navegación</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">DONE</span>
         </td>
+        <td style="padding:8px 10px;"><span style="color:#d1d5db;font-size:11px;">—</span></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:85%;height:100%;background:#22c55e;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#22c55e;font-weight:600;">85%</span>
+            <span style="font-size:11px;color:#22c55e;font-weight:600;">85%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3929,12 +4216,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Ventanas Maintain (M) — CRUD básico</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">DONE</span>
         </td>
+        <td style="padding:8px 10px;"><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:52%;height:100%;background:#f97316;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f97316;font-weight:700;">5.2</span>
+    </div></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:90%;height:100%;background:#22c55e;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#22c55e;font-weight:600;">90%</span>
+            <span style="font-size:11px;color:#22c55e;font-weight:600;">90%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3959,7 +4252,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <tr style="background:#f8fafc;font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;">
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Sección</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Feature</th>
-          <th style="padding:7px 10px;text-align:left;font-weight:600;">Avance</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="Intensidad de uso en el AD de este cliente (0=no usado, 10=máximo)">Uso</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="% completado en el nuevo UI de Etendo">Avance UI</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Por qué es relevante</th>
         </tr>
       </thead>
@@ -3970,12 +4264,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           <span style="font-weight:600;font-size:13px;">Autenticación y Gestión de Sesión</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">DONE</span>
         </td>
+        <td style="padding:8px 10px;"><span style="color:#d1d5db;font-size:11px;">—</span></td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:90%;height:100%;background:#22c55e;border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:#22c55e;font-weight:600;">90%</span>
+            <span style="font-size:11px;color:#22c55e;font-weight:600;">90%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -3989,7 +4284,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 </div>
 </div>
 
-  <div class="footer">Generado por Etendo Migration Agent · 2026-04-08 18:13</div>
+  <div class="footer">Generado por Etendo Migration Agent · 2026-04-08 18:38</div>
 </div>
 <script>
 function toggle(header) {

@@ -14,9 +14,16 @@ Usage:
 import argparse
 import json
 import os
+import sys
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+try:
+    from analyzer.ui_scorer import compute_ui_score
+except ImportError:
+    compute_ui_score = None
 
 
 # ── Data loading ──────────────────────────────────────────────────────────────
@@ -48,6 +55,19 @@ def load_reports(reports_dir: str) -> list:
         except Exception:
             continue
     return results
+
+
+# ── Aggregation helpers ───────────────────────────────────────────────────────
+
+def _get_ui_score(report: dict):
+    """Returns the ui_migration_score from a report, computing it if missing."""
+    ui = report.get("ui_readiness")
+    if not ui:
+        return None
+    score = ui.get("ui_migration_score")
+    if score is None and compute_ui_score:
+        score, _ = compute_ui_score(ui)
+    return score
 
 
 # ── Aggregation ───────────────────────────────────────────────────────────────
@@ -178,6 +198,7 @@ def aggregate(records: list) -> dict:
             "baseline_exact": baseline_exact,
             "update_total_hours": asmnt_effort.get("update_total_hours"),
             "saas_total_hours": asmnt_effort.get("saas_total_hours"),
+            "ui_score": _get_ui_score(r),
         })
     clients.sort(key=lambda x: x["score"], reverse=True)
 
@@ -785,6 +806,12 @@ function renderTable() {
             ? `<span class="baseline-badge baseline-exact" title="Baseline exacto">${c.base_version}</span>`
             : `<span class="baseline-badge baseline-approx" title="Baseline aproximado (ZIP estático)">${c.base_version} ⚠</span>`;
         const fmtH = h => (h == null || h === 0) ? '<span style="color:#9ca3af">—</span>' : `<span style="font-weight:600">${h}h</span>`;
+        const uiScoreHtml = s => {
+            if (s == null) return '<span style="color:#d1d5db">—</span>';
+            const bg = s >= 80 ? '#dcfce7' : s >= 60 ? '#fef9c3' : s >= 40 ? '#ffedd5' : '#fee2e2';
+            const fg = s >= 80 ? '#166534' : s >= 60 ? '#854d0e' : s >= 40 ? '#9a3412' : '#991b1b';
+            return `<span style="background:${bg};color:${fg};font-weight:700;padding:2px 8px;border-radius:10px;font-size:12px;">${s}</span>`;
+        };
         return `<tr>
             <td class="td-name">${c.name}</td>
             <td class="td-version">${c.version}</td>
@@ -798,6 +825,7 @@ function renderTable() {
             <td class="${custClass}">${c.custom}</td>
             <td class="td-num" style="color:#1d4ed8">${fmtH(c.update_total_hours)}</td>
             <td class="td-num" style="color:#166534">${fmtH(c.saas_total_hours)}</td>
+            <td class="td-num">${uiScoreHtml(c.ui_score)}</td>
             <td>${btn}</td>
         </tr>`;
     }).join('');
@@ -950,6 +978,7 @@ def render_html(data: dict, generated_at: str) -> str:
           <th class="td-num" title="Customizaciones" style="color:#a855f7">Custom</th>
           <th class="td-num" title="Horas estimadas para actualizar a Etendo 25.4.x" style="color:#1d4ed8">Actualiz.</th>
           <th class="td-num" title="Horas estimadas para migrar a SaaS" style="color:#166534">SaaS</th>
+          <th class="td-num" title="Score de preparación para la nueva UI de Etendo (0=no preparado, 100=totalmente preparado)">UI Score</th>
           <th>Reporte</th>
         </tr>
       </thead>

@@ -8,8 +8,15 @@ Usage:
 
 import argparse
 import json
+import sys
 from datetime import datetime
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+try:
+    from analyzer.ui_scorer import enrich_ui_readiness
+except ImportError:
+    enrich_ui_readiness = None
 
 
 def parse_args():
@@ -1156,13 +1163,34 @@ def _evidence_html(code_evidence):
 </details>"""
 
 
+def _usage_score_html(usage_score):
+    """Renders a usage score (0.0–10.0) as a colored bar + number."""
+    if usage_score is None:
+        return '<span style="color:#d1d5db;font-size:11px;">—</span>'
+    bar_pct = int(usage_score * 10)  # 0–100
+    if usage_score >= 7:
+        color = "#ef4444"   # red — heavily used
+    elif usage_score >= 4:
+        color = "#f97316"   # orange — moderately used
+    elif usage_score >= 1:
+        color = "#f59e0b"   # amber — lightly used
+    else:
+        color = "#d1d5db"   # grey — not used
+    return f"""<div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:{bar_pct}%;height:100%;background:{color};border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:{color};font-weight:700;">{usage_score:.1f}</span>
+    </div>"""
+
+
 def _ui_feature_rows(features):
     rows = ""
     for f in features:
         pct = f.get("completion_pct", 0)
-        color = priority_color(f["priority"])
         pct_color = score_color(pct)
         bar_width = max(pct, 3)
+        usage_html = _usage_score_html(f.get("usage_score"))
         evidence_html = _evidence_html(f.get("code_evidence", []))
         rows += f"""
       <tr>
@@ -1171,12 +1199,13 @@ def _ui_feature_rows(features):
           <span style="font-weight:600;font-size:13px;">{f['title']}</span>
           <span style="margin-left:8px;font-size:11px;color:#94a3b8;font-style:italic;">{f['status']}</span>
         </td>
+        <td style="padding:8px 10px;">{usage_html}</td>
         <td style="padding:8px 10px;white-space:nowrap;">
           <div style="display:flex;align-items:center;gap:6px;">
-            <div style="width:60px;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+            <div style="width:50px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
               <div style="width:{bar_width}%;height:100%;background:{pct_color};border-radius:3px;"></div>
             </div>
-            <span style="font-size:12px;color:{pct_color};font-weight:600;">{pct}%</span>
+            <span style="font-size:11px;color:{pct_color};font-weight:600;">{pct}%</span>
           </div>
         </td>
         <td style="padding:8px 10px;font-size:12px;color:#475569;">
@@ -1187,9 +1216,49 @@ def _ui_feature_rows(features):
     return rows
 
 
+def _ui_score_badge_html(ui_readiness):
+    """Renders the overall UI migration score as a prominent badge."""
+    score = ui_readiness.get("ui_migration_score")
+    label = ui_readiness.get("ui_label", "")
+    if score is None:
+        return ""
+    label_text = {
+        "ready":      "PREPARADO",
+        "partial":    "PARCIALMENTE PREPARADO",
+        "needs_work": "NECESITA TRABAJO",
+        "not_ready":  "NO PREPARADO",
+    }.get(label, label.upper())
+    if score >= 80:
+        bg, fg = "#dcfce7", "#166534"
+    elif score >= 60:
+        bg, fg = "#fef9c3", "#854d0e"
+    elif score >= 40:
+        bg, fg = "#ffedd5", "#9a3412"
+    else:
+        bg, fg = "#fee2e2", "#991b1b"
+    bar_pct = score
+    bar_color = fg
+    return f"""<div style="display:flex;align-items:center;gap:20px;margin-bottom:20px;flex-wrap:wrap;">
+  <div style="display:flex;flex-direction:column;align-items:center;background:{bg};border-radius:12px;padding:10px 22px;min-width:110px;">
+    <span style="font-size:32px;font-weight:800;color:{fg};line-height:1;">{score}</span>
+    <span style="font-size:10px;font-weight:600;color:{fg};letter-spacing:.5px;margin-top:2px;">UI SCORE</span>
+  </div>
+  <div style="flex:1;min-width:160px;">
+    <div style="font-size:13px;font-weight:700;color:{fg};margin-bottom:6px;">{label_text}</div>
+    <div style="width:100%;max-width:240px;height:8px;background:#e5e7eb;border-radius:4px;overflow:hidden;">
+      <div style="width:{bar_pct}%;height:100%;background:{bar_color};border-radius:4px;transition:width .4s;"></div>
+    </div>
+    <div style="font-size:11px;color:#6b7280;margin-top:4px;">Qué tan preparada está la nueva UI para este cliente (0=no preparada, 100=totalmente preparada)</div>
+  </div>
+</div>"""
+
+
 def render_ui_readiness(readiness):
     if not readiness:
         return ""
+    # Enrich with usage_score / ui_migration_score if not already present
+    if enrich_ui_readiness and readiness.get("ui_migration_score") is None:
+        enrich_ui_readiness(readiness)
     summary = readiness.get("summary", {})
     status  = readiness.get("global_status", "blocked")
     features = readiness.get("features", [])
@@ -1229,7 +1298,8 @@ def render_ui_readiness(readiness):
         <tr style="background:#f8fafc;font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;">
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Sección</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Feature</th>
-          <th style="padding:7px 10px;text-align:left;font-weight:600;">Avance</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="Intensidad de uso en el AD de este cliente (0=no usado, 10=máximo)">Uso</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="% completado en el nuevo UI de Etendo">Avance UI</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Por qué es relevante</th>
         </tr>
       </thead>
@@ -1244,6 +1314,7 @@ def render_ui_readiness(readiness):
   <h2>Preparación para nueva UI
     <span style="font-size:12px;font-weight:400;color:#94a3b8;margin-left:8px;">generado {generated}</span>
   </h2>
+  {_ui_score_badge_html(readiness)}
   {global_status_html(status, summary)}
   {blocks_html}
 </div>"""
