@@ -687,6 +687,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .asmnt-type     { background: #e0f2fe; color: #075985; }
 .asmnt-effort { font-size: 11px; color: #64748b; background: #f1f5f9;
   padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.asmnt-effort-upd  { background: #eff6ff; color: #1d4ed8; }
+.asmnt-effort-saas { background: #f0fdf4; color: #166534; }
+.asmnt-th-effort { font-size: 10px; }
 .asmnt-table { width: 100%; border-collapse: collapse; font-size: 13px; }
 .asmnt-table th { text-align: left; padding: 7px 10px; background: #f8fafc;
   color: #64748b; font-weight: 600; border-bottom: 2px solid #e2e8f0;
@@ -768,10 +771,33 @@ def _effort_tag(s):
     return f'<span class="asmnt-effort">{s}</span>'
 
 
+def _fmt_hours(h):
+    """Format a single hour value. Returns '—' if zero or None."""
+    if h is None:
+        return "—"
+    h = float(h)
+    if h == 0:
+        return "—"
+    if h == int(h):
+        return f"{int(h)}h"
+    return f"{h:.1f}h"
+
+
 def _fmt_effort_range(lo, hi):
     if lo == hi:
         return f"{lo:.0f}"
     return f"{lo:.0f}–{hi:.0f}"
+
+
+def _effort_cells_new(item):
+    """Returns two <td> cells for update/saas hours (new format)."""
+    upd = item.get("effort_update_hours")
+    sas = item.get("effort_saas_hours")
+    if upd is None and sas is None:
+        # Legacy: fall back to effort_days in a single spanning cell
+        return f'<td colspan="2">{_effort_tag(item.get("effort_days", "?"))}</td>'
+    return (f'<td><span class="asmnt-effort asmnt-effort-upd">{_fmt_hours(upd)}</span></td>'
+            f'<td><span class="asmnt-effort asmnt-effort-saas">{_fmt_hours(sas)}</span></td>')
 
 
 def _usage_score_html(score):
@@ -843,13 +869,15 @@ def render_assessment(assessment):
             </td>
             <td>{_abadge(_CONCLUSION_CLS.get(conclusion,'asmnt-elim'), _CONCLUSION_LBL.get(conclusion, conclusion))}</td>
             <td>{item.get('justification','')}</td>
-            <td>{_effort_tag(item.get('effort_days','?'))}</td>
+            {_effort_cells_new(item)}
           </tr>"""
         core_html = f"""
       <div class="asmnt-section-label">1 · Modificaciones al Core</div>
       <table class="asmnt-table">
         <thead><tr>
-          <th>Customización</th><th>Conclusión</th><th>Justificación</th><th>Esfuerzo</th>
+          <th>Customización</th><th>Conclusión</th><th>Justificación</th>
+          <th class="asmnt-th-effort" title="Horas para actualizar a 25.4.x">Actualiz.</th>
+          <th class="asmnt-th-effort" title="Horas para migrar a SaaS">SaaS</th>
         </tr></thead>
         <tbody>{rows}</tbody>
       </table>"""
@@ -879,7 +907,7 @@ def render_assessment(assessment):
             <td>{_abadge(_GEN_CLS.get(gen,'asmnt-minor'), _GEN_LBL.get(gen, gen))}</td>
             <td>{_abadge(_COMPLEXITY_CLS.get(cx,'asmnt-minor'), cx.capitalize())}</td>
             <td>{_usage_score_html(score)}</td>
-            <td>{_effort_tag(item.get('effort_days','?'))}</td>
+            {_effort_cells_new(item)}
             <td class="asmnt-rec">{item.get('recommendation','')}</td>
           </tr>"""
         custom_html = f"""
@@ -887,7 +915,10 @@ def render_assessment(assessment):
       <table class="asmnt-table">
         <thead><tr>
           <th>Módulo</th><th>Generalización</th><th>Complejidad</th>
-          <th>Uso</th><th>Esfuerzo</th><th>Recomendación</th>
+          <th>Uso</th>
+          <th class="asmnt-th-effort" title="Horas para actualizar a 25.4.x">Actualiz.</th>
+          <th class="asmnt-th-effort" title="Horas para migrar a SaaS">SaaS</th>
+          <th>Recomendación</th>
         </tr></thead>
         <tbody>{rows}</tbody>
       </table>"""
@@ -914,7 +945,7 @@ def render_assessment(assessment):
             <td>{_abadge(_RISK_CLS.get(risk,'asmnt-trivial'), risk.capitalize())}</td>
             <td style="text-align:center;font-size:14px">{repl}</td>
             <td>{_usage_score_html(score)}</td>
-            <td>{_effort_tag(item.get('effort_days','?'))}</td>
+            {_effort_cells_new(item)}
             <td class="asmnt-rec">{item.get('recommendation','')}</td>
           </tr>"""
         unm_html = f"""
@@ -922,33 +953,96 @@ def render_assessment(assessment):
       <table class="asmnt-table">
         <thead><tr>
           <th>Módulo</th><th>Riesgo</th><th>Reemplazo</th>
-          <th>Uso</th><th>Esfuerzo</th><th>Recomendación</th>
+          <th>Uso</th>
+          <th class="asmnt-th-effort" title="Horas para actualizar a 25.4.x">Actualiz.</th>
+          <th class="asmnt-th-effort" title="Horas para migrar a SaaS">SaaS</th>
+          <th>Recomendación</th>
         </tr></thead>
         <tbody>{rows}</tbody>
       </table>"""
 
     # ── Effort summary ────────────────────────────────────────────────────
-    c_lo  = effort.get("core_min", 0)
-    c_hi  = effort.get("core_max", 0)
-    cu_lo = effort.get("custom_min", 0)
-    cu_hi = effort.get("custom_max", 0)
-    u_lo  = effort.get("unmaintained_min", 0)
-    u_hi  = effort.get("unmaintained_max", 0)
-    t_lo  = effort.get("total_min", 0)
-    t_hi  = effort.get("total_max", 0)
-    elim_count = effort.get("elimination_candidates", 0)
-    saved_lo   = effort.get("effort_saved_eliminating_min", 0)
-    saved_hi   = effort.get("effort_saved_eliminating_max", 0)
+    has_new_format = "update_total_hours" in effort
 
-    saved_html = ""
-    if elim_count:
-        saved_html = f"""
-        <div class="asmnt-stat asmnt-stat-saved">
-          <div class="asmnt-stat-val" style="color:#22c55e">−{_fmt_effort_range(saved_lo, saved_hi)}</div>
-          <div class="asmnt-stat-lbl">U.E. ahorradas · {elim_count} módulos a eliminar</div>
-        </div>"""
+    if has_new_format:
+        upd_c  = effort.get("update_core_hours", 0)
+        upd_cu = effort.get("update_custom_hours", 0)
+        upd_u  = effort.get("update_unmaintained_hours", 0)
+        upd_t  = effort.get("update_total_hours", 0)
+        sas_c  = effort.get("saas_core_hours", 0)
+        sas_cu = effort.get("saas_custom_hours", 0)
+        sas_u  = effort.get("saas_unmaintained_hours", 0)
+        sas_t  = effort.get("saas_total_hours", 0)
 
-    effort_html = f"""
+        effort_html = f"""
+      <div class="asmnt-section-label" style="margin-top:24px">Esfuerzo Estimado — dos rutas</div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
+        <div class="asmnt-effort-box" style="flex:1;min-width:260px;border-top:3px solid #3b82f6;">
+          <div style="font-size:11px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">
+            Ruta A · Actualización a 25.4.x
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">{_fmt_hours(upd_c)}</div>
+            <div class="asmnt-stat-lbl">Core</div>
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">{_fmt_hours(upd_cu)}</div>
+            <div class="asmnt-stat-lbl">Módulos custom</div>
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">{_fmt_hours(upd_u)}</div>
+            <div class="asmnt-stat-lbl">Sin mantenimiento</div>
+          </div>
+          <div class="asmnt-stat asmnt-stat-total">
+            <div class="asmnt-stat-val-total">{_fmt_hours(upd_t)}</div>
+            <div class="asmnt-stat-lbl">Total</div>
+          </div>
+        </div>
+        <div class="asmnt-effort-box" style="flex:1;min-width:260px;border-top:3px solid #22c55e;">
+          <div style="font-size:11px;font-weight:700;color:#166534;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">
+            Ruta B · Migración a SaaS
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">{_fmt_hours(sas_c)}</div>
+            <div class="asmnt-stat-lbl">Core</div>
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">{_fmt_hours(sas_cu)}</div>
+            <div class="asmnt-stat-lbl">Módulos custom</div>
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">{_fmt_hours(sas_u)}</div>
+            <div class="asmnt-stat-lbl">Sin mantenimiento</div>
+          </div>
+          <div class="asmnt-stat asmnt-stat-total">
+            <div class="asmnt-stat-val-total">{_fmt_hours(sas_t)}</div>
+            <div class="asmnt-stat-lbl">Total</div>
+          </div>
+        </div>
+      </div>
+      <p class="asmnt-note">
+        * Estimaciones en horas para un desarrollador junior asistido por Claude Code.
+        Ruta A = mantener la instalación on-premise actualizada a Etendo 25.4.x.
+        Ruta B = eliminar o generalizar customizaciones para migrar a SaaS.
+        Los módulos marcados con 🗑 pueden omitirse de Ruta B (sin uso en Mixpanel).
+      </p>"""
+    else:
+        # Legacy format (old reports with min/max days)
+        c_lo  = effort.get("core_min", 0);        c_hi  = effort.get("core_max", 0)
+        cu_lo = effort.get("custom_min", 0);       cu_hi = effort.get("custom_max", 0)
+        u_lo  = effort.get("unmaintained_min", 0); u_hi  = effort.get("unmaintained_max", 0)
+        t_lo  = effort.get("total_min", 0);        t_hi  = effort.get("total_max", 0)
+        elim_count = effort.get("elimination_candidates", 0)
+        saved_lo   = effort.get("effort_saved_eliminating_min", 0)
+        saved_hi   = effort.get("effort_saved_eliminating_max", 0)
+        saved_html = ""
+        if elim_count:
+            saved_html = f"""
+            <div class="asmnt-stat asmnt-stat-saved">
+              <div class="asmnt-stat-val" style="color:#22c55e">−{_fmt_effort_range(saved_lo, saved_hi)}</div>
+              <div class="asmnt-stat-lbl">U.E. ahorradas · {elim_count} módulos a eliminar</div>
+            </div>"""
+        effort_html = f"""
       <div class="asmnt-section-label" style="margin-top:24px">Esfuerzo Total Estimado</div>
       <div class="asmnt-effort-box">
         <div class="asmnt-stat">

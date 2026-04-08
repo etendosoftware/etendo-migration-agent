@@ -162,6 +162,7 @@ def aggregate(records: list) -> dict:
         base_version = core.get("base_version") or "—"
         baseline_type = core.get("baseline_type") or "zip"
         baseline_exact = baseline_type == "expanded" or base_version == client_version
+        asmnt_effort = r.get("custom_assessment", {}).get("effort_summary", {})
         clients.append({
             "name": r.get("client", {}).get("name", r.get("_json_stem", "?")),
             "version": client_version,
@@ -175,6 +176,8 @@ def aggregate(records: list) -> dict:
             "html_file": r.get("_html_file"),
             "base_version": base_version,
             "baseline_exact": baseline_exact,
+            "update_total_hours": asmnt_effort.get("update_total_hours"),
+            "saas_total_hours": asmnt_effort.get("saas_total_hours"),
         })
     clients.sort(key=lambda x: x["score"], reverse=True)
 
@@ -781,6 +784,7 @@ function renderTable() {
         const baseLabel = c.baseline_exact
             ? `<span class="baseline-badge baseline-exact" title="Baseline exacto">${c.base_version}</span>`
             : `<span class="baseline-badge baseline-approx" title="Baseline aproximado (ZIP estático)">${c.base_version} ⚠</span>`;
+        const fmtH = h => (h == null || h === 0) ? '<span style="color:#9ca3af">—</span>' : `<span style="font-weight:600">${h}h</span>`;
         return `<tr>
             <td class="td-name">${c.name}</td>
             <td class="td-version">${c.version}</td>
@@ -792,6 +796,8 @@ function renderTable() {
             <td class="td-num">${c.local_maintained}</td>
             <td class="${nmClass}">${c.not_maintained}</td>
             <td class="${custClass}">${c.custom}</td>
+            <td class="td-num" style="color:#1d4ed8">${fmtH(c.update_total_hours)}</td>
+            <td class="td-num" style="color:#166534">${fmtH(c.saas_total_hours)}</td>
             <td>${btn}</td>
         </tr>`;
     }).join('');
@@ -942,6 +948,8 @@ def render_html(data: dict, generated_at: str) -> str:
           <th class="td-num" title="Local Mantenido">Mant.</th>
           <th class="td-num" title="Local sin Mantenimiento" style="color:#f97316">Sin mant.</th>
           <th class="td-num" title="Customizaciones" style="color:#a855f7">Custom</th>
+          <th class="td-num" title="Horas estimadas para actualizar a Etendo 25.4.x" style="color:#1d4ed8">Actualiz.</th>
+          <th class="td-num" title="Horas estimadas para migrar a SaaS" style="color:#166534">SaaS</th>
           <th>Reporte</th>
         </tr>
       </thead>

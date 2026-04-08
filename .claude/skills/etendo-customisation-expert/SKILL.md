@@ -7,7 +7,11 @@ argument-hint: "[client-name | path/to/report.json]"
 
 **Arguments:** `$ARGUMENTS` — client name (e.g. `ladypipa`) or path to `reports/client.json`
 
-You are an expert Etendo ERP developer and migration architect. Your job is to deeply analyze the customizations found in a client's Etendo installation and produce a structured assessment that gets written into the client's `report.json`.
+You are an expert Etendo ERP developer and migration architect with deep knowledge of the Application Dictionary (AD) model, Etendo's module system, and the status of the new React-based UI.
+
+Your job is to deeply analyze the customizations found in a client's Etendo installation and produce a structured assessment that gets written into the client's `report.json`. The analysis is in two parts:
+1. **Customization assessment** (Steps 1–6): evaluate core changes, custom modules, and unmaintained modules.
+2. **UI Readiness** (Step 7.A): determine which features of the new Etendo UI are critical for this specific client by quantifying their actual use in the Application Dictionary.
 
 ---
 
@@ -105,13 +109,63 @@ For translation-only modules (java_package ending in `_es_ES`, `_es_es`, `_en_US
 
 ---
 
-## Step 5 — Compute effort summary
+## Step 5 — Fetch API changes and estimate effort
 
-Calculate ranges (min/max days) for:
-- Core modifications total
-- Custom modules total
-- Unmaintained modules total
-- Grand total
+**Target version: Etendo 25.4.x** (latest Confirmed Stable).
+
+### Sub-step 5.A — Fetch the API changelog
+
+Fetch the API changes documentation and identify all breaking changes between the client's current version and 25.4.x:
+
+```
+WebFetch: https://docs.etendo.software/developer-guide/etendo-classic/developer-changelog/apichanges/
+```
+
+From the page, extract changes version by version starting from the client's `platform.version` up to 25.4.x. Focus on:
+- Java API changes (deprecated/removed methods, class renames, interface changes)
+- Database/PostgreSQL schema changes
+- Library upgrades (Jackson, Hibernate, Spring, Guava, etc.)
+- Gradle/build system changes
+- Removed or replaced modules
+
+### Sub-step 5.B — Identify which changes affect each module
+
+For each module in `custom_modules` and `local_not_maintained`, cross-reference its source code with the API changes list. Specifically:
+- Check which deprecated/removed APIs the module uses
+- Check if any libraries it depends on changed
+- For unmaintained modules: check if the module's last version predates critical breaking changes
+
+### Sub-step 5.C — Estimate hours (single point, no ranges)
+
+For each item, produce **two estimates in hours** (not days, not ranges):
+
+**`effort_update_hours`** — Hours for a junior developer assisted by Claude Code to update the code to work with Etendo 25.4.x. Includes: fixing API breaks, updating deprecated calls, adapting to library changes, testing.
+
+**`effort_saas_hours`** — Hours to eliminate, upstream, or generalize the customization as part of a SaaS migration. Includes: removing client-specific logic, writing documentation for upstreaming, or generalizing to a bundle candidate.
+
+**Calibration guide (junior dev + Claude Code, not a senior working alone):**
+
+| Task type | Hours |
+|-----------|-------|
+| Rename a deprecated class or method (find + replace) | 0.5 |
+| Update a single service/API call to new signature | 1–2 |
+| Adapt to a changed interface with behavioral difference | 3–6 |
+| Rewrite a module subsystem for new architecture | 8–20 |
+| Full module rewrite (unmaintained, no maintainer) | 20–60 |
+| Verify if functionality is already in new version | 1 |
+| Remove client-specific code cleanly (with testing) | 2–4 |
+| Generalize to bundle candidate (refactor + docs) | 8–24 |
+| Migrate config/data to official replacement module | 2–8 |
+| Update translation pack (follows main module) | 0 |
+
+**For unmaintained modules with no active maintainer:**
+- `effort_update_hours` = hours to fork + update the module to work with 25.4.x
+- If an official replacement exists: `effort_saas_hours` = hours to migrate data/config to it
+- If no replacement: `effort_saas_hours` = hours to evaluate and decide (removal or rebuild)
+
+**For core modifications:**
+- `effort_update_hours` = hours to rebase the patch on 25.4.x core and verify it still applies
+- `effort_saas_hours` = hours to remove/upstream/validate the patch is no longer needed
 
 ---
 
@@ -129,18 +183,20 @@ with open(report_path) as f:
     report = json.load(f)
 
 report["custom_assessment"] = {
-    "assessor_version": "1.0",
+    "assessor_version": "2.0",
     "generated": date.today().isoformat(),
     "core_customizations": [
         # One entry per logical customization found in core
         {
             "name": "...",
-            "description": "...",          # What it does in business terms
-            "files": ["path/to/file"],      # Files involved
+            "description": "...",              # What it does in business terms
+            "files": ["path/to/file"],         # Files involved
             "lines_changed": 0,
             "conclusion": "upstream|already_upstream|eliminate",
             "justification": "...",
-            "effort_days": "X-Y days"
+            "api_changes_applicable": ["..."], # Which changelog entries affect this
+            "effort_update_hours": 0,          # Hours to rebase patch on 25.4.x
+            "effort_saas_hours": 0             # Hours to remove/upstream for SaaS
         }
     ],
     "custom_modules": [
@@ -150,7 +206,9 @@ report["custom_assessment"] = {
             "description": "...",
             "generalization": "bundle_candidate|client_specific|redundant",
             "complexity": "trivial|minor|major|critical",
-            "effort_days": "X-Y days",
+            "api_changes_applicable": ["..."], # Which changelog entries affect this
+            "effort_update_hours": 0,          # Hours to update module to 25.4.x
+            "effort_saas_hours": 0,            # Hours to eliminate/generalize for SaaS
             "recommendation": "..."
         }
     ],
@@ -160,22 +218,26 @@ report["custom_assessment"] = {
             "name": "...",
             "function": "...",
             "risk": "low|medium|high",
-            "has_official_replacement": true,
-            "official_replacement_name": "...",   # name if known, null otherwise
+            "has_official_replacement": True,
+            "official_replacement_name": "...",    # name if known, null otherwise
             "generalization": "bundle_candidate|client_specific|redundant",
-            "effort_days": "X-Y days",
+            "api_changes_applicable": ["..."],     # Which changelog entries affect this
+            "effort_update_hours": 0,              # Hours to fork + update to 25.4.x
+            "effort_saas_hours": 0,                # Hours to migrate to replacement or remove
             "recommendation": "..."
         }
     ],
     "effort_summary": {
-        "core_min": 0.0,
-        "core_max": 0.0,
-        "custom_min": 0.0,
-        "custom_max": 0.0,
-        "unmaintained_min": 0.0,
-        "unmaintained_max": 0.0,
-        "total_min": 0.0,
-        "total_max": 0.0
+        # Ruta A: Actualización a Etendo 25.4.x (mantener instalación on-premise actualizada)
+        "update_core_hours": 0,
+        "update_custom_hours": 0,
+        "update_unmaintained_hours": 0,
+        "update_total_hours": 0,
+        # Ruta B: Migración a SaaS (eliminar/generalizar customizaciones)
+        "saas_core_hours": 0,
+        "saas_custom_hours": 0,
+        "saas_unmaintained_hours": 0,
+        "saas_total_hours": 0
     }
 }
 
@@ -189,146 +251,191 @@ print(f"✓ custom_assessment written to {report_path}")
 
 ## Step 7.A — Analyze UI Readiness
 
-Analyze which pending features of Etendo's new UI are critical for this specific client by **searching the actual source code** in `src/`, `web/`, `modules/`, and `modules_core/`. JAR dependencies are ignored — only source code is reliable evidence.
+Determine which features of Etendo's new React UI are critical for this specific client by analyzing their **Application Dictionary (AD) XML files**. The goal is to count how much the client actually uses each feature, then combine that with the completion status of the new UI to produce a concrete, quantified priority assessment.
 
-**Locate source directories from the installation path:**
+**Reference:** Read `data/all-features.md` section by section as you work. It describes each feature's expected behavior, its checklist, and typical examples. Use it to understand context and draft specific `reason` fields — do NOT use `ui_feature_map.json`.
+
+---
+
+### Sub-step A1 — Locate AD XML directories
+
+Infer the installation root from module paths in the report, then find all AD sourcedata directories:
 
 ```python
-import json, subprocess
+import json, subprocess, re
 from pathlib import Path
+from datetime import date
 
-feature_map_path = Path("data/ui_feature_map.json")
-with open(feature_map_path) as f:
-    feature_map = json.load(f)
-
-# Infer installation root from any module path in the report
+# Load report (already open from Step 6)
 install_root = None
 for category in ["gradle_source", "local_maintained", "custom", "local_not_maintained"]:
     mods = report.get("modules", {}).get(category, [])
     if mods and mods[0].get("path"):
         p = Path(mods[0]["path"])
-        # path is like /opt/EtendoERP/modules/com.x.y → root is two levels up
-        install_root = p.parent.parent
+        install_root = p.parent.parent  # /opt/EtendoERP/modules/com.x.y → /opt/EtendoERP
         break
-
-# Fallback: ask or infer from core_divergences
-if not install_root:
-    # Try to infer from core files
-    core_files = report.get("core_divergences", {}).get("files", [])
-    # If we can't infer, we still have modules_core from baseline
-    pass
-
-# Search directories: src/, web/, modules/, modules_core/ — all relative to install_root
-search_dirs = []
-if install_root:
-    for d in ["src", "web", "modules", "modules_core"]:
-        p = install_root / d
-        if p.exists():
-            search_dirs.append(str(p))
 ```
 
-**For each feature, grep the source code:**
+```bash
+# Find all AD sourcedata directories across core + installed modules
+find {install_root} -type d -name "sourcedata" | grep "src-db/database" | sort
+```
 
+Store the list of `sourcedata_dirs`. These contain files like `AD_WINDOW.xml`, `AD_TAB.xml`, `AD_FIELD.xml`, `AD_COLUMN.xml`, `AD_PROCESS.xml`, `OBUIAPP_PROCESS.xml`, `AD_FORM.xml`, `OBUISEL_SELECTOR.xml`, etc.
+
+---
+
+### Sub-step A2 — Count AD instances per feature category
+
+Run the following analyses. For each, use `grep -c` to count matching lines/entries, or `grep -l` to count files. Consolidate across ALL `sourcedata_dirs`.
+
+**Helper:**
 ```python
-def grep_code(pattern, search_dirs, extensions=None):
-    """
-    Returns (found: bool, matches: list[str]) from grepping pattern across search_dirs.
-    extensions: list like ['.java', '.xml', '.js'] — if None, searches all files.
-    Only searches src/, modules/, modules_core/ — never gradle cache or .jar files.
-    Returns ALL matching files (no cap).
-    """
-    if not pattern or not search_dirs:
-        return False, []
-    
-    cmd = ["grep", "-rl", "--include=*.java", "--include=*.xml", "--include=*.js",
-           "-E", pattern] + search_dirs
-    
-    try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
-        files = [f for f in result.stdout.strip().split("\n") if f]
-        return len(files) > 0, files  # return ALL matching files
-    except Exception:
-        return False, []
-
-def check_file_exists(filename, search_dirs):
-    """Check if any file with the given name exists anywhere in search_dirs. Returns ALL matches."""
-    all_results = []
-    for d in search_dirs:
-        results = list(Path(d).rglob(filename))
-        all_results.extend([str(r) for r in results])
-    return len(all_results) > 0, all_results
+def count_in_ad(pattern, sourcedata_dirs, filename_glob="*.xml"):
+    """Count occurrences of pattern across all AD XML files. Returns (total_count, list_of_matching_files)."""
+    total = 0
+    matching = []
+    for d in sourcedata_dirs:
+        result = subprocess.run(
+            ["grep", "-rl", "-E", pattern, d],
+            capture_output=True, text=True, timeout=30
+        )
+        files = [f for f in result.stdout.strip().split("\n") if f and Path(f).name.endswith(".xml")]
+        for f in files:
+            r2 = subprocess.run(["grep", "-c", "-E", pattern, f], capture_output=True, text=True)
+            try:
+                total += int(r2.stdout.strip())
+                matching.append(f)
+            except ValueError:
+                pass
+    return total, matching
 ```
 
-**Evaluate each feature using real code evidence:**
+**Run these counts:**
+
+```bash
+# 1. Window Types — AD_WINDOW.xml
+grep -rh "WINDOWTYPE=" {sourcedata_dirs} --include="AD_WINDOW.xml" | grep -oE 'WINDOWTYPE="[^"]+"' | sort | uniq -c
+# Expected: M (Maintain), T (Transaction), Q (Query), OBUIAPP_PickAndExecute
+
+# 2. Display Logic — fields with conditional visibility
+grep -rc "DISPLAYLOGIC=" {sourcedata_dirs} --include="AD_FIELD.xml"    # count per module
+grep -rc "DISPLAYLOGIC=" {sourcedata_dirs} --include="AD_COLUMN.xml"
+
+# 3. Callouts — columns with server-side callout logic
+grep -rc "<CALLOUT>" {sourcedata_dirs} --include="AD_COLUMN.xml"
+
+# 4. Process Types — legacy vs modern
+grep -rh "UIPATTERN=" {sourcedata_dirs} --include="AD_PROCESS.xml" | grep -oE 'UIPATTERN="[^"]+"' | sort | uniq -c
+grep -rh "UIPATTERN=" {sourcedata_dirs} --include="OBUIAPP_PROCESS.xml" | grep -oE 'UIPATTERN="[^"]+"' | sort | uniq -c
+
+# 5. Selectors (OBUISEL)
+grep -rl "." {sourcedata_dirs} --include="OBUISEL_SELECTOR.xml" | wc -l   # modules with selectors
+grep -rc "<OBUISEL_SELECTOR " {sourcedata_dirs} --include="OBUISEL_SELECTOR.xml"
+
+# 6. Application Forms (AD_FORM)
+grep -rl "." {sourcedata_dirs} --include="AD_FORM.xml" | wc -l
+grep -rc "<AD_FORM " {sourcedata_dirs} --include="AD_FORM.xml"
+
+# 7. Single-Record tabs
+grep -rc 'UITYPE="SR"' {sourcedata_dirs} --include="AD_TAB.xml"
+
+# 8. Read-only tabs
+grep -rc 'ISREADONLY="Y"' {sourcedata_dirs} --include="AD_TAB.xml"
+
+# 9. Tab-level display logic (tab visibility)
+grep -rc "DISPLAYLOGIC=" {sourcedata_dirs} --include="AD_TAB.xml"
+
+# 10. Grid-initial tabs
+grep -rc 'ISSHOWNINITIALGRIDMODE="Y"' {sourcedata_dirs} --include="AD_TAB.xml"
+
+# 11. Field Groups (collapsible sections)
+grep -rc "AD_FIELDGROUP_ID=" {sourcedata_dirs} --include="AD_FIELD.xml"
+
+# 12. Status Bar Fields
+grep -rc 'ISSHOWNINSTATUSBAR="Y"' {sourcedata_dirs} --include="AD_FIELD.xml"
+
+# 13. Hardcoded buttons (DocAction, Posted, CreateFrom, PaymentRule)
+grep -rh "COLUMNNAME=" {sourcedata_dirs} --include="AD_COLUMN.xml" | grep -E 'COLUMNNAME="(DocAction|Posted|CreateFrom|PaymentRule|ChangeProjectStatus)"' | wc -l
+
+# 14. Read-only logic (conditional editability)
+grep -rc "READONLYLOGIC=" {sourcedata_dirs} --include="AD_COLUMN.xml"
+
+# 15. Out-parameter selectors (populate multiple fields)
+grep -rc 'ISOUTPARAMETER="Y"' {sourcedata_dirs} --include="OBUISEL_SELECTORFIELD.xml"
+
+# 16. Default values with SQL or session vars
+grep -rc "DEFAULTVALUE=" {sourcedata_dirs} --include="AD_COLUMN.xml"
+
+# 17. Mandatory fields (form validation scale)
+grep -rc 'ISMANDATORY="Y"' {sourcedata_dirs} --include="AD_COLUMN.xml"
+
+# 18. Linked Items / KMO widgets
+grep -rl "OBKMO\|LinkedItem\|WidgetClass" {sourcedata_dirs} --include="*.xml" | wc -l
+
+# 19. Tree views
+grep -rc 'HASTREE="Y"\|TREECATEGORY=' {sourcedata_dirs} --include="AD_TAB.xml"
+
+# 20. Navigation menu size
+grep -rc "<AD_MENU " {sourcedata_dirs} --include="AD_MENU.xml"
+```
+
+---
+
+### Sub-step A3 — Assign priority per feature
+
+For each feature section in `data/all-features.md`, decide the priority based on:
+
+| Count in this client's AD | New UI status | Priority |
+|--------------------------|---------------|----------|
+| > 50 instances OR > 20 windows | NOT DONE / PARCIAL | **critica** |
+| 10–50 instances OR 5–20 windows | NOT DONE / PARCIAL | **alta** |
+| < 10 instances | NOT DONE / PARCIAL | **media** |
+| 0 instances found | any | **no_aplica** |
+| any count | DONE / TO CHECK | **media** or **no_aplica** |
+
+**Etendo new UI completion status** (apply your knowledge as of training data):
+- **DONE**: Basic CRUD (Maintain), Authentication, Navigation/Menu, Loading indicators
+- **PARCIAL**: Transaction windows (Document State Machine incomplete), Selectors/out-params, Process Definitions
+- **NOT DONE**: Callouts (OB.* namespace), Application Forms (AD_FORM), Classic Reports (legacy HTML), Tab-level display logic, Linked Items, Tree views, Widget/Dashboard
+
+Use the counts from Sub-step A2 to write a specific `reason` for each feature (e.g. "Este cliente tiene 47 ventanas Transaction con máquina de estados — el botón DocAction y los estados Draft/Booked son críticos. El nuevo UI aún no tiene implementado el flujo completo de estado de documentos.").
+
+---
+
+### Sub-step A4 — Write ui_readiness to report.json
 
 ```python
 PRIORITY_ORDER = ["critica", "alta", "media", "no_aplica"]
 
-def evaluate_feature(feature, search_dirs):
-    # Universal features — always present regardless of code
-    if feature.get("always", False):
-        return feature["tier"], "Feature universal — afecta a todos los clientes Etendo.", []
+# Build features list from your analysis above
+# One entry per logical feature section (not per XML file)
+features_result = [
+    # Example structure — fill in from your Sub-step A2/A3 analysis:
+    {
+        "section": "1.2",
+        "title": "Transaction Windows (Document State Machine)",
+        "status": "PARCIAL",
+        "completion_pct": 40,
+        "priority": "critica",   # or alta/media/no_aplica
+        "reason": "Este cliente tiene N ventanas Transaction (pedidos, facturas, pagos). El flujo DocAction/estados aún no está completo en el nuevo UI.",
+        "ad_count": 47,           # actual count from grep
+        "code_evidence": []       # leave empty — evidence is the count above
+    },
+    # ... one entry per section from all-features.md
+]
 
-    signatures = feature.get("code_signatures", [])
-    if not signatures:
-        return "no_aplica", "Sin code signatures definidas para esta feature.", []
+summary = {p: sum(1 for f in features_result if f["priority"] == p)
+           for p in PRIORITY_ORDER}
 
-    matched_evidence = []
-    for sig in signatures:
-        pattern = sig.get("pattern", "")
-        filename = sig.get("files", "")
-        description = sig.get("description", "")
-
-        if not pattern and filename:
-            # Check for file existence (e.g. AD_FORM.xml)
-            found, all_files = check_file_exists(filename, search_dirs)
-        else:
-            found, all_files = grep_code(pattern, search_dirs)
-
-        if found:
-            matched_evidence.append({
-                "description": description,
-                "files": all_files  # store ALL matching files
-            })
-
-    if matched_evidence:
-        total_files = sum(len(e["files"]) for e in matched_evidence)
-        reason = f"Encontrado en código: {matched_evidence[0]['description']}. ({total_files} archivo(s) afectados)"
-        return feature["tier"], reason, matched_evidence
-
-    return "no_aplica", "No se encontró evidencia de uso en el código fuente (src/, modules/, modules_core/).", []
-```
-
-**Run evaluation and build ui_readiness:**
-
-```python
-platform_type = report.get("platform", {}).get("type", "etendo")
-features_result = []
-summary = {"critica": 0, "alta": 0, "media": 0, "no_aplica": 0}
-
-for feature in feature_map:
-    priority, reason, code_evidence = evaluate_feature(feature, search_dirs)
-    summary[priority] += 1
-    features_result.append({
-        "section": feature["section"],
-        "title": feature["title"],
-        "status": feature["status"],
-        "completion_pct": feature["completion_pct"],
-        "priority": priority,
-        "reason": reason,
-        "code_evidence": code_evidence  # list of {description, files: [...all paths...]}
-    })
-
-# Sort: crítica → alta → media → no_aplica, then by completion_pct ascending
-features_result.sort(key=lambda f: (PRIORITY_ORDER.index(f["priority"]), f["completion_pct"]))
-
-# global_status
 if summary["critica"] >= 1:
     global_status = "blocked"
 elif summary["alta"] >= 3:
     global_status = "partial"
 else:
     global_status = "ready"
+
+features_result.sort(key=lambda f: (PRIORITY_ORDER.index(f["priority"]), f.get("completion_pct", 50)))
 
 report["ui_readiness"] = {
     "generated": date.today().isoformat(),
@@ -343,7 +450,29 @@ with open(report_path, "w") as f:
 print(f"✓ ui_readiness written — {summary['critica']} críticas, {summary['alta']} altas, {summary['media']} medias, {summary['no_aplica']} no aplica")
 ```
 
-**Important:** After running this code, review the `reason` field for each feature and refine it with a more specific explanation based on your knowledge of the client's actual modules and use cases. The code-generated reason is a starting point; replace it with a sentence that clearly explains the business impact for THIS client.
+**Required sections to cover** (read the corresponding section in `data/all-features.md` for each):
+
+| Section | Title | Key AD source |
+|---------|-------|---------------|
+| 1.1 | Maintain Windows | AD_WINDOW.xml WINDOWTYPE=M |
+| 1.2 | Transaction Windows / State Machine | AD_WINDOW.xml WINDOWTYPE=T + COLUMNNAME=DocAction |
+| 1.3 | Query / Info Windows | AD_WINDOW.xml WINDOWTYPE=Q |
+| 1.4 | Pick and Execute | AD_WINDOW.xml WINDOWTYPE=OBUIAPP_PickAndExecute |
+| 2 | Reference Types (advanced fields) | AD_COLUMN.xml AD_REFERENCE_ID (Image, Color, BLOB, etc.) |
+| 3 | Process Definitions (modern) | OBUIAPP_PROCESS.xml |
+| 3b | Legacy Processes & Reports | AD_PROCESS.xml ISREPORT=Y / UIPATTERN |
+| 4 | Display Logic (field visibility) | AD_FIELD.xml DISPLAYLOGIC |
+| 5 | Tab behaviors (SR, read-only, display logic) | AD_TAB.xml UITYPE/ISREADONLY/DISPLAYLOGIC |
+| 6 | Callouts | AD_COLUMN.xml CALLOUT (esp. OB.* namespace) |
+| 8 | Selectors with out-parameters | OBUISEL_SELECTORFIELD.xml ISOUTPARAMETER=Y |
+| 10 | Cross-cutting: Attachments, Notes, Copy | AD_TAB.xml ISALLOWATTACHMENT/ISALLOWNOTES |
+| 10b | Read-only logic | AD_COLUMN.xml READONLYLOGIC |
+| 18 | Application Forms (AD_FORM) | AD_FORM.xml |
+| 19 | Linked Items / KMO | OBKMO_*.xml |
+| 21 | Workspace / Dashboard Widgets | OBKMO_WIDGET*.xml |
+| 22 | Field Groups | AD_FIELD.xml AD_FIELDGROUP_ID |
+| 23 | Status Bar Fields | AD_FIELD.xml ISSHOWNINSTATUSBAR=Y |
+| 29 | Tree Views | AD_TAB.xml HASTREE=Y |
 
 ---
 
@@ -369,21 +498,29 @@ End with a summary using this format:
     → X upstream proposals
     → Y already in newer Etendo
     → Z to eliminate
-    Effort: X–Y days
 
   Custom modules        : N items
     → X bundle candidates
     → Y client-specific
-    Effort: X–Y days
 
   Unmaintained modules  : N items
     → X high risk
     → Y medium risk
     → Z low risk
-    Effort: X–Y days
 
-  ─────────────────────────────
-  TOTAL ESTIMATED       : X–Y days
+  ─────────────────────────────────────────────
+  RUTA A: Actualización a 25.4.x
+    Core          :  Nh
+    Custom        :  Nh
+    Sin mant.     :  Nh
+    TOTAL         :  Nh
+
+  RUTA B: Migración a SaaS
+    Core          :  Nh
+    Custom        :  Nh
+    Sin mant.     :  Nh
+    TOTAL         :  Nh
+  ─────────────────────────────────────────────
 
   UI Readiness          : blocked|partial|ready
     → X críticas
@@ -403,3 +540,5 @@ End with a summary using this format:
 - **Be specific about conclusions** — if you conclude `upstream`, explain what value it adds to Etendo core. If `eliminate`, explain why it doesn't belong in core.
 - **Generalization for modules** — when assessing `bundle_candidate`, identify which existing bundle it could be part of or what new bundle name it would form.
 - **Skip translation modules** in the main analysis, only add a brief summary note for them.
+- **UI Readiness is quantified** — every `reason` field must include the actual count found in this client's AD (e.g., "47 ventanas Transaction", "312 campos con display logic", "18 callouts OB.*"). Never write a generic reason. Read the corresponding section in `data/all-features.md` to understand what the feature does before writing the reason.
+- **Never use `ui_feature_map.json`** — the source of truth for UI feature descriptions is `data/all-features.md`. The feature map JSON is deprecated.
