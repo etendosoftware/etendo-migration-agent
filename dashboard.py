@@ -85,10 +85,16 @@ def aggregate(records: list) -> dict:
         and len(r.get("modules", {}).get("custom", [])) == 0
     )
 
+    def _is_openbravo_3x(r):
+        """Returns True for Openbravo 3.0.x installations (excluded from version stats)."""
+        v = r.get("platform", {}).get("version") or ""
+        return str(v).startswith("3.")
+
     version_counter = Counter(
-        r.get("platform", {}).get("version") or "—" for r in records
+        r.get("platform", {}).get("version") or "—"
+        for r in records if not _is_openbravo_3x(r)
     )
-    most_common_version = version_counter.most_common(1)[0][0]
+    most_common_version = version_counter.most_common(1)[0][0] if version_counter else "—"
 
     # Version range: min, max and normalized average position
     def _ver_num(v):
@@ -98,7 +104,10 @@ def aggregate(records: list) -> dict:
         except Exception:
             return 0
 
-    valid_versions = [r.get("platform", {}).get("version") for r in records if r.get("platform", {}).get("version")]
+    valid_versions = [
+        r.get("platform", {}).get("version") for r in records
+        if r.get("platform", {}).get("version") and not _is_openbravo_3x(r)
+    ]
     if valid_versions:
         sorted_versions = sorted(valid_versions, key=_ver_num)
         min_version = sorted_versions[0]
