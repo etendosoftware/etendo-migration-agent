@@ -108,8 +108,8 @@
     },
     "idm": {
       "client_name": "idm",
-      "has_mixpanel": false,
-      "source_instance": null
+      "has_mixpanel": true,
+      "source_instance": "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
     },
     "jokin": {
       "client_name": "Jokin",

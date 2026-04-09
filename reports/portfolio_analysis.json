@@ -7,38 +7,6 @@
   ],
   "ui_feature_roadmap": [
     {
-      "section": "AD_FORM",
-      "title": "Application Forms (AD_FORM) — Formularios JavaScript especiales",
-      "status": "NOT DONE",
-      "completion_pct": 5,
-      "portfolio_score": 12,
-      "clients_critica": [
-        "enertis",
-        "etendo_26_sources",
-        "ladypipa"
-      ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 3,
-      "avg_ad_count": 32
-    },
-    {
-      "section": "6",
-      "title": "Callouts — Lógica server-side en cambio de campo",
-      "status": "NOT DONE",
-      "completion_pct": 5,
-      "portfolio_score": 12,
-      "clients_critica": [
-        "enertis",
-        "etendo_26_sources",
-        "ladypipa"
-      ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 3,
-      "avg_ad_count": 95
-    },
-    {
       "section": "4",
       "title": "Display Logic — Visibilidad condicional de campos",
       "status": "NOT DONE",
@@ -52,39 +20,7 @@
       "clients_alta": [],
       "clients_media": [],
       "total_affected": 3,
-      "avg_ad_count": 3057
-    },
-    {
-      "section": "23",
-      "title": "Status Bar — Barra de estado inferior con campos resumen",
-      "status": "NOT DONE",
-      "completion_pct": 10,
-      "portfolio_score": 12,
-      "clients_critica": [
-        "enertis",
-        "etendo_26_sources",
-        "ladypipa"
-      ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 3,
-      "avg_ad_count": 292
-    },
-    {
-      "section": "5.1",
-      "title": "Tab Display Logic — Visibilidad condicional de pestañas",
-      "status": "NOT DONE",
-      "completion_pct": 15,
-      "portfolio_score": 12,
-      "clients_critica": [
-        "enertis",
-        "etendo_26_sources",
-        "ladypipa"
-      ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 3,
-      "avg_ad_count": 76
+      "avg_ad_count": 2743
     },
     {
       "section": "2.B",
@@ -100,23 +36,7 @@
       "clients_alta": [],
       "clients_media": [],
       "total_affected": 3,
-      "avg_ad_count": 62
-    },
-    {
-      "section": "1.2",
-      "title": "Ventanas Transaction (T) — Máquina de estados de documentos",
-      "status": "PARCIAL",
-      "completion_pct": 40,
-      "portfolio_score": 12,
-      "clients_critica": [
-        "enertis",
-        "etendo_26_sources",
-        "ladypipa"
-      ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 3,
-      "avg_ad_count": 48
+      "avg_ad_count": 50
     },
     {
       "section": "1.4",
@@ -133,58 +53,90 @@
       ],
       "clients_media": [],
       "total_affected": 3,
-      "avg_ad_count": 171
+      "avg_ad_count": 94
     },
     {
-      "section": "3",
-      "title": "Definiciones de Proceso — Legacy AD_PROCESS vs OBUIAPP_PROCESS",
-      "status": "PARCIAL",
-      "completion_pct": 45,
-      "portfolio_score": 10,
-      "clients_critica": [
-        "enertis",
-        "etendo_26_sources"
-      ],
-      "clients_alta": [
-        "ladypipa"
-      ],
-      "clients_media": [],
-      "total_affected": 3,
-      "avg_ad_count": 705
-    },
-    {
-      "section": "8",
-      "title": "Selectores OBUISEL — Selectores avanzados con filtro y out-params",
-      "status": "PARCIAL",
-      "completion_pct": 50,
-      "portfolio_score": 10,
-      "clients_critica": [
-        "enertis",
-        "etendo_26_sources"
-      ],
-      "clients_alta": [
-        "ladypipa"
-      ],
-      "clients_media": [],
-      "total_affected": 3,
-      "avg_ad_count": 280
-    },
-    {
-      "section": "5.2",
-      "title": "Read-Only Tabs — Pestañas de solo lectura",
+      "section": "21",
+      "title": "Workspace / Dashboard (My Openbravo) — Widgets y KMO",
       "status": "NOT DONE",
-      "completion_pct": 60,
-      "portfolio_score": 10,
+      "completion_pct": 5,
+      "portfolio_score": 9,
       "clients_critica": [
         "enertis",
         "etendo_26_sources"
       ],
-      "clients_alta": [
+      "clients_alta": [],
+      "clients_media": [
         "ladypipa"
       ],
-      "clients_media": [],
       "total_affected": 3,
-      "avg_ad_count": 39
+      "avg_ad_count": 20
+    },
+    {
+      "section": "6",
+      "title": "Callouts — Lógica server-side en cambio de campo",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 9,
+      "clients_critica": [
+        "enertis",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [
+        "etendo_26_sources"
+      ],
+      "total_affected": 3,
+      "avg_ad_count": 95
+    },
+    {
+      "section": "23",
+      "title": "Status Bar — Barra de estado inferior con campos resumen",
+      "status": "NOT DONE",
+      "completion_pct": 10,
+      "portfolio_score": 9,
+      "clients_critica": [
+        "enertis",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [
+        "etendo_26_sources"
+      ],
+      "total_affected": 3,
+      "avg_ad_count": 257
+    },
+    {
+      "section": "1.2",
+      "title": "Ventanas Transaction (T) — Máquina de estados de documentos",
+      "status": "PARCIAL",
+      "completion_pct": 40,
+      "portfolio_score": 9,
+      "clients_critica": [
+        "enertis",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [
+        "etendo_26_sources"
+      ],
+      "total_affected": 3,
+      "avg_ad_count": 152
+    },
+    {
+      "section": "AD_FORM",
+      "title": "Application Forms (AD_FORM) — Formularios JavaScript especiales",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 8,
+      "clients_critica": [
+        "enertis",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 2,
+      "avg_ad_count": 34
     },
     {
       "section": "14",
@@ -202,19 +154,19 @@
       "avg_ad_count": 1261
     },
     {
-      "section": "7",
-      "title": "Máquina de estados de documentos (DocAction / Estado del documento)",
-      "status": "PARCIAL",
-      "completion_pct": 40,
+      "section": "5.1",
+      "title": "Tab Display Logic — Visibilidad condicional de pestañas",
+      "status": "NOT DONE",
+      "completion_pct": 15,
       "portfolio_score": 8,
       "clients_critica": [
         "enertis",
-        "etendo_26_sources"
+        "ladypipa"
       ],
       "clients_alta": [],
       "clients_media": [],
       "total_affected": 2,
-      "avg_ad_count": 58
+      "avg_ad_count": 62
     },
     {
       "section": "25",
@@ -229,62 +181,78 @@
       "clients_alta": [],
       "clients_media": [],
       "total_affected": 2,
-      "avg_ad_count": 6020
+      "avg_ad_count": 4802
     },
     {
-      "section": "21",
-      "title": "Workspace / Dashboard (My Openbravo) — Widgets y KMO",
-      "status": "NOT DONE",
-      "completion_pct": 10,
-      "portfolio_score": 7,
+      "section": "8",
+      "title": "Selectores OBUISEL — Selectores avanzados con filtro y out-params",
+      "status": "PARCIAL",
+      "completion_pct": 50,
+      "portfolio_score": 8,
       "clients_critica": [
         "enertis"
       ],
       "clients_alta": [
-        "etendo_26_sources"
-      ],
-      "clients_media": [
+        "etendo_26_sources",
         "ladypipa"
       ],
+      "clients_media": [],
       "total_affected": 3,
-      "avg_ad_count": 29
+      "avg_ad_count": 230
     },
     {
-      "section": "22",
-      "title": "Field Groups — Secciones colapsables en formularios",
+      "section": "3",
+      "title": "Definiciones de Proceso — Legacy AD_PROCESS vs OBUIAPP_PROCESS",
       "status": "PARCIAL",
-      "completion_pct": 60,
-      "portfolio_score": 5,
-      "clients_critica": [],
-      "clients_alta": [
-        "enertis",
-        "etendo_26_sources"
+      "completion_pct": 45,
+      "portfolio_score": 6,
+      "clients_critica": [
+        "enertis"
       ],
-      "clients_media": [
+      "clients_alta": [
         "ladypipa"
       ],
-      "total_affected": 3,
-      "avg_ad_count": 2015
+      "clients_media": [],
+      "total_affected": 2,
+      "avg_ad_count": 626
     },
     {
-      "section": "4b",
-      "title": "ReadOnly Logic — Editabilidad condicional de campos",
+      "section": "5.2",
+      "title": "Read-Only Tabs — Pestañas de solo lectura",
       "status": "NOT DONE",
-      "completion_pct": 5,
-      "portfolio_score": 4,
+      "completion_pct": 60,
+      "portfolio_score": 6,
       "clients_critica": [
-        "etendo_26_sources"
+        "enertis"
+      ],
+      "clients_alta": [
+        "ladypipa"
+      ],
+      "clients_media": [],
+      "total_affected": 2,
+      "avg_ad_count": 38
+    },
+    {
+      "section": "7",
+      "title": "Máquina de estados de documentos (DocAction / Estado del documento)",
+      "status": "PARCIAL",
+      "completion_pct": 40,
+      "portfolio_score": 5,
+      "clients_critica": [
+        "enertis"
       ],
       "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 1,
-      "avg_ad_count": 1550
+      "clients_media": [
+        "etendo_26_sources"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 212
     },
     {
-      "section": "1.3",
-      "title": "Ventanas Query/Info (Q) — Vistas de solo consulta",
+      "section": "33",
+      "title": "Personalización de vistas (Saved Views)",
       "status": "PARCIAL",
-      "completion_pct": 60,
+      "completion_pct": 10,
       "portfolio_score": 4,
       "clients_critica": [],
       "clients_alta": [
@@ -293,13 +261,72 @@
       ],
       "clients_media": [],
       "total_affected": 2,
-      "avg_ad_count": 12
+      "avg_ad_count": 354
+    },
+    {
+      "section": "18",
+      "title": "Application Forms (AD_FORM) — Formularios JavaScript especiales",
+      "status": "NOT DONE",
+      "completion_pct": 15,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "etendo_26_sources"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 25
+    },
+    {
+      "section": "3.B.2",
+      "title": "Process Definitions Manual JS — OB.* namespaces bloqueados",
+      "status": "BLOQUEADO",
+      "completion_pct": 25,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "etendo_26_sources"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 24
+    },
+    {
+      "section": "3.A.2a",
+      "title": "R&P Reports (isreport=Y) — Informes legacy HTML/PDF",
+      "status": "PARCIAL",
+      "completion_pct": 50,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "etendo_26_sources"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 111
+    },
+    {
+      "section": "22",
+      "title": "Field Groups — Secciones colapsables en formularios",
+      "status": "PARCIAL",
+      "completion_pct": 60,
+      "portfolio_score": 4,
+      "clients_critica": [],
+      "clients_alta": [
+        "enertis"
+      ],
+      "clients_media": [
+        "etendo_26_sources",
+        "ladypipa"
+      ],
+      "total_affected": 3,
+      "avg_ad_count": 1812
     },
     {
       "section": "1.1",
       "title": "Ventanas Maintain (M) — CRUD básico",
       "status": "DONE",
-      "completion_pct": 90,
+      "completion_pct": 78,
       "portfolio_score": 3,
       "clients_critica": [],
       "clients_alta": [],
@@ -309,13 +336,69 @@
         "ladypipa"
       ],
       "total_affected": 3,
-      "avg_ad_count": 338
+      "avg_ad_count": 291
+    },
+    {
+      "section": "26",
+      "title": "Tab Default Filters y Sort Order — Filtros y orden predefinidos",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "etendo_26_sources"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 36
+    },
+    {
+      "section": "2",
+      "title": "Reference Types — Tipos de campo no implementados",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "etendo_26_sources"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 16
+    },
+    {
+      "section": "3.A.2b",
+      "title": "Background Processes (isbackground=Y) — Procesos programados",
+      "status": "NOT DONE",
+      "completion_pct": 10,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "etendo_26_sources"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 23
+    },
+    {
+      "section": "1.3",
+      "title": "Ventanas Query/Info (Q) — Vistas de solo consulta",
+      "status": "PARCIAL",
+      "completion_pct": 60,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "enertis"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 10
     },
     {
       "section": "29",
       "title": "Tree Views — Vistas de árbol jerárquico",
       "status": "NOT DONE",
-      "completion_pct": 0,
+      "completion_pct": 72,
       "portfolio_score": 2,
       "clients_critica": [],
       "clients_alta": [],
@@ -327,24 +410,10 @@
       "avg_ad_count": 1
     },
     {
-      "section": "33",
-      "title": "Personalización de vistas (Saved Views)",
-      "status": "PARCIAL",
-      "completion_pct": 40,
-      "portfolio_score": 2,
-      "clients_critica": [],
-      "clients_alta": [
-        "enertis"
-      ],
-      "clients_media": [],
-      "total_affected": 1,
-      "avg_ad_count": 354
-    },
-    {
-      "section": "12",
-      "title": "Menú de Navegación — Sistema de menú y navegación",
+      "section": "9",
+      "title": "Vistas de Grid/Lista — Ordenación, filtrado, paginación, edición inline",
       "status": "DONE",
-      "completion_pct": 85,
+      "completion_pct": 72,
       "portfolio_score": 2,
       "clients_critica": [],
       "clients_alta": [],
@@ -353,27 +422,160 @@
         "etendo_26_sources"
       ],
       "total_affected": 2,
-      "avg_ad_count": 658
+      "avg_ad_count": 294
     },
     {
-      "section": "9",
-      "title": "Vistas de Grid/Lista — Ordenación, filtrado, paginación, edición inline",
+      "section": "12",
+      "title": "Menú de Navegación — Sistema de menú y navegación",
       "status": "DONE",
-      "completion_pct": 80,
+      "completion_pct": 72,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 550
+    },
+    {
+      "section": "5",
+      "title": "Tab Behaviors — SR, ED, read-only, display logic de tabs",
+      "status": "TO CHECK",
+      "completion_pct": 72,
       "portfolio_score": 1,
       "clients_critica": [],
       "clients_alta": [],
       "clients_media": [
-        "enertis"
+        "etendo_26_sources"
       ],
       "total_affected": 1,
-      "avg_ad_count": 354
+      "avg_ad_count": 2076
+    },
+    {
+      "section": "3.A.1",
+      "title": "R&P Standard Processes — Procesos con popup de parámetros",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "etendo_26_sources"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 137
+    },
+    {
+      "section": "3.B.3",
+      "title": "PD P&E Standard — Process Definitions Pick and Execute estándar",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "etendo_26_sources"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 102
+    },
+    {
+      "section": "10",
+      "title": "Comportamientos transversales — Attachments, Notes, Copy, ReadOnly Logic",
+      "status": "TO CHECK",
+      "completion_pct": 73,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "etendo_26_sources"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 6909
+    },
+    {
+      "section": "3.B.1",
+      "title": "Process Definitions Action (PD-A) — Procesos modernos ActionHandler",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "etendo_26_sources"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 215
+    },
+    {
+      "section": "24",
+      "title": "Form Layout — Sistema de layout del formulario",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "etendo_26_sources"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 198
+    },
+    {
+      "section": "34",
+      "title": "Calendar Views — Vistas de calendario",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "31",
+      "title": "Data Import System",
+      "status": "NOT DONE",
+      "completion_pct": 20,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
     },
     {
       "section": "11",
       "title": "Autenticación y Gestión de Sesión",
       "status": "DONE",
-      "completion_pct": 90,
+      "completion_pct": 45,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "32",
+      "title": "Alert System — Notificaciones en tiempo real",
+      "status": "TO CHECK",
+      "completion_pct": 70,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "15",
+      "title": "Loading Indicators y Feedback",
+      "status": "TO CHECK",
+      "completion_pct": 75,
       "portfolio_score": 0,
       "clients_critica": [],
       "clients_alta": [],
@@ -392,7 +594,7 @@
     {
       "slug": "etendo_26_sources",
       "name": "etendo_26_sources",
-      "ui_score": 47,
+      "ui_score": 91,
       "global_status": "blocked"
     },
     {

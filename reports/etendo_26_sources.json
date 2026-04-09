@@ -3547,7 +3547,16 @@
         ],
         "effort_update_hours": 2,
         "effort_saas_hours": 1,
-        "recommendation": "Mover com.etendoerp.crm de instalación manual a dependencia Gradle declarada en build.gradle (etendo { dependencies { moduleDeps 'com.etendoerp:crm:5.0.0' } }). Ya está en el repositorio Maven de Etendo. En SaaS es una dependencia estándar — effort mínimo."
+        "recommendation": "0 eventos registrados en Mixpanel en los últimos 90 días para cualquier cliente del portfolio. Sin embargo, al ser bundle_candidate y parte del ecosistema CRM de Etendo, no se recomienda eliminar. Evaluar formalización como módulo oficial del marketplace Etendo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Lead",
+          "Lead Status",
+          "Lead Classification",
+          "Lead Source"
+        ],
+        "elimination_candidate": false
       },
       {
         "java_package": "com.etendoerp.crm.template",
@@ -3560,7 +3569,11 @@
         "api_changes_applicable": [],
         "effort_update_hours": 0,
         "effort_saas_hours": 0,
-        "recommendation": "Sigue el mismo destino que com.etendoerp.crm. Agregar como dependencia Gradle junto al módulo principal. Sin esfuerzo adicional."
+        "recommendation": "Módulo template, sigue el destino de com.etendoerp.crm.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
       }
     ],
     "effort_summary": {
@@ -3571,253 +3584,354 @@
       "saas_core_hours": 0,
       "saas_custom_hours": 0,
       "saas_unmaintained_hours": 1,
-      "saas_total_hours": 1
-    }
+      "saas_total_hours": 1,
+      "elimination_candidates": 0,
+      "effort_saved_eliminating_hours": 0
+    },
+    "mixpanel_source_instance": null,
+    "mixpanel_date_range": "90 días",
+    "mixpanel_note": "etendo_26_sources es una instalación de referencia interna sin instancia Mixpanel. Se consultó el proyecto Etendo (ID 3851637) para verificar uso global de los módulos CRM. Resultado: 0 eventos en los últimos 90 días para cualquier instancia de cliente."
   },
   "ui_readiness": {
-    "generated": "2026-04-08",
+    "generated": "2026-04-09",
     "global_status": "blocked",
     "summary": {
-      "critica": 14,
-      "alta": 3,
-      "media": 3,
-      "no_aplica": 1
+      "critica": 8,
+      "alta": 5,
+      "media": 15,
+      "no_aplica": 5
     },
     "features": [
-      {
-        "section": "5.1",
-        "title": "Tab Display Logic — Visibilidad condicional de pestañas",
-        "status": "NOT DONE",
-        "completion_pct": 0,
-        "priority": "critica",
-        "reason": "Se encontraron 104 pestañas con DISPLAYLOGIC en el core de Etendo 26.1.0. Esta funcionalidad controla qué pestañas son visibles según el contexto (ej. pestaña 'Retenciones' solo visible en documentos de tipo retenido). NO existe en el nuevo UI — las pestañas se muestran siempre, generando confusión y potenciales errores de flujo.",
-        "ad_count": 104,
-        "code_evidence": [],
-        "usage_score": 6.9
-      },
-      {
-        "section": "5.2",
-        "title": "Read-Only Tabs — Pestañas de solo lectura",
-        "status": "NOT DONE",
-        "completion_pct": 0,
-        "priority": "critica",
-        "reason": "Se encontraron 40 pestañas marcadas ISREADONLY=Y en el core de Etendo 26.1.0. Son pestañas de auditoría y vistas consolidadas que no deben editarse. El nuevo UI no implementa el modo read-only por pestaña — todos los registros aparecen editables, creando riesgo de modificaciones accidentales en datos de auditoría.",
-        "ad_count": 40,
-        "code_evidence": [],
-        "usage_score": 6.7
-      },
-      {
-        "section": "AD_FORM",
-        "title": "Application Forms (AD_FORM) — Formularios JavaScript especiales",
-        "status": "NOT DONE",
-        "completion_pct": 0,
-        "priority": "critica",
-        "reason": "Se encontraron 28 Application Forms en el core de Etendo 26.1.0. Incluyen formularios críticos como la conciliación bancaria, gestión de remesas SEPA, informes de pago y el asistente de importación de extractos. Cada uno requiere reescritura completa en React para el nuevo UI — no hay mecanismo de compatibilidad.",
-        "ad_count": 28,
-        "code_evidence": [],
-        "usage_score": 5.6
-      },
-      {
-        "section": "4b",
-        "title": "ReadOnly Logic — Editabilidad condicional de campos",
-        "status": "NOT DONE",
-        "completion_pct": 5,
-        "priority": "critica",
-        "reason": "Se encontraron 1.550 columnas con READONLYLOGIC en el core de Etendo 26.1.0. Es el mecanismo que bloquea la edición de campos según el estado del documento (ej. un pedido completado no debe ser editable). Sin readonlylogic, los usuarios pueden modificar datos de documentos ya contabilizados, lo que rompe la integridad contable.",
-        "ad_count": 1550,
-        "code_evidence": [],
-        "usage_score": 7.8
-      },
-      {
-        "section": "6",
-        "title": "Callouts — Lógica server-side al cambiar campo",
-        "status": "NOT DONE",
-        "completion_pct": 5,
-        "priority": "critica",
-        "reason": "Se encontraron 95 columnas con callouts en el core de Etendo 26.1.0. Los callouts son el mecanismo estándar para lógica de negocio en tiempo real: recálculo de impuestos al cambiar el producto, actualización de descuentos al cambiar el cliente, validación de cuentas contables. Sin callouts, los formularios transaccionales básicos del ERP (Pedido de Venta, Factura) no funcionan correctamente.",
-        "ad_count": 95,
-        "code_evidence": [],
-        "usage_score": 4.8
-      },
-      {
-        "section": "4",
-        "title": "Display Logic — Visibilidad condicional de campos",
-        "status": "NOT DONE",
-        "completion_pct": 10,
-        "priority": "critica",
-        "reason": "Se encontraron 3.603 campos con DISPLAYLOGIC en el core de Etendo 26.1.0. Esta es la base estándar del ERP — cada ventana de documento usa display logic para controlar la visibilidad de campos según el estado (Draft/Complete/Posted), tipo de documento, o valores de otros campos. Sin display logic, formularios como Pedidos de Venta, Facturas o Pagos son inutilizables ya que mostrarían todos los campos siempre.",
-        "ad_count": 3603,
-        "code_evidence": [],
-        "usage_score": 7.2
-      },
-      {
-        "section": "23",
-        "title": "Status Bar — Barra de estado con campos resumen",
-        "status": "NOT DONE",
-        "completion_pct": 10,
-        "priority": "critica",
-        "reason": "Se encontraron 315 campos marcados ISSHOWNINSTATUSBAR=Y en el core de Etendo 26.1.0. La barra de estado muestra información clave siempre visible (estado del documento, total de la factura, tercero, moneda). En documentos transaccionales es esencial para el trabajo diario. El nuevo UI no la implementa.",
-        "ad_count": 315,
-        "code_evidence": [],
-        "usage_score": 6.3
-      },
-      {
-        "section": "2.B",
-        "title": "Botones Hardcoded (DocAction, Posted, CreateFrom, PaymentRule)",
-        "status": "PARCIAL",
-        "completion_pct": 35,
-        "priority": "critica",
-        "reason": "Se encontraron 61 columnas con botones hardcoded en el core de Etendo 26.1.0. Estos botones ejecutan lógica de negocio crítica del ERP base: contabilización de asientos, creación de líneas desde pedido, regla de pago, confirmación de albarán. Representan puntos de bloqueo para cualquier cliente que migre a SaaS sin que el nuevo UI los implemente completamente.",
-        "ad_count": 61,
-        "code_evidence": [],
-        "usage_score": 6.1
-      },
-      {
-        "section": "1.2",
-        "title": "Ventanas Transaction (T) — Máquina de estados de documentos",
-        "status": "PARCIAL",
-        "completion_pct": 40,
-        "priority": "critica",
-        "reason": "La instalación base de Etendo 26.1.0 tiene 59 ventanas Transaction (pedidos, facturas, albaranes, remesas, pagos, asientos contables) y 61 columnas con botones hardcoded (DocAction, Posted, CreateFrom, PaymentRule). Toda la operativa financiera y de compras/ventas depende del flujo DocAction. El nuevo UI no tiene implementado el flujo completo de estados de documento — este es el bloqueante principal para cualquier cliente en SaaS.",
-        "ad_count": 59,
-        "code_evidence": [],
-        "usage_score": 5.9
-      },
-      {
-        "section": "7",
-        "title": "Máquina de estados de documentos (DocAction)",
-        "status": "PARCIAL",
-        "completion_pct": 40,
-        "priority": "critica",
-        "reason": "Con 59 ventanas Transaction y 61 botones DocAction/Posted/CreateFrom/PaymentRule, la máquina de estados de documentos es el corazón del ERP. Los flujos Draft→Complete→Posted→Reversed son fundamentales para facturas, pedidos, pagos y asientos. El nuevo UI no implementa completamente los estados intermedios, los controles de edición por estado, ni la lógica de botones hardcoded.",
-        "ad_count": 61,
-        "code_evidence": [],
-        "usage_score": null
-      },
-      {
-        "section": "25",
-        "title": "Expresiones de valor por defecto (DEFAULTVALUE)",
-        "status": "PARCIAL",
-        "completion_pct": 45,
-        "priority": "critica",
-        "reason": "Se encontraron 7.317 columnas con DEFAULTVALUE en el core de Etendo 26.1.0. Incluyen variables de sesión (@#AD_ORG_ID@, @AD_USER_ID@), expresiones SQL y valores calculados. El nuevo UI interpreta parcialmente estas expresiones — los SQL defaults y algunas variables de contexto complejas aún no están cubiertos, lo que causa que campos clave no se inicialicen correctamente al crear registros.",
-        "ad_count": 7317,
-        "code_evidence": [],
-        "usage_score": null
-      },
-      {
-        "section": "1.4",
-        "title": "Pick and Execute (OBUIAPP_PickAndExecute) — Procesos de selección masiva",
-        "status": "PARCIAL",
-        "completion_pct": 50,
-        "priority": "critica",
-        "reason": "La instalación base tiene 93 ventanas PickAndExecute y 186 procesos OBUIAPP de este tipo — total 279 instancias. Son críticos para flujos de gestión masiva: liquidaciones de gastos, aprobación de facturas, generación de pagos SEPA, conciliaciones. La implementación en el nuevo UI es parcial y no cubre todos los patrones de uso del framework SmartClient.",
-        "ad_count": 279,
-        "code_evidence": [],
-        "usage_score": 9.3
-      },
-      {
-        "section": "3",
-        "title": "Definiciones de Proceso — Legacy AD_PROCESS + OBUIAPP_PROCESS modernos",
-        "status": "PARCIAL",
-        "completion_pct": 55,
-        "priority": "critica",
-        "reason": "El core de Etendo 26.1.0 tiene 391 procesos legacy (AD_PROCESS, patrones M y S) y 470 procesos OBUIAPP (186 PickAndExecute, 206 tipo A, 17 Report, 58 Maintain, 3 ETRX_RxAction). Total 861 definiciones de proceso. Los procesos legacy con UIPATTERN=S (popup de parámetros SmartClient) no tienen equivalente completo en el nuevo UI. Los OBUIAPP_Report tampoco están cubiertos. Esto afecta toda la suite de informes del ERP.",
-        "ad_count": 861,
-        "code_evidence": [],
-        "usage_score": 8.6
-      },
-      {
-        "section": "8",
-        "title": "Selectores OBUISEL — Búsqueda avanzada con filtro y out-params",
-        "status": "PARCIAL",
-        "completion_pct": 55,
-        "priority": "critica",
-        "reason": "Se encontraron 341 selectores OBUISEL en el core de Etendo 26.1.0. Los selectores avanzados son usados en todos los formularios transaccionales para buscar productos, terceros, cuentas contables, proyectos. La funcionalidad de filtros dinámicos y out-parameters (rellenar múltiples campos al seleccionar un valor) tiene soporte parcial en el nuevo UI.",
-        "ad_count": 341,
-        "code_evidence": [],
-        "usage_score": 6.8
-      },
       {
         "section": "21",
         "title": "Workspace / Dashboard (My Openbravo) — Widgets KMO",
         "status": "NOT DONE",
+        "completion_pct": 5,
+        "priority": "critica",
+        "reason": "1 OBKMO_WIDGET_CLASS encontrada en la AD. El Workspace es la pantalla de inicio del sistema para todos los usuarios. En React no existe API contract para widgets — ni URL widgets (iframes configurables), ni Query widgets (HQL→tabla), ni Reference widgets (enlaces a ventanas), ni Custom JS widgets. El solo scaffolding existente (~5%) es una pantalla vacía. Sin workspace funcional, los usuarios no tienen pantalla de inicio operativa.",
+        "ad_count": 1,
+        "code_evidence": []
+      },
+      {
+        "section": "18",
+        "title": "Application Forms (AD_FORM) — Formularios JavaScript especiales",
+        "status": "NOT DONE",
+        "completion_pct": 15,
+        "priority": "critica",
+        "reason": "25 formularios AD_FORM activos encontrados en la AD. Incluyen flujos críticos de negocio: Initial Client Setup, Enterprise Module Management, Create Invoices from Orders, Create Shipments from Orders, GL Posting by DB Tables, Alert Management, Audit Trail, SQL Query, Session Preferences, Background Process List. Ninguno está implementado en React (only ~15% de scaffolding). Cada formulario es una aplicación SmartClient a medida — requieren reimplementación completa o decisión de iframe. Bloqueante para onboarding de nuevos clientes y gestión contable.",
+        "ad_count": 25,
+        "code_evidence": []
+      },
+      {
+        "section": "3.B.2",
+        "title": "Process Definitions Manual JS — OB.* namespaces bloqueados",
+        "status": "BLOQUEADO",
+        "completion_pct": 25,
+        "priority": "critica",
+        "reason": "24 Process Definitions con UIPATTERN=M encontradas en la AD. Estas incluyen operaciones críticas: Open/Close Periods, Recalculate Role Permissions, Get EtendoRX Token, Assign/Cancel/Close/Process Picking List, Process/Create Packing. Todas dependen de OB.OpenClose.*, OB.OBWPL.*, OB.Utilities, OB.CurrentView — namespaces que NO existen en React. Bloqueante arquitectónico: se requiere decisión (iframe vs shim vs reimplementación) antes de poder implementar cualquiera de estos procesos.",
+        "ad_count": 24,
+        "code_evidence": []
+      },
+      {
+        "section": "2.B",
+        "title": "Botones Hardcoded (DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus)",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "priority": "critica",
+        "reason": "Se detectaron los 5 tipos de botones hardcoded en la AD: DocAction (6 tablas), Posted (presente), CreateFrom (8 procesos), PaymentRule (11 cols), ChangeProjectStatus (1 tabla). Según all-features-analysis.md §2.B, el estado real es 35%: DocAction funciona al 75% pero con labels incorrectos (bug activo); Posted solo al 30% (faltan 3 estados visuales, unpost, link a Accounting); ChangeProjectStatus no implementado (0%). Cada uno requiere un componente React dedicado — no pueden resolverse con el patrón metadata estándar.",
+        "ad_count": 26,
+        "code_evidence": []
+      },
+      {
+        "section": "25",
+        "title": "Default Values (client-side) — Expresiones de valor por defecto",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "critica",
+        "reason": "4.881 columnas con DEFAULTVALUE definido en la AD. El servidor computa correctamente los defaults en FormInitializationComponent NEW mode. Sin embargo, el UI nunca lee `field.column.defaultValue` del JSON de metadata (búsqueda exhaustiva en packages/MainUI confirma cero referencias). Las referencias `@ColumnName@` no se recomputan cuando el campo fuente cambia sin callout, y SQL defaults fallan silenciosamente. Con 4.881 columnas afectadas, formularios de creación de documentos pueden presentar comportamientos inesperados.",
+        "ad_count": 4881,
+        "code_evidence": []
+      },
+      {
+        "section": "3.A.2a",
+        "title": "R&P Reports (isreport=Y) — Informes legacy HTML/PDF",
+        "status": "PARCIAL",
+        "completion_pct": 50,
+        "priority": "critica",
+        "reason": "108 procesos con ISREPORT=Y encontrados (más 3 Jasper). Son reportes legacy que generan HTML o PDF desde servlets Openbravo. La implementación actual usa Iframe.tsx como fallback, pero esto requiere que el Classic UI esté corriendo simultáneamente — no válido en SaaS. Estos 108+ reportes son el canal principal de reporting operativo (facturas, albaranes, listados de stock, informes fiscales). Sin una solución nativa React, todos quedan inaccesibles en modo full-React.",
+        "ad_count": 111,
+        "code_evidence": []
+      },
+      {
+        "section": "1.4",
+        "title": "Pick and Execute Windows — Procesos de selección masiva",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "critica",
+        "reason": "50 ventanas OBUIAPP_PickAndExecute definidas en la AD. ProcessDefinitionModal.tsx maneja el caso base, pero hay brechas críticas: validación de campos inline mandatory en filas seleccionadas (el botón Execute debe bloquearse si hay campos obligatorios vacíos), modo single-select (ismultirecord=N), context parameters del padre pasados via URL/session, y comportamiento openDirectTab del response del handler. Con 50 ventanas P&E (picking, packing, pagos masivos), cualquier brecha impacta flujos operativos de alto volumen.",
+        "ad_count": 50,
+        "code_evidence": []
+      },
+      {
+        "section": "4",
+        "title": "Display Logic — Visibilidad condicional de campos",
+        "status": "BUG ACTIVO",
+        "completion_pct": 65,
+        "priority": "critica",
+        "reason": "2.660 campos con DISPLAYLOGIC en la AD de este entorno. Existe un bug activo documentado en `/docs/troubleshooting/display-logic-implementation-en.md`: la sintaxis `@field_name@` causa errores JavaScript en cualquier ventana que la use. Esto afecta directamente a ventanas de uso diario como Sales Order, Sales Invoice y Purchase Order. El evaluador compileExpression() existe pero no maneja este patrón. Bloqueante: ningún window con display logic funciona correctamente hasta que se corrija.",
+        "ad_count": 2660,
+        "code_evidence": []
+      },
+      {
+        "section": "26",
+        "title": "Tab Default Filters y Sort Order — Filtros y orden predefinidos",
+        "status": "NOT DONE",
         "completion_pct": 0,
         "priority": "alta",
-        "reason": "Se encontraron 28 archivos XML con referencias a widgets KMO/WidgetClass en el core de Etendo 26.1.0. El dashboard personalizable con indicadores de negocio NO existe en el nuevo UI. Para la instalación base afecta widgets estándar de seguimiento financiero y de actividad.",
-        "ad_count": 28,
-        "code_evidence": [],
-        "usage_score": 5.6
+        "reason": "36 tabs con HQLFILTERCLAUSE definido en la AD. El TabBuilder.java del módulo metadata no envía hqlFilterClause ni orderByClause al UI, y el UI no tiene ningún mecanismo para solicitarlos. Aunque el servidor clásico aplica estos filtros en sus propias queries, no está verificado si el datasource REST del nuevo UI llama al mismo endpoint. Esto significa que tabs como 'Líneas de factura de un proveedor' o 'Movimientos de una cuenta contable' podrían mostrar registros de otros documentos sin el filtro de context. Impacto crítico en usabilidad y correctitud de datos mostrados.",
+        "ad_count": 36,
+        "code_evidence": []
       },
       {
-        "section": "1.3",
-        "title": "Ventanas Query/Info (Q) — Consulta de solo lectura",
-        "status": "PARCIAL",
-        "completion_pct": 60,
+        "section": "2",
+        "title": "Reference Types — Tipos de campo no implementados",
+        "status": "NOT DONE",
+        "completion_pct": 0,
         "priority": "alta",
-        "reason": "Existen 14 ventanas de tipo Query en el core de Etendo 26.1.0. Son ventanas de consulta y reporting puro. El nuevo UI soporta parcialmente el modo grid-only; los parámetros de filtro avanzados y las ventanas Query de informes financieros requieren verificación adicional.",
-        "ad_count": 14,
-        "code_evidence": [],
-        "usage_score": null
+        "reason": "Se encontraron referencias a tipos no implementados: Image BLOB (14 columnas — usadas para imágenes de productos, logos, documentos adjuntos inline), Rich Text (1 columna — editor WYSIWYG), SelectorAsLink (1 columna — FK navegable como hipervínculo). Adicionalmente, tipos como Binary, Upload File, Color, Assignment, Multi-Selector, Tree Reference, Button List, Masked String están en la AD del sistema pero sin implementación React. Los 14 campos Image BLOB son los de mayor impacto inmediato para funcionalidades de catálogo de productos.",
+        "ad_count": 16,
+        "code_evidence": []
       },
       {
-        "section": "22",
-        "title": "Field Groups — Secciones colapsables en formularios",
-        "status": "PARCIAL",
-        "completion_pct": 60,
+        "section": "33",
+        "title": "View Personalization (Saved Views) — Personalización de formularios",
+        "status": "NOT DONE",
+        "completion_pct": 10,
         "priority": "alta",
-        "reason": "Se encontraron 2.226 campos asignados a field groups en el core de Etendo 26.1.0. Los field groups organizan los formularios en secciones temáticas colapsables (ej. 'Información fiscal', 'Datos contables', 'Dimensiones'). El nuevo UI soporta field groups pero el comportamiento de colapso y el layout no replica exactamente el SmartClient.",
-        "ad_count": 2226,
-        "code_evidence": [],
-        "usage_score": 7.4
+        "reason": "Los toolbar buttons `personalization` y `manageviews` están ausentes del codebase React. OBUIAPP_UIPersonalization no implementado. Esta feature permite a usuarios y administradores guardar configuraciones de formulario (columnas visibles, ancho, orden, filtros predefinidos) a nivel usuario/rol/sistema. Sin ella, cada usuario debe reconfigurar manualmente el UI en cada sesión. Es especialmente importante para roles de backoffice con workflows repetitivos. El JSON format del view state también debe ser compatible con el Classic UI para no perder configuraciones existentes.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "3.A.2b",
+        "title": "Background Processes (isbackground=Y) — Procesos programados",
+        "status": "NOT DONE",
+        "completion_pct": 10,
+        "priority": "alta",
+        "reason": "23 procesos con ISBACKGROUND=Y encontrados. Solo existe configuración vía la ventana Process Scheduling, pero falta la integración con Process Monitor (estado en tiempo real), notificaciones al usuario cuando un proceso completa, y polling/websocket para monitorear ejecuciones largas. Los procesos background incluyen: Alert Check Process, Accounting Server Process, Complete Remittances, EDI imports. Sin monitoreo en tiempo real, los administradores no pueden detectar fallos de procesos críticos de manera oportuna.",
+        "ad_count": 23,
+        "code_evidence": []
+      },
+      {
+        "section": "8",
+        "title": "Selectores OBUISEL — Búsqueda avanzada y out-parameters",
+        "status": "TO CHECK",
+        "completion_pct": 65,
+        "priority": "alta",
+        "reason": "190 OBUISEL_SELECTOR definidos en la AD. GenericSelector.tsx implementa el typeahead básico, pero la brecha crítica es Selector Out Parameters (OBUISEL_SelectorField.isoutparameter): al seleccionar un registro, el selector puede poblar múltiples campos del formulario simultáneamente (ej: seleccionar un Business Partner rellena Dirección, IBAN, Condiciones de pago). Esta funcionalidad no está implementada, lo que obliga al usuario a rellenar campos manualmente. Además faltan: popup de búsqueda con columnas extra, campo mínimo de caracteres configurable, y SelectorAsLink (1 columna con esta referencia encontrada).",
+        "ad_count": 190,
+        "code_evidence": []
+      },
+      {
+        "section": "5",
+        "title": "Tab Behaviors — SR, ED, read-only, display logic de tabs",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "2.016 tabs con ISREADONLY=Y y 60 tabs con DISPLAYLOGIC detectadas. TabsContainer.tsx maneja la jerarquía básica. Brechas: tabs SR (Single Record, sin grid, sin botón New/Delete) no validadas separadamente del tipo estándar; tabs ED (Editable Grid) con auto-save on blur y validación de campos obligatorios en fila; lazy loading de datos de tab (evitar N+1 queries al abrir ventana con múltiples tabs); refresco del badge de count tras proceso. El tab display logic depende del fix del §4 (bug activo en display logic).",
+        "ad_count": 2076,
+        "code_evidence": []
+      },
+      {
+        "section": "3.A.1",
+        "title": "R&P Standard Processes — Procesos con popup de parámetros",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "137 AD_PROCESS con UIPattern=S (Standard). ProcessDefinitionModal.tsx maneja el popup de parámetros. Brechas: mapping de ad_process_para reference types a field types del UI; default values en parámetros con expresiones (@#Date@, @AD_ORG_ID@, SQL); secuencia de parámetros por seqno. Impacto moderado dado que el caso base funciona.",
+        "ad_count": 137,
+        "code_evidence": []
+      },
+      {
+        "section": "9",
+        "title": "Grid / List View — Comportamientos de grilla",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "234 columnas con ISSELECTIONCOLUMN=Y (filtros rápidos predeterminados en la grilla). El grid está implementado con sorting, filtering, pagination, inline editing y export CSV. Brechas TO CHECK: isselectioncolumn=Y como columnas de filtro rápido por defecto; orden de sort por defecto desde orderbycolumn de la tab; operadores de filtro (contains/starts with/equals); new row auto-save on blur en ED grids; row styling condicional (voided=strikethrough, inactive=grayed).",
+        "ad_count": 234,
+        "code_evidence": []
+      },
+      {
+        "section": "7",
+        "title": "Record State Machine — Máquina de estados de documentos",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "La máquina de estados está cubierta por §1.2 (Transaction windows) y §2.B (DocAction button). Brechas adicionales en la representación visual: colores/iconos por status (Draft=gris, Completed=verde, Voided=rojo, Closed=azul); status IP (Under Way) mostrando spinner con todas las acciones deshabilitadas; status RE (Re-Opened) haciendo el documento editable; readonlylogic puede override la tabla de estados por status.",
+        "ad_count": 371,
+        "code_evidence": []
+      },
+      {
+        "section": "12",
+        "title": "Navegación y Menú — Estructura de aplicación",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "542 entradas de menú AD_MENU en la AD. Navegación con menú y MDI tabs implementada. Brechas: Menu API endpoint y response format; menu icons per entry type (window/process/report/form); Menu collapse/expand state persistencia en ad_preference; Recent items (UINAVBA_RecentListSize preference); Breadcrumb component; confirmación al cerrar ventana con cambios no guardados.",
+        "ad_count": 542,
+        "code_evidence": []
       },
       {
         "section": "29",
         "title": "Tree Views — Vistas de árbol jerárquico",
-        "status": "NOT DONE",
-        "completion_pct": 0,
+        "status": "TO CHECK",
+        "completion_pct": 72,
         "priority": "media",
-        "reason": "Se encontró 1 pestaña con HASTREE=Y en el core de Etendo 26.1.0. Uso mínimo — no es un bloqueante crítico aunque la funcionalidad no existe en el nuevo UI.",
+        "reason": "1 tab con HASTREE=Y detectada. useTreeModeMetadata.ts, useTreeNodeDragDrop.ts implementados — drag & drop con 3 zonas, prevención de referencias circulares. Brechas reales: sin lazy loading (riesgo de performance para Account tree con 10.000+ nodos), sin tree search/filter field, sin keyboard navigation (arrow keys) en nodos, vista side-by-side (árbol + grid simultáneos) no existe (solo toggle). Bajo impacto en este entorno (1 tab).",
         "ad_count": 1,
-        "code_evidence": [],
-        "usage_score": null
+        "code_evidence": []
       },
       {
-        "section": "12",
-        "title": "Menú de Navegación",
-        "status": "DONE",
-        "completion_pct": 85,
+        "section": "3.B.3",
+        "title": "PD P&E Standard — Process Definitions Pick and Execute estándar",
+        "status": "TO CHECK",
+        "completion_pct": 72,
         "priority": "media",
-        "reason": "El menú con 760 entradas está implementado en el nuevo UI. La estructura jerárquica y la búsqueda de opciones funcionan correctamente. No es un bloqueante.",
-        "ad_count": 760,
-        "code_evidence": [],
-        "usage_score": null
+        "reason": "102 OBUIAPP_PROCESS con UIPattern=OBUIAPP_PickAndExecute (el más común). ProcessDefinitionModal.tsx maneja el caso base. Brechas: default values con referencias a campos del formulario padre (@C_BPartner_ID@); parameter grouping por obuiapp_param_group; display logic en parámetros; IDs de filas seleccionadas pasados al handler cuando se invoca desde ventana P&E.",
+        "ad_count": 102,
+        "code_evidence": []
+      },
+      {
+        "section": "10",
+        "title": "Comportamientos transversales — Attachments, Notes, Copy, ReadOnly Logic",
+        "status": "TO CHECK",
+        "completion_pct": 73,
+        "priority": "media",
+        "reason": "1.138 columnas con READONLYLOGIC y 5.771 columnas con ISUPDATEABLE=N. El módulo metadata serializa correctamente isUpdatable (verificado en BaseSelector.tsx:179). Brechas TO CHECK: Attachments (toolbar button existe pero endpoint y metadata no validados completamente); Notes (implementado pero no validado completamente); Copy Record con enablecopyfull/enablecopyrelationships para tabs hijo; zoom a related records (URL format + navegación a parent + child tab + scroll).",
+        "ad_count": 6909,
+        "code_evidence": []
+      },
+      {
+        "section": "3.B.1",
+        "title": "Process Definitions Action (PD-A) — Procesos modernos ActionHandler",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "215 OBUIAPP_PROCESS con UIPattern=A encontrados, con 411 parámetros definidos. ProcessDefinitionModal.tsx y useProcessExecution.ts (8K+ líneas) implementan el flujo base. Brechas TO CHECK: payload JSON exacto al ActionHandler (campos _action, recordID, inpTabId, context); response actions refreshGrid/openDirectTab/showMsgInProcessView (diferencia entre los dos últimos); verificación de AD_Process_Access client-side; modo multi-record cuando ismultirecord=Y. Con 215 procesos PD-Action, cada brecha se multiplica.",
+        "ad_count": 215,
+        "code_evidence": []
+      },
+      {
+        "section": "23",
+        "title": "Status Bar — Barra de estado con campos resumen",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "210 campos con ISSHOWNINSTATUSBAR=Y en la AD. Brechas: comportamiento en P&E windows (status bar diferente o ausente); actualización en real-time mientras el usuario escribe vs solo al perder foco; navegación Previous/Next que respete sort order y filtros activos; Previous/Next deshabilitado en first/last record y en new unsaved record.",
+        "ad_count": 210,
+        "code_evidence": []
+      },
+      {
+        "section": "24",
+        "title": "Form Layout — Sistema de layout del formulario",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "198 campos con STARTNEWLINE=Y detectados (saltos de línea en formulario). El layout con seqno, startrow, startnewline y numcolumn está implementado. Brechas: algoritmo preciso de interacción entre numcolumn, startnewline y startrow; colspan para campos Text/Memo; label alignment (right-aligned en columna fija, parity con Classic UI); isencrypted fields (mostrar como ●●●●●●). Afecta la presentación visual de todos los formularios.",
+        "ad_count": 198,
+        "code_evidence": []
+      },
+      {
+        "section": "1.2",
+        "title": "Transaction Windows — Ventanas de documento con ciclo de vida",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "371 ventanas Transaction (T) en la AD — Sales Order, Purchase Order, Sales Invoice, Purchase Invoice, Goods Shipment, Goods Receipt, etc. La estructura Transaction está implementada en React. Las brechas críticas de DocAction y Posted están capturadas en §2.B. Brechas restantes TO CHECK: tab Accounting no aparece tras posting (display logic @Posted@='Y'), Copy Document debe copiar header+child tabs con reset de campos, y protección de edición concurrente (optimistic lock via timestamp 'updated'). Con 371 ventanas T, el impacto de cualquier brecha es amplio.",
+        "ad_count": 371,
+        "code_evidence": []
       },
       {
         "section": "1.1",
-        "title": "Ventanas Maintain (M) — CRUD básico",
-        "status": "DONE",
-        "completion_pct": 90,
+        "title": "Maintain Windows — CRUD de datos maestros",
+        "status": "TO CHECK",
+        "completion_pct": 78,
         "priority": "media",
-        "reason": "La instalación base de Etendo 26.1.0 tiene 407 ventanas de tipo Maintain. El CRUD básico está implementado en el nuevo UI. Esta es la instalación de referencia — confirma que el nuevo UI soporta la funcionalidad base de ventanas Maintain.",
-        "ad_count": 407,
-        "code_evidence": [],
-        "usage_score": 8.1
+        "reason": "267 ventanas Maintain (M) en la AD. El patrón CRUD estándar está implementado. Brechas TO CHECK: multi-record delete desde grid (selección múltiple + delete), Copy Record en tabs hijo con enablecopyfull/enablecopyrelationships, propagación del flag Active a registros hijo, y generación de Search Key desde secuencia al crear. Con 267 ventanas M (Business Partner, Products, Accounts, etc.), estos edge-cases afectan la experiencia diaria de los usuarios de backoffice.",
+        "ad_count": 267,
+        "code_evidence": []
+      },
+      {
+        "section": "22",
+        "title": "Field Groups — Secciones colapsables en formularios",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "1.616 campos asignados a Field Groups en la AD. El collapse/expand está implementado. Brechas: nombres traducidos desde ad_fieldgroup_trl; estado collapse/expand (¿persiste entre navegación de registros o reset al default iscollapsed?). Con 1.616 campos agrupados, cualquier brecha de persistencia afecta la UX en formularios complejos.",
+        "ad_count": 1616,
+        "code_evidence": []
+      },
+      {
+        "section": "6",
+        "title": "Callouts — Lógica server-side al cambiar campo",
+        "status": "TO CHECK",
+        "completion_pct": 82,
+        "priority": "media",
+        "reason": "95 columnas con callout configurado en la AD. El GlobalCalloutManager en services/callouts.ts está implementado con queue, límites, y auto-cleanup. El pipeline metadata→UI está correctamente conectado (FieldBuilderWithColumn.java serializa column.callout completo). Brechas remanentes: callout chaining prevention (si callout A cambia campo X que tiene callout B, B no debe re-dispararse automáticamente); callouts que retornan WARNING/ERROR deben mostrarse en message bar; clearing de campo (set to null) debe disparar callout; valores set por callout en campos read-only deben incluirse en el save payload.",
+        "ad_count": 95,
+        "code_evidence": []
+      },
+      {
+        "section": "34",
+        "title": "Calendar Views — Vistas de calendario",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "no_aplica",
+        "reason": "0 referencias a OBCalendar/OBMultiCalendar encontradas en la AD de este entorno. No hay ventanas o tabs con calendario configurado.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "31",
+        "title": "Data Import System",
+        "status": "NOT DONE",
+        "completion_pct": 20,
+        "priority": "no_aplica",
+        "reason": "Infraestructura de core (c_import_entry), no configurable por cliente en la AD. No hay datos grepeables en XML de sourcedata.",
+        "ad_count": 0,
+        "code_evidence": []
       },
       {
         "section": "11",
-        "title": "Autenticación y Gestión de Sesión",
-        "status": "DONE",
-        "completion_pct": 90,
+        "title": "Authentication, Session y Authorization",
+        "status": "PARCIAL",
+        "completion_pct": 45,
         "priority": "no_aplica",
-        "reason": "Login, logout, cambio de contraseña y gestión de roles están completamente implementados en el nuevo UI. No aplica como bloqueante.",
+        "reason": "No hay datos AD-grepeables para autenticación — JWT/login es configuración Java, no AD XML. El análisis de auth/session requiere revisión de código Java y configuración de servidor, no de la Application Dictionary.",
         "ad_count": 0,
-        "code_evidence": [],
-        "usage_score": null
+        "code_evidence": []
+      },
+      {
+        "section": "32",
+        "title": "Alert System — Notificaciones en tiempo real",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "reason": "0 AD_ALERTRULE encontradas en este entorno. El Alert System está parcialmente implementado (polling cada 50 segundos mencionado), pero sin reglas de alerta definidas en la AD no hay impacto operativo en esta instalación.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "15",
+        "title": "Loading Indicators y Feedback",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "no_aplica",
+        "reason": "Comportamiento puro de UI sin representación en AD XML. Requiere QA manual.",
+        "ad_count": 0,
+        "code_evidence": []
       }
-    ],
-    "note": "Esta es la instalación base de Etendo 26.1.0 (sin customizaciones de cliente). Los conteos de AD XML reflejan el ERP estándar — cualquier cliente que migre a SaaS necesita que el nuevo UI soporte todas estas features del core.",
-    "ui_migration_score": 47,
-    "ui_label": "needs_work"
+    ]
   }
 }
