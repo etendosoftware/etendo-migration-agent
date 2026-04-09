@@ -5,105 +5,401 @@
     "etendo_26_sources",
     "ladypipa"
   ],
-  "ui_readiness_ranking": [
+  "ui_feature_roadmap": [
     {
-      "slug": "ladypipa",
-      "name": "ladypipa",
-      "ui_score": 63,
-      "ui_label": "partial",
-      "global_status": "blocked",
-      "summary": {
-        "critica": 8,
-        "alta": 4,
-        "media": 3,
-        "no_aplica": 0
-      },
-      "top_blockers": [
-        {
-          "section": "AD_FORM",
-          "title": "Application Forms (formularios JS custom)",
-          "completion_pct": 5,
-          "ad_count": 36
-        },
-        {
-          "section": "6",
-          "title": "Callouts (lógica server-side en cambio de campo)",
-          "completion_pct": 10,
-          "ad_count": 95
-        },
-        {
-          "section": "5.1",
-          "title": "Tab Display Logic (visibilidad de pestañas)",
-          "completion_pct": 15,
-          "ad_count": 82
-        }
-      ]
+      "section": "AD_FORM",
+      "title": "Application Forms (AD_FORM) — Formularios JavaScript especiales",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 12,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 32
     },
+    {
+      "section": "6",
+      "title": "Callouts — Lógica server-side en cambio de campo",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 12,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 95
+    },
+    {
+      "section": "4",
+      "title": "Display Logic — Visibilidad condicional de campos",
+      "status": "NOT DONE",
+      "completion_pct": 10,
+      "portfolio_score": 12,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 3057
+    },
+    {
+      "section": "23",
+      "title": "Status Bar — Barra de estado inferior con campos resumen",
+      "status": "NOT DONE",
+      "completion_pct": 10,
+      "portfolio_score": 12,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 292
+    },
+    {
+      "section": "5.1",
+      "title": "Tab Display Logic — Visibilidad condicional de pestañas",
+      "status": "NOT DONE",
+      "completion_pct": 15,
+      "portfolio_score": 12,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 76
+    },
+    {
+      "section": "2.B",
+      "title": "Botones Hardcoded (DocAction, Posted, CreateFrom, PaymentRule) — HTML clásico",
+      "status": "PARCIAL",
+      "completion_pct": 35,
+      "portfolio_score": 12,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 62
+    },
+    {
+      "section": "1.2",
+      "title": "Ventanas Transaction (T) — Máquina de estados de documentos",
+      "status": "PARCIAL",
+      "completion_pct": 40,
+      "portfolio_score": 12,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 48
+    },
+    {
+      "section": "1.4",
+      "title": "Pick and Execute (OBUIAPP_PickAndExecute) — Procesos de selección múltiple",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 10,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "clients_alta": [
+        "ladypipa"
+      ],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 171
+    },
+    {
+      "section": "3",
+      "title": "Definiciones de Proceso — Legacy AD_PROCESS vs OBUIAPP_PROCESS",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 10,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "clients_alta": [
+        "ladypipa"
+      ],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 705
+    },
+    {
+      "section": "8",
+      "title": "Selectores OBUISEL — Selectores avanzados con filtro y out-params",
+      "status": "PARCIAL",
+      "completion_pct": 50,
+      "portfolio_score": 10,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "clients_alta": [
+        "ladypipa"
+      ],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 280
+    },
+    {
+      "section": "5.2",
+      "title": "Read-Only Tabs — Pestañas de solo lectura",
+      "status": "NOT DONE",
+      "completion_pct": 60,
+      "portfolio_score": 10,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "clients_alta": [
+        "ladypipa"
+      ],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 39
+    },
+    {
+      "section": "14",
+      "title": "ReadOnly Logic — Editabilidad condicional de campos",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 8,
+      "clients_critica": [
+        "enertis",
+        "ladypipa"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 2,
+      "avg_ad_count": 1261
+    },
+    {
+      "section": "7",
+      "title": "Máquina de estados de documentos (DocAction / Estado del documento)",
+      "status": "PARCIAL",
+      "completion_pct": 40,
+      "portfolio_score": 8,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 2,
+      "avg_ad_count": 58
+    },
+    {
+      "section": "25",
+      "title": "Expresiones de valor por defecto (DEFAULTVALUE)",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 8,
+      "clients_critica": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 2,
+      "avg_ad_count": 6020
+    },
+    {
+      "section": "21",
+      "title": "Workspace / Dashboard (My Openbravo) — Widgets y KMO",
+      "status": "NOT DONE",
+      "completion_pct": 10,
+      "portfolio_score": 7,
+      "clients_critica": [
+        "enertis"
+      ],
+      "clients_alta": [
+        "etendo_26_sources"
+      ],
+      "clients_media": [
+        "ladypipa"
+      ],
+      "total_affected": 3,
+      "avg_ad_count": 29
+    },
+    {
+      "section": "22",
+      "title": "Field Groups — Secciones colapsables en formularios",
+      "status": "PARCIAL",
+      "completion_pct": 60,
+      "portfolio_score": 5,
+      "clients_critica": [],
+      "clients_alta": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "clients_media": [
+        "ladypipa"
+      ],
+      "total_affected": 3,
+      "avg_ad_count": 2015
+    },
+    {
+      "section": "4b",
+      "title": "ReadOnly Logic — Editabilidad condicional de campos",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "etendo_26_sources"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 1550
+    },
+    {
+      "section": "1.3",
+      "title": "Ventanas Query/Info (Q) — Vistas de solo consulta",
+      "status": "PARCIAL",
+      "completion_pct": 60,
+      "portfolio_score": 4,
+      "clients_critica": [],
+      "clients_alta": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "clients_media": [],
+      "total_affected": 2,
+      "avg_ad_count": 12
+    },
+    {
+      "section": "1.1",
+      "title": "Ventanas Maintain (M) — CRUD básico",
+      "status": "DONE",
+      "completion_pct": 90,
+      "portfolio_score": 3,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "enertis",
+        "etendo_26_sources",
+        "ladypipa"
+      ],
+      "total_affected": 3,
+      "avg_ad_count": 338
+    },
+    {
+      "section": "29",
+      "title": "Tree Views — Vistas de árbol jerárquico",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 1
+    },
+    {
+      "section": "33",
+      "title": "Personalización de vistas (Saved Views)",
+      "status": "PARCIAL",
+      "completion_pct": 40,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "enertis"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 354
+    },
+    {
+      "section": "12",
+      "title": "Menú de Navegación — Sistema de menú y navegación",
+      "status": "DONE",
+      "completion_pct": 85,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "enertis",
+        "etendo_26_sources"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 658
+    },
+    {
+      "section": "9",
+      "title": "Vistas de Grid/Lista — Ordenación, filtrado, paginación, edición inline",
+      "status": "DONE",
+      "completion_pct": 80,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "enertis"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 354
+    },
+    {
+      "section": "11",
+      "title": "Autenticación y Gestión de Sesión",
+      "status": "DONE",
+      "completion_pct": 90,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    }
+  ],
+  "ui_clients_meta": [
     {
       "slug": "enertis",
       "name": "enertis",
       "ui_score": 60,
-      "ui_label": "partial",
-      "global_status": "blocked",
-      "summary": {
-        "critica": 15,
-        "alta": 3,
-        "media": 4,
-        "no_aplica": 1
-      },
-      "top_blockers": [
-        {
-          "section": "5.1",
-          "title": "Tab Display Logic — Visibilidad condicional de pestañas",
-          "completion_pct": 0,
-          "ad_count": 41
-        },
-        {
-          "section": "5.2",
-          "title": "Read-Only Tabs — Pestañas de solo lectura",
-          "completion_pct": 0,
-          "ad_count": 39
-        },
-        {
-          "section": "21",
-          "title": "Workspace / Dashboard (My Openbravo) — Widgets y KMO",
-          "completion_pct": 0,
-          "ad_count": 34
-        }
-      ]
+      "global_status": "blocked"
     },
     {
       "slug": "etendo_26_sources",
       "name": "etendo_26_sources",
       "ui_score": 47,
-      "ui_label": "needs_work",
-      "global_status": "blocked",
-      "summary": {
-        "critica": 14,
-        "alta": 3,
-        "media": 3,
-        "no_aplica": 1
-      },
-      "top_blockers": [
-        {
-          "section": "5.1",
-          "title": "Tab Display Logic — Visibilidad condicional de pestañas",
-          "completion_pct": 0,
-          "ad_count": 104
-        },
-        {
-          "section": "5.2",
-          "title": "Read-Only Tabs — Pestañas de solo lectura",
-          "completion_pct": 0,
-          "ad_count": 40
-        },
-        {
-          "section": "AD_FORM",
-          "title": "Application Forms (AD_FORM) — Formularios JavaScript especiales",
-          "completion_pct": 0,
-          "ad_count": 28
-        }
-      ]
+      "global_status": "blocked"
+    },
+    {
+      "slug": "ladypipa",
+      "name": "ladypipa",
+      "ui_score": 63,
+      "global_status": "blocked"
     }
   ],
   "module_maintenance_candidates": [

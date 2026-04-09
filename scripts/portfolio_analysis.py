@@ -55,32 +55,97 @@ def discover_reports(reports_dir: Path) -> list:
     return analyzed
 
 
-# ── Step 2: UI Readiness ranking ───────────────────────────────────────────────
+# ── Step 2: UI feature-first roadmap analysis ─────────────────────────────────
+# Instead of ranking clients, we aggregate PER FEATURE across all clients.
+# For each feature: how many clients have it as critica / alta / media / no_aplica?
+# Portfolio priority = weighted sum (critica×4, alta×2, media×1).
+# This directly drives the roadmap: features affecting many clients with high priority
+# should be implemented first in the new UI.
 
-def build_ui_ranking(analyzed: list) -> list:
-    ui_clients = []
+PRIORITY_WEIGHT = {"critica": 4, "alta": 2, "media": 1, "no_aplica": 0}
+
+
+def build_ui_feature_roadmap(analyzed: list) -> tuple:
+    """
+    Returns (feature_roadmap, ui_clients_meta).
+
+    feature_roadmap: list of dicts, one per unique feature section, sorted by
+        portfolio_score desc — ready to render as roadmap table.
+
+    ui_clients_meta: list of (slug, name, ui_score) for a compact summary block.
+    """
+    # Map section → aggregated data
+    feature_map: dict = {}
+
+    ui_clients_meta = []
+
     for a in analyzed:
         if not a["ui_readiness"]:
             continue
         ui = a["ui_readiness"]
         if ui.get("ui_migration_score") is None:
             enrich_ui_readiness(ui)
-        critical = [
-            f for f in ui.get("features", [])
-            if f.get("priority") == "critica" and f.get("completion_pct", 100) < 60
-        ]
-        ui_clients.append({
+
+        ui_clients_meta.append({
             "slug": a["slug"],
             "name": a["name"],
             "ui_score": ui.get("ui_migration_score", 0),
-            "ui_label": ui.get("ui_label", ""),
             "global_status": ui.get("global_status", ""),
-            "summary": ui.get("summary", {}),
-            "critical_features": critical,
-            "top_blockers": sorted(critical, key=lambda x: x.get("completion_pct", 0))[:3],
         })
-    ui_clients.sort(key=lambda x: x["ui_score"], reverse=True)
-    return ui_clients
+
+        for f in ui.get("features", []):
+            section = f.get("section", "")
+            if not section:
+                continue
+            if section not in feature_map:
+                feature_map[section] = {
+                    "section": section,
+                    "title": f.get("title", section),
+                    "status": f.get("status", ""),
+                    "completion_pct": f.get("completion_pct", 0),
+                    "clients_by_priority": {"critica": [], "alta": [], "media": [], "no_aplica": []},
+                    "ad_counts": [],
+                }
+            entry = feature_map[section]
+            priority = f.get("priority", "no_aplica")
+            entry["clients_by_priority"].setdefault(priority, []).append(a["name"])
+            if f.get("ad_count"):
+                entry["ad_counts"].append(f["ad_count"])
+            # Keep the worst (lowest) completion_pct seen across clients
+            if f.get("completion_pct", 0) < entry["completion_pct"] or entry["completion_pct"] == 0:
+                entry["completion_pct"] = f.get("completion_pct", 0)
+            # Keep status from first client that has it (same feature = same UI status)
+            if not entry["status"] and f.get("status"):
+                entry["status"] = f.get("status", "")
+
+    # Compute portfolio_score and total_clients_affected for each feature
+    feature_roadmap = []
+    for section, data in feature_map.items():
+        cbp = data["clients_by_priority"]
+        portfolio_score = sum(
+            PRIORITY_WEIGHT.get(p, 0) * len(clients)
+            for p, clients in cbp.items()
+        )
+        affected = sum(len(c) for p, c in cbp.items() if p != "no_aplica")
+        avg_ad = round(sum(data["ad_counts"]) / len(data["ad_counts"])) if data["ad_counts"] else 0
+        feature_roadmap.append({
+            "section": section,
+            "title": data["title"],
+            "status": data["status"],
+            "completion_pct": data["completion_pct"],
+            "clients_critica": cbp.get("critica", []),
+            "clients_alta": cbp.get("alta", []),
+            "clients_media": cbp.get("media", []),
+            "clients_no_aplica": cbp.get("no_aplica", []),
+            "total_affected": affected,
+            "avg_ad_count": avg_ad,
+            "portfolio_score": portfolio_score,
+        })
+
+    # Sort: highest portfolio_score first, then completion_pct asc (least done = most urgent)
+    feature_roadmap.sort(key=lambda x: (-x["portfolio_score"], x["completion_pct"]))
+
+    return feature_roadmap, ui_clients_meta
 
 
 # ── Step 3: Unmaintained module analysis ───────────────────────────────────────
@@ -205,26 +270,26 @@ def build_generalizable(analyzed: list, etendo_candidates: list) -> list:
 
 # ── Step 5: Save portfolio_analysis.json ───────────────────────────────────────
 
-def save_portfolio_json(reports_dir: Path, analyzed, ui_clients, etendo_candidates, generalizable):
+def save_portfolio_json(reports_dir: Path, analyzed, feature_roadmap, ui_clients_meta, etendo_candidates, generalizable):
     portfolio = {
         "generated": date.today().isoformat(),
         "analyzed_clients": [a["slug"] for a in analyzed],
-        "ui_readiness_ranking": [
+        "ui_feature_roadmap": [
             {
-                "slug": c["slug"],
-                "name": c["name"],
-                "ui_score": c["ui_score"],
-                "ui_label": c["ui_label"],
-                "global_status": c["global_status"],
-                "summary": c["summary"],
-                "top_blockers": [
-                    {"section": f["section"], "title": f["title"],
-                     "completion_pct": f["completion_pct"], "ad_count": f.get("ad_count", 0)}
-                    for f in c["top_blockers"]
-                ],
+                "section": f["section"],
+                "title": f["title"],
+                "status": f["status"],
+                "completion_pct": f["completion_pct"],
+                "portfolio_score": f["portfolio_score"],
+                "clients_critica": f["clients_critica"],
+                "clients_alta": f["clients_alta"],
+                "clients_media": f["clients_media"],
+                "total_affected": f["total_affected"],
+                "avg_ad_count": f["avg_ad_count"],
             }
-            for c in ui_clients
+            for f in feature_roadmap
         ],
+        "ui_clients_meta": ui_clients_meta,
         "module_maintenance_candidates": etendo_candidates,
         "generalizable_customizations": generalizable,
     }
@@ -272,60 +337,124 @@ def _risk_badge(risk):
             f'background:{bg};color:{c};font-size:11px;font-weight:600">{label}</span>')
 
 
-def build_ui_section(ui_clients: list) -> str:
-    all_blocked = sum(1 for c in ui_clients if c["global_status"] == "blocked")
-    avg_score = round(sum(c["ui_score"] for c in ui_clients) / len(ui_clients)) if ui_clients else 0
+def _client_pills(client_names: list, color: str, bg: str) -> str:
+    if not client_names:
+        return ""
+    pills = "".join(
+        f'<span style="display:inline-block;padding:1px 7px;border-radius:9px;'
+        f'background:{bg};color:{color};font-size:11px;margin:1px">{n}</span>'
+        for n in client_names
+    )
+    return f'<div style="line-height:1.8">{pills}</div>'
+
+
+def _roadmap_priority_badge(score: int, n_critica: int) -> str:
+    """Translate portfolio_score into a roadmap priority label."""
+    if n_critica >= 2:
+        return '<span style="background:#dc2626;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P1 — Inmediata</span>'
+    if n_critica == 1 and score >= 4:
+        return '<span style="background:#ea580c;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P2 — Alta</span>'
+    if score >= 4:
+        return '<span style="background:#ca8a04;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P3 — Media</span>'
+    if score >= 1:
+        return '<span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span>'
+    return '<span style="background:#e5e7eb;color:#9ca3af;padding:2px 10px;border-radius:10px;font-size:11px">Sin impacto</span>'
+
+
+def _completion_bar(pct: int) -> str:
+    color = "#16a34a" if pct >= 80 else "#ca8a04" if pct >= 50 else "#dc2626"
+    return (
+        f'<div style="display:flex;align-items:center;gap:6px">'
+        f'<div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px">'
+        f'<div style="width:{pct}%;height:6px;background:{color};border-radius:3px"></div>'
+        f'</div>'
+        f'<span style="font-size:11px;color:#6b7280;white-space:nowrap">{pct}%</span>'
+        f'</div>'
+    )
+
+
+def build_ui_section(feature_roadmap: list, ui_clients_meta: list) -> str:
+    all_blocked = sum(1 for c in ui_clients_meta if c["global_status"] == "blocked")
+    n_clients = len(ui_clients_meta)
+    avg_score = round(sum(c["ui_score"] for c in ui_clients_meta) / n_clients) if n_clients else 0
+
+    # Compact per-client score summary
+    client_badges = "".join(
+        f'<span style="display:inline-flex;align-items:center;gap:6px;'
+        f'background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;'
+        f'padding:4px 10px;margin:3px;font-size:12px">'
+        f'<b>{c["name"]}</b>&nbsp;{_ui_score_badge(c["ui_score"])}</span>'
+        for c in sorted(ui_clients_meta, key=lambda x: x["ui_score"], reverse=True)
+    )
 
     rows = ""
-    for c in ui_clients:
-        blockers_html = "".join(
-            f'<div style="margin:2px 0;font-size:11px">'
-            f'<span style="display:inline-block;width:8px;height:8px;border-radius:50%;'
-            f'background:#dc2626;margin-right:4px;vertical-align:middle"></span>'
-            f'<b>{b["title"]}</b> — '
-            f'<span style="color:#6b7280">{b["completion_pct"]}% completado · {b["ad_count"]} instancias AD</span>'
-            f'</div>'
-            for b in c["top_blockers"]
-        ) or '<span style="color:#6b7280;font-size:11px">Sin bloqueadores críticos pendientes</span>'
-        criticas = c["summary"].get("critica", 0)
-        altas = c["summary"].get("alta", 0)
+    for f in feature_roadmap:
+        n_crit = len(f["clients_critica"])
+        n_alta = len(f["clients_alta"])
+        n_media = len(f["clients_media"])
+        total = f["total_affected"]
+
+        if total == 0:
+            continue  # skip features no client uses
+
         rows += (
             f'<tr>'
-            f'<td style="font-weight:600">{c["name"]}</td>'
-            f'<td style="text-align:center">{_ui_score_badge(c["ui_score"])}</td>'
-            f'<td style="text-align:center">{_status_badge(c["global_status"])}</td>'
-            f'<td style="text-align:center">'
-            f'<span style="color:#dc2626;font-weight:700">{criticas}</span>'
-            f'<span style="color:#6b7280;font-size:11px"> crít</span>&nbsp;'
-            f'<span style="color:#ea580c;font-weight:700">{altas}</span>'
-            f'<span style="color:#6b7280;font-size:11px"> altas</span>'
+            f'<td>'
+            f'  <div style="font-weight:600;font-size:13px">{f["title"]}</div>'
+            f'  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ {f["section"]}'
+            f'  · Estado UI: <b>{f["status"] or "—"}</b></div>'
             f'</td>'
-            f'<td>{blockers_html}</td>'
+            f'<td style="text-align:center">{_roadmap_priority_badge(f["portfolio_score"], n_crit)}</td>'
+            f'<td style="text-align:center;font-size:12px">'
+            f'  <span style="color:#dc2626;font-weight:700">{n_crit}</span>'
+            f'  <span style="color:#ea580c;font-weight:700"> · {n_alta}</span>'
+            f'  <span style="color:#ca8a04;font-weight:700"> · {n_media}</span>'
+            f'  <span style="color:#6b7280;font-size:10px"> / {n_clients}</span>'
+            f'</td>'
+            f'<td>'
+            f'  {_client_pills(f["clients_critica"], "#dc2626", "#fee2e2")}'
+            f'  {_client_pills(f["clients_alta"], "#ea580c", "#ffedd5")}'
+            f'  {_client_pills(f["clients_media"], "#ca8a04", "#fef9c3")}'
+            f'</td>'
+            f'<td>{_completion_bar(f["completion_pct"])}</td>'
+            f'<td style="text-align:center;font-size:12px;color:#6b7280">'
+            f'  {f["avg_ad_count"] if f["avg_ad_count"] else "—"}'
+            f'</td>'
             f'</tr>'
         )
 
     return f"""
 <div class="portfolio-section" id="portfolio-ui">
-  <h2>Preparación para nueva UI de Etendo</h2>
+  <h2>Preparación para nueva UI — Roadmap por funcionalidad</h2>
   <p class="portfolio-lead">
-    El <b>UI Score</b> mide qué porcentaje de las funcionalidades que usa cada instalación ya están
-    implementadas en el nuevo UI React de Etendo. Una puntuación de 100 significa que el cliente podría
-    migrar al nuevo UI sin bloqueadores. De los <b>{len(ui_clients)} clientes analizados</b>,
-    <b>{all_blocked}</b> están bloqueados (tienen al menos una funcionalidad crítica sin implementar),
-    con un score promedio de <b>{avg_score}/100</b>.
+    La tabla prioriza las funcionalidades pendientes de la nueva UI de Etendo según su <b>impacto real en el portfolio</b>:
+    una funcionalidad crítica para 3 clientes es más urgente que una crítica para 1.
+    <b>Prioridad de roadmap</b>: P1 = crítica en ≥2 entornos · P2 = crítica en 1 entorno con impacto alto ·
+    P3 = alta en varios · P4 = baja relevancia general.
+    Scores por entorno: {client_badges}
+    <br><span style="color:#6b7280;font-size:12px">
+    {n_clients} entornos analizados · {all_blocked} bloqueados · score promedio {avg_score}/100
+    </span>
   </p>
   <table class="portfolio-table">
     <thead>
       <tr>
-        <th>Cliente</th>
-        <th style="text-align:center;width:90px">UI Score</th>
-        <th style="text-align:center;width:100px">Estado</th>
-        <th style="text-align:center;width:110px">Críticas / Altas</th>
-        <th>Principales bloqueadores</th>
+        <th>Funcionalidad</th>
+        <th style="text-align:center;width:130px">Prioridad roadmap</th>
+        <th style="text-align:center;width:110px">Crítica · Alta · Media</th>
+        <th>Entornos afectados</th>
+        <th style="width:120px">Avance UI</th>
+        <th style="text-align:center;width:80px">AD promedio</th>
       </tr>
     </thead>
     <tbody>{rows}</tbody>
   </table>
+  <p style="font-size:11px;color:#9ca3af;margin-top:12px">
+    Los colores en "Entornos afectados" indican la prioridad del entorno para esa funcionalidad:
+    <span style="background:#fee2e2;color:#dc2626;padding:1px 6px;border-radius:6px">rojo = crítica</span>
+    <span style="background:#ffedd5;color:#ea580c;padding:1px 6px;border-radius:6px">naranja = alta</span>
+    <span style="background:#fef9c3;color:#ca8a04;padding:1px 6px;border-radius:6px">amarillo = media</span>
+  </p>
 </div>
 """
 
@@ -560,8 +689,8 @@ def main():
         print("No analyzed reports found. Run /etendo-customisation-expert first.")
         sys.exit(0)
 
-    print("Building UI ranking…")
-    ui_clients = build_ui_ranking(analyzed)
+    print("Building UI feature roadmap…")
+    feature_roadmap, ui_clients_meta = build_ui_feature_roadmap(analyzed)
 
     print("Building module candidates…")
     etendo_candidates, replaceable = build_module_candidates(analyzed)
@@ -570,18 +699,20 @@ def main():
     generalizable = build_generalizable(analyzed, etendo_candidates)
 
     print("Saving portfolio_analysis.json…")
-    save_portfolio_json(reports_dir, analyzed, ui_clients, etendo_candidates, generalizable)
+    save_portfolio_json(reports_dir, analyzed, feature_roadmap, ui_clients_meta, etendo_candidates, generalizable)
 
     print("Injecting sections into dashboard…")
-    ui_html = build_ui_section(ui_clients)
+    ui_html = build_ui_section(feature_roadmap, ui_clients_meta)
     modules_html = build_modules_section(etendo_candidates, replaceable)
     custom_html = build_customizations_section(generalizable, etendo_candidates)
     inject_into_dashboard(dashboard_path, ui_html, modules_html, custom_html)
 
+    p1 = sum(1 for f in feature_roadmap if len(f["clients_critica"]) >= 2)
+    p2 = sum(1 for f in feature_roadmap if len(f["clients_critica"]) == 1 and f["portfolio_score"] >= 4)
     total_saas = sum(g["effort_saas_hours"] for g in generalizable)
     print(
         f"\n✓ Portfolio analysis complete:\n"
-        f"  UI ranking: {len(ui_clients)} clients · avg score {round(sum(c['ui_score'] for c in ui_clients)/len(ui_clients)) if ui_clients else 0}\n"
+        f"  UI roadmap: {len(feature_roadmap)} features · {p1} P1 (inmediata) · {p2} P2 (alta)\n"
         f"  Module candidates: {len(etendo_candidates)} for Etendo · {len(replaceable)} with replacement\n"
         f"  Generalizable: {len([g for g in generalizable if g['type']=='core'])} core upstreams · "
         f"{len([g for g in generalizable if g['type'] in ('module','module_unmaintained')])} bundle candidates\n"
