@@ -1298,7 +1298,7 @@ def render_ui_readiness(readiness):
         <tr style="background:#f8fafc;font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;">
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Sección</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Feature</th>
-          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="Intensidad de uso en el AD de este cliente (0=no usado, 10=máximo)">Uso</th>
+          <th style="padding:7px 10px;text-align:left;font-weight:600;" title="Número de instancias de esta funcionalidad encontradas en el Application Dictionary (AD) de esta instalación">Apariciones en AD</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;" title="% completado en el nuevo UI de Etendo">Avance UI</th>
           <th style="padding:7px 10px;text-align:left;font-weight:600;">Por qué es relevante</th>
         </tr>

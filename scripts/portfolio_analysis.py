@@ -348,6 +348,15 @@ def _client_pills(client_names: list, color: str, bg: str) -> str:
     return f'<div style="line-height:1.8">{pills}</div>'
 
 
+def _roadmap_priority_key(score: int, n_critica: int) -> str:
+    """Return sortable priority key (P1–P4) for data attributes."""
+    if n_critica >= 2:        return "P1"
+    if n_critica == 1 and score >= 4: return "P2"
+    if score >= 4:            return "P3"
+    if score >= 1:            return "P4"
+    return "P5"
+
+
 def _roadmap_priority_badge(score: int, n_critica: int) -> str:
     """Translate portfolio_score into a roadmap priority label."""
     if n_critica >= 2:
@@ -378,7 +387,6 @@ def build_ui_section(feature_roadmap: list, ui_clients_meta: list) -> str:
     n_clients = len(ui_clients_meta)
     avg_score = round(sum(c["ui_score"] for c in ui_clients_meta) / n_clients) if n_clients else 0
 
-    # Compact per-client score summary
     client_badges = "".join(
         f'<span style="display:inline-flex;align-items:center;gap:6px;'
         f'background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;'
@@ -395,10 +403,14 @@ def build_ui_section(feature_roadmap: list, ui_clients_meta: list) -> str:
         total = f["total_affected"]
 
         if total == 0:
-            continue  # skip features no client uses
+            continue
 
+        pkey = _roadmap_priority_key(f["portfolio_score"], n_crit)
+        ad_val = f["avg_ad_count"] if f["avg_ad_count"] else 0
         rows += (
-            f'<tr>'
+            f'<tr data-priority="{pkey}" data-score="{f["portfolio_score"]}"'
+            f' data-completion="{f["completion_pct"]}" data-affected="{total}"'
+            f' data-ad="{ad_val}">'
             f'<td>'
             f'  <div style="font-weight:600;font-size:13px">{f["title"]}</div>'
             f'  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ {f["section"]}'
@@ -418,7 +430,7 @@ def build_ui_section(feature_roadmap: list, ui_clients_meta: list) -> str:
             f'</td>'
             f'<td>{_completion_bar(f["completion_pct"])}</td>'
             f'<td style="text-align:center;font-size:12px;color:#6b7280">'
-            f'  {f["avg_ad_count"] if f["avg_ad_count"] else "—"}'
+            f'  {ad_val if ad_val else "—"}'
             f'</td>'
             f'</tr>'
         )
@@ -436,26 +448,126 @@ def build_ui_section(feature_roadmap: list, ui_clients_meta: list) -> str:
     {n_clients} entornos analizados · {all_blocked} bloqueados · score promedio {avg_score}/100
     </span>
   </p>
-  <table class="portfolio-table">
+
+  <!-- Filtros y ordenamiento del roadmap -->
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px">
+    <select id="rdm-filter-priority" onchange="rdmApply()"
+      style="border:1px solid #d1d5db;border-radius:6px;padding:5px 10px;font-size:12px;background:#fff">
+      <option value="">Todas las prioridades</option>
+      <option value="P1">P1 — Inmediata</option>
+      <option value="P2">P2 — Alta</option>
+      <option value="P3">P3 — Media</option>
+      <option value="P4">P4 — Baja</option>
+    </select>
+    <select id="rdm-filter-status" onchange="rdmApply()"
+      style="border:1px solid #d1d5db;border-radius:6px;padding:5px 10px;font-size:12px;background:#fff">
+      <option value="">Todos los estados UI</option>
+      <option value="BUG ACTIVO">BUG ACTIVO</option>
+      <option value="BLOQUEADO">BLOQUEADO</option>
+      <option value="NOT DONE">NOT DONE</option>
+      <option value="PARCIAL">PARCIAL</option>
+      <option value="TO CHECK">TO CHECK</option>
+    </select>
+    <button onclick="rdmReset()"
+      style="border:1px solid #d1d5db;border-radius:6px;padding:5px 12px;font-size:12px;
+             background:#f9fafb;cursor:pointer;color:#374151">↺ Limpiar</button>
+    <span id="rdm-count" style="font-size:11px;color:#9ca3af;margin-left:4px"></span>
+  </div>
+
+  <table class="portfolio-table" id="rdm-table">
     <thead>
       <tr>
-        <th>Funcionalidad</th>
-        <th style="text-align:center;width:130px">Prioridad roadmap</th>
+        <th onclick="rdmSort('title')" style="cursor:pointer" title="Ordenar por nombre">
+          Funcionalidad <span id="rdm-arr-title">⇅</span></th>
+        <th onclick="rdmSort('priority')" style="cursor:pointer;text-align:center;width:130px"
+          title="Ordenar por prioridad">
+          Prioridad roadmap <span id="rdm-arr-priority">⇅</span></th>
         <th style="text-align:center;width:110px">Crítica · Alta · Media</th>
-        <th>Entornos afectados</th>
-        <th style="width:120px">Avance UI</th>
-        <th style="text-align:center;width:80px">AD promedio</th>
+        <th onclick="rdmSort('affected')" style="cursor:pointer" title="Ordenar por entornos afectados">
+          Entornos afectados <span id="rdm-arr-affected">⇅</span></th>
+        <th onclick="rdmSort('completion')" style="cursor:pointer;width:120px"
+          title="Ordenar por avance UI">
+          Avance UI <span id="rdm-arr-completion">⇅</span></th>
+        <th onclick="rdmSort('ad')" style="cursor:pointer;text-align:center;width:110px"
+          title="Número promedio de instancias de esta funcionalidad encontradas en el Application Dictionary (AD) de los entornos analizados. Ordenar por apariciones.">
+          Apariciones en AD (prom.) <span id="rdm-arr-ad">⇅</span></th>
       </tr>
     </thead>
-    <tbody>{rows}</tbody>
+    <tbody id="rdm-tbody">{rows}</tbody>
   </table>
+
   <p style="font-size:11px;color:#9ca3af;margin-top:12px">
     Los colores en "Entornos afectados" indican la prioridad del entorno para esa funcionalidad:
     <span style="background:#fee2e2;color:#dc2626;padding:1px 6px;border-radius:6px">rojo = crítica</span>
     <span style="background:#ffedd5;color:#ea580c;padding:1px 6px;border-radius:6px">naranja = alta</span>
-    <span style="background:#fef9c3;color:#ca8a04;padding:1px 6px;border-radius:6px">amarillo = media</span>
+    <span style="background:#fef9c3;color:#ca8a04;padding:1px 6px;border-radius:6px">amarillo = media</span>.
+    "Apariciones en AD" = instancias de la funcionalidad encontradas en el Application Dictionary
+    (campos, ventanas, procesos, etc.) — no mide uso real, sino la escala del impacto potencial.
   </p>
 </div>
+
+<script>
+(function() {{
+  var _rdmSort = null;
+  var _rdmDir  = 1;
+
+  function rdmRows() {{
+    return Array.from(document.querySelectorAll('#rdm-tbody tr'));
+  }}
+
+  window.rdmApply = function() {{
+    var pri    = document.getElementById('rdm-filter-priority').value;
+    var status = document.getElementById('rdm-filter-status').value;
+    var rows   = rdmRows();
+    var visible = 0;
+    rows.forEach(function(r) {{
+      var ok = true;
+      if (pri    && r.dataset.priority !== pri)           ok = false;
+      if (status && !r.querySelector('td div b').textContent.includes(status)) ok = false;
+      r.style.display = ok ? '' : 'none';
+      if (ok) visible++;
+    }});
+    var cnt = document.getElementById('rdm-count');
+    if (cnt) cnt.textContent = visible + ' de ' + rows.length + ' funcionalidades';
+  }};
+
+  window.rdmReset = function() {{
+    document.getElementById('rdm-filter-priority').value = '';
+    document.getElementById('rdm-filter-status').value   = '';
+    rdmRows().forEach(function(r) {{ r.style.display = ''; }});
+    document.getElementById('rdm-count').textContent = '';
+    ['priority','affected','completion','ad','title'].forEach(function(k) {{
+      var el = document.getElementById('rdm-arr-' + k);
+      if (el) el.textContent = '⇅';
+    }});
+    _rdmSort = null; _rdmDir = 1;
+  }};
+
+  window.rdmSort = function(col) {{
+    if (_rdmSort === col) {{ _rdmDir *= -1; }} else {{ _rdmSort = col; _rdmDir = 1; }}
+    ['priority','affected','completion','ad','title'].forEach(function(k) {{
+      var el = document.getElementById('rdm-arr-' + k);
+      if (el) el.textContent = (k === col) ? (_rdmDir === 1 ? ' ↑' : ' ↓') : ' ⇅';
+    }});
+    var tbody = document.getElementById('rdm-tbody');
+    var rows  = rdmRows();
+    rows.sort(function(a, b) {{
+      var av, bv;
+      if (col === 'priority')   {{ av = a.dataset.priority;   bv = b.dataset.priority; }}
+      else if (col === 'affected')  {{ av = +a.dataset.affected;  bv = +b.dataset.affected; }}
+      else if (col === 'completion'){{ av = +a.dataset.completion; bv = +b.dataset.completion; }}
+      else if (col === 'ad')    {{ av = +a.dataset.ad;        bv = +b.dataset.ad; }}
+      else                      {{ av = a.querySelector('td div').textContent.trim();
+                                   bv = b.querySelector('td div').textContent.trim(); }}
+      if (av < bv) return -1 * _rdmDir;
+      if (av > bv) return  1 * _rdmDir;
+      return 0;
+    }});
+    rows.forEach(function(r) {{ tbody.appendChild(r); }});
+    rdmApply();
+  }};
+}})();
+</script>
 """
 
 
