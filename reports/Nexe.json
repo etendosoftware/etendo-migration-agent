@@ -5337,7 +5337,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.localization.spain.referencedata.taxes",
-        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "name": "Taxes: configuration for Spain (Impuestos para Espa\u00f1a)",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -5398,7 +5398,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
-        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja Espa\u00f1a)",
         "version": "1.3.101",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -5609,7 +5609,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.localization.spain.referencedata.translation.eses",
-        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "name": "Translation: Spanish-Spain (es_ES) espa\u00f1ol-Espa\u00f1a",
         "version": "3.9.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -5658,7 +5658,7 @@
       {
         "java_package": "org.openbravo.localization.spain30",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.localization.spain30",
-        "name": "Localization pack Spain (España)",
+        "name": "Localization pack Spain (Espa\u00f1a)",
         "version": "3.15.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -7442,7 +7442,7 @@
       {
         "java_package": "org.openbravo.module.bptaxidkey",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.module.bptaxidkey",
-        "name": "Tipo de Número de Identificación de Tercero",
+        "name": "Tipo de N\u00famero de Identificaci\u00f3n de Tercero",
         "version": "0.8.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -8942,7 +8942,7 @@
       {
         "java_package": "org.openbravo.module.epigrafes.iae.es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.module.epigrafes.iae.es",
-        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "name": "I.A.E. Epigraphs (Ep\u00edgrafes del I.A.E.)",
         "version": "1.8.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -9358,7 +9358,7 @@
       {
         "java_package": "org.openbravo.module.finactvalidator.es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.module.finactvalidator.es",
-        "name": "Validador de número de cuenta financiera",
+        "name": "Validador de n\u00famero de cuenta financiera",
         "version": "3.9.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -10591,7 +10591,7 @@
       {
         "java_package": "org.openbravo.module.intrastat.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.module.intrastat.es_es",
-        "name": "Intrastat – Spanish translation",
+        "name": "Intrastat \u2013 Spanish translation",
         "version": "1.9.0",
         "author": "Openbravo S.L.U",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -11556,7 +11556,7 @@
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.module.invoicesregisterbook.estaxes",
-        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "name": "Configuraci\u00f3n de Impuestos para el Libro de Facturas",
         "version": "3.9.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -14038,7 +14038,7 @@
       {
         "java_package": "org.openbravo.module.taximprovements.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.module.taximprovements.es_es",
-        "name": "Módulo de Impuestos para España mejorado",
+        "name": "M\u00f3dulo de Impuestos para Espa\u00f1a mejorado",
         "version": "0.8.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -14433,7 +14433,7 @@
       {
         "java_package": "org.openbravo.proflocalization.spain.dataset",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.proflocalization.spain.dataset",
-        "name": "Professional Localization pack Spain (España) Datasets",
+        "name": "Professional Localization pack Spain (Espa\u00f1a) Datasets",
         "version": "1.13.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -14684,7 +14684,7 @@
       {
         "java_package": "org.openbravo.spain.regions",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.spain.regions",
-        "name": "Provincias de España",
+        "name": "Provincias de Espa\u00f1a",
         "version": "1.8.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -14739,7 +14739,7 @@
       {
         "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.spanishdefaultdata.paymentmethods",
-        "name": "Métodos de Pago",
+        "name": "M\u00e9todos de Pago",
         "version": "1.9.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -18009,7 +18009,7 @@
       {
         "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.etendoerp.advanced.bpsettlement.es_es",
-        "name": "Liquidación Avanzada de Socios Comerciales",
+        "name": "Liquidaci\u00f3n Avanzada de Socios Comerciales",
         "version": "1.2.0",
         "author": "Etendo Software"
       },
@@ -18044,7 +18044,7 @@
       {
         "java_package": "com.etendoerp.bulk.posting.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.etendoerp.bulk.posting.es_es",
-        "name": "Contabilización Masiva",
+        "name": "Contabilizaci\u00f3n Masiva",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
@@ -18072,7 +18072,7 @@
       {
         "java_package": "com.etendoerp.payment.removal.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.etendoerp.payment.removal.es_es",
-        "name": "Eliminación de Pagos",
+        "name": "Eliminaci\u00f3n de Pagos",
         "version": "1.5.0",
         "author": "Etendo Software"
       },
@@ -18142,7 +18142,7 @@
       {
         "java_package": "com.mysuite.factelectr.es.module",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.mysuite.factelectr.es.module",
-        "name": "Facturación Electrónica España",
+        "name": "Facturaci\u00f3n Electr\u00f3nica Espa\u00f1a",
         "version": "1.4.17",
         "author": "MYSUITE SERVICES S.A. DE C.V."
       },
@@ -18151,7 +18151,7 @@
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.openbravo.clone.purchases",
         "name": "Clone Purchases",
         "version": "1.0.1",
-        "author": "Çelebi Software || Kasım ÇELEBİ"
+        "author": "\u00c7elebi Software || Kas\u0131m \u00c7ELEB\u0130"
       },
       {
         "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
@@ -18191,14 +18191,14 @@
       {
         "java_package": "com.precognis.controlpedido",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.controlpedido",
-        "name": "Controlar líneas pedido",
+        "name": "Controlar l\u00edneas pedido",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.precognis.copycount.template",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.copycount.template",
-        "name": "Ocultar botón Copiar cuentas",
+        "name": "Ocultar bot\u00f3n Copiar cuentas",
         "version": "1.0.3",
         "author": null
       },
@@ -18226,7 +18226,7 @@
       {
         "java_package": "com.precognis.dm",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.dm",
-        "name": "Módulo de caracterización de datos maestros",
+        "name": "M\u00f3dulo de caracterizaci\u00f3n de datos maestros",
         "version": "1.0.18",
         "author": null
       },
@@ -18240,14 +18240,14 @@
       {
         "java_package": "com.precognis.financiacion",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.financiacion",
-        "name": "Módulo de Financiación",
+        "name": "M\u00f3dulo de Financiaci\u00f3n",
         "version": "1.0.22",
         "author": null
       },
       {
         "java_package": "com.precognis.financiacion.template",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.financiacion.template",
-        "name": "Template Financiación",
+        "name": "Template Financiaci\u00f3n",
         "version": "1.0.1",
         "author": null
       },
@@ -18268,21 +18268,21 @@
       {
         "java_package": "com.precognis.inoutposting",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.inoutposting",
-        "name": "Contabilización de albaranes",
+        "name": "Contabilizaci\u00f3n de albaranes",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.precognis.menu",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.menu",
-        "name": "Crear punto de menú integraciones",
+        "name": "Crear punto de men\u00fa integraciones",
         "version": "1.0.2",
         "author": null
       },
       {
         "java_package": "com.precognis.orgrec",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.orgrec",
-        "name": "Campo Organización receptroa",
+        "name": "Campo Organizaci\u00f3n receptroa",
         "version": "1.0.0",
         "author": null
       },
@@ -18296,14 +18296,14 @@
       {
         "java_package": "com.precognis.pf",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.pf",
-        "name": "Plan de facturación de proyectos",
+        "name": "Plan de facturaci\u00f3n de proyectos",
         "version": "1.0.21",
         "author": null
       },
       {
         "java_package": "com.precognis.pf.template",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.pf.template",
-        "name": "Template Plan de facturación",
+        "name": "Template Plan de facturaci\u00f3n",
         "version": "1.0.03",
         "author": null
       },
@@ -18359,14 +18359,14 @@
       {
         "java_package": "com.precognis.trem",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.trem",
-        "name": "Time report extensión module",
+        "name": "Time report extensi\u00f3n module",
         "version": "2.0.3",
         "author": null
       },
       {
         "java_package": "com.precognis.vistafac",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.precognis.vistafac",
-        "name": "Vista plan de facturación",
+        "name": "Vista plan de facturaci\u00f3n",
         "version": "1.0.0",
         "author": null
       },
@@ -18401,14 +18401,14 @@
       {
         "java_package": "com.smf.currency.apiconfig.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.smf.currency.apiconfig.es_es",
-        "name": "Configuración de la API de Moneda",
+        "name": "Configuraci\u00f3n de la API de Moneda",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.smf.currency.conversionrate.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.smf.currency.conversionrate.es_es",
-        "name": "Descargador de Tasa de Conversión",
+        "name": "Descargador de Tasa de Conversi\u00f3n",
         "version": "1.3.0",
         "author": null
       },
@@ -18443,7 +18443,7 @@
       {
         "java_package": "com.smf.gljournal.reverse.es_es",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/com.smf.gljournal.reverse.es_es",
-        "name": "Anulación de Asientos Manuales",
+        "name": "Anulaci\u00f3n de Asientos Manuales",
         "version": "1.1.0",
         "author": null
       },
@@ -18590,7 +18590,7 @@
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.2012",
         "path": "/home/pixel/Escritorio/Futit/Workspaces/NEXE/modules/org.openbravo.module.invoicesregisterbook.estaxes.2012",
-        "name": "Configuración de Impuestos para el Libro de Facturas 2012",
+        "name": "Configuraci\u00f3n de Impuestos para el Libro de Facturas 2012",
         "version": "1.0.5",
         "author": "Openbravo S.L.U."
       },
@@ -18694,7 +18694,7 @@
         "line_count": 3038,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -18730,7 +18730,7 @@
         "line_count": 2466,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -18754,7 +18754,7 @@
         "line_count": 2664,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -23862,11 +23862,11 @@
       }
     ]
   },
-  "migration_score": 12,
+  "migration_score": 2,
   "migratability": "very_hard",
   "score_breakdown": {
     "openbravo_platform": 0,
-    "core_divergences": -15.0,
+    "core_divergences": -25.0,
     "core_diff_lines": 41568,
     "local_not_maintained": -23,
     "local_not_maintained_translations": 21,
@@ -23884,7 +23884,7 @@
         "java_package": "com.smf.nexe.customizations",
         "line_count": 3038,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
@@ -23905,7 +23905,7 @@
         "java_package": "com.smf.nexe.indicator",
         "line_count": 2466,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
@@ -23919,7 +23919,7 @@
         "java_package": "com.smf.nexe.provided.invoice",
         "line_count": 2664,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {

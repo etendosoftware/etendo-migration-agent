@@ -743,7 +743,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.translation.esES",
         "path": "/opt/EtendoERP/modules/org.openbravo.localization.spain.referencedata.translation.esES",
-        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "name": "Translation: Spanish-Spain (es_ES) espa\u00f1ol-Espa\u00f1a",
         "version": "3.0.1900",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -2056,7 +2056,7 @@
       {
         "java_package": "com.integritas.conciliacion.factura",
         "path": "/opt/EtendoERP/modules/com.integritas.conciliacion.factura",
-        "name": "Integritas Conciliación Factura",
+        "name": "Integritas Conciliaci\u00f3n Factura",
         "version": "1.0.3",
         "author": "Integritas"
       },
@@ -2273,7 +2273,7 @@
       {
         "java_package": "com.integritas.remision.cliente",
         "path": "/opt/EtendoERP/modules/com.integritas.remision.cliente",
-        "name": "Remisión Cliente",
+        "name": "Remisi\u00f3n Cliente",
         "version": "1.0.0",
         "author": "Integritas"
       },
@@ -2315,7 +2315,7 @@
       {
         "java_package": "com.integritas.unidmedalt",
         "path": "/opt/EtendoERP/modules/com.integritas.unidmedalt",
-        "name": "Reportería Con Unidad Alternativa",
+        "name": "Reporter\u00eda Con Unidad Alternativa",
         "version": "1.0.0",
         "author": "Integritas"
       },
@@ -2434,7 +2434,7 @@
       {
         "java_package": "com.tegik.factelect.modificacion",
         "path": "/opt/EtendoERP/modules/com.tegik.factelect.modificacion",
-        "name": "Modificación a factura electronica",
+        "name": "Modificaci\u00f3n a factura electronica",
         "version": "1.0.3",
         "author": "Tegik"
       },
@@ -2757,7 +2757,7 @@
         "line_count": 660,
         "custom_size": {
           "key": "small",
-          "label": "500–2.000 LOC"
+          "label": "500\u20132.000 LOC"
         }
       },
       {
@@ -7913,22 +7913,19 @@
       }
     ]
   },
-  "migration_score": 29,
+  "migration_score": 3,
   "migratability": "very_hard",
   "score_breakdown": {
     "openbravo_platform": 0,
-    "core_divergences": -15.0,
-    "core_diff_lines": 21082,
-    "local_not_maintained": -23,
-    "local_not_maintained_translations": 17,
-    "local_not_maintained_regular": 87,
+    "core_divergences": -40.0,
+    "local_not_maintained": -20,
     "custom_modules": -21.0,
     "custom_modules_detail": [
       {
         "java_package": "com.integritas.plaztek.contacero",
         "line_count": 660,
         "size_tier": "small",
-        "size_label": "500–2.000 LOC",
+        "size_label": "500\u20132.000 LOC",
         "penalty": -4
       },
       {
@@ -7946,7 +7943,7 @@
         "penalty": -1
       }
     ],
-    "local_maintained_divergences": -12.0,
+    "local_maintained_divergences": -16.2,
     "gradle_source_divergences": 0,
     "jar_dependency_outdated": 0
   }

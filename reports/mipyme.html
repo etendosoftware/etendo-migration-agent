@@ -12,14 +12,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .page { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
 
 /* Header */
-.report-header { background: #1e293b; color: #f1f5f9; padding: 28px 32px;
-                 border-radius: 12px; margin-bottom: 24px; }
-.report-header h1 { font-size: 22px; font-weight: 700; }
-.report-header .sub { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+.report-header { background: #fff; border: 1px solid #e2e8f0; border-top: 4px solid #3b82f6;
+                 color: #0f172a; padding: 28px 32px; border-radius: 12px; margin-bottom: 24px; }
+.report-header h1 { font-size: 22px; font-weight: 700; color: #0f172a; }
+.report-header .sub { font-size: 13px; color: #6b7280; margin-top: 6px; }
 .header-meta { display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
 .meta-item { font-size: 13px; }
-.meta-item strong { color: #e2e8f0; }
-.meta-item span { color: #94a3b8; }
+.meta-item strong { color: #1e293b; }
+.meta-item span { color: #6b7280; }
 
 /* Cards */
 .card { background: #fff; border-radius: 10px; border: 1px solid #e2e8f0;
@@ -43,6 +43,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .bd-val { font-size: 12px; font-weight: 600; text-align: right; white-space: nowrap; }
 .bd-val-base { color: #22c55e; }
 .bd-val-neg  { color: #ef4444; }
+.bd-val-ok   { color: #22c55e; }
+.bd-ok-badge { font-size: 11px; color: #22c55e; font-weight: 500; }
+.bd-row-ok td { opacity: 0.75; }
 .bd-cap { font-size: 11px; font-weight: 400; color: #9ca3af; }
 .bd-val-result { font-size: 14px; }
 .bd-row-base td { padding-bottom: 8px; }
@@ -197,7 +200,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 /* ── Custom Assessor ────────────────────────────────────────────────────── */
 .asmnt-meta { font-size: 12px; color: #64748b; margin-bottom: 16px; }
 .asmnt-section-label { font-size: 11px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.5px; color: #94a3b8; margin: 18px 0 10px; }
+  letter-spacing: 0.5px; color: #6b7280; margin: 18px 0 10px; }
 .asmnt-badge { display: inline-block; padding: 2px 8px; border-radius: 4px;
   font-size: 11px; font-weight: 600; letter-spacing: 0.3px; }
 .asmnt-trivial  { background: #dcfce7; color: #166534; }
@@ -207,6 +210,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .asmnt-type     { background: #e0f2fe; color: #075985; }
 .asmnt-effort { font-size: 11px; color: #64748b; background: #f1f5f9;
   padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.asmnt-effort-upd  { background: #eff6ff; color: #1d4ed8; }
+.asmnt-effort-saas { background: #f0fdf4; color: #166534; }
+.asmnt-th-effort { font-size: 10px; }
 .asmnt-table { width: 100%; border-collapse: collapse; font-size: 13px; }
 .asmnt-table th { text-align: left; padding: 7px 10px; background: #f8fafc;
   color: #64748b; font-weight: 600; border-bottom: 2px solid #e2e8f0;
@@ -218,14 +224,31 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .asmnt-rec  { color: #0f172a; font-size: 12px; }
 .asmnt-row-high td { background: #fff5f5; }
 .asmnt-row-med  td { background: #fffbeb; }
-.asmnt-effort-box { background: #1e293b; color: #f1f5f9; border-radius: 8px;
+.asmnt-effort-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
   padding: 14px 20px; margin-top: 12px; display: flex; gap: 32px; flex-wrap: wrap; }
 .asmnt-stat { text-align: center; }
-.asmnt-stat-total { border-left: 1px solid #334155; padding-left: 32px; }
-.asmnt-stat-val       { font-size: 22px; font-weight: 700; color: #38bdf8; }
+.asmnt-stat-total { border-left: 1px solid #e2e8f0; padding-left: 32px; }
+.asmnt-stat-val       { font-size: 22px; font-weight: 700; color: #3b82f6; }
 .asmnt-stat-val-total { font-size: 22px; font-weight: 700; color: #f97316; }
-.asmnt-stat-lbl { font-size: 11px; color: #94a3b8; margin-top: 2px; }
-.asmnt-note { font-size: 11px; color: #94a3b8; margin-top: 10px; }
+.asmnt-stat-lbl { font-size: 11px; color: #6b7280; margin-top: 2px; }
+.asmnt-note { font-size: 11px; color: #6b7280; margin-top: 10px; }
+.asmnt-mx-tag { font-size: 11px; background: #eff6ff; color: #3b82f6; border: 1px solid #bfdbfe;
+  padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+.asmnt-elim-cand { background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+.asmnt-row-elim td { background: #fef9f9; opacity: 0.85; }
+.asmnt-upstream  { background: #d1fae5; color: #065f46; }
+.asmnt-already   { background: #dbeafe; color: #1e40af; }
+.asmnt-elim      { background: #fee2e2; color: #991b1b; }
+.asmnt-stat-saved { border-left: 2px solid #22c55e; padding-left: 12px; }
+.usage-score { font-size: 12px; white-space: nowrap; }
+.usage-score-null { color: #9ca3af; font-style: italic; font-size: 11px; }
+.usage-score-zero { background: #f1f5f9; color: #9ca3af; font-size: 10px; padding: 2px 6px; border-radius: 4px; }
+.usage-bar { height: 4px; background: #e5e7eb; border-radius: 2px; margin-top: 3px; width: 60px; }
+.usage-fill { height: 4px; border-radius: 2px; }
+.win-group { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 3px; }
+.win-tag { font-size: 10px; padding: 1px 5px; border-radius: 3px; }
+.win-used   { background: #d1fae5; color: #065f46; }
+.win-unused { background: #fee2e2; color: #991b1b; }
 </style>
 </head>
 <body>
@@ -240,7 +263,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <div class="meta-item"><span>Plataforma </span><strong>Etendo 24.4.21</strong></div>
       <div class="meta-item"><span>Base de comparación </span><strong>v25.4.11</strong></div>
       <div class="meta-item"><span>Módulos totales </span><strong>176</strong></div>
-      <div class="meta-item"><span>Generado </span><strong>2026-03-30 15:30</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-04-09 08:27</strong></div>
     </div>
   </div>
 
@@ -270,7 +293,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             <td>Mayor penalización que Gradle Sources porque no está gestionado como dependencia. Cada archivo divergente implica trabajo de análisis para determinar si es customización o desactualización.</td></tr>
         <tr><td><span class="cat-chip chip-nmnt">Local sin Mant.</span></td>
             <td>Módulo con código fuente en /modules/ que no aparece en el catálogo de Etendo. Puede ser de terceros, legacy de Openbravo, o un módulo abandonado.</td>
-            <td>−3 por módulo, independientemente del contenido (máximo −20)</td>
+            <td>−3 por módulo regular, −0.3 por pack de traducción (cap conjunto −20)</td>
             <td>Sin soporte oficial no hay ruta de actualización garantizada. Cada uno requiere evaluación manual para decidir si se reemplaza, se integra como customización, o se descarta.</td></tr>
         <tr><td><span class="cat-chip chip-cust">Customización</span></td>
             <td>Módulo desarrollado por o para el cliente (el java_package contiene el nombre del cliente o el segmento "custom"). Representa lógica de negocio propia.</td>
@@ -299,22 +322,23 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             <td>Desarrollo significativo. Alta complejidad de migración.</td></tr>
       </tbody>
     </table>
-    <p class="meth-note">Máximo global de customizaciones: −35. El LOC se cuenta sobre archivos de texto
-    (.java, .xml, .sql, .js, .css, .html, .properties, .gradle, etc.).</p>
+    <p class="meth-note">Cap global de customizaciones: −35. El LOC se cuenta sobre archivos de texto
+    (.java, .xml, .sql, .js, .css, .html, .properties, .gradle, etc.). Los packs de traducción penalizan −0.5 fijo sin importar el tamaño.</p>
   </div>
 
   <div class="meth-block">
     <div class="meth-title">Core y otros factores</div>
     <table class="meth-table">
-      <thead><tr><th>Factor</th><th>Penalización</th></tr></thead>
+      <thead><tr><th>Factor</th><th>Penalización</th><th>Cap</th></tr></thead>
       <tbody>
-        <tr><td>Plataforma Openbravo (sin build.gradle)</td><td>−20 fijo</td></tr>
-        <tr><td>Líneas de diferencia en core (por cada 100)</td><td>−0.5 (máximo −15)</td></tr>
+        <tr><td>Plataforma Openbravo (sin build.gradle)</td><td>−20 fijo</td><td>−20</td></tr>
+        <tr><td>Líneas de diferencia en core (por cada 100 líneas)</td><td>−0.5</td><td>−15</td></tr>
+        <tr><td>Módulos mantenidos con divergencias (por módulo)</td><td>−1 / −3 / −6 / −10 según volumen</td><td>−10</td></tr>
       </tbody>
     </table>
-    <p class="meth-note">Las diferencias en core incluyen tanto customizaciones como brecha de versión
-    (el cliente puede estar en una versión anterior a la base de comparación). El score parte de 100
-    y se le restan todas las penalizaciones.</p>
+    <p class="meth-note">El score parte de 100 y se le restan todas las penalizaciones. La penalización
+    máxima posible es <strong>−100</strong>, por lo que el score mínimo es 0. Los módulos Gradle Source
+    desactualizados y las dependencias JAR no penalizan — se resuelven con una actualización estándar.</p>
   </div>
 
   <div class="meth-block">
@@ -344,14 +368,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 <div class="score-ring-wrap">
   <svg viewBox="0 0 120 120" class="score-ring">
     <circle cx="60" cy="60" r="54" fill="none" stroke="#e5e7eb" stroke-width="10"/>
-    <circle cx="60" cy="60" r="54" fill="none" stroke="#f97316" stroke-width="10"
-      stroke-dasharray="159.5 179.8"
+    <circle cx="60" cy="60" r="54" fill="none" stroke="#ef4444" stroke-width="10"
+      stroke-dasharray="0.0 339.3"
       stroke-dashoffset="84.8"
       stroke-linecap="round"/>
-    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#f97316">47</text>
+    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#ef4444">0</text>
     <text x="60" y="73" text-anchor="middle" font-size="9" fill="#6b7280">/100</text>
   </svg>
-  <div class="score-label" style="color:#f97316">Difícil</div>
+  <div class="score-label" style="color:#ef4444">Muy difícil</div>
 </div>
       <div class="score-right">
         <p style="font-size:13px;color:#475569;margin-bottom:12px;">Factores de penalización:</p>
@@ -363,46 +387,51 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <td class="bd-bar-cell"><div class="bd-bar bd-bar-base" style="width:100%"></div></td>
         <td class="bd-val bd-val-base">100</td>
       </tr>
+      <tr class="bd-row-ok">
+        <td class="bd-label">Plataforma Openbravo</td>
+        <td class="bd-bar-cell"><span class="bd-ok-badge">✓ sin penalización</span></td>
+        <td class="bd-val bd-val-ok">0</td>
+      </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Divergencias en core</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar bd-bar-neg" style="width:68.8%"></div>
+          <div class="bd-bar bd-bar-neg" style="width:86.2%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-15.0<span class="bd-cap"> / -15</span></td>
+        <td class="bd-val bd-val-neg">-40.0<span class="bd-cap"> / -15</span></td>
       </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Módulos locales sin mantenimiento</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar bd-bar-neg" style="width:100.0%"></div>
+          <div class="bd-bar bd-bar-neg" style="width:43.1%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-21.8<span class="bd-cap"> / -23</span></td>
+        <td class="bd-val bd-val-neg">-20.0<span class="bd-cap"> / -20</span></td>
       </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Customizaciones</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar bd-bar-neg" style="width:4.6%"></div>
+          <div class="bd-bar bd-bar-neg" style="width:2.2%"></div>
         </td>
         <td class="bd-val bd-val-neg">-1.0<span class="bd-cap"> / -35</span></td>
       </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Divergencias en módulos locales mantenidos</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar bd-bar-neg" style="width:68.8%"></div>
+          <div class="bd-bar bd-bar-neg" style="width:100.0%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-15.0<span class="bd-cap"> / -15</span></td>
+        <td class="bd-val bd-val-neg">-46.4<span class="bd-cap"> / -10</span></td>
       </tr>
       <tr class="bd-row-sep"><td colspan="3"><div class="bd-sep-line"></div></td></tr>
       <tr class="bd-row-total">
         <td class="bd-label bd-label-total">Total penalizaciones</td>
         <td class="bd-bar-cell"></td>
-        <td class="bd-val bd-val-neg">-52.8</td>
+        <td class="bd-val bd-val-neg">-107.9<span class="bd-cap"> / -100</span></td>
       </tr>
       <tr class="bd-row-result">
         <td class="bd-label bd-label-result">Score final</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar bd-bar-result" style="width:47%;background:#f97316"></div>
+          <div class="bd-bar bd-bar-result" style="width:0%;background:#ef4444"></div>
         </td>
-        <td class="bd-val bd-val-result" style="color:#f97316">47</td>
+        <td class="bd-val bd-val-result" style="color:#ef4444">0</td>
       </tr>
   </tbody>
 </table>
@@ -2893,7 +2922,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   
 
-  <div class="footer">Generado por Etendo Migration Agent · 2026-03-30 15:30</div>
+  
+
+  <div class="footer">Generado por Etendo Migration Agent · 2026-04-09 08:27</div>
 </div>
 <script>
 function toggle(header) {

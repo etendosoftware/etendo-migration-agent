@@ -1,0 +1,41 @@
+{
+  "client": {
+    "name": "logalty",
+    "hostname": "facundo-IdeaPad-1-15ALC7"
+  },
+  "platform": {
+    "type": "openbravo",
+    "version": null
+  },
+  "modules": {
+    "gradle_jar": [],
+    "gradle_source": [],
+    "local_maintained": [],
+    "local_not_maintained": [],
+    "custom": []
+  },
+  "core_divergences": {
+    "status": "clean",
+    "base_version": "25.4.11",
+    "baseline_type": "zip",
+    "folders_checked": [],
+    "modified_files": 0,
+    "added_files": 0,
+    "deleted_files": 0,
+    "diff_lines_added": 0,
+    "diff_lines_removed": 0,
+    "files": []
+  },
+  "migration_score": 80,
+  "migratability": "easy",
+  "score_breakdown": {
+    "openbravo_platform": -20,
+    "core_divergences": 0,
+    "local_not_maintained": 0,
+    "custom_modules": 0,
+    "custom_modules_detail": [],
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
+  }
+}

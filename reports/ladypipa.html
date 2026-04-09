@@ -12,14 +12,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .page { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
 
 /* Header */
-.report-header { background: #1e293b; color: #f1f5f9; padding: 28px 32px;
-                 border-radius: 12px; margin-bottom: 24px; }
-.report-header h1 { font-size: 22px; font-weight: 700; }
-.report-header .sub { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+.report-header { background: #fff; border: 1px solid #e2e8f0; border-top: 4px solid #3b82f6;
+                 color: #0f172a; padding: 28px 32px; border-radius: 12px; margin-bottom: 24px; }
+.report-header h1 { font-size: 22px; font-weight: 700; color: #0f172a; }
+.report-header .sub { font-size: 13px; color: #6b7280; margin-top: 6px; }
 .header-meta { display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
 .meta-item { font-size: 13px; }
-.meta-item strong { color: #e2e8f0; }
-.meta-item span { color: #94a3b8; }
+.meta-item strong { color: #1e293b; }
+.meta-item span { color: #6b7280; }
 
 /* Cards */
 .card { background: #fff; border-radius: 10px; border: 1px solid #e2e8f0;
@@ -43,6 +43,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .bd-val { font-size: 12px; font-weight: 600; text-align: right; white-space: nowrap; }
 .bd-val-base { color: #22c55e; }
 .bd-val-neg  { color: #ef4444; }
+.bd-val-ok   { color: #22c55e; }
+.bd-ok-badge { font-size: 11px; color: #22c55e; font-weight: 500; }
+.bd-row-ok td { opacity: 0.75; }
 .bd-cap { font-size: 11px; font-weight: 400; color: #9ca3af; }
 .bd-val-result { font-size: 14px; }
 .bd-row-base td { padding-bottom: 8px; }
@@ -197,7 +200,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 /* ── Custom Assessor ────────────────────────────────────────────────────── */
 .asmnt-meta { font-size: 12px; color: #64748b; margin-bottom: 16px; }
 .asmnt-section-label { font-size: 11px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.5px; color: #94a3b8; margin: 18px 0 10px; }
+  letter-spacing: 0.5px; color: #6b7280; margin: 18px 0 10px; }
 .asmnt-badge { display: inline-block; padding: 2px 8px; border-radius: 4px;
   font-size: 11px; font-weight: 600; letter-spacing: 0.3px; }
 .asmnt-trivial  { background: #dcfce7; color: #166534; }
@@ -207,6 +210,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .asmnt-type     { background: #e0f2fe; color: #075985; }
 .asmnt-effort { font-size: 11px; color: #64748b; background: #f1f5f9;
   padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.asmnt-effort-upd  { background: #eff6ff; color: #1d4ed8; }
+.asmnt-effort-saas { background: #f0fdf4; color: #166534; }
+.asmnt-th-effort { font-size: 10px; }
 .asmnt-table { width: 100%; border-collapse: collapse; font-size: 13px; }
 .asmnt-table th { text-align: left; padding: 7px 10px; background: #f8fafc;
   color: #64748b; font-weight: 600; border-bottom: 2px solid #e2e8f0;
@@ -218,14 +224,31 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .asmnt-rec  { color: #0f172a; font-size: 12px; }
 .asmnt-row-high td { background: #fff5f5; }
 .asmnt-row-med  td { background: #fffbeb; }
-.asmnt-effort-box { background: #1e293b; color: #f1f5f9; border-radius: 8px;
+.asmnt-effort-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
   padding: 14px 20px; margin-top: 12px; display: flex; gap: 32px; flex-wrap: wrap; }
 .asmnt-stat { text-align: center; }
-.asmnt-stat-total { border-left: 1px solid #334155; padding-left: 32px; }
-.asmnt-stat-val       { font-size: 22px; font-weight: 700; color: #38bdf8; }
+.asmnt-stat-total { border-left: 1px solid #e2e8f0; padding-left: 32px; }
+.asmnt-stat-val       { font-size: 22px; font-weight: 700; color: #3b82f6; }
 .asmnt-stat-val-total { font-size: 22px; font-weight: 700; color: #f97316; }
-.asmnt-stat-lbl { font-size: 11px; color: #94a3b8; margin-top: 2px; }
-.asmnt-note { font-size: 11px; color: #94a3b8; margin-top: 10px; }
+.asmnt-stat-lbl { font-size: 11px; color: #6b7280; margin-top: 2px; }
+.asmnt-note { font-size: 11px; color: #6b7280; margin-top: 10px; }
+.asmnt-mx-tag { font-size: 11px; background: #eff6ff; color: #3b82f6; border: 1px solid #bfdbfe;
+  padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+.asmnt-elim-cand { background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+.asmnt-row-elim td { background: #fef9f9; opacity: 0.85; }
+.asmnt-upstream  { background: #d1fae5; color: #065f46; }
+.asmnt-already   { background: #dbeafe; color: #1e40af; }
+.asmnt-elim      { background: #fee2e2; color: #991b1b; }
+.asmnt-stat-saved { border-left: 2px solid #22c55e; padding-left: 12px; }
+.usage-score { font-size: 12px; white-space: nowrap; }
+.usage-score-null { color: #9ca3af; font-style: italic; font-size: 11px; }
+.usage-score-zero { background: #f1f5f9; color: #9ca3af; font-size: 10px; padding: 2px 6px; border-radius: 4px; }
+.usage-bar { height: 4px; background: #e5e7eb; border-radius: 2px; margin-top: 3px; width: 60px; }
+.usage-fill { height: 4px; border-radius: 2px; }
+.win-group { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 3px; }
+.win-tag { font-size: 10px; padding: 1px 5px; border-radius: 3px; }
+.win-used   { background: #d1fae5; color: #065f46; }
+.win-unused { background: #fee2e2; color: #991b1b; }
 </style>
 </head>
 <body>
@@ -236,11 +259,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     <div class="sub">Análisis de migración a SaaS</div>
     <div class="header-meta">
       <div class="meta-item"><span>Cliente </span><strong>Ladypipa</strong></div>
-      <div class="meta-item"><span>Hostname </span><strong>MacBook-Air-de-Isaias-2.local</strong></div>
+      <div class="meta-item"><span>Hostname </span><strong>LadypipaPRO</strong></div>
       <div class="meta-item"><span>Plataforma </span><strong>Etendo 24.2.6</strong></div>
-      <div class="meta-item"><span>Base de comparación </span><strong>vexpanded</strong></div>
-      <div class="meta-item"><span>Módulos totales </span><strong>155</strong></div>
-      <div class="meta-item"><span>Generado </span><strong>2026-03-30 15:30</strong></div>
+      <div class="meta-item"><span>Base de comparación </span><strong>v25.4.11</strong></div>
+      <div class="meta-item"><span>Módulos totales </span><strong>156</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-04-09 08:27</strong></div>
     </div>
   </div>
 
@@ -270,7 +293,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             <td>Mayor penalización que Gradle Sources porque no está gestionado como dependencia. Cada archivo divergente implica trabajo de análisis para determinar si es customización o desactualización.</td></tr>
         <tr><td><span class="cat-chip chip-nmnt">Local sin Mant.</span></td>
             <td>Módulo con código fuente en /modules/ que no aparece en el catálogo de Etendo. Puede ser de terceros, legacy de Openbravo, o un módulo abandonado.</td>
-            <td>−3 por módulo, independientemente del contenido (máximo −20)</td>
+            <td>−3 por módulo regular, −0.3 por pack de traducción (cap conjunto −20)</td>
             <td>Sin soporte oficial no hay ruta de actualización garantizada. Cada uno requiere evaluación manual para decidir si se reemplaza, se integra como customización, o se descarta.</td></tr>
         <tr><td><span class="cat-chip chip-cust">Customización</span></td>
             <td>Módulo desarrollado por o para el cliente (el java_package contiene el nombre del cliente o el segmento "custom"). Representa lógica de negocio propia.</td>
@@ -299,22 +322,23 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             <td>Desarrollo significativo. Alta complejidad de migración.</td></tr>
       </tbody>
     </table>
-    <p class="meth-note">Máximo global de customizaciones: −35. El LOC se cuenta sobre archivos de texto
-    (.java, .xml, .sql, .js, .css, .html, .properties, .gradle, etc.).</p>
+    <p class="meth-note">Cap global de customizaciones: −35. El LOC se cuenta sobre archivos de texto
+    (.java, .xml, .sql, .js, .css, .html, .properties, .gradle, etc.). Los packs de traducción penalizan −0.5 fijo sin importar el tamaño.</p>
   </div>
 
   <div class="meth-block">
     <div class="meth-title">Core y otros factores</div>
     <table class="meth-table">
-      <thead><tr><th>Factor</th><th>Penalización</th></tr></thead>
+      <thead><tr><th>Factor</th><th>Penalización</th><th>Cap</th></tr></thead>
       <tbody>
-        <tr><td>Plataforma Openbravo (sin build.gradle)</td><td>−20 fijo</td></tr>
-        <tr><td>Líneas de diferencia en core (por cada 100)</td><td>−0.5 (máximo −15)</td></tr>
+        <tr><td>Plataforma Openbravo (sin build.gradle)</td><td>−20 fijo</td><td>−20</td></tr>
+        <tr><td>Líneas de diferencia en core (por cada 100 líneas)</td><td>−0.5</td><td>−15</td></tr>
+        <tr><td>Módulos mantenidos con divergencias (por módulo)</td><td>−1 / −3 / −6 / −10 según volumen</td><td>−10</td></tr>
       </tbody>
     </table>
-    <p class="meth-note">Las diferencias en core incluyen tanto customizaciones como brecha de versión
-    (el cliente puede estar en una versión anterior a la base de comparación). El score parte de 100
-    y se le restan todas las penalizaciones.</p>
+    <p class="meth-note">El score parte de 100 y se le restan todas las penalizaciones. La penalización
+    máxima posible es <strong>−100</strong>, por lo que el score mínimo es 0. Los módulos Gradle Source
+    desactualizados y las dependencias JAR no penalizan — se resuelven con una actualización estándar.</p>
   </div>
 
   <div class="meth-block">
@@ -344,14 +368,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 <div class="score-ring-wrap">
   <svg viewBox="0 0 120 120" class="score-ring">
     <circle cx="60" cy="60" r="54" fill="none" stroke="#e5e7eb" stroke-width="10"/>
-    <circle cx="60" cy="60" r="54" fill="none" stroke="#f59e0b" stroke-width="10"
-      stroke-dasharray="213.8 125.5"
+    <circle cx="60" cy="60" r="54" fill="none" stroke="#f97316" stroke-width="10"
+      stroke-dasharray="173.0 166.3"
       stroke-dashoffset="84.8"
       stroke-linecap="round"/>
-    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#f59e0b">63</text>
+    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#f97316">51</text>
     <text x="60" y="73" text-anchor="middle" font-size="9" fill="#6b7280">/100</text>
   </svg>
-  <div class="score-label" style="color:#f59e0b">Moderada</div>
+  <div class="score-label" style="color:#f97316">Difícil</div>
 </div>
       <div class="score-right">
         <p style="font-size:13px;color:#475569;margin-bottom:12px;">Factores de penalización:</p>
@@ -362,6 +386,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <td class="bd-label">Puntuación base</td>
         <td class="bd-bar-cell"><div class="bd-bar bd-bar-base" style="width:100%"></div></td>
         <td class="bd-val bd-val-base">100</td>
+      </tr>
+      <tr class="bd-row-ok">
+        <td class="bd-label">Plataforma Openbravo</td>
+        <td class="bd-bar-cell"><span class="bd-ok-badge">✓ sin penalización</span></td>
+        <td class="bd-val bd-val-ok">0</td>
       </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Divergencias en core</td>
@@ -375,7 +404,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <td class="bd-bar-cell">
           <div class="bd-bar bd-bar-neg" style="width:100.0%"></div>
         </td>
-        <td class="bd-val bd-val-neg">-21.2<span class="bd-cap"> / -23</span></td>
+        <td class="bd-val bd-val-neg">-21.2<span class="bd-cap"> / -20</span></td>
       </tr>
       <tr class="bd-row-penalty">
         <td class="bd-label">Customizaciones</td>
@@ -384,18 +413,25 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         </td>
         <td class="bd-val bd-val-neg">-1.0<span class="bd-cap"> / -35</span></td>
       </tr>
+      <tr class="bd-row-penalty">
+        <td class="bd-label">Divergencias en módulos locales mantenidos</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar bd-bar-neg" style="width:56.6%"></div>
+        </td>
+        <td class="bd-val bd-val-neg">-12.0<span class="bd-cap"> / -10</span></td>
+      </tr>
       <tr class="bd-row-sep"><td colspan="3"><div class="bd-sep-line"></div></td></tr>
       <tr class="bd-row-total">
         <td class="bd-label bd-label-total">Total penalizaciones</td>
         <td class="bd-bar-cell"></td>
-        <td class="bd-val bd-val-neg">-37.2</td>
+        <td class="bd-val bd-val-neg">-49.2<span class="bd-cap"> / -100</span></td>
       </tr>
       <tr class="bd-row-result">
         <td class="bd-label bd-label-result">Score final</td>
         <td class="bd-bar-cell">
-          <div class="bd-bar bd-bar-result" style="width:63%;background:#f59e0b"></div>
+          <div class="bd-bar bd-bar-result" style="width:51%;background:#f97316"></div>
         </td>
-        <td class="bd-val bd-val-result" style="color:#f59e0b">63</td>
+        <td class="bd-val bd-val-result" style="color:#f97316">51</td>
       </tr>
   </tbody>
 </table>
@@ -404,7 +440,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   </div>
 
   <div class="card">
-    <h2>Módulos (155)</h2>
+    <h2>Módulos (156)</h2>
     <div class="module-pills">
       <div class="module-pill">
         <div class="pill-icon" style="color:#0ea5e9">⬡</div>
@@ -430,7 +466,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <div class="module-pill">
         <div class="pill-icon" style="color:#f97316">⚠</div>
         <div class="pill-info">
-          <strong style="color:#f97316">25</strong>
+          <strong style="color:#f97316">26</strong>
           <span>Módulos Locales sin Mantenimiento</span>
         </div>
       </div>
@@ -1558,12 +1594,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <span class='author'>Etendo Software</span>
         <span class='bundle'>com.etendoerp.financial.extensions.es_es</span>
         
-      <div class="mod-diff">
-        <span class="diff-badge df">0 con diferencias</span>
-        <span class="diff-badge add">+0 nuevos</span>
-        <span class="diff-badge del">-0 eliminados</span>
-        <span class="diff-badge lines">+0 / -0 líneas</span>
-      </div>
       </td>
     </tr>
     <tr class="mod-row">
@@ -1583,10 +1613,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
         
       <div class="mod-diff">
-        <span class="diff-badge df">13 con diferencias</span>
-        <span class="diff-badge add">+30 nuevos</span>
-        <span class="diff-badge del">-1 eliminados</span>
-        <span class="diff-badge lines">+222 / -90 líneas</span>
+        <span class="diff-badge df">47 con diferencias</span>
+        <span class="diff-badge add">+36 nuevos</span>
+        <span class="diff-badge del">-27 eliminados</span>
+        <span class="diff-badge lines">+962 / -1944 líneas</span>
       </div>
       </td>
     </tr>
@@ -1597,12 +1627,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <span class='author'>IMonferrer @ Opentix</span>
         <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
         
-      <div class="mod-diff">
-        <span class="diff-badge df">3 con diferencias</span>
-        <span class="diff-badge add">+27 nuevos</span>
-        <span class="diff-badge del">-2 eliminados</span>
-        <span class="diff-badge lines">+14 / -4 líneas</span>
-      </div>
       </td>
     </tr></tbody></table>
   </div>
@@ -1623,6 +1647,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <span class='author'>Etendo Software</span>
         <span class='bundle'>com.etendoerp.platform.extensions</span>
         
+      <div class="mod-diff">
+        <span class="diff-badge df">37 con diferencias</span>
+        <span class="diff-badge add">+55 nuevos</span>
+        <span class="diff-badge del">-27 eliminados</span>
+        <span class="diff-badge lines">+731 / -3018 líneas</span>
+      </div>
       </td>
     </tr>
     <tr class="mod-row">
@@ -1647,6 +1677,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <span class='author'>Openbravo S.L.U.</span>
         <span class='bundle'>com.etendoerp.warehouse.extensions</span>
         
+      <div class="mod-diff">
+        <span class="diff-badge df">29 con diferencias</span>
+        <span class="diff-badge add">+4 nuevos</span>
+        <span class="diff-badge del">-77 eliminados</span>
+        <span class="diff-badge lines">+1389 / -1827 líneas</span>
+      </div>
       </td>
     </tr>
     <tr class="mod-row">
@@ -1656,6 +1692,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         <span class='author'>Openbravo S.L.U.</span>
         <span class='bundle'>com.etendoerp.warehouse.extensions</span>
         
+      <div class="mod-diff">
+        <span class="diff-badge df">3 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-4 eliminados</span>
+        <span class="diff-badge lines">+2 / -5 líneas</span>
+      </div>
       </td>
     </tr></tbody></table>
   </div>
@@ -1664,11 +1706,20 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #f97316">
     <span class="cat-icon" style="color:#f97316">⚠</span>
     <span class="cat-label">Módulos Locales sin Mantenimiento</span>
-    <span class="cat-count" style="background:#f97316">25</span>
+    <span class="cat-count" style="background:#f97316">26</span>
     <span class="chevron">▾</span>
   </div>
   <div class="module-body">
     <table class='mod-table'><tbody>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.analytics.exporter</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.1</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        
+        
+      </td>
+    </tr>
     <tr class="mod-row">
       <td class="mod-pkg"><span class="pkg">com.openbravo.gps.finance.balanceexcelexport.report</span></td>
       <td class="mod-meta">
@@ -1924,18 +1975,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   </div>
 
   <div class="card">
-    <h2>Divergencias en core (vs vexpanded)</h2>
+    <h2>Divergencias en core (vs v25.4.11)</h2>
     
 <p class="core-note">
   Las diferencias incluyen tanto customizaciones como desactualización de versión.
-  Base de comparación: <strong>vexpanded</strong>.
+  Base de comparación: <strong>v25.4.11</strong>.
 </p>
 <div class="core-stats">
-  <div class="stat-pill"><strong>79</strong><span>con diferencias</span></div>
-  <div class="stat-pill"><strong>19</strong><span>archivos nuevos</span></div>
-  <div class="stat-pill"><strong>0</strong><span>archivos eliminados</span></div>
-  <div class="stat-pill add-pill"><strong>+3300</strong><span>líneas</span></div>
-  <div class="stat-pill del-pill"><strong>-625</strong><span>líneas</span></div>
+  <div class="stat-pill"><strong>700</strong><span>con diferencias</span></div>
+  <div class="stat-pill"><strong>22</strong><span>archivos nuevos</span></div>
+  <div class="stat-pill"><strong>53</strong><span>archivos eliminados</span></div>
+  <div class="stat-pill add-pill"><strong>+4408</strong><span>líneas</span></div>
+  <div class="stat-pill del-pill"><strong>-11772</strong><span>líneas</span></div>
 </div>
 <table class="file-table">
   <thead>
@@ -1943,135 +1994,183 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   </thead>
   <tbody>
     <tr>
+      <td class="file-path">src-db/database/sourcedata/AD_COLUMN.xml</td>
+      <td class="file-add">+27</td>
+      <td class="file-del">-2283</td>
+      <td class="file-total">2310</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-db/database/sourcedata/AD_FIELD.xml</td>
+      <td class="file-add">+24</td>
+      <td class="file-del">-1363</td>
+      <td class="file-total">1387</td>
+    </tr>
+    <tr>
       <td class="file-path">src-db/database/formalChangesScript.xml</td>
-      <td class="file-add">+1198</td>
-      <td class="file-del">-150</td>
-      <td class="file-total">1348</td>
+      <td class="file-add">+1244</td>
+      <td class="file-del">-96</td>
+      <td class="file-total">1340</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportSalesDimensionalAnalyzeJRFilter.html</td>
-      <td class="file-add">+42</td>
-      <td class="file-del">-23</td>
-      <td class="file-total">65</td>
+      <td class="file-path">modules_core/com.smf.securewebservices/src/com/smf/securewebservices/utils/SecureWebServicesUtils.java</td>
+      <td class="file-add">+153</td>
+      <td class="file-del">-505</td>
+      <td class="file-total">658</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesJRFilter.html</td>
-      <td class="file-add">+38</td>
-      <td class="file-del">-19</td>
-      <td class="file-total">57</td>
+      <td class="file-path">src/org/openbravo/common/datasource/StockReservationPickAndEditDataSource.java</td>
+      <td class="file-add">+238</td>
+      <td class="file-del">-306</td>
+      <td class="file-total">544</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderInvoicedJasper.html</td>
-      <td class="file-add">+36</td>
-      <td class="file-del">-20</td>
-      <td class="file-total">56</td>
+      <td class="file-path">modules_core/com.smf.jobs/src/com/smf/jobs/Action.java</td>
+      <td class="file-add">+156</td>
+      <td class="file-del">-254</td>
+      <td class="file-total">410</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/GeneralAccountingReports.html</td>
-      <td class="file-add">+34</td>
-      <td class="file-del">-18</td>
-      <td class="file-total">52</td>
+      <td class="file-path">src/org/openbravo/erpCommon/utility/reporting/printing/PrintController.java</td>
+      <td class="file-add">+74</td>
+      <td class="file-del">-309</td>
+      <td class="file-total">383</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorDimensionalAnalysesFilterJR.html</td>
-      <td class="file-add">+28</td>
-      <td class="file-del">-15</td>
-      <td class="file-total">43</td>
+      <td class="file-path">src-db/database/sourcedata/OBUISEL_SELECTOR_FIELD.xml</td>
+      <td class="file-add">+3</td>
+      <td class="file-del">-345</td>
+      <td class="file-total">348</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderProvidedJR.html</td>
-      <td class="file-add">+28</td>
-      <td class="file-del">-14</td>
-      <td class="file-total">42</td>
+      <td class="file-path">modules_core/com.smf.securewebservices/src/com/smf/securewebservices/service/BaseSecureWebServiceServlet.java</td>
+      <td class="file-add">+171</td>
+      <td class="file-del">-175</td>
+      <td class="file-total">346</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_process/CashBankOperations.html</td>
-      <td class="file-add">+26</td>
-      <td class="file-del">-15</td>
-      <td class="file-total">41</td>
+      <td class="file-path">src-db/database/model/functions/M_INOUT_POST.xml</td>
+      <td class="file-add">+39</td>
+      <td class="file-del">-241</td>
+      <td class="file-total">280</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportShipmentDimensionalAnalyzeJRFilter.html</td>
-      <td class="file-add">+24</td>
-      <td class="file-del">-14</td>
-      <td class="file-total">38</td>
+      <td class="file-path">src-db/database/model/functions/C_INVOICE_POST.xml</td>
+      <td class="file-add">+19</td>
+      <td class="file-del">-238</td>
+      <td class="file-total">257</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportAssetDepreciationSchedule.html</td>
-      <td class="file-add">+23</td>
-      <td class="file-del">-14</td>
-      <td class="file-total">37</td>
+      <td class="file-path">modules_core/org.openbravo.client.application/web/org.openbravo.client.application/js/process/ob-parameter-window-view.js</td>
+      <td class="file-add">+90</td>
+      <td class="file-del">-162</td>
+      <td class="file-total">252</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportDebtPayment.html</td>
-      <td class="file-add">+23</td>
-      <td class="file-del">-13</td>
-      <td class="file-total">36</td>
+      <td class="file-path">src-db/database/sourcedata/AD_TEXTINTERFACES.xml</td>
+      <td class="file-add">+132</td>
+      <td class="file-del">-77</td>
+      <td class="file-total">209</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportProjectProfitabilityJR.html</td>
-      <td class="file-add">+23</td>
-      <td class="file-del">-13</td>
-      <td class="file-total">36</td>
+      <td class="file-path">src-db/database/sourcedata/AD_MESSAGE.xml</td>
+      <td class="file-add">+5</td>
+      <td class="file-del">-183</td>
+      <td class="file-total">188</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/org.openbravo.financial.paymentreport/src/org/openbravo/financial/paymentreport/erpCommon/ad_reports/PaymentReport.html</td>
-      <td class="file-add">+24</td>
-      <td class="file-del">-12</td>
-      <td class="file-total">36</td>
+      <td class="file-path">modules_core/org.openbravo.client.application/src/org/openbravo/client/application/process/BaseProcessActionHandler.java</td>
+      <td class="file-add">+5</td>
+      <td class="file-del">-163</td>
+      <td class="file-total">168</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportPurchaseDimensionalAnalysesFilterJR.html</td>
-      <td class="file-add">+22</td>
-      <td class="file-del">-12</td>
-      <td class="file-total">34</td>
+      <td class="file-path">src-db/database/sourcedata/AD_REF_SEARCH_COLUMN.xml</td>
+      <td class="file-add">+0</td>
+      <td class="file-del">-164</td>
+      <td class="file-total">164</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportOrderNotInvoiceFilterJR.html</td>
-      <td class="file-add">+20</td>
-      <td class="file-del">-12</td>
-      <td class="file-total">32</td>
+      <td class="file-path">modules_core/org.openbravo.advpaymentmngt/web/org.openbravo.advpaymentmngt/js/ob-aprm-addPayment.js</td>
+      <td class="file-add">+9</td>
+      <td class="file-del">-155</td>
+      <td class="file-total">164</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportMaterialDimensionalAnalysesFilterJR.html</td>
-      <td class="file-add">+20</td>
-      <td class="file-del">-10</td>
-      <td class="file-total">30</td>
+      <td class="file-path">src-db/database/sourcedata/AD_TAB.xml</td>
+      <td class="file-add">+0</td>
+      <td class="file-del">-160</td>
+      <td class="file-total">160</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportProjectBuildingSiteJR.html</td>
-      <td class="file-add">+18</td>
-      <td class="file-del">-11</td>
-      <td class="file-total">29</td>
+      <td class="file-path">src/org/openbravo/base/secureApp/LoginHandler.java</td>
+      <td class="file-add">+83</td>
+      <td class="file-del">-76</td>
+      <td class="file-total">159</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportStandardCostJRFilter.html</td>
-      <td class="file-add">+18</td>
-      <td class="file-del">-11</td>
-      <td class="file-total">29</td>
+      <td class="file-path">modules_core/org.openbravo.client.application/src/org/openbravo/client/application/report/BaseReportActionHandler.java</td>
+      <td class="file-add">+13</td>
+      <td class="file-del">-146</td>
+      <td class="file-total">159</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_reports/ReportInvoicesJR.html</td>
-      <td class="file-add">+17</td>
-      <td class="file-del">-10</td>
-      <td class="file-total">27</td>
-    </tr>
-    <tr>
-      <td class="file-path">src/org/openbravo/erpCommon/ad_forms/RequisitionToOrderCreate.html</td>
-      <td class="file-add">+20</td>
-      <td class="file-del">-6</td>
-      <td class="file-total">26</td>
-    </tr>
-    <tr>
-      <td class="file-path">src/org/openbravo/common/hooks/PrintControllerHookPrioritizer.java <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src/org/openbravo/common/hooks/DataSourceFilterHook.java <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/common/hooks/PrintControllerHook.java <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src/org/openbravo/common/datasource/StockSelectorDispatcherHQLTransformer.java <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">src/org/openbravo/common/hooks/PrintControllerHookManager.java <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src/org/openbravo/materialmgmt/refinventory/StockSelectorFilterProvider.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/materialmgmt/refinventory/DefaultProcessorProvider.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/materialmgmt/refinventory/RefInvProcessorProvider.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/materialmgmt/refinventory/DefaultBoxFilterProvider.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/hook/ShipmentLinesFromReservationHookManager.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/hook/ShipmentLinesFromReservationHook.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/ad_callouts/BusinessPartnerDocTypeValidation.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/ad_process/SalesMatchingHistory.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/businessUtility/BpDocTypeResolver.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/businessUtility/BpDocTypeUtils.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/event/LandedCostDuplicateReceiptValidator.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/event/BPartnerDocTypeEventHandler.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/com/etendoerp/common/rest/MessagesTrlWebService.java <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
@@ -2079,406 +2178,249 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">src-db/.DS_Store <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src-db/database/model/functions/C_BP_GET_DOCTYPE.xml <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">src-db/database/.DS_Store <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src-db/database/model/functions/M_GET_NO_TRX_PRD_COST_LATEST.xml <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">src-core/.DS_Store <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src-db/database/model/triggers/C_CANCELPRICEAD_TO_INVOICE.xml <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/.DS_Store <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src-db/database/model/triggers/M_MATCHSI_TRG.xml <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/org.openbravo.client.kernel/src/org/openbravo/client/kernel/reference/ProcessFileUploadUIDefinition.java <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src-db/database/model/triggers/M_MATCHSO_TRG.xml <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/org.openbravo.client.application/web/org.openbravo.client.application/js/form/formitem/ob-formitem-processfileupload.js <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src-db/database/model/tables/M_MATCHSI.xml <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/org.openbravo.client.application/src-db/database/model/triggers/OBUIAPP_PROCESS_MOD_TRG.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src-db/database/model/tables/C_BPARTNER_DOCTYPE.xml <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/org.openbravo.client.application/src-test/org/openbravo/client/application/test/db/model/triggers/ProcessTest.java <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src-db/database/model/tables/M_MATCHSO.xml <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/org.openbravo.client.application/src/org/openbravo/client/application/event/FileUploadColumnEventHandler.java <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src-db/database/lib/commons-collections-3.2.2.jar <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/com.smf.jobs.defaults/src/com/smf/jobs/defaults/Utils/ProcessUtils.java <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">src-db/database/lib/dbsourcemanager.jar <span class="status-badge status-added">nuevo</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_PREFERENCE.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">modules_core/org.openbravo.client.application/src/org/openbravo/client/application/process/dto/TrlButtonDTO.java <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REFERENCE.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">modules_core/com.etendoerp.client.application/web/com.etendoerp.client.application/js/sales-order-tab-link.js <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REF_LIST.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">modules_core/com.etendoerp.client.application/web/com.etendoerp.client.application/js/direct-tab-link.js <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">src-trl/.DS_Store <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">modules_core/com.etendoerp.client.application/src/com/etendoerp/client/application/UIComponentProvider.java <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr>
     <tr>
-      <td class="file-path">src-util/.DS_Store <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-path">modules_core/com.etendoerp.client.application/src-db/database/sourcedata/AD_MODULE_DBPREFIX.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.client.application/src-db/database/sourcedata/AD_MODULE_DEPENDENCY.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.client.application/src-db/database/sourcedata/AD_MODULE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.client.application/src-db/database/sourcedata/AD_PACKAGE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/hqlinjections/AccountingFactEndYearTransformer.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/test/commons-lang-2.6.jar <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/llms.txt <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/src/com/smf/jobs/interfaces/PreActionHook.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/src/com/smf/jobs/interfaces/PostActionHook.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/src-db/database/sourcedata/AD_DATASET_TABLE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/lib/runtime/httpmime-4.5.5.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/lib/runtime/httpclient-4.5.5.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/lib/runtime/httpcore-4.4.9.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/lib/runtime/rsql-parser-2.1.0.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/lib/runtime/java-jwt-3.1.0.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/jboss-annotations-api_1.3_spec-1.0.0.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/weld-spi-3.1.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/jboss-interceptors-api_1.2_spec-1.0.0.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/jboss-classfilewriter-1.2.4.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/weld-core-impl-3.1.1.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/cdi-api-2.0.SP1.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/weld-environment-common-3.1.1.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.base.weld/lib/runtime/weld-servlet-core-3.1.1.Final.jar <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-util/modulescript/src/com.etendoerp.legacy.advancedpaymentmngt.modulescript/RenameSequenceFunctions.java <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/build/classes/com/etendoerp/legacy/advancedpaymentmngt/modulescript/RenameSequenceFunctions.class <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/excludeFilter.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_NEXT.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_DOCTYPE.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_DOC.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_NEXTNO.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/RemoveCostingRuleProcessExecutionsData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/User1ReadyData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicatedPriceListVersionData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/PreferenceConflictData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicatedJavaPackageData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/AccountingTabsData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicatedOrgModuleDatasetsData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicatedClientWarehouseValueData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DatabaseDecimalNumberCheckData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/PaymentGLItemCheckData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DatabaseVersionCheckData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicatedCharacteristicNameData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/GLJournalAccountingCheckData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/javasqlc/src/org/openbravo/buildvalidation/DuplicateDocExchangeRateData.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src-util/buildvalidation/build/classes/org/openbravo/buildvalidation/RemoveRebuildAppender.class <span class="status-badge status-deleted">eliminado</span></td>
       <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
     </tr></tbody>
 </table>
   </div>
 
   
-  <div class="card">
-    <h2>🔬 Análisis de Customizaciones</h2>
-    <p class="asmnt-meta">
-      Generado por <strong>etendo-custom-assessor v1.0</strong>
-      · 2026-03-30
-    </p>
-    
-      <div class="asmnt-section-label">1 · Modificaciones al Core</div>
-      <table class="asmnt-table">
-        <thead><tr>
-          <th>Customización</th><th>Tipo</th><th>Complejidad</th>
-          <th>Esfuerzo</th><th>Acción recomendada</th>
-        </tr></thead>
-        <tbody>
-          <tr>
-            <td>
-              <strong>Script de cambios formales de base de datos</strong>
-              <div class="asmnt-desc">Archivo XML autogenerado por las herramientas de exportación de Etendo que registra los cambios formales acumulados en el esquema de base de datos (ALTER TABLE, triggers, índices) a lo largo de los ciclos de desarrollo en esta instancia. Contiene 1.198 líneas añadidas y 150 eliminadas.</div>
-            </td>
-            <td><span class="asmnt-badge asmnt-type"></span></td>
-            <td><span class="asmnt-badge asmnt-minor">Minor</span></td>
-            <td><span class="asmnt-effort">0 días</span></td>
-            <td class="asmnt-rec"></td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Framework de Hooks para el Controlador de Impresión</strong>
-              <div class="asmnt-desc">Añade un sistema de extensión basado en CDI para el flujo de impresión de documentos. Define la interfaz PrintControllerHook con métodos preProcess/postProcess, una clase abstracta PrintControllerHookPrioritizer para controlar el orden de ejecución, y un PrintControllerHookManager que recopila, ordena por prioridad e invoca todos los hooks registrados, gestionando errores mediante PrintControllerHookException.</div>
-            </td>
-            <td><span class="asmnt-badge asmnt-type"></span></td>
-            <td><span class="asmnt-badge asmnt-minor">Minor</span></td>
-            <td><span class="asmnt-effort">2-3 días</span></td>
-            <td class="asmnt-rec"></td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Referencia de tipo 'Carga de Fichero' para Definiciones de Proceso</strong>
-              <div class="asmnt-desc">Añade soporte para parámetros de carga de fichero en los formularios de Definición de Proceso. Incluye: un widget SmartClient (OBProcessFileUpload) con validación de tamaño máximo configurable mediante preferencia de sistema, una clase Java UIDefinition para registrar el tipo de widget, y un manejador de eventos que impide asignar la referencia de carga de fichero a columnas de ventanas estándar (solo está disponible para parámetros de ProcessDefinition).</div>
-            </td>
-            <td><span class="asmnt-badge asmnt-type"></span></td>
-            <td><span class="asmnt-badge asmnt-minor">Minor</span></td>
-            <td><span class="asmnt-effort">1-2 días</span></td>
-            <td class="asmnt-rec"></td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Trigger de integridad de módulo OBUIAPP_PROCESS_MOD_TRG (modificado)</strong>
-              <div class="asmnt-desc">Modificación del trigger de la tabla OBUIAPP_PROCESS que protege la integridad durante el desarrollo de módulos. El cambio añade la columna EM_SMFMU_Scan a la lista de campos que no pueden modificarse cuando un módulo no está en modo desarrollo, junto con una clase de prueba unitaria (ProcessTest.java) con 540 líneas.</div>
-            </td>
-            <td><span class="asmnt-badge asmnt-type"></span></td>
-            <td><span class="asmnt-badge asmnt-minor">Minor</span></td>
-            <td><span class="asmnt-effort">1-2 días</span></td>
-            <td class="asmnt-rec"></td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Clase utilitaria ProcessUtils para SMF Jobs Defaults</strong>
-              <div class="asmnt-desc">Añade una clase utilitaria estática ProcessUtils al módulo com.smf.jobs.defaults con dos métodos reutilizables: massiveMessageHandler (consolida el resultado de éxito/error/aviso de un job cuando procesa múltiples registros) y updateResult (incrementa contadores de errores o éxitos según el tipo de mensaje OBError).</div>
-            </td>
-            <td><span class="asmnt-badge asmnt-type"></span></td>
-            <td><span class="asmnt-badge asmnt-minor">Minor</span></td>
-            <td><span class="asmnt-effort">1 día</span></td>
-            <td class="asmnt-rec"></td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Configuración del algoritmo de cifrado JWT en Secure Web Services</strong>
-              <div class="asmnt-desc">Añade una nueva referencia de lista 'Algoritmo de Cifrado' (valores HS256 / ES256) y una preferencia de sistema SMFSWS_EncryptionAlgorithm (con valor por defecto ES256) al módulo com.smf.securewebservices, permitiendo a los administradores seleccionar el algoritmo de firma JWT desde el Diccionario de Aplicación en lugar de tenerlo codificado de forma fija.</div>
-            </td>
-            <td><span class="asmnt-badge asmnt-type"></span></td>
-            <td><span class="asmnt-badge asmnt-minor">Minor</span></td>
-            <td><span class="asmnt-effort">0.5 días</span></td>
-            <td class="asmnt-rec"></td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Plantillas HTML legacy de filtros para informes Jasper (ad_reports / ad_forms)</strong>
-              <div class="asmnt-desc">Aproximadamente 80 ficheros HTML de pantallas de filtro para informes Jasper clásicos han sido modificados. El cambio predominante en todos los ficheros es añadir un selector obligatorio de Organización (inpOrg / inpOrganizacion) a los formularios de filtro de informes, junto con su validación JavaScript correspondiente. Afecta a informes de ventas, compras, finanzas, almacén y producción.</div>
-            </td>
-            <td><span class="asmnt-badge asmnt-type"></span></td>
-            <td><span class="asmnt-badge asmnt-minor">Minor</span></td>
-            <td><span class="asmnt-effort">3-5 días</span></td>
-            <td class="asmnt-rec"></td>
-          </tr></tbody>
-      </table>
-    
-      <div class="asmnt-section-label">2 · Módulos Custom</div>
-      <table class="asmnt-table">
-        <thead><tr>
-          <th>Módulo</th><th>Función</th><th>Riesgo</th>
-          <th>Esfuerzo</th><th>Recomendación</th>
-        </tr></thead>
-        <tbody>
-          <tr class="">
-            <td><strong>com.smf.ladypipa.template</strong></td>
-            <td></td>
-            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
-            <td><span class="asmnt-effort">0.5-1 día</span></td>
-            <td class="asmnt-rec">Revisar la sobreescritura del ID de ventana en configScript.xml durante la migración: si la ventana 800001 ya no existe en el entorno actualizado, esta sobreescritura quedará resuelta por la actualización o causará un error de migración. Validar y eliminar una vez confirmada la asignación de ventana correcta en la nueva versión.</td>
-          </tr></tbody>
-      </table>
-    
-      <div class="asmnt-section-label">3 · Módulos sin Mantenimiento</div>
-      <table class="asmnt-table">
-        <thead><tr>
-          <th>Módulo</th><th>Función</th><th>Riesgo</th>
-          <th>Reemplazo</th><th>Esfuerzo</th><th>Recomendación</th>
-        </tr></thead>
-        <tbody>
-          <tr class=" asmnt-row-med">
-            <td><strong>com.openbravo.gps.finance.balanceexcelexport.report</strong></td>
-            <td>Exporta los estados financieros de Pérdidas y Ganancias y Balance de Situación a formato Excel mediante Apache POI.</td>
-            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">3-5 días</span></td>
-            <td class="asmnt-rec">Evaluar si Financial Reports Advanced (ya instalado) cubre la exportación a Excel requerida. Si la cobertura es completa, dar de baja este módulo. Si se necesita un formato específico de árbol contable, migrar la lógica como extensión de informe dentro del bundle Financial Extensions.</td>
-          </tr>
-          <tr class="">
-            <td><strong>com.openbravo.gps.finance.balanceexcelexport.report.es_es</strong></td>
-            <td>Módulo de traducción al español del módulo de exportación de PyG y Balance a Excel.</td>
-            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">0 días</span></td>
-            <td class="asmnt-rec">Eliminar junto con su módulo padre; no requiere migración independiente.</td>
-          </tr>
-          <tr class=" asmnt-row-med">
-            <td><strong>com.openbravo.gps.idl.invoices</strong></td>
-            <td>Proporciona funcionalidad de importación masiva de registros de facturas mediante el framework IDL.</td>
-            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">2-3 días</span></td>
-            <td class="asmnt-rec">Depende de org.openbravo.idl (también sin mantenimiento). Evaluar si la importación de facturas sigue en uso operativo; en caso afirmativo, migrar la lógica de importación a un módulo de integración Etendo o utilizar la API REST para la ingesta de datos.</td>
-          </tr>
-          <tr class=" asmnt-row-med">
-            <td><strong>com.openbravo.gps.idl.orders</strong></td>
-            <td>Proporciona funcionalidad de importación masiva de pedidos de venta y compra mediante el framework IDL.</td>
-            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">2-3 días</span></td>
-            <td class="asmnt-rec">Misma cadena de dependencias que IDL Facturas. Evaluar el uso actual y, si sigue siendo necesario, migrar la lógica de importación de pedidos a la API REST o a un conector ETL mantenido.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>com.practicsbs.shopify</strong></td>
-            <td>Conector bidireccional Etendo–Shopify que sincroniza productos, clientes, inventario, pedidos, devoluciones y tarjetas regalo entre el ERP Etendo y la plataforma de e-commerce Shopify mediante las APIs REST y GraphQL de Shopify.</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">10-15 días</span></td>
-            <td class="asmnt-rec">Se trata de una integración de gran tamaño (51 clases Java) que cubre un flujo de negocio crítico para Ladypipa. Las opciones son: (a) mantenerla como módulo Etendo independiente actualizado a las nuevas APIs del core, o (b) evaluar el framework de Conectores Etendo / EtendoRX como destino de migración. Las consultas GraphQL y los manejadores de webhooks deben auditarse por compatibilidad con los cambios de versión de la API de Shopify. Mínimo 10 días para migrar y volver a probar el flujo completo extremo a extremo.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>com.practicsbs.shopify.template</strong></td>
-            <td>Módulo plantilla (Type=T) que empaqueta los datos de configuración de la integración Shopify: listas de referencia, preferencias y configuraciones de ventana específicas de la instalación Shopify de este cliente.</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">1-2 días</span></td>
-            <td class="asmnt-rec">Migrar junto con el módulo principal de Shopify; toda la configuración debe revalidarse contra el entorno actualizado. Mantener como módulo plantilla del cliente.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>com.smf.edicom</strong></td>
-            <td>Integra Etendo con la plataforma EDI de Edicom mediante servicios web SOAP, permitiendo el intercambio automatizado de facturas electrónicas, pedidos y albaranes en formato EDI.</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">5-8 días</span></td>
-            <td class="asmnt-rec">Es un conector operativo clave (7 clases Java con cliente SOAP completo). Verificar si Edicom ha actualizado su API SOAP desde la construcción de este módulo; en caso afirmativo, el SOAPManager requerirá actualizaciones. Migrar empaquetándolo como módulo Etendo mantenido con control de versiones y probar todos los tipos de documentos EDI en un entorno de preproducción.</td>
-          </tr>
-          <tr class=" asmnt-row-med">
-            <td><strong>com.smf.edicom.csv</strong></td>
-            <td>Extensión del módulo SMF EDI que gestiona el análisis y procesamiento de documentos EDI en formato CSV.</td>
-            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">1-2 días</span></td>
-            <td class="asmnt-rec">Migrar junto con com.smf.edicom como subcomponente. Depende de org.openbravo.utility.opencsv.</td>
-          </tr>
-          <tr class=" asmnt-row-med">
-            <td><strong>eu.practics.javaextensionpoints</strong></td>
-            <td>Proporciona un mecanismo de punto de extensión basado en base de datos que permite invocar listas ordenadas de clases Java en tiempo de ejecución sin modificar el código fuente, similar a un registro de plugins/estrategias almacenado en el Diccionario de Aplicación.</td>
-            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">3-5 días</span></td>
-            <td class="asmnt-rec">Este módulo implementa un patrón que ahora está cubierto de forma nativa por el framework de hooks CDI de Etendo. Auditar todos los lugares del código que llaman a JavaExtensionPointExecutor.call() y refactorizarlos para usar interfaces de hook inyectadas por CDI. Dar de baja este módulo una vez completada la migración.</td>
-          </tr>
-          <tr class=" asmnt-row-med">
-            <td><strong>eu.practics.mailogger</strong></td>
-            <td>Proporciona una librería reutilizable de notificaciones por correo electrónico para procesos en segundo plano: recopila entradas de log de información, aviso y error durante la ejecución y envía un resumen HTML formateado a los destinatarios configurados al finalizar.</td>
-            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">2-3 días</span></td>
-            <td class="asmnt-rec">Es una utilidad bien diseñada y autocontenida sin lógica específica del cliente. Podría contribuirse a la Comunidad Etendo como módulo auxiliar de notificaciones. Para la migración, reempaquetarlo como módulo Etendo mantenido; el código de envío de correo debe auditarse contra la API EmailManager actual de Etendo.</td>
-          </tr>
-          <tr class=" asmnt-row-med">
-            <td><strong>org.openbravo.bankstatement.importer.generic.csv</strong></td>
-            <td>Importa registros de extractos bancarios en Etendo desde ficheros CSV genéricos, permitiendo la conciliación bancaria automatizada desde cualquier banco que exporte extractos en CSV.</td>
-            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">2-3 días</span></td>
-            <td class="asmnt-rec">Advanced Bank Account Management (ya instalado) cubre la importación de extractos bancarios CSV de forma nativa. Validar el formato CSV soportado por el módulo oficial contra los formatos bancarios en uso; si son compatibles, dar de baja este módulo y configurar el importador oficial.</td>
-          </tr>
-          <tr class="">
-            <td><strong>org.openbravo.bankstatement.importer.generic.csv.es_es</strong></td>
-            <td>Traducción al español (ES) del módulo importador genérico de extractos bancarios CSV.</td>
-            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">0 días</span></td>
-            <td class="asmnt-rec">Eliminar junto con el módulo padre.</td>
-          </tr>
-          <tr class=" asmnt-row-med">
-            <td><strong>org.openbravo.financialmgmt.accounting.report.notposted</strong></td>
-            <td>Proporciona un informe y fuente de datos que lista todos los documentos contables que aún no han sido contabilizados en el libro mayor, ayudando a los contables a identificar atrasos en la contabilización.</td>
-            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">1-2 días</span></td>
-            <td class="asmnt-rec">El bundle Financial Reports Advanced (ya instalado) incluye una vista equivalente de Transacciones No Contabilizadas. Verificar la cobertura y dar de baja este módulo para eliminar una deuda técnica de mantenimiento.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>org.openbravo.idl</strong></td>
-            <td>Módulo framework principal para la importación masiva de datos maestros y transaccionales (productos, socios comerciales, facturas, pedidos) en Etendo desde fuentes externas mediante un motor de importación basado en XML/CSV.</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">5-8 días</span></td>
-            <td class="asmnt-rec">Este módulo de la era Openbravo (44 clases Java) no tiene un sustituto directo mantenido por Etendo. Si las importaciones masivas de datos siguen en uso operativo activo, migrar a un enfoque de integración moderno usando la API REST de Etendo o flujos EtendoRX. Si se usó solo para migraciones puntuales de datos históricos, documentar el proceso y archivar el módulo sin migración.</td>
-          </tr>
-          <tr class="">
-            <td><strong>org.openbravo.idl.translation.es_ES</strong></td>
-            <td>Traducción al español (ES) del framework IDL.</td>
-            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">0 días</span></td>
-            <td class="asmnt-rec">Eliminar junto con el módulo padre.</td>
-          </tr>
-          <tr class=" asmnt-row-med">
-            <td><strong>org.openbravo.materialmgmt.freightmgmt</strong></td>
-            <td>Gestiona los costes de transporte, transportistas y el cálculo/asignación de gastos de envío en pedidos de venta y albaranes.</td>
-            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">3-5 días</span></td>
-            <td class="asmnt-rec">No existe un sustituto oficial de Etendo para la gestión de portes en este momento. Migrar como módulo independiente mantenido; revisar todos los patrones de servlet y acceso a datos por compatibilidad con los cambios de API del core Etendo 24.x.</td>
-          </tr>
-          <tr class="">
-            <td><strong>org.openbravo.materialmgmt.freightmgmt.es_es</strong></td>
-            <td>Traducción al español (ES) del módulo de Gestión de Portes y Transporte.</td>
-            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">0 días</span></td>
-            <td class="asmnt-rec">Migrar junto con el módulo padre.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>org.openbravo.module.idljava</strong></td>
-            <td>Extiende el framework IDL con procesadores de importación escritos en Java, permitiendo lógica de transformación programática durante las operaciones de carga de datos.</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">1-2 días</span></td>
-            <td class="asmnt-rec">Estrechamente acoplado a org.openbravo.idl. Migrar o archivar junto con el módulo IDL principal.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>org.openbravo.module.invoicematchingalgorithm</strong></td>
-            <td>Proporciona un algoritmo mejorado de conciliación factura-pago que mejora la reconciliación automática de facturas con pagos bancarios más allá de la lógica estándar de Etendo.</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">2-3 días</span></td>
-            <td class="asmnt-rec">El módulo Advanced Business Partner Settlement (ya instalado) proporciona capacidades mejoradas de conciliación de pagos. Validar que su comportamiento cubre los casos de uso gestionados por este módulo legacy y luego darlo de baja.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>org.openbravo.module.sepamatchingalgorithm</strong></td>
-            <td>Algoritmo especializado de conciliación de pagos para entradas de extracto bancario en formato SEPA, que analiza los campos de referencia SEPA para asociar automáticamente pagos con facturas.</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">2-3 días</span></td>
-            <td class="asmnt-rec">Automated Remittance y Advanced Bank Account Management (ambos ya instalados) gestionan la remesa y conciliación basada en SEPA. Verificar la cobertura de todos los casos de uso SEPA y dar de baja este módulo legacy.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>org.openbravo.sepa.iso20022</strong></td>
-            <td>Módulo framework base SEPA ISO 20022 que proporciona utilidades compartidas, constructores de mensajes y modelos de datos utilizados por todos los submódulos SEPA (transferencia de crédito, adeudo directo, extracto bancario).</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">3-5 días</span></td>
-            <td class="asmnt-rec">El bundle Automated Remittance (ya instalado) incluye soporte nativo para SEPA ISO 20022. Migrar toda la funcionalidad SEPA al bundle oficial y dar de baja los cuatro módulos SEPA legacy como grupo, tras realizar pruebas de aceptación exhaustivas sobre los ciclos de pago SEPA.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>org.openbravo.sepa.iso20022.camt</strong></td>
-            <td>Analiza e importa ficheros XML de extracto bancario SEPA CAMT.053 (más de 90 clases Java JAXB) para reconciliar transacciones bancarias con los pagos de Etendo.</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">3-5 días</span></td>
-            <td class="asmnt-rec">Advanced Bank Account Management soporta la importación de extractos CAMT. Migrar el procesamiento CAMT al módulo oficial; es el componente SEPA legacy de mayor complejidad y requiere pruebas de regresión exhaustivas sobre la importación de extractos bancarios.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>org.openbravo.sepa.iso20022.coredirectdebit.customertobank</strong></td>
-            <td>Genera ficheros XML SEPA Direct Debit PAIN.008 (esquemas CORE y B2B) para el envío de remesas de adeudo directo al banco.</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">3-5 días</span></td>
-            <td class="asmnt-rec">Dar de baja tras confirmar que Automated Remittance cubre la generación de ficheros de adeudo directo CORE y B2B en los formatos requeridos por el banco de Ladypipa.</td>
-          </tr>
-          <tr class=" asmnt-row-high">
-            <td><strong>org.openbravo.sepa.iso20022.credittransfer.customertobank</strong></td>
-            <td>Genera ficheros XML SEPA Credit Transfer PAIN.001 para el envío de órdenes de pago masivas al banco.</td>
-            <td><span class="asmnt-badge asmnt-major">High</span></td>
-            <td style="text-align:center;font-size:14px">✅</td>
-            <td><span class="asmnt-effort">3-5 días</span></td>
-            <td class="asmnt-rec">Dar de baja tras confirmar que Automated Remittance genera ficheros PAIN.001 en el formato aceptado por el banco de Ladypipa.</td>
-          </tr>
-          <tr class="">
-            <td><strong>org.openbravo.utility.opencsv</strong></td>
-            <td>Empaqueta la librería OpenCSV como módulo Etendo, proporcionando utilidades de análisis y escritura CSV a otros módulos (utilizado por Edicom CSV e importadores de extractos bancarios).</td>
-            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
-            <td style="text-align:center;font-size:14px">❌</td>
-            <td><span class="asmnt-effort">0.5 días</span></td>
-            <td class="asmnt-rec">OpenCSV está disponible como dependencia estándar Maven/Gradle en Etendo 24.x. Reemplazar la dependencia de módulo con una dependencia Gradle directa sobre opencsv y dar de baja este módulo envoltorio.</td>
-          </tr></tbody>
-      </table>
-    
-      <div class="asmnt-section-label" style="margin-top:24px">Esfuerzo Total Estimado</div>
-      <div class="asmnt-effort-box">
-        <div class="asmnt-stat">
-          <div class="asmnt-stat-val">8–12</div>
-          <div class="asmnt-stat-lbl">días · Core</div>
-        </div>
-        <div class="asmnt-stat">
-          <div class="asmnt-stat-val">0–1</div>
-          <div class="asmnt-stat-lbl">días · Módulos custom</div>
-        </div>
-        <div class="asmnt-stat">
-          <div class="asmnt-stat-val">54–82</div>
-          <div class="asmnt-stat-lbl">días · Sin mantenimiento</div>
-        </div>
-        <div class="asmnt-stat asmnt-stat-total">
-          <div class="asmnt-stat-val-total">62–96</div>
-          <div class="asmnt-stat-lbl">días · Total</div>
-        </div>
-      </div>
-      <p class="asmnt-note">
-        * Días de desarrollo para un desarrollador Etendo con experiencia.
-        Rango bajo = módulo oficial de reemplazo disponible. Rango alto = desarrollo desde cero.
-      </p>
-  </div>
 
-  <div class="footer">Generado por Etendo Migration Agent · 2026-03-30 15:30</div>
+  
+
+  <div class="footer">Generado por Etendo Migration Agent · 2026-04-09 08:27</div>
 </div>
 <script>
 function toggle(header) {

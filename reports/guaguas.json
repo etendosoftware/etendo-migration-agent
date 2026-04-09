@@ -6829,7 +6829,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes",
         "path": "/opt/EtendoERP/modules/org.openbravo.localization.spain.referencedata.taxes",
-        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "name": "Taxes: configuration for Spain (Impuestos para Espa\u00f1a)",
         "version": "1.9.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -6884,7 +6884,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
         "path": "/opt/EtendoERP/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
-        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja Espa\u00f1a)",
         "version": "1.3.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -6945,7 +6945,7 @@
       {
         "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
         "path": "/opt/EtendoERP/modules/org.openbravo.localization.spain.referencedata.translation.eses",
-        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "name": "Translation: Spanish-Spain (es_ES) espa\u00f1ol-Espa\u00f1a",
         "version": "3.7.2",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -6994,7 +6994,7 @@
       {
         "java_package": "org.openbravo.localization.spain30",
         "path": "/opt/EtendoERP/modules/org.openbravo.localization.spain30",
-        "name": "Localization pack Spain (España)",
+        "name": "Localization pack Spain (Espa\u00f1a)",
         "version": "3.13.2",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -7875,7 +7875,7 @@
       {
         "java_package": "org.openbravo.module.bptaxidkey",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.bptaxidkey",
-        "name": "Tipo de Número de Identificación de Tercero",
+        "name": "Tipo de N\u00famero de Identificaci\u00f3n de Tercero",
         "version": "0.7.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -8187,7 +8187,7 @@
       {
         "java_package": "org.openbravo.module.epigrafes.iae.es",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.epigrafes.iae.es",
-        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "name": "I.A.E. Epigraphs (Ep\u00edgrafes del I.A.E.)",
         "version": "1.7.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -8273,7 +8273,7 @@
       {
         "java_package": "org.openbravo.module.finactvalidator.es",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.finactvalidator.es",
-        "name": "Validador de número de cuenta financiera",
+        "name": "Validador de n\u00famero de cuenta financiera",
         "version": "3.8.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -8456,7 +8456,7 @@
       {
         "java_package": "org.openbravo.module.intrastat.es_es",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.intrastat.es_es",
-        "name": "Intrastat – Spanish translation",
+        "name": "Intrastat \u2013 Spanish translation",
         "version": "1.7.0",
         "author": "Openbravo S.L.U",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -8658,7 +8658,7 @@
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.invoicesregisterbook.estaxes",
-        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "name": "Configuraci\u00f3n de Impuestos para el Libro de Facturas",
         "version": "3.7.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -9733,7 +9733,7 @@
       {
         "java_package": "org.openbravo.module.taximprovements.es_es",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.taximprovements.es_es",
-        "name": "Módulo de Impuestos para España mejorado",
+        "name": "M\u00f3dulo de Impuestos para Espa\u00f1a mejorado",
         "version": "0.7.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -10040,7 +10040,7 @@
       {
         "java_package": "org.openbravo.proflocalization.spain.dataset",
         "path": "/opt/EtendoERP/modules/org.openbravo.proflocalization.spain.dataset",
-        "name": "Professional Localization pack Spain (España) Datasets",
+        "name": "Professional Localization pack Spain (Espa\u00f1a) Datasets",
         "version": "1.11.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -10261,7 +10261,7 @@
       {
         "java_package": "org.openbravo.spain.regions",
         "path": "/opt/EtendoERP/modules/org.openbravo.spain.regions",
-        "name": "Provincias de España",
+        "name": "Provincias de Espa\u00f1a",
         "version": "1.7.0",
         "author": "Openbravo SLU",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -10304,7 +10304,7 @@
       {
         "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
         "path": "/opt/EtendoERP/modules/org.openbravo.spanishdefaultdata.paymentmethods",
-        "name": "Métodos de Pago",
+        "name": "M\u00e9todos de Pago",
         "version": "1.8.0",
         "author": "Openbravo S.L.U.",
         "bundle": "com.etendoerp.localization.spain.extensions",
@@ -10641,7 +10641,7 @@
       {
         "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
         "path": "/opt/EtendoERP/modules/com.etendoerp.advanced.bpsettlement.es_es",
-        "name": "Liquidación Avanzada de Socios Comerciales",
+        "name": "Liquidaci\u00f3n Avanzada de Socios Comerciales",
         "version": "1.1.1",
         "author": "Etendo Software"
       },
@@ -10683,7 +10683,7 @@
       {
         "java_package": "com.etendoerp.bulk.posting.es_es",
         "path": "/opt/EtendoERP/modules/com.etendoerp.bulk.posting.es_es",
-        "name": "Contabilización Masiva",
+        "name": "Contabilizaci\u00f3n Masiva",
         "version": "1.2.1",
         "author": "Etendo Software"
       },
@@ -10704,7 +10704,7 @@
       {
         "java_package": "com.etendoerp.payment.removal.es_es",
         "path": "/opt/EtendoERP/modules/com.etendoerp.payment.removal.es_es",
-        "name": "Eliminación de Pagos",
+        "name": "Eliminaci\u00f3n de Pagos",
         "version": "1.4.1",
         "author": "Etendo Software"
       },
@@ -10718,7 +10718,7 @@
       {
         "java_package": "com.mysuite.factelectr.es.module",
         "path": "/opt/EtendoERP/modules/com.mysuite.factelectr.es.module",
-        "name": "Facturación Electrónica España",
+        "name": "Facturaci\u00f3n Electr\u00f3nica Espa\u00f1a",
         "version": "1.4.17",
         "author": "MYSUITE SERVICES S.A. DE C.V."
       },
@@ -10774,7 +10774,7 @@
       {
         "java_package": "com.smf.currency.apiconfig.es_es",
         "path": "/opt/EtendoERP/modules/com.smf.currency.apiconfig.es_es",
-        "name": "Configuración de la API de Moneda",
+        "name": "Configuraci\u00f3n de la API de Moneda",
         "version": "1.2.1",
         "author": "Etendo Software"
       },
@@ -10788,14 +10788,14 @@
       {
         "java_package": "com.smf.face",
         "path": "/opt/EtendoERP/modules/com.smf.face",
-        "name": "Facturación Electronica para FACe",
+        "name": "Facturaci\u00f3n Electronica para FACe",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.gljournal.reverse.es_es",
         "path": "/opt/EtendoERP/modules/com.smf.gljournal.reverse.es_es",
-        "name": "Anulación de Asientos Manuales",
+        "name": "Anulaci\u00f3n de Asientos Manuales",
         "version": "1.0.0",
         "author": null
       },
@@ -10984,7 +10984,7 @@
       {
         "java_package": "org.openbravo.module.einvoice.es_ES",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.einvoice.es_ES",
-        "name": "Facturación Electrónica",
+        "name": "Facturaci\u00f3n Electr\u00f3nica",
         "version": "0.1.1",
         "author": "Openbravo SL"
       },
@@ -10998,14 +10998,14 @@
       {
         "java_package": "org.openbravo.module.facturae31",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.facturae31",
-        "name": "Facturación Electrónica - Facturae 3.1",
+        "name": "Facturaci\u00f3n Electr\u00f3nica - Facturae 3.1",
         "version": "0.3.0",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.facturae32",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.facturae32",
-        "name": "Facturación Electrónica - Facturae 3.2",
+        "name": "Facturaci\u00f3n Electr\u00f3nica - Facturae 3.2",
         "version": "0.1.0",
         "author": "Openbravo S.L.U."
       },
@@ -11033,7 +11033,7 @@
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
         "path": "/opt/EtendoERP/modules/org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
-        "name": "Configuración IVA de Caja para el Libro de Facturas",
+        "name": "Configuraci\u00f3n IVA de Caja para el Libro de Facturas",
         "version": "1.2.0",
         "author": "Openbravo S.L.U."
       },
@@ -11075,7 +11075,7 @@
       {
         "java_package": "org.openbravo.proflocalization.spain30.cashvat",
         "path": "/opt/EtendoERP/modules/org.openbravo.proflocalization.spain30.cashvat",
-        "name": "Professional Localization pack Spain (España) Cash VAT",
+        "name": "Professional Localization pack Spain (Espa\u00f1a) Cash VAT",
         "version": "1.15.0",
         "author": "Openbravo S.L.U."
       },
@@ -11237,7 +11237,7 @@
         "line_count": 2832,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -11249,7 +11249,7 @@
         "line_count": 6637,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -11261,7 +11261,7 @@
         "line_count": 4452,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -11273,7 +11273,7 @@
         "line_count": 4748,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -11285,7 +11285,7 @@
         "line_count": 2478,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -11339,13 +11339,13 @@
       {
         "java_package": "com.qualitic.openbravo.guaguas.etiquetas",
         "path": "/opt/EtendoERP/modules/com.qualitic.openbravo.guaguas.etiquetas",
-        "name": "Etiquetas de almacén para Guaguas Municipales",
+        "name": "Etiquetas de almac\u00e9n para Guaguas Municipales",
         "version": "0.0.6",
         "author": "Qualitic SLU",
         "line_count": 1813,
         "custom_size": {
           "key": "small",
-          "label": "500–2.000 LOC"
+          "label": "500\u20132.000 LOC"
         }
       },
       {
@@ -11357,7 +11357,7 @@
         "line_count": 6845,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -11369,7 +11369,7 @@
         "line_count": 3100,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -11387,13 +11387,13 @@
       {
         "java_package": "com.qualitic.openbravo.guaguas.integration",
         "path": "/opt/EtendoERP/modules/com.qualitic.openbravo.guaguas.integration",
-        "name": "Integración de sistemas para Guaguas Municipales",
+        "name": "Integraci\u00f3n de sistemas para Guaguas Municipales",
         "version": "0.0.17",
         "author": "Qualitic SLU",
         "line_count": 6953,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -11411,7 +11411,7 @@
       {
         "java_package": "com.qualitic.openbravo.guaguas.sepa.iso20022.extension",
         "path": "/opt/EtendoERP/modules/com.qualitic.openbravo.guaguas.sepa.iso20022.extension",
-        "name": "Extensión de funcionalidad de remesa SEPA",
+        "name": "Extensi\u00f3n de funcionalidad de remesa SEPA",
         "version": "0.0.1",
         "author": "Qualitic SLU",
         "line_count": 171,
@@ -11441,7 +11441,7 @@
         "line_count": 585,
         "custom_size": {
           "key": "small",
-          "label": "500–2.000 LOC"
+          "label": "500\u20132.000 LOC"
         }
       },
       {
@@ -11489,7 +11489,7 @@
         "line_count": 771,
         "custom_size": {
           "key": "small",
-          "label": "500–2.000 LOC"
+          "label": "500\u20132.000 LOC"
         }
       },
       {
@@ -11525,7 +11525,7 @@
         "line_count": 2609,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -11537,7 +11537,7 @@
         "line_count": 4547,
         "custom_size": {
           "key": "medium",
-          "label": "2.000–8.000 LOC"
+          "label": "2.000\u20138.000 LOC"
         }
       },
       {
@@ -16381,11 +16381,11 @@
       }
     ]
   },
-  "migration_score": 27,
+  "migration_score": 17,
   "migratability": "very_hard",
   "score_breakdown": {
     "openbravo_platform": 0,
-    "core_divergences": -15.0,
+    "core_divergences": -25.0,
     "core_diff_lines": 24432,
     "local_not_maintained": -23,
     "local_not_maintained_translations": 25,
@@ -16396,35 +16396,35 @@
         "java_package": "com.etendoerp.guaguas.subapp.good.movements",
         "line_count": 2832,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.etendoerp.guaguas.subapp.internalconsumption",
         "line_count": 6637,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.etendoerp.guaguas.subapp.inventory",
         "line_count": 4452,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.etendoerp.guaguas.subapp.pending.orders",
         "line_count": 4748,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.etendoerp.guaguas.subapp.product",
         "line_count": 2478,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
@@ -16459,21 +16459,21 @@
         "java_package": "com.qualitic.openbravo.guaguas.etiquetas",
         "line_count": 1813,
         "size_tier": "small",
-        "size_label": "500–2.000 LOC",
+        "size_label": "500\u20132.000 LOC",
         "penalty": -4
       },
       {
         "java_package": "com.qualitic.openbravo.guaguas.features",
         "line_count": 6845,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.qualitic.openbravo.guaguas.formulario",
         "line_count": 3100,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
@@ -16487,7 +16487,7 @@
         "java_package": "com.qualitic.openbravo.guaguas.integration",
         "line_count": 6953,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
@@ -16515,7 +16515,7 @@
         "java_package": "com.qualitic.openbravo.guaguas.validations",
         "line_count": 585,
         "size_tier": "small",
-        "size_label": "500–2.000 LOC",
+        "size_label": "500\u20132.000 LOC",
         "penalty": -4
       },
       {
@@ -16543,7 +16543,7 @@
         "java_package": "com.smf.guaguas.additional.reports",
         "line_count": 771,
         "size_tier": "small",
-        "size_label": "500–2.000 LOC",
+        "size_label": "500\u20132.000 LOC",
         "penalty": -4
       },
       {
@@ -16564,14 +16564,14 @@
         "java_package": "com.smf.guaguas.lpa",
         "line_count": 2609,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
         "java_package": "com.smf.guaguas.redmine",
         "line_count": 4547,
         "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
+        "size_label": "2.000\u20138.000 LOC",
         "penalty": -9
       },
       {
