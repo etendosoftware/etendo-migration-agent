@@ -1053,6 +1053,19 @@ def main():
     print(f"Dashboard saved to: {output_path}")
     print(f"Clients: {data['kpis']['total']}  |  Avg score: {data['kpis']['avg_score']}  |  Migratable: {data['kpis']['migratable']}")
 
+    # Always inject portfolio analysis sections after regenerating
+    try:
+        import importlib.util as _ilu
+        _spec = _ilu.spec_from_file_location(
+            "portfolio_analysis",
+            Path(__file__).parent / "scripts" / "portfolio_analysis.py"
+        )
+        _pa = _ilu.module_from_spec(_spec)
+        _spec.loader.exec_module(_pa)
+        _pa.main()
+    except Exception as _e:
+        print(f"[portfolio] skipped: {_e}")
+
 
 if __name__ == "__main__":
     main()
