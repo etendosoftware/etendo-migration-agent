@@ -92,7 +92,7 @@ def aggregate(records: list) -> dict:
 
     version_counter = Counter(
         r.get("platform", {}).get("version") or "—"
-        for r in records if not _is_openbravo_3x(r)
+        for r in records
     )
     most_common_version = version_counter.most_common(1)[0][0] if version_counter else "—"
 
