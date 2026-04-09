@@ -28,6 +28,17 @@ except ImportError:
 
 # ── Data loading ──────────────────────────────────────────────────────────────
 
+def load_mixpanel_status(reports_dir: str) -> dict:
+    """Load mixpanel_status.json — maps client slug → {has_mixpanel, source_instance}."""
+    path = Path(reports_dir) / "mixpanel_status.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text()).get("clients", {})
+    except Exception:
+        return {}
+
+
 def load_reports(reports_dir: str) -> list:
     results = []
     for json_path in sorted(Path(reports_dir).glob("*.json")):
@@ -72,9 +83,11 @@ def _get_ui_score(report: dict):
 
 # ── Aggregation ───────────────────────────────────────────────────────────────
 
-def aggregate(records: list) -> dict:
+def aggregate(records: list, reports_dir: str = "reports") -> dict:
     if not records:
         return {}
+
+    mx_status = load_mixpanel_status(reports_dir)
 
     scores = [r.get("migration_score") or 0 for r in records]
     avg_score = round(sum(scores) / len(scores), 1)
@@ -192,6 +205,10 @@ def aggregate(records: list) -> dict:
         baseline_type = core.get("baseline_type") or "zip"
         baseline_exact = baseline_type == "expanded" or base_version == client_version
         asmnt_effort = r.get("custom_assessment", {}).get("effort_summary", {})
+        slug = r.get("_json_stem", "")
+        mx_info = mx_status.get(slug, {})
+        has_mixpanel = mx_info.get("has_mixpanel", False)
+        mixpanel_instance = mx_info.get("source_instance")
         clients.append({
             "name": r.get("client", {}).get("name", r.get("_json_stem", "?")),
             "version": client_version,
@@ -208,6 +225,8 @@ def aggregate(records: list) -> dict:
             "update_total_hours": asmnt_effort.get("update_total_hours"),
             "saas_total_hours": asmnt_effort.get("saas_total_hours"),
             "ui_score": _get_ui_score(r),
+            "has_mixpanel": has_mixpanel,
+            "mixpanel_instance": mixpanel_instance,
         })
     clients.sort(key=lambda x: x["score"], reverse=True)
 
@@ -821,6 +840,9 @@ function renderTable() {
             const fg = s >= 80 ? '#166534' : s >= 60 ? '#854d0e' : s >= 40 ? '#9a3412' : '#991b1b';
             return `<span style="background:${bg};color:${fg};font-weight:700;padding:2px 8px;border-radius:10px;font-size:12px;">${s}</span>`;
         };
+        const mxHtml = (has, instance) => has
+            ? `<span style="background:#dcfce7;color:#166534;font-size:11px;padding:2px 7px;border-radius:8px;font-weight:600" title="Instancia Mixpanel: ${instance}">● Activo</span>`
+            : `<span style="background:#f1f5f9;color:#94a3b8;font-size:11px;padding:2px 7px;border-radius:8px" title="Sin datos en Mixpanel">— Sin datos</span>`;
         return `<tr>
             <td class="td-name">${c.name}</td>
             <td class="td-version">${c.version}</td>
@@ -835,6 +857,7 @@ function renderTable() {
             <td class="td-num" style="color:#1d4ed8">${fmtH(c.update_total_hours)}</td>
             <td class="td-num" style="color:#166534">${fmtH(c.saas_total_hours)}</td>
             <td class="td-num">${uiScoreHtml(c.ui_score)}</td>
+            <td class="td-num">${mxHtml(c.has_mixpanel, c.mixpanel_instance)}</td>
             <td>${btn}</td>
         </tr>`;
     }).join('');
@@ -988,6 +1011,7 @@ def render_html(data: dict, generated_at: str) -> str:
           <th class="td-num" title="Horas estimadas para actualizar a Etendo 25.4.x" style="color:#1d4ed8">Actualiz.</th>
           <th class="td-num" title="Horas estimadas para migrar a SaaS" style="color:#166534">SaaS</th>
           <th class="td-num" title="Score de preparación para la nueva UI de Etendo (0=no preparado, 100=totalmente preparado)">UI Score</th>
+          <th class="td-num" title="Indica si se recibe información de uso real desde Mixpanel para este cliente">Mixpanel</th>
           <th>Reporte</th>
         </tr>
       </thead>
@@ -1043,7 +1067,7 @@ def main():
         print(f"No migration reports found in: {reports_dir}")
         return
 
-    data = aggregate(records)
+    data = aggregate(records, reports_dir)
     generated_at = datetime.now().strftime("%d/%m/%Y %H:%M")
     html = render_html(data, generated_at)
 

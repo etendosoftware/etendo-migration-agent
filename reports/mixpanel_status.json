@@ -1,0 +1,225 @@
+{
+  "generated": "2026-04-09",
+  "clients": {
+    "Acico": {
+      "client_name": "Acico",
+      "has_mixpanel": true,
+      "source_instance": "acico"
+    },
+    "Bed4U": {
+      "client_name": "Bed4U",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "Bercaber": {
+      "client_name": "Bercaber",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "Cooltra": {
+      "client_name": "Cooltra",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "Flexellon": {
+      "client_name": "Flexellon",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "Nexe": {
+      "client_name": "Nexe",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "OLE": {
+      "client_name": "OLE",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "SSC": {
+      "client_name": "Springside Cheese Corp",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "albastar": {
+      "client_name": "Albastar",
+      "has_mixpanel": true,
+      "source_instance": "albastar"
+    },
+    "almis": {
+      "client_name": "almis",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "apex": {
+      "client_name": "apex",
+      "has_mixpanel": true,
+      "source_instance": "APEX"
+    },
+    "berdin": {
+      "client_name": "Berdin",
+      "has_mixpanel": true,
+      "source_instance": "Berdin"
+    },
+    "ccsa": {
+      "client_name": "CCSA",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "depique": {
+      "client_name": "Depique",
+      "has_mixpanel": true,
+      "source_instance": "depique"
+    },
+    "enertis": {
+      "client_name": "enertis",
+      "has_mixpanel": true,
+      "source_instance": "enertis"
+    },
+    "esivalor": {
+      "client_name": "esivalor",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "etendo_26_sources": {
+      "client_name": "etendo_26_sources",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "fueltruck": {
+      "client_name": "Fueltruck",
+      "has_mixpanel": true,
+      "source_instance": "Fueltruck"
+    },
+    "gloria": {
+      "client_name": "gloria",
+      "has_mixpanel": true,
+      "source_instance": "Gloria Pets"
+    },
+    "guaguas": {
+      "client_name": "guaguas",
+      "has_mixpanel": true,
+      "source_instance": "Guaguas Municipales"
+    },
+    "guirao": {
+      "client_name": "guirao",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "idm": {
+      "client_name": "idm",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "jokin": {
+      "client_name": "Jokin",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "klaus": {
+      "client_name": "Klaus",
+      "has_mixpanel": true,
+      "source_instance": "Klaus"
+    },
+    "ladypipa": {
+      "client_name": "ladypipa",
+      "has_mixpanel": true,
+      "source_instance": "ladypipa.com"
+    },
+    "logalty": {
+      "client_name": "logalty",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "lujan": {
+      "client_name": "lujan",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "mdf": {
+      "client_name": "mdf",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "mipyme": {
+      "client_name": "mipyme",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "mlink": {
+      "client_name": "mlink",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "montblanc": {
+      "client_name": "montblanc",
+      "has_mixpanel": true,
+      "source_instance": "Montblanc"
+    },
+    "opengy": {
+      "client_name": "opengy",
+      "has_mixpanel": true,
+      "source_instance": "Opengy"
+    },
+    "operon": {
+      "client_name": "operon",
+      "has_mixpanel": true,
+      "source_instance": "Operon"
+    },
+    "ortoprono": {
+      "client_name": "ortoprono",
+      "has_mixpanel": true,
+      "source_instance": "Ortoprono"
+    },
+    "pazo": {
+      "client_name": "pazo",
+      "has_mixpanel": true,
+      "source_instance": "Pazo Pondal S.L."
+    },
+    "plaztek": {
+      "client_name": "plaztek",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "pucara": {
+      "client_name": "Pucara Inversiones SA",
+      "has_mixpanel": true,
+      "source_instance": "MyPime Supermix Pucara"
+    },
+    "regalador": {
+      "client_name": "regalador",
+      "has_mixpanel": true,
+      "source_instance": "Regalador"
+    },
+    "slan": {
+      "client_name": "slan",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "supermix": {
+      "client_name": "supermix",
+      "has_mixpanel": true,
+      "source_instance": "MyPime Supermix Pucara"
+    },
+    "tcx": {
+      "client_name": "TCX",
+      "has_mixpanel": true,
+      "source_instance": "TCX 08 SOLUCIONS INTEGRALS, SL"
+    },
+    "ursus": {
+      "client_name": "ursus",
+      "has_mixpanel": false,
+      "source_instance": null
+    },
+    "vdshop": {
+      "client_name": "vdshop",
+      "has_mixpanel": true,
+      "source_instance": "VdShop"
+    },
+    "vye-pro_etendo_cloud": {
+      "client_name": "VyE",
+      "has_mixpanel": false,
+      "source_instance": null
+    }
+  }
+}

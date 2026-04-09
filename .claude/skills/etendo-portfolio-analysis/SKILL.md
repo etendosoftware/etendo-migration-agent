@@ -9,7 +9,7 @@ argument-hint: ""
 
 You are an Etendo migration strategist. Your job is to analyze the full client portfolio by cross-referencing all available per-client assessments and produce three strategic sections appended to the dashboard HTML.
 
-**Important:** The canonical implementation lives in `scripts/portfolio_analysis.py`. When invoked as a skill, simply run that script:
+**Important:** The canonical implementation for the portfolio sections lives in `scripts/portfolio_analysis.py`. When invoked as a skill, first run the Mixpanel status check (Step 0 below), then run that script:
 
 ```python
 import subprocess, sys
@@ -26,6 +26,74 @@ if result.returncode != 0:
 ```
 
 If you need to debug or extend the analysis, read `scripts/portfolio_analysis.py` first to understand the current implementation before making any changes. The steps below describe the full logic as documentation.
+
+---
+
+## Step 0 — Check Mixpanel coverage for all clients (MCP)
+
+Before running the portfolio analysis, query Mixpanel to determine which clients are sending usage data. This updates `reports/mixpanel_status.json`, which `dashboard.py` reads to populate the "Mixpanel" column in the client table.
+
+**The Mixpanel project is shared** — all Etendo clients send events to project ID `3851637` ("Etendo") and are differentiated by the event property `source_instance`.
+
+```python
+# 1. Get all source_instance values from Mixpanel
+# Use: mcp__claude_ai_Mixpanel_EU__Get-Property-Values
+#   project_id=3851637, resource_type="Event",
+#   property="source_instance", event="Window Operation"
+#
+# 2. For each client JSON in reports/, match slug/name against source_instance values
+#    Normalize both sides: lowercase, strip non-alphanumeric
+#    Skip UUIDs and internal instances (demo25, demo24, futit-staff, mirovi)
+#
+# 3. Save results to reports/mixpanel_status.json:
+import json, re
+from pathlib import Path
+from datetime import date
+
+mixpanel_instances = [...]  # values from MCP call above
+
+def normalize(s):
+    return re.sub(r'[^a-z0-9]', '', s.lower())
+
+norm_instances = [normalize(i) for i in mixpanel_instances]
+status = {}
+
+for path in sorted(Path("reports").glob("*.json")):
+    if path.stem in ("ranking", "portfolio_analysis", "mixpanel_status"):
+        continue
+    try:
+        r = json.loads(path.read_text())
+    except Exception:
+        continue
+    if "migration_score" not in r:
+        continue
+
+    slug = path.stem
+    client_name = r.get("client", {}).get("name", slug)
+    slug_norm = normalize(slug)
+    name_norm = normalize(client_name)
+
+    matched_instance = None
+    for raw, norm in zip(mixpanel_instances, norm_instances):
+        if re.match(r'^[0-9a-f-]{36}$', raw) or raw in ("demo25","demo24","futit-staff","mirovi"):
+            continue
+        if slug_norm in norm or norm in slug_norm or name_norm in norm or norm in name_norm:
+            matched_instance = raw
+            break
+
+    status[slug] = {
+        "client_name": client_name,
+        "has_mixpanel": matched_instance is not None,
+        "source_instance": matched_instance,
+    }
+
+Path("reports/mixpanel_status.json").write_text(
+    json.dumps({"generated": date.today().isoformat(), "clients": status}, indent=2, ensure_ascii=False)
+)
+print(f"✓ {sum(1 for v in status.values() if v['has_mixpanel'])}/{len(status)} clients with Mixpanel data")
+```
+
+After saving `mixpanel_status.json`, run `python3 scripts/portfolio_analysis.py` and then `python3 dashboard.py` to regenerate the dashboard with the updated Mixpanel column.
 
 ---
 
