@@ -440,6 +440,8 @@ thead th {
     cursor: default;
 }
 thead th.sortable { cursor: pointer; user-select: none; }
+thead th.sortable:hover { background: #f1f5f9; }
+.sort-arrow { color: #94a3b8; font-size: 11px; }
 thead th.sortable:hover { color: #94a3b8; }
 tbody tr { border-bottom: 1px solid #f8fafc; transition: background 0.1s; }
 tbody tr:hover { background: #f8fafc; }
@@ -817,13 +819,66 @@ function renderCustomLoc() {
     });
 }
 
-// ── Client table ──────────────────────────────────────────────────────────
+// ── Client table — sort + filter ─────────────────────────────────────────
+const COL_KEYS = ['name','version','base_version','score','migratability','jar','source','local_maintained','not_maintained','custom','update_total_hours','saas_total_hours','ui_score','has_mixpanel'];
+let sortCol = 'score';
 let sortAsc = false;
-let clientData = [...D.clients];
+let filterText = '';
+let filterMig = '';
+let filterMx = '';
+
+function applyFiltersAndSort() {
+    let data = [...D.clients];
+    // Text filter (name)
+    if (filterText) {
+        const q = filterText.toLowerCase();
+        data = data.filter(c => c.name.toLowerCase().includes(q));
+    }
+    // Migratability filter
+    if (filterMig) data = data.filter(c => c.migratability === filterMig);
+    // Mixpanel filter
+    if (filterMx === 'active') data = data.filter(c => c.has_mixpanel);
+    if (filterMx === 'none')   data = data.filter(c => !c.has_mixpanel);
+
+    // Sort
+    data.sort((a, b) => {
+        let va = a[sortCol], vb = b[sortCol];
+        if (va == null) va = sortAsc ? Infinity : -Infinity;
+        if (vb == null) vb = sortAsc ? Infinity : -Infinity;
+        if (typeof va === 'string') return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+        return sortAsc ? va - vb : vb - va;
+    });
+
+    // Update header arrows
+    document.querySelectorAll('th[data-col]').forEach(th => {
+        const key = th.getAttribute('data-col');
+        th.querySelector('.sort-arrow').textContent = key === sortCol ? (sortAsc ? ' ↑' : ' ↓') : ' ⇅';
+    });
+
+    // Count indicator
+    const total = D.clients.length;
+    const shown = data.length;
+    const counter = document.getElementById('table-counter');
+    if (counter) counter.textContent = shown < total ? `${shown} de ${total} clientes` : `${total} clientes`;
+
+    return data;
+}
 
 function renderTable() {
+    const data = applyFiltersAndSort();
     const tbody = document.getElementById('clients-tbody');
-    tbody.innerHTML = clientData.map(c => {
+    const fmtH = h => (h == null || h === 0) ? '<span style="color:#9ca3af">—</span>' : `<span style="font-weight:600">${h}h</span>`;
+    const uiScoreHtml = s => {
+        if (s == null) return '<span style="color:#d1d5db">—</span>';
+        const bg = s >= 80 ? '#dcfce7' : s >= 60 ? '#fef9c3' : s >= 40 ? '#ffedd5' : '#fee2e2';
+        const fg = s >= 80 ? '#166534' : s >= 60 ? '#854d0e' : s >= 40 ? '#9a3412' : '#991b1b';
+        return `<span style="background:${bg};color:${fg};font-weight:700;padding:2px 8px;border-radius:10px;font-size:12px;">${s}</span>`;
+    };
+    const mxHtml = (has, instance) => has
+        ? `<span style="background:#dcfce7;color:#166534;font-size:11px;padding:2px 7px;border-radius:8px;font-weight:600" title="Instancia Mixpanel: ${instance}">● Activo</span>`
+        : `<span style="background:#f1f5f9;color:#94a3b8;font-size:11px;padding:2px 7px;border-radius:8px" title="Sin datos en Mixpanel">— Sin datos</span>`;
+
+    tbody.innerHTML = data.map(c => {
         const [migClass, migLabel] = MIG[c.migratability] || MIG['very_hard'];
         const nmClass = c.not_maintained > 0 ? 'td-num-warn' : 'td-num';
         const custClass = c.custom > 0 ? 'td-num-purple' : 'td-num';
@@ -832,17 +887,7 @@ function renderTable() {
             : `<button class="btn-report" disabled>Sin reporte</button>`;
         const baseLabel = c.baseline_exact
             ? `<span class="baseline-badge baseline-exact" title="Baseline exacto">${c.base_version}</span>`
-            : `<span class="baseline-badge baseline-approx" title="Baseline aproximado (ZIP estático)">${c.base_version} ⚠</span>`;
-        const fmtH = h => (h == null || h === 0) ? '<span style="color:#9ca3af">—</span>' : `<span style="font-weight:600">${h}h</span>`;
-        const uiScoreHtml = s => {
-            if (s == null) return '<span style="color:#d1d5db">—</span>';
-            const bg = s >= 80 ? '#dcfce7' : s >= 60 ? '#fef9c3' : s >= 40 ? '#ffedd5' : '#fee2e2';
-            const fg = s >= 80 ? '#166534' : s >= 60 ? '#854d0e' : s >= 40 ? '#9a3412' : '#991b1b';
-            return `<span style="background:${bg};color:${fg};font-weight:700;padding:2px 8px;border-radius:10px;font-size:12px;">${s}</span>`;
-        };
-        const mxHtml = (has, instance) => has
-            ? `<span style="background:#dcfce7;color:#166534;font-size:11px;padding:2px 7px;border-radius:8px;font-weight:600" title="Instancia Mixpanel: ${instance}">● Activo</span>`
-            : `<span style="background:#f1f5f9;color:#94a3b8;font-size:11px;padding:2px 7px;border-radius:8px" title="Sin datos en Mixpanel">— Sin datos</span>`;
+            : `<span class="baseline-badge baseline-approx" title="Baseline aproximado">${c.base_version} ⚠</span>`;
         return `<tr>
             <td class="td-name">${c.name}</td>
             <td class="td-version">${c.version}</td>
@@ -860,16 +905,15 @@ function renderTable() {
             <td class="td-num">${mxHtml(c.has_mixpanel, c.mixpanel_instance)}</td>
             <td>${btn}</td>
         </tr>`;
-    }).join('');
+    }).join('') || `<tr><td colspan="15" style="text-align:center;color:#9ca3af;padding:24px">Sin resultados</td></tr>`;
 }
 
-function toggleSort() {
-    sortAsc = !sortAsc;
-    clientData.sort((a, b) => sortAsc ? a.score - b.score : b.score - a.score);
-    const icon = document.getElementById('sort-icon');
-    if (icon) icon.textContent = sortAsc ? ' ↑' : ' ↓';
+function sortBy(col) {
+    if (sortCol === col) { sortAsc = !sortAsc; } else { sortCol = col; sortAsc = col === 'name'; }
     renderTable();
 }
+// legacy compat
+function toggleSort() { sortBy('score'); }
 
 // ── Viewer ────────────────────────────────────────────────────────────────
 function openViewer(htmlFile, clientName) {
@@ -892,6 +936,9 @@ document.addEventListener('DOMContentLoaded', () => {
     renderNmModules();
     renderCustomLoc();
     renderTable();
+    // Init counter
+    const counter = document.getElementById('table-counter');
+    if (counter) counter.textContent = `${D.clients.length} clientes`;
 });
 """
 
@@ -994,24 +1041,51 @@ def render_html(data: dict, generated_at: str) -> str:
 
   <!-- Client table -->
   <div class="table-card">
-    <h2>Detalle por cliente</h2>
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+      <h2 style="margin:0">Detalle por cliente</h2>
+      <span id="table-counter" style="font-size:12px;color:#94a3b8"></span>
+    </div>
+    <!-- Filter bar -->
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center">
+      <input id="filter-name" type="text" placeholder="Buscar cliente…"
+        oninput="filterText=this.value;renderTable()"
+        style="padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;width:180px;outline:none">
+      <select id="filter-mig" onchange="filterMig=this.value;renderTable()"
+        style="padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;color:#374151;background:#fff">
+        <option value="">Todas las migratabilidades</option>
+        <option value="easy">Fácil</option>
+        <option value="moderate">Moderada</option>
+        <option value="hard">Difícil</option>
+        <option value="very_hard">Muy difícil</option>
+      </select>
+      <select id="filter-mx" onchange="filterMx=this.value;renderTable()"
+        style="padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;color:#374151;background:#fff">
+        <option value="">Mixpanel: todos</option>
+        <option value="active">● Activo</option>
+        <option value="none">— Sin datos</option>
+      </select>
+      <button onclick="filterText='';filterMig='';filterMx='';document.getElementById('filter-name').value='';document.getElementById('filter-mig').value='';document.getElementById('filter-mx').value='';renderTable()"
+        style="padding:6px 12px;border:1px solid #e2e8f0;border-radius:8px;font-size:12px;color:#64748b;background:#fff;cursor:pointer">
+        Limpiar filtros
+      </button>
+    </div>
     <table>
       <thead>
         <tr>
-          <th>Cliente</th>
-          <th>Versión</th>
+          <th class="sortable" data-col="name" onclick="sortBy('name')">Cliente<span class="sort-arrow"> ⇅</span></th>
+          <th class="sortable" data-col="version" onclick="sortBy('version')">Versión<span class="sort-arrow"> ⇅</span></th>
           <th>Base comparación</th>
-          <th class="sortable" onclick="toggleSort()">Score<span id="sort-icon"> ↓</span></th>
-          <th>Migratabilidad</th>
-          <th class="td-num" title="Gradle JAR">JAR</th>
-          <th class="td-num" title="Gradle Source">Source</th>
-          <th class="td-num" title="Local Mantenido">Mant.</th>
-          <th class="td-num" title="Local sin Mantenimiento" style="color:#f97316">Sin mant.</th>
-          <th class="td-num" title="Customizaciones" style="color:#a855f7">Custom</th>
-          <th class="td-num" title="Horas estimadas para actualizar a Etendo 25.4.x" style="color:#1d4ed8">Actualiz.</th>
-          <th class="td-num" title="Horas estimadas para migrar a SaaS" style="color:#166534">SaaS</th>
-          <th class="td-num" title="Score de preparación para la nueva UI de Etendo (0=no preparado, 100=totalmente preparado)">UI Score</th>
-          <th class="td-num" title="Indica si se recibe información de uso real desde Mixpanel para este cliente">Mixpanel</th>
+          <th class="sortable" data-col="score" onclick="sortBy('score')">Score<span class="sort-arrow"> ↓</span></th>
+          <th class="sortable" data-col="migratability" onclick="sortBy('migratability')">Migratabilidad<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="jar" onclick="sortBy('jar')" title="Gradle JAR">JAR<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="source" onclick="sortBy('source')" title="Gradle Source">Source<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="local_maintained" onclick="sortBy('local_maintained')" title="Local Mantenido">Mant.<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="not_maintained" onclick="sortBy('not_maintained')" title="Local sin Mantenimiento" style="color:#f97316">Sin mant.<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="custom" onclick="sortBy('custom')" title="Customizaciones" style="color:#a855f7">Custom<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="update_total_hours" onclick="sortBy('update_total_hours')" title="Horas estimadas para actualizar a Etendo 25.4.x" style="color:#1d4ed8">Actualiz.<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="saas_total_hours" onclick="sortBy('saas_total_hours')" title="Horas estimadas para migrar a SaaS" style="color:#166534">SaaS<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="ui_score" onclick="sortBy('ui_score')" title="Score de preparación para la nueva UI (0–100)">UI Score<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="has_mixpanel" onclick="sortBy('has_mixpanel')" title="Recibe datos de Mixpanel">Mixpanel<span class="sort-arrow"> ⇅</span></th>
           <th>Reporte</th>
         </tr>
       </thead>
