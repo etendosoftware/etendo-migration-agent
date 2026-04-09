@@ -75,6 +75,9 @@ El análisis se realiza en **7 etapas** en orden. Los pasos 1–4 son automátic
 │  5. Assessment IA       /etendo-customisation-expert <cliente>           │
 │  6. Análisis de uso     /etendo-mixpanel-usage <cliente>                 │
 │  7. Refrescar dashboard python3 dashboard.py                             │
+│  ── automático ──────────────────────────────────────────────────────── │
+│  8. Análisis portfolio  se ejecuta automáticamente tras cada Paso 5 o 6 │
+│     (o manualmente:     python3 scripts/portfolio_analysis.py)           │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -178,6 +181,30 @@ python3 dashboard.py
 
 Genera `reports/dashboard.html` con el ranking actualizado de todos los clientes.
 
+### Paso 8 — Análisis de portfolio (automático)
+
+Este paso se ejecuta **automáticamente** cada vez que los Pasos 5 o 6 actualizan un `reports/*.json`. No requiere intervención manual.
+
+Si se quiere ejecutar manualmente:
+
+```bash
+python3 scripts/portfolio_analysis.py
+```
+
+O desde Claude Code:
+
+```
+/etendo-portfolio-analysis
+```
+
+El análisis escanea todos los reportes que tienen `custom_assessment` y/o `ui_readiness` completos, y agrega tres secciones al final del dashboard:
+
+| Sección | Descripción |
+|---|---|
+| **Preparación para nueva UI** | Ranking de clientes por UI Score (0–100) con los principales bloqueadores por cliente. |
+| **Módulos sin mantenimiento** | Módulos que aparecen en múltiples clientes o son de riesgo alto sin reemplazo — candidatos a ser mantenidos oficialmente por Etendo. |
+| **Customizaciones generalizables** | Modificaciones de core propuestas para upstream y módulos candidatos a bundle oficial del marketplace. |
+
 ---
 
 ## Análisis de modo directo (sin expansión)
@@ -197,6 +224,8 @@ etendo-migration-agent/
 ├── analyze.py                         # CLI principal — genera el JSON base
 ├── report_html.py                     # Genera reporte HTML desde el JSON
 ├── dashboard.py                       # Dashboard agregado de todos los clientes
+├── scripts/
+│   └── portfolio_analysis.py          # Análisis cruzado de portfolio (ejecutado por hook automático)
 ├── analyzer/
 │   ├── version_detector.py            # Detecta plataforma y versión de core
 │   ├── module_classifier.py           # Clasifica módulos por categoría

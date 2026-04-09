@@ -1,0 +1,547 @@
+{
+  "generated": "2026-04-09",
+  "analyzed_clients": [
+    "enertis",
+    "etendo_26_sources",
+    "ladypipa"
+  ],
+  "ui_readiness_ranking": [
+    {
+      "slug": "ladypipa",
+      "name": "ladypipa",
+      "ui_score": 63,
+      "ui_label": "partial",
+      "global_status": "blocked",
+      "summary": {
+        "critica": 8,
+        "alta": 4,
+        "media": 3,
+        "no_aplica": 0
+      },
+      "top_blockers": [
+        {
+          "section": "AD_FORM",
+          "title": "Application Forms (formularios JS custom)",
+          "completion_pct": 5,
+          "ad_count": 36
+        },
+        {
+          "section": "6",
+          "title": "Callouts (lógica server-side en cambio de campo)",
+          "completion_pct": 10,
+          "ad_count": 95
+        },
+        {
+          "section": "5.1",
+          "title": "Tab Display Logic (visibilidad de pestañas)",
+          "completion_pct": 15,
+          "ad_count": 82
+        }
+      ]
+    },
+    {
+      "slug": "enertis",
+      "name": "enertis",
+      "ui_score": 60,
+      "ui_label": "partial",
+      "global_status": "blocked",
+      "summary": {
+        "critica": 15,
+        "alta": 3,
+        "media": 4,
+        "no_aplica": 1
+      },
+      "top_blockers": [
+        {
+          "section": "5.1",
+          "title": "Tab Display Logic — Visibilidad condicional de pestañas",
+          "completion_pct": 0,
+          "ad_count": 41
+        },
+        {
+          "section": "5.2",
+          "title": "Read-Only Tabs — Pestañas de solo lectura",
+          "completion_pct": 0,
+          "ad_count": 39
+        },
+        {
+          "section": "21",
+          "title": "Workspace / Dashboard (My Openbravo) — Widgets y KMO",
+          "completion_pct": 0,
+          "ad_count": 34
+        }
+      ]
+    },
+    {
+      "slug": "etendo_26_sources",
+      "name": "etendo_26_sources",
+      "ui_score": 47,
+      "ui_label": "needs_work",
+      "global_status": "blocked",
+      "summary": {
+        "critica": 14,
+        "alta": 3,
+        "media": 3,
+        "no_aplica": 1
+      },
+      "top_blockers": [
+        {
+          "section": "5.1",
+          "title": "Tab Display Logic — Visibilidad condicional de pestañas",
+          "completion_pct": 0,
+          "ad_count": 104
+        },
+        {
+          "section": "5.2",
+          "title": "Read-Only Tabs — Pestañas de solo lectura",
+          "completion_pct": 0,
+          "ad_count": 40
+        },
+        {
+          "section": "AD_FORM",
+          "title": "Application Forms (AD_FORM) — Formularios JavaScript especiales",
+          "completion_pct": 0,
+          "ad_count": 28
+        }
+      ]
+    }
+  ],
+  "module_maintenance_candidates": [
+    {
+      "java_package": "com.openbravo.gps.projects.hr",
+      "name": "Proyectos — Gestión de Recursos Humanos",
+      "function": "Asignación de empleados a proyectos y fases, control de disponibilidad y carga de trabajo por recurso humano.",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 12,
+      "avg_effort_saas_hours": 8,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.balance.excel",
+      "name": "Balance Excel Export",
+      "function": "Exportación del balance contable a formato Excel (.xls/.xlsx) con formato personalizado.",
+      "clients": [
+        "ladypipa"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "POI 3 → 5: org.apache.poi.hssf.* → org.apache.poi.xssf.* (API HSSF deprecated, XSSF recomendado)"
+      ],
+      "avg_effort_update_hours": 12,
+      "avg_effort_saas_hours": 6,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.edi",
+      "name": "EDI Integration",
+      "function": "Integración con intercambio electrónico de datos (EDI) para comunicación con proveedores y clientes mediante estándares EDIFACT/X12.",
+      "clients": [
+        "ladypipa"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "POI 3 → 5 (si genera Excel)",
+        "commons-lang 2 → 3"
+      ],
+      "avg_effort_update_hours": 30,
+      "avg_effort_saas_hours": 12,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.shopify",
+      "name": "Shopify Integration",
+      "function": "Integración bidireccional con plataforma e-commerce Shopify: sincronización de productos, pedidos, clientes e inventario.",
+      "clients": [
+        "ladypipa"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Hibernate 5.4 → 5.6 (posibles cambios en queries HQL)",
+        "commons-collections 3 → 4",
+        "commons-lang 2 → 3"
+      ],
+      "avg_effort_update_hours": 40,
+      "avg_effort_saas_hours": 16,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.module.aeat340.es",
+      "name": "AEAT Modelo 340",
+      "function": "Declaración informativa de operaciones con terceros (modelo 340 AEAT). Obligación fiscal trimestral en España.",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Sin mantenedor activo — verificar compatibilidad con Etendo 25.4.x"
+      ],
+      "avg_effort_update_hours": 12,
+      "avg_effort_saas_hours": 6,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.module.cuaderno19.es",
+      "name": "Cuaderno 19 (AEB) — Adeudos Domiciliados",
+      "function": "Generación del fichero bancario Cuaderno 19 del AEB para adeudos domiciliados (formato pre-SEPA, aún requerido por algunos bancos españoles).",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 8,
+      "avg_effort_saas_hours": 4,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.module.cuaderno34.es",
+      "name": "Cuaderno 34 (AEB) — Transferencias",
+      "function": "Fichero bancario Cuaderno 34 para transferencias nacionales (formato pre-SEPA).",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 3,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.module.cuaderno58.es",
+      "name": "Cuaderno 58 (AEB) — Confirming",
+      "function": "Fichero bancario Cuaderno 58 para operaciones de confirming (pagos a proveedores gestionados por banco).",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 3,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.module.einvoice",
+      "name": "E-Invoice — Facturación Electrónica Base",
+      "function": "Módulo base para la generación de facturas electrónicas. Base común de Facturae y otros formatos.",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 8,
+      "avg_effort_saas_hours": 4,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.module.facturae",
+      "name": "Facturae — Base",
+      "function": "Generación de facturas electrónicas en formato Facturae (obligatorio por ley en España para B2G y cada vez más B2B).",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Sin mantenedor activo — auditoría de APIs XML y Java requerida"
+      ],
+      "avg_effort_update_hours": 16,
+      "avg_effort_saas_hours": 8,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.module.facturae31",
+      "name": "Facturae v3.1",
+      "function": "Soporte de versión 3.1 del formato Facturae.",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 3,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.module.facturae32",
+      "name": "Facturae v3.2",
+      "function": "Soporte de versión 3.2 del formato Facturae (versión actual requerida).",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 3,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022",
+      "name": "SEPA ISO 20022 — Core",
+      "function": "Generación de ficheros de remesas bancarias en formato ISO 20022 SEPA. Obligatorio para transferencias y adeudos en la zona euro.",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Requiere auditoría completa de APIs de Java usadas — sin mantenedor activo desde Openbravo era"
+      ],
+      "avg_effort_update_hours": 16,
+      "avg_effort_saas_hours": 8,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+      "name": "SEPA Core Direct Debit",
+      "function": "Generación de adeudos directos SEPA (débitos bancarios). Obligatorio para domiciliaciones.",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Sin mantenedor activo — auditoría completa requerida"
+      ],
+      "avg_effort_update_hours": 12,
+      "avg_effort_saas_hours": 6,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+      "name": "SEPA Credit Transfer",
+      "function": "Generación de transferencias SEPA (PAIN.001). Obligatorio para pagos a proveedores vía SEPA.",
+      "clients": [
+        "enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Sin mantenedor activo — auditoría completa requerida"
+      ],
+      "avg_effort_update_hours": 12,
+      "avg_effort_saas_hours": 6,
+      "priority_score": 3
+    }
+  ],
+  "generalizable_customizations": [
+    {
+      "type": "module",
+      "client": "enertis",
+      "name": "Reportes de Factura y Validación CIF",
+      "java_package": "com.openbravo.gps.enertis",
+      "description": "Dos funcionalidades: (1) validación de unicidad del NIF/CIF al guardar un tercero — impide duplicados por tax ID; (2) reportes Jasper de impresión de facturas con múltiples sub-reportes (líneas, impuestos, forma de pago, totales, observaciones).",
+      "complexity": "minor",
+      "effort_saas_hours": 8,
+      "recommendation": "Para Ruta A: recompilar los 5 archivos .jasper con JasperReports 6.17 (2h) y verificar el EventHandler CIF (1h) + testing (1h). Para Ruta B: la validación de CIF duplicado es bundle_candidate — podría integrarse en el módulo de terceros estándar de Etendo. Los reportes Jasper deben re-implementarse en el sistema de impresión moderno de Etendo."
+    },
+    {
+      "type": "module",
+      "client": "enertis",
+      "name": "Dimensiones Analíticas por Código de Área",
+      "java_package": "com.smf.enertis.dimensions",
+      "description": "Añade tablas de codificación de área, concepto y país vinculadas al proyecto. Un callout en pedidos, facturas y notas de gasto auto-completa la dimensión analítica 1 (User Dimension 1) derivándola del primer carácter del código de proyecto. Un EventHandler mantiene la clave de búsqueda del proyecto sincronizada.",
+      "complexity": "minor",
+      "effort_saas_hours": 8,
+      "recommendation": "Para Ruta A: verificar compilación con Etendo 25.4.x (1h) y testing funcional del callout (2h) — no hay breaking changes críticos. Para Ruta B: la lógica de dimensiones podría generalizarse como extensión del módulo de dimensiones analíticas de Etendo si la codificación por carácter de proyecto key es un patrón útil para otros clientes."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "enertis",
+      "name": "Integración con Jira",
+      "java_package": "com.smf.integrations.support.jira",
+      "description": "Sincronización bidireccional de proyectos y tareas entre Etendo y Jira. Permite crear/actualizar issues de Jira desde el ERP.",
+      "risk": "medium",
+      "effort_saas_hours": 4,
+      "recommendation": "Con uso activo (score=2). Actualizar a Jira REST API v3 y verificar compatibilidad con Etendo 25.4.x. Bundle candidate para el marketplace de Etendo."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "enertis",
+      "name": "Reportes de Cuentas Contables (Excel)",
+      "java_package": "com.smf.reports.accounts",
+      "description": "Generación de reportes de contabilidad analítica en formato Excel (.xls) usando Apache POI HSSF. Incluye balances, saldos por cuenta y dimensiones.",
+      "risk": "medium",
+      "effort_saas_hours": 4,
+      "recommendation": "Actualizar API de POI (8h) + testing (2h). Para Ruta B: evaluar si los reportes de Financial Extensions de Etendo cubren las necesidades."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "enertis",
+      "name": "Avance de Proyectos",
+      "java_package": "org.openbravo.projects.progress",
+      "description": "Registro y seguimiento del avance porcentual de fases y tareas de proyecto. Tabla PP001_PROJECTPROGRESS extendida por el módulo custom de Enertis.",
+      "risk": "medium",
+      "effort_saas_hours": 4,
+      "recommendation": "Verificar compatibilidad con Etendo 25.4.x. Este módulo es dependencia del módulo custom principal."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "enertis",
+      "name": "Selector Múltiple de Empleados en Proyectos",
+      "java_package": "com.openbravo.gps.projects.multipleemployeeselector",
+      "description": "Selector de tipo Pick&Execute para asignar múltiples empleados simultáneamente a una fase o tarea de proyecto.",
+      "risk": "medium",
+      "effort_saas_hours": 2,
+      "recommendation": "Sin uso en Mixpanel. Verificar si sigue activo."
+    },
+    {
+      "type": "core",
+      "client": "ladypipa",
+      "name": "PrintControllerHook Framework",
+      "description": "Framework de hooks CDI para el controlador de impresión (PrintController). Permite pre y post-procesamiento de impresión con priorización de hooks y manejo de errores. Implementa patrón Observer sobre el flujo de impresión.",
+      "justification": "Funcionalidad genérica y reutilizable que agrega extensibilidad al PrintController para cualquier instalación Etendo. Sigue los patrones estándar de hooks CDI usados en el core.",
+      "effort_saas_hours": 3
+    },
+    {
+      "type": "core",
+      "client": "ladypipa",
+      "name": "FileUpload Column Event Handler",
+      "description": "Previene uso incorrecto de referencias File Upload en columnas de AD y agrega validación client-side del tamaño máximo de archivo configurable via preferencia de sistema.",
+      "justification": "Mejora de seguridad y UX genérica aplicable a cualquier instalación. La validación de tamaño de archivo es una necesidad común y configurable.",
+      "effort_saas_hours": 2
+    },
+    {
+      "type": "core",
+      "client": "ladypipa",
+      "name": "ProcessUtils — Jobs Framework Aggregator",
+      "description": "Utilidad para el framework de Jobs masivos que agrega resultados de ejecución (contadores de éxito, error y warning) desde múltiples registros en un único resultado consolidado.",
+      "justification": "Utilidad genérica del framework de Jobs. Simplifica el manejo de resultados masivos y es reutilizable en cualquier proceso que use el framework estándar.",
+      "effort_saas_hours": 1
+    },
+    {
+      "type": "core",
+      "client": "ladypipa",
+      "name": "JWT Algorithm Configuration (ES256/HS256)",
+      "description": "Agrega selección de algoritmo JWT (ES256 o HS256) para el módulo de Secure Web Services, con preferencia por defecto ES256. Incluye entradas en AD_REFERENCE, AD_REF_LIST y AD_PREFERENCE.",
+      "justification": "Mejora de seguridad relevante para cualquier instalación que use autenticación JWT. ES256 (ECDSA) es más seguro que HS256 (HMAC) y la configurabilidad via preferencia es el patrón correcto.",
+      "effort_saas_hours": 1
+    },
+    {
+      "type": "core",
+      "client": "ladypipa",
+      "name": "ProcessTest — Cobertura de tests de procesos",
+      "description": "Suite de tests de integración para el framework de procesos de Etendo. Cubre escenarios de ejecución de procesos, manejo de errores y resultados masivos.",
+      "justification": "Tests de calidad que cubren funcionalidad del core. Deberían acompañar las modificaciones de ProcessUtils y PrintControllerHook al proponer upstream.",
+      "effort_saas_hours": 2
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "ladypipa",
+      "name": "Jasper Utilities",
+      "java_package": "com.smf.jasperutilities",
+      "description": "Utilidades para generación y customización de reportes JasperReports: fuentes de datos, parámetros compartidos, helpers de formato.",
+      "risk": "medium",
+      "effort_saas_hours": 4,
+      "recommendation": "Actualizar API JasperReports de 6.0 a 6.17. Evaluar si las utilidades siguen siendo necesarias o si el nuevo sistema de reportes de Etendo las cubre."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "ladypipa",
+      "name": "Freight / Transportation",
+      "java_package": "com.smf.freight",
+      "description": "Gestión de costes de transporte y flete asociados a pedidos y albaranes.",
+      "risk": "medium",
+      "effort_saas_hours": 5,
+      "recommendation": "Forquear y actualizar. Verificar si Etendo Warehouse Extensions cubre costes de flete. Si no, evaluar como bundle de marketplace."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "ladypipa",
+      "name": "Webhook Events",
+      "java_package": "com.smf.webhookevents",
+      "description": "Sistema de envío de eventos via webhooks HTTP/HTTPS a sistemas externos cuando ocurren cambios en entidades de Etendo.",
+      "risk": "medium",
+      "effort_saas_hours": 4,
+      "recommendation": "Evaluar si Etendo tiene sistema de webhooks oficial en 25.4.x. Si no, forquear y actualizar. Candidato a bundle de integraciones."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "ladypipa",
+      "name": "Enterprise Management",
+      "java_package": "com.smf.enterprise.management",
+      "description": "Gestión multi-empresa: consolidación de datos, informes inter-empresa y configuración centralizada para entornos con múltiples organizaciones.",
+      "risk": "medium",
+      "effort_saas_hours": 6,
+      "recommendation": "Forquear y actualizar. Verificar si Financial Extensions cubre gestión multi-empresa. Funcionalidad relevante para múltiples clientes enterprise."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "ladypipa",
+      "name": "Product Import",
+      "java_package": "com.smf.product.import",
+      "description": "Importación masiva de productos desde CSV/Excel: artículos, precios, imágenes y datos de proveedor.",
+      "risk": "medium",
+      "effort_saas_hours": 5,
+      "recommendation": "Actualizar POI. Verificar si Etendo tiene módulo de importación de maestros en 25.4.x. Candidato a bundle de utilidades."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "ladypipa",
+      "name": "Customer Returns",
+      "java_package": "com.smf.customer.returns",
+      "description": "Gestión del proceso de devoluciones de clientes: RMA, motivos de devolución, reintegros y notas de crédito automáticas.",
+      "risk": "medium",
+      "effort_saas_hours": 6,
+      "recommendation": "Forquear y actualizar. Verificar cobertura en Etendo Sales Extensions. Funcionalidad común en múltiples implantaciones."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"\nimport json, os, subprocess, sys\nfrom pathlib import Path\ninp = os.environ.get('CLAUDE_TOOL_INPUT', '{}')\ntry:\n    d = json.loads(inp)\nexcept Exception:\n    sys.exit(0)\np = d.get('file_path', '')\nif (p.startswith('reports/') and p.endswith('.json')\n        and 'portfolio_analysis' not in p and 'ranking' not in p):\n    root = Path('/Users/isaiasbattaglia/Documents/Agente_Analisis_clientes_actuales/etendo-migration-agent')\n    result = subprocess.run(['python3', 'scripts/portfolio_analysis.py'], cwd=root, capture_output=True, text=True)\n    print(result.stdout[-800:] if result.stdout else '')\n    if result.returncode != 0:\n        print('[portfolio-hook] ERROR:', result.stderr[-400:], file=sys.stderr)\n\""
+          }
+        ]
+      }
+    ]
+  }
+}
