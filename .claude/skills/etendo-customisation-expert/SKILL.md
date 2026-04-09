@@ -253,7 +253,11 @@ print(f"✓ custom_assessment written to {report_path}")
 
 Determine which features of Etendo's new React UI are critical for this specific client by analyzing their **Application Dictionary (AD) XML files**. The goal is to count how much the client actually uses each feature, then combine that with the completion status of the new UI to produce a concrete, quantified priority assessment.
 
-**Reference:** Read `data/all-features.md` section by section as you work. It describes each feature's expected behavior, its checklist, and typical examples. Use it to understand context and draft specific `reason` fields — do NOT use `ui_feature_map.json`.
+**Two required reference files — read both before writing any feature entry:**
+- `data/all-features.md` — describes each feature's expected behavior, checklist, and real examples. Use it to understand context and draft specific `reason` fields.
+- `data/all-features-analysis.md` — contains the **authoritative `status` and `% Real` (completion_pct) for each section** based on actual analysis of the React codebase. Always use the values from this file for `status` and `completion_pct`. Do NOT rely on your training data for these values.
+
+Do NOT use `ui_feature_map.json`.
 
 ---
 
@@ -314,96 +318,328 @@ def count_in_ad(pattern, sourcedata_dirs, filename_glob="*.xml"):
 **Run these counts:**
 
 ```bash
-# 1. Window Types — AD_WINDOW.xml
-grep -rh "WINDOWTYPE=" {sourcedata_dirs} --include="AD_WINDOW.xml" | grep -oE 'WINDOWTYPE="[^"]+"' | sort | uniq -c
-# Expected: M (Maintain), T (Transaction), Q (Query), OBUIAPP_PickAndExecute
+# ─────────────────────────────────────────────────
+# SECTION 1 — Window Types (Sections 1.1–1.4)
+# ─────────────────────────────────────────────────
 
-# 2. Display Logic — fields with conditional visibility
-grep -rc "DISPLAYLOGIC=" {sourcedata_dirs} --include="AD_FIELD.xml"    # count per module
+# 1. All window types breakdown: M / T / Q / OBUIAPP_PickAndExecute
+grep -rh "WINDOWTYPE=" {sourcedata_dirs} --include="AD_WINDOW.xml" \
+  | grep -oE 'WINDOWTYPE="[^"]+"' | sort | uniq -c
+# Critical for priority: T (Transaction) and OBUIAPP_PickAndExecute are the riskiest
+
+# ─────────────────────────────────────────────────
+# SECTION 2 — Reference Types (field widgets)
+# ─────────────────────────────────────────────────
+
+# 2. Full AD_REFERENCE_ID distribution — cross-reference with all-features-analysis.md Section 2
+grep -rh 'AD_REFERENCE_ID=' {sourcedata_dirs} --include="AD_COLUMN.xml" \
+  | grep -oE 'AD_REFERENCE_ID="[^"]+"' | sort | uniq -c | sort -rn
+# Cross-reference the distribution above with Section 2 of all-features-analysis.md. 
+# Only include reference types that are actually present in this client's AD (count > 0) 
+# AND are classified as NOT DONE or PARCIAL in analysis.md.
+# Key IDs to flag if > 0 (NOT DONE / PARCIAL in analysis.md):
+#   Rich Text     7CB371C1...   WYSIWYG editor          NOT DONE
+#   Image BLOB    4AA6C3BE...   binary image upload     PARCIAL
+#   Upload File   715C53D4...   file upload drag-drop   NOT DONE
+#   Color         27            color picker            NOT DONE
+#   Assignment    33            resource assign popup   NOT DONE
+#   PAttribute    35            product attr set        PARCIAL
+#   Multi Selector 87E6CFF8...  tag multi-select        NOT DONE
+#   SelectorAsLink 80B16307...  clickable FK link       PARCIAL
+#   Tree Reference 8C57A4A2...  hierarchical selector   NOT DONE
+#   Binary        23            file BLOB               PARCIAL
+#   Image         32            ad_image reference      PARCIAL
+
+# ─────────────────────────────────────────────────
+# SECTION 2.B — Hardcoded Button Columns (HTML Templates)
+# ─────────────────────────────────────────────────
+
+# 3. Special-case hardcoded button column names (each requires dedicated reimplementation)
+grep -rh "COLUMNNAME=" {sourcedata_dirs} --include="AD_COLUMN.xml" \
+  | grep -E 'COLUMNNAME="(DocAction|Posted|CreateFrom|PaymentRule|ChangeProjectStatus)"' \
+  | grep -oE 'COLUMNNAME="[^"]+"' | sort | uniq -c
+
+# 4. Modern vs legacy button routing: columns with em_obuiapp_process_id (modern) vs ad_process_id (legacy)
+grep -rc 'EM_OBUIAPP_PROCESS_ID=' {sourcedata_dirs} --include="AD_COLUMN.xml"
+grep -rc 'AD_PROCESS_ID='         {sourcedata_dirs} --include="AD_COLUMN.xml"
+
+# ─────────────────────────────────────────────────
+# SECTION 3 — Process Types (both AD entities)
+# ─────────────────────────────────────────────────
+
+# 5. AD_PROCESS (Report and Process) — UIPattern breakdown: S / M / OBUIAPP_PickAndExecute
+grep -rh "UIPATTERN=" {sourcedata_dirs} --include="AD_PROCESS.xml" \
+  | grep -oE 'UIPATTERN="[^"]+"' | sort | uniq -c
+
+# 6. AD_PROCESS special flags (Section 3.A.2 sub-categories)
+grep -rc 'ISREPORT="Y"'     {sourcedata_dirs} --include="AD_PROCESS.xml"  # legacy HTML/PDF reports
+grep -rc 'ISBACKGROUND="Y"' {sourcedata_dirs} --include="AD_PROCESS.xml"  # scheduled background
+grep -rc 'ISJASPER="Y"'     {sourcedata_dirs} --include="AD_PROCESS.xml"  # Jasper engine (Section 3.A.4)
+grep -rh "UIPATTERN=" {sourcedata_dirs} --include="AD_PROCESS.xml" \
+  | grep -c 'UIPATTERN="M"'  # Manual JS processes — BLOQUEADO (OB.* namespaces missing in React)
+
+# 7. OBUIAPP_PROCESS (Process Definition) — UIPattern breakdown: A / M / OBUIAPP_PickAndExecute / OBUIAPP_Report / ETRX_RxAction
+grep -rh "UIPATTERN=" {sourcedata_dirs} --include="OBUIAPP_PROCESS.xml" \
+  | grep -oE 'UIPATTERN="[^"]+"' | sort | uniq -c
+
+# 8. OBUIAPP_PROCESS parameters — processes with AD-defined parameter popups (Section 3.B.3)
+grep -rc "<OBUIAPP_PARAMETER " {sourcedata_dirs} --include="OBUIAPP_PARAMETER.xml"
+
+# ─────────────────────────────────────────────────
+# SECTION 4 — Display Logic (field visibility)
+# ─────────────────────────────────────────────────
+
+# 9. Display Logic on fields (Section 4) — total count
+grep -rc "DISPLAYLOGIC=" {sourcedata_dirs} --include="AD_FIELD.xml"
+# Sub-count: fields using @$SessionVar@ (session-aware visibility — harder to compute)
+grep -rh "DISPLAYLOGIC=" {sourcedata_dirs} --include="AD_FIELD.xml" | grep -c '@\$'
+
+# 10. Display Logic on columns (column-level visibility)
 grep -rc "DISPLAYLOGIC=" {sourcedata_dirs} --include="AD_COLUMN.xml"
 
-# 3. Callouts — columns with server-side callout logic
-grep -rc "<CALLOUT>" {sourcedata_dirs} --include="AD_COLUMN.xml"
+# ─────────────────────────────────────────────────
+# SECTION 5 — Tab-Level Behaviors
+# ─────────────────────────────────────────────────
 
-# 4. Process Types — legacy vs modern
-grep -rh "UIPATTERN=" {sourcedata_dirs} --include="AD_PROCESS.xml" | grep -oE 'UIPATTERN="[^"]+"' | sort | uniq -c
-grep -rh "UIPATTERN=" {sourcedata_dirs} --include="OBUIAPP_PROCESS.xml" | grep -oE 'UIPATTERN="[^"]+"' | sort | uniq -c
-
-# 5. Selectors (OBUISEL)
-grep -rl "." {sourcedata_dirs} --include="OBUISEL_SELECTOR.xml" | wc -l   # modules with selectors
-grep -rc "<OBUISEL_SELECTOR " {sourcedata_dirs} --include="OBUISEL_SELECTOR.xml"
-
-# 6. Application Forms (AD_FORM)
-grep -rl "." {sourcedata_dirs} --include="AD_FORM.xml" | wc -l
-grep -rc "<AD_FORM " {sourcedata_dirs} --include="AD_FORM.xml"
-
-# 7. Single-Record tabs
-grep -rc 'UITYPE="SR"' {sourcedata_dirs} --include="AD_TAB.xml"
-
-# 8. Read-only tabs
-grep -rc 'ISREADONLY="Y"' {sourcedata_dirs} --include="AD_TAB.xml"
-
-# 9. Tab-level display logic (tab visibility)
+# 11. Tab-level Display Logic — tab visibility (Section 5.1)
 grep -rc "DISPLAYLOGIC=" {sourcedata_dirs} --include="AD_TAB.xml"
 
-# 10. Grid-initial tabs
+# 12. Read-only tabs ISREADONLY=Y (Section 5.2)
+grep -rc 'ISREADONLY="Y"' {sourcedata_dirs} --include="AD_TAB.xml"
+
+# 13. Tab UI type breakdown: STD / RO / ED / SR (Section 5.3)
+grep -rh "UITYPE=" {sourcedata_dirs} --include="AD_TAB.xml" \
+  | grep -oE 'UITYPE="[^"]+"' | sort | uniq -c
+# SR = Single Record form-only; ED = Editable inline grid
+
+# 14. Grid-initial tabs ISSHOWNINITIALGRIDMODE=Y (Section 9 — grid default)
 grep -rc 'ISSHOWNINITIALGRIDMODE="Y"' {sourcedata_dirs} --include="AD_TAB.xml"
 
-# 11. Field Groups (collapsible sections)
-grep -rc "AD_FIELDGROUP_ID=" {sourcedata_dirs} --include="AD_FIELD.xml"
+# 15. Tab default filters and sort orders (Section 26)
+grep -rc "HQLFILTERCLAUSE=" {sourcedata_dirs} --include="AD_TAB.xml"
+grep -rc "FILTERCLAUSE="    {sourcedata_dirs} --include="AD_TAB.xml"
 
-# 12. Status Bar Fields
-grep -rc 'ISSHOWNINSTATUSBAR="Y"' {sourcedata_dirs} --include="AD_FIELD.xml"
+# ─────────────────────────────────────────────────
+# SECTION 6 — Callouts
+# ─────────────────────────────────────────────────
 
-# 13. Hardcoded buttons (DocAction, Posted, CreateFrom, PaymentRule)
-grep -rh "COLUMNNAME=" {sourcedata_dirs} --include="AD_COLUMN.xml" | grep -E 'COLUMNNAME="(DocAction|Posted|CreateFrom|PaymentRule|ChangeProjectStatus)"' | wc -l
+# 16. Callout-linked columns (Section 6)
+grep -rc "<CALLOUT>" {sourcedata_dirs} --include="AD_COLUMN.xml"
+# Sub-count: top unique callout classes (complexity gauge)
+grep -rh "<CALLOUT>" {sourcedata_dirs} --include="AD_COLUMN.xml" \
+  | grep -oE '<CALLOUT>[^<]+</CALLOUT>' | sort | uniq -c | sort -rn | head -20
 
-# 14. Read-only logic (conditional editability)
-grep -rc "READONLYLOGIC=" {sourcedata_dirs} --include="AD_COLUMN.xml"
+# ─────────────────────────────────────────────────
+# SECTION 7 — Record State Machine
+# NOTE: Covered by count #1 (Transaction windows) and #3 (hardcoded buttons).
+# No additional grep required.
+# ─────────────────────────────────────────────────
 
-# 15. Out-parameter selectors (populate multiple fields)
+# ─────────────────────────────────────────────────
+# SECTION 8 — Selectors and FK Fields
+# ─────────────────────────────────────────────────
+
+# 17. OBUISEL Selector definitions total (Section 8)
+grep -rc "<OBUISEL_SELECTOR " {sourcedata_dirs} --include="OBUISEL_SELECTOR.xml"
+
+# 18. Selector out-parameters — selectors populating multiple fields on selection (Section 8)
 grep -rc 'ISOUTPARAMETER="Y"' {sourcedata_dirs} --include="OBUISEL_SELECTORFIELD.xml"
+grep -rl 'ISOUTPARAMETER="Y"' {sourcedata_dirs} --include="OBUISEL_SELECTORFIELD.xml" | wc -l  # distinct selectors
 
-# 16. Default values with SQL or session vars
+# 19. Multi-selector columns (reference type 87E6CFF8* — tag/chip multi-select)
+grep -rh "AD_REFERENCE_ID=" {sourcedata_dirs} --include="AD_COLUMN.xml" | grep -c '87E6CFF8'
+
+# 20. SelectorAsLink columns (reference type 80B16307* — clickable FK link)
+grep -rh "AD_REFERENCE_ID=" {sourcedata_dirs} --include="AD_COLUMN.xml" | grep -c '80B16307'
+
+# ─────────────────────────────────────────────────
+# SECTION 9 — Grid Behaviors
+# ─────────────────────────────────────────────────
+
+# 21. Editable grid tabs (UITYPE=ED — inline cell editing, Section 9.4)
+grep -rh "UITYPE=" {sourcedata_dirs} --include="AD_TAB.xml" | grep -c 'UITYPE="ED"'
+
+# 22. Selection columns — fields in grid filter row by default (Section 24.3)
+grep -rc 'ISSELECTIONCOLUMN="Y"' {sourcedata_dirs} --include="AD_COLUMN.xml"
+
+# ─────────────────────────────────────────────────
+# SECTION 10 — Cross-Cutting Behaviors
+# ─────────────────────────────────────────────────
+
+# 23. Attachment-enabled tabs (Section 10.4)
+grep -rc 'ISALLOWATTACHMENT="Y"' {sourcedata_dirs} --include="AD_TAB.xml"
+
+# 24. Notes-enabled tabs (Section 10.5)
+grep -rc 'ISALLOWNOTES="Y"' {sourcedata_dirs} --include="AD_TAB.xml"
+
+# 25. Copy Record with child tab deep copy (Section 10.6)
+grep -rc 'ENABLECOPYFULL="Y"'          {sourcedata_dirs} --include="AD_TAB.xml"
+grep -rc 'ENABLECOPYRELATIONSHIPS="Y"' {sourcedata_dirs} --include="AD_TAB.xml"
+
+# 26. Read-only logic — conditional editability (Section 10 / 14)
+grep -rc "READONLYLOGIC=" {sourcedata_dirs} --include="AD_COLUMN.xml"
+grep -rh "READONLYLOGIC=" {sourcedata_dirs} --include="AD_COLUMN.xml" | grep -c '@\$'  # session-var deps
+
+# 27. Always-read-only columns isupdateable=N (Section 24.4)
+grep -rc 'ISUPDATEABLE="N"' {sourcedata_dirs} --include="AD_COLUMN.xml"
+
+# ─────────────────────────────────────────────────
+# SECTIONS 13 / 25 — Form Init & Default Values
+# ─────────────────────────────────────────────────
+
+# 28. All columns with any default value defined (Section 25)
 grep -rc "DEFAULTVALUE=" {sourcedata_dirs} --include="AD_COLUMN.xml"
 
-# 17. Mandatory fields (form validation scale)
+# 29. Complex defaults requiring server-side resolution: session vars or SQL (Section 25.2)
+grep -rh "DEFAULTVALUE=" {sourcedata_dirs} --include="AD_COLUMN.xml" \
+  | grep -cE 'DEFAULTVALUE="(@|SELECT )'
+
+# 30. Mandatory fields — scope of client-side form validation (Section 13.1)
 grep -rc 'ISMANDATORY="Y"' {sourcedata_dirs} --include="AD_COLUMN.xml"
 
-# 18. Linked Items / KMO widgets
+# ─────────────────────────────────────────────────
+# SECTION 18 — Application Forms (ad_form)  [NOT DONE ~5%]
+# ─────────────────────────────────────────────────
+
+# 31. Application Forms count (each = custom servlet UI with no standard window/tab/field pattern)
+grep -rc "<AD_FORM " {sourcedata_dirs} --include="AD_FORM.xml"
+grep -rl "<AD_FORM " {sourcedata_dirs} --include="AD_FORM.xml" | wc -l  # modules providing forms
+
+# ─────────────────────────────────────────────────
+# SECTIONS 19 / 21 — Linked Items & Dashboard Widgets  [NOT DONE]
+# ─────────────────────────────────────────────────
+
+# 32. KMO / Linked Items infrastructure presence
 grep -rl "OBKMO\|LinkedItem\|WidgetClass" {sourcedata_dirs} --include="*.xml" | wc -l
 
-# 19. Tree views
-grep -rc 'HASTREE="Y"\|TREECATEGORY=' {sourcedata_dirs} --include="AD_TAB.xml"
+# 33. Widget class and instance counts (Section 21.2 — My Openbravo / Workspace)
+grep -rc "<OBKMO_WIDGET_CLASS "    {sourcedata_dirs} --include="OBKMO_WIDGET_CLASS.xml"
+grep -rc "<OBKMO_WIDGET_INSTANCE " {sourcedata_dirs} --include="OBKMO_WIDGET_INSTANCE.xml"
+grep -rc "<OBKMO_WIDGET_URL "      {sourcedata_dirs} --include="OBKMO_WIDGET_URL.xml"
+grep -rc "<OBCQL_WIDGET_QUERY "    {sourcedata_dirs} --include="OBCQL_WIDGET_QUERY.xml"
 
-# 20. Navigation menu size
+# ─────────────────────────────────────────────────
+# SECTION 22 — Field Groups (collapsible form sections)
+# ─────────────────────────────────────────────────
+
+# 34. Field Groups — total fields assigned to collapsible sections (Section 22)
+grep -rc "AD_FIELDGROUP_ID=" {sourcedata_dirs} --include="AD_FIELD.xml"
+# Sub-count: number of distinct field groups used
+grep -rh "AD_FIELDGROUP_ID=" {sourcedata_dirs} --include="AD_FIELD.xml" \
+  | grep -oE 'AD_FIELDGROUP_ID="[^"]+"' | sort -u | wc -l
+
+# ─────────────────────────────────────────────────
+# SECTION 23 — Status Bar Fields
+# ─────────────────────────────────────────────────
+
+# 35. Fields displayed in the status bar (Section 23)
+grep -rc 'ISSHOWNINSTATUSBAR="Y"' {sourcedata_dirs} --include="AD_FIELD.xml"
+
+# ─────────────────────────────────────────────────
+# SECTION 29 — Tree Views
+# ─────────────────────────────────────────────────
+
+# 36. Tree-enabled tabs (Section 29)
+grep -rc 'HASTREE="Y"'   {sourcedata_dirs} --include="AD_TAB.xml"
+grep -rc "TREECATEGORY=" {sourcedata_dirs} --include="AD_TAB.xml"
+
+# ─────────────────────────────────────────────────
+# SECTION 32 — Alert System
+# ─────────────────────────────────────────────────
+
+# 37. Alert rules defined (Section 32 — depends on background Alert Process)
+grep -rc "<AD_ALERTRULE " {sourcedata_dirs} --include="AD_ALERTRULE.xml"
+
+# ─────────────────────────────────────────────────
+# SECTION 33 — View Personalization (Saved Views)
+# ─────────────────────────────────────────────────
+
+# 38. Saved UI personalizations in AD (Section 33 — OBUIAPP_UIPersonalization table)
+grep -rc "<OBUIAPP_UIPERSONALIZATION " {sourcedata_dirs} --include="OBUIAPP_UIPERSONALIZATION.xml"
+
+# ─────────────────────────────────────────────────
+# SECTION 34 — Calendar Views
+# ─────────────────────────────────────────────────
+
+# 39. Calendar widget usage in AD (Section 34 — OBCalendar / OBMultiCalendar references)
+grep -rl "ob-calendar\|OBCalendar\|OBMultiCalendar" {sourcedata_dirs} --include="*.xml" | wc -l
+
+# ─────────────────────────────────────────────────
+# SECTIONS 12 / 20 — Navigation, Menu & Quick Launch
+# ─────────────────────────────────────────────────
+
+# 40. Total menu entries and type breakdown (Section 12, 20)
 grep -rc "<AD_MENU " {sourcedata_dirs} --include="AD_MENU.xml"
+grep -rh 'ACTION=' {sourcedata_dirs} --include="AD_MENU.xml" \
+  | grep -oE 'ACTION="[^"]+"' | sort | uniq -c
+# W=Window, P=Process (R&P legacy), R=Report, X=Form/External,
+# OBUIAPP_Process=Process Definition, blank=Summary/Folder
+```
+
+> **Coverage note — sections with no AD-greeppable data:**
+> The following sections have NO structural data in the AD XML files.
+> They describe runtime behaviors, UI shell features, or code-only configuration.
+> They must be assessed by code review or manual QA, not by counting:
+>
+> | Section | Reason |
+> |---------|--------|
+> | §11 — Authentication & Session | JWT/login is Java config, not AD XML data |
+> | §15 — Loading Indicators & Feedback | Pure UI behavior, no AD representation |
+> | §16 — Final Consistency Validation | QA acceptance checklist only |
+> | §17 — Toolbar Buttons | Standard buttons are hardcoded in JS; module buttons in code |
+> | §27 — Multi-Window Tab Interface (MDI) | Shell behavior, no AD data |
+> | §28 — Keyboard Shortcuts | Stored as `OBUIAPP_KeyboardShortcuts` preference string, not per-window |
+> | §30 — Grouping in Grid View | Controlled by 2 global preferences (`OBUIAPP_GroupingEnabled`, `OBUIAPP_GroupingMaxRecords`) |
+> | §31 — Data Import System | `c_import_entry` table is core infrastructure, not customer-configurable |
+>
+> For these sections: set `priority = "no_aplica"` unless the client explicitly uses that feature.
+
+---
+
+**Additional counts for Section 24 — Form Layout System:**
+
+```bash
+# ─────────────────────────────────────────────────
+# SECTION 24 — Form Layout System
+# ─────────────────────────────────────────────────
+
+# 41. Fields forcing a new row (STARTROW / STARTNEWLINE) — affect form column layout (Section 24.2)
+grep -rc 'STARTROW="Y"'    {sourcedata_dirs} --include="AD_FIELD.xml"
+grep -rc 'STARTNEWLINE="Y"' {sourcedata_dirs} --include="AD_FIELD.xml"
+
+# 42. Multi-column span fields (NUMCOLUMN > 1) — full-width fields like Memo, Rich Text (Section 24.2)
+grep -rh 'NUMCOLUMN=' {sourcedata_dirs} --include="AD_FIELD.xml" \
+  | grep -oE 'NUMCOLUMN="[^"]+"' | sort | uniq -c
+
+# 43. Key column-level flags affecting grid and form rendering (Section 24.3, 24.4)
+grep -rc 'ISIDENTIFIER="Y"'    {sourcedata_dirs} --include="AD_COLUMN.xml"  # compose record display string
+grep -rc 'ISPARENT="Y"'        {sourcedata_dirs} --include="AD_COLUMN.xml"  # FK to parent tab (usually hidden)
+grep -rc 'ISENCRYPTED="Y"'     {sourcedata_dirs} --include="AD_COLUMN.xml"  # masked encrypted value
+grep -rc 'ISSECONDARYKEY="Y"'  {sourcedata_dirs} --include="AD_COLUMN.xml"  # secondary unique key (lookup)
+grep -rc 'ISFIRSTFOCUSEDFIELD="Y"' {sourcedata_dirs} --include="AD_FIELD.xml"  # auto-focus on form open
+grep -rc 'SHOWINGRIDVIEW="N"'      {sourcedata_dirs} --include="AD_FIELD.xml"  # form-only fields (hidden in grid)
 ```
 
 ---
 
 ### Sub-step A3 — Assign priority per feature
 
-For each feature section in `data/all-features.md`, decide the priority based on:
-
-| Count in this client's AD | New UI status | Priority |
-|--------------------------|---------------|----------|
-| > 50 instances OR > 20 windows | NOT DONE / PARCIAL | **critica** |
-| 10–50 instances OR 5–20 windows | NOT DONE / PARCIAL | **alta** |
-| < 10 instances | NOT DONE / PARCIAL | **media** |
+| Count in this client's AD | Feature/Section Type | Priority |
+|--------------------------|----------------------|----------|
+| **Any count** | **Architectural Blockers** (see list below) | **critica** |
+| > 50 instances OR > 20 windows | NOT DONE / PARCIAL / BUG ACTIVO | **critica** |
+| 10–50 instances OR 5–20 windows | NOT DONE / PARCIAL / BUG ACTIVO | **alta** |
+| < 10 instances | NOT DONE / PARCIAL / BUG ACTIVO | **media** |
 | 0 instances found | any | **no_aplica** |
 | any count | DONE / TO CHECK | **media** or **no_aplica** |
 
-**Etendo new UI completion status** (apply your knowledge as of training data):
-- **DONE**: Basic CRUD (Maintain), Authentication, Navigation/Menu, Loading indicators
-- **PARCIAL**: Transaction windows (Document State Machine incomplete), Selectors/out-params, Process Definitions
-- **NOT DONE**: Callouts (OB.* namespace), Application Forms (AD_FORM), Classic Reports (legacy HTML), Tab-level display logic, Linked Items, Tree views, Widget/Dashboard
-
-Use the counts from Sub-step A2 to write a specific `reason` for each feature (e.g. "Este cliente tiene 47 ventanas Transaction con máquina de estados — el botón DocAction y los estados Draft/Booked son críticos. El nuevo UI aún no tiene implementado el flujo completo de estado de documentos.").
-
----
-
-### Sub-step A4 — Write ui_readiness to report.json
+> **Architectural Blockers — Always prioritize as "critica" if found (>0 count):**
+> - **§3.B.2 / §3.A.2 (Manual Action/JS Processes):** Hard blocker because the `OB.*` namespaces (Classic UI) are missing in React. Modules relying on this for Picking, Packing, or Period management cannot work without a complete rewrite or iframe shim.
+> - **§2.B / §2.B.2 (Hardcoded Button Processes):** Essential columns like `DocAction`, `Posted`, `CreateFrom`, `PaymentRule`, and `ChangeProjectStatus` that rely on legacy HTML templates. Each requires a dedicated React component rather than the standard metadata-driven pattern.
+> - **§18 (Application Forms - AD_FORM):** Critical business wizards and batch flows (Initial Client Setup, Invoice/Shipment generation) not yet ported to React.
+> - **§21 (Workspace/Dashboard Widgets):** No React API contract yet for custom JS widgets.
+> - **§4 (Display Logic @field@ syntax):** Active production bug that causes JavaScript crashes in any window using this common syntax.
+> - **§8 (Selector Out Parameters):** Critical for data efficiency; without this, auto-filling multiple fields from a single selection is broken.
 
 ```python
 PRIORITY_ORDER = ["critica", "alta", "media", "no_aplica"]
@@ -415,14 +651,18 @@ features_result = [
     {
         "section": "1.2",
         "title": "Transaction Windows (Document State Machine)",
-        "status": "PARCIAL",
-        "completion_pct": 40,
+        # status → from all-features-analysis.md Section 1.2 Estado label
+        "status": "TO CHECK",
+        # completion_pct → from all-features-analysis.md Section 1.2 % Real value
+        "completion_pct": 78,
         "priority": "critica",   # or alta/media/no_aplica
-        "reason": "Este cliente tiene N ventanas Transaction (pedidos, facturas, pagos). El flujo DocAction/estados aún no está completo en el nuevo UI.",
+        # reason must include: (a) actual count, (b) what that means for the client,
+        # (c) the specific gap from all-features-analysis.md for this section
+        "reason": "Este cliente tiene N ventanas Transaction (pedidos, facturas, pagos). Según all-features-analysis.md sección 1.2, el estado es TO CHECK al 78%. Las brechas clave son: DocAction labels incorrectos (bug activo), Posted button parcial (30%), y protección de edición concurrente no validada.",
         "ad_count": 47,           # actual count from grep
         "code_evidence": []       # leave empty — evidence is the count above
     },
-    # ... one entry per section from all-features.md
+    # ... one entry per section listed in the table below
 ]
 
 summary = {p: sum(1 for f in features_result if f["priority"] == p)
@@ -434,6 +674,14 @@ elif summary["alta"] >= 3:
     global_status = "partial"
 else:
     global_status = "ready"
+
+# Platform-level floor: overall completion is ~62%.
+# Never set global_status to "ready" if there are NOT DONE or BLOQUEADO features 
+# that are NOT "no_aplica" for this client.
+if global_status == "ready" and any(f["status"] in ("NOT DONE", "BLOQUEADO") 
+                                    for f in features_result 
+                                    if f["priority"] != "no_aplica"):
+    global_status = "partial"
 
 features_result.sort(key=lambda f: (PRIORITY_ORDER.index(f["priority"]), f.get("completion_pct", 50)))
 
@@ -450,29 +698,50 @@ with open(report_path, "w") as f:
 print(f"✓ ui_readiness written — {summary['critica']} críticas, {summary['alta']} altas, {summary['media']} medias, {summary['no_aplica']} no aplica")
 ```
 
-**Required sections to cover** (read the corresponding section in `data/all-features.md` for each):
+**Required sections to cover** (read the corresponding section in both `data/all-features.md` AND `data/all-features-analysis.md` for each — the first for context, the second for `status`/`completion_pct`). **If a section is missing in `all-features-analysis.md`, assume its completion_pct is 0%**:
 
-| Section | Title | Key AD source |
-|---------|-------|---------------|
-| 1.1 | Maintain Windows | AD_WINDOW.xml WINDOWTYPE=M |
-| 1.2 | Transaction Windows / State Machine | AD_WINDOW.xml WINDOWTYPE=T + COLUMNNAME=DocAction |
-| 1.3 | Query / Info Windows | AD_WINDOW.xml WINDOWTYPE=Q |
-| 1.4 | Pick and Execute | AD_WINDOW.xml WINDOWTYPE=OBUIAPP_PickAndExecute |
-| 2 | Reference Types (advanced fields) | AD_COLUMN.xml AD_REFERENCE_ID (Image, Color, BLOB, etc.) |
-| 3 | Process Definitions (modern) | OBUIAPP_PROCESS.xml |
-| 3b | Legacy Processes & Reports | AD_PROCESS.xml ISREPORT=Y / UIPATTERN |
-| 4 | Display Logic (field visibility) | AD_FIELD.xml DISPLAYLOGIC |
-| 5 | Tab behaviors (SR, read-only, display logic) | AD_TAB.xml UITYPE/ISREADONLY/DISPLAYLOGIC |
-| 6 | Callouts | AD_COLUMN.xml CALLOUT (esp. OB.* namespace) |
-| 8 | Selectors with out-parameters | OBUISEL_SELECTORFIELD.xml ISOUTPARAMETER=Y |
-| 10 | Cross-cutting: Attachments, Notes, Copy | AD_TAB.xml ISALLOWATTACHMENT/ISALLOWNOTES |
-| 10b | Read-only logic | AD_COLUMN.xml READONLYLOGIC |
-| 18 | Application Forms (AD_FORM) | AD_FORM.xml |
-| 19 | Linked Items / KMO | OBKMO_*.xml |
-| 21 | Workspace / Dashboard Widgets | OBKMO_WIDGET*.xml |
-| 22 | Field Groups | AD_FIELD.xml AD_FIELDGROUP_ID |
-| 23 | Status Bar Fields | AD_FIELD.xml ISSHOWNINSTATUSBAR=Y |
-| 29 | Tree Views | AD_TAB.xml HASTREE=Y |
+| Section | Title | Key AD source (grep count #) | analysis.md ref | Greepable? |
+|---------|-------|------------------------------|-----------------|------------|
+| **1.1** | Maintain Windows | AD_WINDOW WINDOWTYPE=M (#1) | Section 1.1 | ✅ |
+| **1.2** | Transaction Windows + State Machine | AD_WINDOW WINDOWTYPE=T (#1) + COLUMNNAME=DocAction (#3) | Section 1.2 | ✅ |
+| **1.3** | Query / Info Windows | AD_WINDOW WINDOWTYPE=Q (#1) | Section 1.3 | ✅ |
+| **1.4** | Pick and Execute Windows | AD_WINDOW WINDOWTYPE=OBUIAPP_PickAndExecute (#1) | Section 1.4 | ✅ |
+| **2** | Reference Types (unimplemented field widgets) | AD_COLUMN AD_REFERENCE_ID distribution (#2) — flag types with >0 listed as NOT DONE in analysis.md | Section 2 | ✅ |
+| **2.B** | Hardcoded Button Columns (DocAction, Posted, CreateFrom…) | AD_COLUMN COLUMNNAME in (5 special names) (#3) + legacy vs modern routing (#4) | Section 2.B | ✅ |
+| **3** | Process Definitions — modern (OBUIAPP) | OBUIAPP_PROCESS UIPattern breakdown (#7) + parameters (#8) | Section 3.B | ✅ |
+| **3b** | Legacy Processes & Reports (AD_PROCESS) | AD_PROCESS UIPattern (#5) + ISREPORT/ISBACKGROUND/ISJASPER/UIPATTERN=M (#6) | Section 3.A | ✅ |
+| **4** | Display Logic (field visibility) | AD_FIELD DISPLAYLOGIC (#9) + AD_COLUMN DISPLAYLOGIC (#10) | Section 4 | ✅ |
+| **5** | Tab behaviors (SR, ED, read-only, display logic, filters) | AD_TAB UITYPE breakdown (#13) + ISREADONLY (#12) + DISPLAYLOGIC (#11) + HQLFILTERCLAUSE (#15) | Section 5 | ✅ |
+| **6** | Callouts | AD_COLUMN CALLOUT count + distinct classes (#16) | Section 6 | ✅ |
+| **7** | Record State Machine | Covered by §1.2 (Transaction windows) + §2.B (DocAction button). No extra grep. | Section 7 | ✅ |
+| **8** | Selectors (OBUISEL) + out-parameters | OBUISEL_SELECTOR count (#17) + ISOUTPARAMETER=Y (#18) + Multi/SelectorAsLink (#19,#20) | Section 8 | ✅ |
+| **9** | Grid behaviors (editable grids, grid-initial tabs) | AD_TAB UITYPE=ED (#21) + ISSHOWNINITIALGRIDMODE=Y (#14) + ISSELECTIONCOLUMN (#22) | Section 9 | ✅ |
+| **10** | Cross-cutting: Attachments, Notes, Copy Record, Read-only logic | AD_TAB ISALLOWATTACHMENT/ISALLOWNOTES (#23,#24) + ENABLECOPYFULL (#25) + AD_COLUMN READONLYLOGIC (#26) + ISUPDATEABLE=N (#27) | Section 10 | ✅ |
+| **11** | Authentication, Session & Authorization | ⚠️ No AD XML data — JWT/login is Java config | Section 11 | ❌ `no_aplica` |
+| **12** | Navigation & Menu System | AD_MENU count + ACTION breakdown (#40) | Section 12 | ✅ |
+| **13** | Record Creation, Editing, Persistence | Covered by §4 (display logic), §6 (callouts), §25 (defaults), §10 (read-only logic) | Section 13 | ✅ (indirect) |
+| **14** | Reports (standalone menu access) | Menu ACTION=R (#40) + ISREPORT=Y (#6) + OBUIAPP_Report (#7) + ISJASPER (#6) | Section 14 | ✅ |
+| **15** | Loading Indicators & Feedback | ⚠️ Pure UI behavior — no AD XML representation | Section 15 | ❌ `no_aplica` |
+| **16** | Final Consistency Validation | ⚠️ QA acceptance checklist only | Section 16 | ❌ `no_aplica` |
+| **17** | Toolbar Buttons | ⚠️ Standard buttons hardcoded in JS; ENABLECOPYFULL (#25) for Clone | Section 17 | ❌ `no_aplica` (Clone via #25) |
+| **18** | Application Forms (AD_FORM) | AD_FORM count (#31) | Section 18 | ✅ |
+| **19** | Linked Items / KMO | OBKMO_*.xml file presence (#32) | Section 19 | ✅ |
+| **20** | Quick Launch (Global Search) | Covered by §12 menu count — no separate AD artifact | Section 20 | ✅ (indirect) |
+| **21** | Workspace / Dashboard Widgets | OBKMO_WIDGET_CLASS/INSTANCE/URL + OBCQL_WIDGET_QUERY (#33) | Section 21 | ✅ |
+| **22** | Field Groups (collapsible form sections) | AD_FIELD AD_FIELDGROUP_ID count + distinct groups (#34) | Section 22 | ✅ |
+| **23** | Status Bar Fields | AD_FIELD ISSHOWNINSTATUSBAR=Y (#35) | Section 23 | ✅ |
+| **24** | Form Layout System | AD_FIELD STARTROW/STARTNEWLINE/NUMCOLUMN/ISFIRSTFOCUSEDFIELD/SHOWINGRIDVIEW (#41,#42) + AD_COLUMN ISIDENTIFIER/ISPARENT/ISENCRYPTED/ISSECONDARYKEY (#43) | Section 24 | ✅ |
+| **25** | Default Value Expressions | AD_COLUMN DEFAULTVALUE total (#28) + complex SQL/@var (#29) + ISMANDATORY (#30) | Section 25 | ✅ |
+| **26** | Tab Default Filters & Sort Order | AD_TAB HQLFILTERCLAUSE + FILTERCLAUSE (#15) | Section 26 | ✅ |
+| **27** | Multi-Window Tab Interface (MDI) | ⚠️ Shell behavior — no AD XML artifact | Section 27 | ❌ `no_aplica` |
+| **28** | Keyboard Shortcuts Reference | ⚠️ Global preference string, not per-window AD data | Section 28 | ❌ `no_aplica` |
+| **29** | Tree Views | AD_TAB HASTREE=Y + TREECATEGORY (#36) | Section 29 | ✅ |
+| **30** | Grouping in Grid View | ⚠️ 2 global preferences (OBUIAPP_GroupingEnabled, OBUIAPP_GroupingMaxRecords) | Section 30 | ❌ `no_aplica` |
+| **31** | Data Import System | ⚠️ Core infrastructure table (c_import_entry), not customer-configurable | Section 31 | ❌ `no_aplica` |
+| **32** | Alert System | AD_ALERTRULE count (#37) | Section 32 | ✅ |
+| **33** | View Personalization (Saved Views) | OBUIAPP_UIPERSONALIZATION count (#38) | Section 33 | ✅ |
+| **34** | Calendar Views | OBCalendar/OBMultiCalendar presence in XML (#39) | Section 34 | ✅ |
+| **35** | View States (Form/Grid Layout) | Covered by §9 (grid-initial tabs) and §5 (tab patterns) | Section 35 | ✅ (indirect) |
 
 ---
 

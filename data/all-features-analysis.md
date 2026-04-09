@@ -1210,7 +1210,7 @@ Client-side hiding es UX convenience — server debe retornar 403 para operacion
 
 ## SECTION 11 — Authentication, Session, and Authorization
 
-**Estado:** TO CHECK | **% Audit:** 80% | **% Real:** 75%
+**Estado:** PARCIAL | **% Audit:** 80% | **% Real:** 45%
 
 **Implementado:** JWT-based authentication en progreso (referenciado en project context).
 
@@ -1532,7 +1532,7 @@ Los defaults funcionan hoy **únicamente** a través del server round-trip: `For
 
 ## SECTION 26 — Tab Default Filters and Sort Order
 
-**Estado:** NOT DONE | **% Audit:** 78% | **% Real:** 20%
+**Estado:** NOT DONE | **% Audit:** 78% | **% Real:** 0% (Incertidumbre alta)
 
 **Estado real (verificado):**
 
