@@ -201,9 +201,18 @@ El análisis escanea todos los reportes que tienen `custom_assessment` y/o `ui_r
 
 | Sección | Descripción |
 |---|---|
-| **Preparación para nueva UI** | Ranking de clientes por UI Score (0–100) con los principales bloqueadores por cliente. |
+| **Preparación para nueva UI — Roadmap por funcionalidad** | Agrega las features de UI **por feature**, no por cliente. Para cada funcionalidad pendiente muestra cuántos entornos la tienen como crítica / alta / media, y asigna una prioridad de roadmap (P1–P4). Una feature crítica en 3 entornos tiene más prioridad que una crítica en 1. |
 | **Módulos sin mantenimiento** | Módulos que aparecen en múltiples clientes o son de riesgo alto sin reemplazo — candidatos a ser mantenidos oficialmente por Etendo. |
 | **Customizaciones generalizables** | Modificaciones de core propuestas para upstream y módulos candidatos a bundle oficial del marketplace. |
+
+#### Prioridades de roadmap de UI
+
+| Prioridad | Criterio |
+|---|---|
+| **P1 — Inmediata** | Feature `critica` en ≥ 2 entornos |
+| **P2 — Alta** | Feature `critica` en 1 entorno con impacto alto (score ≥ 4) |
+| **P3 — Media** | Feature `alta` en varios entornos pero no crítica en ninguno |
+| **P4 — Baja** | Baja relevancia general en el portfolio |
 
 ---
 
