@@ -16,3 +16,4 @@ iniciar cualquier ejecución del assessor — no es necesario aprobar archivo po
 3. `python3 analyze.py --path <ruta> --client <nombre> --output reports/<nombre>.json --baseline-dir <dir>` → genera el reporte JSON
 4. `python3 report_html.py --input reports/<nombre>.json --output reports/<nombre>.html` → genera el HTML
 5. `/etendo-customisation-expert <nombre>` → ejecuta el análisis profundo de customizaciones
+6. `/etendo-portfolio-analysis` → análisis cruzado de todo el portfolio (UI readiness, módulos sin mantenimiento, customizaciones generalizables) — no requiere argumentos
