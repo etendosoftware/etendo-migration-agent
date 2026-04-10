@@ -56,9 +56,41 @@ if mixpanel_instance is None:
 
 ---
 
-## Step 2 — Authenticate with Mixpanel
+## Step 2 — Verify Mixpanel data exists before continuing
 
-Use the `mcp__claude_ai_Mixpanel__authenticate` tool to connect to the client's Mixpanel instance. The instance name to use is the one resolved in Step 1b.
+Before doing any window analysis, confirm that the resolved `source_instance` actually has events in Mixpanel. Use `mcp__claude_ai_Mixpanel_EU__Run-Query` to count "Window Operation" events filtered by `source_instance = {mixpanel_instance}` over the last 90 days.
+
+```python
+# Quick sanity check — if this returns 0 events, stop and ask the user.
+# Use: mcp__claude_ai_Mixpanel_EU__Run-Query
+#   project_id=3851637, report_type="insights"
+#   metric: total count of "Window Operation" events
+#   filter: source_instance equals "{mixpanel_instance}"
+#   dateRange: last 90 days
+```
+
+**If the result is 0 events (or empty):**
+- **Stop immediately. Do NOT continue with Steps 3–7.**
+- Tell the user:
+  > "No encontré datos de Mixpanel para la instancia `{mixpanel_instance}` en los últimos 90 días.
+  > ¿Este cliente tiene Mixpanel activo? Si sí, ¿cómo aparece en Mixpanel? Podés indicarme el nombre
+  > exacto del `source_instance` y lo agrego al listado de mapeos para futuros runs."
+- Wait for the user's response. Two possible outcomes:
+
+  **A) El usuario provee el nombre correcto:**
+  1. Update `mixpanel_instance` to the value provided.
+  2. Add the new mapping to `MANUAL_MIXPANEL_OVERRIDES` in **both** SKILL.md files:
+     - `.claude/skills/etendo-mixpanel-usage/SKILL.md` (Step 1b)
+     - `.claude/skills/etendo-portfolio-analysis/SKILL.md` (Step 0 manual overrides)
+  3. Re-run the verification query with the new instance name.
+  4. If data is confirmed, continue with Step 3.
+
+  **B) El usuario confirma que el cliente NO tiene Mixpanel:**
+  - Inform the user:
+    > "Este cliente no tiene datos en Mixpanel — el análisis de uso real no aplica. El JSON no se modificará."
+  - **Stop. Do not modify the report JSON.**
+
+**If the result has events:** continue normally with Step 3.
 
 ---
 

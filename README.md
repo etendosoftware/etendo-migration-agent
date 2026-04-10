@@ -4,31 +4,47 @@ Herramienta de análisis de instalaciones Etendo/Openbravo on-premise para estim
 
 ---
 
-## Primeros pasos
-
-### 1. Clonar el repositorio
-
-```bash
-git clone git@github.com:etendosoftware/etendo-migration-agent.git
-cd etendo-migration-agent
-```
-
-### 2. Abrir Claude Code en el directorio raíz
-
-```bash
-claude
-```
-
-Las skills del proyecto (`.claude/skills/`) se cargan automáticamente al iniciar Claude Code en este directorio.
+> **Importante — nunca ejecutar directamente en servidores de clientes**
+>
+> Esta herramienta requiere Claude Code, que **no debe instalarse en servidores de clientes** por razones de seguridad (acceso a datos, código fuente propietario, dependencias externas).
+>
+> El flujo correcto es:
+> 1. Obtener una **copia del código fuente** del cliente (backup del directorio de instalación, rsync, zip, etc.) en un entorno local controlado.
+> 2. Ejecutar todo el análisis localmente apuntando a esa copia con `--path /ruta/al/backup`.
+> 3. Nunca es necesario SSH ni acceso directo al servidor de producción.
 
 ---
 
 ## Requisitos
 
-- Python 3.8+ (sin dependencias externas)
-- Para el Paso 2: credenciales de GitHub con acceso al registry de Etendo y Gradle wrapper (`gradlew`) en la instalación del cliente
-- Para los Pasos 5 y 6: Claude Code corriendo en el directorio raíz del proyecto (las skills se incluyen en `.claude/skills/`)
-- Para el Paso 6: MCP de Mixpanel configurado en Claude Code (ver abajo)
+### Entorno local del analista
+
+| Requisito | Para qué paso | Notas |
+|---|---|---|
+| **Git** | Todos | Clonar el repo y commitear resultados |
+| **Python 3.8+** | Pasos 1–4, 7 | Sin dependencias externas adicionales |
+| **Claude Code** | Pasos 5, 6, 8 | Ver instalación abajo |
+| **MCP de Mixpanel** | Paso 6 | Ver configuración abajo |
+
+### Instalación de Claude Code
+
+Claude Code debe estar instalado en la máquina del analista (nunca en el servidor del cliente). Requiere una suscripción **Claude Pro o Team**.
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+Una vez instalado, abrir en el directorio raíz del proyecto:
+
+```bash
+claude
+```
+
+Las skills del proyecto (`.claude/skills/`) se cargan automáticamente.
+
+### Credenciales de GitHub (Paso 2)
+
+El Paso 2 (`./gradlew expandCore` / `./gradlew expandModules`) descarga el código fuente de los módulos Etendo desde el registry de GitHub Packages de Etendo. Las credenciales necesarias (`githubUser` / `githubToken`) se leen automáticamente del archivo `gradle.properties` de la instalación del cliente, que se copia como parte del baseline en el Paso 1. No requiere configuración manual adicional.
 
 ### Configuración del MCP de Mixpanel
 
@@ -36,7 +52,10 @@ El Paso 6 requiere el MCP de Mixpanel conectado a Claude Code como **integració
 
 **Pasos para configurarlo:**
 
-1. Iniciar sesión en Mixpanel EU: https://eu.mixpanel.com/ con el usuario `isaias.battaglia@etendo.software`
+1. Iniciar sesión en Mixpanel EU: https://eu.mixpanel.com/ con uno de los usuarios autorizados:
+   - `isaias.battaglia@etendo.software`
+   - `nilo.echezarreta@smfconsulting.es`
+   - `juan.ferreyra@smfconsulting.es`
 2. Abrir Claude Code (claude.ai) → **Settings → Integrations**
 3. Agregar una integración personalizada con los siguientes datos:
    - **Nombre:** `Mixpanel EU`
@@ -63,7 +82,7 @@ El Paso 6 requiere el MCP de Mixpanel conectado a Claude Code como **integració
 
 ## Flujo completo de análisis
 
-El análisis se realiza en **7 etapas** en orden. Los pasos 1–4 son automáticos (CLI); los pasos 5–6 los ejecuta el agente IA de Claude; el paso 7 refresca el dashboard global.
+El análisis se realiza en **8 etapas** en orden. Los pasos 1–4 son automáticos (CLI); los pasos 5–6 los ejecuta el agente IA de Claude; el paso 7 refresca el dashboard global; el paso 8 registra los resultados en git.
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
@@ -75,18 +94,31 @@ El análisis se realiza en **7 etapas** en orden. Los pasos 1–4 son automátic
 │  5. Assessment IA       /etendo-customisation-expert <cliente>           │
 │  6. Análisis de uso     /etendo-mixpanel-usage <cliente>                 │
 │  7. Refrescar dashboard python3 dashboard.py                             │
+│  8. Commit              git add + git commit                             │
 │  ── automático ──────────────────────────────────────────────────────── │
-│  8. Análisis portfolio  se ejecuta automáticamente tras cada Paso 5 o 6 │
+│  ·  Análisis portfolio  se ejecuta automáticamente tras cada Paso 5 o 6 │
 │     (o manualmente:     python3 scripts/portfolio_analysis.py)           │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
+### Paso 0 — Clonar el repositorio y abrir Claude Code
+
+```bash
+git clone git@github.com:etendosoftware/etendo-migration-agent.git
+cd etendo-migration-agent
+claude
+```
+
+Las skills del proyecto se cargan automáticamente al abrir Claude Code en este directorio.
+
 ### Paso 1 — Setup del baseline
+
+> **Requisito previo:** tener una copia local del directorio de instalación del cliente (backup, rsync, zip extraído, etc.). El análisis **nunca** se ejecuta directamente en el servidor del cliente.
 
 Genera el `build.gradle` dinámico con las versiones exactas instaladas del cliente y muestra los comandos a ejecutar:
 
 ```bash
-python3 analyze.py --path /ruta/a/etendo --client "Nombre Cliente" --setup-baseline
+python3 analyze.py --path /ruta/al/backup/etendo --client "Nombre Cliente" --setup-baseline
 ```
 
 Salida: crea un directorio en `baselines/etendo-baseline-<hash>/` dentro del proyecto e imprime los comandos del paso siguiente.
@@ -164,12 +196,19 @@ Opcionalmente, si el nombre de la instancia en Mixpanel difiere del nombre del c
 /etendo-mixpanel-usage cliente nombre-instancia-mixpanel
 ```
 
+> **Este paso solo tiene sentido si el cliente tiene Mixpanel activo.** Si la instancia no envía datos (o nunca lo hizo), el agente lo informa y **no continúa** — no hay valor en ejecutar el análisis sin datos reales de uso.
+
 El agente realiza:
-1. **Extracción de ventanas por módulo**: lee los `AD_WINDOW.xml` y `AD_PROCESS.xml` de cada módulo custom y sin mantenimiento para obtener los nombres exactos de ventanas y procesos definidos.
-2. **Consulta a Mixpanel**: para cada ventana/proceso, cuenta los eventos de los últimos 90 días en el entorno de producción del cliente.
-3. **Scoring de uso** (escala 0–5): 0 = sin uso, 5 = > 10.000 eventos.
-4. **Candidatos a eliminación**: módulos con score 0 y sin potencial de generalización se marcan como `elimination_candidate`.
-5. Actualiza el JSON con `usage_score`, `windows_used`, `windows_unused` por módulo y estadísticas de ahorro de esfuerzo, y regenera el HTML.
+1. **Resolución de instancia**: usa el slug del cliente para buscar el `source_instance` correcto en Mixpanel. Algunos clientes tienen un nombre distinto en Mixpanel (p. ej. `ccsa` → `"Cerveceria Cubana"`); estos mapeos están registrados en la skill.
+2. **Verificación previa**: antes de analizar ventanas, confirma que la instancia tiene eventos en los últimos 90 días.
+   - Si no hay datos, el agente pregunta si el cliente tiene un nombre distinto en Mixpanel.
+   - Si el usuario provee el nombre correcto, el nuevo mapeo se guarda en la skill y el análisis continúa.
+   - Si el cliente confirma que **no tiene Mixpanel**, el agente informa que el paso no aplica y finaliza sin modificar el JSON.
+3. **Extracción de ventanas por módulo**: lee los `AD_WINDOW.xml` y `AD_PROCESS.xml` de cada módulo custom y sin mantenimiento para obtener los nombres exactos de ventanas y procesos definidos.
+4. **Consulta a Mixpanel**: para cada ventana/proceso, cuenta los eventos de los últimos 90 días en el entorno de producción del cliente.
+5. **Scoring de uso** (escala 0–5): 0 = sin uso, 5 = > 10.000 eventos.
+6. **Candidatos a eliminación**: módulos con score 0 y sin potencial de generalización se marcan como `elimination_candidate`.
+7. Actualiza el JSON con `usage_score`, `windows_used`, `windows_unused` por módulo y estadísticas de ahorro de esfuerzo, y regenera el HTML.
 
 ### Paso 7 — Refrescar el dashboard
 
@@ -179,9 +218,25 @@ Después de agregar o actualizar cualquier cliente, regenerar el dashboard agreg
 python3 dashboard.py
 ```
 
-Genera `reports/dashboard.html` con el ranking actualizado de todos los clientes.
+Genera `reports/dashboard.html` con el ranking actualizado de todos los clientes, incluyendo una columna de cobertura Mixpanel que indica qué clientes están enviando datos de uso.
 
-### Paso 8 — Análisis de portfolio (automático)
+### Paso 8 — Commit de resultados
+
+**Siempre después de completar el análisis** (tanto para un cliente nuevo como para una re-ejecución sobre un cliente existente), commitear los resultados al repositorio:
+
+```bash
+git add reports/<cliente>.json reports/<cliente>.html reports/dashboard.html
+git commit -m "feat: análisis completo — <Cliente>"
+```
+
+Los tres archivos a incluir en el commit son:
+- `reports/<cliente>.json` — datos del análisis (custom_assessment, ui_readiness, uso Mixpanel)
+- `reports/<cliente>.html` — reporte HTML del cliente
+- `reports/dashboard.html` — dashboard global actualizado
+
+Si solo se re-ejecutaron pasos parciales (p. ej. solo `/etendo-mixpanel-usage`), commitear igual los tres archivos ya que el dashboard siempre se regenera.
+
+### Paso 9 — Análisis de portfolio (automático)
 
 Este paso se ejecuta **automáticamente** cada vez que los Pasos 5 o 6 actualizan un `reports/*.json`. No requiere intervención manual.
 
