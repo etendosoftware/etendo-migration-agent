@@ -36,10 +36,29 @@ Before running the portfolio analysis, query Mixpanel to determine which clients
 **The Mixpanel project is shared** — all Etendo clients send events to project ID `3851637` ("Etendo") and are differentiated by the event property `source_instance`.
 
 ```python
-# 1. Get all source_instance values from Mixpanel
-# Use: mcp__claude_ai_Mixpanel_EU__Get-Property-Values
-#   project_id=3851637, resource_type="Event",
-#   property="source_instance", event="Window Operation"
+# 1. Get all source_instance values from Mixpanel using Run-Query
+#    (Run-Query with breakdown is more reliable than Get-Property-Values,
+#     which only returns "prominent" high-frequency values and misses low-activity clients)
+#
+# Use: mcp__claude_ai_Mixpanel_EU__Run-Query
+#   project_id=3851637
+#   query: Insights query — count of "Window Operation" events in last 7 days,
+#          breakdown by source_instance
+#
+# Example query structure (adjust dates dynamically to yesterday - 7 days ago):
+#   {
+#     "type": "insights",
+#     "bookmark": { "sections": {
+#       "show": [{"math": "total", "type": "event", "value": "Window Operation"}],
+#       "filter": [],
+#       "group_by": [{"type": "event", "value": "source_instance"}],
+#       "time": [{"type": "in the last", "unit": "day", "value": 7}]
+#     }}
+#   }
+#
+# Extract all source_instance values from the result rows:
+#   mixpanel_instances = [row["value"] for row in result["data"]["values"]
+#                         if row.get("value")]
 #
 # 2. For each client JSON in reports/, match slug/name against source_instance values
 #    Normalize both sides: lowercase, strip non-alphanumeric
@@ -92,6 +111,32 @@ Path("reports/mixpanel_status.json").write_text(
 )
 print(f"✓ {sum(1 for v in status.values() if v['has_mixpanel'])}/{len(status)} clients with Mixpanel data")
 ```
+
+### Manual slug → source_instance overrides
+
+Some clients use a `source_instance` that doesn't match their slug or report name automatically. **Always apply these overrides** after the auto-matching step, before writing `mixpanel_status.json`:
+
+```python
+MANUAL_MIXPANEL_OVERRIDES = {
+    # slug          : exact source_instance value in Mixpanel
+    "mdf"           : "MDF",
+    "ole"           : "Ole Comunicación",
+    "flexellon"     : "Flexellon",
+    "nexe"          : "Nexe the way of change Iberia",
+    "bed4u"         : "Bed4U",
+    "bercaber"      : "Bercaber",
+    "ccsa"          : "Cerveceria Cubana",
+    "supermix"      : "MyPime Supermix Pucara",
+    "mipyme"        : "MyPime Hercam",
+}
+
+for slug, source_instance in MANUAL_MIXPANEL_OVERRIDES.items():
+    if slug in status:
+        status[slug]["has_mixpanel"] = True
+        status[slug]["source_instance"] = source_instance
+```
+
+> If the user reports a new mapping (e.g. "client X appears in Mixpanel as Y"), add it here so it persists across runs.
 
 After saving `mixpanel_status.json`, run `python3 scripts/portfolio_analysis.py` and then `python3 dashboard.py` to regenerate the dashboard with the updated Mixpanel column.
 

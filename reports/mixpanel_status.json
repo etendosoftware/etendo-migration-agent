@@ -8,13 +8,13 @@
     },
     "Bed4U": {
       "client_name": "Bed4U",
-      "has_mixpanel": false,
-      "source_instance": null
+      "has_mixpanel": true,
+      "source_instance": "Bed4U"
     },
     "Bercaber": {
       "client_name": "Bercaber",
-      "has_mixpanel": false,
-      "source_instance": null
+      "has_mixpanel": true,
+      "source_instance": "Bercaber"
     },
     "Cooltra": {
       "client_name": "Cooltra",
@@ -23,18 +23,18 @@
     },
     "Flexellon": {
       "client_name": "Flexellon",
-      "has_mixpanel": false,
-      "source_instance": null
+      "has_mixpanel": true,
+      "source_instance": "Flexellon"
     },
     "Nexe": {
       "client_name": "Nexe",
-      "has_mixpanel": false,
-      "source_instance": null
+      "has_mixpanel": true,
+      "source_instance": "Nexe the way of change Iberia"
     },
     "OLE": {
       "client_name": "OLE",
-      "has_mixpanel": false,
-      "source_instance": null
+      "has_mixpanel": true,
+      "source_instance": "Ole Comunicación"
     },
     "SSC": {
       "client_name": "Springside Cheese Corp",
@@ -63,13 +63,13 @@
     },
     "ccsa": {
       "client_name": "CCSA",
-      "has_mixpanel": false,
-      "source_instance": null
+      "has_mixpanel": true,
+      "source_instance": "Cerveceria Cubana"
     },
     "depique": {
       "client_name": "Depique",
       "has_mixpanel": true,
-      "source_instance": "depique"
+      "source_instance": "Depique"
     },
     "enertis": {
       "client_name": "enertis",
@@ -138,13 +138,13 @@
     },
     "mdf": {
       "client_name": "mdf",
-      "has_mixpanel": false,
-      "source_instance": null
+      "has_mixpanel": true,
+      "source_instance": "MDF"
     },
     "mipyme": {
       "client_name": "mipyme",
-      "has_mixpanel": false,
-      "source_instance": null
+      "has_mixpanel": true,
+      "source_instance": "MyPime Hercam"
     },
     "mlink": {
       "client_name": "mlink",

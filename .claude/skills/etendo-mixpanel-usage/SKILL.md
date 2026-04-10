@@ -29,9 +29,36 @@ Extract:
 
 ---
 
+## Step 1b — Resolve Mixpanel source_instance (manual overrides)
+
+Some clients use a `source_instance` value in Mixpanel that doesn't match their slug. **Before querying Mixpanel**, check if the client slug has a known manual override and use that value instead:
+
+```python
+MANUAL_MIXPANEL_OVERRIDES = {
+    # slug          : exact source_instance value in Mixpanel
+    "mdf"           : "MDF",
+    "ole"           : "Ole Comunicación",
+    "flexellon"     : "Flexellon",
+    "nexe"          : "Nexe the way of change Iberia",
+    "bed4u"         : "Bed4U",
+    "bercaber"      : "Bercaber",
+    "ccsa"          : "Cerveceria Cubana",
+    "supermix"      : "MyPime Supermix Pucara",
+    "mipyme"        : "MyPime Hercam",
+}
+
+# If no instance was given in $ARGUMENTS, use override or slug as fallback
+if mixpanel_instance is None:
+    mixpanel_instance = MANUAL_MIXPANEL_OVERRIDES.get(client_slug, client_slug)
+```
+
+> If the user reports a new mapping (e.g. "client X appears in Mixpanel as Y"), add it here.
+
+---
+
 ## Step 2 — Authenticate with Mixpanel
 
-Use the `mcp__claude_ai_Mixpanel__authenticate` tool to connect to the client's Mixpanel instance. The instance name to use is the one resolved in Step 1.
+Use the `mcp__claude_ai_Mixpanel__authenticate` tool to connect to the client's Mixpanel instance. The instance name to use is the one resolved in Step 1b.
 
 ---
 
