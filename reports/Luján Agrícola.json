@@ -1,0 +1,2580 @@
+{
+  "client": {
+    "name": "Luján Agrícola",
+    "hostname": "asus"
+  },
+  "platform": {
+    "type": "etendo",
+    "version": "23.2.0"
+  },
+  "modules": {
+    "gradle_jar": [
+      {
+        "java_package": "com.etendoerp.copilot",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/build/etendo/modules/com.etendoerp.copilot",
+        "latest_version": "2.12.1",
+        "bundle": "com.etendoerp.copilot.extensions",
+        "git_url": "git@github.com:etendosoftware/com.etendoerp.copilot.git",
+        "name": "Etendo Copilot",
+        "version": "1.4.5",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.webhookevents",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/build/etendo/modules/com.etendoerp.webhookevents",
+        "latest_version": "2.6.1",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@github.com:etendosoftware/com.etendoerp.webhookevents.git",
+        "name": "Webhook Events",
+        "version": "1.9.1",
+        "author": "Etendo Software"
+      }
+    ],
+    "gradle_source": [
+      {
+        "java_package": "com.etendoerp.stock.history",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.etendoerp.stock.history",
+        "name": "Stock History",
+        "version": "1.3.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.stock.history",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 27,
+          "deleted_files": 1,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": [
+            {
+              "path": "build/resources/main/META-INF/beans.xml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".gitignore",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/index",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/description",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/packed-refs",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/ORIG_HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/config",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-2ad6849cd7872dccab6698c223e3786100b45bf9.pack",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-2ad6849cd7872dccab6698c223e3786100b45bf9.idx",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-receive.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/applypatch-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-merge-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/fsmonitor-watchman.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/post-update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-rebase.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-applypatch.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-push.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/prepare-commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/info/exclude",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      }
+    ],
+    "local_maintained": [
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.etendoerp.financial.reports.advanced",
+        "name": "Financial Reports Advanced",
+        "version": "1.8.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.git",
+        "latest_version": "2.9.0"
+      },
+      {
+        "java_package": "com.etendoerp.powerbi.inclusion.exclusion",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.etendoerp.powerbi.inclusion.exclusion",
+        "name": "Etendo BI Management Inclusion/Exclusion",
+        "version": "1.0.2",
+        "author": "Etendo software",
+        "bundle": "com.etendoerp.etendobi.extensions",
+        "git_url": "git@github.com:etendosoftware/com.etendoerp.powerbi.inclusion.exclusion.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.smf.jasperutilities",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.jasperutilities",
+        "name": "SMF Jasper Utilities",
+        "version": "1.0.0",
+        "author": "SMF",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jasperutilities.git",
+        "latest_version": "1.0.2"
+      },
+      {
+        "java_package": "org.openbravo.advpaymentmngt.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.advpaymentmngt.es_ES",
+        "name": "Advanced Payables and Receivables - Spanish Translation",
+        "version": "3.0.1100",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.advpaymentmngt.es_es.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.alerts.accounting30",
+        "name": "Alerts: Accounting",
+        "version": "3.0.500",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.application.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.client.application.es_ES",
+        "name": "User Interface Application Translation Spanish Spain (es_ES)",
+        "version": "1.0.1400",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.application.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.htmlwidget.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.client.htmlwidget.es_ES",
+        "name": "HTML Widget Translation Spanish Spain (es_ES)",
+        "version": "1.0.100",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.htmlwidget.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.kernel.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.client.kernel.es_ES",
+        "name": "User Interface Client Kernel Translation Spanish Spain(esES)",
+        "version": "1.0.5",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.kernel.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.myob.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.client.myob.es_ES",
+        "name": "Workspace & Widgets Translation: Spanish Spain (es_ES)",
+        "version": "1.0.301",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.myob.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.querylist.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.client.querylist.es_ES",
+        "name": "Query/List Widget Translation Spanish Spain (es_ES)",
+        "version": "1.0.100",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.querylist.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.widgets.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.client.widgets.es_ES",
+        "name": "Widgets Collection Translation Spanish Spain (es_ES)",
+        "version": "1.0.200",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.widgets.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.finance.checkprinting",
+        "name": "Check Printing",
+        "version": "1.2.400",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.finance.checkprinting.es_ES",
+        "name": "Check Printing Spanish Translation",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.financial.bpsettlement",
+        "name": "Business Partner Settlements",
+        "version": "1.0.200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.bpsettlement.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "org.openbravo.financial.paymentreport.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.financial.paymentreport.es_ES",
+        "name": "Payment Report - Spanish Translation",
+        "version": "1.0.300",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.paymentreport.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.localization.spain.referencedata.accounts",
+        "name": "Chart of accounts: PGC 2007 General",
+        "version": "3.0.100",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "name": "Chart of accounts: PGC 2007 PYMEs",
+        "version": "3.0.100",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.pymes.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.localization.spain.referencedata.taxes",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "version": "1.2.1600",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
+        "version": "1.3.101",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.cashvat.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.translation.esES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.localization.spain.referencedata.translation.esES",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "version": "3.0.2200",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.translation.eses.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain30",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.localization.spain30",
+        "name": "Localization pack Spain (España)",
+        "version": "3.6.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain30.git",
+        "latest_version": "4.2.1"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.cashvat.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat190.cashvat.es",
+        "name": "Withholding Report: Modelo 190 (Spain) Cash VAT compatible",
+        "version": "1.4.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.cashvat.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat190.es",
+        "name": "Withholding Report: Modelo 190 (Spain)",
+        "version": "3.7.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.es.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.cashvat.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat303.cashvat.es",
+        "name": "Tax Report: Modelo 303 (Spain) Cash VAT compatible",
+        "version": "1.6.400",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.cashvat.es.git",
+        "latest_version": "2.6.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat303.es",
+        "name": "Tax Report: Modelo 303 (Spain)",
+        "version": "1.8.610",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.es.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.cashvat.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat347apr.cashvat.es",
+        "name": "Spain AEAT Modelo 347 for APR Cash VAT compatible",
+        "version": "1.4.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.cashvat.es.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat347apr.es",
+        "name": "Spain AEAT Modelo 347 for APR",
+        "version": "4.4.100",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.git",
+        "latest_version": "5.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat347apr.es.es_ES",
+        "name": "Spain AEAT Modelo 347 for APR- Spanish Translation",
+        "version": "1.0.100",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.es_es.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat349.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat349.es",
+        "name": "Modelo 349",
+        "version": "2.4.200",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat349.es.git",
+        "latest_version": "3.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.cashvat.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat390.cashvat.es",
+        "name": "Tax Report: Modelo 390 (Spain) Cash VAT compatible",
+        "version": "1.3.200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.cashvat.es.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat390.es",
+        "name": "Tax Report: Modelo 390 (Spain)",
+        "version": "3.3.200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.es.git",
+        "latest_version": "4.4.0"
+      },
+      {
+        "java_package": "org.openbravo.module.bptaxidkey",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.bptaxidkey",
+        "name": "Tipo de Número de Identificación de Tercero",
+        "version": "0.0.300",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.bptaxidkey.git",
+        "latest_version": "1.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cashvat",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.cashvat",
+        "name": "Cash VAT Management",
+        "version": "1.3.100",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cashvat.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.cifnifvalidator",
+        "name": "CIF and NIF validator",
+        "version": "1.0.100",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.cifnifvalidator.es_ES",
+        "name": "Validador de CIF y NIF",
+        "version": "1.0.200",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.countryisocode",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.countryisocode",
+        "name": "3 digits ISO country codes",
+        "version": "1.0.200",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.countryisocode.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno43.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.cuaderno43.es",
+        "name": "Cuaderno 43",
+        "version": "1.0.7",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cuaderno43.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.epigrafes.iae.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.epigrafes.iae.es",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "version": "1.0.9",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.epigrafes.iae.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.eucountries",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.eucountries",
+        "name": "European Union countries",
+        "version": "1.0.300",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.eucountries.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.finactvalidator.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.finactvalidator.es",
+        "name": "Validador de número de cuenta financiera",
+        "version": "3.1.200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.finactvalidator.es.git",
+        "latest_version": "4.2.1"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.invoicesregisterbook",
+        "name": "Invoices Register Book",
+        "version": "2.3.300",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.git",
+        "latest_version": "3.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.invoicesregisterbook.es_ES",
+        "name": "Libro de Facturas",
+        "version": "1.1.6",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.es_es.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.invoicesregisterbook.estaxes",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "version": "3.0.301",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.estaxes.git",
+        "latest_version": "4.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.organization.representative.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.organization.representative.es",
+        "name": "Legal Representative of the Organization",
+        "version": "1.0.200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.organization.representative.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.paymentmethod.type",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.paymentmethod.type",
+        "name": "Payment Method Type",
+        "version": "1.0.200",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.paymentmethod.type.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.remittance",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.remittance",
+        "name": "Remittances infrastructure",
+        "version": "3.2.5200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.git",
+        "latest_version": "4.3.1"
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.taximprovements.ES",
+        "name": "Spanish Tax Module Improvements",
+        "version": "0.0.600",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es.git",
+        "latest_version": "1.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.taximprovements.es_ES",
+        "name": "Módulo de Impuestos para España mejorado",
+        "version": "0.0.300",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es_es.git",
+        "latest_version": "1.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.taxreportlauncher",
+        "name": "Tax Report Launcher",
+        "version": "1.1.500",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.taxreportlauncher.es",
+        "name": "Generador de declaraciones de impuestos",
+        "version": "1.1.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.numbertoword",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.numbertoword",
+        "name": "Number To Word",
+        "version": "1.0.200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.numbertoword.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.numbertoword.es_ES",
+        "name": "Number To Word Spanish Translation",
+        "version": "1.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.es_es.git",
+        "latest_version": "1.13.0"
+      },
+      {
+        "java_package": "org.openbravo.reports.ordersawaitingdelivery.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.reports.ordersawaitingdelivery.es_ES",
+        "name": "Orders Awaiting Delivery Spanish (Spain) Translation",
+        "version": "1.0.200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.reports.ordersawaitingdelivery.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.service.datasource.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.service.datasource.es_ES",
+        "name": "JSON Datasource Translation: Spanish Spain (es_ES)",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.datasource.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.service.integration.google.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.service.integration.google.es_ES",
+        "name": "Integration with Google APIs Translation Spanish Spain",
+        "version": "1.0.200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.google.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.service.integration.openid.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.service.integration.openid.es_ES",
+        "name": "OpenID Service Integration Translation Spanish Spain",
+        "version": "1.0.200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.openid.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.spain.regions",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.spain.regions",
+        "name": "Provincias de España",
+        "version": "1.0.200",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spain.regions.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.spanishdefaultdata.paymentmethods",
+        "name": "Métodos de Pago",
+        "version": "1.1.100",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentmethods.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentterms",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.spanishdefaultdata.paymentterms",
+        "name": "Condiciones de pago",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentterms.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.userinterface.selector.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.userinterface.selector.es_ES",
+        "name": "User Interface Selector Translation: Spanish Spain (es_ES)",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.selector.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.userinterface.smartclient.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.userinterface.smartclient.es_ES",
+        "name": "Smartclient Translation: Spanish Spain (es_ES)",
+        "version": "1.0.300",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.smartclient.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.utility.multiplebpselector",
+        "name": "Openbravo Multi Business Partner Selector",
+        "version": "1.0.200",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.utility.multiplebpselector.es_ES",
+        "name": "Openbravo Multi Business Partner Selector Spanish (Spain)",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.v3.translation.pack.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.v3.translation.pack.es_ES",
+        "name": "Openbravo 3.0 Translation Pack: Spanish Spain (es_ES)",
+        "version": "3.4.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.v3.translation.pack.es_es.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.warehouse.pickinglist",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.warehouse.pickinglist",
+        "name": "Warehouse Picking List",
+        "version": "1.4.1500",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.warehouse.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.warehouse.pickinglist.git",
+        "latest_version": "3.4.5"
+      },
+      {
+        "java_package": "org.openbravo.warehouse.structure",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.warehouse.structure",
+        "name": "Warehouse Structure",
+        "version": "1.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.warehouse.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.warehouse.structure.git",
+        "latest_version": "3.3.0"
+      }
+    ],
+    "local_not_maintained": [
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "version": "1.1.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced.es_es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.etendoerp.financial.reports.advanced.es_es",
+        "name": "Informes Financieros Avanzados",
+        "version": "1.2.2",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.invoices",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.openbravo.gps.idl.invoices",
+        "name": "Initial Data Load Extension for Invoices",
+        "version": "1.0.6",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.orders",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.openbravo.gps.idl.orders",
+        "name": "Initial Data Load Extension for Orders",
+        "version": "1.0.1",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.smf.additionalpocolumns",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.additionalpocolumns",
+        "name": "Additional PO Columns",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.budget.report.base",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.budget.report.base",
+        "name": "Budget Reports",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.budget.report.bii.base",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.budget.report.bii.base",
+        "name": "Budget Reports BII",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.changedataorder",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.changedataorder",
+        "name": "Change Sales Order & Sales Quotation",
+        "version": "1.0.0",
+        "author": "SMF Consulting"
+      },
+      {
+        "java_package": "com.smf.changepricelist.order",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.changepricelist.order",
+        "name": "Change price list for sales order in WebPos",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.gen.pricelist",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.gen.pricelist",
+        "name": "Generalization Pricelist Module",
+        "version": "1.0.0",
+        "author": "AD Autor"
+      },
+      {
+        "java_package": "com.smf.gen.pricelist.template",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.gen.pricelist.template",
+        "name": "Generalization Pricelist Template",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.gloria.generate.purchaseorder",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.gloria.generate.purchaseorder",
+        "name": "SMF GeneratePurchaseOrder",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.localizacion.argentina",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.localizacion.argentina",
+        "name": "Localización Argentina",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.localizacion.argentina.template",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.localizacion.argentina.template",
+        "name": "Plantilla Localización Argentina",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.localizacion.argentina.webpos",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.localizacion.argentina.webpos",
+        "name": "Localización Argentina Webpos",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.localizacion.argentina.webpos.template",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.localizacion.argentina.webpos.template",
+        "name": "Plantilla Localización Argentina Webpos",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.lujan.prestashop",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.lujan.prestashop",
+        "name": "Customizacion de Prestashop LA",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.lujan.printing.reports",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.lujan.printing.reports",
+        "name": "Imprimibles Luján Agrícola",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L"
+      },
+      {
+        "java_package": "com.smf.lujan.template",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.lujan.template",
+        "name": "Plantilla Luján Agrícola",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L."
+      },
+      {
+        "java_package": "com.smf.product.stock",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.product.stock",
+        "name": "Product Stock",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L."
+      },
+      {
+        "java_package": "com.smf.senasa.trazaagro.integration",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.senasa.trazaagro.integration",
+        "name": "Integracion con TrazaAgro de SENASA",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.updatepayment",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.updatepayment",
+        "name": "Change Financial Account And Payment Method in Payment",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.warehousemanagement",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.warehousemanagement",
+        "name": "Warehouse Management",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.warehousemanagement.template",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.warehousemanagement.template",
+        "name": "Warehouse Management Template",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "eu.practics.javaextensionpoints",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/eu.practics.javaextensionpoints",
+        "name": "Java Extension Points",
+        "version": "1.0.8",
+        "author": "Practics Business Solutions, S.L."
+      },
+      {
+        "java_package": "eu.practics.prestashop",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/eu.practics.prestashop",
+        "name": "Prestashop Integration",
+        "version": "1.2.145",
+        "author": "Practics Business Solutions, S.L"
+      },
+      {
+        "java_package": "eu.practics.prestashop.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/eu.practics.prestashop.es_ES",
+        "name": "Prestashop Integration Spanish Translation (es_ES)",
+        "version": "1.0.42",
+        "author": "Practics Business Solutions, S.L"
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.bankstatement.importer.generic.csv",
+        "name": "CSV Generic Bank Statement Importer",
+        "version": "1.1.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.client.analytics",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.client.analytics",
+        "name": "Analytics",
+        "version": "1.4.5000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.fileblob",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.fileblob",
+        "name": "Openbravo File BLOB",
+        "version": "1.0.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.idl",
+        "name": "Initial Data Load",
+        "version": "3.0.800",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl.variants",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.idl.variants",
+        "name": "IDL for Variants",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.materialmgmt.freightmgmt",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.materialmgmt.freightmgmt",
+        "name": "Freight Management",
+        "version": "1.0.700",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.mobile.core",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.mobile.core",
+        "name": "Mobile Core Infrastructure",
+        "version": "1.0.5431",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.mobile.core.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.mobile.core.es_ES",
+        "name": "Mobile Core Translation: Spanish Spain (es_ES)",
+        "version": "1.0.300",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat340.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.aeat340.es",
+        "name": "Tax Report: Modelo 340 (Spain)",
+        "version": "4.5.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.cuaderno19.es",
+        "name": "Cuaderno 19",
+        "version": "1.2.12",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno34.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.cuaderno34.es",
+        "name": "Cuaderno 34",
+        "version": "1.2.9",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno58.es",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.cuaderno58.es",
+        "name": "Cuaderno 58",
+        "version": "3.0.4",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.einvoice",
+        "name": "Electronic Invoice",
+        "version": "0.1.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.einvoice.es_ES",
+        "name": "Facturación Electrónica",
+        "version": "0.1.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.facturae",
+        "name": "Facturae API",
+        "version": "2.0.3",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae31",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.facturae31",
+        "name": "Facturación Electrónica - Facturae 3.1",
+        "version": "0.3.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.facturae32",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.facturae32",
+        "name": "Facturación Electrónica - Facturae 3.2",
+        "version": "0.1.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "version": "1.4.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoiceTaxReportEnhanced30.cashvat",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.invoiceTaxReportEnhanced30.cashvat",
+        "name": "Multidimensional Tax Report Cash VAT",
+        "version": "1.3.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoiceTaxReportEnhanced30.cashvat.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.invoiceTaxReportEnhanced30.cashvat.es_ES",
+        "name": "Multidimensional Tax Report Cash VAT Spanish (es_ES)",
+        "version": "1.0.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
+        "name": "Configuración IVA de Caja para el Libro de Facturas",
+        "version": "1.2.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.module.remittance.es_ES",
+        "name": "Remittances infrastructure - Spanish Translation",
+        "version": "1.1.8",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain.dataset.cashvat",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.proflocalization.spain.dataset.cashvat",
+        "name": "Professional Localization pack Spain Cash VAT Datasets",
+        "version": "1.3.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain30.cashvat",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.proflocalization.spain30.cashvat",
+        "name": "Professional Localization pack Spain (España) Cash VAT",
+        "version": "1.15.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.config",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.config",
+        "name": "Retail Configuration",
+        "version": "1.0.5701",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.config.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.config.es_ES",
+        "name": "Retail configuration Translation: Spanish Spain (es_ES)",
+        "version": "1.0.300",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.copystore",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.copystore",
+        "name": "Copy Retail Store",
+        "version": "1.0.1200",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.retail.discounts",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.discounts",
+        "name": "Discounts & Promotions Rules for Retail",
+        "version": "1.3.6511",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.retail.discounts.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.discounts.es_ES",
+        "name": "Discounts & Promotions for Retail Translation: Spanish",
+        "version": "1.0.500",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.fiscalprinters",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.fiscalprinters",
+        "name": "Fiscal printers",
+        "version": "1.1.600",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.giftcards",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.giftcards",
+        "name": "Gift cards and vouchers",
+        "version": "1.3.1210",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.giftcards.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.giftcards.es_ES",
+        "name": "Gift cards and vouchers Spanish (Spain) Translation",
+        "version": "1.0.300",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.pack",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.pack",
+        "name": "Openbravo for Retail",
+        "version": "1.8.4743",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.pack.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.pack.es_ES",
+        "name": "Openbravo for Retail Translation: Spanish Spain (es_ES)",
+        "version": "1.6.400",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.poshwmanager",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.poshwmanager",
+        "name": "Web POS Hardware Manager",
+        "version": "1.0.5801",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.posterminal",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.posterminal",
+        "name": "Web POS",
+        "version": "1.2.6541",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.posterminal.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.posterminal.es_ES",
+        "name": "Web POS Translation: Spanish Spain (es_ES)",
+        "version": "1.0.600",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.pricecriteria",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.pricecriteria",
+        "name": "Filter by price in product search",
+        "version": "1.0.600",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.returns",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.returns",
+        "name": "Return from Original",
+        "version": "1.0.4501",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.returns.es_ES",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.returns.es_ES",
+        "name": "Return from Original Translation: Spanish Spain (es_ES)",
+        "version": "1.0.400",
+        "author": "Openbravo, S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.stockvalidation",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.retail.stockvalidation",
+        "name": "Web POS stock validation",
+        "version": "1.1.1500",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.service.integration.amazon.s3",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.service.integration.amazon.s3",
+        "name": "Integration with Amazon S3",
+        "version": "1.0.500",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.util.javax.xml.soap",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.util.javax.xml.soap",
+        "name": "Javax XML SOAP API",
+        "version": "1.4.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.utility.hqlquerytool",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.utility.hqlquerytool",
+        "name": "Openbravo HQL Query Tool",
+        "version": "2.0.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "temp_modules",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/temp_modules"
+      }
+    ],
+    "custom": [
+      {
+        "java_package": "com.smf.lujan.customization",
+        "path": "/home/faqsarg/etendo-clients/LujanAgricola/modules/com.smf.lujan.customization",
+        "name": "Customizaciones Luján Agrícola",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L.",
+        "line_count": 127634,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      }
+    ]
+  },
+  "core_divergences": {
+    "status": "modified",
+    "base_version": "expanded",
+    "baseline_type": "expanded",
+    "folders_checked": [
+      "src",
+      "src-db",
+      "src-core",
+      "src-wad",
+      "modules_core",
+      "src-trl",
+      "src-util"
+    ],
+    "modified_files": 87,
+    "added_files": 26,
+    "deleted_files": 0,
+    "diff_lines_added": 7486,
+    "diff_lines_removed": 859,
+    "files": [
+      {
+        "path": "src/org/openbravo/erpReports/ReportPaymentFilter.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ModuleManagementHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ShowSessionVariables.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrderCreate.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/CallAcctServer.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/AcctServer.java",
+        "status": "modified",
+        "lines_added": 342,
+        "lines_removed": 336
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialClientSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialOrgSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/MInOutTraceReports.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedger.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/GeneralAccountingReports.html",
+        "status": "modified",
+        "lines_added": 34,
+        "lines_removed": 18
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTrialBalance.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportExpense.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProfitabilityJR.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportToInvoiceConsignmentJR.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAgingBalance.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderOpenItemJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProgress.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionRunJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectBuildingSiteJR.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportStandardCostJRFilter.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashflowForecast.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedgerJournal.html",
+        "status": "modified",
+        "lines_added": 7,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportDebtPayment.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoicesJR.html",
+        "status": "modified",
+        "lines_added": 17,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentFilterJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderInvoicedJasper.html",
+        "status": "modified",
+        "lines_added": 36,
+        "lines_removed": 20
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipper.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceDiscountJR.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportParetoProduct.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 42,
+        "lines_removed": 23
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionCost.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductMovement.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBankJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementDaily.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesJRFilter.html",
+        "status": "modified",
+        "lines_added": 38,
+        "lines_removed": 19
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorFilterJR.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAnnualCertification.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGuaranteeDateJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportOrderNotInvoiceFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTaxInvoice.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBudgetGenerateExcel.html",
+        "status": "modified",
+        "lines_added": 10,
+        "lines_removed": 5
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWarehousePartnerJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderProvidedJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportPurchaseDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 22,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAssetDepreciationSchedule.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialTransactionEditionJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/utility/reporting/printing/PrintController.java",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupDeleted.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/InitialClientSetup.java",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/ExpenseAPInvoice.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateTaxReport.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateAccountingReport.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PrintInvoices.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PriceListCreateAll.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CashBankOperations.html",
+        "status": "modified",
+        "lines_added": 26,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Account.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/DebtPayment.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/ProductMultiple.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/LocatorMultiple.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/AccountElementValue.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Location_F1.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_callouts/SL_Order_Amt.java",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_ShipmentPO.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ChangeProjectStatus.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ProjectCopyFrom.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ExpenseSOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_Shipment.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/UpdateMaintenanceScheduled.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src-db/database/formalChangesScript.xml",
+        "status": "modified",
+        "lines_added": 6244,
+        "lines_removed": 0
+      },
+      {
+        "path": "src-db/database/model/functions/C_INVOICELINETAX_INSERT.xml",
+        "status": "modified",
+        "lines_added": 39,
+        "lines_removed": 4
+      },
+      {
+        "path": "src-db/database/model/tables/C_INVOICELINE.xml",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src-db/database/model/triggers/C_INVLINE_CHK_RESTRICTIONS_TRG.xml",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src-wad/build/classes/org/openbravo/fileblob/reference/wad/controls/WADFileBLOB.class",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/org.openbravo.reports.ordersawaitingdelivery/src/org/openbravo/reports/ordersawaitingdelivery/erpCommon/ad_reports/ReportOrderNotShipped.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "modules_core/org.openbravo.client.application/web/org.openbravo.client.application/js/process/ob-pick-and-execute-grid.js",
+        "status": "modified",
+        "lines_added": 30,
+        "lines_removed": 32
+      },
+      {
+        "path": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/ad_actionbutton/ImportBankFile.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "modules_core/org.openbravo.financial.paymentreport/src/org/openbravo/financial/paymentreport/erpCommon/ad_reports/PaymentReport.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 12
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.gitignore",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/index",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/description",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/packed-refs",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/config",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/HEAD",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/objects/pack/pack-5280b31f465f9424271ed21fe838f6e462859471.pack",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/objects/pack/pack-5280b31f465f9424271ed21fe838f6e462859471.idx",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/update.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/pre-receive.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/applypatch-msg.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/fsmonitor-watchman.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/commit-msg.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/post-update.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/pre-rebase.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/pre-commit.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/pre-applypatch.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/pre-push.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/hooks/prepare-commit-msg.sample",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/info/exclude",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/logs/HEAD",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/logs/refs/remotes/origin/HEAD",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/logs/refs/heads/master",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/refs/remotes/origin/HEAD",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.mobile.utils/.git/refs/heads/master",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      }
+    ]
+  },
+  "migration_score": 49,
+  "migratability": "hard",
+  "score_breakdown": {
+    "openbravo_platform": 0,
+    "core_divergences": -15.0,
+    "core_diff_lines": 8345,
+    "local_not_maintained": -20,
+    "local_not_maintained_translations": 12,
+    "local_not_maintained_regular": 61,
+    "custom_modules": -16.0,
+    "custom_modules_detail": [
+      {
+        "java_package": "com.smf.lujan.customization",
+        "line_count": 127634,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      }
+    ],
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
+  },
+  "custom_assessment": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-21",
+    "core_customizations": [
+      {
+        "name": "Formal Changes Script",
+        "description": "Auto-generated Etendo migration artifact tracking schema changes applied during upgrade process.",
+        "files": [
+          "src-db/database/formalChangesScript.xml"
+        ],
+        "lines_changed": 6244,
+        "conclusion": "eliminate",
+        "justification": "Standard auto-generated migration file, always regenerated during upgrades. Not a functional customization.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "name": "AcctServer.java whitespace reformatting",
+        "description": "Purely cosmetic reformatting of the accounting server class — no functional changes.",
+        "files": [
+          "src/org/openbravo/erpCommon/ad_forms/AcctServer.java"
+        ],
+        "lines_changed": 678,
+        "conclusion": "eliminate",
+        "justification": "Diff is entirely indentation and whitespace changes with zero semantic difference. Safe to discard when rebasing.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "name": "Legacy HTML report templates",
+        "description": "Formatting/whitespace modifications to ~56 legacy Openbravo HTML template files for classic UI reports, forms, action buttons, and info windows.",
+        "files": [
+          "src/org/openbravo/erpReports/ReportPaymentFilter.html",
+          "src/org/openbravo/erpReports/ReportRegisterFilter.html",
+          "src/org/openbravo/erpCommon/ad_forms/ModuleManagementHistory.html",
+          "src/org/openbravo/erpCommon/ad_forms/ShowSessionVariables.html",
+          "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrderCreate.html",
+          "src/org/openbravo/erpCommon/ad_forms/CallAcctServer.html",
+          "src/org/openbravo/erpCommon/ad_forms/InitialClientSetup.html",
+          "src/org/openbravo/erpCommon/ad_forms/InitialOrgSetup.html",
+          "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrder.html",
+          "src/org/openbravo/erpCommon/ad_reports/MInOutTraceReports.html",
+          "... (56 files total in ad_reports, ad_forms, ad_process, ad_actionButton, info, businessUtility)"
+        ],
+        "lines_changed": 1289,
+        "conclusion": "eliminate",
+        "justification": "All are pre-React legacy UI templates. In Etendo modern UI these are replaced by React components. Not worth migrating; any required report should be reimplemented as a Process Definition or Jasper report.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "name": "Argentine IIBB provincial tax perception logic",
+        "description": "Adds Argentine Ingresos Brutos (IIBB) provincial perception calculation to the invoice line tax trigger. Handles Salta and Mendoza perceptions using EM_Smfloc_* columns (business partner perception flags, coefficients) with operations BIC/BI50/BNA.",
+        "files": [
+          "src-db/database/model/functions/C_INVOICELINETAX_INSERT.xml"
+        ],
+        "lines_changed": 43,
+        "conclusion": "eliminate",
+        "justification": "Argentine provincial tax logic belongs in com.smf.localizacion.argentina, not in core. The installed localization module should already handle this; the core modification is a patch applied outside proper module boundaries.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2
+      },
+      {
+        "name": "Payment P&E grid customization for order_invoice",
+        "description": "Modifies the Pick & Execute grid blur handler to add special behavior when the parameter name is 'order_invoice': hooks into OB.APRM.AddPayment.updateActualExpected and updateInvOrderTotal to recalculate payment totals when editing inline grid cells.",
+        "files": [
+          "modules_core/org.openbravo.client.application/web/org.openbravo.client.application/js/process/ob-pick-and-execute-grid.js"
+        ],
+        "lines_changed": 62,
+        "conclusion": "eliminate",
+        "justification": "Client-specific payment integration logic injected directly into core JS. Must be reimplemented as a proper module-level override using extension hooks. The OB.APRM.AddPayment namespace will not exist in the React UI.",
+        "api_changes_applicable": [
+          "OB.* namespaces unavailable in React UI"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4
+      },
+      {
+        "name": "Invoice line net amount free-entry customization",
+        "description": "Coordinated three-file change: (1) Comments out the SL_Order_Amt callout logic that recalculates unit price from edited net amount; (2) Comments out the C_INVOICELINE trigger constraint that validates qty×price = net amount; (3) Changes ISEDITLINENETAMT column default from N to Y, enabling direct net amount entry on all invoice lines.",
+        "files": [
+          "src/org/openbravo/erpCommon/ad_callouts/SL_Order_Amt.java",
+          "src-db/database/model/triggers/C_INVLINE_CHK_RESTRICTIONS_TRG.xml",
+          "src-db/database/model/tables/C_INVOICELINE.xml"
+        ],
+        "lines_changed": 15,
+        "conclusion": "eliminate",
+        "justification": "The ISEDITLINENETAMT flag can be set per-organization via AD Preferences without touching core. The trigger bypass creates a data integrity risk. The callout modification is also unnecessary if the flag is set correctly.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 4
+      },
+      {
+        "name": "Hardcoded email body in PrintController",
+        "description": "Replaces the configurable email body with a hardcoded Spanish-language message about merchandise storage policy: free storage limited to 6 months from invoice date starting April 1, 2025.",
+        "files": [
+          "src/org/openbravo/erpCommon/utility/reporting/printing/PrintController.java"
+        ],
+        "lines_changed": 7,
+        "conclusion": "eliminate",
+        "justification": "Highly client-specific business message hardcoded in core. Must be replaced with a configurable template (AD_AlertRule, document template, or preference).",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2
+      },
+      {
+        "name": "InitialClientSetup null check relaxation",
+        "description": "Removes treeBPartner from the null check in insertClientInfo(), allowing initial client setup to proceed even when no Business Partner tree exists.",
+        "files": [
+          "src/org/openbravo/erpCommon/businessUtility/InitialClientSetup.java"
+        ],
+        "lines_changed": 2,
+        "conclusion": "eliminate",
+        "justification": "Appears to be a setup workaround specific to this client's configuration. Removing it from core is safe; if still needed it should be investigated as a potential data issue.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 0
+      }
+    ],
+    "custom_modules": [
+      {
+        "java_package": "com.smf.lujan.customization",
+        "name": "Luján Agrícola Customization",
+        "description": "Monolithic customization module covering: (1) Argentine AFIP electronic invoice integration (SendToAfipAndMail, GenerateElectronicInvoiceAsync — depends on com.smf.localizacion.argentina); (2) SENASA agro-traceability integration (Argentine food safety authority); (3) ISCAMEN agricultural registry export (CSV); (4) Custom average costing algorithm with cuenta-y-orden/consignment logic; (5) MercadoLibre e-commerce web service; (6) Gift card system (create, consume, return); (7) IDL data integration (orders, products from external systems); (8) WebPOS extensions (alternative UOM, attribute sets, order properties); (9) Custom AWO picking algorithms (FEFO by expiry date, priority-based, quantity-available); (10) Excel price list import (Apache POI); (11) Multiple business validations (CUIT validation, blocked accounts, payment method charges, sales order limits); (12) Exchange rate difference handling; (13) Custom reports (cash-up, customer statement, movement report, collector terms). 172 Java files, 30,200 LOC.",
+        "generalization": "client_specific",
+        "complexity": "critical",
+        "api_changes_applicable": [
+          "Commons Lang 2 (org.apache.commons.lang.*) → Commons Lang 3 (org.apache.commons.lang3.*) — 25.1.0 BREAKING",
+          "OpenCSV au.com.bytecode.opencsv → com.opencsv (bundled in org.openbravo.utility.opencsv) — package rename",
+          "Apache POI 3.x → 5.4.0: Cell.CELL_TYPE_* constants → CellType enum, CellStyle constants → enums — 25.1.0 BREAKING",
+          "Hibernate Criterion API (org.hibernate.criterion.Restrictions) — still available in 5.6 but deprecated; OBCriteria wrapping may insulate most calls"
+        ],
+        "effort_update_hours": 80,
+        "effort_saas_hours": 160,
+        "recommendation": "Do not attempt to migrate this module as-is. Split into: (a) Argentine regulatory integrations (AFIP, SENASA, ISCAMEN) → should be consolidated into or alongside com.smf.localizacion.argentina; (b) Agro-business domain logic (costing, picking algorithms, gift cards) → evaluate which are generic enough for an Etendo bundle; (c) Client-specific rules → minimize and document. Priority: fix Commons Lang, OpenCSV and POI imports first as they are hard blockers."
+      }
+    ],
+    "unmaintained_modules": [
+      {
+        "java_package": "com.smf.localizacion.argentina + .template + .webpos + .webpos.template",
+        "name": "SMF Argentina Localization (4 modules)",
+        "function": "Argentine fiscal localization: AFIP electronic invoice (CAE generation via AFIP web services), Argentine tax handling (perceptions, VAT, IIBB), WebPOS fiscal integration.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "AFIP web service URLs and certificate requirements may have changed since module version 1.0.1",
+          "Commons Lang 2 → 3 if module uses it internally",
+          "Java 17 requirement in Etendo 26"
+        ],
+        "effort_update_hours": 40,
+        "effort_saas_hours": 20,
+        "recommendation": "Critical dependency — custom module imports AFIPElectInvMaker directly. Contact SMF to obtain an updated version for 25.4.x. If not available, fork and update to new APIs and current AFIP web service specs."
+      },
+      {
+        "java_package": "org.openbravo.retail.* (18 modules) + org.openbravo.mobile.core + es_ES",
+        "name": "Openbravo WebPOS/Retail Stack (20 modules)",
+        "function": "Complete point-of-sale system: POS terminal, retail discounts, gift cards, fiscal printers, stock validation at point of sale, hardware manager, return processing, price criteria, copy store operations.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.smf.webpos (Etendo WebPOS)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Openbravo POS stack is incompatible with Etendo 25.x — no upgrade path",
+          "Mobile core (1.0.5431) predates major Etendo refactoring",
+          "Custom module has WebPOS extensions (webpos/*) that must be rewritten for Etendo WebPOS"
+        ],
+        "effort_update_hours": 80,
+        "effort_saas_hours": 60,
+        "recommendation": "Migrate to Etendo WebPOS (com.smf.webpos). The 20 Openbravo retail modules must be replaced — no incremental update possible. Custom WebPOS extensions in com.smf.lujan.customization/webpos/* must be rewritten for the new API. Data migration of gift cards, discounts config, and POS setup required."
+      },
+      {
+        "java_package": "eu.practics.prestashop + eu.practics.prestashop.es_ES + eu.practics.javaextensionpoints",
+        "name": "Practics Prestashop Integration (3 modules)",
+        "function": "Bidirectional Prestashop e-commerce connector: product catalog sync, order import, customer sync. com.smf.lujan.prestashop adds Luján-specific customizations on top.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Practics module version 1.2.145 — unknown compatibility with 25.x",
+          "Java extension points framework may need recompilation",
+          "No active maintainer confirmed for Etendo 25.x"
+        ],
+        "effort_update_hours": 40,
+        "effort_saas_hours": 16,
+        "recommendation": "Contact Practics Business Solutions for an updated version compatible with Etendo 25.4.x. If unavailable, evaluate alternative e-commerce connectors or migrate e-commerce integration to an API-based approach (REST webhooks)."
+      },
+      {
+        "java_package": "com.smf.senasa.trazaagro.integration",
+        "name": "SENASA Agro-Traceability Integration",
+        "function": "Integration with SENASA (Argentina's National Service of Agricultural Health and Food Quality) for product traceability reporting in the agro-chemical supply chain.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "SENASA web service API may have changed since module creation",
+          "No active maintainer"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 8,
+        "recommendation": "Assess whether SENASA integration is still actively used. If yes, update the module to work with 25.4.x APIs and verify against current SENASA web service specification."
+      },
+      {
+        "java_package": "org.openbravo.idl + org.openbravo.idl.variants + org.openbravo.module.idljava + com.openbravo.gps.idl.invoices + com.openbravo.gps.idl.orders",
+        "name": "IDL Data Integration Framework (5 modules)",
+        "function": "Incremental Data Load framework for importing external data (orders and invoices from GPS systems). Custom module uses IdlOrders.java and ProductsProcessIDL.java to load external data into Etendo.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "IDL framework not maintained for Etendo 25.x",
+          "GPS IDL modules use old OpenCSV (au.com.bytecode) — breaking change in 25.1"
+        ],
+        "effort_update_hours": 24,
+        "effort_saas_hours": 16,
+        "recommendation": "Assess actual usage of IDL-based integrations. If still active, fork and update the 5 modules. Consider replacing with a REST API-based integration approach which is more maintainable."
+      },
+      {
+        "java_package": "com.smf.warehousemanagement + com.smf.warehousemanagement.template",
+        "name": "SMF Warehouse Management (2 modules)",
+        "function": "Extended warehouse management functionality beyond standard Etendo stock management.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.warehouse.extensions (Warehouse Extensions Bundle)",
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Evaluate if Etendo Warehouse Extensions Bundle covers needed functionality. If so, migrate configuration and remove these modules."
+      },
+      {
+        "java_package": "com.smf.additionalpocolumns + com.smf.changedataorder + com.smf.changepricelist.order + com.smf.gen.pricelist + com.smf.gen.pricelist.template + com.smf.gloria.generate.purchaseorder + com.smf.product.stock + com.smf.updatepayment + com.smf.lujan.printing.reports + com.smf.lujan.template + com.smf.lujan.prestashop + com.smf.budget.report.base + com.smf.budget.report.bii.base",
+        "name": "SMF Utility and Client-Specific Modules (13 modules)",
+        "function": "Various SMF utilities: additional PO columns, order data change, price list operations, product stock management, payment update, client-specific reports and print templates, Prestashop customizations, budget reports.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Some modules may use Commons Lang 2 or other deprecated APIs",
+          "Template modules follow parent module fate"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 8,
+        "recommendation": "Review each module individually. Template modules (*.template) require zero effort if parent is maintained. Utility modules should be assessed for redundancy with newer Etendo bundles."
+      },
+      {
+        "java_package": "org.openbravo.client.analytics + com.etendoerp.analytics.exporter",
+        "name": "Analytics Modules (2 modules)",
+        "function": "Analytics dashboards and data export capabilities.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Etendo Analytics / PowerBI integration",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 4,
+        "recommendation": "Evaluate replacement with Etendo's current analytics/PowerBI integration (com.etendoerp.powerbi.inclusion.exclusion is already installed as a maintained module)."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es + cuaderno34.es + cuaderno58.es + einvoice + einvoice.es_ES + facturae + facturae31 + facturae32 + remittance.es_ES + proflocalizacion.spain30.cashvat + proflocalizacion.spain.dataset.cashvat + module.aeat340.es + invoiceTaxReportEnhanced30.cashvat + invoiceTaxReportEnhanced30.cashvat.es_ES + invoicesregisterbook.estaxes.cashvat",
+        "name": "Spanish Localization / Compliance Modules (15 modules)",
+        "function": "Spanish banking formats (cuadernos), Spanish electronic invoice (FacturaE), AEAT tax report 340, Spanish cash VAT accounting, Spanish invoice tax reports.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Local maintained Spanish localization modules already present (org.openbravo.localization.spain30, aeat303, aeat347apr, etc.)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 4,
+        "recommendation": "Luján Agrícola is an Argentine company — these Spanish localization modules are likely vestigial from a Spanish installation template and not actively used. Verify and remove to clean up the installation. Zero migration effort if confirmed unused."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv + org.openbravo.fileblob + org.openbravo.materialmgmt.freightmgmt + org.openbravo.service.integration.amazon.s3 + org.openbravo.util.javax.xml.soap + org.openbravo.utility.hqlquerytool + org.openbravo.utility.opencsv",
+        "name": "Openbravo Infrastructure Modules (7 modules)",
+        "function": "Generic infrastructure: CSV bank statement import, file BLOB storage, freight management, Amazon S3 integration, SOAP utilities, HQL query tool, OpenCSV library wrapper.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "org.openbravo.utility.opencsv uses old au.com.bytecode package — replaced by native opencsv in 25.1",
+          "org.openbravo.fileblob depends on WADFileBLOB.class (also present in core divergences)"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 6,
+        "recommendation": "org.openbravo.utility.opencsv must be removed and replaced with Etendo 25.1's native opencsv. org.openbravo.fileblob: assess usage and check if file attachment improvements cover the need. Amazon S3 and freight management: assess if still needed."
+      }
+    ],
+    "effort_summary": {
+      "update_core_hours": 17,
+      "update_custom_hours": 80,
+      "update_unmaintained_hours": 248,
+      "update_total_hours": 345,
+      "saas_core_hours": 12,
+      "saas_custom_hours": 160,
+      "saas_unmaintained_hours": 146,
+      "saas_total_hours": 318
+    }
+  },
+  "ui_readiness": {
+    "generated": "2026-04-21",
+    "summary": {
+      "total_windows": 419,
+      "total_processes": 412,
+      "total_display_logic_fields": 2769,
+      "total_callouts": 95,
+      "total_ad_forms": 29,
+      "total_custom_selectors": 245,
+      "critical_blockers": 4,
+      "high_priority": 4,
+      "medium_priority": 4
+    },
+    "features": [
+      {
+        "section": "1.1",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "alta",
+        "reason": "299 Maintain windows are the backbone of the installation. Core CRUD is implemented but edge cases (multi-record delete, copy with child tabs, isUpdateable=N) need validation.",
+        "title": "Maintain Windows",
+        "ad_count": 299
+      },
+      {
+        "section": "1.2",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "alta",
+        "reason": "42 transaction windows covering invoices, orders, and shipments — core to Luján's agro-trade operations. DocAction labels bug and Posted button (31 instances) need resolution.",
+        "title": "Transaction Windows",
+        "ad_count": 42
+      },
+      {
+        "section": "1.3",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "13 query windows. Basic read-only mode is implemented; toolbar button visibility validation needed.",
+        "title": "Query/Info Windows",
+        "ad_count": 13
+      },
+      {
+        "section": "1.4",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "critica",
+        "reason": "65 P&E windows + 166 P&E Process Definitions = 231 entries. This is a major blocker — P&E is heavily used across the installation. Inline mandatory field validation, context forwarding, and openDirectTab response handling are incomplete gaps.",
+        "title": "Pick and Execute Windows",
+        "ad_count": 231
+      },
+      {
+        "section": "2",
+        "status": "PARCIAL",
+        "completion_pct": 65,
+        "priority": "alta",
+        "reason": "Top references are standard (TableDir 3213, Search 2284, YesNo 2277, DateTime 1840, String 1723) — mostly implemented. Critical gaps: PAttribute/35 (40 uses, PARCIAL), Image BLOB/4AA6C3BE (20 uses, NOT DONE), Rich Text/7CB371C1 (7 uses, NOT DONE). Also: 17 uses of Absolute Time (20D7C424, NOT DONE).",
+        "title": "Field Reference Types",
+        "ad_count": null
+      },
+      {
+        "section": "2.B",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "priority": "critica",
+        "reason": "55 hardcoded button instances: Posted=31, PaymentRule=9, CreateFrom=8, DocAction=6, ChangeProjectStatus=1. Posted and PaymentRule have significant implementation gaps. DocAction label bug affects 6 windows. 187 legacy AD_PROCESS_ID buttons vs 170 modern — legacy routing is a risk.",
+        "title": "Hardcoded Button Columns",
+        "ad_count": 55
+      },
+      {
+        "section": "3.A",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "critica",
+        "reason": "230 Manual JS processes (UIPattern=M) are a hard blocker — OB.* namespaces do not exist in React. 110 legacy reports, 69 background processes, 4 Jasper reports. The 230 Manual JS processes alone represent months of reimplementation work.",
+        "title": "Report and Process (AD_PROCESS)",
+        "ad_count": 412
+      },
+      {
+        "section": "3.B",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "alta",
+        "reason": "18 Manual JS Process Definitions add to the 230 AD_PROCESS Manual JS total. 166 P&E Process Definitions (counted in 1.4). 620 parameter entries across all process definitions — parameter popup rendering completeness needs verification.",
+        "title": "Process Definitions (OBUIAPP_PROCESS)",
+        "ad_count": 204
+      },
+      {
+        "section": "4",
+        "status": "BUG ACTIVO",
+        "completion_pct": 50,
+        "priority": "critica",
+        "reason": "2769 fields with display logic — extremely high usage. The @field_name@ syntax bug is active and documented. 201 fields use @$SessionVar@ syntax (harder to evaluate). With 2769 affected fields, this bug alone would cause widespread UI breakage across every window in the installation.",
+        "title": "Display Logic on Fields",
+        "ad_count": 2769
+      },
+      {
+        "section": "5",
+        "status": "PARCIAL",
+        "completion_pct": 65,
+        "priority": "alta",
+        "reason": "86 tabs with display logic (tab visibility), 38 read-only tabs, 42 HQL filter clauses and 14 SQL filter clauses (Tab Default Filters NOT DONE). The 42 HQL filter clauses are a significant gap — tab-level data filtering will show wrong data sets.",
+        "title": "Tab-Level Display Logic and Behaviors",
+        "ad_count": 86
+      },
+      {
+        "section": "6",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "alta",
+        "reason": "95 columns with callouts — above average for Etendo installations. Callouts drive critical business logic (pricing, tax calculation, business partner defaults). Custom module has SLOrderAmt callout and multiple others. Need verification that callout chaining and form refresh work correctly in React.",
+        "title": "Callouts",
+        "ad_count": 95
+      },
+      {
+        "section": "7",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "media",
+        "reason": "245 custom selector definitions. GenericSelector.tsx partially implemented but out-parameters (isoutparameter=Y) are NOT implemented — selectors that populate multiple fields on selection will silently fail.",
+        "title": "Custom Selectors (OBUISEL_Selector)",
+        "ad_count": 245
+      },
+      {
+        "section": "8",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "critica",
+        "reason": "29 AD_FORM entries, none implemented in React UI. AD_FORM is entirely absent from the new UI. These include custom forms from the Argentina localization module and retail modules. Each requires individual reimplementation as a Process Definition.",
+        "title": "AD_FORM (Legacy Forms)",
+        "ad_count": 29
+      },
+      {
+        "section": "26",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "alta",
+        "reason": "42 HQL filter clauses + 14 SQL filter clauses on tabs. TabBuilder.java does not send these to the UI. Without them, tabs show all accessible records instead of the configured filtered subset, causing data overload and incorrect default views in transaction windows.",
+        "title": "Tab Default Filters (HQL/SQL)",
+        "ad_count": 56
+      }
+    ]
+  }
+}
