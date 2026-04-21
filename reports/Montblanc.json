@@ -1,0 +1,3852 @@
+{
+  "client": {
+    "name": "Montblanc",
+    "hostname": "asus"
+  },
+  "platform": {
+    "type": "etendo",
+    "version": "25.1.6"
+  },
+  "modules": {
+    "gradle_jar": [],
+    "gradle_source": [
+      {
+        "java_package": "com.etendoerp.accounting.dimensions.assets",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.accounting.dimensions.assets",
+        "name": "Accounting Dimensions Assets",
+        "version": "2.1.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.dimensions.assets.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.accounting.dimensions.assets.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.accounting.dimensions.assets.template",
+        "name": "Accounting Dimensions Assets Template",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.dimensions.assets.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.accounting.templates",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.accounting.templates",
+        "name": "New Accounting Templates",
+        "version": "2.2.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.templates.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bank.account.management",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.advanced.bank.account.management",
+        "name": "Advanced Bank Account Management",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bank.account.management.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bank.account.management.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.advanced.bank.account.management.template",
+        "name": "Advanced Bank Account Management Template",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bank.account.management.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.advanced.bpsettlement",
+        "name": "Advanced Business Partner Settlement",
+        "version": "2.2.2",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bpsettlement.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.advanced.financial.docs.processing",
+        "name": "Advanced Financial Documents Processing",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.advanced.financial.docs.processing.template",
+        "name": "Advanced Financial Documents Processing Template",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.advanced.intercompany",
+        "name": "Advanced Intercompany",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.intercompany.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "version": "3.2.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.analytics.exporter",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 32,
+          "deleted_files": 1,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": [
+            {
+              "path": "build/resources/main/META-INF/beans.xml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".gitignore",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".github/workflows/git-police.yml",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".github/workflows/build.yml",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".github/workflows/auto-reviewer.yml",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/index",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/description",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/packed-refs",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/config",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-826cf9e9cfc39e3fd1d2429f2dc7d19833648560.rev",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-826cf9e9cfc39e3fd1d2429f2dc7d19833648560.pack",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-826cf9e9cfc39e3fd1d2429f2dc7d19833648560.idx",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-receive.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/applypatch-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-merge-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/fsmonitor-watchman.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/post-update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/sendemail-validate.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-rebase.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/push-to-checkout.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-applypatch.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-push.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/prepare-commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/info/exclude",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/heads/main",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/heads/main",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "com.etendoerp.automated.remittance",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.automated.remittance",
+        "name": "Automated Remittance",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.automated.remittance.git",
+        "latest_version": "2.4.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.bankingpool",
+        "name": "Banking Pool",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bankingpool.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.bulk.posting",
+        "name": "Bulk Posting",
+        "version": "2.2.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.posting.git",
+        "latest_version": "2.4.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.financial.extensions",
+        "name": "Financial Extensions",
+        "version": "3.4.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.financial.extensions.es_es",
+        "name": "Financial Extensions - Spanish Translation",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions.es_es",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.financial.reports.advanced",
+        "name": "Financial Reports Advanced",
+        "version": "2.4.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.financial.reports.advanced.template",
+        "name": "Financial Reports Advanced Template",
+        "version": "1.0.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.template.git",
+        "latest_version": "1.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.gljournal.advanced",
+        "name": "GL Journal Advanced",
+        "version": "2.1.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.advanced.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.clone",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.gljournal.clone",
+        "name": "Clone GL Journal",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.clone.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.gljournal.clone.template",
+        "name": "Clone GL Journal Template",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.localization.spain.extensions",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.localization.spain.extensions",
+        "name": "Spain Localization Extensions",
+        "version": "3.0.0",
+        "author": "Futit Services S.L",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.payment.removal",
+        "name": "Payment Removal",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.payment.removal.template",
+        "name": "Payment Removal Template",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.reportvaluationstock.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.reportvaluationstock.es_es",
+        "name": "Report Valuation Stock - Spanish Translation",
+        "version": "2.0.0",
+        "author": "Futit Services S.L",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.reportvaluationstock.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.sif.general",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.sif.general",
+        "name": "Funcionalidades Generales Para SIFs",
+        "version": "2.0.0",
+        "author": "Futit Services S.L",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.sif.general.git",
+        "latest_version": "2.8.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.vat.regularization",
+        "name": "VAT Regularization",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.vat.regularization.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.verifactu",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.verifactu",
+        "name": "Sistema de Facturación Verifactu",
+        "version": "2.0.0",
+        "author": "Futit Services S.L",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.verifactu.git",
+        "latest_version": "2.10.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.verifactu.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.verifactu.template",
+        "name": "Etendo Verifactu Template",
+        "version": "2.0.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.verifactu.template.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.asset.amortization.report",
+        "name": "Asset Amortization Report",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.asset.amortization.report.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.currency.apiconfig",
+        "name": "Currency API Configuration",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.apiconfig.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.currency.conversionrate",
+        "name": "Conversion Rate Downloader",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.conversionrate.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.gljournal.reverse",
+        "name": "Reverse GL Journal",
+        "version": "2.1.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.gljournal.reverse.template",
+        "name": "Reverse GL Journal Template",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jobs.defaults.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.jobs.defaults.es_es",
+        "name": "Default Jobs (es_ES)",
+        "version": "2.0.0",
+        "author": "Futit S.L.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.defaults.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jobs.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.jobs.es_es",
+        "name": "Jobs - Spanish Translation",
+        "version": "2.0.0",
+        "author": "Futit Services S.L",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.securewebservices.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.securewebservices.es_es",
+        "name": "Secure web services implentation - Spanish Translation",
+        "version": "2.0.0",
+        "author": "Futit Services S.L",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.securewebservices.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.ticketbai",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.ticketbai",
+        "name": "TicketBAI Integration",
+        "version": "2.0.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.ticketbai.git",
+        "latest_version": "2.10.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.advpaymentmngt.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.advpaymentmngt.es_es",
+        "name": "Advanced Payables and Receivables - Spanish Translation",
+        "version": "4.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.advpaymentmngt.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.alerts.accounting30",
+        "name": "Alerts: Accounting",
+        "version": "4.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.alerts.accounting30.es_es",
+        "name": "Alerts: Accounting - Spanish Translation",
+        "version": "4.0.0",
+        "author": "Openbravo, S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.application.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.client.application.es_es",
+        "name": "User Interface Application Translation Spanish Spain (es_ES)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.application.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.htmlwidget.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.client.htmlwidget.es_es",
+        "name": "HTML Widget Translation Spanish Spain (es_ES)",
+        "version": "2.0.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.htmlwidget.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.kernel.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.client.kernel.es_es",
+        "name": "User Interface Client Kernel Translation Spanish Spain(esES)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.kernel.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.myob.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.client.myob.es_es",
+        "name": "Workspace & Widgets Translation: Spanish Spain (es_ES)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.myob.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.querylist.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.client.querylist.es_es",
+        "name": "Query/List Widget Translation Spanish Spain (es_ES)",
+        "version": "2.0.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.querylist.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.widgets.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.client.widgets.es_es",
+        "name": "Widgets Collection Translation Spanish Spain (es_ES)",
+        "version": "2.0.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.widgets.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.finance.checkprinting",
+        "name": "Check Printing",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.finance.checkprinting.es_es",
+        "name": "Check Printing Spanish Translation",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.financial.bpsettlement",
+        "name": "Business Partner Settlements",
+        "version": "2.2.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.bpsettlement.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.financial.paymentreport.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.financial.paymentreport.es_es",
+        "name": "Payment Report - Spanish Translation",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.paymentreport.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.localization.spain.referencedata.accounts",
+        "name": "Chart of accounts: PGC 2007 General",
+        "version": "4.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "name": "Chart of accounts: PGC 2007 PYMEs",
+        "version": "4.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.pymes.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.localization.spain.referencedata.taxes",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.cashvat.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.localization.spain.referencedata.translation.eses",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "version": "4.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.translation.eses.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain30",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.localization.spain30",
+        "name": "Localization pack Spain (España)",
+        "version": "4.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain30.git",
+        "latest_version": "4.2.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.cashvat.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat190.cashvat.es",
+        "name": "Withholding Report: Modelo 190 (Spain) Cash VAT compatible",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.cashvat.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat190.es",
+        "name": "Withholding Report: Modelo 190 (Spain)",
+        "version": "4.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.cashvat.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat303.cashvat.es",
+        "name": "Tax Report: Modelo 303 (Spain) Cash VAT compatible",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.cashvat.es.git",
+        "latest_version": "2.6.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat303.es",
+        "name": "Tax Report: Modelo 303 (Spain)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.es.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.cashvat.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat347apr.cashvat.es",
+        "name": "Spain AEAT Modelo 347 for APR Cash VAT compatible",
+        "version": "2.4.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.cashvat.es.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 4,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 174,
+          "diff_lines_removed": 6,
+          "files": [
+            {
+              "path": "build.gradle",
+              "status": "modified",
+              "lines_added": 4,
+              "lines_removed": 4
+            },
+            {
+              "path": "referencedata/standard/AEAT_347_Cash_VAT.xml",
+              "status": "modified",
+              "lines_added": 168,
+              "lines_removed": 0
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_DATASET.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat347apr.es",
+        "name": "Spain AEAT Modelo 347 for APR",
+        "version": "5.3.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.git",
+        "latest_version": "5.3.0",
+        "diff": {
+          "modified_files": 4,
+          "added_files": 1,
+          "deleted_files": 0,
+          "diff_lines_added": 980,
+          "diff_lines_removed": 9,
+          "files": [
+            {
+              "path": "build.gradle",
+              "status": "modified",
+              "lines_added": 5,
+              "lines_removed": 5
+            },
+            {
+              "path": "referencedata/standard/Tax_Report_Launcher_definition_for_the_AEAT_347_tax_report.xml",
+              "status": "modified",
+              "lines_added": 893,
+              "lines_removed": 2
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_DATASET.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/org/openbravo/module/aeat347apr/es/v2025/AEAT347ReportAPR2025.java",
+              "status": "added",
+              "lines_added": 80,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat347apr.es.es_es",
+        "name": "Spain AEAT Modelo 347 for APR- Spanish Translation",
+        "version": "2.3.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.es_es.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 2,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 4,
+          "diff_lines_removed": 4,
+          "files": [
+            {
+              "path": "build.gradle",
+              "status": "modified",
+              "lines_added": 3,
+              "lines_removed": 3
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat349.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat349.es",
+        "name": "Modelo 349",
+        "version": "3.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat349.es.git",
+        "latest_version": "3.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.cashvat.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat390.cashvat.es",
+        "name": "Tax Report: Modelo 390 (Spain) Cash VAT compatible",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.cashvat.es.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat390.es",
+        "name": "Tax Report: Modelo 390 (Spain)",
+        "version": "4.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.es.git",
+        "latest_version": "4.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.bptaxidkey",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.bptaxidkey",
+        "name": "Tipo de Número de Identificación de Tercero",
+        "version": "1.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.bptaxidkey.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cashvat",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.cashvat",
+        "name": "Cash VAT Management",
+        "version": "2.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cashvat.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.cifnifvalidator",
+        "name": "CIF and NIF validator",
+        "version": "2.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.cifnifvalidator.es_es",
+        "name": "Validador de CIF y NIF",
+        "version": "2.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.countryisocode",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.countryisocode",
+        "name": "3 digits ISO country codes",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.countryisocode.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno43.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.cuaderno43.es",
+        "name": "Cuaderno 43",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cuaderno43.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.epigrafes.iae.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.epigrafes.iae.es",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.epigrafes.iae.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.eucountries",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.eucountries",
+        "name": "European Union countries",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.eucountries.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.finactvalidator.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.finactvalidator.es",
+        "name": "Validador de número de cuenta financiera",
+        "version": "4.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.finactvalidator.es.git",
+        "latest_version": "4.2.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.incoterms",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.incoterms",
+        "name": "Incoterms",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.incoterms.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.intrastat",
+        "name": "Intrastat",
+        "version": "4.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.intrastat.es_es",
+        "name": "Intrastat – Spanish translation",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.spain",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.intrastat.spain",
+        "name": "Intrastat for Spain",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.spain.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.invoicesregisterbook",
+        "name": "Invoices Register Book",
+        "version": "3.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.git",
+        "latest_version": "3.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.invoicesregisterbook.es_es",
+        "name": "Libro de Facturas",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.es_es.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.invoicesregisterbook.estaxes",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "version": "4.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.estaxes.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.invoicetaxreportenhanced30",
+        "name": "Multidimensional Tax Report",
+        "version": "4.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "name": "Multidimensional Tax Report Spanish (es_ES)",
+        "version": "4.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.es_es.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.organization.representative.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.organization.representative.es",
+        "name": "Legal Representative of the Organization",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.organization.representative.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.paymentmethod.type",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.paymentmethod.type",
+        "name": "Payment Method Type",
+        "version": "2.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.paymentmethod.type.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.remittance",
+        "name": "Remittances infrastructure",
+        "version": "4.1.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.git",
+        "latest_version": "4.3.1",
+        "diff": {
+          "modified_files": 1,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 4,
+          "diff_lines_removed": 4,
+          "files": [
+            {
+              "path": "src-db/database/sourcedata/AD_FIELD.xml",
+              "status": "modified",
+              "lines_added": 4,
+              "lines_removed": 4
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.remittance.template",
+        "name": "Remittance Infrastructure Template",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.sii",
+        "name": "Spain SII",
+        "version": "2.0.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.sii.es_es",
+        "name": "Spain SII Translation Spanish",
+        "version": "2.0.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.es_es.git",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.sii.template",
+        "name": "Spain SII Template",
+        "version": "2.0.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.template.git",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.taximprovements.es",
+        "name": "Spanish Tax Module Improvements",
+        "version": "1.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.taximprovements.es_es",
+        "name": "Módulo de Impuestos para España mejorado",
+        "version": "1.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es_es.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.taxreportlauncher",
+        "name": "Tax Report Launcher",
+        "version": "2.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.taxreportlauncher.es",
+        "name": "Generador de declaraciones de impuestos",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.numbertoword.es_es",
+        "name": "Number To Word Spanish Translation",
+        "version": "1.13.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.es_es.git",
+        "latest_version": "1.13.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.numbertoword_es",
+        "name": "Number To Word (Spanish)",
+        "version": "1.13.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword_es.git",
+        "latest_version": "1.13.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain.dataset",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.proflocalization.spain.dataset",
+        "name": "Professional Localization pack Spain (España) Datasets",
+        "version": "2.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.proflocalization.spain.dataset.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "name": "Orders Awaiting Delivery Spanish (Spain) Translation",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.reports.ordersawaitingdelivery.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.datasource.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.service.datasource.es_es",
+        "name": "JSON Datasource Translation: Spanish Spain (es_ES)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.datasource.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.integration.google.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.service.integration.google.es_es",
+        "name": "Integration with Google APIs Translation Spanish Spain",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.google.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.integration.openid.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.service.integration.openid.es_es",
+        "name": "OpenID Service Integration Translation Spanish Spain",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.openid.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spain.regions",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.spain.regions",
+        "name": "Provincias de España",
+        "version": "2.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spain.regions.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.spanishdefaultdata.paymentmethods",
+        "name": "Métodos de Pago",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentmethods.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentterms",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.spanishdefaultdata.paymentterms",
+        "name": "Condiciones de pago",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentterms.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.userinterface.selector.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.userinterface.selector.es_es",
+        "name": "User Interface Selector Translation: Spanish Spain (es_ES)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.selector.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.userinterface.smartclient.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.userinterface.smartclient.es_es",
+        "name": "Smartclient Translation: Spanish Spain (es_ES)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.smartclient.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.utility.multiplebpselector",
+        "name": "Openbravo Multi Business Partner Selector",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.utility.multiplebpselector.es_es",
+        "name": "Openbravo Multi Business Partner Selector Spanish (Spain)",
+        "version": "2.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.v3.translation.pack.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.v3.translation.pack.es_es",
+        "name": "Openbravo 3.0 Translation Pack: Spanish Spain (es_ES)",
+        "version": "4.0.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.v3.translation.pack.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      }
+    ],
+    "local_maintained": [
+      {
+        "java_package": "com.etendoerp.bulk.completion",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.bulk.completion",
+        "name": "Bulk Completion",
+        "version": "1.1.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.essentials.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.completion.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.quotation",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.quotation",
+        "name": "Additional Etendo Quotation Features",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.sales.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.quotation.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 28,
+          "deleted_files": 1,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": [
+            {
+              "path": "build/resources/main/META-INF/beans.xml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "bitbucket-pipelines.yml",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".gitignore",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/index",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/description",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/packed-refs",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/config",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-eb8db67ba1ff52ebd1d9631cad1c0faef1bd7592.pack",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-eb8db67ba1ff52ebd1d9631cad1c0faef1bd7592.idx",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-receive.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/applypatch-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-merge-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/fsmonitor-watchman.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/post-update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-rebase.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/push-to-checkout.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-applypatch.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-push.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/prepare-commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/info/exclude",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "com.etendoerp.quotation.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.quotation.template",
+        "name": "Additional Etendo Quotation Features Template",
+        "version": "2.1.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.sales.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.quotation.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 28,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": [
+            {
+              "path": "bitbucket-pipelines.yml",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".gitignore",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/index",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/description",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/packed-refs",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/config",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-e66aa40c0124ce6f0d2cce1dc6f6ea6ea065880f.pack",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-e66aa40c0124ce6f0d2cce1dc6f6ea6ea065880f.idx",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-receive.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/applypatch-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-merge-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/fsmonitor-watchman.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/post-update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-rebase.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/push-to-checkout.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-applypatch.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-push.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/prepare-commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/info/exclude",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "com.etendoerp.rappels.advanced",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.rappels.advanced",
+        "name": "Rappels Advanced",
+        "version": "1.7.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.sales.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.rappels.advanced.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 6,
+          "added_files": 1,
+          "deleted_files": 0,
+          "diff_lines_added": 12,
+          "diff_lines_removed": 8,
+          "files": [
+            {
+              "path": "build.gradle",
+              "status": "modified",
+              "lines_added": 3,
+              "lines_removed": 3
+            },
+            {
+              "path": "src-util/modulescript/src/com/etendoerp/rappels/advanced/modulescript/RappelCreateFunctionModuleScript.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/com/etendoerp/rappels/advanced/ad_process/DeapplyDiscountsAndPromotions.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src-test/src/com/etendoerp/rappels/advanced/RappelsTestUtils.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src-test/src/com/etendoerp/rappels/advanced/RappelsTest.java",
+              "status": "modified",
+              "lines_added": 5,
+              "lines_removed": 1
+            },
+            {
+              "path": "bitbucket-pipelines.yml",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "com.etendoerp.rappels.advanced.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.rappels.advanced.template",
+        "name": "Rappels Advanced Template",
+        "version": "1.7.0",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.sales.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.rappels.advanced.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 2,
+          "added_files": 1,
+          "deleted_files": 0,
+          "diff_lines_added": 2,
+          "diff_lines_removed": 2,
+          "files": [
+            {
+              "path": "build.gradle",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "bitbucket-pipelines.yml",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "com.smf.jasperutilities",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.jasperutilities",
+        "name": "SMF Jasper Utilities",
+        "version": "1.0.2",
+        "author": "SMF",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jasperutilities.git",
+        "latest_version": "1.0.2",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.numbertoword",
+        "name": "Number To Word",
+        "version": "2.1.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      }
+    ],
+    "local_not_maintained": [
+      {
+        "java_package": "com.etendoerp.accounting.templates.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.accounting.templates.es_es",
+        "name": "Nuevas plantillas de contabilidad",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bank.account.management.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.advanced.bank.account.management.es_es",
+        "name": "Advanced Bank Account Management - Spanish translation",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.advanced.bpsettlement.es_es",
+        "name": "Liquidación Avanzada de Socios Comerciales",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.advanced.financial.docs.processing.es_es",
+        "name": "Procesamiento Avanzado de Documentos Financieros",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.advanced.intercompany.es_es",
+        "name": "Intercompany Avanzado",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.bankingpool.es_es",
+        "name": "Pool Bancario",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.bulk.posting.es_es",
+        "name": "Contabilización Masiva",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.financial.reports.advanced.es_es",
+        "name": "Informes Financieros Avanzados",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.gljournal.advanced.es_es",
+        "name": "Asientos Manuales Avanzados",
+        "version": "1.6.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.payment.removal.es_es",
+        "name": "Eliminación de Pagos",
+        "version": "1.5.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.printsql",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.printsql",
+        "name": "Print SQL Query",
+        "version": "1.0.0",
+        "author": "Leandro Cazorla"
+      },
+      {
+        "java_package": "com.etendoerp.quotation.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.quotation.es_es",
+        "name": "Etendo Quotation Features Translation: Spanish Spain (es_ES)",
+        "version": "1.5.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.rappels.advanced.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.rappels.advanced.es_es",
+        "name": "Rappels Avanzados",
+        "version": "1.1.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.sales.extensions",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.sales.extensions",
+        "name": "Sales Extensions",
+        "version": "3.1.0",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.sales.extensions.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.sales.extensions.es_es",
+        "name": "Sales Extensions - Spanish Translation",
+        "version": "1.6.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.send.massive.invoicing",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.send.massive.invoicing",
+        "name": "Etendo Check  Send Massive",
+        "version": "1.0.1",
+        "author": "SMF Etendo"
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.etendoerp.vat.regularization.es_es",
+        "name": "VAT Regularization - Spanish Translation",
+        "version": "1.0.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.openbravo.gps.clone.invoices",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.openbravo.gps.clone.invoices",
+        "name": "Clone invoices",
+        "version": "2.0.0",
+        "author": "Xabier Merino, Openbravo S.L.U"
+      },
+      {
+        "java_package": "com.openbravo.gps.clone.invoices.es_ES",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.openbravo.gps.clone.invoices.es_ES",
+        "name": "Clone Invoice Translation Spanish Spain (es_ES)",
+        "version": "2.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.openbravo.gps.modifications",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.openbravo.gps.modifications",
+        "name": "Montblanc's Modifications",
+        "version": "1.0.0",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.smf.additionalpocolumns",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.additionalpocolumns",
+        "name": "Additional PO Columns",
+        "version": "1.0.300",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.additionalpocolumns.es_ES",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.additionalpocolumns.es_ES",
+        "name": "Additional PO Columns Translation Spanish",
+        "version": "1.0.1",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.additionalpocolumns.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.additionalpocolumns.template",
+        "name": "Additional PO Columns Template",
+        "version": "1.0.1",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.asset.amortization.report.es_es",
+        "name": "Asset Amortization Report - Spanish translation",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.currency.apiconfig.es_es",
+        "name": "Configuración de la API de Moneda",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.currency.conversionrate.es_es",
+        "name": "Descargador de Tasa de Conversión",
+        "version": "1.3.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.financialcurrentbalance",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.financialcurrentbalance",
+        "name": "Current Balance",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.gljournal.reverse.es_es",
+        "name": "Anulación de Asientos Manuales",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.remittance.sepa",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.remittance.sepa",
+        "name": "Remittance SEPA",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.send.mass.invoicing.fromusercontact",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.send.mass.invoicing.fromusercontact",
+        "name": "Send masive invoice from user contact",
+        "version": "1.0.400",
+        "author": "SMF Consulting S.L."
+      },
+      {
+        "java_package": "com.smf.send.mass.invoicing.fromusercontact.es_ES",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.send.mass.invoicing.fromusercontact.es_ES",
+        "name": "Send Masive Invoice From User Contact Translation Spanish",
+        "version": "1.0.1",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.send.massive.invoicing.process.fromusercontact",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.send.massive.invoicing.process.fromusercontact",
+        "name": "SMF Send Massive Invoice",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.sendordersbyemail",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.sendordersbyemail",
+        "name": "SMF Send Orders by Email",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.financial.bpsettlement.es_es",
+        "name": "Liquidaciones de Terceros",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "org.openbravo.financial.paymentpriorities",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.financial.paymentpriorities",
+        "name": "Payment Priorities",
+        "version": "1.0.101",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financialmgmt.accounting.report.notposted",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.financialmgmt.accounting.report.notposted",
+        "name": "Not Posted Transactions",
+        "version": "1.1.1000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.idl",
+        "name": "Initial Data Load",
+        "version": "3.0.207000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl.variants",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.idl.variants",
+        "name": "IDL for Variants",
+        "version": "1.1.211001",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.legacy.service.fop",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.legacy.service.fop",
+        "name": "Legacy FOP Support",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.abreviado",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.localization.spain.referencedata.accounts.abreviado",
+        "name": "Chart of accounts: PGC 2010 Abreviado",
+        "version": "3.0.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat340.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.aeat340.es",
+        "name": "Tax Report: Modelo 340 (Spain)",
+        "version": "3.8.201",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.cuaderno19.es",
+        "name": "Cuaderno 19",
+        "version": "1.2.12",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno34.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.cuaderno34.es",
+        "name": "Cuaderno 34",
+        "version": "1.2.9",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno58.es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.cuaderno58.es",
+        "name": "Cuaderno 58",
+        "version": "3.0.4",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.einvoice",
+        "name": "Electronic Invoice",
+        "version": "0.1.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice.es_ES",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.einvoice.es_ES",
+        "name": "Facturación Electrónica",
+        "version": "0.1.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.facturae",
+        "name": "Facturae API",
+        "version": "2.0.3",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae31",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.facturae31",
+        "name": "Facturación Electrónica - Facturae 3.1",
+        "version": "0.3.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.facturae32",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.facturae32",
+        "name": "Facturación Electrónica - Facturae 3.2",
+        "version": "0.1.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "version": "1.4.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.es_es",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.module.remittance.es_es",
+        "name": "Remittances infrastructure - Spanish Translation",
+        "version": "1.6.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain30",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.proflocalization.spain30",
+        "name": "Professional Localization pack Spain (España)",
+        "version": "3.32.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.extension",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.sepa.iso20022.extension",
+        "name": "SEPA-Remittance Extensions",
+        "version": "1.0.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.service.reporting.barcode",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.service.reporting.barcode",
+        "name": "Barcode generation in reports",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.utility.commons.csv",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.utility.commons.csv",
+        "name": "Apache Commons CSV",
+        "version": "1.0.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.draganddropselector3lists",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.utility.draganddropselector3lists",
+        "name": "Drag And Drop Selector Three Lists",
+        "version": "1.0.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.draganddropselector3listsimplementation",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.utility.draganddropselector3listsimplementation",
+        "name": "Drag And Drop Selector Three Lists Implementation",
+        "version": "1.0.301",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.hqlquerytool",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.utility.hqlquerytool",
+        "name": "Openbravo HQL Query Tool",
+        "version": "2.0.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "version": "1.0.0",
+        "author": null
+      }
+    ],
+    "custom": [
+      {
+        "java_package": "com.openbravo.gps.montblanc",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.openbravo.gps.montblanc",
+        "name": "MYCUSTOMIZATION_MODULE",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 38972,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.montblanc.invoicegoodshipment",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.openbravo.gps.montblanc.invoicegoodshipment",
+        "name": "Invoice goods shipment",
+        "version": "2.0.0",
+        "author": "GPS - Openbravo",
+        "line_count": 2453,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.montblanctemplate",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.openbravo.gps.montblanctemplate",
+        "name": "MYCUSTOMIZATION_TEMPLATE",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 1382,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.montblanc.customizations",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.montblanc.customizations",
+        "name": "SMF Customizations Montblanc",
+        "version": "1.0.1",
+        "author": "SMF",
+        "line_count": 3207,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.montblanc.customizations.template",
+        "path": "/home/faqsarg/etendo-clients/Montblanc/modules/com.smf.montblanc.customizations.template",
+        "name": "SMF Montblanc Customization Template",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 185,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      }
+    ]
+  },
+  "core_divergences": {
+    "status": "modified",
+    "base_version": "expanded",
+    "baseline_type": "expanded",
+    "folders_checked": [
+      "src",
+      "src-db",
+      "src-core",
+      "src-wad",
+      "modules_core",
+      "src-trl",
+      "src-util"
+    ],
+    "modified_files": 4,
+    "added_files": 1,
+    "deleted_files": 0,
+    "diff_lines_added": 1188,
+    "diff_lines_removed": 129,
+    "files": [
+      {
+        "path": "src-db/database/formalChangesScript.xml",
+        "status": "modified",
+        "lines_added": 1162,
+        "lines_removed": 94
+      },
+      {
+        "path": "src-db/database/model/functions/C_GETINVOICESTATUSFROMSHIPMENT.xml",
+        "status": "modified",
+        "lines_added": 19,
+        "lines_removed": 29
+      },
+      {
+        "path": "src-db/database/model/functions/M_INOUT_POST.xml",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 5
+      },
+      {
+        "path": "src-db/database/model/tables/M_PRODUCT.xml",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src-wad/build/classes/com/etendoerp/sif/general/reference/wad/controls/WADFileBLOB.class",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      }
+    ]
+  },
+  "migration_score": 38,
+  "migratability": "very_hard",
+  "score_breakdown": {
+    "openbravo_platform": 0,
+    "core_divergences": -6.58,
+    "core_diff_lines": 1317,
+    "local_not_maintained": -20,
+    "local_not_maintained_translations": 24,
+    "local_not_maintained_regular": 38,
+    "custom_modules": -35,
+    "custom_modules_detail": [
+      {
+        "java_package": "com.openbravo.gps.montblanc",
+        "line_count": 38972,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.openbravo.gps.montblanc.invoicegoodshipment",
+        "line_count": 2453,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.openbravo.gps.montblanctemplate",
+        "line_count": 1382,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.smf.montblanc.customizations",
+        "line_count": 3207,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.smf.montblanc.customizations.template",
+        "line_count": 185,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      }
+    ],
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
+  },
+  "custom_assessment": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-21",
+    "core_customizations": [
+      {
+        "name": "formalChangesScript.xml",
+        "description": "Auto-generated DBSourceManager migration artifact (+1162/-94 lines). Accumulated database change scripts.",
+        "files": [
+          "src-db/database/formalChangesScript.xml"
+        ],
+        "lines_changed": 1256,
+        "conclusion": "eliminate",
+        "justification": "Auto-generated file, never manually edited. Etendo 25.4.x upgrade uses its own migration system. Safe to discard.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1
+      },
+      {
+        "name": "C_GETINVOICESTATUSFROMSHIPMENT — reverted to older implementation",
+        "description": "Function that calculates the invoiced percentage of a shipment (goods receipt) by comparing invoice lines vs shipment lines. The Montblanc installation uses an older, simpler query that joins m_inoutline directly with c_invoiceline, while the Etendo 25.1.6 baseline has a more sophisticated version that also accounts for order-line linkage (LEFT JOIN through c_orderline) and uses IS DISTINCT FROM.",
+        "files": [
+          "src-db/database/model/functions/C_GETINVOICESTATUSFROMSHIPMENT.xml"
+        ],
+        "lines_changed": 48,
+        "conclusion": "already_upstream",
+        "justification": "The Etendo 25.1.6 core already contains a superior implementation that handles edge cases (partially invoiced via order) not covered by the Montblanc version. Remove the local override and let the core version take effect on upgrade.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      },
+      {
+        "name": "M_INOUT_POST — invoice qty update query optimization",
+        "description": "A 6-line modification in the shipment posting function (M_INOUT_POST) that changes the subquery used when updating m_inoutline.qtyinvoiced. Montblanc's version uses a DISTINCT subquery (FROM (SELECT DISTINCT m_inoutline_id FROM c_invoiceline)) and adds the condition AND mi.qtyinvoiced IS DISTINCT FROM mi.movementqty — preventing no-op updates when quantities already match.",
+        "files": [
+          "src-db/database/model/functions/M_INOUT_POST.xml"
+        ],
+        "lines_changed": 11,
+        "conclusion": "upstream",
+        "justification": "The DISTINCT optimization reduces duplicate row processing and the IS DISTINCT FROM guard prevents unnecessary updates — both are genuine quality improvements with no client-specific business logic. Should be proposed to Etendo core.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2
+      },
+      {
+        "name": "M_PRODUCT — NAME column width extended to 70 chars",
+        "description": "The M_PRODUCT table definition has the NAME column size changed from 60 (baseline) to 70 characters, allowing longer product names.",
+        "files": [
+          "src-db/database/model/tables/M_PRODUCT.xml"
+        ],
+        "lines_changed": 2,
+        "conclusion": "eliminate",
+        "justification": "Core table modifications must be done via a module's modifiedTables/ definition, not directly in core. This change will conflict with any future Etendo upgrade that touches M_PRODUCT. Move to a proper module extension.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      },
+      {
+        "name": "WADFileBLOB.class — compiled binary artifact",
+        "description": "A compiled Java .class file added to the src-wad/build/classes directory. Binary artifacts should never be committed to a source repository.",
+        "files": [
+          "src-wad/build/classes/com/etendoerp/sif/general/reference/wad/controls/WADFileBLOB.class"
+        ],
+        "lines_changed": 0,
+        "conclusion": "eliminate",
+        "justification": "Compiled binary has no place in a source installation. Remove from version control. If needed, the source file should be found and committed instead.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      }
+    ],
+    "custom_modules": [
+      {
+        "java_package": "com.openbravo.gps.montblanc",
+        "name": "GPS Montblanc Main Module",
+        "description": "GPS-developed main customization module for Montblanc. Contains: (1) CopyFromOrder — classic servlet that copies lines from a sales order into an invoice or shipment; (2) CreateFromInvoice, CreateFromShipment — CreateFrom-style servlets; (3) GenerateInvoicesmanual — AD_FORM bulk invoice generation batch; (4) GenerateWorkordersmanualSO — AD_FORM for bulk work order generation; (5) MaterialReceiptPending — pending material receipt management form; (6) PaletLabeling — pallet label printing process; (7) PrintInvoices — batch invoice printing; (8) GenerateModel347 — Spanish fiscal year AEAT Model 347 report; (9) Jasper-based reports: ReportOrderNotInvoiceJR (unmatched orders), ReportWarehousePartnerJR (stock by partner), ReportWorkRequirementDaily (daily work requirements), ReportWorkRequirementJR (work requirement Jasper); (10) Custom invoice/order print templates (RptC_Invoice, RptC_Order, RptC_OrderPO, RptM_POInout). All servlet-based, classic Openbravo HttpSecureAppServlet pattern.",
+        "generalization": "client_specific",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "JasperReports 6.0→6.17: ReportWorkRequirementDaily.java imports JRException and JasperReport — templates need recompile against 6.17; API largely stable but deprecated API calls may surface",
+          "Classic servlet infrastructure (HttpSecureAppServlet, VariablesSecureApp, XmlDocument): still present in Etendo 25.x but increasingly deprecated toward React; no breaking change for 25.4.x but SaaS migration requires full rewrite",
+          "AD_FORM AD_FORM entries: GenerateInvoicesmanual, MaterialReceiptPending, GenerateWorkordersmanualSO use classic AD_FORM pattern — NOT DONE in React UI"
+        ],
+        "effort_update_hours": 24,
+        "effort_saas_hours": 80,
+        "recommendation": "For update route: recompile Jasper templates, test all servlet forms on 25.4.x (classic UI path). For SaaS route: each AD_FORM servlet (GenerateInvoicesmanual, MaterialReceiptPending) must be reimplemented as a React-compatible Process Definition. PaletLabeling and print reports can become OBUIAPP_Report processes. Budget 2 sprints per major form."
+      },
+      {
+        "java_package": "com.openbravo.gps.montblanc.invoicegoodshipment",
+        "name": "Invoice Goods Shipment",
+        "description": "Specialized invoice generation form that simultaneously creates a goods shipment (goods receipt) linked to the invoice — designed for scenarios where invoices arrive before physical stock movements are recorded in the warehouse. Contains a single GenerateInvoicesmanual.java servlet variant that extends the base GPS invoice generation with shipment creation logic.",
+        "generalization": "bundle_candidate",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "Classic servlet infrastructure: HttpSecureAppServlet — functional in 25.4.x, blocked in React UI"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 20,
+        "recommendation": "The invoice+shipment combined generation pattern is useful beyond Montblanc (many distributors need it). Generalize as an Etendo bundle Process Definition. For update route, compile-test against 25.4.x classic UI."
+      },
+      {
+        "java_package": "com.openbravo.gps.montblanctemplate",
+        "name": "GPS Montblanc Template",
+        "description": "Empty scaffolding template module (AD_MODULE + dependency only). No functional code.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "No-op for migration. Keep or remove."
+      },
+      {
+        "java_package": "com.smf.montblanc.customizations",
+        "name": "SMF Montblanc Customizations",
+        "description": "SMF-developed customizations: (1) CreateShipmentFromInvoice.java — Process Action Handler that creates a purchase goods receipt from a purchase invoice; finds the first available warehouse and locator, copies all invoice lines as shipment lines, links them back, and opens the created shipment in a new tab; (2) SMFCUS_PRODUCTIONRUN_STANDARD — custom PostgreSQL function for production run processing; (3) C_ORDER_CHK_RESTRINCTIONS_TRG — DB trigger that prevents modifying header fields (BP, document type, date, amounts, warehouse, etc.) on completed sales orders; (4) SMFCUS_INV_CAND_SHIPMENT_V — view joining orders, shipments, and invoice lines to show orders pending invoicing with amounts; (5) SMFCUS_ATTRIBUTEVALUE_TRL — attribute value translation table; (6) Modifications to C_BPARTNER and C_INVOICE.",
+        "generalization": "bundle_candidate",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "Hibernate 5.4→5.6: org.hibernate.criterion.Restrictions in CreateShipmentFromInvoice.java — deprecated but still present in 5.6; no breaking change for 25.4.x"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 12,
+        "recommendation": "CreateShipmentFromInvoice is a genuinely reusable pattern — generalize as a Warehouse Extensions candidate. The DB trigger and view are Montblanc-specific data integrity rules. For SaaS, evaluate if the trigger logic can be replaced by Etendo's document completion protection."
+      },
+      {
+        "java_package": "com.smf.montblanc.customizations.template",
+        "name": "SMF Montblanc Customizations Template",
+        "description": "Empty AD_MODULE scaffolding template. No functional code.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "No-op for migration."
+      }
+    ],
+    "unmaintained_modules": [
+      {
+        "java_package": "com.etendoerp.accounting.templates.es_es",
+        "name": "Etendo Bundle Spanish Translations (11 modules)",
+        "function": "Spanish translation packs for official Etendo bundles: accounting.templates, advanced.bank.account.management, advanced.bpsettlement, advanced.financial.docs.processing, advanced.intercompany, bankingpool, bulk.posting, financial.reports.advanced, gljournal.advanced, payment.removal, quotation, rappels.advanced, sales.extensions, vat.regularization. Also: org.openbravo.financial.bpsettlement.es_es, com.smf.asset.amortization.report.es_es, com.smf.currency.apiconfig.es_es, com.smf.currency.conversionrate.es_es, com.smf.gljournal.reverse.es_es, org.openbravo.module.remittance.es_es, com.openbravo.gps.clone.invoices.es_ES, com.smf.additionalpocolumns.es_ES.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Translations bundled in respective Etendo modules",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1,
+        "recommendation": "Remove all local translation packs — let official Etendo bundles provide their own translations."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "name": "SEPA Payment Suite + Extensions",
+        "function": "SEPA ISO 20022 suite: sepa.iso20022 (framework), coredirectdebit.customertobank (SEPA DD), credittransfer.customertobank (SEPA CT), sepa.iso20022.extension (remittance extensions), com.smf.remittance.sepa (SMF SEPA remittance), org.openbravo.module.remittance.es_es (translation). Spanish banking file generation for supplier payments and customer direct debits.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.financial.extensions (includes SEPA)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer for Openbravo-origin SEPA modules"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 8,
+        "recommendation": "Migrate to Etendo Financial Extensions bundle. Validate SEPA file output format (pain.001, pain.008) and bank-specific requirements before switching."
+      },
+      {
+        "java_package": "org.openbravo.module.facturae",
+        "name": "Facturae / Electronic Invoice Suite (Spain)",
+        "function": "Spanish electronic invoicing: facturae (API), facturae31, facturae32 (formats), einvoice + es_ES (base module). Required for Spanish legal e-invoice compliance.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.localization.spain.extensions",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer: Openbravo SLU"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 10,
+        "recommendation": "Migrate to Etendo Spain Localization Extensions. Verify Facturae 3.2 format support and test XML output against AEAT validator."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es",
+        "name": "Spanish Banking Cuadernos (19, 34, 58)",
+        "function": "Spanish banking file formats: Cuaderno 19 (direct debit), Cuaderno 34 (credit transfer), Cuaderno 58 (confirming). Required for bank file submissions.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.financial.extensions",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer"
+        ],
+        "effort_update_hours": 10,
+        "effort_saas_hours": 6,
+        "recommendation": "Migrate to Etendo Financial Extensions. Validate file format output against bank specifications."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat340.es",
+        "name": "AEAT Modelo 340 + Spain Localization",
+        "function": "AEAT Modelo 340 (VAT operations book) tax report, org.openbravo.proflocalization.spain30 (Spain professional localization pack with tax rates, CoA, fiscal periods), org.openbravo.localization.spain.referencedata.accounts.abreviado (Spanish abridged chart of accounts PGC 2010).",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.localization.spain.extensions",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer: Openbravo SLU"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Verify if Modelo 340 is still required (Spain SII replaced it for large companies). Migrate Spain localization data to Etendo Spain Extensions."
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "name": "Initial Data Load Suite",
+        "function": "org.openbravo.idl (core IDL framework), idljava (Java extension), idl.variants (variant product IDL). Used for CSV-based bulk data import. Note: Montblanc also has org.openbravo.utility.opencsv and org.openbravo.utility.commons.csv installed.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "No maintainer: Openbravo SLU"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 10,
+        "recommendation": "Fork and update IDL suite if actively used for bulk imports. Alternative: use standard Etendo import mechanisms (Data Import or direct API)."
+      },
+      {
+        "java_package": "com.openbravo.gps.modifications",
+        "name": "GPS Montblanc Modifications (unmaintained GPS module)",
+        "function": "GPS-authored client-specific modifications module ('Montblanc's Modifications'). Exact functionality requires source review but given the name and GPS authorship, likely contains additional UI customizations, field additions, or process overrides not captured in the main GPS Montblanc module.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "No maintainer: GPS no longer active",
+          "Likely uses classic servlet patterns"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 16,
+        "recommendation": "Read source code and inventory all modifications. Fork and update for 25.4.x compatibility. Flag for elimination in SaaS route if functionality overlaps with maintained modules."
+      },
+      {
+        "java_package": "com.openbravo.gps.clone.invoices",
+        "name": "Clone Invoices (GPS)",
+        "function": "GPS module for cloning existing invoices — creates a copy of an invoice with a new document number and reset status. Useful for recurring billing scenarios.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "No maintainer"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 8,
+        "recommendation": "Fork and compile-test. Invoice cloning is a generally useful feature — evaluate as a candidate for Etendo Financial Extensions."
+      },
+      {
+        "java_package": "com.etendoerp.send.massive.invoicing",
+        "name": "SMF Mass Invoicing Suite",
+        "function": "Four related modules for mass invoice sending: etendoerp.send.massive.invoicing (Etendo check/send), smf.send.mass.invoicing.fromusercontact (send from user contact + es_ES), smf.send.massive.invoicing.process.fromusercontact (process), smf.sendordersbyemail (send orders by email). Batch email delivery of invoices and orders to customers.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "SMF-developed, no clear maintainer for some sub-modules"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 8,
+        "recommendation": "Consolidate into a single maintained module. Email sending functionality is generic and reusable. Check if com.etendoerp.sales.extensions covers some of this."
+      },
+      {
+        "java_package": "com.etendoerp.sales.extensions",
+        "name": "Etendo Sales Extensions + Unmaintained Etendo Modules",
+        "function": "Etendo-developed modules that are installed but not on their latest maintained version: sales.extensions (Futit), etendoerp.printsql (Print SQL Query), etendoerp.rappels.advanced (advanced rappels/rebates). Also: org.openbravo.financial.paymentpriorities (payment priority ordering), org.openbravo.financialmgmt.accounting.report.notposted (unposted transactions report), org.openbravo.legacy.service.fop (FOP legacy support), org.openbravo.service.reporting.barcode (barcode generation).",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Updated versions from Etendo/Futit repositories",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 10,
+        "effort_saas_hours": 6,
+        "recommendation": "Upgrade to latest maintained versions from Etendo marketplace. Sales Extensions and Rappels Advanced are actively maintained by Futit/Etendo."
+      },
+      {
+        "java_package": "com.smf.financialcurrentbalance",
+        "name": "SMF Financial & Utility Modules Cluster",
+        "function": "Several small SMF modules: financialcurrentbalance (current balance dashboard widget), additionalpocolumns + template (extra columns in purchase orders), utility.commons.csv (Apache Commons CSV wrapper), utility.opencsv (OpenCSV wrapper), utility.draganddropselector3lists + implementation (3-list DnD selector widget), utility.hqlquerytool (HQL query debugging tool).",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 4,
+        "recommendation": "Audit for active usage. opencsv and commons.csv are utility wrappers — replace with direct Maven dependencies. hqlquerytool is a developer tool, not production. Remove unused ones."
+      }
+    ],
+    "effort_summary": {
+      "update_core_hours": 6,
+      "update_custom_hours": 40,
+      "update_unmaintained_hours": 124,
+      "update_total_hours": 170,
+      "saas_core_hours": 5,
+      "saas_custom_hours": 114,
+      "saas_unmaintained_hours": 81,
+      "saas_total_hours": 200
+    }
+  },
+  "ui_readiness": {
+    "generated": "2026-04-21",
+    "global_status": "blocked",
+    "summary": {
+      "critica": 4,
+      "alta": 4,
+      "media": 5,
+      "no_aplica": 1
+    },
+    "features": [
+      {
+        "section": "18",
+        "title": "Application Forms (AD_FORM)",
+        "status": "NOT DONE",
+        "completion_pct": 15,
+        "priority": "critica",
+        "ad_count": 31,
+        "reason": "31 entradas AD_FORM (definidas en 8 módulos). Incluye directamente las formas del módulo GPS Montblanc: GenerateInvoicesmanual (generación masiva de facturas), MaterialReceiptPending (recepciones pendientes), GenerateWorkordersmanualSO (órdenes de trabajo). El React UI no tiene renderer para AD_FORM — cada forma requiere reimplementación individual como Process Definition React. Bloqueante directo para flujos operativos clave de Montblanc.",
+        "code_evidence": []
+      },
+      {
+        "section": "3.A.2",
+        "title": "Procesos Manuales JS (AD_PROCESS UIPattern=M)",
+        "status": "BLOQUEADO",
+        "completion_pct": 25,
+        "priority": "critica",
+        "ad_count": 198,
+        "reason": "198 procesos legacy con UIPattern=M dependen de namespaces OB.* (OB.CurrentView, OB.MainView, OB.Utilities) que no existen en el React UI. Incluye procesos del módulo GPS Montblanc (GenerateWorkordersmanualSO, GenerateInvoicesmanual, MaterialReceiptPending). Decisión arquitectónica pendiente: iframe shim vs reimplementación. Sin resolución, estos procesos son inaccesibles desde el nuevo UI.",
+        "code_evidence": []
+      },
+      {
+        "section": "2.B",
+        "title": "Columnas de botón hardcodeadas (DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus)",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "priority": "critica",
+        "ad_count": 53,
+        "reason": "53 columnas de botón hardcodeadas: Posted (29) — PARCIAL 30%, DocAction (6), CreateFrom (8) — TO CHECK 72%, PaymentRule (9) — TO CHECK 70%, ChangeProjectStatus (1) — NOT DONE 0%. Posted es crítico para el ciclo contable de Montblanc (36 ventanas Transaction). El módulo GPS Montblanc sobreescribe CreateFrom, por lo que su validación en React requiere trabajo adicional.",
+        "code_evidence": []
+      },
+      {
+        "section": "4",
+        "title": "Display Logic (@field@ syntax) — Bug Activo",
+        "status": "BUG ACTIVO",
+        "completion_pct": 65,
+        "priority": "critica",
+        "ad_count": 2310,
+        "reason": "2.310 campos tienen DISPLAYLOGIC, de los cuales 186 usan variables de sesión (@$...). El bug activo en la sintaxis @field_name@ causa evaluación incorrecta en el React UI, mostrando u ocultando campos equivocados. Con 2.310 campos afectados potencialmente, habrá errores de visibilidad en prácticamente todas las ventanas de la instalación hasta que se corrija el bug.",
+        "code_evidence": []
+      },
+      {
+        "section": "26",
+        "title": "Filtros por defecto y orden de tabs (HQLFILTERCLAUSE / FILTERCLAUSE)",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "alta",
+        "ad_count": 47,
+        "reason": "47 tabs definen filtros por defecto (33 via HQLFILTERCLAUSE + 14 via FILTERCLAUSE). TabBuilder.java no envía estas cláusulas al React UI. Sin filtros por defecto, ventanas de transacciones se abren mostrando todos los registros históricos sin filtrar — problema grave de rendimiento y usabilidad en producción (ej: facturas sin filtro de ejercicio abierto).",
+        "code_evidence": []
+      },
+      {
+        "section": "1.4",
+        "title": "Pick and Execute Windows",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "alta",
+        "ad_count": 125,
+        "reason": "42 ventanas OBUIAPP_PickAndExecute + 83 Process Definitions P&E = 125 total. Montblanc usa P&E en flujos de almacén, picking y producción. Los gaps críticos (validación de campos inline obligatorios, forwarding de contexto del padre) afectan directamente flujos de selección y ejecución en lotes.",
+        "code_evidence": []
+      },
+      {
+        "section": "3.B.1",
+        "title": "Process Definitions — Action Handler (OBUIAPP_PROCESS UIPattern=A)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "alta",
+        "ad_count": 19,
+        "reason": "19 Process Definitions de tipo Action Handler (A), incluyendo CreateShipmentFromInvoice del módulo SMF Montblanc Customizations. La infraestructura BaseProcessActionHandler está implementada al 75% en React. Requiere validación explícita de que openDirectTab response (usado en CreateShipmentFromInvoice) funciona correctamente para navegar al albarán creado.",
+        "code_evidence": []
+      },
+      {
+        "section": "1.2",
+        "title": "Transaction Windows (ciclo de documento)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "alta",
+        "ad_count": 36,
+        "reason": "36 ventanas de tipo Transaction (facturas, pedidos, pagos, albaranes). DocAction labels con bug de presentación conocido. Posted button PARCIAL 30% afecta a 29 columnas — crítico para el cierre contable. El módulo GPS Montblanc sobreescribe CreateFrom para facturas y albaranes, lo que requiere validación específica en el React UI.",
+        "code_evidence": []
+      },
+      {
+        "section": "21",
+        "title": "Workspace / Dashboard",
+        "status": "NOT DONE",
+        "completion_pct": 5,
+        "priority": "media",
+        "ad_count": 2,
+        "reason": "2 definiciones de widget en la instalación (org.openbravo.client.widgets.finance). El Workspace/My Openbravo está prácticamente sin implementar (5%) en React. Si los usuarios usan el dashboard para seguimiento financiero, este es un bloqueante de adopción aunque no operativo.",
+        "code_evidence": []
+      },
+      {
+        "section": "2",
+        "title": "Reference Types — campos no implementados (Image BLOB, PAttribute, Binary)",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "media",
+        "ad_count": 47,
+        "reason": "Campos con tipos de referencia no implementados o parciales: PAttribute/35 (32 columnas) — PARCIAL 55%, Image BLOB/4AA6C3BE (15 columnas) — NOT DONE, Absolute DateTime (17 columnas) — NOT DONE, Absolute Time (6 columnas) — NOT DONE, Binary/23 (presente). Si Montblanc usa atributos de producto (color/talla) o imágenes en fichas, estos campos aparecerán en blanco en el React UI.",
+        "code_evidence": []
+      },
+      {
+        "section": "5",
+        "title": "Comportamientos de tab (display logic, read-only, filtros)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "ad_count": 79,
+        "reason": "41 tabs con DisplayLogic de visibilidad + 38 tabs de solo lectura. Display Logic en tabs está al 72% — el bug de @field@ del §4 puede afectar también la visibilidad de tabs. 38 tabs read-only deben validarse para que no permitan edición accidental.",
+        "code_evidence": []
+      },
+      {
+        "section": "1.1",
+        "title": "Maintain Windows (ventanas de datos maestros)",
+        "status": "TO CHECK",
+        "completion_pct": 80,
+        "priority": "media",
+        "ad_count": 224,
+        "reason": "224 ventanas de tipo Maintain (maestros de productos, clientes, proveedores, etc.). Estructura core implementada al 80%. Los gaps son comportamientos de borde (Copy Record en tabs hijo, multi-delete desde grid). Riesgo bajo para operativa diaria.",
+        "code_evidence": []
+      },
+      {
+        "section": "6",
+        "title": "Callouts",
+        "status": "TO CHECK",
+        "completion_pct": 82,
+        "priority": "media",
+        "ad_count": 95,
+        "reason": "95 columnas con callouts (lógica de dependencia servidor). La infraestructura de callouts está al 82% — alta probabilidad de funcionamiento correcto. Requiere test de regresión en los flujos de entrada de pedidos y facturas donde los callouts calculan precios y cantidades.",
+        "code_evidence": []
+      },
+      {
+        "section": "11",
+        "title": "Autenticación y Sesión",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "No hay datos AD para esta sección. Se evalúa por configuración Java/JWT.",
+        "code_evidence": []
+      }
+    ]
+  }
+}
