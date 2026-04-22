@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etendo Migration Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Header */
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.header h1 { font-size: 1.1rem; font-weight: 600; color: #0f172a; }
+.header-sub { font-size: 0.78rem; color: #94a3b8; margin-left: auto; }
+
+/* Layout */
+.container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+
+/* KPI Cards */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.kpi-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 18px 20px;
+}
+.kpi-card .kpi-value {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+.kpi-card .kpi-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* Platform split inside KPI card */
+.platform-split { display: flex; gap: 20px; margin-top: 6px; }
+.platform-split span { font-size: 0.85rem; font-weight: 600; color: #475569; }
+.platform-split strong { color: #1e293b; }
+
+/* Version range indicator */
+.ver-range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+.ver-range-track {
+    position: relative;
+    height: 4px;
+    background: #e2e8f0;
+    border-radius: 99px;
+    margin-bottom: 4px;
+}
+.ver-range-fill {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    background: #cbd5e1;
+    border-radius: 99px;
+    width: 100%;
+}
+.ver-range-marker {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background: #3b82f6;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(59,130,246,0.4);
+}
+.ver-range-marker::before {
+    content: '▲';
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8px;
+    color: #3b82f6;
+    line-height: 1;
+}
+.ver-avg-label {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #3b82f6;
+    font-weight: 600;
+    margin-top: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* Charts */
+.charts-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.chart-full { margin-bottom: 12px; }
+.chart-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px 24px;
+}
+.chart-card h2 {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+}
+.chart-wrap { position: relative; height: 220px; }
+.chart-wrap-tall { position: relative; height: 260px; }
+.chart-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #cbd5e1;
+    font-size: 0.82rem;
+}
+
+/* Table */
+.table-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    overflow-x: auto;
+}
+.table-card h2 {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+thead th {
+    text-align: left;
+    padding: 6px 12px;
+    color: #cbd5e1;
+    font-weight: 600;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid #f1f5f9;
+    cursor: default;
+}
+thead th.sortable { cursor: pointer; user-select: none; }
+thead th.sortable:hover { background: #f1f5f9; }
+.sort-arrow { color: #94a3b8; font-size: 11px; }
+thead th.sortable:hover { color: #94a3b8; }
+tbody tr { border-bottom: 1px solid #f8fafc; transition: background 0.1s; }
+tbody tr:hover { background: #f8fafc; }
+tbody td { padding: 10px 12px; vertical-align: middle; color: #334155; }
+.td-name { font-weight: 600; color: #0f172a; }
+.td-version { color: #94a3b8; font-family: monospace; font-size: 0.8rem; }
+.td-num { text-align: right; color: #64748b; }
+.td-num-warn { text-align: right; color: #ea580c; font-weight: 600; }
+.td-num-purple { text-align: right; color: #7c3aed; font-weight: 600; }
+
+/* Badges */
+.score-badge {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 99px;
+    font-weight: 700;
+    font-size: 0.82rem;
+    min-width: 38px;
+    text-align: center;
+}
+.mig-badge {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.mig-easy    { background: #f0fdf4; color: #16a34a; }
+.mig-mod     { background: #fefce8; color: #ca8a04; }
+.mig-hard    { background: #fff7ed; color: #ea580c; }
+.mig-vhard   { background: #fef2f2; color: #dc2626; }
+
+/* Report button */
+.btn-report {
+    background: none;
+    color: #3b82f6;
+    border: 1px solid #bfdbfe;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+}
+.btn-report:hover { background: #eff6ff; border-color: #93c5fd; }
+.btn-report:disabled { color: #cbd5e1; border-color: #e2e8f0; cursor: not-allowed; }
+
+/* Viewer panel */
+.viewer-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15,23,42,0.25);
+    z-index: 90;
+}
+.viewer-backdrop.open { display: block; }
+.viewer-panel {
+    position: fixed;
+    right: 0; top: 0;
+    width: 62vw;
+    height: 100vh;
+    background: #ffffff;
+    border-left: 1px solid #e2e8f0;
+    box-shadow: -4px 0 24px rgba(0,0,0,0.07);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+}
+.viewer-panel.open { transform: translateX(0); }
+.viewer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f1f5f9;
+    flex-shrink: 0;
+}
+.viewer-title { font-weight: 600; font-size: 0.9rem; color: #0f172a; }
+.viewer-close {
+    background: none;
+    border: 1px solid #e2e8f0;
+    color: #94a3b8;
+    border-radius: 5px;
+    padding: 3px 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.15s;
+}
+.viewer-close:hover { background: #f1f5f9; color: #475569; }
+.viewer-frame { flex: 1; border: none; background: #fff; }
+
+/* Baseline badges */
+.baseline-badge {
+    font-family: monospace;
+    font-size: 0.78rem;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.baseline-exact {
+    background: #f0fdf4;
+    color: #16a34a;
+}
+.baseline-approx {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+/* Version grouped tree */
+.ver-group { border-bottom: 1px solid #f1f5f9; }
+.ver-group:last-child { border-bottom: none; }
+.ver-group-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.1s;
+    border-radius: 6px;
+}
+.ver-group-header:hover { background: #f8fafc; }
+.ver-major {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0f172a;
+    font-family: monospace;
+    min-width: 32px;
+}
+.ver-count-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #0284c7;
+    background: #e0f2fe;
+    padding: 1px 8px;
+    border-radius: 99px;
+}
+.ver-toggle {
+    margin-left: auto;
+    font-size: 0.65rem;
+    color: #94a3b8;
+    transition: transform 0.2s;
+}
+.ver-group-body { padding: 0 4px 8px 16px; }
+.ver-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background 0.1s;
+}
+.ver-item:hover { background: #f8fafc; }
+.ver-version {
+    font-family: monospace;
+    font-size: 0.82rem;
+    color: #475569;
+}
+.ver-item-count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 1px 7px;
+    border-radius: 99px;
+    min-width: 24px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .charts-row { grid-template-columns: 1fr; }
+    .viewer-panel { width: 100vw; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Etendo Migration Dashboard</h1>
+  <span class="header-sub">Generado: 22/04/2026 10:52</span>
+</div>
+
+<div class="container">
+
+  <!-- KPI Cards -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label" style="margin-bottom:8px">Entornos</div>
+      <div class="kpi-value" style="color:#0284c7" id="kpi-total">—</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label" style="margin-bottom:8px">Score promedio</div>
+      <div class="kpi-value" style="color:#f97316" id="kpi-avg">—</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label" style="margin-bottom:8px">Migrables</div>
+      <div class="kpi-value" style="color:#16a34a" id="kpi-migratable">—</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label" style="margin-bottom:12px">Rango de versiones</div>
+      <div class="ver-range-labels">
+        <span class="ver-min" id="kpi-ver-min">—</span>
+        <span class="ver-max" id="kpi-ver-max">—</span>
+      </div>
+      <div class="ver-range-track">
+        <div class="ver-range-marker" id="kpi-ver-marker" style="left:50%"></div>
+      </div>
+      <div class="ver-avg-label">promedio</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label" style="margin-bottom:12px">Plataforma</div>
+      <div class="platform-split">
+        <span>Etendo <strong id="kpi-etendo-count">—</strong></span>
+        <span>Openbravo <strong id="kpi-openbravo-count">—</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts row 1: Score dist + Version dist -->
+  <div class="charts-row">
+    <div class="chart-card">
+      <h2>Distribución de migratabilidad</h2>
+      <div class="chart-wrap">
+        <canvas id="chart-score-dist"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <h2>Versiones de Etendo instaladas</h2>
+      <div id="version-dist-container"></div>
+    </div>
+  </div>
+
+  <!-- Chart: Top local_not_maintained -->
+  <div class="chart-full">
+    <div class="chart-card">
+      <h2>Top 50 módulos sin mantenimiento — frecuencia entre clientes</h2>
+      <div style="position:relative;height:900px;" id="chart-nm-wrap">
+        <canvas id="chart-nm"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart: Top custom by LOC -->
+  <div class="chart-full">
+    <div class="chart-card">
+      <h2>Top customizaciones por volumen de código (LOC)</h2>
+      <div class="chart-wrap-tall" id="chart-custom-wrap">
+        <canvas id="chart-custom"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Client table -->
+  <div class="table-card">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+      <h2 style="margin:0">Detalle por cliente</h2>
+      <span id="table-counter" style="font-size:12px;color:#94a3b8"></span>
+    </div>
+    <!-- Filter bar -->
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center">
+      <input id="filter-name" type="text" placeholder="Buscar cliente…"
+        oninput="filterText=this.value;renderTable()"
+        style="padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;width:180px;outline:none">
+      <select id="filter-mig" onchange="filterMig=this.value;renderTable()"
+        style="padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;color:#374151;background:#fff">
+        <option value="">Todas las migratabilidades</option>
+        <option value="easy">Fácil</option>
+        <option value="moderate">Moderada</option>
+        <option value="hard">Difícil</option>
+        <option value="very_hard">Muy difícil</option>
+      </select>
+      <select id="filter-mx" onchange="filterMx=this.value;renderTable()"
+        style="padding:6px 10px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;color:#374151;background:#fff">
+        <option value="">Mixpanel: todos</option>
+        <option value="active">● Activo</option>
+        <option value="none">— Sin datos</option>
+      </select>
+      <button onclick="filterText='';filterMig='';filterMx='';document.getElementById('filter-name').value='';document.getElementById('filter-mig').value='';document.getElementById('filter-mx').value='';renderTable()"
+        style="padding:6px 12px;border:1px solid #e2e8f0;border-radius:8px;font-size:12px;color:#64748b;background:#fff;cursor:pointer">
+        Limpiar filtros
+      </button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="sortable" data-col="name" onclick="sortBy('name')">Cliente<span class="sort-arrow"> ⇅</span></th>
+          <th class="sortable" data-col="version" onclick="sortBy('version')">Versión<span class="sort-arrow"> ⇅</span></th>
+          <th>Base comparación</th>
+          <th class="sortable" data-col="score" onclick="sortBy('score')">Score<span class="sort-arrow"> ↓</span></th>
+          <th class="sortable" data-col="migratability" onclick="sortBy('migratability')">Migratabilidad<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="jar" onclick="sortBy('jar')" title="Gradle JAR">JAR<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="source" onclick="sortBy('source')" title="Gradle Source">Source<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="local_maintained" onclick="sortBy('local_maintained')" title="Local Mantenido">Mant.<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="not_maintained" onclick="sortBy('not_maintained')" title="Local sin Mantenimiento" style="color:#f97316">Sin mant.<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="custom" onclick="sortBy('custom')" title="Customizaciones" style="color:#a855f7">Custom<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="update_total_hours" onclick="sortBy('update_total_hours')" title="Horas estimadas para actualizar a Etendo 25.4.x" style="color:#1d4ed8">Actualiz.<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="saas_total_hours" onclick="sortBy('saas_total_hours')" title="Horas estimadas para migrar a SaaS" style="color:#166534">SaaS<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="ui_score" onclick="sortBy('ui_score')" title="Score de preparación para la nueva UI (0–100)">UI Score<span class="sort-arrow"> ⇅</span></th>
+          <th class="td-num sortable" data-col="has_mixpanel" onclick="sortBy('has_mixpanel')" title="Recibe datos de Mixpanel">Mixpanel<span class="sort-arrow"> ⇅</span></th>
+          <th>Reporte</th>
+        </tr>
+      </thead>
+      <tbody id="clients-tbody"></tbody>
+    </table>
+  </div>
+
+</div><!-- /container -->
+
+<!-- Viewer -->
+<div class="viewer-backdrop" id="viewer-backdrop" onclick="closeViewer()"></div>
+<div class="viewer-panel" id="viewer-panel">
+  <div class="viewer-header">
+    <span class="viewer-title" id="viewer-title"></span>
+    <button class="viewer-close" onclick="closeViewer()">✕ Cerrar</button>
+  </div>
+  <iframe class="viewer-frame" id="viewer-frame" src=""></iframe>
+</div>
+
+<script>window.DASHBOARD_DATA = {"kpis": {"total": 1, "avg_score": 43.0, "migratable": 0, "min_version": "25.1.6", "max_version": "25.1.6", "version_avg_pct": 50.0, "etendo": 1, "openbravo": 0}, "score_dist": {"labels": ["Fácil", "Moderada", "Difícil", "Muy difícil"], "values": [0, 0, 1, 0], "colors": ["#86efac", "#fde68a", "#fed7aa", "#fca5a5"]}, "version_dist": {"labels": ["25.1.6"], "values": [1]}, "version_dist_grouped": [{"major": "25", "total": 1, "versions": [{"version": "25.1.6", "count": 1}]}], "top_nm_modules": {"labels": ["com.etendoerp.accounting.templates.es_es", "com.etendoerp.advanced.bank.account.management.es_es", "com.etendoerp.advanced.bpsettlement.es_es", "com.etendoerp.advanced.financial.docs.processing.es_es", "com.etendoerp.advanced.intercompany.es_es", "com.etendoerp.analytics.exporter", "com.etendoerp.bankingpool.es_es", "com.etendoerp.bulk.posting.es_es", "com.etendoerp.financial.reports.advanced.es_es", "com.etendoerp.gljournal.advanced.es_es", "com.etendoerp.payment.removal.es_es", "com.etendoerp.vat.regularization.es_es", "com.openbravo.gps.finance.balanceexcelexport.report", "com.openbravo.gps.idl.invoices", "com.smf.almis.fitintegration", "com.smf.asset.amortization.report.es_es", "com.smf.currency.apiconfig.es_es", "com.smf.currency.conversionrate.es_es", "com.smf.gljournal.reverse.es_es", "com.smf.service.restful", "org.openbravo.bankstatement.importer.generic.csv", "org.openbravo.bankstatement.importer.generic.csv.es_ES", "org.openbravo.financial.bpsettlement.es_es", "org.openbravo.idl", "org.openbravo.idl.translation.es_ES", "org.openbravo.module.idljava", "org.openbravo.module.remittance.es_es", "org.openbravo.sepa.iso20022", "org.openbravo.sepa.iso20022.coredirectdebit.customertobank", "org.openbravo.sepa.iso20022.credittransfer.customertobank", "org.openbravo.util.javax.xml.soap", "org.openbravo.util.jaxws", "org.openbravo.util.saaj.impl", "org.openbravo.utility.hqlquerytool", "org.openbravo.utility.opencsv"], "values": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "is_translation": [true, true, true, true, true, false, true, true, true, true, true, true, false, false, false, true, true, true, true, false, false, true, true, false, true, false, true, false, false, false, false, false, false, false, false]}, "top_custom_by_loc": {"labels": ["com.smf.mdf.reports", "com.smf.mdf.customizations", "com.smf.mdf.template"], "values": [27826, 24055, 593], "clients": ["MDF", "MDF", "MDF"]}, "clients": [{"name": "MDF", "version": "25.1.6", "score": 43, "migratability": "hard", "jar": 0, "source": 109, "local_maintained": 2, "not_maintained": 35, "custom": 3, "html_file": "MDF.html", "base_version": "expanded", "baseline_exact": true, "update_total_hours": 80, "saas_total_hours": 95, "ui_score": 87, "has_mixpanel": false, "mixpanel_instance": null}]};</script>
+<script>
+const D = window.DASHBOARD_DATA;
+
+// ── Score helpers ─────────────────────────────────────────────────────────
+function scoreColor(s) {
+    if (s >= 80) return '#15803d';
+    if (s >= 60) return '#a16207';
+    if (s >= 40) return '#c2410c';
+    return '#b91c1c';
+}
+function scoreBg(s) {
+    if (s >= 80) return '#dcfce7';
+    if (s >= 60) return '#fef9c3';
+    if (s >= 40) return '#ffedd5';
+    return '#fee2e2';
+}
+const MIG = {
+    easy: ['mig-easy', 'Fácil'],
+    moderate: ['mig-mod', 'Moderada'],
+    hard: ['mig-hard', 'Difícil'],
+    very_hard: ['mig-vhard', 'Muy difícil'],
+};
+
+// ── KPI cards ─────────────────────────────────────────────────────────────
+function renderKpis() {
+    const avg = D.kpis.avg_score;
+    document.getElementById('kpi-total').textContent = D.kpis.total;
+    const avgEl = document.getElementById('kpi-avg');
+    avgEl.textContent = avg;
+    avgEl.style.color = scoreColor(avg);
+    document.getElementById('kpi-migratable').textContent = D.kpis.migratable;
+    document.getElementById('kpi-ver-min').textContent = D.kpis.min_version;
+    document.getElementById('kpi-ver-max').textContent = D.kpis.max_version;
+    document.getElementById('kpi-ver-marker').style.left = D.kpis.version_avg_pct + '%';
+    document.getElementById('kpi-etendo-count').textContent = D.kpis.etendo;
+    document.getElementById('kpi-openbravo-count').textContent = D.kpis.openbravo;
+}
+
+// ── Chart.js global defaults ──────────────────────────────────────────────
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.borderColor = '#f1f5f9';
+Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
+
+function truncLabel(str, max) {
+    return str.length > max ? str.slice(0, max) + '…' : str;
+}
+
+// ── Score distribution (doughnut) ─────────────────────────────────────────
+function renderScoreDist() {
+    const ctx = document.getElementById('chart-score-dist').getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: D.score_dist.labels,
+            datasets: [{
+                data: D.score_dist.values,
+                backgroundColor: D.score_dist.colors,
+                borderWidth: 0,
+                hoverOffset: 4,
+            }]
+        },
+        options: {
+            cutout: '68%',
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        color: '#64748b',
+                        padding: 16,
+                        font: { size: 11 },
+                        boxWidth: 10,
+                        boxHeight: 10,
+                        usePointStyle: true,
+                        pointStyle: 'circle',
+                    }
+                }
+            },
+        }
+    });
+}
+
+// ── Version distribution (grouped tree) ──────────────────────────────────
+function renderVersionDist() {
+    const container = document.getElementById('version-dist-container');
+    const groups = D.version_dist_grouped;
+    if (!groups || !groups.length) {
+        container.innerHTML = '<div class="chart-empty">Sin datos</div>';
+        return;
+    }
+    container.innerHTML = groups.map((group, i) => `
+        <div class="ver-group">
+            <div class="ver-group-header" onclick="toggleVerGroup(${i})">
+                <span class="ver-major">v${group.major}</span>
+                <span class="ver-count-badge">${group.total} entorno${group.total !== 1 ? 's' : ''}</span>
+                <span class="ver-toggle" id="ver-toggle-${i}">▶</span>
+            </div>
+            <div class="ver-group-body" id="ver-group-body-${i}" style="display:none">
+                ${group.versions.map(v => `
+                    <div class="ver-item">
+                        <span class="ver-version">${v.version}</span>
+                        <span class="ver-item-count">${v.count}</span>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `).join('');
+}
+
+function toggleVerGroup(i) {
+    const body = document.getElementById('ver-group-body-' + i);
+    const toggle = document.getElementById('ver-toggle-' + i);
+    const isOpen = body.style.display !== 'none';
+    body.style.display = isOpen ? 'none' : 'block';
+    toggle.textContent = isOpen ? '▶' : '▼';
+}
+
+// ── Top local_not_maintained ──────────────────────────────────────────────
+function renderNmModules() {
+    const wrap = document.getElementById('chart-nm-wrap');
+    if (!D.top_nm_modules.labels.length) {
+        wrap.innerHTML = '<div class="chart-empty">Sin módulos sin mantenimiento</div>';
+        return;
+    }
+    const colors = D.top_nm_modules.is_translation.map(t => t ? '#94a3b8' : '#f97316');
+    const ctx = document.getElementById('chart-nm').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: D.top_nm_modules.labels.map(l => truncLabel(l, 50)),
+            datasets: [{
+                data: D.top_nm_modules.values,
+                backgroundColor: colors,
+                borderRadius: 4,
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: (ctx) => {
+                            const isTrans = D.top_nm_modules.is_translation[ctx.dataIndex];
+                            return ` ${ctx.parsed.x} cliente${ctx.parsed.x !== 1 ? 's' : ''}${isTrans ? ' — traducción' : ''}`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: { ticks: { stepSize: 1, color: '#64748b' }, grid: { color: '#1e293b' } },
+                y: { ticks: { color: '#94a3b8', font: { size: 11 } }, grid: { display: false } }
+            }
+        }
+    });
+}
+
+// ── Top custom by LOC ─────────────────────────────────────────────────────
+function renderCustomLoc() {
+    const wrap = document.getElementById('chart-custom-wrap');
+    if (!D.top_custom_by_loc.labels.length) {
+        wrap.innerHTML = '<div class="chart-empty">Sin módulos de customización</div>';
+        return;
+    }
+    const ctx = document.getElementById('chart-custom').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: D.top_custom_by_loc.labels.map(l => truncLabel(l, 45)),
+            datasets: [{
+                data: D.top_custom_by_loc.values,
+                backgroundColor: '#a855f7',
+                borderRadius: 4,
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: (ctx) => {
+                            const client = D.top_custom_by_loc.clients[ctx.dataIndex];
+                            return ` ${ctx.parsed.x.toLocaleString()} LOC — ${client}`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: { ticks: { color: '#64748b' }, grid: { color: '#1e293b' } },
+                y: { ticks: { color: '#94a3b8', font: { size: 11 } }, grid: { display: false } }
+            }
+        }
+    });
+}
+
+// ── Client table — sort + filter ─────────────────────────────────────────
+const COL_KEYS = ['name','version','base_version','score','migratability','jar','source','local_maintained','not_maintained','custom','update_total_hours','saas_total_hours','ui_score','has_mixpanel'];
+let sortCol = 'score';
+let sortAsc = false;
+let filterText = '';
+let filterMig = '';
+let filterMx = '';
+
+function applyFiltersAndSort() {
+    let data = [...D.clients];
+    // Text filter (name)
+    if (filterText) {
+        const q = filterText.toLowerCase();
+        data = data.filter(c => c.name.toLowerCase().includes(q));
+    }
+    // Migratability filter
+    if (filterMig) data = data.filter(c => c.migratability === filterMig);
+    // Mixpanel filter
+    if (filterMx === 'active') data = data.filter(c => c.has_mixpanel);
+    if (filterMx === 'none')   data = data.filter(c => !c.has_mixpanel);
+
+    // Sort
+    data.sort((a, b) => {
+        let va = a[sortCol], vb = b[sortCol];
+        if (va == null) va = sortAsc ? Infinity : -Infinity;
+        if (vb == null) vb = sortAsc ? Infinity : -Infinity;
+        if (typeof va === 'string') return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+        return sortAsc ? va - vb : vb - va;
+    });
+
+    // Update header arrows
+    document.querySelectorAll('th[data-col]').forEach(th => {
+        const key = th.getAttribute('data-col');
+        th.querySelector('.sort-arrow').textContent = key === sortCol ? (sortAsc ? ' ↑' : ' ↓') : ' ⇅';
+    });
+
+    // Count indicator
+    const total = D.clients.length;
+    const shown = data.length;
+    const counter = document.getElementById('table-counter');
+    if (counter) counter.textContent = shown < total ? `${shown} de ${total} clientes` : `${total} clientes`;
+
+    return data;
+}
+
+function renderTable() {
+    const data = applyFiltersAndSort();
+    const tbody = document.getElementById('clients-tbody');
+    const fmtH = h => (h == null || h === 0) ? '<span style="color:#9ca3af">—</span>' : `<span style="font-weight:600">${h}h</span>`;
+    const uiScoreHtml = s => {
+        if (s == null) return '<span style="color:#d1d5db">—</span>';
+        const bg = s >= 80 ? '#dcfce7' : s >= 60 ? '#fef9c3' : s >= 40 ? '#ffedd5' : '#fee2e2';
+        const fg = s >= 80 ? '#166534' : s >= 60 ? '#854d0e' : s >= 40 ? '#9a3412' : '#991b1b';
+        return `<span style="background:${bg};color:${fg};font-weight:700;padding:2px 8px;border-radius:10px;font-size:12px;">${s}</span>`;
+    };
+    const mxHtml = (has, instance) => has
+        ? `<span style="background:#dcfce7;color:#166534;font-size:11px;padding:2px 7px;border-radius:8px;font-weight:600" title="Instancia Mixpanel: ${instance}">● Activo</span>`
+        : `<span style="background:#f1f5f9;color:#94a3b8;font-size:11px;padding:2px 7px;border-radius:8px" title="Sin datos en Mixpanel">— Sin datos</span>`;
+
+    tbody.innerHTML = data.map(c => {
+        const [migClass, migLabel] = MIG[c.migratability] || MIG['very_hard'];
+        const nmClass = c.not_maintained > 0 ? 'td-num-warn' : 'td-num';
+        const custClass = c.custom > 0 ? 'td-num-purple' : 'td-num';
+        const btn = c.html_file
+            ? `<button class="btn-report" onclick="openViewer('${c.html_file}', '${c.name.replace(/'/g,"\'")}')">Ver reporte</button>`
+            : `<button class="btn-report" disabled>Sin reporte</button>`;
+        const baseLabel = c.baseline_exact
+            ? `<span class="baseline-badge baseline-exact" title="Baseline exacto">${c.base_version}</span>`
+            : `<span class="baseline-badge baseline-approx" title="Baseline aproximado">${c.base_version} ⚠</span>`;
+        return `<tr>
+            <td class="td-name">${c.name}</td>
+            <td class="td-version">${c.version}</td>
+            <td>${baseLabel}</td>
+            <td><span class="score-badge" style="background:${scoreBg(c.score)};color:${scoreColor(c.score)}">${c.score}</span></td>
+            <td><span class="mig-badge ${migClass}">${migLabel}</span></td>
+            <td class="td-num">${c.jar}</td>
+            <td class="td-num">${c.source}</td>
+            <td class="td-num">${c.local_maintained}</td>
+            <td class="${nmClass}">${c.not_maintained}</td>
+            <td class="${custClass}">${c.custom}</td>
+            <td class="td-num" style="color:#1d4ed8">${fmtH(c.update_total_hours)}</td>
+            <td class="td-num" style="color:#166534">${fmtH(c.saas_total_hours)}</td>
+            <td class="td-num">${uiScoreHtml(c.ui_score)}</td>
+            <td class="td-num">${mxHtml(c.has_mixpanel, c.mixpanel_instance)}</td>
+            <td>${btn}</td>
+        </tr>`;
+    }).join('') || `<tr><td colspan="15" style="text-align:center;color:#9ca3af;padding:24px">Sin resultados</td></tr>`;
+}
+
+function sortBy(col) {
+    if (sortCol === col) { sortAsc = !sortAsc; } else { sortCol = col; sortAsc = col === 'name'; }
+    renderTable();
+}
+// legacy compat
+function toggleSort() { sortBy('score'); }
+
+// ── Viewer ────────────────────────────────────────────────────────────────
+function openViewer(htmlFile, clientName) {
+    document.getElementById('viewer-frame').src = htmlFile;
+    document.getElementById('viewer-title').textContent = clientName;
+    document.getElementById('viewer-panel').classList.add('open');
+    document.getElementById('viewer-backdrop').classList.add('open');
+}
+function closeViewer() {
+    document.getElementById('viewer-panel').classList.remove('open');
+    document.getElementById('viewer-backdrop').classList.remove('open');
+    setTimeout(() => { document.getElementById('viewer-frame').src = ''; }, 300);
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+    renderKpis();
+    renderScoreDist();
+    renderVersionDist();
+    renderNmModules();
+    renderCustomLoc();
+    renderTable();
+    // Init counter
+    const counter = document.getElementById('table-counter');
+    if (counter) counter.textContent = `${D.clients.length} clientes`;
+});
+</script>
+
+<!-- PORTFOLIO_ANALYSIS -->
+
+<style>
+.portfolio-table { width:100%; border-collapse:collapse; font-size:13px }
+.portfolio-table th { background:#f8fafc; padding:8px 12px; text-align:left; font-weight:600; color:#374151; border-bottom:2px solid #e5e7eb }
+.portfolio-table td { padding:8px 12px; border-bottom:1px solid #f3f4f6; vertical-align:top }
+.portfolio-table tr:hover td { background:#fafafa }
+.portfolio-section { background:#fff; border-radius:12px; padding:28px 32px; margin:24px 0; box-shadow:0 1px 4px rgba(0,0,0,.07) }
+.portfolio-section h2 { font-size:20px; font-weight:700; color:#1e293b; margin:0 0 8px }
+.portfolio-section h3 { font-size:15px; font-weight:600; color:#374151; margin:20px 0 8px }
+.portfolio-lead { color:#64748b; font-size:13px; margin:0 0 18px; line-height:1.6 }
+.portfolio-pill { display:inline-block; padding:1px 8px; border-radius:10px; font-size:11px; font-weight:600; margin:1px }
+.p-repl { background:#dcfce7; color:#16a34a }
+.p-norepl { background:#fee2e2; color:#dc2626 }
+.p-multi { background:#dbeafe; color:#1d4ed8 }
+.p-bundle { background:#ede9fe; color:#7c3aed }
+.p-upstream { background:#d1fae5; color:#065f46 }
+</style>
+<div style="max-width:1200px;margin:0 auto;padding:0 24px 48px">
+
+<div class="portfolio-section" id="portfolio-ui">
+  <h2>Preparación para nueva UI — Roadmap por funcionalidad</h2>
+  <p class="portfolio-lead">
+    La tabla prioriza las funcionalidades pendientes de la nueva UI de Etendo según su <b>impacto real en el portfolio</b>:
+    una funcionalidad crítica para 3 clientes es más urgente que una crítica para 1.
+    <b>Prioridad de roadmap</b>: P1 = crítica en ≥2 entornos · P2 = crítica en 1 entorno con impacto alto ·
+    P3 = alta en varios · P4 = baja relevancia general.
+    Scores por entorno: <span style="display:inline-flex;align-items:center;gap:6px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;padding:4px 10px;margin:3px;font-size:12px"><b>MDF</b>&nbsp;<span style="display:inline-block;padding:2px 10px;border-radius:12px;background:#dcfce7;color:#16a34a;font-weight:700;font-size:13px">87</span></span>
+    <br><span style="color:#6b7280;font-size:12px">
+    1 entornos analizados · 1 bloqueados · score promedio 87/100
+    </span>
+  </p>
+
+  <!-- Filtros y ordenamiento del roadmap -->
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px">
+    <select id="rdm-filter-priority" onchange="rdmApply()"
+      style="border:1px solid #d1d5db;border-radius:6px;padding:5px 10px;font-size:12px;background:#fff">
+      <option value="">Todas las prioridades</option>
+      <option value="P1">P1 — Inmediata</option>
+      <option value="P2">P2 — Alta</option>
+      <option value="P3">P3 — Media</option>
+      <option value="P4">P4 — Baja</option>
+    </select>
+    <select id="rdm-filter-status" onchange="rdmApply()"
+      style="border:1px solid #d1d5db;border-radius:6px;padding:5px 10px;font-size:12px;background:#fff">
+      <option value="">Todos los estados UI</option>
+      <option value="BUG ACTIVO">BUG ACTIVO</option>
+      <option value="BLOQUEADO">BLOQUEADO</option>
+      <option value="NOT DONE">NOT DONE</option>
+      <option value="PARCIAL">PARCIAL</option>
+      <option value="TO CHECK">TO CHECK</option>
+    </select>
+    <button onclick="rdmReset()"
+      style="border:1px solid #d1d5db;border-radius:6px;padding:5px 12px;font-size:12px;
+             background:#f9fafb;cursor:pointer;color:#374151">↺ Limpiar</button>
+    <span id="rdm-count" style="font-size:11px;color:#9ca3af;margin-left:4px"></span>
+  </div>
+
+  <table class="portfolio-table" id="rdm-table">
+    <thead>
+      <tr>
+        <th onclick="rdmSort('title')" style="cursor:pointer" title="Ordenar por nombre">
+          Funcionalidad <span id="rdm-arr-title">⇅</span></th>
+        <th onclick="rdmSort('priority')" style="cursor:pointer;text-align:center;width:130px"
+          title="Ordenar por prioridad">
+          Prioridad roadmap <span id="rdm-arr-priority">⇅</span></th>
+        <th style="text-align:center;width:110px">Crítica · Alta · Media</th>
+        <th onclick="rdmSort('affected')" style="cursor:pointer" title="Ordenar por entornos afectados">
+          Entornos afectados <span id="rdm-arr-affected">⇅</span></th>
+        <th onclick="rdmSort('completion')" style="cursor:pointer;width:120px"
+          title="Ordenar por avance UI">
+          Avance UI <span id="rdm-arr-completion">⇅</span></th>
+        <th onclick="rdmSort('ad')" style="cursor:pointer;text-align:center;width:110px"
+          title="Número promedio de instancias de esta funcionalidad encontradas en el Application Dictionary (AD) de los entornos analizados. Ordenar por apariciones.">
+          Apariciones en AD (prom.) <span id="rdm-arr-ad">⇅</span></th>
+      </tr>
+    </thead>
+    <tbody id="rdm-tbody"><tr data-priority="P2" data-score="4" data-completion="0" data-affected="1" data-ad="52"><td>  <div style="font-weight:600;font-size:13px">Filtros y orden por defecto de pestaña (HQLFILTERCLAUSE)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 26  · Estado UI: <b>NOT DONE</b></div></td><td style="text-align:center"><span style="background:#ea580c;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P2 — Alta</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">1</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>  <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;margin:1px">MDF</span></div>    </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:0%;height:6px;background:#dc2626;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">0%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  52</td></tr><tr data-priority="P2" data-score="4" data-completion="5" data-affected="1" data-ad="40"><td>  <div style="font-weight:600;font-size:13px">Workspace / Dashboard (My Openbravo)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 21  · Estado UI: <b>NOT DONE</b></div></td><td style="text-align:center"><span style="background:#ea580c;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P2 — Alta</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">1</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>  <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;margin:1px">MDF</span></div>    </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:5%;height:6px;background:#dc2626;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">5%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  40</td></tr><tr data-priority="P2" data-score="4" data-completion="15" data-affected="1" data-ad="27"><td>  <div style="font-weight:600;font-size:13px">Application Forms (AD_FORM)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 18  · Estado UI: <b>NOT DONE</b></div></td><td style="text-align:center"><span style="background:#ea580c;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P2 — Alta</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">1</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>  <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;margin:1px">MDF</span></div>    </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:15%;height:6px;background:#dc2626;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">15%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  27</td></tr><tr data-priority="P2" data-score="4" data-completion="35" data-affected="1" data-ad="55"><td>  <div style="font-weight:600;font-size:13px">Botones hardcoded (DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 2.B  · Estado UI: <b>PARCIAL</b></div></td><td style="text-align:center"><span style="background:#ea580c;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P2 — Alta</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">1</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>  <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;margin:1px">MDF</span></div>    </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:35%;height:6px;background:#dc2626;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">35%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  55</td></tr><tr data-priority="P2" data-score="4" data-completion="45" data-affected="1" data-ad="473"><td>  <div style="font-weight:600;font-size:13px">Procesos legados AD_PROCESS (R&P, Background, Manual Action)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 3b  · Estado UI: <b>PARCIAL</b></div></td><td style="text-align:center"><span style="background:#ea580c;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P2 — Alta</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">1</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>  <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;margin:1px">MDF</span></div>    </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:45%;height:6px;background:#dc2626;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">45%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  473</td></tr><tr data-priority="P2" data-score="4" data-completion="45" data-affected="1" data-ad="4470"><td>  <div style="font-weight:600;font-size:13px">Expresiones de valor por defecto (Default Values)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 25  · Estado UI: <b>PARCIAL</b></div></td><td style="text-align:center"><span style="background:#ea580c;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P2 — Alta</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">1</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>  <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;margin:1px">MDF</span></div>    </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:45%;height:6px;background:#dc2626;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">45%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  4470</td></tr><tr data-priority="P2" data-score="4" data-completion="55" data-affected="1" data-ad="50"><td>  <div style="font-weight:600;font-size:13px">Ventanas Pick and Execute</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 1.4  · Estado UI: <b>PARCIAL</b></div></td><td style="text-align:center"><span style="background:#ea580c;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P2 — Alta</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">1</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>  <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;margin:1px">MDF</span></div>    </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:55%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">55%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  50</td></tr><tr data-priority="P2" data-score="4" data-completion="60" data-affected="1" data-ad="143"><td>  <div style="font-weight:600;font-size:13px">Process Definitions modernas (OBUIAPP_PROCESS)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 3  · Estado UI: <b>PARCIAL</b></div></td><td style="text-align:center"><span style="background:#ea580c;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P2 — Alta</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">1</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>  <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;margin:1px">MDF</span></div>    </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:60%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">60%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  143</td></tr><tr data-priority="P2" data-score="4" data-completion="65" data-affected="1" data-ad="2477"><td>  <div style="font-weight:600;font-size:13px">Display Logic en campos (visibilidad condicional)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 4  · Estado UI: <b>BUG ACTIVO</b></div></td><td style="text-align:center"><span style="background:#ea580c;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P2 — Alta</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">1</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>  <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;margin:1px">MDF</span></div>    </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:65%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">65%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  2477</td></tr><tr data-priority="P4" data-score="2" data-completion="60" data-affected="1" data-ad="89"><td>  <div style="font-weight:600;font-size:13px">Informes (acceso desde menú)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 14  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 1</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>    <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#ffedd5;color:#ea580c;font-size:11px;margin:1px">MDF</span></div>  </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:60%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">60%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  89</td></tr><tr data-priority="P4" data-score="2" data-completion="65" data-affected="1" data-ad="0"><td>  <div style="font-weight:600;font-size:13px">Tipos de referencia sin implementar (widgets de campo)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 2  · Estado UI: <b>PARCIAL</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 1</span>  <span style="color:#ca8a04;font-weight:700"> · 0</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>    <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#ffedd5;color:#ea580c;font-size:11px;margin:1px">MDF</span></div>  </td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:65%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">65%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  —</td></tr><tr data-priority="P4" data-score="1" data-completion="10" data-affected="1" data-ad="0"><td>  <div style="font-weight:600;font-size:13px">Personalización de vistas (Saved Views)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 33  · Estado UI: <b>NOT DONE</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:10%;height:6px;background:#dc2626;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">10%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  —</td></tr><tr data-priority="P4" data-score="1" data-completion="65" data-affected="1" data-ad="167"><td>  <div style="font-weight:600;font-size:13px">Selectores y campos FK (OBUISEL_Selector)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 8  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:65%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">65%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  167</td></tr><tr data-priority="P4" data-score="1" data-completion="72" data-affected="1" data-ad="96"><td>  <div style="font-weight:600;font-size:13px">Comportamientos de pestaña (SR, ED, read-only, filtros, display logic)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 5  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:72%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">72%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  96</td></tr><tr data-priority="P4" data-score="1" data-completion="72" data-affected="1" data-ad="0"><td>  <div style="font-weight:600;font-size:13px">Comportamientos de grid (edición inline, columnas, filtros)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 9  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:72%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">72%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  —</td></tr><tr data-priority="P4" data-score="1" data-completion="72" data-affected="1" data-ad="517"><td>  <div style="font-weight:600;font-size:13px">Navegación y menú</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 12  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:72%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">72%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  517</td></tr><tr data-priority="P4" data-score="1" data-completion="72" data-affected="1" data-ad="1"><td>  <div style="font-weight:600;font-size:13px">Vistas de árbol (Tree Views)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 29  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:72%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">72%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  1</td></tr><tr data-priority="P4" data-score="1" data-completion="73" data-affected="1" data-ad="1037"><td>  <div style="font-weight:600;font-size:13px">Comportamientos transversales (adjuntos, notas, readonly logic, copy record)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 10  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:73%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">73%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  1037</td></tr><tr data-priority="P4" data-score="1" data-completion="75" data-affected="1" data-ad="210"><td>  <div style="font-weight:600;font-size:13px">Status Bar (barra de estado inferior del formulario)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 23  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:75%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">75%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  210</td></tr><tr data-priority="P4" data-score="1" data-completion="75" data-affected="1" data-ad="0"><td>  <div style="font-weight:600;font-size:13px">Sistema de layout del formulario (columnas, ancho, orden)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 24  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:75%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">75%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  —</td></tr><tr data-priority="P4" data-score="1" data-completion="78" data-affected="1" data-ad="232"><td>  <div style="font-weight:600;font-size:13px">Ventanas Maintain (CRUD de datos maestros)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 1.1  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:78%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">78%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  232</td></tr><tr data-priority="P4" data-score="1" data-completion="78" data-affected="1" data-ad="40"><td>  <div style="font-weight:600;font-size:13px">Ventanas Transaction (ciclo de vida de documento)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 1.2  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:78%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">78%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  40</td></tr><tr data-priority="P4" data-score="1" data-completion="78" data-affected="1" data-ad="7"><td>  <div style="font-weight:600;font-size:13px">Ventanas Query / Info (consulta de solo lectura)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 1.3  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:78%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">78%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  7</td></tr><tr data-priority="P4" data-score="1" data-completion="78" data-affected="1" data-ad="1552"><td>  <div style="font-weight:600;font-size:13px">Field Groups (secciones colapsables del formulario)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 22  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:78%;height:6px;background:#ca8a04;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">78%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  1552</td></tr><tr data-priority="P4" data-score="1" data-completion="82" data-affected="1" data-ad="95"><td>  <div style="font-weight:600;font-size:13px">Callouts (lógica de campo server-side)</div>  <div style="font-size:10px;color:#9ca3af;margin-top:1px">§ 6  · Estado UI: <b>TO CHECK</b></div></td><td style="text-align:center"><span style="background:#6b7280;color:#fff;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">P4 — Baja</span></td><td style="text-align:center;font-size:12px">  <span style="color:#dc2626;font-weight:700">0</span>  <span style="color:#ea580c;font-weight:700"> · 0</span>  <span style="color:#ca8a04;font-weight:700"> · 1</span>  <span style="color:#6b7280;font-size:10px"> / 1</span></td><td>      <div style="line-height:1.8"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;margin:1px">MDF</span></div></td><td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:6px;background:#f3f4f6;border-radius:3px"><div style="width:82%;height:6px;background:#16a34a;border-radius:3px"></div></div><span style="font-size:11px;color:#6b7280;white-space:nowrap">82%</span></div></td><td style="text-align:center;font-size:12px;color:#6b7280">  95</td></tr></tbody>
+  </table>
+
+  <p style="font-size:11px;color:#9ca3af;margin-top:12px">
+    Los colores en "Entornos afectados" indican la prioridad del entorno para esa funcionalidad:
+    <span style="background:#fee2e2;color:#dc2626;padding:1px 6px;border-radius:6px">rojo = crítica</span>
+    <span style="background:#ffedd5;color:#ea580c;padding:1px 6px;border-radius:6px">naranja = alta</span>
+    <span style="background:#fef9c3;color:#ca8a04;padding:1px 6px;border-radius:6px">amarillo = media</span>.
+    "Apariciones en AD" = instancias de la funcionalidad encontradas en el Application Dictionary
+    (campos, ventanas, procesos, etc.) — no mide uso real, sino la escala del impacto potencial.
+  </p>
+</div>
+
+<script>
+(function() {
+  var _rdmSort = null;
+  var _rdmDir  = 1;
+
+  function rdmRows() {
+    return Array.from(document.querySelectorAll('#rdm-tbody tr'));
+  }
+
+  window.rdmApply = function() {
+    var pri    = document.getElementById('rdm-filter-priority').value;
+    var status = document.getElementById('rdm-filter-status').value;
+    var rows   = rdmRows();
+    var visible = 0;
+    rows.forEach(function(r) {
+      var ok = true;
+      if (pri    && r.dataset.priority !== pri)           ok = false;
+      if (status && !r.querySelector('td div b').textContent.includes(status)) ok = false;
+      r.style.display = ok ? '' : 'none';
+      if (ok) visible++;
+    });
+    var cnt = document.getElementById('rdm-count');
+    if (cnt) cnt.textContent = visible + ' de ' + rows.length + ' funcionalidades';
+  };
+
+  window.rdmReset = function() {
+    document.getElementById('rdm-filter-priority').value = '';
+    document.getElementById('rdm-filter-status').value   = '';
+    rdmRows().forEach(function(r) { r.style.display = ''; });
+    document.getElementById('rdm-count').textContent = '';
+    ['priority','affected','completion','ad','title'].forEach(function(k) {
+      var el = document.getElementById('rdm-arr-' + k);
+      if (el) el.textContent = '⇅';
+    });
+    _rdmSort = null; _rdmDir = 1;
+  };
+
+  window.rdmSort = function(col) {
+    if (_rdmSort === col) { _rdmDir *= -1; } else { _rdmSort = col; _rdmDir = 1; }
+    ['priority','affected','completion','ad','title'].forEach(function(k) {
+      var el = document.getElementById('rdm-arr-' + k);
+      if (el) el.textContent = (k === col) ? (_rdmDir === 1 ? ' ↑' : ' ↓') : ' ⇅';
+    });
+    var tbody = document.getElementById('rdm-tbody');
+    var rows  = rdmRows();
+    rows.sort(function(a, b) {
+      var av, bv;
+      if (col === 'priority')   { av = a.dataset.priority;   bv = b.dataset.priority; }
+      else if (col === 'affected')  { av = +a.dataset.affected;  bv = +b.dataset.affected; }
+      else if (col === 'completion'){ av = +a.dataset.completion; bv = +b.dataset.completion; }
+      else if (col === 'ad')    { av = +a.dataset.ad;        bv = +b.dataset.ad; }
+      else                      { av = a.querySelector('td div').textContent.trim();
+                                   bv = b.querySelector('td div').textContent.trim(); }
+      if (av < bv) return -1 * _rdmDir;
+      if (av > bv) return  1 * _rdmDir;
+      return 0;
+    });
+    rows.forEach(function(r) { tbody.appendChild(r); });
+    rdmApply();
+  };
+})();
+</script>
+
+<div class="portfolio-section" id="portfolio-modules">
+  <h2>Módulos sin mantenimiento — candidatos a soporte oficial</h2>
+  <p class="portfolio-lead">
+    Se identificaron <b>4 módulos</b> que requieren atención de Etendo:
+    ya sea porque aparecen en múltiples clientes o porque son de riesgo alto sin reemplazo oficial.
+    Los módulos con mayor prioridad son: <b>FIT Integration</b> · <b>SEPA Framework and Utilities</b> · <b>SEPA Direct Debit Customer-to-Bank (CORE and B2B)</b>.
+    Tomar el mantenimiento de estos módulos o publicarlos como bundles oficiales reduciría
+    significativamente el coste de migración del portfolio.
+  </p>
+  <h3>Candidatos a mantenimiento oficial por Etendo</h3>
+  <table class="portfolio-table">
+    <thead>
+      <tr>
+        <th>Módulo</th><th>Función</th><th>Clientes</th>
+        <th style="text-align:center">Riesgo</th><th>Reemplazo</th>
+        <th style="text-align:center">Esfuerzo estimado</th>
+      </tr>
+    </thead>
+    <tbody><tr><td><div style="font-weight:600;font-size:13px">FIT Integration</div><div style="font-size:11px;color:#6b7280;font-family:monospace">com.smf.almis.fitintegration</div><span class="portfolio-pill p-bundle">bundle_candidate</span></td><td style="font-size:12px;color:#374151">Integración con el sistema FIT (Financial Information Tool/Almis), herramienta de gestión de cartera…</td><td style="font-size:12px">MDF<br></td><td style="text-align:center"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;font-weight:600">Alto</span></td><td><span class="portfolio-pill p-norepl">Sin reemplazo</span></td><td style="text-align:center;white-space:nowrap;font-size:12px">~4h actualiz.<br><span style="color:#6b7280">~8h SaaS</span></td></tr><tr><td><div style="font-weight:600;font-size:13px">SEPA Framework and Utilities</div><div style="font-size:11px;color:#6b7280;font-family:monospace">org.openbravo.sepa.iso20022</div><span class="portfolio-pill p-bundle">bundle_candidate</span></td><td style="font-size:12px;color:#374151">Framework base para procesamiento de pagos SEPA (ISO 20022). Genera los ficheros XML necesarios para…</td><td style="font-size:12px">MDF<br></td><td style="text-align:center"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;font-weight:600">Alto</span></td><td><span class="portfolio-pill p-norepl">Sin reemplazo</span></td><td style="text-align:center;white-space:nowrap;font-size:12px">~6h actualiz.<br><span style="color:#6b7280">~12h SaaS</span></td></tr><tr><td><div style="font-weight:600;font-size:13px">SEPA Direct Debit Customer-to-Bank (CORE and B2B)</div><div style="font-size:11px;color:#6b7280;font-family:monospace">org.openbravo.sepa.iso20022.coredirectdebit.customertobank</div><span class="portfolio-pill p-bundle">bundle_candidate</span></td><td style="font-size:12px;color:#374151">Genera ficheros XML SEPA de domiciliación directa (CORE y B2B) según el estándar ISO 20022.</td><td style="font-size:12px">MDF<br></td><td style="text-align:center"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;font-weight:600">Alto</span></td><td><span class="portfolio-pill p-norepl">Sin reemplazo</span></td><td style="text-align:center;white-space:nowrap;font-size:12px">~3h actualiz.<br><span style="color:#6b7280">~6h SaaS</span></td></tr><tr><td><div style="font-weight:600;font-size:13px">SEPA Credit Transfer Customer-to-Bank</div><div style="font-size:11px;color:#6b7280;font-family:monospace">org.openbravo.sepa.iso20022.credittransfer.customertobank</div><span class="portfolio-pill p-bundle">bundle_candidate</span></td><td style="font-size:12px;color:#374151">Genera ficheros XML SEPA de transferencia bancaria (Credit Transfer) según ISO 20022.</td><td style="font-size:12px">MDF<br></td><td style="text-align:center"><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;font-weight:600">Alto</span></td><td><span class="portfolio-pill p-norepl">Sin reemplazo</span></td><td style="text-align:center;white-space:nowrap;font-size:12px">~3h actualiz.<br><span style="color:#6b7280">~6h SaaS</span></td></tr></tbody>
+  </table>
+  <h3>Módulos con reemplazo oficial disponible</h3>
+  <p class="portfolio-lead" style="margin-bottom:10px">
+    Estos módulos ya tienen un equivalente oficial en los bundles Etendo.
+    La migración es una cuestión de validación de paridad funcional y migración de datos.
+  </p>
+  <table class="portfolio-table">
+    <thead>
+      <tr>
+        <th>Módulo</th><th>Clientes</th><th>Reemplazo oficial</th>
+        <th style="text-align:center">Riesgo</th>
+      </tr>
+    </thead>
+    <tbody><tr><td style="font-size:12px;font-weight:600">CSV Generic Bank Statement Importer</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ org.openbravo.bankstatement.importer.generic.csv</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fee2e2;color:#dc2626;font-size:11px;font-weight:600">Alto</span></td></tr><tr><td style="font-size:12px;font-weight:600">Restful Web Services</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ Secure Web Services nativo de Etendo (com.smf.securewebservices)</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;font-weight:600">Medio</span></td></tr><tr><td style="font-size:12px;font-weight:600">Javax XML SOAP API</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ jakarta.xml.soap:jakarta.xml.soap-api:3.0.0 (dependencia Gradle en Etendo 25)</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;font-weight:600">Medio</span></td></tr><tr><td style="font-size:12px;font-weight:600">JAX-WS Java API for XML Web Services</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ jakarta.xml.ws:jakarta.xml.ws-api:3.0.0 (dependencia Gradle en Etendo 25)</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#fef9c3;color:#ca8a04;font-size:11px;font-weight:600">Medio</span></td></tr><tr><td style="font-size:12px;font-weight:600">Nuevas plantillas de contabilidad (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.accounting.templates (nueva versión con traducción incluida)</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Advanced Bank Account Management (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.advanced.bank.account.management</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Liquidación Avanzada de Socios Comerciales (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.advanced.bpsettlement</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Procesamiento Avanzado de Documentos Financieros (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.advanced.financial.docs.processing</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Intercompany Avanzado (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.advanced.intercompany</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Etendo Analytics Exporter</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ Integración Mixpanel nativa de Etendo SaaS</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Pool Bancario (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.bankingpool</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Contabilización Masiva (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.bulk.posting</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Informes Financieros Avanzados (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.financial.reports.advanced</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Asientos Manuales Avanzados (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.gljournal.advanced</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Eliminación de Pagos (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.payment.removal</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">VAT Regularization (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.etendoerp.vat.regularization</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Asset Amortization Report (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.smf.asset.amortization.report</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Configuración de la API de Moneda (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.smf.currency.apiconfig</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Descargador de Tasa de Conversión (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.smf.currency.conversionrate</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Anulación de Asientos Manuales (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.smf.gljournal.reverse</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Liquidaciones de Terceros (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ org.openbravo.financial.bpsettlement</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Initial Data Load (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ org.openbravo.idl</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">Remittances infrastructure (ES)</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ org.openbravo.module.remittance</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">SOAP with Attachments API for Java Implementation</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.sun.xml.messaging.saaj:saaj-impl:3.0.0 (dependencia Gradle en Etendo 25)</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr><tr><td style="font-size:12px;font-weight:600">OpenCSV</td><td style="font-size:11px;color:#6b7280">MDF</td><td style="font-size:12px;color:#16a34a">→ com.opencsv:opencsv:5.5.2 (dependencia Gradle en Etendo 25)</td><td><span style="display:inline-block;padding:1px 7px;border-radius:9px;background:#dcfce7;color:#16a34a;font-size:11px;font-weight:600">Bajo</span></td></tr></tbody>
+  </table>
+</div>
+
+<div class="portfolio-section" id="portfolio-generalizable">
+  <h2>Customizaciones generalizables — valor para el portfolio</h2>
+  <p class="portfolio-lead">
+    Se identificaron <b>2 modificaciones de core</b> propuestas para upstream y
+    <b>2 módulos</b> candidatos a bundle oficial. Si Etendo incorpora estas
+    funcionalidades, el esfuerzo de migración SaaS del portfolio se reduce en aproximadamente
+    <b>~15h</b>.
+  </p>
+  <h3>Modificaciones de core propuestas para upstream</h3>
+  <p class="portfolio-lead" style="margin-bottom:10px">
+    Estas customizaciones son lo suficientemente genéricas como para ser parte del core de Etendo.
+    Proponer su integración upstream eliminaría la necesidad de mantenerlas por separado en cada cliente.
+  </p>
+  <table class="portfolio-table">
+    <thead>
+      <tr>
+        <th>Customización</th><th>Cliente(s)</th><th>Descripción</th>
+        <th>Justificación para upstream</th><th style="text-align:center">Esfuerzo SaaS</th>
+      </tr>
+    </thead>
+    <tbody><tr><td><div style="font-weight:600;font-size:13px">Void Date para Facturas de Venta (DocAction + ProcessInvoice)</div></td><td style="font-size:12px;color:#6b7280">MDF</td><td style="font-size:12px">Extiende la logica de reversión de documentos para incluir las Facturas de Venta (ventana ID 167) en los controles de fe…</td><td style="font-size:12px;color:#374151">El comportamiento es simétrico con las Facturas de Compra y debería aplicar igualmente a las de Venta. Es una omisión de…</td><td style="text-align:center;font-size:12px;white-space:nowrap">~2h</td></tr><tr><td><div style="font-weight:600;font-size:13px">Tolerancia en recalculo de impuesto de línea de factura (C_INVOICELINE_TRG2)</div></td><td style="font-size:12px;color:#6b7280">MDF</td><td style="font-size:12px">Modifica el trigger de línea de factura para usar comparaciones con tolerancia (abs > 0.05) en lugar de igualdad estrict…</td><td style="font-size:12px;color:#374151">La comparación estricta de igualdad en cálculos de importe puede causar recalculos erróneos por redondeo. La tolerancia …</td><td style="text-align:center;font-size:12px;white-space:nowrap">~1h</td></tr></tbody>
+  </table>
+  <h3>Módulos candidatos a bundle oficial del marketplace</h3>
+  <p class="portfolio-lead" style="margin-bottom:10px">
+    Funcionalidades reutilizables que, publicadas como módulos oficiales en el marketplace de Etendo,
+    reducirían la deuda técnica de múltiples clientes.
+  </p>
+  <table class="portfolio-table">
+    <thead>
+      <tr>
+        <th>Módulo</th><th>Cliente</th><th>Funcionalidad</th>
+        <th>Complejidad / Riesgo</th><th style="text-align:center">Esfuerzo SaaS</th>
+      </tr>
+    </thead>
+    <tbody><tr><td><div style="font-weight:600;font-size:13px">P&L and Balance Sheet export to Excel</div><div style="font-size:11px;color:#6b7280;font-family:monospace">com.openbravo.gps.finance.balanceexcelexport.report</div><span class="portfolio-pill p-bundle">sin mantenimiento</span></td><td style="font-size:12px;color:#6b7280">MDF</td><td style="font-size:12px">Exporta la Cuenta de Pérdidas y Ganancias y el Balance de Situación a formato Excel (Apache POI). De…</td><td style="text-align:center;font-size:12px"> · Riesgo: medium</td><td style="text-align:center;font-size:12px;white-space:nowrap">~8h</td></tr><tr><td><div style="font-weight:600;font-size:13px">CSV Generic Bank Statement Importer</div><div style="font-size:11px;color:#6b7280;font-family:monospace">org.openbravo.bankstatement.importer.generic.csv</div><span class="portfolio-pill p-bundle">sin mantenimiento</span></td><td style="font-size:12px;color:#6b7280">MDF</td><td style="font-size:12px">Importa extractos bancarios desde archivos CSV genéricos al módulo de conciliación bancaria de Etend…</td><td style="text-align:center;font-size:12px"> · Riesgo: high</td><td style="text-align:center;font-size:12px;white-space:nowrap">~4h</td></tr></tbody>
+  </table>
+</div>
+
+</div>
+<!-- /PORTFOLIO_ANALYSIS -->
+</body>
+</html>

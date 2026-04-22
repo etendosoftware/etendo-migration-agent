@@ -1,0 +1,515 @@
+{
+  "generated": "2026-04-22",
+  "analyzed_clients": [
+    "MDF"
+  ],
+  "ui_feature_roadmap": [
+    {
+      "section": "26",
+      "title": "Filtros y orden por defecto de pestaña (HQLFILTERCLAUSE)",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "MDF"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 52
+    },
+    {
+      "section": "21",
+      "title": "Workspace / Dashboard (My Openbravo)",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "MDF"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 40
+    },
+    {
+      "section": "18",
+      "title": "Application Forms (AD_FORM)",
+      "status": "NOT DONE",
+      "completion_pct": 15,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "MDF"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 27
+    },
+    {
+      "section": "2.B",
+      "title": "Botones hardcoded (DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus)",
+      "status": "PARCIAL",
+      "completion_pct": 35,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "MDF"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 55
+    },
+    {
+      "section": "3b",
+      "title": "Procesos legados AD_PROCESS (R&P, Background, Manual Action)",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "MDF"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 473
+    },
+    {
+      "section": "25",
+      "title": "Expresiones de valor por defecto (Default Values)",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "MDF"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 4470
+    },
+    {
+      "section": "1.4",
+      "title": "Ventanas Pick and Execute",
+      "status": "PARCIAL",
+      "completion_pct": 55,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "MDF"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 50
+    },
+    {
+      "section": "3",
+      "title": "Process Definitions modernas (OBUIAPP_PROCESS)",
+      "status": "PARCIAL",
+      "completion_pct": 60,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "MDF"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 143
+    },
+    {
+      "section": "4",
+      "title": "Display Logic en campos (visibilidad condicional)",
+      "status": "BUG ACTIVO",
+      "completion_pct": 65,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "MDF"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 2477
+    },
+    {
+      "section": "14",
+      "title": "Informes (acceso desde menú)",
+      "status": "TO CHECK",
+      "completion_pct": 60,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "MDF"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 89
+    },
+    {
+      "section": "2",
+      "title": "Tipos de referencia sin implementar (widgets de campo)",
+      "status": "PARCIAL",
+      "completion_pct": 65,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "MDF"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "33",
+      "title": "Personalización de vistas (Saved Views)",
+      "status": "NOT DONE",
+      "completion_pct": 10,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "8",
+      "title": "Selectores y campos FK (OBUISEL_Selector)",
+      "status": "TO CHECK",
+      "completion_pct": 65,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 167
+    },
+    {
+      "section": "5",
+      "title": "Comportamientos de pestaña (SR, ED, read-only, filtros, display logic)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 96
+    },
+    {
+      "section": "9",
+      "title": "Comportamientos de grid (edición inline, columnas, filtros)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "12",
+      "title": "Navegación y menú",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 517
+    },
+    {
+      "section": "29",
+      "title": "Vistas de árbol (Tree Views)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 1
+    },
+    {
+      "section": "10",
+      "title": "Comportamientos transversales (adjuntos, notas, readonly logic, copy record)",
+      "status": "TO CHECK",
+      "completion_pct": 73,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 1037
+    },
+    {
+      "section": "23",
+      "title": "Status Bar (barra de estado inferior del formulario)",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 210
+    },
+    {
+      "section": "24",
+      "title": "Sistema de layout del formulario (columnas, ancho, orden)",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "1.1",
+      "title": "Ventanas Maintain (CRUD de datos maestros)",
+      "status": "TO CHECK",
+      "completion_pct": 78,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 232
+    },
+    {
+      "section": "1.2",
+      "title": "Ventanas Transaction (ciclo de vida de documento)",
+      "status": "TO CHECK",
+      "completion_pct": 78,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 40
+    },
+    {
+      "section": "1.3",
+      "title": "Ventanas Query / Info (consulta de solo lectura)",
+      "status": "TO CHECK",
+      "completion_pct": 78,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 7
+    },
+    {
+      "section": "22",
+      "title": "Field Groups (secciones colapsables del formulario)",
+      "status": "TO CHECK",
+      "completion_pct": 78,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 1552
+    },
+    {
+      "section": "6",
+      "title": "Callouts (lógica de campo server-side)",
+      "status": "TO CHECK",
+      "completion_pct": 82,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 95
+    },
+    {
+      "section": "34",
+      "title": "Vistas de calendario",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "11",
+      "title": "Autenticación, sesión y autorización",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "32",
+      "title": "Sistema de alertas",
+      "status": "TO CHECK",
+      "completion_pct": 70,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    }
+  ],
+  "ui_clients_meta": [
+    {
+      "slug": "MDF",
+      "name": "MDF",
+      "ui_score": 87,
+      "global_status": "blocked"
+    }
+  ],
+  "module_maintenance_candidates": [
+    {
+      "java_package": "com.smf.almis.fitintegration",
+      "name": "FIT Integration",
+      "function": "Integración con el sistema FIT (Financial Information Tool/Almis), herramienta de gestión de carteras financieras. Proporciona conectividad entre Etendo y la plataforma FIT para intercambio de datos de clientes y posiciones financieras.",
+      "clients": [
+        "MDF"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Ningún autor definido — riesgo de compatibilidad desconocida con Etendo 25"
+      ],
+      "avg_effort_update_hours": 4,
+      "avg_effort_saas_hours": 8,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022",
+      "name": "SEPA Framework and Utilities",
+      "function": "Framework base para procesamiento de pagos SEPA (ISO 20022). Genera los ficheros XML necesarios para la remesa de pagos y domiciliaciones ante bancos en la zona euro.",
+      "clients": [
+        "MDF"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Las bibliotecas JAX-WS (org.openbravo.util.jaxws) en las que puede apoyarse ahora son dependencias Gradle en Etendo 25",
+        "OpenCSV actualizado — verificar compatibilidad si el módulo lee ficheros CSV"
+      ],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 12,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+      "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+      "function": "Genera ficheros XML SEPA de domiciliación directa (CORE y B2B) según el estándar ISO 20022.",
+      "clients": [
+        "MDF"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 3,
+      "avg_effort_saas_hours": 6,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+      "name": "SEPA Credit Transfer Customer-to-Bank",
+      "function": "Genera ficheros XML SEPA de transferencia bancaria (Credit Transfer) según ISO 20022.",
+      "clients": [
+        "MDF"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 3,
+      "avg_effort_saas_hours": 6,
+      "priority_score": 3
+    }
+  ],
+  "generalizable_customizations": [
+    {
+      "type": "core",
+      "client": "MDF",
+      "name": "Void Date para Facturas de Venta (DocAction + ProcessInvoice)",
+      "description": "Extiende la logica de reversión de documentos para incluir las Facturas de Venta (ventana ID 167) en los controles de fecha de anulación. Antes, solo las Facturas de Compra y los Albaranes de Entrada mostraban los campos de fecha de anulación al revertir (acción RC). El parche añade `salesInvoiceWindow = '167'` a DocAction.html y la constante equivalente en ProcessInvoice.java.",
+      "justification": "El comportamiento es simétrico con las Facturas de Compra y debería aplicar igualmente a las de Venta. Es una omisión del core de Etendo que afectaría a cualquier instalación con reversión de facturas de venta.",
+      "effort_saas_hours": 2
+    },
+    {
+      "type": "core",
+      "client": "MDF",
+      "name": "Tolerancia en recalculo de impuesto de línea de factura (C_INVOICELINE_TRG2)",
+      "description": "Modifica el trigger de línea de factura para usar comparaciones con tolerancia (abs > 0.05) en lugar de igualdad estricta al determinar si recalcular los impuestos. Evita recalculos innecesarios causados por diferencias de redondeo en punto flotante. También añade un END IF faltante en el cuerpo del trigger.",
+      "justification": "La comparación estricta de igualdad en cálculos de importe puede causar recalculos erróneos por redondeo. La tolerancia de 0.05 es una corrección pragmática que beneficiaría a todas las instalaciones con IVA incluido. El END IF faltante es un bug real.",
+      "effort_saas_hours": 1
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "MDF",
+      "name": "P&L and Balance Sheet export to Excel",
+      "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
+      "description": "Exporta la Cuenta de Pérdidas y Ganancias y el Balance de Situación a formato Excel (Apache POI). Desarrollado por GPS, proveedor externo.",
+      "risk": "medium",
+      "effort_saas_hours": 8,
+      "recommendation": "Verificar si Financial Reports Advanced cubre esta exportación. Si no, reconstruir como OBUIAPP_Report o acción POI compatible con POI 5.x. Contactar con GPS para soporte o asumir el módulo."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "MDF",
+      "name": "CSV Generic Bank Statement Importer",
+      "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+      "description": "Importa extractos bancarios desde archivos CSV genéricos al módulo de conciliación bancaria de Etendo.",
+      "risk": "high",
+      "effort_saas_hours": 4,
+      "recommendation": "La conciliación bancaria es proceso crítico. Verificar si Financial Extensions incluye importación CSV en versiones recientes. Si no, mantener y actualizar dependencias."
+    }
+  ]
+}
