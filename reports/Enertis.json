@@ -1,0 +1,3754 @@
+{
+  "client": {
+    "name": "Enertis",
+    "hostname": "asus"
+  },
+  "platform": {
+    "type": "etendo",
+    "version": "23.4.4"
+  },
+  "modules": {
+    "gradle_jar": [],
+    "gradle_source": [
+      {
+        "java_package": "com.etendoerp.accounting.templates",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.accounting.templates",
+        "name": "New Accounting Templates",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.templates.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.advanced.bpsettlement",
+        "name": "Advanced Business Partner Settlement",
+        "version": "1.8.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bpsettlement.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.advanced.financial.docs.processing",
+        "name": "Advanced Financial Documents Processing",
+        "version": "1.8.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.template",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.advanced.financial.docs.processing.template",
+        "name": "Advanced Financial Documents Processing Template",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.advanced.intercompany",
+        "name": "Advanced Intercompany",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.intercompany.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "version": "1.1.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.analytics.exporter",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 28,
+          "deleted_files": 1,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": [
+            {
+              "path": "build/resources/main/META-INF/beans.xml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/index",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/description",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/packed-refs",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/config",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-c19449b98270d1697477507d7efa22ddc0663350.idx",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-c19449b98270d1697477507d7efa22ddc0663350.pack",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-receive.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/applypatch-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-merge-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/fsmonitor-watchman.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/post-update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-rebase.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/push-to-checkout.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-applypatch.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-push.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/prepare-commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/info/exclude",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/heads/main",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/heads/release/24.4",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/heads/main",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/heads/release/24.4",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.bankingpool",
+        "name": "Banking Pool",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bankingpool.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.bulk.posting",
+        "name": "Bulk Posting",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.posting.git",
+        "latest_version": "2.4.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.financial.extensions",
+        "name": "Financial Extensions",
+        "version": "1.14.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.financial.extensions.es_es",
+        "name": "Financial Extensions - Spanish Translation",
+        "version": "1.5.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions.es_es",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.financial.reports.advanced",
+        "name": "Financial Reports Advanced",
+        "version": "1.9.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.gljournal.advanced",
+        "name": "GL Journal Advanced",
+        "version": "1.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.advanced.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.localization.spain.extensions",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.localization.spain.extensions",
+        "name": "Spain Localization Extensions",
+        "version": "1.9.3",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.payment.removal",
+        "name": "Payment Removal",
+        "version": "1.8.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.template",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.payment.removal.template",
+        "name": "Payment Removal Template",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.reportvaluationstock.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.reportvaluationstock.es_es",
+        "name": "Report Valuation Stock - Spanish Translation",
+        "version": "1.3.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.reportvaluationstock.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.invoices",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.idl.invoices",
+        "name": "Initial Data Load Extension for Invoices",
+        "version": "1.0.7",
+        "author": "GPS",
+        "bundle": "com.openbravo.gps.idl.invoices",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.asset.amortization.report",
+        "name": "Asset Amortization Report",
+        "version": "1.8.0",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.asset.amortization.report.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 1,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 1,
+          "diff_lines_removed": 1,
+          "files": [
+            {
+              "path": "src-db/database/model/functions/SMFAAR_INDATE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.currency.apiconfig",
+        "name": "Currency API Configuration",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.apiconfig.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.currency.conversionrate",
+        "name": "Conversion Rate Downloader",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.conversionrate.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.gljournal.reverse",
+        "name": "Reverse GL Journal",
+        "version": "1.8.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.template",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.gljournal.reverse.template",
+        "name": "Reverse GL Journal Template",
+        "version": "1.8.0",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jobs.defaults.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.jobs.defaults.es_es",
+        "name": "Default Jobs (es_ES)",
+        "version": "1.6.1",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.defaults.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jobs.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.jobs.es_es",
+        "name": "Jobs - Spanish Translation",
+        "version": "1.0.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jobs.example",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.jobs.example",
+        "name": "Example Job and Actions",
+        "version": "0.0.1",
+        "author": null,
+        "bundle": "com.smf.jobs.example",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 1,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 3,
+          "diff_lines_removed": 1,
+          "files": [
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 3,
+              "lines_removed": 1
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "com.smf.securewebservices.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.securewebservices.es_es",
+        "name": "Secure web services implentation - Spanish Translation",
+        "version": "1.0.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.securewebservices.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.advpaymentmngt.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.advpaymentmngt.es_es",
+        "name": "Advanced Payables and Receivables - Spanish Translation",
+        "version": "3.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.advpaymentmngt.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.alerts.accounting30",
+        "name": "Alerts: Accounting",
+        "version": "3.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.alerts.accounting30.es_es",
+        "name": "Alerts: Accounting - Spanish Translation",
+        "version": "3.6.1",
+        "author": "Openbravo, S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.application.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.client.application.es_es",
+        "name": "User Interface Application Translation Spanish Spain (es_ES)",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.application.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.htmlwidget.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.client.htmlwidget.es_es",
+        "name": "HTML Widget Translation Spanish Spain (es_ES)",
+        "version": "1.6.1",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.htmlwidget.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.kernel.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.client.kernel.es_es",
+        "name": "User Interface Client Kernel Translation Spanish Spain(esES)",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.kernel.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.myob.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.client.myob.es_es",
+        "name": "Workspace & Widgets Translation: Spanish Spain (es_ES)",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.myob.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.querylist.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.client.querylist.es_es",
+        "name": "Query/List Widget Translation Spanish Spain (es_ES)",
+        "version": "1.6.1",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.querylist.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.widgets.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.client.widgets.es_es",
+        "name": "Widgets Collection Translation Spanish Spain (es_ES)",
+        "version": "1.6.1",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.widgets.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.finance.checkprinting",
+        "name": "Check Printing",
+        "version": "1.8.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.finance.checkprinting.es_es",
+        "name": "Check Printing Spanish Translation",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.financial.bpsettlement",
+        "name": "Business Partner Settlements",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.bpsettlement.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.financial.paymentreport.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.financial.paymentreport.es_es",
+        "name": "Payment Report - Spanish Translation",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.paymentreport.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.localization.spain.referencedata.accounts",
+        "name": "Chart of accounts: PGC 2007 General",
+        "version": "3.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "name": "Chart of accounts: PGC 2007 PYMEs",
+        "version": "3.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.pymes.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.localization.spain.referencedata.taxes",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "version": "1.8.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.localization.spain.referencedata.translation.eses",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "version": "3.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.translation.eses.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain30",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.localization.spain30",
+        "name": "Localization pack Spain (España)",
+        "version": "3.12.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain30.git",
+        "latest_version": "4.2.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.aeat190.es",
+        "name": "Withholding Report: Modelo 190 (Spain)",
+        "version": "3.13.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.aeat303.es",
+        "name": "Tax Report: Modelo 303 (Spain)",
+        "version": "1.14.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.es.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.aeat347apr.es",
+        "name": "Spain AEAT Modelo 347 for APR",
+        "version": "4.11.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.git",
+        "latest_version": "5.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.aeat347apr.es.es_es",
+        "name": "Spain AEAT Modelo 347 for APR- Spanish Translation",
+        "version": "1.7.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.es_es.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat349.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.aeat349.es",
+        "name": "Modelo 349",
+        "version": "2.10.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat349.es.git",
+        "latest_version": "3.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.aeat390.es",
+        "name": "Tax Report: Modelo 390 (Spain)",
+        "version": "3.9.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.es.git",
+        "latest_version": "4.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.bptaxidkey",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.bptaxidkey",
+        "name": "Tipo de Número de Identificación de Tercero",
+        "version": "0.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.bptaxidkey.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.cifnifvalidator",
+        "name": "CIF and NIF validator",
+        "version": "1.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.cifnifvalidator.es_es",
+        "name": "Validador de CIF y NIF",
+        "version": "1.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.countryisocode",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.countryisocode",
+        "name": "3 digits ISO country codes",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.countryisocode.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno43.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.cuaderno43.es",
+        "name": "Cuaderno 43",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cuaderno43.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.epigrafes.iae.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.epigrafes.iae.es",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.epigrafes.iae.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.eucountries",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.eucountries",
+        "name": "European Union countries",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.eucountries.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.finactvalidator.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.finactvalidator.es",
+        "name": "Validador de número de cuenta financiera",
+        "version": "3.7.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.finactvalidator.es.git",
+        "latest_version": "4.2.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.incoterms",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.incoterms",
+        "name": "Incoterms",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.incoterms.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.intrastat",
+        "name": "Intrastat",
+        "version": "3.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.intrastat.es_es",
+        "name": "Intrastat – Spanish translation",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.spain",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.intrastat.spain",
+        "name": "Intrastat for Spain",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.spain.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.invoicesregisterbook",
+        "name": "Invoices Register Book",
+        "version": "2.9.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.git",
+        "latest_version": "3.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.invoicesregisterbook.es_es",
+        "name": "Libro de Facturas",
+        "version": "1.8.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.es_es.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.invoicesregisterbook.estaxes",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "version": "3.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.estaxes.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.invoicetaxreportenhanced30",
+        "name": "Multidimensional Tax Report",
+        "version": "3.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "name": "Multidimensional Tax Report Spanish (es_ES)",
+        "version": "3.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.es_es.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.organization.representative.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.organization.representative.es",
+        "name": "Legal Representative of the Organization",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.organization.representative.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.paymentmethod.type",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.paymentmethod.type",
+        "name": "Payment Method Type",
+        "version": "1.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.paymentmethod.type.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.remittance",
+        "name": "Remittances infrastructure",
+        "version": "3.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.git",
+        "latest_version": "4.3.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.remittance.es_es",
+        "name": "Remittances infrastructure - Spanish Translation",
+        "version": "1.5.2",
+        "author": "Openbravo S.L.U.",
+        "bundle": "org.openbravo.module.remittance.es_es",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.template",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.remittance.template",
+        "name": "Remittance Infrastructure Template",
+        "version": "1.6.0",
+        "author": "Etendo Software",
+        "bundle": "org.openbravo.module.remittance.template",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.sii",
+        "name": "Spain SII",
+        "version": "1.16.2",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.sii.es_es",
+        "name": "Spain SII Translation Spanish",
+        "version": "1.16.2",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.es_es.git",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii.template",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.sii.template",
+        "name": "Spain SII Template",
+        "version": "1.16.2",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.template.git",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.taximprovements.es",
+        "name": "Spanish Tax Module Improvements",
+        "version": "0.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.taximprovements.es_es",
+        "name": "Módulo de Impuestos para España mejorado",
+        "version": "0.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es_es.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.taxreportlauncher",
+        "name": "Tax Report Launcher",
+        "version": "1.7.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.taxreportlauncher.es",
+        "name": "Generador de declaraciones de impuestos",
+        "version": "1.7.1",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.numbertoword.es_es",
+        "name": "Number To Word Spanish Translation",
+        "version": "1.8.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.es_es.git",
+        "latest_version": "1.13.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.numbertoword_es",
+        "name": "Number To Word (Spanish)",
+        "version": "1.8.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword_es.git",
+        "latest_version": "1.13.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain.dataset",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.proflocalization.spain.dataset",
+        "name": "Professional Localization pack Spain (España) Datasets",
+        "version": "1.10.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.proflocalization.spain.dataset.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "name": "Orders Awaiting Delivery Spanish (Spain) Translation",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.reports.ordersawaitingdelivery.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.datasource.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.service.datasource.es_es",
+        "name": "JSON Datasource Translation: Spanish Spain (es_ES)",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.datasource.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.integration.google.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.service.integration.google.es_es",
+        "name": "Integration with Google APIs Translation Spanish Spain",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.google.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.integration.openid.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.service.integration.openid.es_es",
+        "name": "OpenID Service Integration Translation Spanish Spain",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.openid.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spain.regions",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.spain.regions",
+        "name": "Provincias de España",
+        "version": "1.6.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spain.regions.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.spanishdefaultdata.paymentmethods",
+        "name": "Métodos de Pago",
+        "version": "1.7.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentmethods.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentterms",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.spanishdefaultdata.paymentterms",
+        "name": "Condiciones de pago",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentterms.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.userinterface.selector.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.userinterface.selector.es_es",
+        "name": "User Interface Selector Translation: Spanish Spain (es_ES)",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.selector.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.userinterface.smartclient.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.userinterface.smartclient.es_es",
+        "name": "Smartclient Translation: Spanish Spain (es_ES)",
+        "version": "1.6.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.smartclient.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.utility.multiplebpselector",
+        "name": "Openbravo Multi Business Partner Selector",
+        "version": "1.7.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.utility.multiplebpselector.es_es",
+        "name": "Openbravo Multi Business Partner Selector Spanish (Spain)",
+        "version": "1.7.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.v3.translation.pack.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.v3.translation.pack.es_es",
+        "name": "Openbravo 3.0 Translation Pack: Spanish Spain (es_ES)",
+        "version": "3.10.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.v3.translation.pack.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      }
+    ],
+    "local_maintained": [
+      {
+        "java_package": "org.openbravo.numbertoword",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.numbertoword",
+        "name": "Number To Word",
+        "version": "1.12.2",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      }
+    ],
+    "local_not_maintained": [
+      {
+        "java_package": "com.etendoerp.accounting.templates.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.accounting.templates.es_es",
+        "name": "Nuevas plantillas de contabilidad",
+        "version": "1.3.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.advanced.bpsettlement.es_es",
+        "name": "Liquidación Avanzada de Socios Comerciales",
+        "version": "1.1.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.advanced.financial.docs.processing.es_es",
+        "name": "Procesamiento Avanzado de Documentos Financieros",
+        "version": "1.2.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.advanced.intercompany.es_es",
+        "name": "Intercompany Avanzado",
+        "version": "1.3.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.bankingpool.es_es",
+        "name": "Pool Bancario",
+        "version": "1.3.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.bulk.posting.es_es",
+        "name": "Contabilización Masiva",
+        "version": "1.2.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.financial.reports.advanced.es_es",
+        "name": "Informes Financieros Avanzados",
+        "version": "1.2.2",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.gljournal.advanced.es_es",
+        "name": "Asientos Manuales Avanzados",
+        "version": "1.5.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.etendoerp.payment.removal.es_es",
+        "name": "Eliminación de Pagos",
+        "version": "1.4.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.openbravo.gps.customexpensesheet",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.customexpensesheet",
+        "name": "Customizations on Expense Sheet",
+        "version": "0.0.16",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.customexpensesheet.es_ES",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.customexpensesheet.es_ES",
+        "name": "Traducción del Módulo de Custom Expenses Sheet",
+        "version": "0.0.1",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.customexpensesheet.template",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.customexpensesheet.template",
+        "name": "Template for Customizations in Expense Sheet Employee",
+        "version": "0.0.11",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.customprintingforms",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.customprintingforms",
+        "name": "Custom Printing Forms",
+        "version": "0.0.6",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.followup.economics",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.followup.economics",
+        "name": "Project Follow up: Economic KPIs. New developments",
+        "version": "1.0.0",
+        "author": "G.P.S"
+      },
+      {
+        "java_package": "com.openbravo.gps.helpdesktool",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.helpdesktool",
+        "name": "Help Desk Tool",
+        "version": "1.0.3",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.standardalgorithmunmatch",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.localization.standardalgorithmunmatch",
+        "name": "Standard Matching Algorithm with Unmatch",
+        "version": "1.0.0",
+        "author": "GPS Openbravo S.L.U"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.projects",
+        "name": "Funcionalidad avanzada de proyectos",
+        "version": "1.0.2",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects.hr",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.projects.hr",
+        "name": "Asignación de recursos humanos a proyectos",
+        "version": "1.0.2",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects.multipleemployeeselector",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.projects.multipleemployeeselector",
+        "name": "Selector múltiple de empleados",
+        "version": "1.0.2",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects.quickhrphase",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.projects.quickhrphase",
+        "name": "Creación rápida de fases y asignación de empleados",
+        "version": "1.0.1",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects.quicktimesheet",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.projects.quicktimesheet",
+        "name": "Imputación ágil de dedicación a peticiones",
+        "version": "1.0.2",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.smf.abukai.customizations",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.abukai.customizations",
+        "name": "Abukai Customizations",
+        "version": "1.0.0",
+        "author": "SMF Consulting"
+      },
+      {
+        "java_package": "com.smf.abukai.customizations.es_ES",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.abukai.customizations.es_ES",
+        "name": "Abukai Customizations Translation Spanish",
+        "version": "1.0.1",
+        "author": "SMF Consulting"
+      },
+      {
+        "java_package": "com.smf.additionalpocolumns",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.additionalpocolumns",
+        "name": "Additional PO Columns",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.asset.amortization.report.es_es",
+        "name": "Asset Amortization Report - Spanish translation",
+        "version": "1.0.2",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.currency.apiconfig.es_es",
+        "name": "Configuración de la API de Moneda",
+        "version": "1.2.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.currency.conversionrate.es_es",
+        "name": "Descargador de Tasa de Conversión",
+        "version": "1.2.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.financialcurrentbalance",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.financialcurrentbalance",
+        "name": "Current Balance",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.gljournal.reverse.es_es",
+        "name": "Anulación de Asientos Manuales",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.integrations.support",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.integrations.support",
+        "name": "Support Ticket creation from Openbravo",
+        "version": "1.0.1",
+        "author": "SMF Consulting S.L"
+      },
+      {
+        "java_package": "com.smf.integrations.support.jira",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.integrations.support.jira",
+        "name": "SMF Integrations Jira for Customer",
+        "version": "1.0.1",
+        "author": "SMF Consulting S.L"
+      },
+      {
+        "java_package": "com.smf.invoices",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.invoices",
+        "name": "SMF Invoices",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.ledgeroriginalcurrency",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.ledgeroriginalcurrency",
+        "name": "General Ledger Original Currency",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.reports.accounts",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.reports.accounts",
+        "name": "Accounting Reports",
+        "version": "1.1.8",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.showbpbankacct",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.showbpbankacct",
+        "name": "Show BP Bank Account in Purchase Invoice Payment Plan",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.ws.attachments",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.ws.attachments",
+        "name": "Webservice Attachments",
+        "version": "1.0.0",
+        "author": "SMF Consulting"
+      },
+      {
+        "java_package": "org.openbravo.acctTab",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.acctTab",
+        "name": "Accounting tab for transactions",
+        "version": "1.1.2",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.bankstatement.importer.generic.csv",
+        "name": "CSV Generic Bank Statement Importer",
+        "version": "1.1.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.client.analytics",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.client.analytics",
+        "name": "Analytics",
+        "version": "1.4.7000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.client.widgets.finance",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.client.widgets.finance",
+        "name": "Finance and Accounting Widgets",
+        "version": "1.0.6",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement.es_es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.financial.bpsettlement.es_es",
+        "name": "Liquidaciones de Terceros",
+        "version": "1.2.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "org.openbravo.financial.dimensionalreports",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.financial.dimensionalreports",
+        "name": "Multi-Dimensional Financial Reports Infrastructure",
+        "version": "1.6.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.dimensionaltrialbalancereport",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.financial.dimensionaltrialbalancereport",
+        "name": "Multi-Dimensional Trial Balance Report",
+        "version": "1.5.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.referencedata.accounts.generic",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.financial.referencedata.accounts.generic",
+        "name": "Generic Chart of Accounts",
+        "version": "1.0.10",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.gps.copyrole",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.gps.copyrole",
+        "name": "Copy Role Module",
+        "version": "0.1.5",
+        "author": "Openbravo GPS - Marcos Bernal"
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.idl",
+        "name": "Initial Data Load",
+        "version": "3.0.1000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl.translation.es_ES",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.idl.translation.es_ES",
+        "name": "Initial Data Load Spanish (Spain) Translation",
+        "version": "3.0.401",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.importdata",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.importdata",
+        "name": "Import Data",
+        "version": "1.1.7",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.interco",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.interco",
+        "name": "Inter-company Documents",
+        "version": "2.1.500",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.localization.us.community.coa",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.localization.us.community.coa",
+        "name": "US Localization - Community COA",
+        "version": "3.0.0",
+        "author": "Transitional Data Services, Inc."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat340.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.aeat340.es",
+        "name": "Tax Report: Modelo 340 (Spain)",
+        "version": "3.8.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.cuaderno19.es",
+        "name": "Cuaderno 19",
+        "version": "1.2.12",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno34.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.cuaderno34.es",
+        "name": "Cuaderno 34",
+        "version": "1.2.9",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno58.es",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.cuaderno58.es",
+        "name": "Cuaderno 58",
+        "version": "3.0.4",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.einvoice",
+        "name": "Electronic Invoice",
+        "version": "0.1.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice.es_ES",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.einvoice.es_ES",
+        "name": "Facturación Electrónica",
+        "version": "0.1.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.facturae",
+        "name": "Facturae API",
+        "version": "2.0.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae31",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.facturae31",
+        "name": "Facturación Electrónica - Facturae 3.1",
+        "version": "0.3.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.facturae32",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.facturae32",
+        "name": "Facturación Electrónica - Facturae 3.2",
+        "version": "0.1.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "version": "1.4.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain30",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.proflocalization.spain30",
+        "name": "Professional Localization pack Spain (España)",
+        "version": "3.31.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.projects.progress",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.projects.progress",
+        "name": "Project Progress Tool",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.services.followup.economics",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.services.followup.economics",
+        "name": "Project Follow up: Economic KPIs",
+        "version": "1.0.1",
+        "author": "GPS"
+      },
+      {
+        "java_package": "org.openbravo.services.followup.economics.es_ES",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.services.followup.economics.es_ES",
+        "name": "Spanish translation for Project Follow up: Economic KPIs",
+        "version": "1.0.1",
+        "author": "GPS"
+      },
+      {
+        "java_package": "org.openbravo.util.javax.xml.soap",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.util.javax.xml.soap",
+        "name": "Javax XML SOAP API",
+        "version": "1.16.2",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.util.jaxws",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.util.jaxws",
+        "name": "JAX-WS Java API for XML Web Services",
+        "version": "2.2.12",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.util.saaj.impl",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.util.saaj.impl",
+        "name": "SOAP with Attachments API for Java Implementation",
+        "version": "1.11.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.utility.draganddropselector3lists",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.utility.draganddropselector3lists",
+        "name": "Drag And Drop Selector Three Lists",
+        "version": "1.0.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.draganddropselector3listsimplementation",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.utility.draganddropselector3listsimplementation",
+        "name": "Drag And Drop Selector Three Lists Implementation",
+        "version": "1.0.301",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "temp_modules",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/temp_modules"
+      }
+    ],
+    "custom": [
+      {
+        "java_package": "com.enertis.template",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.enertis.template",
+        "name": "Template Enertis",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 1238,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.enertis",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.openbravo.gps.enertis",
+        "name": "Customizaciones Enertis",
+        "version": "1.0.1",
+        "author": "GPS - Openbravo",
+        "line_count": 1848,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.enertis.dimensions",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.enertis.dimensions",
+        "name": "Enertis Dimensions",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 2473,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.enertis.multiphaseproject",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.enertis.multiphaseproject",
+        "name": "SMF Multiphase Project Custom",
+        "version": "1.0.0",
+        "author": "SMF",
+        "line_count": 1357,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.enertis.multiphaseproject.en_US",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.enertis.multiphaseproject.en_US",
+        "name": "SMF Multiphase Project Custom Translation",
+        "version": "1.0.1",
+        "author": "SMF Consulting",
+        "line_count": 135,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.enertis.project.customization",
+        "name": "Project Cuztomization",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 36886,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.es_ES",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.enertis.project.customization.es_ES",
+        "name": "Traducion de Project Customization",
+        "version": "1.0.0",
+        "author": "SMF",
+        "line_count": 4253,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.template",
+        "path": "/home/faqsarg/etendo-clients/Enertis/modules/com.smf.enertis.project.customization.template",
+        "name": "Customization Template",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 1146,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      }
+    ]
+  },
+  "core_divergences": {
+    "status": "modified",
+    "base_version": "expanded",
+    "baseline_type": "expanded",
+    "folders_checked": [
+      "src",
+      "src-db",
+      "src-core",
+      "src-wad",
+      "modules_core",
+      "src-trl",
+      "src-util"
+    ],
+    "modified_files": 79,
+    "added_files": 1,
+    "deleted_files": 0,
+    "diff_lines_added": 25062,
+    "diff_lines_removed": 475,
+    "files": [
+      {
+        "path": "src/org/openbravo/erpReports/ReportPaymentFilter.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ModuleManagementHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ShowSessionVariables.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrderCreate.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/CallAcctServer.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialClientSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialOrgSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/MInOutTraceReports.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedger.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/GeneralAccountingReports.html",
+        "status": "modified",
+        "lines_added": 34,
+        "lines_removed": 18
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTrialBalance.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportExpense.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProfitabilityJR.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportToInvoiceConsignmentJR.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAgingBalance.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderOpenItemJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProgress.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionRunJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectBuildingSiteJR.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportStandardCostJRFilter.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashflowForecast.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedgerJournal.html",
+        "status": "modified",
+        "lines_added": 7,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportDebtPayment.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoicesJR.html",
+        "status": "modified",
+        "lines_added": 17,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentFilterJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderInvoicedJasper.html",
+        "status": "modified",
+        "lines_added": 36,
+        "lines_removed": 20
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipper.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceDiscountJR.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportParetoProduct.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 42,
+        "lines_removed": 23
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionCost.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductMovement.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBankJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementDaily.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesJRFilter.html",
+        "status": "modified",
+        "lines_added": 38,
+        "lines_removed": 19
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorFilterJR.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAnnualCertification.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGuaranteeDateJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportOrderNotInvoiceFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTaxInvoice.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBudgetGenerateExcel.html",
+        "status": "modified",
+        "lines_added": 10,
+        "lines_removed": 5
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWarehousePartnerJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderProvidedJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportPurchaseDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 22,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAssetDepreciationSchedule.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialTransactionEditionJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupDeleted.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/ExpenseAPInvoice.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateTaxReport.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateAccountingReport.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PrintInvoices.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PriceListCreateAll.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CashBankOperations.html",
+        "status": "modified",
+        "lines_added": 26,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Account.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/DebtPayment.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/ProductMultiple.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/LocatorMultiple.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/AccountElementValue.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Location_F1.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_ShipmentPO.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ChangeProjectStatus.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ProjectCopyFrom.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ExpenseSOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_Shipment.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/UpdateMaintenanceScheduled.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html.orig",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src-db/database/formalChangesScript.xml",
+        "status": "modified",
+        "lines_added": 24248,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/org.openbravo.reports.ordersawaitingdelivery/src/org/openbravo/reports/ordersawaitingdelivery/erpCommon/ad_reports/ReportOrderNotShipped.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/ad_actionbutton/ImportBankFile.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "modules_core/org.openbravo.financial.paymentreport/src/org/openbravo/financial/paymentreport/erpCommon/ad_reports/PaymentReport.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 12
+      }
+    ]
+  },
+  "migration_score": 30,
+  "migratability": "very_hard",
+  "score_breakdown": {
+    "openbravo_platform": 0,
+    "core_divergences": -15.0,
+    "core_diff_lines": 25537,
+    "local_not_maintained": -20,
+    "local_not_maintained_translations": 19,
+    "local_not_maintained_regular": 55,
+    "custom_modules": -35,
+    "custom_modules_detail": [
+      {
+        "java_package": "com.enertis.template",
+        "line_count": 1238,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.openbravo.gps.enertis",
+        "line_count": 1848,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.smf.enertis.dimensions",
+        "line_count": 2473,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.smf.enertis.multiphaseproject",
+        "line_count": 1357,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.smf.enertis.multiphaseproject.en_US",
+        "line_count": 135,
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization",
+        "line_count": 36886,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.es_ES",
+        "line_count": 4253,
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.template",
+        "line_count": 1146,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      }
+    ],
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
+  },
+  "custom_assessment": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-21",
+    "core_customizations": [
+      {
+        "name": "Legacy HTML report/form templates",
+        "description": "78 HTML templates for classic Openbravo reports and forms in src/org/openbravo/erpCommon/ad_reports/ and ad_actionButton/. These are pre-React UI artifacts — static HTML skeleton pages for server-side rendered report outputs and action button popups.",
+        "files": [
+          "src/org/openbravo/erpCommon/ad_reports/*.html (78 files)"
+        ],
+        "lines_changed": 0,
+        "conclusion": "eliminate",
+        "justification": "Classic HTML report templates are superseded by React-based process definitions and Jasper reports. They have no value in a modern Etendo upgrade and should not be migrated. Any active reports must be reimplemented as Process Definitions or OBUIAPP processes.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 2
+      },
+      {
+        "name": "formalChangesScript.xml",
+        "description": "Auto-generated DBSourceManager migration artifact containing 24,248 lines of accumulated database change scripts (ALTER TABLE, CREATE INDEX, etc.). Represents the raw diff of all schema changes between the baseline and this Enertis installation.",
+        "files": [
+          "formalChangesScript.xml"
+        ],
+        "lines_changed": 24248,
+        "conclusion": "eliminate",
+        "justification": "This file is automatically generated by DBSourceManager and must never be edited or rebased. It is a snapshot, not a migration script. During upgrade to 25.4.x the database migration is handled by Etendo's own migration system. This file can be safely removed.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1
+      }
+    ],
+    "custom_modules": [
+      {
+        "java_package": "com.smf.enertis.project.customization",
+        "name": "Project Customization",
+        "description": "Core Enertis business module (~36,886 LOC). Implements: (1) CreateFrom servlet override for project-linked invoice/shipment creation; (2) 6 callouts for gross margin, service category, document numbering, date/BP population, and sales quotation code; (3) 6 event handlers for project budget history, project progress invoiced amounts, account validation, org deletion in roles, same-quotation project uniqueness, and BP references; (4) GL Journal clone/revert actions; (5) IDL invoice CSV import process; (6) Excel-based project status report (POI); (7) Background process for real amount updates; (8) 9 PostgreSQL functions (ENEPCU_*) for budget/invoice amounts; (9) 4 custom tables: ENEPCU_BUDGETPROJECT, ENEPCU_CRM, ENEPCU_DIGTOOL, ENEPCU_ORGESPEJO, etc.; (10) Modifications to C_PROJECT, C_INVOICE, C_ORDER, GL_JOURNAL, C_BP_GROUP, C_ELEMENTVALUE, PP001_PROJECTPROGRESS.",
+        "generalization": "client_specific",
+        "complexity": "critical",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2→3: org.apache.commons.lang.StringUtils used in JournalEntriesProcess.java and Date_Project_BPartner.java — must change to org.apache.commons.lang3.StringUtils",
+          "Apache POI 3→5: ProjectStatusReport.java uses HSSF API (HSSFCell, HSSFCellStyle, HSSFFont) — full API migration required (CellType enums, alignment constants, font.setBold(), fill pattern types)",
+          "Hibernate 5.4→5.6: org.hibernate.criterion.Expression imported in IDLInvoice.java — removed class, use Restrictions equivalents; hibernate.query.Query usage must be validated",
+          "OpenCSV: IDLInvoice.java uses au.com.bytecode.opencsv.CSVReader — depends on org.openbravo.utility.opencsv (unmaintained); may need to switch to com.opencsv",
+          "Java 17: classic HttpServlet pattern in CreateFrom.java (extends legacy Openbravo servlet) — may require updates for Java 17 compatibility"
+        ],
+        "effort_update_hours": 80,
+        "effort_saas_hours": 120,
+        "recommendation": "Fork and maintain this module as a client-specific bundle. Prioritize: (1) Migrate POI 3→5 API in ProjectStatusReport.java (est. 12h); (2) Update commons-lang imports (est. 2h); (3) Remove org.hibernate.criterion.Expression (est. 2h); (4) Validate CreateFrom servlet against new Etendo core version (est. 8h). For SaaS route, evaluate whether native Etendo Project module + Financial Extensions cover the budget tracking and CreateFrom needs before investing in migration."
+      },
+      {
+        "java_package": "com.smf.enertis.dimensions",
+        "name": "Enertis Dimensions",
+        "description": "Cost dimension tagging module (~2,473 LOC). CalculateDimensionOne callout auto-populates UserDimension1 on sales invoices, purchase invoices, orders, and expense sheets based on the linked project's area code. ProjectSearchKeyEventHandler validates that a project's search key matches its dimension area/concept/country code pattern on save/update/delete. Custom tables: EDIM_AREA_CODE, EDIM_CONCEPT_CODE, EDIM_COUNTRY_CODE.",
+        "generalization": "client_specific",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "Hibernate 5.4→5.6: org.hibernate.criterion.Restrictions used in both Java files — still present in 5.6 but deprecated; should migrate to JPA criteria or OBCriteria equivalents for future compatibility"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 20,
+        "recommendation": "Compile-test against 25.4.x; Restrictions usage should still work in Hibernate 5.6 but will need migration in a future upgrade. If SaaS route, evaluate whether Etendo Financial Dimensions bundle covers this need before rebuilding."
+      },
+      {
+        "java_package": "com.openbravo.gps.enertis",
+        "name": "Customizaciones Enertis (GPS)",
+        "description": "GPS-authored Enertis customizations (~1,848 LOC). CIFEventHandler validates business partner NIF/CIF uniqueness on save/update by querying all BPs for duplicate taxID. Also contains custom Jasper invoice templates (C_InvoiceJR and variants) specific to Enertis invoice layout. Stored under Mercurial (.hg) version control.",
+        "generalization": "client_specific",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "Hibernate 5.4→5.6: org.hibernate.criterion.Restrictions in CIFEventHandler.java — deprecated but functional in 5.6",
+          "JasperReports 6.0→6.17: Jasper templates need recompile; API largely compatible but deprecated APIs may produce warnings"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 12,
+        "recommendation": "CIF uniqueness validation may already be covered by standard Etendo tax ID validation — verify before maintaining this module. Jasper templates are Enertis-specific and should be maintained as client assets."
+      },
+      {
+        "java_package": "com.smf.enertis.multiphaseproject",
+        "name": "SMF Multiphase Project Custom",
+        "description": "AD-only module (~1,357 LOC, no Java). Adds columns to C_PROJECT (project phase tracking fields), ENEPCU_BUDGETPROJECT (phase-specific budget fields), and ENEPCU_ORGESPEJO (mirror organization table). Manages multi-phase project structures where each phase has its own budget and tracking.",
+        "generalization": "client_specific",
+        "complexity": "minor",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 8,
+        "recommendation": "Pure AD module — no Java compilation issues. Verify column additions are still compatible with C_PROJECT and ENEPCU tables in 25.4.x. Low risk update."
+      },
+      {
+        "java_package": "com.enertis.template",
+        "name": "Template Enertis",
+        "description": "Empty Mercurial-tracked template module containing only AD_MODULE and dependency sourcedata. No functional code — serves as a scaffolding template for new Enertis modules.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "No-op for migration. Can be kept as-is or removed."
+      },
+      {
+        "java_package": "com.smf.enertis.multiphaseproject.en_US",
+        "name": "SMF Multiphase Project Custom Translation (EN)",
+        "description": "English translation pack for com.smf.enertis.multiphaseproject. Follows the fate of the main module.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Translation follows the main module. No separate effort required."
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.es_ES",
+        "name": "Traducción de Project Customization (ES)",
+        "description": "Spanish translation pack for com.smf.enertis.project.customization. Follows the fate of the main module.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Translation follows the main module. No separate effort required."
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.template",
+        "name": "Customization Template",
+        "description": "Git-tracked template module with only AD_MODULE sourcedata. No functional code — scaffolding template for project customization extensions.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "No-op for migration. Can be kept or removed."
+      }
+    ],
+    "unmaintained_modules": [
+      {
+        "java_package": "com.openbravo.gps.projects",
+        "name": "GPS Advanced Project Functionality Suite",
+        "function": "GPS-developed advanced project management modules: gps.projects (core advanced features), gps.projects.hr (HR resource assignment), gps.projects.multipleemployeeselector (multi-employee picker), gps.projects.quickhrphase (quick phase creation), gps.projects.quicktimesheet (quick timesheet). Together these form the backbone of Enertis project tracking beyond core Etendo.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2→3: likely uses StringUtils from lang2",
+          "Hibernate 5.4→5.6: likely uses deprecated Criteria API",
+          "Java 17: GPS modules were written for Java 8/11 — potential issues",
+          "No maintainer: GPS is no longer active; these modules have no upstream maintainer"
+        ],
+        "effort_update_hours": 60,
+        "effort_saas_hours": 80,
+        "recommendation": "Critical dependency for Enertis operations. Fork all 5 modules, compile-test against 25.4.x, and fix API breaks. For SaaS: evaluate whether Etendo's native Project module + Financial Extensions covers the use cases, otherwise rebuild as a maintained bundle. Budget 2 weeks of analysis before committing to either path."
+      },
+      {
+        "java_package": "com.openbravo.gps.followup.economics",
+        "name": "Economic KPIs Follow-up (GPS + Openbravo)",
+        "function": "Project economic KPI dashboard modules: com.openbravo.gps.followup.economics (GPS enhancements) and org.openbravo.services.followup.economics (base module, also unmaintained). Tracks real costs vs budget for projects, linked directly to the ENEPCU_BUDGETPROJECT custom table.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2→3: likely",
+          "Hibernate 5.4→5.6: likely uses Criteria API",
+          "No maintainer: GPS and Openbravo SLU no longer maintain these"
+        ],
+        "effort_update_hours": 24,
+        "effort_saas_hours": 20,
+        "recommendation": "Fork both modules together (they are tightly coupled). Fix API breaks. Translation module (es_ES) follows automatically."
+      },
+      {
+        "java_package": "org.openbravo.projects.progress",
+        "name": "Project Progress Tool",
+        "function": "Tracks project progress milestones and invoiced amounts per phase. Directly referenced in com.smf.enertis.project.customization (ProjectProgressEventHandler observes PP001projectprogress entity). Removing this module would break the custom event handler.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Hibernate 5.4→5.6: likely uses Criteria API",
+          "No maintainer: Openbravo SLU no longer maintains this"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 16,
+        "recommendation": "Fork and update — this module is a hard dependency of the main custom module. Cannot be removed without also refactoring ProjectProgressEventHandler."
+      },
+      {
+        "java_package": "com.openbravo.gps.customexpensesheet",
+        "name": "Custom Expense Sheet (GPS)",
+        "function": "GPS customizations for employee expense sheets: custom fields, validation logic, and printing templates. Includes translation (es_ES) and template (com.openbravo.gps.customexpensesheet.template) sub-modules.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2→3: likely",
+          "Hibernate 5.4→5.6: likely",
+          "No maintainer"
+        ],
+        "effort_update_hours": 24,
+        "effort_saas_hours": 16,
+        "recommendation": "Fork and compile-test. If SaaS route, evaluate native Etendo expense management capabilities before migrating."
+      },
+      {
+        "java_package": "com.openbravo.gps.helpdesktool",
+        "name": "Help Desk Tool (GPS)",
+        "function": "GPS-developed internal help desk ticketing system integrated with Etendo. Manages support requests linked to projects and customers.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2→3: likely",
+          "Hibernate 5.4→5.6: likely",
+          "No maintainer"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 8,
+        "recommendation": "Fork and update if actively used. If SaaS route, evaluate external help desk integration (Jira/Zendesk) instead — com.smf.integrations.support.jira is already installed."
+      },
+      {
+        "java_package": "com.openbravo.gps.customprintingforms",
+        "name": "Custom Printing Forms (GPS)",
+        "function": "GPS module providing custom print layouts for standard Etendo documents (invoices, orders, etc.) using Jasper templates.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "JasperReports 6.0→6.17: template recompile required",
+          "No maintainer"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Fork and recompile Jasper templates against JasperReports 6.17. Custom layouts are client-specific assets."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "name": "SEPA Payment Suite",
+        "function": "SEPA ISO 20022 framework and two sub-modules: SEPA Direct Debit Customer-to-Bank (CORE/B2B) and SEPA Credit Transfer Customer-to-Bank. Used for Spanish banking file generation (bank remittances, supplier payments).",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.financial.extensions (includes SEPA support)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2→3: likely uses StringUtils",
+          "Hibernate 5.4→5.6: likely",
+          "No maintainer: Openbravo SLU no longer maintains these"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 8,
+        "recommendation": "Migrate to Etendo Financial Extensions bundle which includes updated SEPA support. Migration effort covers data validation and configuration transfer. Verify SEPA file format compatibility before go-live."
+      },
+      {
+        "java_package": "org.openbravo.module.facturae",
+        "name": "Facturae / Electronic Invoice Suite (Spain)",
+        "function": "Spanish electronic invoicing modules: org.openbravo.module.facturae (API), facturae31 (Facturae 3.1), facturae32 (Facturae 3.2), org.openbravo.module.einvoice (base), einvoice.es_ES (translation). Required for issuing legally compliant electronic invoices in Spain.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.localization.spain.extensions (includes Facturae support)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2→3: likely",
+          "iText: iText jar removed in Etendo 25.x — com.lowagie:itext 2.1.7 added as replacement, check usage",
+          "No maintainer: Openbravo SLU no longer maintains these"
+        ],
+        "effort_update_hours": 24,
+        "effort_saas_hours": 12,
+        "recommendation": "Migrate to Etendo Spain Localization Extensions bundle. Verify Facturae version requirements (3.2 is current standard) and validate XML output format before switching."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es",
+        "name": "Spanish Banking Cuadernos (19, 34, 58)",
+        "function": "Spanish banking file formats: Cuaderno 19 (direct debit remittances), Cuaderno 34 (SEPA credit transfers), Cuaderno 58 (confirming/reverse factoring). Required for bank file submissions to Spanish financial institutions.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.financial.extensions (includes Spanish banking formats)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer: Openbravo SLU no longer maintains these",
+          "Apache Commons Lang 2→3: likely"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 8,
+        "recommendation": "Migrate to Etendo Financial Extensions. Validate file format output against bank specifications before switching."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat340.es",
+        "name": "AEAT Modelo 340 (Spain Tax Report)",
+        "function": "Spanish tax authority (AEAT) Modelo 340 report — VAT operations book report required for tax filing.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.localization.spain.extensions",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer: Openbravo SLU no longer maintains"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 3,
+        "recommendation": "Verify if Modelo 340 is still required (Spain moved to SII for large companies) or if Etendo Spain Extensions covers it."
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "name": "Initial Data Load (IDL) Suite",
+        "function": "org.openbravo.idl (core IDL framework), org.openbravo.module.idljava (Java extension), org.openbravo.idl.translation.es_ES (translation). Directly required by IDLInvoice.java in the main custom module (extends IdlInvoices from com.openbravo.gps.idl.invoices). Used for CSV-based bulk invoice import.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer: Openbravo SLU no longer maintains IDL",
+          "OpenCSV: IDLInvoice.java depends on au.com.bytecode.opencsv via org.openbravo.utility.opencsv (also unmaintained)"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 20,
+        "recommendation": "Fork IDL + idljava and update against 25.4.x. IDLInvoice.java has a hard dependency. Alternative for SaaS route: rewrite the invoice import as a standard Etendo Process Definition with CSV parsing using the maintained com.opencsv library."
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "name": "OpenCSV Library",
+        "function": "Wraps the au.com.bytecode.opencsv library for use within Etendo. Directly required by IDLInvoice.java in the main custom module.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.opencsv:opencsv (standard Maven dependency)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer",
+          "Old au.com.bytecode.opencsv API is incompatible with current com.opencsv"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1,
+        "recommendation": "Replace with standard com.opencsv Maven dependency and update IDLInvoice.java imports accordingly."
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain30",
+        "name": "Professional Localization Pack Spain",
+        "function": "Openbravo Spain professional localization pack v3.0: tax rates, payment terms, chart of accounts base for Spain, fiscal year setup. Critical baseline for Spanish legal compliance.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.localization.spain.extensions",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer: Openbravo SLU no longer maintains for Etendo"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Verify what components are actively used vs what Etendo Spain Extensions provides. Chart of accounts and tax rates are data, not code — migration is a data validation exercise."
+      },
+      {
+        "java_package": "org.openbravo.interco",
+        "name": "Inter-company Documents",
+        "function": "Generates inter-company purchase orders from sales orders across organizations sharing a client. Required if Enertis operates with multiple legal entities in the same Etendo instance.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.advanced.intercompany",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer: Openbravo SLU",
+          "Apache Commons Lang 2→3: likely"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Migrate to com.etendoerp.advanced.intercompany (Etendo Advanced Intercompany bundle). Verify feature parity before switching."
+      },
+      {
+        "java_package": "org.openbravo.financial.dimensionalreports",
+        "name": "Multi-Dimensional Financial Reports",
+        "function": "org.openbravo.financial.dimensionalreports (infrastructure) + org.openbravo.financial.dimensionaltrialbalancereport (trial balance). Multi-dimensional P&L and trial balance reports filtered by accounting dimensions.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.financial.reports.advanced",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer",
+          "JasperReports 6.0→6.17: template recompile likely required"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 6,
+        "recommendation": "Migrate to Etendo Financial Reports Advanced bundle. Validate report outputs match expected format."
+      },
+      {
+        "java_package": "org.openbravo.acctTab",
+        "name": "Accounting Tab for Transactions",
+        "function": "Adds an accounting tab to transaction windows (invoices, payments, shipments) showing the accounting entries generated. Used for audit and reconciliation.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Included in Etendo core since 24.x",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 3,
+        "recommendation": "Verify if this functionality is already included in Etendo 25.4.x core — accounting tabs are part of standard Etendo. May be safe to remove."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+        "name": "CSV Generic Bank Statement Importer",
+        "function": "Imports bank statements from CSV files into Etendo financial reconciliation. Used for bank statement matching workflows.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.bankingpool",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "No maintainer",
+          "OpenCSV: may use old opencsv library"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3,
+        "recommendation": "Evaluate if Banking Pool bundle covers CSV import needs. If not, fork and update OpenCSV dependency."
+      },
+      {
+        "java_package": "com.smf.abukai.customizations",
+        "name": "Abukai Customizations",
+        "function": "SMF-developed integration for Abukai mobile expense capture app. Allows employees to photograph receipts and auto-create expense entries in Etendo. Includes translation (es_ES).",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "No maintainer",
+          "Apache Commons Lang 2→3: likely"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Verify if Abukai integration is still actively used. If yes, fork and update. If not, remove."
+      },
+      {
+        "java_package": "com.smf.financialcurrentbalance",
+        "name": "SMF Financial Modules Cluster",
+        "function": "Group of SMF-developed financial utilities: financialcurrentbalance (current balance widget), invoices (invoice customizations), ledgeroriginalcurrency (GL original currency), reports.accounts (accounting reports), showbpbankacct (BP bank account in payment plan), ws.attachments (attachment webservice), additionalpocolumns (extra PO columns), currency.conversionrate (exchange rate downloader), integrations.support + jira (support ticket from Etendo to Jira).",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2→3: likely for most modules",
+          "Hibernate 5.4→5.6: likely for modules with Java",
+          "No maintainer"
+        ],
+        "effort_update_hours": 30,
+        "effort_saas_hours": 16,
+        "recommendation": "Audit each module for active usage. Remove unused ones. Fork and update active ones — most are small (< 500 LOC). Prioritize: integrations.support.jira (business value for helpdesk), currency.conversionrate (financial operations)."
+      },
+      {
+        "java_package": "org.openbravo.importdata",
+        "name": "Import Data (Openbravo)",
+        "function": "Generic data import framework for Etendo. Used alongside IDL for bulk data loading operations.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "No maintainer"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3,
+        "recommendation": "Fork and compile-test. Small utility module."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.standardalgorithmunmatch",
+        "name": "GPS Utility Modules",
+        "function": "Minor GPS utility modules: standardalgorithmunmatch (payment matching algorithm variant that allows unmatch), org.openbravo.gps.copyrole (copy user roles between organizations), org.openbravo.utility.draganddropselector3lists + implementation (3-list drag-and-drop selector widget), org.openbravo.client.analytics (analytics/reporting widget), org.openbravo.client.widgets.finance (finance workspace widgets).",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "No maintainer",
+          "Hibernate 5.4→5.6: likely for modules with Java"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 10,
+        "recommendation": "Evaluate active usage. standardalgorithmunmatch may be important for financial operations. copyrole and drag-and-drop selectors are administrative utilities. Fork and update as needed."
+      },
+      {
+        "java_package": "org.openbravo.util.javax.xml.soap",
+        "name": "SOAP/JAX-WS Utilities",
+        "function": "Three SOAP utility modules: javax.xml.soap (SOAP API), jaxws (JAX-WS), saaj.impl (SAAJ implementation). Required by modules that use SOAP-based web service integrations.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Jakarta EE / Java 17 standard library includes JAX-WS",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Java 17: SOAP/JAX-WS APIs moved to jakarta.* namespace; javax.xml.soap is included in Java 17 but jakarta.xml.soap is the future"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 3,
+        "recommendation": "Verify if these are still needed under Java 17. Standard SOAP support is included in the JDK; these wrapper modules may be redundant."
+      },
+      {
+        "java_package": "com.etendoerp.accounting.templates.es_es",
+        "name": "Etendo Bundle Spanish Translations (13 modules)",
+        "function": "Spanish translation packs for Etendo official bundles: accounting.templates, advanced.bpsettlement, advanced.financial.docs.processing, advanced.intercompany, bankingpool, bulk.posting, financial.reports.advanced, gljournal.advanced, payment.removal (com.etendoerp.*), org.openbravo.financial.bpsettlement.es_es, com.smf.asset.amortization.report.es_es, com.smf.currency.apiconfig.es_es, com.smf.gljournal.reverse.es_es. These translations are now part of the official Etendo bundles.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Translations included in respective Etendo bundles",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1,
+        "recommendation": "Remove all local translation packs and let the official Etendo bundles provide their own translations. No effort needed beyond removal."
+      },
+      {
+        "java_package": "org.openbravo.financial.referencedata.accounts.generic",
+        "name": "Reference/Utility Data Modules",
+        "function": "Minor data and utility modules: Generic Chart of Accounts (org.openbravo.financial.referencedata.accounts.generic), US Community COA (org.openbravo.localization.us.community.coa — not applicable for Spain), temp_modules placeholder.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Etendo Spain Localization Extensions",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "Remove US COA (not relevant for Spain). Verify Generic COA is not the active chart of accounts before removing."
+      }
+    ],
+    "effort_summary": {
+      "update_core_hours": 6,
+      "update_custom_hours": 106,
+      "update_unmaintained_hours": 337,
+      "update_total_hours": 449,
+      "saas_core_hours": 3,
+      "saas_custom_hours": 162,
+      "saas_unmaintained_hours": 253,
+      "saas_total_hours": 418
+    }
+  },
+  "ui_readiness": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-21",
+    "summary": {
+      "overall_ui_completion_pct": 62,
+      "critical_blockers": 4,
+      "high_priority": 5,
+      "medium_priority": 4,
+      "total_windows": 321,
+      "total_tabs": 868
+    },
+    "features": [
+      {
+        "feature": "§1.1 — Maintain Windows (M)",
+        "status": "TO CHECK",
+        "completion_pct": 80,
+        "client_count": 242,
+        "unit": "windows",
+        "priority": "high",
+        "reason": "242 of 321 windows are Maintain type — the backbone of data entry. Core structure is implemented but edge-case behaviors (multi-record delete, Copy Record on child tabs, isUpdateable='N') need validation. Required for all data management operations."
+      },
+      {
+        "feature": "§1.2 — Transaction Windows (T)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "client_count": 37,
+        "unit": "windows",
+        "priority": "high",
+        "reason": "37 transaction document windows (invoices, orders, payments). DocAction label rendering is a known bug. Posted button (28 columns) and CreateFrom (8 uses) are critical for Enertis financial workflows. These are the most-used windows in day-to-day operations."
+      },
+      {
+        "feature": "§1.4 — Pick and Execute (PickAndExecute)",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "client_count": 108,
+        "unit": "windows+processes",
+        "priority": "critical",
+        "reason": "33 Pick&Execute windows + 75 Process Definitions of P&E type = 108 total. Enertis uses P&E extensively for project operations (select project phases → execute batch actions). Inline mandatory field validation and context parameter forwarding are incomplete — these gaps directly block operational workflows."
+      },
+      {
+        "feature": "§2.B — Hardcoded Button Columns",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "client_count": 52,
+        "unit": "button columns",
+        "priority": "critical",
+        "reason": "52 hardcoded button columns across critical workflows: Posted (28) — PARCIAL 30%, DocAction (6), CreateFrom (8) — TO CHECK, PaymentRule (9) — TO CHECK, ChangeProjectStatus (1) — NOT DONE. Posted and CreateFrom directly impact Enertis invoice and project management. ChangeProjectStatus is a custom button with zero React implementation."
+      },
+      {
+        "feature": "§3.A.2 — Manual JS Processes (AD_PROCESS UIPattern=M)",
+        "status": "BLOQUEADO",
+        "completion_pct": 25,
+        "client_count": 201,
+        "unit": "processes",
+        "priority": "critical",
+        "reason": "201 legacy manual-JS processes depend on OB.* browser namespaces (OB.CurrentView, OB.MainView, OB.Utilities) that do not exist in the React UI. These are mostly Openbravo core processes but include customized ones. No architectural decision has been made. Each process requires individual analysis to determine if it's reachable from the new UI or obsolete."
+      },
+      {
+        "feature": "§3.A.2 — Legacy HTML Reports (ISREPORT=Y)",
+        "status": "PARCIAL",
+        "completion_pct": 50,
+        "client_count": 286,
+        "unit": "reports",
+        "priority": "high",
+        "reason": "286 legacy HTML/PDF reports (279 in core + 7 in modules). The 78 core HTML templates in the Enertis installation were customized (see core divergences). In React, reports are served through the same process execution pipeline but require Jasper output — HTML reports need reimplementation. The 3 Jasper-enabled processes (ISJASPER=Y) are more future-safe."
+      },
+      {
+        "feature": "§4 — Display Logic (@field@ syntax)",
+        "status": "BUG ACTIVO",
+        "completion_pct": 65,
+        "client_count": 2243,
+        "unit": "fields",
+        "priority": "critical",
+        "reason": "2,243 fields use DISPLAYLOGIC, of which 180 reference session variables (@$...). An active bug exists where @field_name@ syntax in display logic expressions is not correctly evaluated in the React UI. This will cause wrong field visibility across hundreds of screens — forms will show or hide fields incorrectly, directly breaking user workflows."
+      },
+      {
+        "feature": "§5 — Tab Default Filters and Sort Order (§26)",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "client_count": 48,
+        "unit": "tabs",
+        "priority": "high",
+        "reason": "48 tabs define default filters (34 via HQLFILTERCLAUSE + 14 via FILTERCLAUSE). TabBuilder.java does not send these clauses to the React UI. Without default filters, windows open showing unfiltered data — this is a performance and correctness issue especially for transactional windows where only active/open records should appear by default."
+      },
+      {
+        "feature": "§6 — Callouts",
+        "status": "TO CHECK",
+        "completion_pct": 82,
+        "client_count": 96,
+        "unit": "columns with callouts",
+        "priority": "medium",
+        "reason": "96 columns trigger callouts (server-side field interdependency logic). Enertis has 6 custom callouts in the project customization module (gross margin calculation, service category, dimension code). Callout infrastructure is 82% implemented — high confidence but validation of all 6 custom callouts against the new UI is required."
+      },
+      {
+        "feature": "§18 — Application Forms (AD_FORM)",
+        "status": "NOT DONE",
+        "completion_pct": 15,
+        "client_count": 31,
+        "unit": "forms",
+        "priority": "high",
+        "reason": "31 AD_FORM entries (classic Openbravo forms like 'Create From Expense', 'Initial Data Load', reconciliation wizards). The React UI has no AD_FORM renderer — each form needs individual React reimplementation. This impacts IDL-based invoice import (used by Enertis) and several financial workflows."
+      },
+      {
+        "feature": "§21 — Workspace / Dashboard",
+        "status": "NOT DONE",
+        "completion_pct": 5,
+        "client_count": 3,
+        "unit": "widget definitions",
+        "priority": "medium",
+        "reason": "3 workspace widget definitions (org.openbravo.client.widgets.finance is an unmaintained module). The Workspace/My Openbravo dashboard is essentially not implemented in React (5%). If Enertis uses the dashboard for KPI monitoring, this is a blocker."
+      },
+      {
+        "feature": "§25 — Default Value Expressions",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "client_count": 0,
+        "unit": "fields (estimated)",
+        "priority": "medium",
+        "reason": "Default value expressions only work via server-side round-trip (FormInitializationComponent NEW mode). Client-side @today@, @now@, @CONTEXT@ expressions are not evaluated before first save. Impact on Enertis: project date defaulting and document number assignment may behave inconsistently."
+      },
+      {
+        "feature": "§2.27 — Image BLOB / Binary Fields",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "client_count": 19,
+        "unit": "columns",
+        "priority": "medium",
+        "reason": "14 Image BLOB columns (ID: 4AA6C3BE) + 5 Binary columns (ID: 23) are NOT DONE. If Enertis uses image attachments embedded in form fields (e.g. product images, document scans), these fields will render as blank in the new UI."
+      }
+    ],
+    "blockers_summary": "4 critical blockers identified: (1) 201 Manual JS processes with no React equivalent — architectural decision required before UI migration; (2) 108 PickAndExecute windows/processes with incomplete inline validation; (3) 2,243 display logic fields affected by active @field@ bug; (4) 52 hardcoded button columns partially or not implemented (Posted, ChangeProjectStatus). Additionally, 31 AD_FORM entries with no React renderer will require individual reimplementation. Enertis's heavy project management footprint (custom PickAndExecute processes, custom callouts, GL journal cloning) adds specific validation work beyond standard Etendo."
+  }
+}
