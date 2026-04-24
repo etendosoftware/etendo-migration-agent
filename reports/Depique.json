@@ -1,0 +1,3898 @@
+{
+  "client": {
+    "name": "Depique",
+    "hostname": "naza"
+  },
+  "platform": {
+    "type": "etendo",
+    "version": "24.2.8"
+  },
+  "modules": {
+    "gradle_jar": [],
+    "gradle_source": [
+      {
+        "java_package": "com.etendoerp.accounting.templates",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.accounting.templates",
+        "name": "New Accounting Templates",
+        "version": "1.12.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.templates.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.advanced.bpsettlement",
+        "name": "Advanced Business Partner Settlement",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bpsettlement.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.advanced.financial.docs.processing",
+        "name": "Advanced Financial Documents Processing",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.template",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.advanced.financial.docs.processing.template",
+        "name": "Advanced Financial Documents Processing Template",
+        "version": "1.11.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.advanced.intercompany",
+        "name": "Advanced Intercompany",
+        "version": "1.13.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.intercompany.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.bankingpool",
+        "name": "Banking Pool",
+        "version": "1.12.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bankingpool.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.bulk.posting",
+        "name": "Bulk Posting",
+        "version": "1.13.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.posting.git",
+        "latest_version": "2.4.1"
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.financial.extensions",
+        "name": "Financial Extensions",
+        "version": "1.19.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "latest_version": null
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.financial.extensions.es_es",
+        "name": "Financial Extensions - Spanish Translation",
+        "version": "1.7.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions.es_es",
+        "latest_version": null
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.financial.reports.advanced",
+        "name": "Financial Reports Advanced",
+        "version": "1.11.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.git",
+        "latest_version": "2.9.0"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.gljournal.advanced",
+        "name": "GL Journal Advanced",
+        "version": "1.13.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.advanced.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.clone",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.gljournal.clone",
+        "name": "Clone GL Journal",
+        "version": "1.2.1",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.clone.template",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.gljournal.clone.template",
+        "name": "Clone GL Journal Template",
+        "version": "1.2.1",
+        "author": null,
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.localization.spain.extensions",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.localization.spain.extensions",
+        "name": "Spain Localization Extensions",
+        "version": "1.21.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "latest_version": null
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.payment.removal",
+        "name": "Payment Removal",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.template",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.payment.removal.template",
+        "name": "Payment Removal Template",
+        "version": "1.11.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.reportvaluationstock.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.reportvaluationstock.es_es",
+        "name": "Report Valuation Stock - Spanish Translation",
+        "version": "1.7.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.reportvaluationstock.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.vat.regularization",
+        "name": "VAT Regularization",
+        "version": "1.2.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.vat.regularization.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report",
+        "path": "/home/naza/workspace/depique/modules/com.smf.asset.amortization.report",
+        "name": "Asset Amortization Report",
+        "version": "1.10.1",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.asset.amortization.report.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig",
+        "path": "/home/naza/workspace/depique/modules/com.smf.currency.apiconfig",
+        "name": "Currency API Configuration",
+        "version": "1.12.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.apiconfig.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate",
+        "path": "/home/naza/workspace/depique/modules/com.smf.currency.conversionrate",
+        "name": "Conversion Rate Downloader",
+        "version": "1.12.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.conversionrate.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse",
+        "path": "/home/naza/workspace/depique/modules/com.smf.gljournal.reverse",
+        "name": "Reverse GL Journal",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.template",
+        "path": "/home/naza/workspace/depique/modules/com.smf.gljournal.reverse.template",
+        "name": "Reverse GL Journal Template",
+        "version": "1.10.1",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.smf.jobs.defaults.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.smf.jobs.defaults.es_es",
+        "name": "Default Jobs (es_ES)",
+        "version": "1.10.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.defaults.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "com.smf.jobs.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.smf.jobs.es_es",
+        "name": "Jobs - Spanish Translation",
+        "version": "1.4.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "com.smf.securewebservices.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.smf.securewebservices.es_es",
+        "name": "Secure web services implentation - Spanish Translation",
+        "version": "1.4.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.securewebservices.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "com.smf.ticketbai",
+        "path": "/home/naza/workspace/depique/modules/com.smf.ticketbai",
+        "name": "TicketBAI Integration",
+        "version": "1.11.2",
+        "author": "SMF Consulting",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.ticketbai.git",
+        "latest_version": "2.10.0"
+      },
+      {
+        "java_package": "org.openbravo.advpaymentmngt.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.advpaymentmngt.es_es",
+        "name": "Advanced Payables and Receivables - Spanish Translation",
+        "version": "3.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.advpaymentmngt.es_es.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.alerts.accounting30",
+        "name": "Alerts: Accounting",
+        "version": "3.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.alerts.accounting30.es_es",
+        "name": "Alerts: Accounting - Spanish Translation",
+        "version": "3.10.0",
+        "author": "Openbravo, S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.es_es.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.application.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.client.application.es_es",
+        "name": "User Interface Application Translation Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.application.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.htmlwidget.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.client.htmlwidget.es_es",
+        "name": "HTML Widget Translation Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.htmlwidget.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.kernel.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.client.kernel.es_es",
+        "name": "User Interface Client Kernel Translation Spanish Spain(esES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.kernel.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.myob.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.client.myob.es_es",
+        "name": "Workspace & Widgets Translation: Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.myob.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.querylist.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.client.querylist.es_es",
+        "name": "Query/List Widget Translation Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.querylist.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.widgets.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.client.widgets.es_es",
+        "name": "Widgets Collection Translation Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.widgets.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.finance.checkprinting",
+        "name": "Check Printing",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.finance.checkprinting.es_es",
+        "name": "Check Printing Spanish Translation",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.financial.bpsettlement",
+        "name": "Business Partner Settlements",
+        "version": "1.14.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.bpsettlement.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "org.openbravo.financial.paymentreport.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.financial.paymentreport.es_es",
+        "name": "Payment Report - Spanish Translation",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.paymentreport.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.localization.spain.referencedata.accounts",
+        "name": "Chart of accounts: PGC 2007 General",
+        "version": "3.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "name": "Chart of accounts: PGC 2007 PYMEs",
+        "version": "3.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.pymes.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.localization.spain.referencedata.taxes",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "version": "1.14.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.cashvat.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.localization.spain.referencedata.translation.eses",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "version": "3.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.translation.eses.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain30",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.localization.spain30",
+        "name": "Localization pack Spain (España)",
+        "version": "3.18.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain30.git",
+        "latest_version": "4.2.1"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.cashvat.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat190.cashvat.es",
+        "name": "Withholding Report: Modelo 190 (Spain) Cash VAT compatible",
+        "version": "1.9.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.cashvat.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat190.es",
+        "name": "Withholding Report: Modelo 190 (Spain)",
+        "version": "3.20.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.es.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.cashvat.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat303.cashvat.es",
+        "name": "Tax Report: Modelo 303 (Spain) Cash VAT compatible",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.cashvat.es.git",
+        "latest_version": "2.6.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat303.es",
+        "name": "Tax Report: Modelo 303 (Spain)",
+        "version": "1.23.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.es.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.cashvat.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat347apr.cashvat.es",
+        "name": "Spain AEAT Modelo 347 for APR Cash VAT compatible",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.cashvat.es.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat347apr.es",
+        "name": "Spain AEAT Modelo 347 for APR",
+        "version": "4.17.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.git",
+        "latest_version": "5.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat347apr.es.es_es",
+        "name": "Spain AEAT Modelo 347 for APR- Spanish Translation",
+        "version": "1.13.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.es_es.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat349.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat349.es",
+        "name": "Modelo 349",
+        "version": "2.16.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat349.es.git",
+        "latest_version": "3.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.cashvat.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat390.cashvat.es",
+        "name": "Tax Report: Modelo 390 (Spain) Cash VAT compatible",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.cashvat.es.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat390.es",
+        "name": "Tax Report: Modelo 390 (Spain)",
+        "version": "3.15.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.es.git",
+        "latest_version": "4.4.0"
+      },
+      {
+        "java_package": "org.openbravo.module.bptaxidkey",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.bptaxidkey",
+        "name": "Tipo de Número de Identificación de Tercero",
+        "version": "0.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.bptaxidkey.git",
+        "latest_version": "1.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cashvat",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.cashvat",
+        "name": "Cash VAT Management",
+        "version": "1.6.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cashvat.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.cifnifvalidator",
+        "name": "CIF and NIF validator",
+        "version": "1.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.cifnifvalidator.es_es",
+        "name": "Validador de CIF y NIF",
+        "version": "1.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.countryisocode",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.countryisocode",
+        "name": "3 digits ISO country codes",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.countryisocode.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno43.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.cuaderno43.es",
+        "name": "Cuaderno 43",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cuaderno43.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.epigrafes.iae.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.epigrafes.iae.es",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.epigrafes.iae.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.eucountries",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.eucountries",
+        "name": "European Union countries",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.eucountries.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.finactvalidator.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.finactvalidator.es",
+        "name": "Validador de número de cuenta financiera",
+        "version": "3.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.finactvalidator.es.git",
+        "latest_version": "4.2.1"
+      },
+      {
+        "java_package": "org.openbravo.module.incoterms",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.incoterms",
+        "name": "Incoterms",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.incoterms.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.intrastat",
+        "name": "Intrastat",
+        "version": "3.12.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.intrastat.es_es",
+        "name": "Intrastat – Spanish translation",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.spain",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.intrastat.spain",
+        "name": "Intrastat for Spain",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.spain.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.invoicesregisterbook",
+        "name": "Invoices Register Book",
+        "version": "2.13.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.git",
+        "latest_version": "3.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.invoicesregisterbook.es_es",
+        "name": "Libro de Facturas",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.es_es.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.invoicesregisterbook.estaxes",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "version": "3.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.estaxes.git",
+        "latest_version": "4.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.invoicetaxreportenhanced30",
+        "name": "Multidimensional Tax Report",
+        "version": "3.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.git",
+        "latest_version": "4.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "name": "Multidimensional Tax Report Spanish (es_ES)",
+        "version": "3.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.es_es.git",
+        "latest_version": "4.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.organization.representative.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.organization.representative.es",
+        "name": "Legal Representative of the Organization",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.organization.representative.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.paymentmethod.type",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.paymentmethod.type",
+        "name": "Payment Method Type",
+        "version": "1.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.paymentmethod.type.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.remittance",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.remittance",
+        "name": "Remittances infrastructure",
+        "version": "3.15.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "org.openbravo.module.remittance",
+        "latest_version": "4.3.1"
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.remittance.es_es",
+        "name": "Remittances infrastructure - Spanish Translation",
+        "version": "1.6.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "org.openbravo.module.remittance.es_es",
+        "latest_version": null
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.template",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.remittance.template",
+        "name": "Remittance Infrastructure Template",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "org.openbravo.module.remittance.template",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.sii",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.sii",
+        "name": "Spain SII",
+        "version": "1.23.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.git",
+        "latest_version": "2.9.0"
+      },
+      {
+        "java_package": "org.openbravo.module.sii.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.sii.es_es",
+        "name": "Spain SII Translation Spanish",
+        "version": "1.23.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.es_es.git",
+        "latest_version": null
+      },
+      {
+        "java_package": "org.openbravo.module.sii.template",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.sii.template",
+        "name": "Spain SII Template",
+        "version": "1.23.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.template.git",
+        "latest_version": null
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.taximprovements.es",
+        "name": "Spanish Tax Module Improvements",
+        "version": "0.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es.git",
+        "latest_version": "1.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.taximprovements.es_es",
+        "name": "Módulo de Impuestos para España mejorado",
+        "version": "0.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es_es.git",
+        "latest_version": "1.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.taxreportlauncher",
+        "name": "Tax Report Launcher",
+        "version": "1.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.taxreportlauncher.es",
+        "name": "Generador de declaraciones de impuestos",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.numbertoword.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.numbertoword.es_es",
+        "name": "Number To Word Spanish Translation",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.es_es.git",
+        "latest_version": "1.13.0"
+      },
+      {
+        "java_package": "org.openbravo.numbertoword_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.numbertoword_es",
+        "name": "Number To Word (Spanish)",
+        "version": "1.12.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword_es.git",
+        "latest_version": "1.13.0"
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain.dataset",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.proflocalization.spain.dataset",
+        "name": "Professional Localization pack Spain (España) Datasets",
+        "version": "1.16.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.proflocalization.spain.dataset.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "name": "Orders Awaiting Delivery Spanish (Spain) Translation",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.reports.ordersawaitingdelivery.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.service.datasource.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.service.datasource.es_es",
+        "name": "JSON Datasource Translation: Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.datasource.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.service.integration.google.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.service.integration.google.es_es",
+        "name": "Integration with Google APIs Translation Spanish Spain",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.google.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.service.integration.openid.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.service.integration.openid.es_es",
+        "name": "OpenID Service Integration Translation Spanish Spain",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.openid.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.spain.regions",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.spain.regions",
+        "name": "Provincias de España",
+        "version": "1.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spain.regions.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.spanishdefaultdata.paymentmethods",
+        "name": "Métodos de Pago",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentmethods.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentterms",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.spanishdefaultdata.paymentterms",
+        "name": "Condiciones de pago",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentterms.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.userinterface.selector.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.userinterface.selector.es_es",
+        "name": "User Interface Selector Translation: Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.selector.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.userinterface.smartclient.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.userinterface.smartclient.es_es",
+        "name": "Smartclient Translation: Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.smartclient.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.utility.multiplebpselector",
+        "name": "Openbravo Multi Business Partner Selector",
+        "version": "1.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.utility.multiplebpselector.es_es",
+        "name": "Openbravo Multi Business Partner Selector Spanish (Spain)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.v3.translation.pack.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.v3.translation.pack.es_es",
+        "name": "Openbravo 3.0 Translation Pack: Spanish Spain (es_ES)",
+        "version": "3.15.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.v3.translation.pack.es_es.git",
+        "latest_version": "4.2.0"
+      }
+    ],
+    "local_maintained": [
+      {
+        "java_package": "com.etendoerp.docker",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.docker",
+        "name": "Docker Help Utils",
+        "version": "1.4.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@github.com:etendosoftware/com.etendoerp.docker.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.etendorx",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.etendorx",
+        "name": "Etendo RX",
+        "version": "2.3.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@github.com:etendosoftware/com.etendoerp.etendorx.git",
+        "latest_version": "3.15.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jasperutilities",
+        "path": "/home/naza/workspace/depique/modules/com.smf.jasperutilities",
+        "name": "SMF Jasper Utilities",
+        "version": "1.0.2",
+        "author": "SMF",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jasperutilities.git",
+        "latest_version": "1.0.2",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.numbertoword",
+        "name": "Number To Word",
+        "version": "1.19.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.warehouse.packing",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.warehouse.packing",
+        "name": "Warehouse Packing",
+        "version": "1.1.300",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.warehouse.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.warehouse.packing.git",
+        "latest_version": "3.3.3"
+      },
+      {
+        "java_package": "org.openbravo.warehouse.pickinglist",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.warehouse.pickinglist",
+        "name": "Warehouse Picking List",
+        "version": "1.4.2900",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.warehouse.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.warehouse.pickinglist.git",
+        "latest_version": "3.4.5"
+      },
+      {
+        "java_package": "org.openbravo.warehouse.structure",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.warehouse.structure",
+        "name": "Warehouse Structure",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.warehouse.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.warehouse.structure.git",
+        "latest_version": "3.3.0"
+      }
+    ],
+    "local_not_maintained": [
+      {
+        "java_package": "com.etendoerp.accounting.templates.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.accounting.templates.es_es",
+        "name": "Nuevas plantillas de contabilidad",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.advanced.bpsettlement.es_es",
+        "name": "Liquidación Avanzada de Socios Comerciales",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.advanced.financial.docs.processing.es_es",
+        "name": "Procesamiento Avanzado de Documentos Financieros",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.advanced.intercompany.es_es",
+        "name": "Intercompany Avanzado",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.bankingpool.es_es",
+        "name": "Pool Bancario",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.bulk.posting.es_es",
+        "name": "Contabilización Masiva",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.commons.utils",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.commons.utils",
+        "name": "Etendo Common Utilities",
+        "version": "1.0.0",
+        "author": "Matias Lopez"
+      },
+      {
+        "java_package": "com.etendoerp.datepromisedfix.template",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.datepromisedfix.template",
+        "name": "Date Promised Fix Template",
+        "version": "1.0.0",
+        "author": "Etendo - Nazareno Tarrili"
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.financial.reports.advanced.es_es",
+        "name": "Informes Financieros Avanzados",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.gljournal.advanced.es_es",
+        "name": "Asientos Manuales Avanzados",
+        "version": "1.6.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.payment.removal.es_es",
+        "name": "Eliminación de Pagos",
+        "version": "1.5.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.printsql",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.printsql",
+        "name": "Print SQL Query",
+        "version": "1.0.0",
+        "author": "Leandro Cazorla"
+      },
+      {
+        "java_package": "com.etendoerp.psd2.bank.integration",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.psd2.bank.integration",
+        "name": "Bank Integration PSD2",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.psd2.bank.integration.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.psd2.bank.integration.es_es",
+        "name": "Bank Integration PSD2 Spanish Translation",
+        "version": "1.0.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.userinterface.skin.etendo",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.userinterface.skin.etendo",
+        "name": "Etendo UI",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.etendoerp.vat.regularization.es_es",
+        "name": "VAT Regularization - Spanish Translation",
+        "version": "1.0.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.openbravo.gps.clone.invoices",
+        "path": "/home/naza/workspace/depique/modules/com.openbravo.gps.clone.invoices",
+        "name": "Clone invoices",
+        "version": "1.0.5",
+        "author": "Xabier Merino, Openbravo S.L.U"
+      },
+      {
+        "java_package": "com.smf.additionalpocolumns",
+        "path": "/home/naza/workspace/depique/modules/com.smf.additionalpocolumns",
+        "name": "Additional PO Columns",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.smf.asset.amortization.report.es_es",
+        "name": "Asset Amortization Report - Spanish translation",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.carrierintegration.dhlintegration",
+        "path": "/home/naza/workspace/depique/modules/com.smf.carrierintegration.dhlintegration",
+        "name": "DHL Integration",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.carrierintegration.seur",
+        "path": "/home/naza/workspace/depique/modules/com.smf.carrierintegration.seur",
+        "name": "Seur Integration",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.constants",
+        "path": "/home/naza/workspace/depique/modules/com.smf.constants",
+        "name": "SMF Constants",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.coupons",
+        "path": "/home/naza/workspace/depique/modules/com.smf.coupons",
+        "name": "SMF Coupons",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.smf.currency.apiconfig.es_es",
+        "name": "Configuración de la API de Moneda",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.smf.currency.conversionrate.es_es",
+        "name": "Descargador de Tasa de Conversión",
+        "version": "1.3.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.custompack",
+        "path": "/home/naza/workspace/depique/modules/com.smf.custompack",
+        "name": "Custom Packing",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L."
+      },
+      {
+        "java_package": "com.smf.customs.intercompany",
+        "path": "/home/naza/workspace/depique/modules/com.smf.customs.intercompany",
+        "name": "Customs Intercompany",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L"
+      },
+      {
+        "java_package": "com.smf.customs.intercompany.template",
+        "path": "/home/naza/workspace/depique/modules/com.smf.customs.intercompany.template",
+        "name": "Customs Intercompany Template",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L"
+      },
+      {
+        "java_package": "com.smf.directprint",
+        "path": "/home/naza/workspace/depique/modules/com.smf.directprint",
+        "name": "Direct Print",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.emailsent",
+        "path": "/home/naza/workspace/depique/modules/com.smf.emailsent",
+        "name": "Modulo Deteccion de envio de email",
+        "version": "1.0.0",
+        "author": "Nazareno Tarrili"
+      },
+      {
+        "java_package": "com.smf.ext_attributes",
+        "path": "/home/naza/workspace/depique/modules/com.smf.ext_attributes",
+        "name": "SMF Extended Attributes",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.extendedcategories",
+        "path": "/home/naza/workspace/depique/modules/com.smf.extendedcategories",
+        "name": "SMF Extended Categories",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.extproducttypes",
+        "path": "/home/naza/workspace/depique/modules/com.smf.extproducttypes",
+        "name": "SMF Extended Product Types",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.extusers",
+        "path": "/home/naza/workspace/depique/modules/com.smf.extusers",
+        "name": "SMF Extended Users",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.freight.states",
+        "path": "/home/naza/workspace/depique/modules/com.smf.freight.states",
+        "name": "Freight States",
+        "version": "1.0.1",
+        "author": "SMF Consulting S.L"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.es_es",
+        "path": "/home/naza/workspace/depique/modules/com.smf.gljournal.reverse.es_es",
+        "name": "Anulación de Asientos Manuales",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.helpers",
+        "path": "/home/naza/workspace/depique/modules/com.smf.helpers",
+        "name": "SMF Helpers",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.integrate.print.dhl",
+        "path": "/home/naza/workspace/depique/modules/com.smf.integrate.print.dhl",
+        "name": "Integrate With Carrier & Print Label DHL",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L."
+      },
+      {
+        "java_package": "com.smf.integrate.print.seur",
+        "path": "/home/naza/workspace/depique/modules/com.smf.integrate.print.seur",
+        "name": "Integrate With Carrier & Print Label SEUR",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L."
+      },
+      {
+        "java_package": "com.smf.integration.golfmanager",
+        "path": "/home/naza/workspace/depique/modules/com.smf.integration.golfmanager",
+        "name": "Golfmanager integration module",
+        "version": "1.0.3",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.integration.golfspain",
+        "path": "/home/naza/workspace/depique/modules/com.smf.integration.golfspain",
+        "name": "GolfSpain integration module",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.integrations.support",
+        "path": "/home/naza/workspace/depique/modules/com.smf.integrations.support",
+        "name": "Support Ticket creation from Openbravo",
+        "version": "1.0.1",
+        "author": "SMF Consulting S.L"
+      },
+      {
+        "java_package": "com.smf.integrations.support.jira",
+        "path": "/home/naza/workspace/depique/modules/com.smf.integrations.support.jira",
+        "name": "SMF Integrations Jira for Customer",
+        "version": "1.0.1",
+        "author": "SMF Consulting S.L"
+      },
+      {
+        "java_package": "com.smf.interco",
+        "path": "/home/naza/workspace/depique/modules/com.smf.interco",
+        "name": "Inter-company Documents",
+        "version": "2.1.600",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.smf.invoicestatus",
+        "path": "/home/naza/workspace/depique/modules/com.smf.invoicestatus",
+        "name": "Invoice Status",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.magento",
+        "path": "/home/naza/workspace/depique/modules/com.smf.magento",
+        "name": "SMF Magento Sync Provider",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.magento.freight",
+        "path": "/home/naza/workspace/depique/modules/com.smf.magento.freight",
+        "name": "Magento Freight",
+        "version": "1.0.0",
+        "author": "SMF S.L."
+      },
+      {
+        "java_package": "com.smf.magento.relations.sizes",
+        "path": "/home/naza/workspace/depique/modules/com.smf.magento.relations.sizes",
+        "name": "SMF Relations Between Sizes",
+        "version": "1.0.0",
+        "author": "SMF S.L."
+      },
+      {
+        "java_package": "com.smf.multiselectorwarehouse",
+        "path": "/home/naza/workspace/depique/modules/com.smf.multiselectorwarehouse",
+        "name": "Multi Selector Warehouse",
+        "version": "1.0.0",
+        "author": "SMF S.L."
+      },
+      {
+        "java_package": "com.smf.notifications",
+        "path": "/home/naza/workspace/depique/modules/com.smf.notifications",
+        "name": "SMF E-mail Notifications",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.patadon.module",
+        "path": "/home/naza/workspace/depique/modules/com.smf.patadon.module",
+        "name": "Module Patadon",
+        "version": "1.0.0",
+        "author": "SMF S.L."
+      },
+      {
+        "java_package": "com.smf.patadon.pedido.compra.pendiente.recibir",
+        "path": "/home/naza/workspace/depique/modules/com.smf.patadon.pedido.compra.pendiente.recibir",
+        "name": "Pedidos de Compra Pendientes de Recibir Patadon",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.patadon.send.mass.invoicing",
+        "path": "/home/naza/workspace/depique/modules/com.smf.patadon.send.mass.invoicing",
+        "name": "SMF Patandon Send Mass Invoicing",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L."
+      },
+      {
+        "java_package": "com.smf.patadon.template",
+        "path": "/home/naza/workspace/depique/modules/com.smf.patadon.template",
+        "name": "Template for Patadon",
+        "version": "1.0.0",
+        "author": "SMF S.L."
+      },
+      {
+        "java_package": "com.smf.posterminal.payments",
+        "path": "/home/naza/workspace/depique/modules/com.smf.posterminal.payments",
+        "name": "SMF POS Payment",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.posterminal.payments.template",
+        "path": "/home/naza/workspace/depique/modules/com.smf.posterminal.payments.template",
+        "name": "SMF POS Payment Template",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.product.stock",
+        "path": "/home/naza/workspace/depique/modules/com.smf.product.stock",
+        "name": "Product Stock",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.productfiles",
+        "path": "/home/naza/workspace/depique/modules/com.smf.productfiles",
+        "name": "SMF Product Attached Files",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.recalc_order",
+        "path": "/home/naza/workspace/depique/modules/com.smf.recalc_order",
+        "name": "SMF Recalculate Order Price",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.relatedproducts",
+        "path": "/home/naza/workspace/depique/modules/com.smf.relatedproducts",
+        "name": "SMF Related Products",
+        "version": "1.0.0",
+        "author": "SMF S.L."
+      },
+      {
+        "java_package": "com.smf.settings",
+        "path": "/home/naza/workspace/depique/modules/com.smf.settings",
+        "name": "SMF Modules Settings",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.shipping",
+        "path": "/home/naza/workspace/depique/modules/com.smf.shipping",
+        "name": "SMF Shipping",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.webpos",
+        "path": "/home/naza/workspace/depique/modules/com.smf.webpos",
+        "name": "SMF WebPOS",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.webservice.soap.webserviceconsumer",
+        "path": "/home/naza/workspace/depique/modules/com.smf.webservice.soap.webserviceconsumer",
+        "name": "SMF Soap Web Service Consumer",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.erputil.carrierintegration",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.erputil.carrierintegration",
+        "name": "Carrier Integration Base",
+        "version": "1.0.300",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.erputil.carrierintegration.seurspain",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.erputil.carrierintegration.seurspain",
+        "name": "Seur Spain Integration",
+        "version": "1.0.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement.es_es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.financial.bpsettlement.es_es",
+        "name": "Liquidaciones de Terceros",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.idl",
+        "name": "Initial Data Load",
+        "version": "3.0.701",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl.variants",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.idl.variants",
+        "name": "IDL for Variants",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.materialmgmt.freightmgmt",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.materialmgmt.freightmgmt",
+        "name": "Freight Management",
+        "version": "1.0.500",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.mobile.core",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.mobile.core",
+        "name": "Mobile Core Infrastructure",
+        "version": "1.0.213201",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.mobile.core.es_ES",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.mobile.core.es_ES",
+        "name": "Mobile Core Translation: Spanish Spain (es_ES)",
+        "version": "1.0.8",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.mobile.warehouse",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.mobile.warehouse",
+        "name": "Mobile Warehouse Operations",
+        "version": "1.0.8",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.mobile.warehouse.physicalinventory",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.mobile.warehouse.physicalinventory",
+        "name": "Mobile Physical Inventory",
+        "version": "0.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat340.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.aeat340.es",
+        "name": "Tax Report: Modelo 340 (Spain)",
+        "version": "3.6.600",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.cuaderno19.es",
+        "name": "Cuaderno 19",
+        "version": "1.2.12",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno34.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.cuaderno34.es",
+        "name": "Cuaderno 34",
+        "version": "1.2.9",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno58.es",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.cuaderno58.es",
+        "name": "Cuaderno 58",
+        "version": "3.0.4",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.einvoice",
+        "name": "Electronic Invoice",
+        "version": "0.1.200",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice.es_ES",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.einvoice.es_ES",
+        "name": "Facturación Electrónica",
+        "version": "0.1.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.facturae",
+        "name": "Facturae API",
+        "version": "2.0.3",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae31",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.facturae31",
+        "name": "Facturación Electrónica - Facturae 3.1",
+        "version": "0.3.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.facturae32",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.facturae32",
+        "name": "Facturación Electrónica - Facturae 3.2",
+        "version": "0.1.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "version": "1.3.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.wscamerfactura",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.module.wscamerfactura",
+        "name": "Camerfactura",
+        "version": "0.2.200",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain30",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.proflocalization.spain30",
+        "name": "Professional Localization pack Spain (España)",
+        "version": "3.27.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.config",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.config",
+        "name": "Retail Configuration",
+        "version": "1.0.211301",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.config.es_ES",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.config.es_ES",
+        "name": "Retail configuration Translation: Spanish Spain (es_ES)",
+        "version": "1.0.7",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.copystore",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.copystore",
+        "name": "Copy Retail Store",
+        "version": "1.0.213000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.retail.discounts",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.discounts",
+        "name": "Discounts & Promotions Rules for Retail",
+        "version": "1.3.213201",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.retail.discounts.es_ES",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.discounts.es_ES",
+        "name": "Discounts & Promotions for Retail Translation: Spanish",
+        "version": "1.0.600",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.giftcards",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.giftcards",
+        "name": "Gift cards and vouchers",
+        "version": "1.3.213000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.giftcards.es_ES",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.giftcards.es_ES",
+        "name": "Gift cards and vouchers Spanish (Spain) Translation",
+        "version": "1.0.503",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.pack",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.pack",
+        "name": "Openbravo for Retail",
+        "version": "1.8.211301",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.pack.es_ES",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.pack.es_ES",
+        "name": "Openbravo for Retail Translation: Spanish Spain (es_ES)",
+        "version": "1.6.400",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.poshwmanager",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.poshwmanager",
+        "name": "Web POS Hardware Manager",
+        "version": "1.0.211301",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.posterminal",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.posterminal",
+        "name": "Web POS",
+        "version": "1.2.213201",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.posterminal.es_ES",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.posterminal.es_ES",
+        "name": "Web POS Translation: Spanish Spain (es_ES)",
+        "version": "1.0.700",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.returns",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.returns",
+        "name": "Return from Original",
+        "version": "1.0.211301",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.returns.es_ES",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.returns.es_ES",
+        "name": "Return from Original Translation: Spanish Spain (es_ES)",
+        "version": "1.0.500",
+        "author": "Openbravo, S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.stockvalidation",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.stockvalidation",
+        "name": "Web POS stock validation",
+        "version": "1.1.900",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.widgets",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.widgets",
+        "name": "Retail Widgets",
+        "version": "1.2.300",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.retail.widgets.es_ES",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.retail.widgets.es_ES",
+        "name": "Retail Widgets Translation: Spanish Spain (es_ES)",
+        "version": "1.2.3",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "version": "1.0.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+        "version": "1.0.200",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "version": "1.0.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.commons.csv",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.utility.commons.csv",
+        "name": "Apache Commons CSV",
+        "version": "1.0.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.hqlquerytool",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.utility.hqlquerytool",
+        "name": "Openbravo HQL Query Tool",
+        "version": "2.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.utility.zoho",
+        "path": "/home/naza/workspace/depique/modules/org.openbravo.utility.zoho",
+        "name": "Zoho Reports Integration",
+        "version": "0.1.500",
+        "author": "Openbravo SLU"
+      }
+    ],
+    "custom": [
+      {
+        "java_package": "com.redk.openbravo.depique.desarrollo",
+        "path": "/home/naza/workspace/depique/modules/com.redk.openbravo.depique.desarrollo",
+        "name": "BP/Product Code",
+        "version": "1.0.0",
+        "author": "REDK",
+        "line_count": 362,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.redk.openbravo.depique.desarrollo.tpl",
+        "path": "/home/naza/workspace/depique/modules/com.redk.openbravo.depique.desarrollo.tpl",
+        "name": "Depique Template",
+        "version": "1.0.0",
+        "author": "REDK",
+        "line_count": 587,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.redk.openbravo.depique.ean13",
+        "path": "/home/naza/workspace/depique/modules/com.redk.openbravo.depique.ean13",
+        "name": "Automatización lectura de códigos de barras",
+        "version": "1.0.0",
+        "author": "REDK",
+        "line_count": 1502,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.redk.openbravo.depique.reports",
+        "path": "/home/naza/workspace/depique/modules/com.redk.openbravo.depique.reports",
+        "name": "reports",
+        "version": "1.0.0",
+        "author": "REDK",
+        "line_count": 5218,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.importproduct",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.importproduct",
+        "name": "Import Products With Brand",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 525,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.module",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.module",
+        "name": "Depique Module",
+        "version": "1.0.0",
+        "author": "SMF",
+        "line_count": 6593,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.module.es_ES",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.module.es_ES",
+        "name": "Depique Module Translation Spanish Spain (es_ES)",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 146,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.performance",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.performance",
+        "name": "General Performance Optimizations",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 1427,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.performance.template",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.performance.template",
+        "name": "General Performance Template",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 104,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.reports",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.reports",
+        "name": "Reportes Depique",
+        "version": "1.0.0",
+        "author": "SMF Consulting",
+        "line_count": 10018,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.selfservice.management",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.selfservice.management",
+        "name": "SMF Self Service Management",
+        "version": "1.0.0",
+        "author": "SMF",
+        "line_count": 4133,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.template",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.template",
+        "name": "SMF Depique Template",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 110,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.warehousemanagement.application",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.warehousemanagement.application",
+        "line_count": 4445071,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.warehousemanagementws",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.warehousemanagementws",
+        "name": "Depique Warehouse Management WS",
+        "version": "1.0.0",
+        "author": "Matias Lopez",
+        "line_count": 5117,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.depique.zoho",
+        "path": "/home/naza/workspace/depique/modules/com.smf.depique.zoho",
+        "name": "Depique Zoho",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 30081,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      }
+    ]
+  },
+  "core_divergences": {
+    "status": "modified",
+    "base_version": "expanded",
+    "baseline_type": "expanded",
+    "folders_checked": [
+      "src",
+      "src-db",
+      "src-core",
+      "src-wad",
+      "modules_core",
+      "src-trl",
+      "src-util"
+    ],
+    "modified_files": 89,
+    "added_files": 8,
+    "deleted_files": 0,
+    "diff_lines_added": 19518,
+    "diff_lines_removed": 568,
+    "files": [
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupDeleted.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportExpense.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportDebtPayment.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportOrderNotInvoiceFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashflowForecast.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionCost.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAnnualCertification.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWarehousePartnerJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTaxInvoice.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBankJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTrialBalance.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedgerJournal.html",
+        "status": "modified",
+        "lines_added": 7,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementDaily.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialTransactionEditionJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectBuildingSiteJR.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportToInvoiceConsignmentJR.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentFilterJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportPurchaseDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 22,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderInvoicedJasper.html",
+        "status": "modified",
+        "lines_added": 36,
+        "lines_removed": 20
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipper.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderProvidedJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProfitabilityJR.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBudgetGenerateExcel.html",
+        "status": "modified",
+        "lines_added": 10,
+        "lines_removed": 5
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceDiscountJR.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorFilterJR.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGuaranteeDateJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAssetDepreciationSchedule.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/MInOutTraceReports.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProgress.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderOpenItemJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 42,
+        "lines_removed": 23
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportStandardCostJRFilter.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportParetoProduct.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAgingBalance.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoicesJR.html",
+        "status": "modified",
+        "lines_added": 17,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesNoComparativeJR.jrxml",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 45
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedger.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/GeneralAccountingReports.html",
+        "status": "modified",
+        "lines_added": 34,
+        "lines_removed": 18
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesJRFilter.html",
+        "status": "modified",
+        "lines_added": 38,
+        "lines_removed": 19
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionRunJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductMovement.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PriceListCreateAll.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PrintInvoices.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CashBankOperations.html",
+        "status": "modified",
+        "lines_added": 26,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateTaxReport.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateAccountingReport.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/ExpenseAPInvoice.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialOrgSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrderCreate.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/CallAcctServer.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPending.java",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 16
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialClientSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ModuleManagementHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPending.html",
+        "status": "modified",
+        "lines_added": 84,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ShowSessionVariables.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPending.xml",
+        "status": "modified",
+        "lines_added": 10,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Account.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Location_F1.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/AccountElementValue.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/LocatorMultiple.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/ProductMultiple.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Locator.html",
+        "status": "modified",
+        "lines_added": 10,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/DebtPayment.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ProjectCopyFrom.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_Shipment.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ExpenseSOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ChangeProjectStatus.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_ShipmentPO.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/UpdateMaintenanceScheduled.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportPaymentFilter.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesNoComparativeJR.jrxml_old.zip",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/quartz.properties",
+        "status": "added",
+        "lines_added": 14,
+        "lines_removed": 0
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPending.java.zip",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPending.xml.zip",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPendingLines_data.xsql.zip",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPending.html.zip",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPending_data.xsql.zip",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html.orig",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src-db/database/formalChangesScript.xml",
+        "status": "modified",
+        "lines_added": 18528,
+        "lines_removed": 0
+      },
+      {
+        "path": "src-db/database/model/triggers/C_ORDERLINE2_TRG.xml",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src-db/database/model/views/C_YEAR_CLOSE_V.xml",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src-db/database/model/tables/M_PRODUCT.xml",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src-db/database/model/tables/M_CH_VALUE.xml",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 5
+      },
+      {
+        "path": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/ad_actionbutton/ImportBankFile.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/actionHandler/AddPaymentActionHandler.java",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 5
+      },
+      {
+        "path": "modules_core/org.openbravo.financial.paymentreport/src/org/openbravo/financial/paymentreport/erpCommon/ad_reports/PaymentReport.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 12
+      },
+      {
+        "path": "modules_core/org.openbravo.reports.ordersawaitingdelivery/src/org/openbravo/reports/ordersawaitingdelivery/erpCommon/ad_reports/ReportOrderNotShipped.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      }
+    ]
+  },
+  "migration_score": 30,
+  "migratability": "very_hard",
+  "score_breakdown": {
+    "openbravo_platform": 0,
+    "core_divergences": -15.0,
+    "core_diff_lines": 20086,
+    "local_not_maintained": -20,
+    "local_not_maintained_translations": 25,
+    "local_not_maintained_regular": 85,
+    "custom_modules": -35,
+    "custom_modules_detail": [
+      {
+        "java_package": "com.redk.openbravo.depique.desarrollo",
+        "line_count": 362,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      },
+      {
+        "java_package": "com.redk.openbravo.depique.desarrollo.tpl",
+        "line_count": 587,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.redk.openbravo.depique.ean13",
+        "line_count": 1502,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.redk.openbravo.depique.reports",
+        "line_count": 5218,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.smf.depique.importproduct",
+        "line_count": 525,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.smf.depique.module",
+        "line_count": 6593,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.smf.depique.module.es_ES",
+        "line_count": 146,
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
+      },
+      {
+        "java_package": "com.smf.depique.performance",
+        "line_count": 1427,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.smf.depique.performance.template",
+        "line_count": 104,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      },
+      {
+        "java_package": "com.smf.depique.reports",
+        "line_count": 10018,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.smf.depique.selfservice.management",
+        "line_count": 4133,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.smf.depique.template",
+        "line_count": 110,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      },
+      {
+        "java_package": "com.smf.depique.warehousemanagement.application",
+        "line_count": 4445071,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.smf.depique.warehousemanagementws",
+        "line_count": 5117,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.smf.depique.zoho",
+        "line_count": 30081,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      }
+    ],
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
+  },
+  "custom_assessment": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-24",
+    "core_customizations": [
+      {
+        "name": "formalChangesScript.xml — Script de migraciones automáticas",
+        "description": "Archivo auto-generado por el sistema de migraciones de Etendo que acumula scripts DDL de base de datos. Contiene 18.528 líneas de sentencias SQL generadas automáticamente durante el ciclo de vida de la instalación.",
+        "files": [
+          "src-db/database/formalChangesScript.xml"
+        ],
+        "lines_changed": 18528,
+        "conclusion": "eliminate",
+        "justification": "Artefacto de migración auto-generado. No contiene lógica de negocio. En cualquier upgrade se regenera desde cero con el proceso estándar de Etendo.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0.5
+      },
+      {
+        "name": "HTML Templates de reportes y formularios clásicos (~55 archivos)",
+        "description": "Modificaciones sobre las plantillas HTML de la UI clásica de Openbravo (Velocity/XmlEngine) en ad_reports/, ad_forms/, ad_process/ y ad_actionButton/. Las modificaciones típicas añaden columnas de organización adicionales en filtros de reportes y adaptan parámetros de selección.",
+        "files": [
+          "src/org/openbravo/erpCommon/ad_reports/*.html",
+          "src/org/openbravo/erpCommon/ad_forms/*.html",
+          "src/org/openbravo/erpCommon/ad_process/*.html",
+          "src/org/openbravo/erpCommon/ad_actionButton/*.html",
+          "src/org/openbravo/erpCommon/info/*.html",
+          "modules_core/org.openbravo.financial.paymentreport/src/.../PaymentReport.html",
+          "modules_core/org.openbravo.reports.ordersawaitingdelivery/src/.../ReportOrderNotShipped.html",
+          "src/org/openbravo/erpReports/*.html"
+        ],
+        "lines_changed": 938,
+        "conclusion": "eliminate",
+        "justification": "Plantillas de la UI clásica pre-React. En Etendo moderno estos reportes se reimplementan en React o como procesos Jasper/JR independientes. No tiene sentido migrar modificaciones de Velocity templates a la nueva arquitectura.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 2
+      },
+      {
+        "name": "MaterialReceiptPending — Formulario de recepción de compras pendientes",
+        "description": "Formulario clásico (servlet + HTML) que permite seleccionar líneas de órdenes de compra pendientes de recibir y generar albaranes de entrada en masa. La customización añade soporte completo de UOM Management (unidades de medida alternativas): muestra columna AUM opcional, convierte cantidades entre unidades, valida que el almacén del albarán pertenezca a la organización.",
+        "files": [
+          "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPending.java",
+          "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPending.html",
+          "src/org/openbravo/erpCommon/ad_forms/MaterialReceiptPending.xml"
+        ],
+        "lines_changed": 152,
+        "conclusion": "upstream",
+        "justification": "La funcionalidad UOM en recepción de compras es útil para cualquier instalación que use gestión de unidades de medida alternativas. El soporte de AUM en albaranes de entrada debería estar en core. La validación almacén-organización también es un fix de robustez válido para upstream.",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2 → 3 (StringUtils)",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 3,
+        "effort_saas_hours": 2
+      },
+      {
+        "name": "AddPaymentActionHandler — Corrección en procesamiento de pagos",
+        "description": "Modificación menor (+8/-5 líneas) sobre el handler de añadir pagos en el módulo de gestión avanzada de pagos (advpaymentmngt). El cambio ajusta el comportamiento de procesamiento de instancias de pago en módulos_core.",
+        "files": [
+          "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/actionHandler/AddPaymentActionHandler.java"
+        ],
+        "lines_changed": 13,
+        "conclusion": "already_upstream",
+        "justification": "Modificación puntual en un módulo_core de advpaymentmngt que pertenece a Financial Extensions. La versión 2.x de Financial Extensions (instalada como gradle_source en versiones posteriores) ya incorpora correcciones equivalentes en el ciclo de mantenimiento estándar.",
+        "api_changes_applicable": [
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      },
+      {
+        "name": "C_ORDERLINE2_TRG — Trigger de reserva de stock en líneas de pedido",
+        "description": "Modificación al trigger de base de datos que gestiona las reservas de stock cuando cambia la cantidad entregada en líneas de pedido. El ajuste (+4/-4 líneas) afina el manejo de cantidades en UOM alternativas al cerrar reservas.",
+        "files": [
+          "src-db/database/model/triggers/C_ORDERLINE2_TRG.xml"
+        ],
+        "lines_changed": 8,
+        "conclusion": "upstream",
+        "justification": "Corrección relacionada con el manejo de UOM en reservas de stock. Si la instalación usa UOM Management, este fix puede ser necesario también en otras instalaciones. Candidato a revisión para upstream.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      },
+      {
+        "name": "quartz.properties — Configuración del scheduler",
+        "description": "Fichero de configuración de Quartz que establece threadCount=10 para el pool de tareas programadas (el default es típicamente 5). Ajuste de rendimiento para soportar la carga de procesos background de esta instalación.",
+        "files": [
+          "src/org/openbravo/erpCommon/ad_process/quartz.properties"
+        ],
+        "lines_changed": 14,
+        "conclusion": "eliminate",
+        "justification": "Configuración de entorno que no pertenece al código fuente versionado. En Etendo moderno el número de threads del scheduler se configura via properties externas o variables de entorno, no modificando el fichero del core.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0.5
+      },
+      {
+        "name": "M_CH_VALUE.xml / M_PRODUCT.xml — Cambios de esquema de BD",
+        "description": "Modificaciones menores al esquema de tablas: M_CH_VALUE (tabla de valores de características) con remoción de columnas, y M_PRODUCT (tabla de productos) con ajuste de constraint. Relacionados con el módulo de características y atributos de producto.",
+        "files": [
+          "src-db/database/model/tables/M_CH_VALUE.xml",
+          "src-db/database/model/tables/M_PRODUCT.xml",
+          "src-db/database/model/views/C_YEAR_CLOSE_V.xml"
+        ],
+        "lines_changed": 9,
+        "conclusion": "eliminate",
+        "justification": "Cambios de esquema que probablemente corrigen incompatibilidades de versión entre módulos. Al actualizar a 25.4.x, el proceso standard de upgrade aplica las migraciones de esquema de forma automática; estos parches manuales dejan de ser necesarios.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      }
+    ],
+    "custom_modules": [
+      {
+        "java_package": "com.redk.openbravo.depique.desarrollo",
+        "name": "BP/Product Code — Autonumeración y configuración de socios comerciales",
+        "description": "Añade autonumeración automática de socios comerciales según la categoría de BP (secuencia por grupo), con inicialización del límite de crédito a 99.999.999. Agrega un campo de número de documento a la categoría de producto. Dos triggers de BD implementan la lógica.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 3,
+        "recommendation": "Eliminar en migración SaaS. La autonumeración de BPs se puede configurar con secuencias estándar de Etendo y reglas de validación, sin necesidad de trigger. La inicialización fija del crédito es lógica de negocio que debería estar en configuración. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_note": "Module works via callouts/hooks — no dedicated windows, score=0 does not indicate inactivity."
+      },
+      {
+        "java_package": "com.redk.openbravo.depique.desarrollo.tpl",
+        "name": "Depique Template — Módulo de plantilla base",
+        "description": "Módulo plantilla que sirve como base de configuración para el módulo de desarrollo. Contiene únicamente datos de AD sin lógica de negocio.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Eliminar junto con el módulo principal de desarrollo. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.redk.openbravo.depique.ean13",
+        "name": "Automatización lectura de códigos de barras EAN-13",
+        "description": "Gestión de códigos EAN-13 para productos: generación automática de UPC/EAN vía trigger de BD, función de cálculo de dígito de control. Incluye un proceso de importación de líneas de albarán por código de barras (IDL_import.java) usando el framework IDL clásico.",
+        "generalization": "bundle_candidate",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "org.openbravo.idl obsoleto/sin mantenimiento",
+          "Gradle 8.12.1",
+          "Classic servlet IDL_import → reimplementar como Process Definition"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 16,
+        "recommendation": "El soporte de EAN-13 es una necesidad común en retail/distribución. Candidato a bundle oficial de Etendo (com.etendoerp.product.ean13 o similar). Requiere reimplementar el import como Process Definition moderno y verificar si com.etendoerp.product.characteristics cubre el caso de uso.",
+        "usage_score": 1,
+        "windows_used": [
+          "Importar Lineas"
+        ],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.redk.openbravo.depique.reports",
+        "name": "Reportes clásicos — Plantillas HTML legacy",
+        "description": "Módulo de reportes con plantillas HTML de la UI clásica y configuración JasperReports. Contiene reportes de operaciones de almacén y documentos comerciales adaptados con branding y filtros de Depique.",
+        "generalization": "client_specific",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "JasperReports 6.0 → 6.17 (cambios de renderizado)",
+          "Gradle 8.12.1",
+          "HTML templates eliminadas en nueva UI"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 20,
+        "recommendation": "Eliminar las plantillas HTML clásicas — no tienen valor en la nueva UI. Los reportes JasperReports pueden seguir funcionando como procesos de tipo OBUIAPP_Report. Evaluar cuáles son imprescindibles antes de migrar. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Bar Code Report v2",
+          "Bar Code Product",
+          "Bar Code Report v3",
+          "Bar Code Report Bt"
+        ],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.smf.depique.importproduct",
+        "name": "Import Products With Brand — Importación de productos con marca",
+        "description": "Extensión del framework IDL (Initial Data Load) de Openbravo para importar productos incluyendo el campo Brand (Marca). El estándar de Etendo no incluye la marca en la importación masiva de productos.",
+        "generalization": "bundle_candidate",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "org.openbravo.idl sin mantenimiento",
+          "org.openbravo.module.idljava sin mantenimiento",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 8,
+        "recommendation": "Funcionalidad claramente generalizable. Podría integrarse en el módulo oficial de importación de productos de Etendo o como extensión del módulo com.etendoerp.integration.openbravo.idl si existe. A corto plazo, verificar si el Import Framework moderno de Etendo cubre el caso.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false,
+        "mixpanel_note": "Module provides import functionality via backend Java — no standalone process registered in Mixpanel."
+      },
+      {
+        "java_package": "com.smf.depique.module",
+        "name": "Depique Module — Extensiones core de negocio",
+        "description": "Módulo principal de customización de Depique. Incluye: (1) extensión del modelo de BP para TPV móvil (crédito sin factura), (2) exportación a Excel de movimientos de almacén usando Apache POI 3.9, (3) override del formulario RequisitionToOrder clásico con lógica de creación de PO personalizada, (4) triggers BD para normalizar la organización de BP a entidad legal (SMFDEP_VALIDATE_BP_ORG_TRG) y calcular pesos por categoría, (5) funciones SQL de precio por oferta y estado de envío.",
+        "generalization": "client_specific",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "Apache POI 3.9 → 5.4.0: BREAKING — Cell.CELL_TYPE_* → CellType enum, Font.setBoldweight() → setBold(boolean), estilos completamente refactorizados",
+          "Apache Commons Lang 2 → 3: imports StringUtils cambiar de org.apache.commons.lang a lang3",
+          "org.openbravo.mobile.core sin mantenimiento: ModelExtension API puede cambiar",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 32,
+        "recommendation": "El trigger de normalización de org en BP podría proponerse como comportamiento configurable de core. El export Excel necesita reescritura completa por el cambio de POI. La creación de PO desde factura es un proceso de negocio propio de Depique. Migrar el override de RequisitionToOrder como Process Definition moderno. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Requisition Order New",
+          "SMFDEP_PrintExcelMov",
+          "UpdatePriceListProcess",
+          "SMFDEP_PrintExcel"
+        ],
+        "elimination_candidate": true,
+        "mixpanel_note": "Core callout logic and autonumbering — main usage reflected in standard windows like Goods Receipt (13,482), Purchase Order (10,141)."
+      },
+      {
+        "java_package": "com.smf.depique.module.es_ES",
+        "name": "Depique Module Translation Spanish Spain",
+        "description": "Traducción al español del módulo principal de Depique.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el destino del módulo principal.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.depique.performance",
+        "name": "General Performance Optimizations — Optimizaciones de rendimiento",
+        "description": "Override del proceso PriceListCreateAll clásico (servlet) para mejorar el rendimiento en la creación masiva de tarifas de venta. Incluye script de módulo para ajustar el árbol natural de organizaciones.",
+        "generalization": "bundle_candidate",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "Classic HttpSecureAppServlet obsoleto en nueva UI",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6,
+        "recommendation": "Si la optimización de PriceListCreateAll resuelve un problema de rendimiento real con catálogos grandes, es candidata a contribución upstream. Reimplementar como Process Definition moderno (OBUIAPP_Process) para compatibilidad con nueva UI.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Create Price List"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.depique.performance.template",
+        "name": "General Performance Template — Plantilla del módulo de rendimiento",
+        "description": "Módulo plantilla para el módulo de optimizaciones de rendimiento.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sigue el destino del módulo de performance. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.smf.depique.reports",
+        "name": "Reportes Depique — Documentos comerciales con Jasper",
+        "description": "Conjunto de reportes JasperReports personalizados para Depique: facturas de venta (commodity y estándar), notas de abono, albaranes, pedidos de compra y venta, cotizaciones. Los informes usan branding corporativo de Depique, incluyen campos de IBAN/cuenta bancaria y layoutes específicos. Agrega ventana de gestión de tarifas (AD_WINDOW tipo Q).",
+        "generalization": "client_specific",
+        "complexity": "critical",
+        "api_changes_applicable": [
+          "JasperReports 6.0 → 6.17: cambios en manejo de fuentes, subreportes y generación PDF",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 10,
+        "recommendation": "Los JasperReports son independientes de la UI clásica/React y pueden mantenerse en producción como procesos OBUIAPP_Report. Actualizar las dependencias de JasperReports y validar los formatos de salida. Bajo coste de migración comparado con otros módulos.",
+        "usage_score": 1,
+        "windows_used": [
+          "Tarifas de Productos"
+        ],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.depique.selfservice.management",
+        "name": "SMF Self Service Management — Portal de autoservicio B2B",
+        "description": "Módulo de autoservicio para clientes B2B: permite crear pedidos de compra desde facturas de venta (CrearPedido), generar facturas automáticamente (GenerarFactura), con configuración por organización (SMFDSM_CONFIG). Incluye un callout de descuentos en líneas de factura y trigger para aplicar descuentos automáticos.",
+        "generalization": "bundle_candidate",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "BaseProcessActionHandler API estable en 25.4.x",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 24,
+        "recommendation": "La funcionalidad de portal B2B de autoservicio tiene alta demanda en el mercado Etendo. Candidato fuerte a bundle oficial. La arquitectura ya usa Process Definition moderno (BaseProcessActionHandler). Requiere refactoring para eliminar dependencias hardcoded del cliente y hacer la configuración genérica.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Configuración Facturación",
+          "Generar Factura",
+          "Crear Pedido Compra"
+        ],
+        "elimination_candidate": false,
+        "mixpanel_note": "B2B self-service portal triggered via external API — Purchase Order (10,141) and Sales Invoice (12,620) events may reflect activity driven through this portal."
+      },
+      {
+        "java_package": "com.smf.depique.template",
+        "name": "SMF Depique Template — Plantilla base Depique",
+        "description": "Módulo plantilla que agrupa dependencias base del paquete Depique.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Eliminar al consolidar módulos. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.smf.depique.warehousemanagement.application",
+        "name": "Warehouse Management Application — App móvil de gestión de almacén",
+        "description": "Aplicación móvil de gestión de almacén (probablemente Android/React Native). El LOC contabilizado (~4.4M) incluye código compilado o assets binarios. Trabaja en conjunto con el módulo warehousemanagementws para operaciones de movimiento de stock desde terminales móviles.",
+        "generalization": "bundle_candidate",
+        "complexity": "critical",
+        "api_changes_applicable": [
+          "JWT / com.smf.securewebservices: verificar compatibilidad de versión",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 30,
+        "recommendation": "La app móvil de almacén es un activo de alto valor. En contexto SaaS, evaluar migración a Etendo Mobile (com.etendoerp.etendoRx o similar) o mantener como solución autónoma que consume APIs REST del módulo WS. Requiere auditoría del código fuente real (excluir binarios del conteo).",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false,
+        "mixpanel_note": "Mobile app — does not generate Etendo window/process events."
+      },
+      {
+        "java_package": "com.smf.depique.warehousemanagementws",
+        "name": "Depique Warehouse Management WS — Web Services de almacén",
+        "description": "Backend de servicios REST para la app móvil de almacén. Expone endpoints para: obtener movimientos pendientes, procesarlos, gestionar ubicaciones, usuarios, almacenes y SSCCs. Usa JWT para autenticación via com.smf.securewebservices.",
+        "generalization": "bundle_candidate",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "Apache Commons Lang 3 ya en uso (correcto)",
+          "Gradle 8.12.1",
+          "com.smf.securewebservices: verificar compatibilidad"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 20,
+        "recommendation": "Los WS de almacén son reutilizables para cualquier cliente que use app móvil de almacén. Generalizar eliminando referencias a packages 'depique' y publicar como bundle de gestión de almacén móvil.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false,
+        "mixpanel_note": "REST web service called by mobile app — no window/process Mixpanel events expected."
+      },
+      {
+        "java_package": "com.smf.depique.zoho",
+        "name": "Depique Zoho — Integración con Zoho CRM y analytics de stock",
+        "description": "Módulo de integración con Zoho CRM y analytics de inventario. Calcula evolución mensual de stock por almacén y organización (SMFZOHO_STOCK_EVOLUTION), registra rupturas de stock, y genera snapshots anuales. Incluye 8+ funciones SQL para valoración de stock, cálculo de costos y días con stock.",
+        "generalization": "client_specific",
+        "complexity": "critical",
+        "api_changes_applicable": [
+          "org.openbravo.utility.zoho sin mantenimiento — dependencia crítica",
+          "Gradle 8.12.1",
+          "org.apache.log4j → log4j2 en 25.x"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 16,
+        "recommendation": "Integración altamente específica de Depique con Zoho CRM. La dependencia org.openbravo.utility.zoho está sin mantenimiento. En migración SaaS: evaluar si Zoho sigue siendo la herramienta de BI/CRM deseada; si es así, reimplementar la integración usando la API REST de Zoho directamente desde un conector Etendo moderno. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Zoho transactions",
+          "Insert Stock Evolution Year",
+          "Insert Stock Evolution",
+          "Insert records in zoho transactions",
+          "Update days with stock zoho"
+        ],
+        "elimination_candidate": true,
+        "mixpanel_note": "Window 'Zoho transactions' shows 0 events. 'Zoho Integration' (75 events in Mixpanel) may be a related window from another module. Background processes run via scheduler, not user-triggered."
+      }
+    ],
+    "unmaintained_modules": [
+      {
+        "java_package": "org.openbravo.retail.posterminal",
+        "name": "Web POS — Terminal punto de venta",
+        "function": "Terminal de punto de venta web (WebPOS). Depique tiene módulos propios que extienden el POS (com.smf.webpos, com.smf.posterminal.payments, BusinessPartnerExtension). Si está activo, es infraestructura crítica de operaciones de venta.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.etendorx.webpos (EtendoRX POS)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "org.openbravo.mobile.core sin mantenimiento (dependencia)",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 40,
+        "effort_saas_hours": 20,
+        "recommendation": "Migrar al POS oficial de EtendoRX. Requiere evaluación de las extensiones custom de POS (com.smf.webpos, com.smf.posterminal.payments) para determinar si las funcionalidades están cubiertas. [Mixpanel: activamente usado (score 4) — prioridad alta en migración.]",
+        "usage_score": 4,
+        "windows_used": [
+          "Channel - Touchpoint",
+          "Errors While Importing POS Data",
+          "Channel - Touchpoint Type",
+          "Cashup History",
+          "POS Print Templates"
+        ],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.mobile.warehouse",
+        "name": "Mobile Warehouse Operations — Operaciones de almacén móvil",
+        "function": "Infraestructura base para operaciones de almacén desde dispositivos móviles. Base del módulo custom com.smf.depique.warehousemanagement.application.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.warehouse.extensions (parcial)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "org.openbravo.mobile.core sin mantenimiento",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 30,
+        "effort_saas_hours": 16,
+        "recommendation": "Si la app móvil custom de Depique (warehousemanagement.application) se reemplaza por EtendoRX, esta dependencia se elimina. Si se mantiene la app custom, requiere fork y actualización. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Warehouse Mobile Operations",
+          "Mobile Warehouse Menu"
+        ],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.etendoerp.psd2.bank.integration",
+        "name": "Bank Integration PSD2 — Integración bancaria PSD2",
+        "function": "Integración con bancos via protocolo PSD2 para importación automática de extractos bancarios y conciliación. Funcionalidad financiera crítica si está en uso.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Gradle 8.12.1",
+          "PostgreSQL JDBC 42.5 → 42.7"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 8,
+        "recommendation": "Verificar si Etendo ha publicado una versión mantenida de este módulo. Es candidato a bundle oficial de Financial Extensions. A corto plazo, fork + actualización de dependencias si sigue en uso activo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Provider Type",
+          "PSD2 Logs",
+          "PSD2 Get Accounts",
+          "Get Bank Statements",
+          "Get Auth Token",
+          "PSD2 Get Consents",
+          "PSD2 Get Transactions"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.carrierintegration.dhlintegration",
+        "name": "DHL Integration — Integración con transportista DHL",
+        "function": "Integración con la API de DHL para generación de etiquetas de envío, seguimiento y gestión de expediciones. Módulo operativo de alta criticidad si Depique opera logística con DHL.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "API DHL puede haber cambiado",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 12,
+        "recommendation": "Evaluar el uso real con Mixpanel. Si está activo, requiere fork y actualización. La integración con carriers (DHL/SEUR) es funcionalidad demandada por múltiples clientes — candidato a bundle oficial.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "DHL Configuration",
+          "DHL Box Configuration",
+          "DHL - OB Mapping Code",
+          "Print DHL PDF Result",
+          "Print DHL International Result",
+          "Print PDF DHL Standard",
+          "Update DHL Express Delivery Status",
+          "Download PDF DHL Express",
+          "Download PDF",
+          "Update DHL Delivery Status",
+          "Download PDF DHL Standard"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.integrate.print.seur",
+        "name": "Integrate With Carrier & Print Label SEUR",
+        "function": "Impresión de etiquetas y gestión de envíos con SEUR. Cubre generación de manifiestos, etiquetas y comunicación con la plataforma de SEUR.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 10,
+        "recommendation": "Mismo tratamiento que DHL. Evaluar uso real. Si activo, fork + update. Candidato a bundle oficial de integración logística.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.module.facturae32",
+        "name": "Facturación Electrónica Facturae 3.2 — Factura electrónica española",
+        "function": "Generación de facturas electrónicas en formato Facturae 3.2 (estándar legal español). Obligatorio para facturación B2G (Administración Pública) y próximamente B2B según regulación VeriFactu.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.einvoice.facturae (verificar disponibilidad)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 4,
+        "recommendation": "Verificar si Etendo dispone de módulo oficial de Facturae mantenido. Si existe, migrar a él. Si no, fork + update es obligatorio por cumplimiento legal. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer — Transferencias bancarias SEPA",
+        "function": "Generación de ficheros SEPA XML ISO 20022 para transferencias bancarias (pain.001). Necesario para pagos a proveedores via banca.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.financial.extensions (incluye SEPA en versiones recientes)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Verificar si Financial Extensions 2.x incluye SEPA. Si sí, migrar la configuración. Si no, fork + update. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.smf.magento",
+        "name": "SMF Magento Sync Provider — Sincronización con Magento",
+        "function": "Sincronización bidireccional de productos, precios, stock y pedidos entre Etendo y Magento (e-commerce). Depique puede gestionar una tienda online conectada al ERP.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Magento API puede haber evolucionado",
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 16,
+        "recommendation": "Evaluar uso real con Mixpanel. La integración Magento es de alto valor para distribuidores con e-commerce. Si activo, requiere revisión de compatibilidad de API Magento. Candidato a bundle oficial.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Web Store",
+          "Last Check Data",
+          "SMF Order Synchronisation",
+          "SMF Product Synchronisation",
+          "SMF Customer Synchronisation",
+          "SMF Invoice Synchronisation",
+          "SMF Stock Data Synchronisation"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.integration.golfmanager",
+        "name": "Golfmanager Integration — Integración con Golfmanager",
+        "function": "Integración con la plataforma Golfmanager (gestión de campos de golf). Específico de clientes del sector golf.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Evaluar si Depique sigue usando esta integración. Si está inactiva, eliminar. Si activa, fork + update.",
+        "usage_score": 2,
+        "windows_used": [
+          "Golf Manager Connection Info",
+          "Golf Manager Integration call Log",
+          "Golf Manager Send Info Log"
+        ],
+        "windows_unused": [
+          "Golf Manager Get Sales",
+          "Golf Manager Get Product ID",
+          "Golf Manager Send Product",
+          "Golf Manager Reconcile Sales",
+          "Golf Manager Get Booking"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.etendoerp.userinterface.skin.etendo",
+        "name": "Etendo UI Skin — Tema visual de la UI clásica",
+        "function": "Tema visual (CSS/imágenes) para la interfaz de usuario clásica de Etendo.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Nueva UI React (com.etendorx.workspace-ui)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Eliminar. La nueva UI React tiene su propio sistema de theming independiente de este módulo. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "name": "Initial Data Load — Framework de importación masiva",
+        "function": "Framework base para importación masiva de datos maestros. Base para com.smf.depique.importproduct y org.openbravo.idl.variants.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Import Framework de Etendo (verificar)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 8,
+        "recommendation": "Verificar si Etendo tiene un reemplazo moderno del IDL. Los módulos que lo usan (importproduct) necesitarán migración coordinada. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Import",
+          "Entity Default Values"
+        ],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.smf.patadon.pedido.compra.pendiente.recibir",
+        "name": "Pedidos de Compra Pendientes de Recibir Patadon",
+        "function": "Override del proceso de recepción de pedidos de compra pendientes, específico del cliente Patadon (empresa del grupo). Relacionado con la customización core de MaterialReceiptPending.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Gradle 8.12.1"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 4,
+        "recommendation": "Evaluar si sigue siendo necesario con la versión actualizada de MaterialReceiptPending. Posible eliminación si el módulo core upstream incorpora las mejoras. [Mixpanel: sin uso confirmado en los últimos 90 días — candidato a eliminar antes de migración.]",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Pedidos de Compra Pendiente de Recibir Patadon"
+        ],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "translations_group",
+        "name": "Grupo de traducciones es_ES (25 módulos)",
+        "function": "25 módulos de traducción al español de módulos Etendo (Financial Extensions, Banking Pool, VAT Regularization, etc.). Siguen automáticamente el destino de sus módulos principales.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Versiones es_ES incluidas en los bundles actualizados",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Eliminar todos. Las versiones actualizadas de los bundles de Etendo incluyen sus propias traducciones al español mantenidas oficialmente.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      }
+    ],
+    "effort_summary": {
+      "update_core_hours": 8,
+      "update_custom_hours": 119,
+      "update_unmaintained_hours": 174,
+      "update_total_hours": 301,
+      "saas_core_hours": 8,
+      "saas_custom_hours": 190,
+      "saas_unmaintained_hours": 102,
+      "saas_total_hours": 300,
+      "elimination_candidates": 13,
+      "effort_saved_eliminating_hours": 108.5
+    },
+    "mixpanel_source_instance": "depique",
+    "mixpanel_date_range": "90 días"
+  },
+  "ui_readiness": {
+    "generated": "2026-04-24",
+    "global_status": "blocked",
+    "summary": {
+      "critica": 7,
+      "alta": 9,
+      "media": 7,
+      "no_aplica": 13
+    },
+    "features": [
+      {
+        "section": "21",
+        "title": "Workspace / Dashboard Widgets — Widgets del escritorio",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "critica",
+        "ad_count": 38,
+        "reason": "38 clases de widget (OBKMO_WIDGET_CLASS) y 11 URLs de widget (OBKMO_WIDGET_URL) definidos. El módulo com.smf.depique.selfservice.management incluye OBKMO_WIDGET_REFERENCE. Los widgets del escritorio permiten dashboards personalizados por rol. Según all-features-analysis.md §21: NOT DONE al 0% — no existe contrato de API React para widgets custom JS. Si Depique usa dashboards de gestión o KPIs en pantalla principal, estos no funcionarán en la nueva UI.",
+        "code_evidence": []
+      },
+      {
+        "section": "18",
+        "title": "Application Forms (AD_FORM) — Formularios de aplicación clásicos",
+        "status": "NOT DONE",
+        "completion_pct": 5,
+        "priority": "critica",
+        "ad_count": 32,
+        "reason": "32 AD_FORM definidos en la instalación de Depique, incluyendo el formulario custom com.smf.depique.module (RequisitionToOrder override). Los Application Forms son interfaces de usuario completas (servlets + HTML) sin equivalente metadata-driven en la nueva UI React. Según all-features-analysis.md §18: NOT DONE al 5%. Incluye Initial Client/Org Setup, MaterialReceiptPending (customizado por Depique), y formularios específicos del módulo de autoservicio. Bloqueador crítico para operaciones que dependen de estos flujos.",
+        "code_evidence": []
+      },
+      {
+        "section": "3b",
+        "title": "Procesos Manual JS (AD_PROCESS UIPATTERN=M) — Procesos con JavaScript legado",
+        "status": "BLOQUEADO",
+        "completion_pct": 25,
+        "priority": "critica",
+        "ad_count": 218,
+        "reason": "218 procesos AD_PROCESS con UIPATTERN='M' (Manual Action) en esta instalación. Estos procesos dependen de namespaces OB.* (OB.CurrentView, OB.MainView, OB.Utilities, OB.OpenClose, OB.OBWPL) que no existen en React. Adicionalmente 39 OBUIAPP_PROCESS con UIPATTERN='M' (incluyendo Open/Close Periods, recálculo de permisos). Según all-features-analysis.md §3.B.2: BLOQUEADO al 25% — decisión arquitectónica pendiente (iframe vs shim vs reimplementación). Afecta flujos críticos: cierre de períodos, gestión de picking/packing, validación de roles.",
+        "code_evidence": []
+      },
+      {
+        "section": "2.B",
+        "title": "Botones hardcoded — DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "priority": "critica",
+        "ad_count": 55,
+        "reason": "55 columnas con nombres de botón hardcoded: DocAction×6, Posted×31, CreateFrom×8, PaymentRule×9, ChangeProjectStatus×1. Cada uno requiere implementación React dedicada. Según all-features-analysis.md §2.B: DocAction funcional al 75% pero labels incorrectos; Posted solo al 30% (sin 3 estados visuales, sin link a accounting entries); CreateFrom al 72% (pendiente validar 6 tipos de documento); ChangeProjectStatus al 0%. Con 31 columnas Posted, el ciclo de contabilización queda bloqueado en la nueva UI.",
+        "code_evidence": []
+      },
+      {
+        "section": "6",
+        "title": "Callouts — Lógica de negocio en servidor al cambiar campos",
+        "status": "PARCIAL",
+        "completion_pct": 60,
+        "priority": "critica",
+        "ad_count": 349,
+        "reason": "349 columnas con callouts asociados (200 callouts distintos) en la instalación completa de Depique. El módulo com.smf.depique.selfservice.management define un callout de descuento en líneas de factura (InvoiceLineDiscountCallOut). Según all-features-analysis.md §6: PARCIAL al 60%. Las brechas clave incluyen: re-evaluación de display logic después de callout, actualización de campos calculados (totales de línea → totales de cabecera), y el manejo de cascada de callouts. Con 349 columnas afectadas, los formularios de pedidos, facturas y albaranes pueden tener comportamientos incorrectos.",
+        "code_evidence": []
+      },
+      {
+        "section": "4",
+        "title": "Display Logic — Bug activo sintaxis @field_name@",
+        "status": "BUG ACTIVO",
+        "completion_pct": 65,
+        "priority": "critica",
+        "ad_count": 2769,
+        "reason": "2.769 campos con display logic definida en este cliente. Bug activo documentado: la sintaxis @field_name@ causa errores JavaScript en cualquier ventana que la use. Con 199 campos usando variables de sesión (@$) y la prevalencia del patrón @field@ en las expresiones de lógica de visibilidad, múltiples ventanas del cliente pueden romperse en la nueva UI. Brecha de all-features-analysis.md §4: BUG ACTIVO al 65% — fix de @field_name@ parser requerido antes de cualquier go-live.",
+        "code_evidence": []
+      },
+      {
+        "section": "8",
+        "title": "Selectores OBUISEL y Out Parameters — Relleno múltiple de campos",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "critica",
+        "ad_count": 215,
+        "reason": "215 selectores OBUISEL definidos. La funcionalidad de Out Parameters (ISOUTPARAMETER='Y') permite que al seleccionar un registro en el selector, se rellenen automáticamente múltiples campos del formulario (ej: seleccionar un producto rellena UOM, precio, categoría de impuesto). Según all-features-analysis.md §8: TO CHECK al 70% con gap crítico en Out Parameters — 'no implementado'. Este patrón es muy común en formularios de líneas de pedido/factura y su ausencia obliga al usuario a rellenar manualmente campos que deberían auto-completarse.",
+        "code_evidence": []
+      },
+      {
+        "section": "2",
+        "title": "Tipos de campo sin implementar — Rich Text, Image, Binary, PAttribute",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "alta",
+        "ad_count": 112,
+        "reason": "112 columnas con tipos de referencia no implementados en React: Binary×44, Image BLOB×20, Image×20, Rich Text×15, PAttribute×33, Assignment×3, Color×2, SelectorAsLink×1, Tree Reference×2. El módulo com.smf.depique.zoho y com.smf.depique.selfservice.management probablemente usan Binary para adjuntos o imágenes de producto. Según all-features-analysis.md §2: NOT DONE al 0% para Rich Text/Image BLOB/Binary/Assignment/Color/Upload File. Estos campos mostrarán valores vacíos o errores en la nueva UI.",
+        "code_evidence": []
+      },
+      {
+        "section": "1.4",
+        "title": "Pick and Execute Windows — Seleccionar y ejecutar sobre filas",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "alta",
+        "ad_count": 58,
+        "reason": "58 ventanas Pick and Execute definidas en la instalación (tipo OBUIAPP_PickAndExecute en AD_WINDOW). Más 119 OBUIAPP_PROCESS de tipo P&E. Según all-features-analysis.md §1.4: PARCIAL al 55%. Brechas: validación de campos inline mandatory antes de Execute, modo single-select (ismultirecord='N'), forwarding de contexto del padre (ej: Invoice ID), comportamiento openDirectTab del response. Impacta a procesos operativos clave de picking, packing y gestión de albaranes.",
+        "code_evidence": []
+      },
+      {
+        "section": "25",
+        "title": "Valores por defecto y campos obligatorios",
+        "status": "PARCIAL",
+        "completion_pct": 60,
+        "priority": "alta",
+        "ad_count": 5718,
+        "reason": "5.718 columnas con DEFAULTVALUE definido y 10.779 columnas con ISMANDATORY='Y'. Los módulos custom de Depique definen defaults complejos (referencias a contexto, expresiones SQL). Según all-features-analysis.md §25: PARCIAL al 60% — aunque field.column.defaultValue está disponible en el JSON de metadata, el UI nunca lo lee en client-side; defaults solo funcionan via round-trip server en NEW mode. Campos obligatorios con validación client-side solo se verifican al guardar, no en tiempo real.",
+        "code_evidence": []
+      },
+      {
+        "section": "23",
+        "title": "Status Bar Fields — Campos en barra de estado del formulario",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "alta",
+        "ad_count": 221,
+        "reason": "221 campos marcados ISSHOWNINSTATUSBAR='Y'. La barra de estado muestra información clave del registro (estado, organización, moneda) sin ocupar espacio del formulario. Estos campos están definidos en módulos estándar y en los módulos custom de Depique. Según all-features-analysis.md §23: TO CHECK al 70%. La implementación existe pero requiere validación de que los campos correctos aparecen en contexto.",
+        "code_evidence": []
+      },
+      {
+        "section": "3",
+        "title": "Process Definitions modernas (OBUIAPP_PROCESS) — PD Action y Standard",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "alta",
+        "ad_count": 554,
+        "reason": "554 parámetros de OBUIAPP_PROCESS definidos distribuidos en 31 procesos Action (A), 119 P&E, 8 Report. Según all-features-analysis.md §3.B.1 y §3.B.3: TO CHECK al 75% y 72% respectivamente. Brechas: default values con referencias al formulario padre (@C_BPartner_ID@), agrupación de parámetros por obuiapp_param_group, display logic en parámetros. Depique usa BaseProcessActionHandler en com.smf.depique.selfservice.management — estos procesos son los más críticos de validar.",
+        "code_evidence": []
+      },
+      {
+        "section": "5",
+        "title": "Comportamientos de Tab — ISREADONLY, filtros HQL, tab display logic",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "alta",
+        "ad_count": 77,
+        "reason": "38 tabs marcados ISREADONLY='Y', 39 tabs con HQLFILTERCLAUSE, 14 con FILTERCLAUSE, y 60 tabs con display logic. Los filtros HQL de tabs son críticos para mostrar solo registros relevantes al contexto (ej: líneas de factura filtradas por factura padre). Según all-features-analysis.md §5: TabBuilder.java no envía hqlFilterClause/orderByClause al UI — el frontend no los consume actualmente. Esto puede causar que tabs muestren datos incorrectos o no filtrados.",
+        "code_evidence": []
+      },
+      {
+        "section": "1.1",
+        "title": "Ventanas Maintain (M) — CRUD de datos maestros",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "alta",
+        "ad_count": 307,
+        "reason": "307 ventanas tipo Maintain (datos maestros) en la instalación. El módulo com.smf.depique.reports añade una ventana de consulta/tarifas adicional. Según all-features-analysis.md §1.1: TO CHECK al 75%. Brechas pendientes: multi-record delete desde grid, Copy Record en tabs hijo (enablecopyfull/enablecopyrelationships), toggle de flag Active sin propagación a hijos. Con 307 ventanas, estas brechas afectan al uso diario de todos los datos maestros.",
+        "code_evidence": []
+      },
+      {
+        "section": "10",
+        "title": "Read-only Logic — Editabilidad condicional de campos",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "alta",
+        "ad_count": 1058,
+        "reason": "1.058 columnas con READONLYLOGIC definida y 6.853 columnas no actualizables (ISUPDATEABLE=N). El módulo com.smf.depique.module añade campos que son solo-lectura en determinados estados. Según all-features-analysis.md §10: TO CHECK al 75%. La implementación de ISUPDATEABLE=N está verificada en código. La read-only logic condicional depende del evaluador de expresiones que tiene el bug de @field_name@ (§4). Con 1.058 columnas afectadas, múltiples campos pueden estar incorrectamente editables.",
+        "code_evidence": []
+      },
+      {
+        "section": "1.2",
+        "title": "Ventanas Transaction (T) — Documentos con ciclo de vida",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "alta",
+        "ad_count": 40,
+        "reason": "40 ventanas Transaction (pedidos, facturas, albaranes, movimientos) en la instalación. Estas ventanas usan DocAction (6 instancias) y Posted (31 instancias) — ambos cubiertos como blockers en §2.B. Según all-features-analysis.md §1.2: TO CHECK al 78%. Brechas adicionales: mecanismo de protección contra edición concurrente (lock optimista via campo 'updated'), read-only de campos/líneas post-completado, y tabs contables con display logic @Posted@='Y'.",
+        "code_evidence": []
+      },
+      {
+        "section": "26",
+        "title": "Filtros y ordenación por defecto de tabs",
+        "status": "PARCIAL",
+        "completion_pct": 30,
+        "priority": "media",
+        "ad_count": 53,
+        "reason": "39 tabs con HQLFILTERCLAUSE y 14 con FILTERCLAUSE definen condiciones de filtrado predeterminadas. Según all-features-analysis.md §26: TabBuilder.java no envía estos filtros al frontend. Tabs que deberían mostrar solo registros del período actual, organización activa o estado específico mostrarán todos los registros. Esto puede causar confusión operativa aunque no bloquea el acceso.",
+        "code_evidence": []
+      },
+      {
+        "section": "29",
+        "title": "Tree Views — Vistas jerárquicas",
+        "status": "PARCIAL",
+        "completion_pct": 40,
+        "priority": "media",
+        "ad_count": 1,
+        "reason": "1 tab con HASTREE='Y' encontrado en los módulos instalados. Según all-features-analysis.md §29: PARCIAL al 40%. Impacto mínimo dado el bajo número de tabs afectados en este cliente.",
+        "code_evidence": []
+      },
+      {
+        "section": "24",
+        "title": "Form Layout System — Distribución de columnas del formulario",
+        "status": "PARCIAL",
+        "completion_pct": 60,
+        "priority": "media",
+        "ad_count": 1520,
+        "reason": "1.520 columnas identificadoras (ISIDENTIFIER='Y') que componen el display name de registros en selectores y cabeceras. No se encontraron STARTROW/STARTNEWLINE en módulos custom. Según all-features-analysis.md §24: PARCIAL al 60%. El layout del formulario puede no respetar la distribución multi-columna de los módulos base.",
+        "code_evidence": []
+      },
+      {
+        "section": "9",
+        "title": "Comportamientos de Grid — Columnas de selección, filtros",
+        "status": "TO CHECK",
+        "completion_pct": 68,
+        "priority": "media",
+        "ad_count": 245,
+        "reason": "245 columnas con ISSELECTIONCOLUMN='Y' (aparecen como filtros rápidos en la fila de filtrado de la grid). Todos los 1.108 tabs tienen UITYPE='STD' (implícito, no hay tabs ED/SR/RO explícitos en módulos custom). Según all-features-analysis.md §9: TO CHECK al 68%. Las columnas de selección son importantes para la usabilidad de grids con muchos datos. Impacto moderado.",
+        "code_evidence": []
+      },
+      {
+        "section": "3a",
+        "title": "Procesos R&P estándar (AD_PROCESS UIPATTERN=S) — Procesos con popup de parámetros",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "ad_count": 179,
+        "reason": "179 procesos AD_PROCESS con UIPATTERN='S' (Standard — popup de parámetros). Adicionalmente 115 ISREPORT='Y', 5 ISJASPER='Y' y 62 ISBACKGROUND='Y'. Según all-features-analysis.md §3.A.1: TO CHECK al 72%. Brechas: mapping de ad_process_para reference types a field types del UI, default values en parámetros con expresiones (@#Date@, @AD_ORG_ID@, SQL). Los 62 procesos background requieren Process Monitor (implementado al 10%).",
+        "code_evidence": []
+      },
+      {
+        "section": "12",
+        "title": "Menú y navegación — 610 entradas, 85 reportes legacy",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "ad_count": 610,
+        "reason": "610 entradas de menú: W×353 (ventanas), P×36 (procesos legacy), R×85 (reportes legacy), X×19 (formularios/externos), OBUIAPP_Process×25. Los 85 reportes tipo R (acceso directo al HTML clásico) no tienen equivalente nativo en React sin iframe. Según all-features-analysis.md §12: TO CHECK al 72%. El árbol de menú base funciona, pero los process/report entries con ACTION=P/R/X pueden no navegar correctamente.",
+        "code_evidence": []
+      },
+      {
+        "section": "1.3",
+        "title": "Ventanas Query (Q) — Consulta y solo lectura",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "ad_count": 8,
+        "reason": "8 ventanas de consulta (Query type) incluyendo la ventana 'Tarifas de Productos' del módulo com.smf.depique.reports. Según all-features-analysis.md §1.3: TO CHECK al 78%. El modo read-only básico está implementado pero la lista exacta de botones ocultos en modo Q no está validada. Impacto acotado: solo lectura, sin riesgo de pérdida de datos.",
+        "code_evidence": []
+      },
+      {
+        "section": "16",
+        "title": "Validación de consistencia final — QA acceptance",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "Checklist de QA — requiere validación manual post-implementación.",
+        "code_evidence": []
+      },
+      {
+        "section": "30",
+        "title": "Agrupación en Grid View",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "2 preferencias globales — sin evidencia de configuración activa en módulos del cliente.",
+        "code_evidence": []
+      },
+      {
+        "section": "33",
+        "title": "View Personalization — Vistas guardadas personalizadas",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "No se encontraron personalizaciones guardadas (OBUIAPP_UIPERSONALIZATION) en AD XML. Sin impacto detectado.",
+        "code_evidence": []
+      },
+      {
+        "section": "34",
+        "title": "Calendar Views — Vistas de calendario",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "No se encontraron referencias a OBCalendar/OBMultiCalendar en los módulos instalados. Sin impacto.",
+        "code_evidence": []
+      },
+      {
+        "section": "19",
+        "title": "Linked Items / KMO — Ítems relacionados",
+        "status": "NOT DONE",
+        "completion_pct": 5,
+        "priority": "no_aplica",
+        "ad_count": 8,
+        "reason": "8 ficheros con referencias KMO/OBKMO encontrados. El widget del módulo selfservice.management (OBKMO_WIDGET_REFERENCE) se evalúa junto con §21. El uso de Linked Items como funcionalidad independiente no está confirmado.",
+        "code_evidence": []
+      },
+      {
+        "section": "32",
+        "title": "Sistema de alertas — Alert Rules",
+        "status": "NOT DONE",
+        "completion_pct": 10,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "No se encontraron AD_ALERTRULE en módulos del cliente. Sin impacto específico.",
+        "code_evidence": []
+      },
+      {
+        "section": "31",
+        "title": "Import System — Importación masiva de datos",
+        "status": "PARCIAL",
+        "completion_pct": 50,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "Infraestructura de core — el cliente usa el módulo IDL custom (com.smf.depique.importproduct) que es un módulo separado evaluado en custom_assessment.",
+        "code_evidence": []
+      },
+      {
+        "section": "27",
+        "title": "Interfaz MDI — Multi-ventana con tabs",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "Comportamiento del shell UI — sin AD XML configurable.",
+        "code_evidence": []
+      },
+      {
+        "section": "28",
+        "title": "Atajos de teclado",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "Preferencias globales de sistema — no hay configuración específica del cliente.",
+        "code_evidence": []
+      },
+      {
+        "section": "22",
+        "title": "Field Groups — Secciones colapsables del formulario",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "No se encontraron campos con AD_FIELDGROUP_ID en módulos instalados (0 instancias). Sin impacto.",
+        "code_evidence": []
+      },
+      {
+        "section": "17",
+        "title": "Botones de toolbar — Herramientas estándar",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "Botones estándar hardcodeados en JS. ENABLECOPYFULL=0 en módulos custom — no hay config específica de cliente.",
+        "code_evidence": []
+      },
+      {
+        "section": "11",
+        "title": "Autenticación y Sesión — JWT, login, autorización",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "Configuración a nivel de servidor (Java, no AD XML). Sin evidencia de customización en el código fuente analizado.",
+        "code_evidence": []
+      },
+      {
+        "section": "15",
+        "title": "Indicadores de carga y feedback visual",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "reason": "Comportamiento puro de UI — sin representación en AD XML. No hay customización específica en los módulos del cliente.",
+        "code_evidence": []
+      }
+    ]
+  }
+}
