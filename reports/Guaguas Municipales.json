@@ -1,6 +1,6 @@
 {
   "client": {
-    "name": "Guaguas",
+    "name": "Guaguas Municipales",
     "hostname": "Samuel-PC"
   },
   "platform": {
@@ -3024,6 +3024,48 @@
         "author": "Etendo Software"
       },
       {
+        "java_package": "com.etendoerp.guaguas.subapp.good.movements",
+        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.good.movements",
+        "name": "Modulo Subapp de Movimiento entre Almacenes",
+        "version": "1.0.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.internalconsumption",
+        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.internalconsumption",
+        "name": "Modulo Subapp de Consumos Internos",
+        "version": "1.0.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.inventory",
+        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.inventory",
+        "name": "Modulo Subapp de Inventarios",
+        "version": "1.0.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.pending.orders",
+        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.pending.orders",
+        "name": "Modulo Subapp de Pedidos Pendientes de Recibir",
+        "version": "1.0.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.product",
+        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.product",
+        "name": "Modulo Subapp de Productos",
+        "version": "1.0.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.template",
+        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.template",
+        "name": "Plantilla Subaplicaciones Guaguas",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
         "java_package": "com.etendoerp.payment.removal.es_es",
         "path": "/opt/guaguas_act/modules/com.etendoerp.payment.removal.es_es",
         "name": "Eliminación de Pagos",
@@ -3059,6 +3101,90 @@
         "author": "GPS"
       },
       {
+        "java_package": "com.qualitic.guaguas.requisitions",
+        "path": "/opt/guaguas_act/modules/com.qualitic.guaguas.requisitions",
+        "name": "Qualitic Guaguas Requisitions Module",
+        "version": "0.1.5",
+        "author": "Qualitic S.L.U."
+      },
+      {
+        "java_package": "com.qualitic.guaguas.requisitions.framework",
+        "path": "/opt/guaguas_act/modules/com.qualitic.guaguas.requisitions.framework",
+        "name": "Qualitic Guaguas Requisitions Package",
+        "version": "0.1.5",
+        "author": "Qualitic S.L.U."
+      },
+      {
+        "java_package": "com.qualitic.guaguas.requisitions.template",
+        "path": "/opt/guaguas_act/modules/com.qualitic.guaguas.requisitions.template",
+        "name": "Qualitic Guaguas Requisitions Template",
+        "version": "0.1.5",
+        "author": "Qualitic S.L.U."
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.etiquetas",
+        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.etiquetas",
+        "name": "Etiquetas de almacén para Guaguas Municipales",
+        "version": "0.0.6",
+        "author": "Qualitic SLU"
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.features",
+        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.features",
+        "name": "Datos Qualitic para Guaguas Municipales",
+        "version": "0.0.1",
+        "author": "Qualitic SLU"
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.formulario",
+        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.formulario",
+        "name": "Formularios Qualitic para Guaguas Municipales",
+        "version": "0.0.3",
+        "author": "Qualitic SLU"
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.informes",
+        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.informes",
+        "name": "Informes de Qualitic para Guaguas Municipales",
+        "version": "0.0.15",
+        "author": "Qualitic SLU"
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.integration",
+        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.integration",
+        "name": "Integración de sistemas para Guaguas Municipales",
+        "version": "0.0.17",
+        "author": "Qualitic SLU"
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.plantilla",
+        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.plantilla",
+        "name": "Plantilla de Qualitic Para Guaguas Municipales",
+        "version": "0.0.23",
+        "author": "Qualitic SLU"
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.sepa.iso20022.extension",
+        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.sepa.iso20022.extension",
+        "name": "Extensión de funcionalidad de remesa SEPA",
+        "version": "0.0.1",
+        "author": "Qualitic SLU"
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.sii",
+        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.sii",
+        "name": "SII customizations for Guaguas Municipales",
+        "version": "0.0.2",
+        "author": "Qualitic SLU"
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.validations",
+        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.validations",
+        "name": "Validaciones personalizadas para GGMM",
+        "version": "0.0.2",
+        "author": "Qualitic SLU"
+      },
+      {
         "java_package": "com.qualitic.openbravo.utilities",
         "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.utilities",
         "name": "Utility classes for a general purpouse",
@@ -3069,6 +3195,13 @@
         "java_package": "com.qualitic.physicalinventory",
         "path": "/opt/guaguas_act/modules/com.qualitic.physicalinventory",
         "name": "Qualitic Physical Inventory",
+        "version": "0.0.1",
+        "author": "Qualitic SLU"
+      },
+      {
+        "java_package": "com.qualitic.physicalinventory.guaguas",
+        "path": "/opt/guaguas_act/modules/com.qualitic.physicalinventory.guaguas",
+        "name": "Qualitic Physical Consumption Guaguas",
         "version": "0.0.1",
         "author": "Qualitic SLU"
       },
@@ -3118,6 +3251,55 @@
         "java_package": "com.smf.gljournal.reverse.es_es",
         "path": "/opt/guaguas_act/modules/com.smf.gljournal.reverse.es_es",
         "name": "Anulación de Asientos Manuales",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.guaguas.additional.reports",
+        "path": "/opt/guaguas_act/modules/com.smf.guaguas.additional.reports",
+        "name": "Reportes adicionales Guaguas",
+        "version": "1.0.0",
+        "author": "mery.anelo @ SMF Cconsulting"
+      },
+      {
+        "java_package": "com.smf.guaguas.invoice.validation",
+        "path": "/opt/guaguas_act/modules/com.smf.guaguas.invoice.validation",
+        "name": "Invoice Validation",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.guaguas.lpa",
+        "path": "/opt/guaguas_act/modules/com.smf.guaguas.lpa",
+        "name": "Modulo de ventas para la Tarjeta LPA Movilidad",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.guaguas.redmine",
+        "path": "/opt/guaguas_act/modules/com.smf.guaguas.redmine",
+        "name": "Redmine Integration",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.guaguas.sii",
+        "path": "/opt/guaguas_act/modules/com.smf.guaguas.sii",
+        "name": "Guaguas SII Trigger Functions Customizations",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.guaguas.template",
+        "path": "/opt/guaguas_act/modules/com.smf.guaguas.template",
+        "name": "Guaguas Template",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.guaguas.webpos.customizations",
+        "path": "/opt/guaguas_act/modules/com.smf.guaguas.webpos.customizations",
+        "name": "Personalizaciones WebPOS en Guaguas",
         "version": "1.0.0",
         "author": null
       },
@@ -3551,234 +3733,6 @@
     ],
     "custom": [
       {
-        "java_package": "com.etendoerp.guaguas.subapp.good.movements",
-        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.good.movements",
-        "name": "Modulo Subapp de Movimiento entre Almacenes",
-        "version": "1.0.0",
-        "author": "Etendo Software",
-        "line_count": 2832,
-        "custom_size": {
-          "key": "medium",
-          "label": "2.000–8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.internalconsumption",
-        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.internalconsumption",
-        "name": "Modulo Subapp de Consumos Internos",
-        "version": "1.0.0",
-        "author": "Etendo Software",
-        "line_count": 6637,
-        "custom_size": {
-          "key": "medium",
-          "label": "2.000–8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.inventory",
-        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.inventory",
-        "name": "Modulo Subapp de Inventarios",
-        "version": "1.0.0",
-        "author": "Etendo Software",
-        "line_count": 4452,
-        "custom_size": {
-          "key": "medium",
-          "label": "2.000–8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.pending.orders",
-        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.pending.orders",
-        "name": "Modulo Subapp de Pedidos Pendientes de Recibir",
-        "version": "1.0.0",
-        "author": "Etendo Software",
-        "line_count": 4748,
-        "custom_size": {
-          "key": "medium",
-          "label": "2.000–8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.product",
-        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.product",
-        "name": "Modulo Subapp de Productos",
-        "version": "1.0.0",
-        "author": "Etendo Software",
-        "line_count": 2478,
-        "custom_size": {
-          "key": "medium",
-          "label": "2.000–8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.template",
-        "path": "/opt/guaguas_act/modules/com.etendoerp.guaguas.subapp.template",
-        "name": "Plantilla Subaplicaciones Guaguas",
-        "version": "1.0.0",
-        "author": null,
-        "line_count": 36,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.guaguas.requisitions",
-        "path": "/opt/guaguas_act/modules/com.qualitic.guaguas.requisitions",
-        "name": "Qualitic Guaguas Requisitions Module",
-        "version": "0.1.5",
-        "author": "Qualitic S.L.U.",
-        "line_count": 148,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.guaguas.requisitions.framework",
-        "path": "/opt/guaguas_act/modules/com.qualitic.guaguas.requisitions.framework",
-        "name": "Qualitic Guaguas Requisitions Package",
-        "version": "0.1.5",
-        "author": "Qualitic S.L.U.",
-        "line_count": 58,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.guaguas.requisitions.template",
-        "path": "/opt/guaguas_act/modules/com.qualitic.guaguas.requisitions.template",
-        "name": "Qualitic Guaguas Requisitions Template",
-        "version": "0.1.5",
-        "author": "Qualitic S.L.U.",
-        "line_count": 251,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.etiquetas",
-        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.etiquetas",
-        "name": "Etiquetas de almacén para Guaguas Municipales",
-        "version": "0.0.6",
-        "author": "Qualitic SLU",
-        "line_count": 1813,
-        "custom_size": {
-          "key": "small",
-          "label": "500–2.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.features",
-        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.features",
-        "name": "Datos Qualitic para Guaguas Municipales",
-        "version": "0.0.1",
-        "author": "Qualitic SLU",
-        "line_count": 6845,
-        "custom_size": {
-          "key": "medium",
-          "label": "2.000–8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.formulario",
-        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.formulario",
-        "name": "Formularios Qualitic para Guaguas Municipales",
-        "version": "0.0.3",
-        "author": "Qualitic SLU",
-        "line_count": 3100,
-        "custom_size": {
-          "key": "medium",
-          "label": "2.000–8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.informes",
-        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.informes",
-        "name": "Informes de Qualitic para Guaguas Municipales",
-        "version": "0.0.15",
-        "author": "Qualitic SLU",
-        "line_count": 29771,
-        "custom_size": {
-          "key": "large",
-          "label": "> 8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.integration",
-        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.integration",
-        "name": "Integración de sistemas para Guaguas Municipales",
-        "version": "0.0.17",
-        "author": "Qualitic SLU",
-        "line_count": 6953,
-        "custom_size": {
-          "key": "medium",
-          "label": "2.000–8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.plantilla",
-        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.plantilla",
-        "name": "Plantilla de Qualitic Para Guaguas Municipales",
-        "version": "0.0.23",
-        "author": "Qualitic SLU",
-        "line_count": 261,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.sepa.iso20022.extension",
-        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.sepa.iso20022.extension",
-        "name": "Extensión de funcionalidad de remesa SEPA",
-        "version": "0.0.1",
-        "author": "Qualitic SLU",
-        "line_count": 171,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.sii",
-        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.sii",
-        "name": "SII customizations for Guaguas Municipales",
-        "version": "0.0.2",
-        "author": "Qualitic SLU",
-        "line_count": 212,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.validations",
-        "path": "/opt/guaguas_act/modules/com.qualitic.openbravo.guaguas.validations",
-        "name": "Validaciones personalizadas para GGMM",
-        "version": "0.0.2",
-        "author": "Qualitic SLU",
-        "line_count": 585,
-        "custom_size": {
-          "key": "small",
-          "label": "500–2.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.qualitic.physicalinventory.guaguas",
-        "path": "/opt/guaguas_act/modules/com.qualitic.physicalinventory.guaguas",
-        "name": "Qualitic Physical Consumption Guaguas",
-        "version": "0.0.1",
-        "author": "Qualitic SLU",
-        "line_count": 51,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
-        }
-      },
-      {
         "java_package": "com.smf.custom.einvoice.sii",
         "path": "/opt/guaguas_act/modules/com.smf.custom.einvoice.sii",
         "name": "custom manage facturae - SII",
@@ -3803,18 +3757,6 @@
         }
       },
       {
-        "java_package": "com.smf.guaguas.additional.reports",
-        "path": "/opt/guaguas_act/modules/com.smf.guaguas.additional.reports",
-        "name": "Reportes adicionales Guaguas",
-        "version": "1.0.0",
-        "author": "mery.anelo @ SMF Cconsulting",
-        "line_count": 771,
-        "custom_size": {
-          "key": "small",
-          "label": "500–2.000 LOC"
-        }
-      },
-      {
         "java_package": "com.smf.guaguas.customization",
         "path": "/opt/guaguas_act/modules/com.smf.guaguas.customization",
         "name": "Customization Guaguas",
@@ -3824,78 +3766,6 @@
         "custom_size": {
           "key": "large",
           "label": "> 8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.smf.guaguas.invoice.validation",
-        "path": "/opt/guaguas_act/modules/com.smf.guaguas.invoice.validation",
-        "name": "Invoice Validation",
-        "version": "1.0.0",
-        "author": null,
-        "line_count": 10397,
-        "custom_size": {
-          "key": "large",
-          "label": "> 8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.smf.guaguas.lpa",
-        "path": "/opt/guaguas_act/modules/com.smf.guaguas.lpa",
-        "name": "Modulo de ventas para la Tarjeta LPA Movilidad",
-        "version": "1.0.0",
-        "author": null,
-        "line_count": 2609,
-        "custom_size": {
-          "key": "medium",
-          "label": "2.000–8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.smf.guaguas.redmine",
-        "path": "/opt/guaguas_act/modules/com.smf.guaguas.redmine",
-        "name": "Redmine Integration",
-        "version": "1.1.0",
-        "author": null,
-        "line_count": 4547,
-        "custom_size": {
-          "key": "medium",
-          "label": "2.000–8.000 LOC"
-        }
-      },
-      {
-        "java_package": "com.smf.guaguas.sii",
-        "path": "/opt/guaguas_act/modules/com.smf.guaguas.sii",
-        "name": "Guaguas SII Trigger Functions Customizations",
-        "version": "1.0.0",
-        "author": null,
-        "line_count": 224,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
-        }
-      },
-      {
-        "java_package": "com.smf.guaguas.template",
-        "path": "/opt/guaguas_act/modules/com.smf.guaguas.template",
-        "name": "Guaguas Template",
-        "version": "1.0.0",
-        "author": "SMF",
-        "line_count": 144,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
-        }
-      },
-      {
-        "java_package": "com.smf.guaguas.webpos.customizations",
-        "path": "/opt/guaguas_act/modules/com.smf.guaguas.webpos.customizations",
-        "name": "Personalizaciones WebPOS en Guaguas",
-        "version": "1.0.0",
-        "author": null,
-        "line_count": 356,
-        "custom_size": {
-          "key": "micro",
-          "label": "< 500 LOC"
         }
       }
     ]
@@ -4437,150 +4307,17 @@
       }
     ]
   },
-  "migration_score": 30,
-  "migratability": "very_hard",
+  "migration_score": 47,
+  "migratability": "hard",
   "score_breakdown": {
     "openbravo_platform": 0,
     "core_divergences": -15.0,
     "core_diff_lines": 10435,
     "local_not_maintained": -20,
     "local_not_maintained_translations": 25,
-    "local_not_maintained_regular": 62,
-    "custom_modules": -35,
+    "local_not_maintained_regular": 88,
+    "custom_modules": -18.0,
     "custom_modules_detail": [
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.good.movements",
-        "line_count": 2832,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.internalconsumption",
-        "line_count": 6637,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.inventory",
-        "line_count": 4452,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.pending.orders",
-        "line_count": 4748,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.product",
-        "line_count": 2478,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.template",
-        "line_count": 36,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
-      },
-      {
-        "java_package": "com.qualitic.guaguas.requisitions",
-        "line_count": 148,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
-      },
-      {
-        "java_package": "com.qualitic.guaguas.requisitions.framework",
-        "line_count": 58,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
-      },
-      {
-        "java_package": "com.qualitic.guaguas.requisitions.template",
-        "line_count": 251,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.etiquetas",
-        "line_count": 1813,
-        "size_tier": "small",
-        "size_label": "500–2.000 LOC",
-        "penalty": -4
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.features",
-        "line_count": 6845,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.formulario",
-        "line_count": 3100,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.informes",
-        "line_count": 29771,
-        "size_tier": "large",
-        "size_label": "> 8.000 LOC",
-        "penalty": -16
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.integration",
-        "line_count": 6953,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.plantilla",
-        "line_count": 261,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.sepa.iso20022.extension",
-        "line_count": 171,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.sii",
-        "line_count": 212,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.validations",
-        "line_count": 585,
-        "size_tier": "small",
-        "size_label": "500–2.000 LOC",
-        "penalty": -4
-      },
-      {
-        "java_package": "com.qualitic.physicalinventory.guaguas",
-        "line_count": 51,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
-      },
       {
         "java_package": "com.smf.custom.einvoice.sii",
         "line_count": 379,
@@ -4596,60 +4333,11 @@
         "penalty": -1
       },
       {
-        "java_package": "com.smf.guaguas.additional.reports",
-        "line_count": 771,
-        "size_tier": "small",
-        "size_label": "500–2.000 LOC",
-        "penalty": -4
-      },
-      {
         "java_package": "com.smf.guaguas.customization",
         "line_count": 15651,
         "size_tier": "large",
         "size_label": "> 8.000 LOC",
         "penalty": -16
-      },
-      {
-        "java_package": "com.smf.guaguas.invoice.validation",
-        "line_count": 10397,
-        "size_tier": "large",
-        "size_label": "> 8.000 LOC",
-        "penalty": -16
-      },
-      {
-        "java_package": "com.smf.guaguas.lpa",
-        "line_count": 2609,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
-      },
-      {
-        "java_package": "com.smf.guaguas.redmine",
-        "line_count": 4547,
-        "size_tier": "medium",
-        "size_label": "2.000–8.000 LOC",
-        "penalty": -9
-      },
-      {
-        "java_package": "com.smf.guaguas.sii",
-        "line_count": 224,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
-      },
-      {
-        "java_package": "com.smf.guaguas.template",
-        "line_count": 144,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
-      },
-      {
-        "java_package": "com.smf.guaguas.webpos.customizations",
-        "line_count": 356,
-        "size_tier": "micro",
-        "size_label": "< 500 LOC",
-        "penalty": -1
       }
     ],
     "local_maintained_divergences": 0,
@@ -4661,1410 +4349,1006 @@
     "generated": "2026-04-24",
     "core_customizations": [
       {
-        "name": "Artefacto de migración automática",
-        "description": "Archivo formalChangesScript.xml generado automáticamente por las herramientas de migración de Etendo/Openbravo. No contiene lógica de negocio.",
-        "files": [
-          "src-db/database/formalChangesScript.xml"
-        ],
+        "file": "src-db/database/formalChangesScript.xml",
         "lines_changed": 9120,
-        "conclusion": "eliminate",
-        "justification": "Artefacto auto-generado por el proceso de migración de base de datos. No aporta valor en core ni como customización propia.",
-        "api_changes_applicable": [],
+        "outcome": "eliminate",
+        "reason": "Auto-generated script by the Openbravo/Etendo WAD build system. Contains no hand-written logic. Always present and always regenerated on build.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "src/org/openbravo/erpCommon/ad_reports/*.html (group: 37 report HTML templates)",
+        "lines_changed": 872,
+        "outcome": "eliminate",
+        "reason": "Classic Openbravo HTML report filter templates. These are WAD-generated view files that render report parameter forms via the classic server-side rendering pipeline. They have no custom logic – the diffs consist entirely of cosmetic layout adjustments and whitespace changes introduced by the build tooling. In 25.4.x the new UI (React) renders report parameters via ProcessDefinitionModal, making these files unused. Group of 37 files from src/org/openbravo/erpCommon/ad_reports/ and one from modules_core/org.openbravo.financial.paymentreport/.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrderCreate.html",
+        "lines_changed": 26,
+        "outcome": "eliminate",
+        "reason": "Classic HTML form for the Requisition-to-Order conversion process. The 20 added lines are a UI layout adjustment matching the Guaguas Requisition custom process window. Not Java logic – purely a classic HTML form that becomes irrelevant in the React UI. All Requisition-to-Order logic is handled server-side.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrder.html",
+        "lines_changed": 8,
+        "outcome": "eliminate",
+        "reason": "Same category as above — classic WAD-generated HTML for the Manage Requisitions window. Small cosmetic diff with no custom logic.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "src/org/openbravo/erpCommon/ad_forms/CallAcctServer.html",
+        "lines_changed": 12,
+        "outcome": "eliminate",
+        "reason": "Classic HTML form for GL Posting by Database Tables. The diff contains only whitespace/layout adjustments – no custom logic. In 25.4.x this form is replaced by the React Process Definition pattern.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "src/org/openbravo/erpCommon/ad_forms/ShowSessionVariables.html",
+        "lines_changed": 12,
+        "outcome": "eliminate",
+        "reason": "Classic HTML admin/debug form. No custom logic in the diff – only whitespace adjustments. Admin-only utility not relevant to client operations.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/hqlinjections/AddPaymentOrderInvoicesTransformer.java",
+        "lines_changed": 9,
+        "outcome": "eliminate",
+        "reason": "This file contains a Guaguas-specific addition to the Payment window invoice grid: lines 139 and 174 inject a subquery to retrieve the translation label for the custom validation status field 'GGVAL_ValidationStatus' — an em_ extension column from the com.smf.guaguas.invoice.validation module. The change adds a SELECT against ADList/ADListTrl/ADReference to display em_ggval_val_status in the Add Payment grid. This is entirely client-specific logic that belongs in the com.smf.guaguas.invoice.validation or com.smf.guaguas.customization custom modules, not in a patched core file. In 25.4.x this column extension should be registered via the HQL extension mechanism without modifying the base class.",
+        "effort_update_hours": 3,
+        "effort_saas_hours": 4
+      },
+      {
+        "file": "src/org/openbravo/erpCommon/info/LocatorMultiple.html",
+        "lines_changed": 19,
+        "outcome": "eliminate",
+        "reason": "Classic HTML picker for multi-locator selection. The diff is a whitespace/layout adjustment – no custom logic. Obsoleted by React UI selectors in 25.4.x.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupHistory.html",
+        "lines_changed": 8,
+        "outcome": "eliminate",
+        "reason": "Classic Audit Trail popup HTML. Whitespace/layout adjustment only – no custom logic.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupDeleted.html",
+        "lines_changed": 4,
+        "outcome": "eliminate",
+        "reason": "Same as AuditTrailPopupHistory – classic popup HTML, layout adjustment only.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "modules_core/org.openbravo.service.json/src/org/openbravo/service/json/JsonUtils.java",
+        "lines_changed": 4,
+        "outcome": "already_upstream",
+        "reason": "The diff adds query timeout imports (SQLTimeoutException, QueryTimeoutException) and extends exception handling logic in the buildCriteria/JSON parsing utilities. Query timeout handling was officially incorporated into Etendo's JSON service layer from 24.3.x onwards. In 25.4.x this is part of the standard codebase – no action needed.",
         "effort_update_hours": 1,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "src-core/src/org/openbravo/base/HttpBaseUtils.java",
+        "lines_changed": 3,
+        "outcome": "eliminate",
+        "reason": "The diff forces the URL scheme to 'https' (line 33: `String scheme = \"https\"` overriding `request.getScheme()`). This was applied to ensure all generated URLs use HTTPS regardless of the servlet request's detected scheme — a common fix in environments behind HTTPS load balancers or reverse proxies. In 25.4.x, the proper fix is a server-side proxy configuration (X-Forwarded-Proto header processing in Tomcat's RemoteIpValve) rather than a core code patch. This should be removed and replaced with proper reverse proxy configuration.",
+        "effort_update_hours": 2,
         "effort_saas_hours": 1
       },
       {
-        "name": "Plantillas HTML de informes y procesos legacy (Classic UI)",
-        "description": "54 ficheros HTML de formularios de parámetros para informes Jasper, procesos y popups de la interfaz clásica de Openbravo/Etendo (ad_reports, ad_process, ad_forms, ad_actionButton, info). Representan modificaciones menores de maquetación o ajustes visuales sobre las plantillas estándar.",
-        "files": [
-          "src/org/openbravo/erpCommon/ad_reports/ReportSalesDimensionalAnalyzeJRFilter.html",
-          "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesJRFilter.html",
-          "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderInvoicedJasper.html",
-          "src/org/openbravo/erpCommon/ad_reports/GeneralAccountingReports.html",
-          "... (50 ficheros más)"
-        ],
-        "lines_changed": 1112,
-        "conclusion": "eliminate",
-        "justification": "La interfaz Classic (WAD) está en desuso en Etendo moderno. Estas plantillas HTML no se reutilizan en la nueva UI React. Si algún informe sigue siendo necesario, debe reimplementarse como OBUIAPP_Report en React.",
-        "api_changes_applicable": [],
+        "file": "src-db/database/model/tables/C_PROJECT.xml",
+        "lines_changed": 8,
+        "outcome": "eliminate",
+        "reason": "The diff shows 4 added/4 removed lines in the C_PROJECT table model. Inspection reveals no custom columns were added – the changes are XML attribute reformatting (NVARCHAR vs VARCHAR for ACCOUNTNO column) introduced by the local build tooling's dbsourcemanager. This is a build artifact with no semantic impact. Will be regenerated correctly on 25.4.x.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "file": "src-db/database/model/triggers/C_ORDER_CHK_RESTRINCTIONS_TRG.xml",
+        "lines_changed": 2,
+        "outcome": "eliminate",
+        "reason": "The diff shows 2 changed lines in the order restrictions trigger. Inspection shows a single line change: `DATEPROMISED` check is commented out (`--OR(COALESCE(...DATEPROMISED...))`). This was a deliberate operational decision to allow editing the promised date on a processed order. This is client-specific business logic that should be implemented as a separate trigger or via the module override mechanism, not as a core patch. In 25.4.x, verify if Etendo standard already allows this via configuration before reimplementing.",
         "effort_update_hours": 2,
         "effort_saas_hours": 2
       },
       {
-        "name": "Filtro de pagos por árbol de organización en 'Añadir Pago'",
-        "description": "Modificación del HQL transformer del popup 'Añadir Pago' para filtrar los documentos pendientes de cobro/pago por el árbol de organizaciones hijas de la organización activa, usando OrganizationStructureProvider.",
-        "files": [
-          "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/hqlinjections/AddPaymentOrderInvoicesTransformer.java"
-        ],
+        "file": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/ad_actionbutton/ImportBankFile.html",
         "lines_changed": 9,
-        "conclusion": "upstream",
-        "justification": "Mejora genérica que evita mezclar documentos de distintas organizaciones en el popup de pago. Aplicable a cualquier instalación multi-organización y sin impacto negativo en instalaciones mono-organización.",
-        "api_changes_applicable": [
-          "Apache Commons Lang 2→3: posible impacto si usa StringUtils"
-        ],
-        "effort_update_hours": 2,
-        "effort_saas_hours": 1
+        "outcome": "eliminate",
+        "reason": "Classic HTML template for the Import Bank File action button. The diff is layout whitespace adjustment – no custom logic. Obsoleted by React UI in 25.4.x.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
       },
       {
-        "name": "Supresión de excepción de seguridad en ventana específica",
-        "description": "Modificación de JsonUtils.convertExceptionToJson para no mostrar el mensaje de error de OBSecurityException cuando el request proviene de la ventana con ID E516CB3C854F4711BAD1C40701B68C65, retornando en su lugar el mensaje genérico 'OBUIAPP_ActionNotAllowed'.",
-        "files": [
-          "modules_core/org.openbravo.service.json/src/org/openbravo/service/json/JsonUtils.java"
-        ],
-        "lines_changed": 4,
-        "conclusion": "eliminate",
-        "justification": "Parche cliente-específico que oculta errores de seguridad para una ventana concreta. El problema de fondo debe resolverse con la configuración correcta de permisos, no suprimiendo la excepción.",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 1
+        "file": "modules_core/org.openbravo.reports.ordersawaitingdelivery/src/org/openbravo/reports/ordersawaitingdelivery/erpCommon/ad_reports/ReportOrderNotShipped.html",
+        "lines_changed": 6,
+        "outcome": "eliminate",
+        "reason": "Classic HTML template for Orders Awaiting Delivery report filter. Layout adjustment only – no custom logic.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
       },
       {
-        "name": "Relajación de unicidad en proyectos por categoría",
-        "description": "Modificación del índice único de C_PROJECT para incluir la columna PROJECTCATEGORY, permitiendo que existan proyectos con el mismo código (VALUE) siempre que pertenezcan a categorías distintas.",
-        "files": [
-          "src-db/database/model/tables/C_PROJECT.xml"
-        ],
-        "lines_changed": 8,
-        "conclusion": "eliminate",
-        "justification": "Cambio de esquema específico del modelo de negocio de Guaguas. La restricción de unicidad original de core es correcta para el 99% de instalaciones; esta relajación no debe propagarse a core.",
-        "api_changes_applicable": [],
-        "effort_update_hours": 2,
-        "effort_saas_hours": 4
-      },
-      {
-        "name": "Forzado de esquema HTTPS en URLs de servidor",
-        "description": "Modificación de HttpBaseUtils.getLocalHostAddress para devolver siempre 'https' como esquema en lugar de leer el esquema real del request HTTP. El propio código incluye el comentario 'This comment is for testing purposes'.",
-        "files": [
-          "src-core/src/org/openbravo/base/HttpBaseUtils.java"
-        ],
-        "lines_changed": 3,
-        "conclusion": "eliminate",
-        "justification": "Workaround de configuración de reverse proxy que no pertenece al código de aplicación. Esta configuración debe hacerse a nivel de servidor web (Apache/Nginx) con la cabecera X-Forwarded-Proto, no en código Java.",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 1
-      },
-      {
-        "name": "Permitir cambiar fecha prometida en pedidos procesados",
-        "description": "Comentado el check de DATEPROMISED en el trigger C_ORDER_CHK_RESTRINCTIONS_TRG, permitiendo modificar la fecha de entrega prometida en pedidos que ya han sido procesados (completados).",
-        "files": [
-          "src-db/database/model/triggers/C_ORDER_CHK_RESTRINCTIONS_TRG.xml"
-        ],
-        "lines_changed": 2,
-        "conclusion": "eliminate",
-        "justification": "Relajación de regla de negocio específica de Guaguas para permitir ajustar fechas de entrega operacionales sin reapertura del pedido. No es una mejora generalizable a core; otros clientes dependen de esta protección.",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 1
+        "file": "src-wad/build/classes/com/etendoerp/sif/general/reference/wad/controls/WADFileBLOB.class",
+        "lines_changed": 0,
+        "outcome": "eliminate",
+        "reason": "Compiled .class artifact tracked in source control. No code change. Should never be committed; excluded from migration.",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
       }
     ],
     "custom_modules": [
       {
-        "java_package": "com.etendoerp.guaguas.subapp.good.movements",
-        "name": "Subapp Movimiento entre Almacenes",
-        "description": "Aplicación móvil React Native para que el personal de almacén registre movimientos de mercancía entre almacenes desde dispositivos móviles, sin necesidad de acceder a la interfaz web completa.",
-        "generalization": "client_specific",
-        "complexity": "major",
-        "api_changes_applicable": [],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 40,
-        "recommendation": "Evaluar migración a la plataforma mobile oficial de Etendo (Etendo Mobile). Si el flujo no existe como bundle estándar, mantener como subapp React Native independiente del core."
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.internalconsumption",
-        "name": "Subapp Consumos Internos",
-        "description": "Aplicación móvil React Native para registrar consumos internos de material en talleres y depots de Guaguas (combustible, repuestos, material de oficina). Incluye plantilla Jasper para impresión.",
-        "generalization": "client_specific",
-        "complexity": "major",
-        "api_changes_applicable": [],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 40,
-        "recommendation": "Mismo enfoque que good.movements. El proceso de consumo interno es muy específico del sector transporte público."
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.inventory",
-        "name": "Subapp Inventario Físico",
-        "description": "Aplicación móvil React Native para el recuento de inventario físico en almacenes mediante dispositivo móvil, sincronizando conteos con el inventario físico de Etendo.",
-        "generalization": "bundle_candidate",
-        "complexity": "major",
-        "api_changes_applicable": [],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 24,
-        "recommendation": "Candidato a bundle genérico de inventario móvil. La funcionalidad es horizontal (cualquier cliente con almacenes). Proponer generalización en Etendo Marketplace como 'Mobile Physical Inventory'."
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.pending.orders",
-        "name": "Subapp Pedidos Pendientes de Recibir",
-        "description": "Aplicación móvil React Native para gestionar la recepción de pedidos de compra pendientes en almacén. Permite al personal de almacén confirmar recepciones desde el móvil.",
-        "generalization": "client_specific",
-        "complexity": "major",
-        "api_changes_applicable": [],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 40,
-        "recommendation": "Evaluar si el flujo de recepción móvil puede cubrirse con las capacidades de Etendo Mobile estándar."
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.product",
-        "name": "Subapp Productos",
-        "description": "Aplicación móvil React Native para consulta y gestión de fichas de productos desde dispositivo móvil (stock, precios, datos maestros).",
-        "generalization": "bundle_candidate",
-        "complexity": "major",
-        "api_changes_applicable": [],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 24,
-        "recommendation": "Funcionalidad horizontal de consulta de productos aplicable a cualquier cliente con almacenes. Candidato a bundle 'Mobile Product Catalog'."
-      },
-      {
-        "java_package": "com.etendoerp.guaguas.subapp.template",
-        "name": "Plantilla Subaplicaciones Guaguas",
-        "description": "Módulo plantilla base para las subaplicaciones React Native de Guaguas. Sin lógica de negocio propia.",
-        "generalization": "client_specific",
-        "complexity": "trivial",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 1,
-        "recommendation": "Eliminar junto con las subapps si se migran a plataforma mobile oficial."
-      },
-      {
-        "java_package": "com.qualitic.guaguas.requisitions",
-        "name": "Módulo de Requisiciones Guaguas",
-        "description": "Gestión de requisiciones de compra con flujo de aprobación específico de Guaguas Municipales (148 LOC). Añade reglas de negocio sobre el proceso estándar de requisiciones de Etendo.",
-        "generalization": "client_specific",
-        "complexity": "minor",
-        "api_changes_applicable": [
-          "Apache Commons Lang 2→3 si usa StringUtils"
-        ],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 8,
-        "recommendation": "Evaluar si el módulo estándar de Gestión de Compras de Etendo cubre el flujo con configuración. Si no, documentar las reglas diferenciales para reimplementación."
-      },
-      {
-        "java_package": "com.qualitic.guaguas.requisitions.framework",
-        "name": "Framework de Requisiciones Guaguas",
-        "description": "Paquete de infraestructura para el módulo de requisiciones (58 LOC). Apenas contiene clases base.",
-        "generalization": "client_specific",
-        "complexity": "trivial",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 1,
-        "recommendation": "Eliminar junto con el módulo principal de requisiciones."
-      },
-      {
-        "java_package": "com.qualitic.guaguas.requisitions.template",
-        "name": "Plantilla de Requisiciones Guaguas",
-        "description": "Plantilla de datos y configuración para el módulo de requisiciones (251 LOC).",
-        "generalization": "client_specific",
-        "complexity": "trivial",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 1,
-        "recommendation": "Eliminar junto con el módulo principal de requisiciones."
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.etiquetas",
-        "name": "Etiquetas de Almacén para Guaguas",
-        "description": "Módulo de impresión de etiquetas de producto y de líneas de albarán de entrada, con plantillas de distintos tamaños (grande/pequeño, 300dpi). Añade campos de etiquetado a M_PRODUCT y genera PDFs con código de barras.",
-        "generalization": "bundle_candidate",
-        "complexity": "minor",
-        "api_changes_applicable": [
-          "Apache POI 3→5: sin impacto directo (usa Jasper/XML, no POI)"
-        ],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 12,
-        "recommendation": "Generalizar como bundle 'Warehouse Label Printing' para Etendo Marketplace. La funcionalidad es horizontal para cualquier cliente con almacén."
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.features",
-        "name": "Datos de Referencia Guaguas (Qualitic)",
-        "description": "Conjuntos de datos de referencia específicos de Guaguas: estados de producto personalizados (M_PRODUCT_STATUS) y rol de 'Administrador de Operativa'.",
-        "generalization": "client_specific",
-        "complexity": "trivial",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 2,
-        "recommendation": "Mantener como dato de configuración; no requiere código Java. Revisar si los estados de producto custom siguen siendo necesarios."
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.formulario",
-        "name": "Formulario Recepción Pendiente de Material",
-        "description": "Formulario legacy (AD_FORM / servlet clásico) que muestra una pantalla de 'Recepción Pendiente de Material' con grid de líneas de albarán, filtros de fecha, y generación de informe Jasper. Añade un campo personalizado a M_INOUTLINE.",
-        "generalization": "client_specific",
-        "complexity": "major",
-        "api_changes_applicable": [
-          "Apache Commons Lang 2→3 (usa StringUtils en xsql/Java)",
-          "Patrón AD_FORM/servlet clásico no disponible en Etendo modern"
-        ],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 20,
-        "recommendation": "El patrón AD_FORM (servlet clásico) no existe en Etendo moderno. Si el proceso sigue siendo necesario, reimplementar como Process Definition con popup React o como ventana estándar."
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.informes",
-        "name": "Informes Personalizados Guaguas (Qualitic)",
-        "description": "Informes Jasper para documentos de pago (cheques/pagarés) y etiquetas adicionales, con librerías de código de barras (ZXing, Barcode4J). Incluye tipos de documento de pago de referencia.",
-        "generalization": "client_specific",
-        "complexity": "major",
-        "api_changes_applicable": [
-          "Apache POI 3→5: si algún informe genera Excel",
-          "Java 17: verificar compatibilidad de ZXing 2.x y Barcode4J 2.x"
-        ],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 8,
-        "recommendation": "Verificar qué informes siguen usándose activamente. Los de pagaré/cheque son relevantes para operativa financiera. Actualizar librerías de código de barras a versiones compatibles con Java 17."
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.integration",
-        "name": "Integración con Alpispa (Tarjeta de Movilidad)",
-        "description": "Integración REST con el sistema externo Alpispa para la gestión de socios comerciales (titulares de tarjeta de transporte). Incluye servicio JSON con validaciones de esquema configurable, tablas propias de log e integración, y sincronización de datos de clientes (alta, baja, actualización).",
-        "generalization": "client_specific",
-        "complexity": "critical",
-        "api_changes_applicable": [
-          "Apache Commons Lang 2→3: migración de StringUtils (uso probable en validaciones)",
-          "Apache Commons Collections 3→4: namespace change si usa colecciones",
-          "Hibernate API changes (OBCriteria puede deprecarse en versiones futuras)"
-        ],
-        "effort_update_hours": 12,
-        "effort_saas_hours": 4,
-        "recommendation": "Integración crítica de negocio (gestión de clientes de transporte público). Verificar con Guaguas si Alpispa sigue activo y si la integración es bidireccional. En SaaS, evaluar migración a webhooks/API REST moderna."
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.plantilla",
-        "name": "Plantilla Qualitic para Guaguas",
-        "description": "Módulo plantilla base de Qualitic (sin lógica de negocio propia).",
-        "generalization": "client_specific",
-        "complexity": "trivial",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 1,
-        "recommendation": "Eliminar junto con el resto de módulos Qualitic o mantener como infraestructura."
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.sepa.iso20022.extension",
-        "name": "Extensión SEPA ISO 20022 para Guaguas",
-        "description": "Hook que extiende la generación de remesas SEPA (pain.001.001.03) para añadir los campos opcionales PmtInf/CtrlSum (suma de control por bloque de pago) y PmtInf/NbOfTxs (número de transacciones por bloque), requeridos por el banco de Guaguas.",
-        "generalization": "bundle_candidate",
-        "complexity": "minor",
-        "api_changes_applicable": [
-          "Verificar compatibilidad del módulo org.openbravo.sepa.iso20022 con Etendo 25.4.x"
-        ],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 8,
-        "recommendation": "Generalizar como extensión configurable del bundle SEPA de Etendo. Muchos bancos españoles exigen estos campos; la extensión tiene valor horizontal."
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.sii",
-        "name": "Personalización SII Retail para Guaguas (Qualitic)",
-        "description": "Hook que completa la descripción SII de facturas de punto de venta (WebPOS) según el tipo de factura (F2 para ventas individuales, F4 para ventas agrupadas), extendiendo el SIIFinishInvoiceHook estándar del módulo org.openbravo.module.sii.retail.",
-        "generalization": "client_specific",
-        "complexity": "minor",
-        "api_changes_applicable": [
-          "Verificar API de SIIFinishInvoiceHook en versión actualizada de org.openbravo.module.sii.retail"
-        ],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 4,
-        "recommendation": "Evaluar si org.openbravo.module.sii.retail tiene reemplazo oficial en Etendo. Si WebPOS se mantiene, adaptar el hook a la nueva API. Si se abandona WebPOS, este módulo queda obsoleto."
-      },
-      {
-        "java_package": "com.qualitic.openbravo.guaguas.validations",
-        "name": "Validaciones Personalizadas para Guaguas",
-        "description": "Event handler para BusinessPartner que valida el formato del NIF español usando un validador propio (NIFValidator) al crear o actualizar socios comerciales. También incluye un event handler para facturas de compra.",
-        "generalization": "bundle_candidate",
-        "complexity": "minor",
-        "api_changes_applicable": [
-          "Apache Commons Lang 2→3: probable impacto en NIFValidator si usa StringUtils"
-        ],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 8,
-        "recommendation": "Generalizar como bundle 'Spanish Tax ID Validator' para cualquier cliente español. Verificar si Etendo Financial Extensions incluye ya validación de NIF en versiones recientes."
-      },
-      {
-        "java_package": "com.qualitic.physicalinventory.guaguas",
-        "name": "Inventario Físico Guaguas (config)",
-        "description": "Módulo de configuración que declara la dependencia de Guaguas sobre com.qualitic.physicalinventory. Sin lógica de negocio propia.",
-        "generalization": "client_specific",
-        "complexity": "trivial",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 1,
-        "recommendation": "Dependiente del módulo com.qualitic.physicalinventory (sin mantenimiento). Ver recomendación de ese módulo."
+        "java_package": "com.smf.guaguas.customization",
+        "name": "Customization Guaguas",
+        "path": "/opt/guaguas_act/modules/com.smf.guaguas.customization",
+        "loc": 15651,
+        "description": "Core customization module for Guaguas Municipales. Contains multiple business components: (1) Contract management extensions — TypeContract callout generates auto-numbered identifiers using prefix+sequence from contract type; DeleteContract event observer enforces role-based permission check before deleting project/contract records; PrintContract handler generates PDF via Jasper. (2) Warehouse movement callouts — MovementQty initializes locator, UOM, attribute fields when a product is selected in a movement line; OperativeQuantityToBaseQuantity converts alternate UOM quantities to base UOM across 10 different document windows. (3) Custom database functions registered via CDI — smfgcus_int_consumption_post and smfgcus_isincluded_category. (4) Custom report ReportWarehousePartnerJR. (5) Modified core tables: AD_ROLE, AD_USER, M_TRANSACTION, C_PROJECT, M_PRODUCT, C_INVOICELINE, C_INVOICE, C_ORDER, FIN_PAYMENT, FIN_PAYMENT_SCHEDULEDETAIL, M_INTERNAL_CONSUMPTION, FACT_ACCT, A_ASSET, OBCNTR_CONTRACT_TYPE. (6) Database triggers for agreed price validation and date operations. Company branding assets (logos).",
+        "generalization_potential": "low",
+        "generalization_reason": "The contract management extensions (TypeContract, DeleteContract, PrintContract) are specific to Guaguas's internal service contract workflow and depend on custom fields in OBCNTR_CONTRACT_TYPE. The UOM callouts are generic enough that they could become part of Etendo's base UOM management, but the exact implementation duplicates logic already available in UOMUtil. The warehouse movement callout overlaps significantly with built-in product selection callouts in the new Etendo versions.",
+        "complexity": "high",
+        "migration_outcome": "keep_as_custom",
+        "migration_notes": "Migrate as a standalone module. AddPaymentOrderInvoicesTransformer injection (the GGVAL status column) must be moved here from the core patch. The deprecated SimpleCallout API used by MovementQty and TypeContract must be refactored to the CDI EventHandler/Callout pattern. Apache Log4j import in PrintContract uses the deprecated org.apache.log4j.Logger — must update to LogManager (breaking change in 25.1.x).",
+        "effort_update_hours": 20,
+        "effort_saas_hours": 12
       },
       {
         "java_package": "com.smf.custom.einvoice.sii",
-        "name": "Módulo SII Factura Electrónica (SMF)",
-        "description": "Extensión del proceso de contabilización y reactivación de facturas para el SII (AEAT). Implementa dos funciones PL/pgSQL: EISII_C_INVOICE_POST_EP (trigger tras contabilizar) y EISII_REACTIVATE_INV (reactivación con limpieza SII). Añade columnas a C_INVOICE.",
-        "generalization": "client_specific",
-        "complexity": "major",
-        "api_changes_applicable": [
-          "PostgreSQL: verificar compatibilidad de funciones PL/pgSQL con versión objetivo",
-          "Confirmar coexistencia con módulos SII de Qualitic (triggers duplicados posibles)"
-        ],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 4,
-        "recommendation": "Verificar posible conflicto con SIIGUAG_INVOICE_TRG de com.smf.guaguas.sii. Ambos módulos tocan C_INVOICE para SII; consolidar en uno. Evaluar cobertura por Etendo Financial Extensions SII."
+        "name": "custom manage facturae - SII",
+        "path": "/opt/guaguas_act/modules/com.smf.custom.einvoice.sii",
+        "loc": 379,
+        "description": "SII (Suministro Inmediato de Información) customization for Guaguas Municipales. Adds an EM_EISII_AUTOREACTIVATE column to C_INVOICE to allow auto-reactivation of invoices that had SII errors. Contains a stored procedure EISII_C_INVOICE_POST_EP that hooks into invoice completion to check and set reactivation flags based on the EISII_CanReactivate preference. Also includes EISII_REACTIVATE_INV function. Extends the base com.qualitic.openbravo.guaguas.sii SII module.",
+        "generalization_potential": "low",
+        "generalization_reason": "Entirely specific to Guaguas's SII workflow and the AEAT SII module already present (aeatsii). The auto-reactivate flag is a workaround for a specific operational issue at Guaguas (needing to re-send SII invoices after correction without manual reactivation).",
+        "complexity": "low",
+        "migration_outcome": "keep_as_custom",
+        "migration_notes": "Module is functional and small. Main risk: the base com.smf.ticketbai and AEAT SII modules it depends on are significantly updated (com.smf.ticketbai 1.3.1 → 2.10.0). Verify the em_aeatsii_* field references and the AEATSII_CONFIG table structure are still valid in the target version.",
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3
       },
       {
         "java_package": "com.smf.custom.einvoice.sii.template",
-        "name": "Plantilla SII Factura Electrónica (SMF)",
-        "description": "Módulo plantilla base para com.smf.custom.einvoice.sii.",
-        "generalization": "client_specific",
+        "name": "template einvoice -SII",
+        "path": "/opt/guaguas_act/modules/com.smf.custom.einvoice.sii.template",
+        "loc": 52,
+        "description": "Template module (configuration data only) for the SII e-invoice customization. Contains only AD_MODULE metadata and configScript.xml — no Java code.",
+        "generalization_potential": "none",
+        "generalization_reason": "Pure template/data module with no logic.",
         "complexity": "trivial",
-        "api_changes_applicable": [],
+        "migration_outcome": "keep_as_custom",
+        "migration_notes": "Update module version dependency to match com.smf.custom.einvoice.sii new version. No code changes required.",
         "effort_update_hours": 1,
-        "effort_saas_hours": 1,
-        "recommendation": "Eliminar junto con el módulo principal."
-      },
-      {
-        "java_package": "com.smf.guaguas.additional.reports",
-        "name": "Reportes Adicionales Guaguas (SMF)",
-        "description": "Informe Jasper adicional: listado de albaranes de proveedor no facturados (listAlbaranProvNoFactura.jrxml), accesible desde el menú de Etendo.",
-        "generalization": "client_specific",
-        "complexity": "minor",
-        "api_changes_applicable": [],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 4,
-        "recommendation": "Mantener si el informe sigue siendo necesario operativamente. Verificar si el estándar de Etendo incluye equivalente en Financial Extensions."
-      },
-      {
-        "java_package": "com.smf.guaguas.customization",
-        "name": "Módulo Principal de Customización Guaguas (SMF)",
-        "description": "Módulo central de customizaciones de SMF para Guaguas: incluye ventanas personalizadas, tabs adicionales, process definitions, campos y columnas propias, referencias, textos de interfaz, y entradas auxiliares. Principal contenedor de la personalización UI/UX de Guaguas.",
-        "generalization": "client_specific",
-        "complexity": "major",
-        "api_changes_applicable": [
-          "Apache Commons Lang 2→3 si contiene código Java",
-          "Verificar compatibilidad de Process Definitions con Etendo 25.4.x AD API"
-        ],
-        "effort_update_hours": 12,
-        "effort_saas_hours": 12,
-        "recommendation": "Auditar qué ventanas/procesos de este módulo siguen usándose (con datos de Mixpanel). Eliminar lo que esté obsoleto antes de actualizar."
-      },
-      {
-        "java_package": "com.smf.guaguas.invoice.validation",
-        "name": "Validación de Facturas Guaguas",
-        "description": "Process Definition para validación de facturas con tabla propia de reglas de validación y campos adicionales, ejecutable desde la ventana de factura.",
-        "generalization": "client_specific",
-        "complexity": "minor",
-        "api_changes_applicable": [],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 4,
-        "recommendation": "Documentar qué reglas de validación implementa y si Etendo Financial Extensions cubre equivalentes en versiones recientes."
-      },
-      {
-        "java_package": "com.smf.guaguas.lpa",
-        "name": "Integración Tarjeta LPA Movilidad",
-        "description": "Módulo de integración con el sistema de tarjeta de transporte LPA Movilidad (Guaguas es operador de transporte público de Gran Canaria). Expone un servicio REST para consultar y crear pedidos de venta vinculados a titulares de tarjeta, con ventana de administración y documentación Swagger.",
-        "generalization": "client_specific",
-        "complexity": "major",
-        "api_changes_applicable": [
-          "Apache Commons Lang 2→3: uso de StringUtils",
-          "Secure Web Services API: verificar com.smf.securewebservices compatibilidad",
-          "WebService API: verificar org.openbravo.service.web.WebService en 25.4.x"
-        ],
-        "effort_update_hours": 12,
-        "effort_saas_hours": 4,
-        "recommendation": "Integración crítica del negocio de transporte público. Verificar si LPA Movilidad tiene API REST moderna. Evaluar migración a integración REST estándar con autenticación OAuth2."
-      },
-      {
-        "java_package": "com.smf.guaguas.redmine",
-        "name": "Integración con Redmine",
-        "description": "Módulo de integración con el sistema de gestión de incidencias Redmine usando OkHttp (Kotlin/JVM). Permite crear y actualizar tickets de Redmine directamente desde Etendo mediante un Process Definition.",
-        "generalization": "client_specific",
-        "complexity": "minor",
-        "api_changes_applicable": [
-          "Java 17: verificar compatibilidad de kotlin-stdlib 1.3.50 y okhttp 4.2.1 con Java 17",
-          "OkHttp 4.x → considerar upgrade a 4.12.x para Java 17 soporte completo"
-        ],
-        "effort_update_hours": 6,
-        "effort_saas_hours": 6,
-        "recommendation": "Verificar si Redmine sigue siendo la herramienta de gestión de incidencias de Guaguas. Si no, este módulo es candidato a eliminación."
-      },
-      {
-        "java_package": "com.smf.guaguas.sii",
-        "name": "Trigger SII para Facturas Guaguas",
-        "description": "Trigger PostgreSQL (SIIGUAG_INVOICE_TRG) que auto-completa campos SII en C_INVOICE al crear/actualizar facturas: copia descripción SII y fecha de operación del pedido de venta relacionado, y gestiona la fecha de registro contable según configuración.",
-        "generalization": "client_specific",
-        "complexity": "minor",
-        "api_changes_applicable": [
-          "Verificar compatibilidad del trigger con PostgreSQL versión objetivo"
-        ],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 4,
-        "recommendation": "Consolidar con com.smf.custom.einvoice.sii para evitar dos módulos tocando C_INVOICE para SII. Verificar que no haya conflicto con EISII_C_INVOICE_POST_EP."
-      },
-      {
-        "java_package": "com.smf.guaguas.template",
-        "name": "Plantilla SMF para Guaguas",
-        "description": "Módulo plantilla base de SMF para Guaguas (sin lógica de negocio propia).",
-        "generalization": "client_specific",
-        "complexity": "trivial",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 1,
-        "recommendation": "Mantener como infraestructura si otros módulos SMF dependen de él."
-      },
-      {
-        "java_package": "com.smf.guaguas.webpos.customizations",
-        "name": "Personalizaciones WebPOS para Guaguas",
-        "description": "Personalización de la impresión del ticket de punto de venta WebPOS: plantilla XML de recibo con el nombre de usuario del dependiente, y componente JavaScript de extensión del POS.",
-        "generalization": "client_specific",
-        "complexity": "minor",
-        "api_changes_applicable": [
-          "Verificar API de plantillas de impresión de WebPOS en Etendo 25.4.x"
-        ],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 4,
-        "recommendation": "Dependiente del stack WebPOS (org.openbravo.retail.posterminal). Si WebPOS se reemplaza por una solución más moderna, este módulo queda obsoleto."
+        "effort_saas_hours": 0
       }
     ],
     "unmaintained_modules": [
       {
-        "java_package": "translations_es_es_group",
-        "name": "Paquetes de traducción al español (25 módulos)",
-        "function": "Traducciones al español de módulos de Etendo/Openbravo: Financial Extensions, SEPA, Retail, Advanced modules, etc. Siguen el ciclo de vida de sus módulos principales.",
-        "risk": "low",
-        "has_official_replacement": true,
-        "official_replacement_name": "Incluidas en los bundles oficiales de Etendo en versiones recientes",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
-        "effort_update_hours": 0,
-        "effort_saas_hours": 0,
-        "recommendation": "No requieren mantenimiento independiente. Eliminar si el bundle principal tiene traducción integrada en Etendo 25.4.x."
-      },
-      {
-        "java_package": "org.openbravo.retail.posterminal",
-        "name": "Web POS (Terminal)",
-        "function": "Módulo principal del terminal WebPOS de Openbravo/Etendo. Guaguas lo usa para ventas en puntos de atención al cliente de transporte público (tarjetas, billetes).",
+        "java_package": "com.qualitic.guaguas.requisitions",
+        "name": "Qualitic Guaguas Requisitions Module",
+        "author": "Qualitic",
         "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [
-          "Openbravo WebPOS es tecnología legacy; Etendo está desarrollando un nuevo POS"
-        ],
-        "effort_update_hours": 40,
-        "effort_saas_hours": 20,
-        "recommendation": "Alto riesgo: WebPOS de Openbravo es código sin mantenimiento activo de Etendo. Evaluar si el POS de Guaguas puede migrarse a solución POS nativa de Etendo o a una solución de terceros. Este es el mayor bloqueador de la hoja de ruta."
-      },
-      {
-        "java_package": "org.openbravo.retail.pack",
-        "name": "Openbravo for Retail (bundle principal)",
-        "function": "Bundle principal de retail de Openbravo que incluye la infraestructura del WebPOS, gestión de terminales, configuración de tiendas y cuentas financieras del POS.",
-        "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 20,
-        "effort_saas_hours": 10,
-        "recommendation": "Mismo contexto que org.openbravo.retail.posterminal. Tratar como bloque conjunto."
-      },
-      {
-        "java_package": "org.openbravo.retail.discounts",
-        "name": "Descuentos y Promociones para Retail",
-        "function": "Módulo de reglas de descuento y promociones para WebPOS.",
-        "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
+        "risk_reason": "Client-specific requisition workflow with no public maintainer. No Java source found — likely pure AD configuration module. Depends on Qualitic framework modules. Requires validation that base requisition functionality in 25.4.x covers the workflow.",
+        "replacement": "Etendo base Manage Requisitions window covers standard requisition flow. Custom workflow steps need manual assessment.",
         "effort_update_hours": 8,
-        "effort_saas_hours": 8,
-        "recommendation": "Dependiente de la decisión sobre WebPOS."
+        "effort_saas_hours": 12
       },
       {
-        "java_package": "org.openbravo.retail.returns",
-        "name": "Devoluciones desde Ticket Original (Retail)",
-        "function": "Gestión de devoluciones en WebPOS referenciando el ticket original.",
+        "java_package": "com.qualitic.guaguas.requisitions.framework",
+        "name": "Qualitic Guaguas Requisitions Package",
+        "author": "Qualitic",
         "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 8,
-        "recommendation": "Dependiente de la decisión sobre WebPOS."
+        "risk_reason": "Framework/infrastructure module for the Qualitic requisitions custom workflow. No maintainer. Needs manual assessment of whether Etendo 25.4.x standard purchasing module covers this.",
+        "replacement": "Etendo base purchasing module.",
+        "effort_update_hours": 5,
+        "effort_saas_hours": 8
       },
       {
-        "java_package": "org.openbravo.retail.config",
-        "name": "Retail Configuration",
-        "function": "Configuración de tiendas, terminales y cuentas financieras del POS.",
-        "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 8,
-        "recommendation": "Dependiente de la decisión sobre WebPOS."
-      },
-      {
-        "java_package": "org.openbravo.module.sii.retail",
-        "name": "SII AEAT para Retail",
-        "function": "Integración del Suministro Inmediato de Información (SII) de la AEAT para facturas generadas por WebPOS. Obligatorio para Guaguas como entidad con volumen de facturación elevado.",
-        "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [
-          "Verificar cambios de la AEAT en formato SII para 2025-2026"
-        ],
-        "effort_update_hours": 20,
-        "effort_saas_hours": 8,
-        "recommendation": "Módulo regulatorio crítico. Sin reemplazo oficial de Etendo para el caso Retail-SII. Evaluar si los módulos custom de SII (com.smf.guaguas.sii y com.qualitic.openbravo.guaguas.sii) pueden cubrir este caso."
-      },
-      {
-        "java_package": "org.openbravo.module.facturae",
-        "name": "API Facturae",
-        "function": "Infraestructura para generación de facturas electrónicas en formato Facturae XML (estándar español para facturación electrónica B2G y B2B). Guaguas como empresa de transporte público está obligada a usar Facturae para facturación a organismos públicos.",
-        "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "bundle_candidate",
-        "api_changes_applicable": [
-          "Verificar cambios en el estándar Facturae (actualmente v3.2.x)"
-        ],
-        "effort_update_hours": 20,
-        "effort_saas_hours": 8,
-        "recommendation": "Módulo regulatorio crítico sin reemplazo directo en Etendo. La obligación de factura electrónica B2G en España hace este módulo esencial. Considerar migración a com.smf.face (FACe) como canal de envío moderno."
-      },
-      {
-        "java_package": "org.openbravo.module.facturae31",
-        "name": "Facturae 3.1",
-        "function": "Soporte del formato Facturae versión 3.1 (versión antigua, en desuso).",
+        "java_package": "com.qualitic.guaguas.requisitions.template",
+        "name": "Qualitic Guaguas Requisitions Template",
+        "author": "Qualitic",
         "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "org.openbravo.module.facturae32 (Facturae 3.2)",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
+        "risk_reason": "Template/configuration data for the Qualitic requisitions module. Pure AD data, no Java. Risk is indirect — depends on framework above.",
+        "replacement": "Re-create as Etendo standard configuration if framework is retired.",
         "effort_update_hours": 2,
-        "effort_saas_hours": 2,
-        "recommendation": "Eliminar si solo se usa Facturae 3.2. Verificar con Guaguas qué versión exigen sus clientes/administraciones."
+        "effort_saas_hours": 3
       },
       {
-        "java_package": "org.openbravo.module.facturae32",
-        "name": "Facturae 3.2",
-        "function": "Soporte del formato Facturae versión 3.2 (versión actual del estándar español de factura electrónica).",
-        "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "bundle_candidate",
-        "api_changes_applicable": [],
-        "effort_update_hours": 16,
-        "effort_saas_hours": 8,
-        "recommendation": "Mantener y actualizar. Facturae 3.2 es obligatorio para B2G en España."
+        "java_package": "com.qualitic.openbravo.guaguas.etiquetas",
+        "name": "Etiquetas de almacén para Guaguas Municipales",
+        "author": "Qualitic",
+        "risk": "medium",
+        "risk_reason": "Warehouse label printing module specific to Guaguas. No maintainer. Depends on Qualitic utility and printing infrastructure modules. Risk is moderate since label printing is a standalone capability.",
+        "replacement": "cat.practics.printlabels (also unmaintained) or custom Jasper report.",
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6
       },
       {
-        "java_package": "org.openbravo.module.einvoice",
-        "name": "Electronic Invoice (Openbravo)",
-        "function": "Infraestructura de factura electrónica de Openbravo, base de la que dependen los módulos Facturae.",
+        "java_package": "com.qualitic.openbravo.guaguas.features",
+        "name": "Datos Qualitic para Guaguas Municipales",
+        "author": "Qualitic",
+        "risk": "medium",
+        "risk_reason": "Configuration data module for Qualitic customizations. Pure AD data. Needs review of whether the data still applies in 25.4.x.",
+        "replacement": "Migrate reference data to Guaguas's own module or Etendo standard.",
+        "effort_update_hours": 3,
+        "effort_saas_hours": 4
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.formulario",
+        "name": "Formularios Qualitic para Guaguas Municipales",
+        "author": "Qualitic",
         "risk": "high",
-        "has_official_replacement": true,
-        "official_replacement_name": "Etendo Financial Extensions (einvoice infrastructure)",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
+        "risk_reason": "Classic AD Forms (ad_form) custom implementations for Guaguas. In 25.4.x classic ad_form HTML forms are a major migration risk as the React UI replaces them. Depends on Qualitic framework.",
+        "replacement": "Reimplement as Process Definitions (PD Action or PD Standard) in the new UI.",
         "effort_update_hours": 12,
-        "effort_saas_hours": 6,
-        "recommendation": "Verificar si Etendo Financial Extensions reemplaza esta infraestructura manteniendo compatibilidad con los módulos Facturae dependientes."
+        "effort_saas_hours": 20
       },
       {
-        "java_package": "org.openbravo.sepa.iso20022",
-        "name": "SEPA Framework ISO 20022",
-        "function": "Framework base para generación de remesas SEPA (XML pain.001, pain.008). Usado por Guaguas para pagos a proveedores y cobros domiciliados.",
+        "java_package": "com.qualitic.openbravo.guaguas.informes",
+        "name": "Informes de Qualitic para Guaguas Municipales",
+        "author": "Qualitic",
+        "risk": "medium",
+        "risk_reason": "Qualitic reports module with 2 OBUIAPP_PROCESS entries (Jasper reports). These use the modern Process Definition pattern (OBUIAPP_Report) which is supported in 25.4.x. Risk is in the Jasper report templates themselves which may use deprecated API.",
+        "replacement": "Keep, update JasperReports API if needed (6.0.0 → 6.17.0 in 25.1.x).",
+        "effort_update_hours": 3,
+        "effort_saas_hours": 4
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.integration",
+        "name": "Integración de sistemas para Guaguas Municipales",
+        "author": "Qualitic",
         "risk": "high",
-        "has_official_replacement": true,
-        "official_replacement_name": "Etendo Financial Extensions (SEPA bundle)",
-        "generalization": "redundant",
-        "api_changes_applicable": [
-          "Verificar que Etendo Financial Extensions SEPA mantiene la interfaz de hooks utilizada por com.qualitic.openbravo.guaguas.sepa.iso20022.extension"
-        ],
+        "risk_reason": "System integration module for Guaguas. The scope and external dependencies are unknown without deeper code inspection, but integration modules typically depend on external APIs, XML parsing libraries, and web service frameworks that may change between versions. No maintainer.",
+        "replacement": "Reassess integration endpoints; consider migrating to EtendoRX REST services.",
+        "effort_update_hours": 10,
+        "effort_saas_hours": 15
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.plantilla",
+        "name": "Plantilla de Qualitic Para Guaguas Municipales",
+        "author": "Qualitic",
+        "risk": "low",
+        "risk_reason": "Template module (configuration data). No Java logic. Likely just AD module registration.",
+        "replacement": "Keep, update module version.",
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.sepa.iso20022.extension",
+        "name": "Extensión de funcionalidad de remesa SEPA",
+        "author": "Qualitic",
+        "risk": "medium",
+        "risk_reason": "Extends SEPA ISO 20022 remittance functionality. Depends on org.openbravo.sepa.iso20022 (unmaintained). SEPA standard itself has not changed but the underlying module dependencies may have API changes.",
+        "replacement": "Evaluate if Etendo standard SEPA module in 25.4.x covers the needed extensions.",
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6
+      },
+      {
+        "java_package": "com.qualitic.openbravo.guaguas.sii",
+        "name": "SII customizations for Guaguas Municipales",
+        "author": "Qualitic",
+        "risk": "high",
+        "risk_reason": "SII (Suministro Inmediato de Información) customizations. SII module itself (com.smf.ticketbai) has had a major version jump (1.3.1 → 2.10.0) with significant API changes. The Qualitic SII extension will very likely have broken dependencies.",
+        "replacement": "Reassess against new com.smf.ticketbai 2.x API. May require partial rewrite.",
         "effort_update_hours": 12,
-        "effort_saas_hours": 6,
-        "recommendation": "Migrar a Etendo Financial Extensions SEPA bundle. Verificar compatibilidad del hook personalizado de Guaguas."
+        "effort_saas_hours": 16
       },
       {
-        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
-        "name": "SEPA Credit Transfer Customer-to-Bank",
-        "function": "Generación del fichero pain.001 de transferencia SEPA para pagos a proveedores.",
-        "risk": "high",
-        "has_official_replacement": true,
-        "official_replacement_name": "Etendo Financial Extensions (SEPA Credit Transfer)",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 4,
-        "recommendation": "Migrar a Etendo Financial Extensions. Verificar cobertura del formato pain.001.001.03 con los campos adicionales de Guaguas."
-      },
-      {
-        "java_package": "com.mysuite.factelectr.es.module",
-        "name": "Facturación Electrónica España (MySuite)",
-        "function": "Módulo de factura electrónica para España de MySuite Services. Proporciona generación de XML de factura electrónica (posiblemente Facturae o similar). No mantenido por Etendo ni por el fabricante activo.",
-        "risk": "high",
-        "has_official_replacement": true,
-        "official_replacement_name": "org.openbravo.module.facturae32 + com.smf.face",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
-        "effort_update_hours": 16,
-        "effort_saas_hours": 4,
-        "recommendation": "Sustituir por módulos Facturae + FACe que ya están instalados. Verificar si MySuite aún opera y si hay dependencias cruzadas con com.smf.custom.einvoice.sii."
-      },
-      {
-        "java_package": "com.qualitic.physicalinventory",
-        "name": "Inventario Físico (Qualitic)",
-        "function": "Módulo de inventario físico de Qualitic SLU del que dependen com.qualitic.physicalinventory.guaguas y la subapp de inventario. Sin mantenimiento activo del fabricante.",
-        "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "bundle_candidate",
-        "api_changes_applicable": [
-          "Apache Commons Lang 2→3 si usa StringUtils"
-        ],
-        "effort_update_hours": 20,
-        "effort_saas_hours": 8,
-        "recommendation": "Sin reemplazo directo en Etendo. Etendo Warehouse Extensions puede cubrir parte de la funcionalidad. Si el proceso de inventario físico es crítico, evaluar fork y mantenimiento propio o migración a proceso nativo de Etendo."
+        "java_package": "com.qualitic.openbravo.guaguas.validations",
+        "name": "Validaciones personalizadas para GGMM",
+        "author": "Qualitic",
+        "risk": "medium",
+        "risk_reason": "Custom validation rules for Guaguas. Likely EntityPersistenceEventObserver or similar. Risk depends on which Etendo API versions the validators use.",
+        "replacement": "Keep, validate against 25.4.x EntityPersistenceEventObserver API.",
+        "effort_update_hours": 4,
+        "effort_saas_hours": 5
       },
       {
         "java_package": "com.qualitic.openbravo.utilities",
-        "name": "Utilidades Qualitic",
-        "function": "Librería de clases utilitarias (JSONUtils, etc.) usada internamente por los módulos de Qualitic para Guaguas. Sin mantenimiento activo.",
-        "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [
-          "Apache Commons Lang 2→3",
-          "Apache Commons Collections 3→4"
-        ],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 2,
-        "recommendation": "Actualizar las librerías y hacer fork del módulo como dependencia interna de SMF. Sin alternativa; los módulos custom de Qualitic dependen de él."
+        "name": "Utility classes for a general purpose",
+        "author": "Qualitic",
+        "risk": "medium",
+        "risk_reason": "Shared utility classes used by other Qualitic modules. No maintainer. The Apache Commons Lang dependency must be updated (org.apache.commons.lang.* → org.apache.commons.lang3.* in 25.1.x). Apache Commons Collections similarly.",
+        "replacement": "Keep, update library imports.",
+        "effort_update_hours": 3,
+        "effort_saas_hours": 4
+      },
+      {
+        "java_package": "com.qualitic.physicalinventory",
+        "name": "Qualitic Physical Inventory",
+        "author": "Qualitic",
+        "risk": "medium",
+        "risk_reason": "Physical inventory management module. Overlaps with the Etendo subapp modules for inventory. No maintainer.",
+        "replacement": "Evaluate against com.etendoerp.guaguas.subapp.inventory and Etendo standard physical inventory.",
+        "effort_update_hours": 6,
+        "effort_saas_hours": 8
+      },
+      {
+        "java_package": "com.qualitic.physicalinventory.guaguas",
+        "name": "Qualitic Physical Consumption Guaguas",
+        "author": "Qualitic",
+        "risk": "medium",
+        "risk_reason": "Physical consumption extension specific to Guaguas. Depends on com.qualitic.physicalinventory above.",
+        "replacement": "Depends on parent module decision.",
+        "effort_update_hours": 4,
+        "effort_saas_hours": 5
       },
       {
         "java_package": "com.smf.face",
-        "name": "FACe – Facturación Electrónica Sector Público",
-        "function": "Integración con FACe (Punto General de Entrada de Facturas Electrónicas de la Administración General del Estado). Permite a Guaguas enviar facturas electrónicas al sector público español a través del punto de entrada oficial.",
+        "name": "Facturación Electrónica para FACe",
+        "author": "SMF Consulting",
         "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "bundle_candidate",
-        "api_changes_applicable": [
-          "Verificar cambios en la API de FACe (gov.es)"
-        ],
-        "effort_update_hours": 16,
-        "effort_saas_hours": 8,
-        "recommendation": "Módulo regulatorio crítico para facturación B2G. Sin alternativa en Etendo. Mantener y actualizar; considerar generalización como bundle oficial para todos los clientes con obligación de FACe."
+        "risk_reason": "FACe (Punto General de Entrada de Facturas de las Administraciones Públicas) integration module. Uses JAX-WS web services (org.openbravo.util.jaxws dependency) and SOAP with Attachments (org.openbravo.util.saaj.impl) which are deprecated and removed in Java 17+ contexts. In 26.1.x the javax.* namespace migration (jakarta.*) would also apply. Critical for Guaguas as a public entity required to send invoices to the government's FACe portal.",
+        "replacement": "Rewrite using modern HTTP client or reuse existing SMF FACe library with Jakarta EE namespace updates.",
+        "effort_update_hours": 20,
+        "effort_saas_hours": 30
+      },
+      {
+        "java_package": "com.smf.guaguas.additional.reports",
+        "name": "Reportes adicionales Guaguas",
+        "author": "SMF Consulting",
+        "risk": "low",
+        "risk_reason": "Additional Jasper reports for Guaguas. Pure reporting module. JasperReports API upgrade (6.0.0 → 6.17.0) in 25.1.x may require font or API updates.",
+        "replacement": "Keep, update JasperReports API references if needed.",
+        "effort_update_hours": 3,
+        "effort_saas_hours": 3
+      },
+      {
+        "java_package": "com.smf.guaguas.invoice.validation",
+        "name": "Invoice Validation",
+        "author": "SMF Consulting",
+        "risk": "medium",
+        "risk_reason": "Invoice validation module with 3 OBUIAPP_PROCESS entries. Adds the GGVAL_ValidationStatus custom status to invoices (referenced in the core patch of AddPaymentOrderInvoicesTransformer). The core patch migration must be coordinated with this module.",
+        "replacement": "Keep. Migrate core patch into this module using HQL datasource extension instead of core class modification.",
+        "effort_update_hours": 5,
+        "effort_saas_hours": 4
+      },
+      {
+        "java_package": "com.smf.guaguas.lpa",
+        "name": "Modulo de ventas para la Tarjeta LPA Movilidad",
+        "author": "SMF Consulting",
+        "risk": "medium",
+        "risk_reason": "Sales module for LPA (Tarjeta de Transportes de Gran Canaria) mobility card integration. Has Java sources (AddPaymentProcess, SalesUtils, InvoicePendingOrderService). Depends on Openbravo Retail/WebPOS infrastructure (org.openbravo.retail.posterminal) which has major version changes in 25.x.",
+        "replacement": "Keep, validate against new WebPOS/Retail module APIs. May depend on com.smf.guaguas.webpos.customizations.",
+        "effort_update_hours": 8,
+        "effort_saas_hours": 12
+      },
+      {
+        "java_package": "com.smf.guaguas.redmine",
+        "name": "Redmine Integration",
+        "author": "SMF Consulting",
+        "risk": "medium",
+        "risk_reason": "Redmine project management tool integration. Provides ChangeProjectTransformer (HQL transformer for projects) and LoadProjectsAndWatchersActionHandler. Depends on external Redmine API. Risk is moderate — Etendo API for HQL transformers and ActionHandlers is stable.",
+        "replacement": "Keep, validate that Redmine API endpoint is still accessible and compatible.",
+        "effort_update_hours": 4,
+        "effort_saas_hours": 5
+      },
+      {
+        "java_package": "com.smf.guaguas.sii",
+        "name": "Guaguas SII Trigger Functions Customizations",
+        "author": "SMF Consulting",
+        "risk": "high",
+        "risk_reason": "Database trigger function customizations for the SII module. Tightly coupled to com.smf.ticketbai which has had a major version jump (1.3.1 → 2.10.0). Trigger functions reference AEAT SII tables that may have changed.",
+        "replacement": "Reassess against com.smf.ticketbai 2.x. Coordinate with com.qualitic.openbravo.guaguas.sii.",
+        "effort_update_hours": 8,
+        "effort_saas_hours": 10
+      },
+      {
+        "java_package": "com.smf.guaguas.template",
+        "name": "Guaguas Template",
+        "author": "SMF Consulting",
+        "risk": "low",
+        "risk_reason": "Template/configuration module. No Java code expected. Pure AD data.",
+        "replacement": "Keep, update version.",
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      },
+      {
+        "java_package": "com.smf.guaguas.webpos.customizations",
+        "name": "Personalizaciones WebPOS en Guaguas",
+        "author": "SMF Consulting",
+        "risk": "high",
+        "risk_reason": "WebPOS (Web Point of Sale) customizations. The entire Openbravo Retail / WebPOS stack (org.openbravo.retail.posterminal) is deprecated in favor of EtendoPOS in newer versions. This module is directly at risk of becoming orphaned if Guaguas migrates away from WebPOS.",
+        "replacement": "EtendoPOS or reassess if Guaguas still uses WebPOS. If retained, validate against org.openbravo.retail.posterminal latest version.",
+        "effort_update_hours": 15,
+        "effort_saas_hours": 25
+      },
+      {
+        "java_package": "com.smf.additionalpocolumns",
+        "name": "Columnas adicionales PC",
+        "author": "SMF",
+        "risk": "low",
+        "risk_reason": "Additional columns on Purchase Order. Pure AD extension module. No expected breaking changes.",
+        "replacement": "Keep, update version.",
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2
+      },
+      {
+        "java_package": "com.smf.additionalpocolumns.template",
+        "name": "Additional PO Columns Template",
+        "author": "SMF",
+        "risk": "low",
+        "risk_reason": "Template data for above module.",
+        "replacement": "Keep, update version.",
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      },
+      {
+        "java_package": "com.smf.customReports",
+        "name": "Optimizacion de Reportes",
+        "author": "SMF",
+        "risk": "low",
+        "risk_reason": "Report optimization module. Likely uses com.exos.erp.reportcachemanagement pattern. JasperReports API upgrade applicable.",
+        "replacement": "Keep, update JasperReports API if needed.",
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2
+      },
+      {
+        "java_package": "com.smf.legacycolumns",
+        "name": "SMF Legacy Columns",
+        "author": "SMF",
+        "risk": "medium",
+        "risk_reason": "Legacy column compatibility module. By name, likely maintains backward-compatible column mappings for DB migrations. Must be assessed to verify it doesn't conflict with 25.4.x schema changes.",
+        "replacement": "Assess for removal once migration to 25.4.x data model is complete.",
+        "effort_update_hours": 3,
+        "effort_saas_hours": 4
       },
       {
         "java_package": "com.mysuite.common.module",
-        "name": "MySuite Common Module",
-        "function": "Librería de utilidades comunes para los módulos de MySuite Services. Dependencia de com.mysuite.factelectr.es.module.",
-        "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "Eliminar junto con com.mysuite.factelectr.es.module",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 2,
-        "recommendation": "Eliminar junto con el módulo principal de MySuite."
-      },
-      {
-        "java_package": "org.openbravo.financial.dimensionalreports",
-        "name": "Informes Financieros Multi-dimensionales",
-        "function": "Infraestructura para informes financieros con múltiples dimensiones de análisis (proyecto, actividad, campaña). Base de los informes de balance y cuenta de resultados.",
-        "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "Etendo Financial Reports Advanced",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
+        "name": "Utilities & Common Code",
+        "author": "MySuite",
+        "risk": "high",
+        "risk_reason": "Third-party utility library from MySuite (unknown vendor). No git_url, no Etendo catalog entry. Apache Commons Lang/Collections usage is a certainty in utility modules — breaking package rename in 25.1.x. No way to obtain updated version through standard channels.",
+        "replacement": "Audit all usages; replace with standard Etendo utilities or inline the required functions.",
         "effort_update_hours": 8,
-        "effort_saas_hours": 4,
-        "recommendation": "Migrar a Etendo Financial Reports Advanced bundle. Verificar que los informes dimensionales que usa Guaguas están cubiertos."
+        "effort_saas_hours": 12
       },
       {
-        "java_package": "org.openbravo.financial.dimensionaltrialbalancereport",
-        "name": "Balance de Comprobación Multi-dimensional",
-        "function": "Informe de balance de comprobación con dimensiones de análisis.",
-        "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "Etendo Financial Reports Advanced",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 2,
-        "recommendation": "Migrar a Etendo Financial Reports Advanced."
+        "java_package": "com.mysuite.factelectr.es.module",
+        "name": "Facturación Electrónica España",
+        "author": "MySuite",
+        "risk": "high",
+        "risk_reason": "Spanish electronic invoicing (Facturae) from MySuite. No maintainer, no catalog entry. Depends on org.openbravo.module.facturae, facturae31, facturae32 modules (all unmaintained). The Facturae XML generation likely uses javax.xml.bind (JAXB) which was removed from Java 11+ and requires explicit dependency in Java 17 — critical breaking change in 25.1.x/26.1.x.",
+        "replacement": "Evaluate replacement by com.smf.custom.einvoice.sii + official com.etendoerp SII modules, or seek a maintained Facturae implementation.",
+        "effort_update_hours": 20,
+        "effort_saas_hours": 30
       },
       {
         "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
-        "name": "Exportación P&L y Balance a Excel (GPS)",
-        "function": "Informe que exporta la cuenta de pérdidas y ganancias y el balance de situación a formato Excel.",
+        "name": "P&L and Balance Sheet export to excel",
+        "author": "GPS/Openbravo",
         "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "bundle_candidate",
-        "api_changes_applicable": [
-          "Apache POI 3→5: impacto significativo (Cell API, Style API cambiados completamente)"
-        ],
-        "effort_update_hours": 12,
-        "effort_saas_hours": 6,
-        "recommendation": "Actualizar API de Apache POI (3.10→5.x es un cambio mayor). Si Etendo Financial Reports Advanced exporta a Excel, evaluar redundancia."
+        "risk_reason": "Excel export using Apache POI. POI has a major API restructuring in 25.1.x (3.10.1 → 5.4.0): CELL_TYPE_* constants → CellType enum, Font.setBoldweight() → Font.setBold(), etc. Requires code update.",
+        "replacement": "Keep, update Apache POI API calls.",
+        "effort_update_hours": 4,
+        "effort_saas_hours": 5
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.invoices",
+        "name": "Initial Data Load Extension for Invoices",
+        "author": "GPS/Openbravo",
+        "risk": "low",
+        "risk_reason": "IDL extension for invoice import. Depends on org.openbravo.idl (also unmaintained). Low risk if only used for data migration, not runtime.",
+        "replacement": "Assess whether still needed. If used for ongoing data entry, validate IDL API compatibility.",
+        "effort_update_hours": 2,
+        "effort_saas_hours": 3
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.good.movements",
+        "name": "Modulo Subapp de Movimiento entre Almacenes",
+        "author": "Etendo/Guaguas",
+        "risk": "medium",
+        "risk_reason": "Etendo RX subapp for warehouse movements. Has web services (PrintMovementWebService, CreateMovementWS). Depends on com.etendoerp.etendorx (1.9.1 → 3.15.1 — major version jump). EtendoRX API changes between 1.x and 3.x are significant.",
+        "replacement": "Keep, update to com.etendoerp.etendorx 3.x API.",
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.internalconsumption",
+        "name": "Modulo Subapp de Consumos Internos",
+        "author": "Etendo/Guaguas",
+        "risk": "medium",
+        "risk_reason": "EtendoRX subapp for internal consumption management. Same EtendoRX API version gap as above (1.9.1 → 3.15.1).",
+        "replacement": "Keep, update to EtendoRX 3.x API.",
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.inventory",
+        "name": "Modulo Subapp de Inventarios",
+        "author": "Etendo/Guaguas",
+        "risk": "medium",
+        "risk_reason": "EtendoRX subapp for inventory management with user assignment handlers. Same EtendoRX version gap.",
+        "replacement": "Keep, update to EtendoRX 3.x API.",
+        "effort_update_hours": 6,
+        "effort_saas_hours": 5
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.pending.orders",
+        "name": "Modulo Subapp de Pedidos Pendientes de Recibir",
+        "author": "Etendo/Guaguas",
+        "risk": "medium",
+        "risk_reason": "EtendoRX subapp for pending purchase orders / material receipt. Same EtendoRX version gap.",
+        "replacement": "Keep, update to EtendoRX 3.x API.",
+        "effort_update_hours": 6,
+        "effort_saas_hours": 5
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.product",
+        "name": "Modulo Subapp de Productos",
+        "author": "Etendo/Guaguas",
+        "risk": "medium",
+        "risk_reason": "EtendoRX subapp for product management. Same EtendoRX version gap.",
+        "replacement": "Keep, update to EtendoRX 3.x API.",
+        "effort_update_hours": 5,
+        "effort_saas_hours": 4
+      },
+      {
+        "java_package": "com.etendoerp.guaguas.subapp.template",
+        "name": "Plantilla Subaplicaciones Guaguas",
+        "author": "Etendo/Guaguas",
+        "risk": "low",
+        "risk_reason": "Template module for Guaguas subapps. Pure configuration.",
+        "replacement": "Keep, update version.",
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      },
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "author": "Futit Services S.L.",
+        "risk": "medium",
+        "risk_reason": "Analytics data export module. No version in catalog (null latest_version reported). Has tests (BaseAnalyticsTest, DataExtractionServiceTest). Risk depends on whether analytics API changed between versions.",
+        "replacement": "Assess against Etendo catalog — may have been superseded.",
+        "effort_update_hours": 3,
+        "effort_saas_hours": 3
+      },
+      {
+        "java_package": "com.etendoerp.advanced.security.webpos",
+        "name": "Etendo Advanced Security WebPOS",
+        "author": "Futit Services S.L.",
+        "risk": "medium",
+        "risk_reason": "Security extension for WebPOS. Depends on WebPOS stack (also at risk). If WebPOS is retired, this module has no purpose.",
+        "replacement": "Evaluate with WebPOS migration decision.",
+        "effort_update_hours": 2,
+        "effort_saas_hours": 3
+      },
+      {
+        "java_package": "mySystem.CustomizationTemplate",
+        "name": "System Customization",
+        "author": "unknown",
+        "risk": "medium",
+        "risk_reason": "Generic customization template with non-standard package naming (mySystem.*). Likely a leftover template module from initial implementation. Contents and purpose unclear without deeper inspection.",
+        "replacement": "Assess for consolidation into com.smf.guaguas.customization or removal.",
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2
       },
       {
         "java_package": "org.openbravo.contract",
         "name": "Contract Management Infrastructure",
-        "function": "Infraestructura de gestión de contratos de Openbravo.",
+        "author": "Openbravo S.L.U.",
         "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
+        "risk_reason": "Openbravo-authored contract management module (not Etendo). This is the base module that com.smf.guaguas.customization's contract features (TypeContract, DeleteContract, PrintContract) depend on. Not in Etendo's official catalog. The OBCNTR_CONTRACT_TYPE table is defined here.",
+        "replacement": "Evaluate if Etendo 25.4.x includes a native Service Contract module. If not, this must be migrated as a local module.",
         "effort_update_hours": 8,
-        "effort_saas_hours": 4,
-        "recommendation": "Verificar si Guaguas usa la gestión de contratos activamente. Si no, candidato a eliminación."
+        "effort_saas_hours": 10
       },
       {
         "java_package": "org.openbravo.contract.services",
         "name": "Service Contract Management",
-        "function": "Gestión de contratos de servicio (periodicidad, renovación, facturación recurrente).",
+        "author": "Openbravo S.L.U.",
         "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 12,
-        "effort_saas_hours": 4,
-        "recommendation": "Ídem que org.openbravo.contract. Verificar uso activo con Mixpanel."
+        "risk_reason": "Service contract management built on the above. Same considerations.",
+        "replacement": "Same as org.openbravo.contract.",
+        "effort_update_hours": 6,
+        "effort_saas_hours": 8
+      },
+      {
+        "java_package": "org.openbravo.financial.dimensionalreports",
+        "name": "Multi-Dimensional Financial Reports Infrastructure",
+        "author": "Openbravo S.L.U.",
+        "risk": "low",
+        "risk_reason": "Financial dimensional reports infrastructure. Openbravo-authored but not in Etendo catalog. Likely available as part of Financial Reports Advanced bundle in Etendo 25.4.x.",
+        "replacement": "com.etendoerp.financial.reports.advanced (already installed, version 1.9.1).",
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1
+      },
+      {
+        "java_package": "org.openbravo.retail.posterminal",
+        "name": "Web POS",
+        "author": "Openbravo S.L.U.",
+        "risk": "high",
+        "risk_reason": "The entire Openbravo for Retail / WebPOS stack is in the unmaintained list. This is a significant dependency for Guaguas's LPA (transport card) sales module. In 25.4.x+ the Etendo roadmap moves toward EtendoPOS.",
+        "replacement": "EtendoPOS or maintained Retail module from Etendo catalog.",
+        "effort_update_hours": 30,
+        "effort_saas_hours": 40
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "author": "Openbravo S.L.U.",
+        "risk": "medium",
+        "risk_reason": "SEPA payment infrastructure. Not in Etendo catalog but SEPA standard is stable. Used by com.qualitic.openbravo.guaguas.sepa.iso20022.extension.",
+        "replacement": "Look for Etendo-native SEPA module or keep as local module.",
+        "effort_update_hours": 4,
+        "effort_saas_hours": 5
       },
       {
         "java_package": "org.openbravo.procurement.contract",
         "name": "Procurement Contracts",
-        "function": "Contratos de compra/aprovisionamiento con Openbravo.",
+        "author": "Openbravo S.L.U.",
         "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 4,
-        "recommendation": "Verificar uso activo. Posible candidato a eliminación si los contratos de compra no son un proceso central de Guaguas."
-      },
-      {
-        "java_package": "org.openbravo.module.cuaderno19.es",
-        "name": "Cuaderno 19 (Domiciliaciones bancarias)",
-        "function": "Generación del fichero de adeudo bancario español (Cuaderno 19 AEB). Usado para cobros domiciliados.",
-        "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "Etendo Financial Extensions (SEPA Direct Debit pain.008)",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
+        "risk_reason": "Procurement contract management. Not in Etendo catalog. Used alongside the Service Contract modules.",
+        "replacement": "Evaluate with Service Contract stack migration.",
         "effort_update_hours": 4,
-        "effort_saas_hours": 4,
-        "recommendation": "Migrar a SEPA pain.008 (adeudo SEPA). El Cuaderno 19 es el equivalente pre-SEPA."
-      },
-      {
-        "java_package": "org.openbravo.module.cuaderno34.es",
-        "name": "Cuaderno 34 (Transferencias nacionales)",
-        "function": "Generación del fichero de transferencias bancarias Cuaderno 34 AEB.",
-        "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "Etendo Financial Extensions (SEPA Credit Transfer pain.001)",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 4,
-        "recommendation": "Migrar a SEPA pain.001 (transferencia SEPA). Cuaderno 34 es el equivalente pre-SEPA."
-      },
-      {
-        "java_package": "org.openbravo.module.cuaderno58.es",
-        "name": "Cuaderno 58 (Efectos comerciales)",
-        "function": "Gestión de efectos comerciales bancarios (Cuaderno 58 AEB). Pagarés y letras.",
-        "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 4,
-        "recommendation": "Verificar si Guaguas usa efectos comerciales o pagarés activamente. Relacionado con los informes de pagarés de com.qualitic.openbravo.guaguas.informes."
-      },
-      {
-        "java_package": "com.smf.additionalpocolumns",
-        "name": "Columnas Adicionales en Pedidos de Compra (SMF)",
-        "function": "Añade columnas informativas adicionales a la ventana de pedidos de compra.",
-        "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 2,
-        "recommendation": "Evaluar si las columnas extra siguen siendo necesarias o si el módulo principal de customización (com.smf.guaguas.customization) las puede absorber."
-      },
-      {
-        "java_package": "com.smf.customReports",
-        "name": "Optimización de Reportes (SMF)",
-        "function": "Optimizaciones de rendimiento para la ejecución de informes en la instalación de Guaguas.",
-        "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 2,
-        "recommendation": "Verificar qué optimizaciones contiene. Si son mejoras genéricas de rendimiento, evaluar contribución a core de Etendo."
-      },
-      {
-        "java_package": "com.smf.legacycolumns",
-        "name": "Columnas Legacy (SMF)",
-        "function": "Módulo de compatibilidad para columnas heredadas del sistema anterior a Etendo/Openbravo.",
-        "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 4,
-        "recommendation": "Evaluar si los datos en las columnas legacy han sido migrados al modelo de datos actual. Si sí, este módulo puede eliminarse."
-      },
-      {
-        "java_package": "org.openbravo.financial.posfinancialaccount",
-        "name": "WebPOS Financial Account",
-        "function": "Gestión de la cuenta financiera del punto de venta (caja, medios de pago del POS).",
-        "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 4,
-        "recommendation": "Dependiente de la decisión sobre WebPOS."
+        "effort_saas_hours": 5
       },
       {
         "java_package": "cat.practics.printlabels",
-        "name": "Print Report Labels (Practics)",
-        "function": "Módulo de impresión de etiquetas de Practics Business Solutions. Posiblemente superpuesto con com.qualitic.openbravo.guaguas.etiquetas.",
+        "name": "Print Report Labels",
+        "author": "Practics",
         "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "com.qualitic.openbravo.guaguas.etiquetas",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
-        "effort_update_hours": 2,
-        "effort_saas_hours": 2,
-        "recommendation": "Verificar si este módulo sigue en uso o ha sido desplazado por el módulo de etiquetas de Qualitic. Candidato a eliminación."
-      },
-      {
-        "java_package": "com.etendoerp.advanced.security.webpos",
-        "name": "WebPOS Advanced Security (Etendo)",
-        "function": "Seguridad avanzada para el WebPOS (autenticación, control de acceso por terminal).",
-        "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "Incluido en Etendo WebPOS bundle en versiones recientes",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
+        "risk_reason": "Label printing module from Practics. Unknown maintainer state. Depends on classic Jasper printing infrastructure.",
+        "replacement": "com.qualitic.openbravo.guaguas.etiquetas (also unmaintained) or modern Jasper implementation.",
         "effort_update_hours": 4,
-        "effort_saas_hours": 2,
-        "recommendation": "Verificar si la funcionalidad está incluida en el bundle de retail de Etendo 25.4.x."
+        "effort_saas_hours": 5
       },
       {
-        "java_package": "org.openbravo.base.cxf",
-        "name": "Apache CXF Infrastructure",
-        "function": "Infraestructura de servicios web SOAP usando Apache CXF. Dependencia de los módulos de factura electrónica y web services SOAP.",
-        "risk": "low",
-        "has_official_replacement": true,
-        "official_replacement_name": "Spring REST (Etendo usa REST en versiones modernas)",
-        "generalization": "redundant",
-        "api_changes_applicable": [
-          "Apache CXF compatibilidad con Java 17"
-        ],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 2,
-        "recommendation": "Mantener mientras haya módulos SOAP dependientes (Facturae, FACe, Camerfactura). Eliminar cuando se migren todos a REST."
-      },
+        "java_package": "com.smf.ticketbai (version gap)",
+        "name": "TicketBAI Integration (version gap note)",
+        "author": "SMF Consulting",
+        "risk": "high",
+        "risk_reason": "Although com.smf.ticketbai is in gradle_source (maintained), the version gap is extreme: installed 1.3.1 vs latest 2.10.0. All SII/TicketBAI-dependent custom modules (com.smf.guaguas.sii, com.qualitic.openbravo.guaguas.sii, com.smf.custom.einvoice.sii) are directly at risk due to this major version jump in the base SII module.",
+        "replacement": "Upgrade com.smf.ticketbai to 2.10.0 as a prerequisite; validate all dependent SII modules.",
+        "effort_update_hours": 8,
+        "effort_saas_hours": 8
+      }
+    ],
+    "api_breaking_changes": [
       {
-        "java_package": "org.openbravo.module.aeat340.es",
-        "name": "Modelo 340 AEAT",
-        "function": "Informe fiscal Modelo 340 (España). Este modelo fue suspendido por la AEAT en 2014 y reemplazado por el SII.",
-        "risk": "low",
-        "has_official_replacement": true,
-        "official_replacement_name": "SII (Suministro Inmediato de Información)",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
-        "effort_update_hours": 0,
-        "effort_saas_hours": 2,
-        "recommendation": "Eliminar. El Modelo 340 fue eliminado por la AEAT; el SII lo reemplaza."
-      },
-      {
-        "java_package": "com.openbravo.gps.idl.invoices",
-        "name": "IDL Extension para Facturas (GPS)",
-        "function": "Extensión del Initial Data Load de Openbravo para importación masiva de facturas históricas.",
-        "risk": "low",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
+        "version": "25.1.x",
+        "change": "Apache Commons Collections 3.2.2 → 4.4: package org.apache.commons.collections → org.apache.commons.collections4",
+        "impact": "All custom modules using Commons Collections (com.smf.guaguas.customization, com.qualitic.openbravo.utilities, com.mysuite.* modules)",
         "effort_update_hours": 2,
-        "effort_saas_hours": 2,
-        "recommendation": "Si la carga inicial ya se completó, este módulo puede eliminarse."
+        "effort_saas_hours": 2
       },
       {
-        "java_package": "org.openbravo.gps.copyrole",
-        "name": "Copy Role Module (GPS)",
-        "function": "Utilidad para copiar roles de usuario en Etendo.",
-        "risk": "low",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "bundle_candidate",
-        "api_changes_applicable": [],
+        "version": "25.1.x",
+        "change": "Apache Commons Lang 2.6 → 3.17: package org.apache.commons.lang.* → org.apache.commons.lang3.*",
+        "impact": "MovementQty callout uses org.apache.commons.lang.StringUtils. All Qualitic and MySuite custom modules. High impact across unmaintained portfolio.",
+        "effort_update_hours": 3,
+        "effort_saas_hours": 3
+      },
+      {
+        "version": "25.1.x",
+        "change": "Apache POI 3.10.1 → 5.4.0: Cell.CELL_TYPE_* constants → CellType enum; Font.setBoldweight() → Font.setBold(); CellStyle alignment constants restructured",
+        "impact": "com.openbravo.gps.finance.balanceexcelexport.report (P&L/Balance Sheet Excel export)",
+        "effort_update_hours": 3,
+        "effort_saas_hours": 3
+      },
+      {
+        "version": "25.1.x",
+        "change": "JasperReports 6.0.0 → 6.17.0: font and core API updates",
+        "impact": "com.smf.guaguas.additional.reports, com.smf.customReports, com.qualitic.openbravo.guaguas.informes, PrintContract handler",
         "effort_update_hours": 2,
-        "effort_saas_hours": 2,
-        "recommendation": "Funcionalidad de administración útil. Verificar si Etendo 25.4.x incluye copia de roles nativa."
+        "effort_saas_hours": 2
       },
       {
-        "java_package": "com.etendoerp.analytics.exporter",
-        "name": "Analytics Exporter (Futit)",
-        "function": "Exportador de datos analíticos de Etendo (Futit Services). Posible herramienta de extracción para BI.",
-        "risk": "low",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
-        "effort_update_hours": 2,
-        "effort_saas_hours": 2,
-        "recommendation": "Verificar uso activo. Si se usa para exportación de datos, evaluar alternativas nativas de Etendo."
-      },
-      {
-        "java_package": "mySystem.CustomizationTemplate",
-        "name": "System Customization Template",
-        "function": "Módulo plantilla genérico de customización del sistema (sin lógica de negocio).",
-        "risk": "low",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [],
+        "version": "25.1.x",
+        "change": "Gradle wrapper updated from 7.3.2 to 8.12.1 — manual update required",
+        "impact": "Build configuration for all custom modules",
         "effort_update_hours": 1,
-        "effort_saas_hours": 1,
-        "recommendation": "Evaluar si sigue siendo necesario o puede eliminarse."
+        "effort_saas_hours": 1
+      },
+      {
+        "version": "26.1.x",
+        "change": "Java 11 support removed — Java 17+ mandatory. javax.* namespace → jakarta.* (relevant for JAX-WS, SOAP)",
+        "impact": "com.smf.face (FACe integration) — uses javax.jws, javax.xml.soap which become jakarta.* in Java 17 context. com.mysuite.factelectr.es.module likely uses JAXB (javax.xml.bind).",
+        "effort_update_hours": 6,
+        "effort_saas_hours": 8
+      },
+      {
+        "version": "26.1.x",
+        "change": "org.apache.commons:commons-compress removed from classpath — modules must add explicit dependency",
+        "impact": "Any custom module using commons-compress (e.g. zip file handling)",
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      },
+      {
+        "version": "26.1.x",
+        "change": "CRM Connector tables (C_ExtBP_Config*) and columns (C_Extbp_Enabled, C_Extbp_Config_ID) removed",
+        "impact": "Low — Guaguas does not appear to use CRM Connector",
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
       }
     ],
     "effort_summary": {
-      "update_core_hours": 10,
-      "update_custom_hours": 139,
-      "update_unmaintained_hours": 342,
-      "update_total_hours": 491,
-      "saas_core_hours": 11,
-      "saas_custom_hours": 285,
-      "saas_unmaintained_hours": 186,
-      "saas_total_hours": 482
+      "update_core_hours": 5,
+      "update_custom_hours": 25,
+      "update_unmaintained_hours": 242,
+      "update_total_hours": 272,
+      "saas_core_hours": 5,
+      "saas_custom_hours": 15,
+      "saas_unmaintained_hours": 312,
+      "saas_total_hours": 332
     }
   },
   "ui_readiness": {
     "generated": "2026-04-24",
-    "global_status": "blocked",
-    "summary": {
-      "critica": 13,
-      "alta": 7,
-      "media": 10,
-      "no_aplica": 10
+    "global_completion_pct": 62,
+    "source": "all-features-analysis.md dated 2026-03-31",
+    "counts": {
+      "windows_M": 312,
+      "windows_T": 41,
+      "windows_Q": 12,
+      "windows_PE": 53,
+      "pd_actions": 38,
+      "pd_standard": 172,
+      "pd_reports_obuiapp": 10,
+      "pd_manual_js": 241,
+      "forms_ad_form_active": 20,
+      "callouts_on_columns": 385,
+      "field_display_logic": 3047,
+      "column_readonly_logic": 1097,
+      "obuisel_selectors_core": 86,
+      "obuisel_selectors_modules": 111,
+      "field_groups": 77,
+      "tree_tabs": 3,
+      "widget_classes": 42,
+      "dashboard_widget_instances": 0,
+      "background_processes": 9,
+      "posted_button_tables": 50,
+      "docaction_columns_core": 6,
+      "rich_text_columns": 1,
+      "image_columns": 20,
+      "link_columns": 42
     },
-    "features": [
+    "sections": [
       {
-        "section": "26",
-        "title": "Filtros y ordenación por defecto en tabs",
-        "status": "NOT DONE",
-        "completion_pct": 0,
-        "priority": "critica",
-        "reason": "El cliente tiene 53 tabs con filtros predefinidos (39 HQLFILTERCLAUSE + 14 FILTERCLAUSE). Estado NOT DONE al 0%: TabBuilder.java no envía hqlFilterClause ni orderByClause al frontend; la nueva UI no los consume. Con 53 tabs afectados, los usuarios verán datos sin el filtrado esperado (p.ej. 'solo facturas de mi organización' o 'solo pedidos activos').",
-        "ad_count": 53,
-        "code_evidence": []
-      },
-      {
-        "section": "21",
-        "title": "Workspace / Dashboard Widgets",
-        "status": "NOT DONE",
-        "completion_pct": 5,
-        "priority": "critica",
-        "reason": "Se detectan 8 ficheros con definiciones de OBKMO_WIDGET_CLASS, 1 OBKMO_WIDGET_URL y 5 OBCQL_WIDGET_QUERY — el cliente tiene widgets de dashboard personalizados activos. El estado es NOT DONE al 5% (no existe API de widgets en React). Este es un bloqueador arquitectónico: la pantalla de inicio del usuario (My Openbravo) no funcionará en la nueva UI.",
-        "ad_count": 14,
-        "code_evidence": []
-      },
-      {
-        "section": "18",
-        "title": "Application Forms (AD_FORM legacy)",
-        "status": "NOT DONE",
-        "completion_pct": 15,
-        "priority": "critica",
-        "reason": "El cliente tiene 31 formularios AD_FORM — uno de los bloqueadores arquitectónicos principales. Estos formularios son servlets clásicos con UI propia (HTML+Java) sin equivalente en la nueva UI React. El módulo com.qualitic.openbravo.guaguas.formulario usa exactamente este patrón para la recepción de material. Con 31 formularios y solo 15% implementado, este es un bloqueador crítico de la migración.",
-        "ad_count": 31,
-        "code_evidence": []
-      },
-      {
-        "section": "2.B",
-        "title": "Botones hardcoded (DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus)",
-        "status": "PARCIAL",
-        "completion_pct": 45,
-        "priority": "critica",
-        "reason": "Se detectan 58 columnas de botones hardcoded: Posted=33, PaymentRule=10, CreateFrom=8, DocAction=6, ChangeProjectStatus=1. Cada uno requiere un componente React dedicado. Posted está al 30% (detección de estado implementada pero sin visualización completa de 3 estados). ChangeProjectStatus no implementado (0%). Son bloqueadores arquitectónicos que afectan todos los documentos contables y comerciales.",
-        "ad_count": 58,
-        "code_evidence": []
-      },
-      {
-        "section": "25",
-        "title": "Valores por defecto en campos",
-        "status": "PARCIAL",
-        "completion_pct": 45,
-        "priority": "critica",
-        "reason": "El cliente tiene 5.736 campos con valor por defecto definido y 10.904 campos obligatorios. El estado es PARCIAL al 45%: aunque el JSON de metadata incluye field.column.defaultValue, la nueva UI nunca lo lee — los defaults solo funcionan via round-trip al servidor en modo NEW. Con 5.736 defaults, la ausencia de defaults client-side causará experiencia de usuario degradada en la creación masiva de registros.",
-        "ad_count": 5736,
-        "code_evidence": []
-      },
-      {
-        "section": "1.4",
-        "title": "Pick and Execute (seleccionar y ejecutar)",
-        "status": "PARCIAL",
-        "completion_pct": 55,
-        "priority": "critica",
-        "reason": "El cliente tiene 53 ventanas Pick and Execute — el doble del umbral crítico. La implementación está al 55% con gaps en: validación de campos inline obligatorios antes de Ejecutar, modo single-select, forwarding de contexto desde ventana padre, y respuesta openDirectTab. Con 53 ventanas PnE afectando procesos de picking, empaquetado y gestión de periodos, este es un bloqueador operacional crítico.",
-        "ad_count": 53,
-        "code_evidence": []
-      },
-      {
-        "section": "3",
-        "title": "Process Definitions modernas (OBUIAPP_PROCESS)",
-        "status": "PARCIAL",
-        "completion_pct": 55,
-        "priority": "critica",
-        "reason": "El cliente tiene 177 process definitions: 110 Pick&Execute, 38 Action, 18 Manual/JS (BLOQUEADO), 10 Report, 1 RX Action. Los 18 procesos Manual/JS (UIPattern=M) son un bloqueador arquitectónico porque dependen de namespaces OB.* de la Classic UI que no existen en React. Además 595 parámetros AD configuran estos procesos, con complejidad de validación de popup.",
-        "ad_count": 177,
-        "code_evidence": []
-      },
-      {
-        "section": "3b",
-        "title": "Procesos legacy (AD_PROCESS R&P)",
+        "section": "1 — Window Types",
         "status": "TO CHECK",
-        "completion_pct": 60,
-        "priority": "critica",
-        "reason": "El cliente tiene 395 procesos legacy AD_PROCESS: 223 Manual (UIPattern=M, BLOQUEADO), 172 Standard (S), 120 con ISREPORT=Y, 16 con ISJASPER=Y, 37 Background. Los 223 procesos Manual son bloqueadores arquitectónicos. Los 120 informes legacy y 16 informes Jasper requieren reimplementación como OBUIAPP_Report. El volumen total es muy alto.",
-        "ad_count": 395,
-        "code_evidence": []
+        "completion_pct": 75,
+        "reason": "312 Maintain, 41 Transaction, 12 Query, 53 P&E windows found. Basic structures implemented. Key gaps: DocAction labels incorrect, Posted button 3-state not complete, ChangeProjectStatus not implemented."
       },
       {
-        "section": "4",
-        "title": "Display Logic (visibilidad condicional de campos)",
+        "section": "2 — Field/Column Reference Types",
+        "status": "PARCIAL",
+        "completion_pct": 65,
+        "reason": "Core types (String, Integer, Amount, Number, Quantity, Date, DateTime, Time, List, TableDir, YesNo, Password, Text) implemented. NOT implemented: Rich Text (1 column found), Image (20 columns), Link (42 columns), Binary, Upload File, Color, Assignment, Multi-Selector, SelectorAsLink, Button List. Missing: Out Parameters on selectors (0 found but important gap)."
+      },
+      {
+        "section": "2.B — Hardcoded Button Columns",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "reason": "DocAction: core working but labels incorrect (6 docaction columns, 50 Posted tables). CreateFrom: implemented as PD. Posted: 3-state visual not complete. ChangeProjectStatus: not implemented (0%)."
+      },
+      {
+        "section": "3 — Process Types",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "reason": "38 PD Actions and 172 PD Standard processes — both partially validated. 10 OBUIAPP_Report processes — working. 241 PD Manual JS processes — BLOQUEADO (OB.* namespaces do not exist in React). 9 background processes — 10% complete (no Process Monitor integration). 20 active ad_form forms — 15% complete (decision required: iframe vs React reimplementation)."
+      },
+      {
+        "section": "4 — Display Logic",
         "status": "BUG ACTIVO",
         "completion_pct": 65,
-        "priority": "critica",
-        "reason": "El cliente tiene 2.865 campos con Display Logic — el mayor volumen de todos los conteos AD. El estado es BUG ACTIVO: la sintaxis @field_name@ causa crashes JavaScript en producción en cualquier ventana que use esta sintaxis común. Con 2.865 campos afectados, prácticamente todas las ventanas del cliente sufrirán este bug al migrar a la nueva UI.",
-        "ad_count": 2865,
-        "code_evidence": []
+        "reason": "3,047 field display logic expressions found. Bug: @field_name@ syntax causes JavaScript errors. Operators =, !=, >, <, &, | partially work. Callout-triggered re-evaluation not validated."
       },
       {
-        "section": "8",
-        "title": "Selectores FK (OBUISEL_SELECTOR)",
+        "section": "5 — Tab-Level Behaviors",
         "status": "TO CHECK",
-        "completion_pct": 65,
-        "priority": "critica",
-        "reason": "El cliente tiene 225 selectores personalizados — volumen muy alto que indica uso intensivo de búsquedas FK complejas. ISOUTPARAMETER=Y detectado: 0 instancias (el bloqueo de Selector Out Parameters no aplica aquí). Con 225 selectores y estado PARCIAL al 65%, los gaps en filtros de selector, out parameters y SelectorAsLink afectan la experiencia en todas las ventanas.",
-        "ad_count": 225,
-        "code_evidence": []
+        "completion_pct": 72,
+        "reason": "509 child tabs found. SR tabs, grandchild tabs (level 2), lazy loading not validated. 3 tree tabs found (HASTREE=Y)."
       },
       {
-        "section": "1.2",
-        "title": "Ventanas Transaction (ciclo de vida de documento)",
-        "status": "TO CHECK",
-        "completion_pct": 78,
-        "priority": "critica",
-        "reason": "El cliente tiene 41 ventanas Transaction (pedidos, facturas, albaranes, pagos). Además se detectan 6 columnas DocAction y 33 columnas Posted — ambas son bloqueadores arquitectónicos (§2.B). El estado general es TO CHECK 78%, pero los bugs activos de DocAction labels y la implementación parcial del botón Posted (30%) hacen que las ventanas transaccionales sean inoperables sin resolución previa.",
-        "ad_count": 41,
-        "code_evidence": []
-      },
-      {
-        "section": "22",
-        "title": "Grupos de campos (secciones colapsables en formulario)",
-        "status": "TO CHECK",
-        "completion_pct": 78,
-        "priority": "critica",
-        "reason": "El cliente tiene 1.871 campos asignados a grupos de campos (secciones colapsables del formulario). Con este volumen altísimo, los grupos de campos son una pieza central del layout visual de todas las ventanas. Estado TO CHECK al 78%, pero con 1.871 ocurrencias cualquier gap afecta la presentación de prácticamente todos los formularios.",
-        "ad_count": 1871,
-        "code_evidence": []
-      },
-      {
-        "section": "6",
-        "title": "Callouts (lógica reactiva en cambio de campo)",
+        "section": "6 — Callouts",
         "status": "TO CHECK",
         "completion_pct": 82,
-        "priority": "critica",
-        "reason": "El cliente tiene 96 columnas conectadas a callouts — cálculos automáticos que se ejecutan al cambiar un campo (precios, cantidades, totales de línea). Con 96 callouts activos y el estado TO CHECK al 82%, cualquier gap afecta directamente a la integridad de datos en documentos comerciales. El alto volumen (>50) y la criticidad del impacto lo elevan a prioridad crítica.",
-        "ad_count": 96,
-        "code_evidence": []
+        "reason": "385 columns with callout references in core AD_COLUMN. GlobalCalloutManager implemented. Chaining prevention, WARNING/ERROR response, selector re-filtering not validated."
       },
       {
-        "section": "14",
-        "title": "Informes (acceso desde menú)",
+        "section": "7 — Record State Machine",
         "status": "TO CHECK",
-        "completion_pct": 60,
-        "priority": "alta",
-        "reason": "El cliente tiene 120 procesos con ISREPORT=Y y 16 informes Jasper (ISJASPER=Y), más 90 entradas de menú de tipo informe. Los informes Jasper requieren OBUIAPP_Report pattern en la nueva UI. Con 16 informes Jasper y estado PARCIAL al 60%, el impacto es significativo.",
-        "ad_count": 136,
-        "code_evidence": []
+        "completion_pct": 72,
+        "reason": "41 Transaction windows. IP status handling, RE status, visual colors/icons per status not validated."
       },
       {
-        "section": "2",
-        "title": "Tipos de campo no implementados (Referencias)",
-        "status": "PARCIAL",
+        "section": "8 — Selectors and FK Fields",
+        "status": "TO CHECK",
         "completion_pct": 65,
-        "priority": "alta",
-        "reason": "Instalación compleja con 29 módulos custom y integración WebPOS/Retail. Es altamente probable que contenga tipos de campo NO implementados como Rich Text (Editor WYSIWYG), Image BLOB (imágenes de producto), Upload File (carga de documentos) y Color. El análisis de distribución de AD_REFERENCE_ID requiere confirmación, pero dado el volumen de módulos instalados se asigna prioridad alta.",
-        "ad_count": 0,
-        "code_evidence": []
+        "reason": "197 total OBUISEL selectors (86 core + 111 modules). Out Parameters: 0 instances found in AD (not required here). TableDir, GenericSelector implemented. Selector popup extra columns/filter fields not validated."
       },
       {
-        "section": "32",
-        "title": "Sistema de alertas",
-        "status": "TO CHECK",
-        "completion_pct": 70,
-        "priority": "alta",
-        "reason": "El cliente tiene 20 reglas de alerta configuradas (AD_ALERTRULE). Las alertas son notificaciones en tiempo real basadas en consultas programadas. Con 20 reglas y estado TO CHECK al 70%, el sistema de alertas tiene probabilidad media de necesitar ajustes.",
-        "ad_count": 20,
-        "code_evidence": []
-      },
-      {
-        "section": "5",
-        "title": "Comportamientos de Tab (UITYPE, solo lectura, filtros)",
+        "section": "9 — Grid/List View",
         "status": "TO CHECK",
         "completion_pct": 72,
-        "priority": "alta",
-        "reason": "El cliente tiene 39 tabs con ISREADONLY=Y, 71 tabs con Display Logic de visibilidad, y 53 tabs con filtros predefinidos (HQLFILTERCLAUSE=39 + FILTERCLAUSE=14). El estado TO CHECK al 72% indica implementación básica presente pero validación pendiente en tabs SR (Single Record), ED (Editable Grid), y filtros de tab que según §26 tienen 0% de implementación real.",
-        "ad_count": 163,
-        "code_evidence": []
+        "reason": "Grid with sorting, filtering, pagination, ED mode, export implemented. isselectioncolumn, default sort from orderbycolumn, operator selection, column config persistence gaps."
       },
       {
-        "section": "9",
-        "title": "Comportamientos de Grid (columnas de selección, editable grid)",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "alta",
-        "reason": "El cliente tiene 245 columnas marcadas como ISSELECTIONCOLUMN (aparecen en la fila de filtro del grid) y 0 tabs ISSHOWNINITIALGRIDMODE. Con 245 columnas de selección el comportamiento del grid filter es crítico para la navegación. Editable grid (UITYPE=ED) requiere validación específica.",
-        "ad_count": 245,
-        "code_evidence": []
-      },
-      {
-        "section": "10",
-        "title": "Comportamientos transversales (Read-only logic, adjuntos, notas)",
+        "section": "10 — Cross-Cutting Behaviors",
         "status": "TO CHECK",
         "completion_pct": 73,
-        "priority": "alta",
-        "reason": "El cliente tiene 1.122 columnas con READONLYLOGIC (condicional de edición) y 6.663 columnas ISUPDATEABLE=N. ISALLOWATTACHMENT=Y y ISALLOWNOTES=Y son 0 (no configurados en AD, usan comportamiento por defecto). La cantidad de READONLYLOGIC es muy alta y afecta a la correcta protección de campos en todos los documentos.",
-        "ad_count": 1122,
-        "code_evidence": []
+        "reason": "Audit fields, org/client filtering, active filtering, attachments, copy record, zoom links partially validated. Copy Record child tab flags not validated."
       },
       {
-        "section": "23",
-        "title": "Barra de estado (campos en footer de ventana)",
+        "section": "11 — Authentication/Session",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "reason": "JWT in progress. Multi-tab logout, token renewal, role switching full reset not implemented."
+      },
+      {
+        "section": "12 — Navigation",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "reason": "Menu with 312+41+12+53 windows. Menu API format, icon types, Recent Items persistence, Breadcrumb not fully validated."
+      },
+      {
+        "section": "13 — Record Creation/Editing",
         "status": "TO CHECK",
         "completion_pct": 75,
-        "priority": "alta",
-        "reason": "El cliente tiene 226 campos configurados para mostrarse en la barra de estado inferior. Con 226 campos es un uso intensivo de esta funcionalidad — probablemente información de auditoría y estado de documento. Estado TO CHECK al 75%.",
-        "ad_count": 226,
-        "code_evidence": []
+        "reason": "FormInitializationComponent modes implemented. Default value @ColumnName@ reactivity gap. Optimistic locking not validated."
       },
       {
-        "section": "7",
-        "title": "Máquina de estados del documento",
+        "section": "14 — Reports (Menu)",
         "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "media",
-        "reason": "Cubierto por §1.2 (41 ventanas Transaction) y §2.B (botón DocAction 6 ocurrencias). La lógica de estado está implementada al 72%; los gaps específicos se detallan en esas secciones. No se añaden instancias adicionales aquí.",
-        "ad_count": 41,
-        "code_evidence": []
+        "completion_pct": 60,
+        "reason": "10 OBUIAPP_Report processes via ProcessDefinitionModal. Legacy R&P reports (HTML/iframe) at 50%."
       },
       {
-        "section": "12",
-        "title": "Navegación y Menú",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "media",
-        "reason": "El cliente tiene 551 entradas de menú: 361 ventanas (W), 90 informes (R), 47 procesos legacy (P), 32 Process Definitions, 17 formularios externos (X). La navegación está implementada al 72%. Los 17 formularios externos (ACTION=X) requieren atención específica ya que incluyen AD_FORMs legacy.",
-        "ad_count": 551,
-        "code_evidence": []
-      },
-      {
-        "section": "19",
-        "title": "Linked Items / KMO",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "media",
-        "reason": "Se detectan 8 ficheros con definiciones OBKMO (Linked Items / KMO). Estado TO CHECK al 72%. Impacto medio — funcionalidad de navegación transversal entre registros relacionados.",
-        "ad_count": 8,
-        "code_evidence": []
-      },
-      {
-        "section": "20",
-        "title": "Búsqueda global / Quick Launch",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "media",
-        "reason": "Cubierto por el conteo de menú (551 entradas). La búsqueda global depende de que todas las ventanas estén indexadas correctamente.",
-        "ad_count": 551,
-        "code_evidence": []
-      },
-      {
-        "section": "29",
-        "title": "Vistas de árbol",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "media",
-        "reason": "El cliente tiene 3 tabs con HASTREE=Y (vistas de árbol jerárquico). Impacto bajo pero verificable. Con solo 3 instancias el riesgo es contenido.",
-        "ad_count": 3,
-        "code_evidence": []
-      },
-      {
-        "section": "1.1",
-        "title": "Ventanas Maintain (datos maestros)",
+        "section": "15 — Loading/Feedback",
         "status": "TO CHECK",
         "completion_pct": 75,
-        "priority": "media",
-        "reason": "El cliente tiene 312 ventanas tipo Maintain (datos maestros: productos, socios comerciales, proveedores, etc.). La estructura Maintain está implementada en la nueva UI al 75%. Los gaps son comportamientos edge-case: multi-delete desde grid, Copy Record en tabs hijo, toggle de campo Activo. Con 312 ventanas cualquier gap afecta múltiples áreas.",
-        "ad_count": 312,
-        "code_evidence": []
+        "reason": "Message bar with SUCCESS/ERROR/WARNING/INFO implemented. Design spec details (500ms debounce, ARIA) not validated."
       },
       {
-        "section": "13",
-        "title": "Creación, edición y persistencia de registros",
+        "section": "16 — Final Consistency",
         "status": "TO CHECK",
-        "completion_pct": 75,
-        "priority": "media",
-        "reason": "Cubierto indirectamente por §4 (display logic), §6 (callouts), §25 (defaults) y §10 (read-only). Con 10.904 campos obligatorios y 5.736 valores por defecto definidos, la validación de formulario y los defaults son aspectos críticos a verificar.",
-        "ad_count": 10904,
-        "code_evidence": []
+        "completion_pct": 72,
+        "reason": "Field formatting parity, readonly logic parity, 43 keyboard shortcuts, toolbar button order parity pending validation."
       },
       {
-        "section": "24",
-        "title": "Sistema de layout de formulario (columnas, filas, anchos)",
+        "section": "17 — Toolbar Buttons",
+        "status": "PARCIAL",
+        "completion_pct": 70,
+        "reason": "16 standard buttons implemented. Missing: NEW_ROW distinct from NEW, SAVE_CLOSE. Personalization (personalization, manageviews) buttons absent. Module buttons: Copilot implemented; EtendoRX Init not validated."
+      },
+      {
+        "section": "18 — Application Forms (ad_form)",
+        "status": "NOT DONE",
+        "completion_pct": 15,
+        "reason": "20 active ad_form forms found. Decision required: iframe (requires classic UI running) vs React reimplementation. Critical forms: InitialClientSetup, Enterprise Module Mgmt, Create Invoices from Orders, GL Posting by Tables."
+      },
+      {
+        "section": "19 — Linked Items",
         "status": "TO CHECK",
-        "completion_pct": 75,
-        "priority": "media",
-        "reason": "El sistema de layout está implementado al 75%. Con 312 ventanas Maintain más 41 Transaction, el layout correcto de formularios es importante. Los campos multi-columna y STARTROW afectan la disposición visual.",
-        "ad_count": 353,
-        "code_evidence": []
+        "completion_pct": 72,
+        "reason": "LinkedItemsActionHandler format, access filtering, navigation to new MDI tab not validated."
       },
       {
-        "section": "1.3",
-        "title": "Ventanas Query / Consulta (solo lectura)",
+        "section": "20 — Quick Launch (Global Search)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "reason": "Search API endpoint, debounce, result ranking, translation-aware search not validated."
+      },
+      {
+        "section": "21 — Workspace/Dashboard",
+        "status": "NOT DONE",
+        "completion_pct": 5,
+        "reason": "42 widget classes found but 0 configured dashboard widget instances. Widget API contract for custom JS widgets undefined. URL Widget, Query Widget, Reference Widget, Custom JS Widget all unimplemented."
+      },
+      {
+        "section": "22 — Field Groups",
         "status": "TO CHECK",
         "completion_pct": 78,
-        "priority": "media",
-        "reason": "El cliente tiene 12 ventanas de consulta (Query). El modo read-only básico está implementado. Los gaps son en la lista exacta de botones de toolbar ocultos en modo Q y el comportamiento de zoom links. Con 12 ventanas el impacto es contenido.",
-        "ad_count": 12,
-        "code_evidence": []
+        "reason": "77 field groups found. Collapse/expand implemented. Translated names from ad_fieldgroup_trl and state persistence between records not validated."
       },
       {
-        "section": "35",
-        "title": "Estados de vista (Grid/Form)",
+        "section": "23 — Status Bar",
         "status": "TO CHECK",
-        "completion_pct": 78,
-        "priority": "media",
-        "reason": "Cubierto por §9 (0 tabs ISSHOWNINITIALGRIDMODE) y §5 (UITYPE breakdown). Sin tabs configurados en modo grid inicial, el comportamiento por defecto de la nueva UI se aplicará.",
-        "ad_count": 0,
-        "code_evidence": []
+        "completion_pct": 75,
+        "reason": "Previous/Next navigation, show-in-status-bar real-time update not validated."
       },
       {
-        "section": "34",
-        "title": "Vistas de calendario",
+        "section": "24 — Form Layout",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "reason": "seqno, startrow, startnewline, numcolumn implemented. Exact interaction algorithm and label alignment parity not validated."
+      },
+      {
+        "section": "25 — Default Value Expressions",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "reason": "Server computes defaults in NEW mode. @ColumnName@ dynamic defaults not reactive client-side. SQL defaults work via server round-trip."
+      },
+      {
+        "section": "26 — Tab Default Filters",
         "status": "NOT DONE",
         "completion_pct": 0,
-        "priority": "no_aplica",
-        "reason": "Sin referencias a OBCalendar u OBMultiCalendar en los ficheros AD del cliente.",
-        "ad_count": 0,
-        "code_evidence": []
+        "reason": "TabBuilder.java does not send hqlFilterClause or orderByClause to UI. Neither does the UI consume them. Requires verification whether datasource REST auto-applies tab filters server-side."
       },
       {
-        "section": "33",
-        "title": "Personalización de vistas (Saved Views)",
-        "status": "NOT DONE",
-        "completion_pct": 10,
-        "priority": "no_aplica",
-        "reason": "OBUIAPP_UIPERSONALIZATION detectado: 0 registros en AD. El cliente no tiene vistas guardadas configuradas en AD.",
-        "ad_count": 0,
-        "code_evidence": []
+        "section": "27 — MDI Tab Interface",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "reason": "MDI implemented. Tab state recovery post-crash, tab title format with record identifier, Workspace tab non-closeable not validated."
       },
       {
-        "section": "31",
-        "title": "Sistema de importación de datos",
-        "status": "NOT DONE",
-        "completion_pct": 20,
-        "priority": "no_aplica",
-        "reason": "Infraestructura de core no configurable por cliente.",
-        "ad_count": 0,
-        "code_evidence": []
+        "section": "28 — Keyboard Shortcuts",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "reason": "43+ shortcuts documented. Ctrl+S, Ctrl+D, Ctrl+Delete partially validated. preventDefault for all shortcuts, Escape priority order, suppression in text inputs not validated."
       },
       {
-        "section": "30",
-        "title": "Agrupación en grid",
+        "section": "29 — Tree Views",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "reason": "3 tree tabs (HASTREE=Y) found. Toggle, drag&drop with 3 zones, circular reference prevention implemented. Missing: lazy loading for large trees, tree search/filter, keyboard navigation."
+      },
+      {
+        "section": "30 — Grouping in Grid",
         "status": "TO CHECK",
         "completion_pct": 65,
-        "priority": "no_aplica",
-        "reason": "Configuración global (2 preferencias), no por ventana.",
-        "ad_count": 0,
-        "code_evidence": []
+        "reason": "Grouping partially implemented. OBUIAPP_GroupingEnabled preference check, FK column display names in group headers not validated."
       },
       {
-        "section": "15",
-        "title": "Indicadores de carga y feedback visual",
+        "section": "31 — Data Import",
+        "status": "NOT DONE",
+        "completion_pct": 20,
+        "reason": "Import buffer UI, import format definition, reprocess endpoint not implemented."
+      },
+      {
+        "section": "32 — Alert System",
         "status": "TO CHECK",
         "completion_pct": 70,
-        "priority": "no_aplica",
-        "reason": "Comportamiento de UI puro sin representación en datos AD.",
-        "ad_count": 0,
-        "code_evidence": []
+        "reason": "Alert polling (50s) mentioned. API endpoint, acknowledge, badge count, 401 handling not validated. 0 active alert rules configured in this installation."
       },
       {
-        "section": "16",
-        "title": "Validación final de consistencia",
-        "status": "TO CHECK",
-        "completion_pct": 70,
-        "priority": "no_aplica",
-        "reason": "Checklist de aceptación QA — no greepable.",
-        "ad_count": 0,
-        "code_evidence": []
+        "section": "33 — View Personalization",
+        "status": "NOT DONE",
+        "completion_pct": 10,
+        "reason": "personalization and manageviews toolbar buttons absent. OBUIAPP_UIPersonalization not implemented. 0 view personalization records found in installation."
       },
       {
-        "section": "17",
-        "title": "Botones de toolbar",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "no_aplica",
-        "reason": "Botones estándar hardcodeados en JS; ENABLECOPYFULL=Y detectado: 0 instancias. Clone no configurado.",
-        "ad_count": 0,
-        "code_evidence": []
+        "section": "34 — Calendar Views",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "reason": "No calendar view windows identified in this installation. No widget instances configured. Not a priority for Guaguas Municipales profile."
       },
       {
-        "section": "27",
-        "title": "Multi-Window Tab Interface (MDI)",
+        "section": "35 — View States (Form/Grid Layout)",
         "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "no_aplica",
-        "reason": "Comportamiento del shell de la aplicación, sin datos AD representativos.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "28",
-        "title": "Atajos de teclado",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "no_aplica",
-        "reason": "Configuración global de preferencias, no por ventana.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "11",
-        "title": "Autenticación y Sesión",
-        "status": "TO CHECK",
-        "completion_pct": 75,
-        "priority": "no_aplica",
-        "reason": "Sin datos AD grepeables. La autenticación es configuración Java/JWT, no datos en XML.",
-        "ad_count": 0,
-        "code_evidence": []
+        "completion_pct": 78,
+        "reason": "4-state layout toggle implemented. MIN state, split ratio persistence, SR tab always-form behavior, animation not validated."
       }
-    ]
+    ],
+    "priority_assessment": {
+      "critical_gaps": [
+        "PD Manual JS processes (241 instances) — OB.* namespace blocker",
+        "Application Forms / ad_form (20 active) — architecture decision required",
+        "Posted button 3-state visual (50 tables affected)",
+        "Display Logic @field_name@ bug (3,047 expressions)",
+        "Tab Default Filters section 26 (all 509 child tabs potentially affected)",
+        "View Personalization — completely absent"
+      ],
+      "important_gaps": [
+        "DocAction option labels (cosmetic but user-facing)",
+        "Selector Out Parameters (0 found in this install — low priority)",
+        "Authentication/Session (JWT token renewal, role switching)",
+        "Background Process Monitor (9 background processes)"
+      ],
+      "guaguas_specific": [
+        "Guaguas uses WebPOS/Retail (org.openbravo.retail.posterminal) — full retail UI path must be validated if EtendoPOS is not adopted",
+        "Custom OBUIAPP processes in com.smf.guaguas.customization (3 processes), com.smf.guaguas.invoice.validation (3 processes) must be validated as PD Standard/Action",
+        "PrintContract, PrintInternalConsumption, PrintPartialPurchaseOrderLine use JRManager — validate PD Report path in new UI",
+        "FACe integration (com.smf.face) uses JAX-WS SOAP — not a UI concern but blocks SaaS deployment"
+      ]
+    }
   }
 }
