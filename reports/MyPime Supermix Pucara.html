@@ -263,7 +263,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <div class="meta-item"><span>Plataforma </span><strong>Etendo 24.3.7</strong></div>
       <div class="meta-item"><span>Base de comparación </span><strong>vexpanded</strong></div>
       <div class="meta-item"><span>Módulos totales </span><strong>181</strong></div>
-      <div class="meta-item"><span>Generado </span><strong>2026-04-24 11:41</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-04-24 12:12</strong></div>
     </div>
   </div>
 
@@ -2513,7 +2513,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     <h2>🔬 Análisis de Customizaciones</h2>
     <p class="asmnt-meta">
       Generado por <strong>etendo-custom-assessor v2.0</strong>
-      · 2026-04-24 
+      · 2026-04-24 <span class="asmnt-mx-tag">📊 Mixpanel: <strong>MyPime Supermix Pucara</strong> / últimos 90 días</span>
     </p>
     
       <div class="asmnt-section-label">1 · Modificaciones al Core</div>
@@ -2694,11 +2694,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             <td>
               <strong>com.smf.almacenes</strong> 
               <div class="asmnt-desc">Módulo de warehouse para flujos de picking y packing de pedidos. Gestiona la selección de artículos de almacén y su empaquetado para expedición.</div>
-              
+              <div class="win-group"><span class="win-tag win-used">Incidencias de Almacén</span></div>
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Migrar al bundle oficial Warehouse Extensions que cubre picking/packing con mantenimiento activo. Evaluar gap funcional antes de eliminar.</td>
           </tr>
@@ -2710,7 +2715,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">40h</span></td><td><span class="asmnt-effort asmnt-effort-saas">16h</span></td>
             <td class="asmnt-rec">No existe reemplazo oficial. Si el cliente sigue usando Magento, debe evaluarse actualizar el módulo o migrar a una integración via EtendoRX (conector HTTP). Alto riesgo de ruptura por cambios en Apache Commons.</td>
           </tr>
@@ -2722,31 +2732,46 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Sigue la suerte de com.smf.integration.magento.</td>
           </tr>
-          <tr class=" asmnt-row-high">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>com.smf.pucara.globalcustomizations</strong> 
+              <strong>com.smf.pucara.globalcustomizations</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Módulo de customizaciones transversales compartidas entre varias empresas del grupo: Pazo, Pucara, Hercam y Supermix. Incluye modificaciones al comportamiento estándar de documentos y ventanas.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">24h</span></td><td><span class="asmnt-effort asmnt-effort-saas">40h</span></td>
             <td class="asmnt-rec">Analizar contenido detallado para separar qué customizaciones pueden subirse a un bundle genérico vs qué debe eliminarse o reescribirse.</td>
           </tr>
-          <tr class=" asmnt-row-high">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>com.smf.pucara.commission</strong> 
+              <strong>com.smf.pucara.commission</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Extiende el sistema de comisiones estándar de Etendo con reglas específicas del cliente: comisiones por marca, rangos de representante, y cálculos personalizados.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">16h</span></td><td><span class="asmnt-effort asmnt-effort-saas">30h</span></td>
             <td class="asmnt-rec">Las comisiones son un proceso de negocio crítico. Requiere análisis detallado y posible reimplementación como módulo independiente mantenido.</td>
           </tr>
@@ -2758,31 +2783,46 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">12h</span></td><td><span class="asmnt-effort asmnt-effort-saas">20h</span></td>
             <td class="asmnt-rec">Funcionalidad genérica de presupuestación por segmento. Candidato a bundle oficial. Evaluar si cubre también otros clientes del portfolio.</td>
           </tr>
-          <tr class=" asmnt-row-high">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>com.smf.supermix.sales.customizations</strong> 
+              <strong>com.smf.supermix.sales.customizations</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Customizaciones del pedido de ventas específicas para Supermix: validaciones adicionales, flujos de aprobación y campos extendidos.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">16h</span></td><td><span class="asmnt-effort asmnt-effort-saas">24h</span></td>
             <td class="asmnt-rec">Módulo específico de Supermix. Revisar si las customizaciones pueden simplificarse tras la migración a nueva UI.</td>
           </tr>
-          <tr class=" asmnt-row-high">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>com.smf.supermix.poscustomizations</strong> 
+              <strong>com.smf.supermix.poscustomizations</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Customizaciones del terminal punto de venta (Web POS) para Supermix: pantallas, flujos de pago y comportamientos específicos de caja.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">30h</span></td>
             <td class="asmnt-rec">El Web POS de Openbravo está siendo reemplazado por Etendo Mobile. Evaluar si este cliente puede migrar al stack móvil oficial antes de actualizar las customizaciones legacy.</td>
           </tr>
@@ -2790,23 +2830,33 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             <td>
               <strong>com.wps.pucara.customizationsphs</strong> 
               <div class="asmnt-desc">Módulo de customizaciones transversales desarrollado por el equipo WPS (Wiliam Pereira/Elizabeth Rey): modificaciones de ventanas, validaciones y flujos de documento para el grupo PHS.</div>
-              
+              <div class="win-group"><span class="win-tag win-used">Resumen de Hitos de Incidencias</span></div>
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">32h</span></td>
             <td class="asmnt-rec">Tiene dependencias con otros módulos WPS y SMF. El mantenimiento dual (dos equipos distintos) genera riesgo de conflictos. Consolidar o migrar a un solo equipo.</td>
           </tr>
-          <tr class=" asmnt-row-high">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>com.wps.pucara.pedcomp</strong> 
+              <strong>com.wps.pucara.pedcomp</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Extiende la funcionalidad de pedidos de compra y venta con campos, validaciones y flujos adicionales: aprobaciones, referencias cruzadas y alertas.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">12h</span></td><td><span class="asmnt-effort asmnt-effort-saas">20h</span></td>
             <td class="asmnt-rec">Evaluar si las extensiones al pedido pueden implementarse como configuración AD o si requieren código Java. Muchas podrían resolverse con Process Definitions en la nueva UI.</td>
           </tr>
@@ -2814,23 +2864,33 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             <td>
               <strong>com.wps.pms.costing</strong> 
               <div class="asmnt-desc">Módulo de gestión de costos de producto con cálculos personalizados que extienden el motor de costeo estándar de Etendo.</div>
-              
+              <div class="win-group"><span class="win-tag win-used">Costos por Productos y Almacenes</span></div>
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">24h</span></td><td><span class="asmnt-effort asmnt-effort-saas">40h</span></td>
             <td class="asmnt-rec">El costeo es un área crítica y sensible. Requiere análisis profundo del código para evaluar si puede sustituirse por el costeo estándar de Etendo o si tiene lógica irreemplazable.</td>
           </tr>
-          <tr class=" asmnt-row-high">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.interco</strong> 
+              <strong>org.openbravo.interco</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Gestión de documentos inter-compañía: generación automática de pedidos/facturas espejo entre organizaciones del mismo grupo empresarial.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">6h</span></td>
             <td class="asmnt-rec">El bundle oficial com.etendoerp.advanced.intercompany ya está instalado. Este módulo legacy de Openbravo es redundante. Migrar datos/configuración al bundle oficial y eliminar.</td>
           </tr>
@@ -2838,59 +2898,84 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             <td>
               <strong>org.openbravo.retail.posterminal</strong> 
               <div class="asmnt-desc">Terminal punto de venta basado en web con soporte offline, múltiples métodos de pago, devoluciones y gestión de caja.</div>
-              
+              <div class="win-group"><span class="win-tag win-used">Channel - Touchpoint Type</span><span class="win-tag win-used">Channel - Touchpoint</span></div>
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">40h</span></td><td><span class="asmnt-effort asmnt-effort-saas">20h</span></td>
             <td class="asmnt-rec">Openbravo Web POS no tiene mantenimiento oficial en Etendo. Evaluar migración a Etendo Mobile o mantener congelado. Las customizaciones de POS (com.smf.supermix.poscustomizations) amplían este riesgo.</td>
           </tr>
-          <tr class=" asmnt-row-high">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.retail.pack</strong> 
+              <strong>org.openbravo.retail.pack</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Bundle que agrupa todos los módulos del stack retail de Openbravo: POS terminal, gestión de tiendas, configuración retail, devoluciones, gift cards.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">40h</span></td><td><span class="asmnt-effort asmnt-effort-saas">20h</span></td>
             <td class="asmnt-rec">Sigue la suerte de org.openbravo.retail.posterminal. Toda la pila retail de Openbravo debe evaluarse como bloque.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>com.openbravo.gps.finance.balanceexcelexport.report</strong> 
+              <strong>com.openbravo.gps.finance.balanceexcelexport.report</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Reporte de exportación del balance de situación y cuenta de pérdidas y ganancias a formato Excel.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">El bundle oficial Financial Reports Advanced ya está instalado. Verificar cobertura funcional y eliminar este módulo GPS si está duplicado. Si hay Apache POI directo, requiere actualización a API v5.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>com.openbravo.gps.printandsend</strong> 
+              <strong>com.openbravo.gps.printandsend</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Funcionalidad de impresión y envío de documentos (facturas, albaranes) por email directamente desde las ventanas de Etendo.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
             <td class="asmnt-rec">Verificar si com.etendoerp.printdocumentws (ya instalado) cubre la misma funcionalidad. Si es así, eliminar este módulo GPS legacy.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.financial.dimensionalpandlreport</strong> 
+              <strong>org.openbravo.financial.dimensionalpandlreport</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Reporte de pérdidas y ganancias multi-dimensional que permite segmentar resultados por múltiples dimensiones contables simultáneamente.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Evaluar si el bundle Financial Reports Advanced (ya instalado) cubre este reporte. Si es así, eliminar. Si tiene funcionalidad extra, analizar migración.</td>
           </tr>
@@ -2898,11 +2983,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             <td>
               <strong>com.etendoerp.quicksalesorder</strong> 
               <div class="asmnt-desc">Proceso de creación rápida de pedidos de venta simplificado, diseñado para uso en dispositivos móviles o puntos de venta.</div>
-              
+              <div class="win-group"><span class="win-tag win-used">Products In App</span></div>
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">6h</span></td>
             <td class="asmnt-rec">Módulo de Etendo Software sin mantenimiento activo. Verificar si la funcionalidad puede cubrirse con la nueva UI móvil o si debe mantenerse como módulo independiente.</td>
           </tr>
@@ -2914,31 +3004,46 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Funcionalidad de valor para instalaciones multi-moneda. Candidato a incluir en Financial Reports Advanced Bundle oficial. Evaluar con el equipo de producto.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>com.smf.pucara.template</strong> 
+              <strong>com.smf.pucara.template</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Plantillas de datos de referencia para los módulos Pucara/IPSA/Supermix. Contienen datos de configuración (tipos de documento, cuentas contables, secuencias) para cada entidad del grupo.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Son datos de referencia, no código ejecutable. El riesgo de migración es bajo pero los datos deben verificarse tras cada actualización de esquema.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.idl</strong> 
+              <strong>org.openbravo.idl</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Framework para carga masiva de datos maestros (clientes, productos, etc.) desde ficheros CSV/XML.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
             <td class="asmnt-rec">Si se usa para cargas puntuales, puede reemplazarse con scripts o el REST API de Etendo. Si se usa regularmente, evaluar actualización.</td>
           </tr>
@@ -2950,7 +3055,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
             <td class="asmnt-rec">Siguen la suerte del módulo principal que traducen. No requieren trabajo independiente.</td>
           </tr></tbody>
@@ -3937,7 +4047,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 </div>
 </div>
 
-  <div class="footer">Generado por Etendo Migration Agent · 2026-04-24 11:41</div>
+  <div class="footer">Generado por Etendo Migration Agent · 2026-04-24 12:12</div>
 </div>
 <script>
 function toggle(header) {

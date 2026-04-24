@@ -5537,7 +5537,17 @@
         ],
         "effort_update_hours": 20,
         "effort_saas_hours": 8,
-        "recommendation": "Migrar al bundle oficial Warehouse Extensions que cubre picking/packing con mantenimiento activo. Evaluar gap funcional antes de eliminar."
+        "recommendation": "Migrar al bundle oficial Warehouse Extensions que cubre picking/packing con mantenimiento activo. Evaluar gap funcional antes de eliminar.",
+        "usage_score": 1,
+        "windows_used": [
+          "Incidencias de Almacén"
+        ],
+        "windows_unused": [
+          "Áreas de Tareas",
+          "Estados de Tareas",
+          "Pedidos De Venta A Distribuir"
+        ],
+        "elimination_candidate": false
       },
       {
         "java_package": "com.smf.integration.magento",
@@ -5555,7 +5565,41 @@
         ],
         "effort_update_hours": 40,
         "effort_saas_hours": 16,
-        "recommendation": "No existe reemplazo oficial. Si el cliente sigue usando Magento, debe evaluarse actualizar el módulo o migrar a una integración via EtendoRX (conector HTTP). Alto riesgo de ruptura por cambios en Apache Commons."
+        "recommendation": "No existe reemplazo oficial. Si el cliente sigue usando Magento, debe evaluarse actualizar el módulo o migrar a una integración via EtendoRX (conector HTTP). Alto riesgo de ruptura por cambios en Apache Commons.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Magento Errors",
+          "Magento Sources",
+          "Add Product Categories",
+          "Magento Customer Group Mapping",
+          "Magento Bulk Queue",
+          "Magento Websites / Stores / Store Views",
+          "Magento Configuration",
+          "Last Synchronization Date",
+          "Magento Tax Classes",
+          "Magento Payment Methods",
+          "Magento Attribute Set Groups",
+          "Stock Synchronization",
+          "Attribute Set Synchronization",
+          "MSI Stock Sync",
+          "Product Bulk Synchronization",
+          "Product Synchronization",
+          "Order Synchronization",
+          "Good Shipment Synchronization",
+          "Sync Bulk Result",
+          "Payment Synchronization",
+          "Resolve",
+          "Business Partner Synchronization",
+          "Product Category Synchronization",
+          "Prices Bulk Synchronization",
+          "Create Default Attribute Set",
+          "Business Partner Category Synchronization",
+          "Return Synchronization",
+          "Characteristic Synchronization",
+          "Conversion Rate Synchronization"
+        ],
+        "elimination_candidate": false
       },
       {
         "java_package": "com.smf.integration.magento.template",
@@ -5568,7 +5612,11 @@
         "api_changes_applicable": [],
         "effort_update_hours": 2,
         "effort_saas_hours": 2,
-        "recommendation": "Sigue la suerte de com.smf.integration.magento."
+        "recommendation": "Sigue la suerte de com.smf.integration.magento.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
       },
       {
         "java_package": "com.smf.pucara.globalcustomizations",
@@ -5585,7 +5633,11 @@
         ],
         "effort_update_hours": 24,
         "effort_saas_hours": 40,
-        "recommendation": "Analizar contenido detallado para separar qué customizaciones pueden subirse a un bundle genérico vs qué debe eliminarse o reescribirse."
+        "recommendation": "Analizar contenido detallado para separar qué customizaciones pueden subirse a un bundle genérico vs qué debe eliminarse o reescribirse.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
       },
       {
         "java_package": "com.smf.pucara.commission",
@@ -5602,7 +5654,13 @@
         ],
         "effort_update_hours": 16,
         "effort_saas_hours": 30,
-        "recommendation": "Las comisiones son un proceso de negocio crítico. Requiere análisis detallado y posible reimplementación como módulo independiente mantenido."
+        "recommendation": "Las comisiones son un proceso de negocio crítico. Requiere análisis detallado y posible reimplementación como módulo independiente mantenido.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Crear Factura (custom)"
+        ],
+        "elimination_candidate": true
       },
       {
         "java_package": "com.smf.budgetbybrand",
@@ -5619,7 +5677,16 @@
         ],
         "effort_update_hours": 12,
         "effort_saas_hours": 20,
-        "recommendation": "Funcionalidad genérica de presupuestación por segmento. Candidato a bundle oficial. Evaluar si cubre también otros clientes del portfolio."
+        "recommendation": "Funcionalidad genérica de presupuestación por segmento. Candidato a bundle oficial. Evaluar si cubre también otros clientes del portfolio.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Presupuesto de compra anual",
+          "Configuración Informe de presupuestos",
+          "Presupuesto de venta anual comerciales",
+          "Presupuesto de venta anual vendedores ITH"
+        ],
+        "elimination_candidate": false
       },
       {
         "java_package": "com.smf.supermix.sales.customizations",
@@ -5636,7 +5703,11 @@
         ],
         "effort_update_hours": 16,
         "effort_saas_hours": 24,
-        "recommendation": "Módulo específico de Supermix. Revisar si las customizaciones pueden simplificarse tras la migración a nueva UI."
+        "recommendation": "Módulo específico de Supermix. Revisar si las customizaciones pueden simplificarse tras la migración a nueva UI.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
       },
       {
         "java_package": "com.smf.supermix.poscustomizations",
@@ -5651,7 +5722,14 @@
         ],
         "effort_update_hours": 20,
         "effort_saas_hours": 30,
-        "recommendation": "El Web POS de Openbravo está siendo reemplazado por Etendo Mobile. Evaluar si este cliente puede migrar al stack móvil oficial antes de actualizar las customizaciones legacy."
+        "recommendation": "El Web POS de Openbravo está siendo reemplazado por Etendo Mobile. Evaluar si este cliente puede migrar al stack móvil oficial antes de actualizar las customizaciones legacy.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Payloads Logs",
+          "Configuración de Método de Pago"
+        ],
+        "elimination_candidate": true
       },
       {
         "java_package": "com.wps.pucara.customizationsphs",
@@ -5668,7 +5746,17 @@
         ],
         "effort_update_hours": 20,
         "effort_saas_hours": 32,
-        "recommendation": "Tiene dependencias con otros módulos WPS y SMF. El mantenimiento dual (dos equipos distintos) genera riesgo de conflictos. Consolidar o migrar a un solo equipo."
+        "recommendation": "Tiene dependencias con otros módulos WPS y SMF. El mantenimiento dual (dos equipos distintos) genera riesgo de conflictos. Consolidar o migrar a un solo equipo.",
+        "usage_score": 1,
+        "windows_used": [
+          "Resumen de Hitos de Incidencias"
+        ],
+        "windows_unused": [
+          "Import Purchase Order",
+          "Lineas Pedido de Compra Editar",
+          "Desactivar modificaciones de precios vencidas"
+        ],
+        "elimination_candidate": false
       },
       {
         "java_package": "com.wps.pucara.pedcomp",
@@ -5684,7 +5772,16 @@
         ],
         "effort_update_hours": 12,
         "effort_saas_hours": 20,
-        "recommendation": "Evaluar si las extensiones al pedido pueden implementarse como configuración AD o si requieren código Java. Muchas podrían resolverse con Process Definitions en la nueva UI."
+        "recommendation": "Evaluar si las extensiones al pedido pueden implementarse como configuración AD o si requieren código Java. Muchas podrían resolverse con Process Definitions en la nueva UI.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Próximos Arribos",
+          "Reporte de Facturas Clientes por Comerciales",
+          "Envío de Correo a Importadora",
+          "Reporte de Ventas por Agentes e Intermediarios"
+        ],
+        "elimination_candidate": true
       },
       {
         "java_package": "com.wps.pms.costing",
@@ -5701,7 +5798,13 @@
         ],
         "effort_update_hours": 24,
         "effort_saas_hours": 40,
-        "recommendation": "El costeo es un área crítica y sensible. Requiere análisis profundo del código para evaluar si puede sustituirse por el costeo estándar de Etendo o si tiene lógica irreemplazable."
+        "recommendation": "El costeo es un área crítica y sensible. Requiere análisis profundo del código para evaluar si puede sustituirse por el costeo estándar de Etendo o si tiene lógica irreemplazable.",
+        "usage_score": 1,
+        "windows_used": [
+          "Costos por Productos y Almacenes"
+        ],
+        "windows_unused": [],
+        "elimination_candidate": false
       },
       {
         "java_package": "org.openbravo.interco",
@@ -5717,7 +5820,11 @@
         ],
         "effort_update_hours": 4,
         "effort_saas_hours": 6,
-        "recommendation": "El bundle oficial com.etendoerp.advanced.intercompany ya está instalado. Este módulo legacy de Openbravo es redundante. Migrar datos/configuración al bundle oficial y eliminar."
+        "recommendation": "El bundle oficial com.etendoerp.advanced.intercompany ya está instalado. Este módulo legacy de Openbravo es redundante. Migrar datos/configuración al bundle oficial y eliminar.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
       },
       {
         "java_package": "org.openbravo.retail.posterminal",
@@ -5732,7 +5839,33 @@
         ],
         "effort_update_hours": 40,
         "effort_saas_hours": 20,
-        "recommendation": "Openbravo Web POS no tiene mantenimiento oficial en Etendo. Evaluar migración a Etendo Mobile o mantener congelado. Las customizaciones de POS (com.smf.supermix.poscustomizations) amplían este riesgo."
+        "recommendation": "Openbravo Web POS no tiene mantenimiento oficial en Etendo. Evaluar migración a Etendo Mobile o mantener congelado. Las customizaciones de POS (com.smf.supermix.poscustomizations) amplían este riesgo.",
+        "usage_score": 1,
+        "windows_used": [
+          "Channel - Touchpoint Type",
+          "Channel - Touchpoint"
+        ],
+        "windows_unused": [
+          "Web POS",
+          "Payment Method Type",
+          "Price Modification Reasons",
+          "Hardware Manager",
+          "HardwareManagerAutoRegister",
+          "Payment Provider",
+          "POS Print Templates",
+          "Cashup History",
+          "Errors While Importing POS Data",
+          "Choose warehouse",
+          "InstanceActivationExtensions",
+          "POS Payment Method Categories",
+          "POS Approval Reason",
+          "Cash Up Report XLS",
+          "Cash Up Report",
+          "Update Product Category By Assortment Background",
+          "Sync All Errors While Importing",
+          "Generate Product Images"
+        ],
+        "elimination_candidate": false
       },
       {
         "java_package": "org.openbravo.retail.pack",
@@ -5747,7 +5880,11 @@
         ],
         "effort_update_hours": 40,
         "effort_saas_hours": 20,
-        "recommendation": "Sigue la suerte de org.openbravo.retail.posterminal. Toda la pila retail de Openbravo debe evaluarse como bloque."
+        "recommendation": "Sigue la suerte de org.openbravo.retail.posterminal. Toda la pila retail de Openbravo debe evaluarse como bloque.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
       },
       {
         "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
@@ -5763,7 +5900,13 @@
         ],
         "effort_update_hours": 6,
         "effort_saas_hours": 4,
-        "recommendation": "El bundle oficial Financial Reports Advanced ya está instalado. Verificar cobertura funcional y eliminar este módulo GPS si está duplicado. Si hay Apache POI directo, requiere actualización a API v5."
+        "recommendation": "El bundle oficial Financial Reports Advanced ya está instalado. Verificar cobertura funcional y eliminar este módulo GPS si está duplicado. Si hay Apache POI directo, requiere actualización a API v5.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "New Balance sheet and P&L"
+        ],
+        "elimination_candidate": true
       },
       {
         "java_package": "com.openbravo.gps.printandsend",
@@ -5778,7 +5921,11 @@
         ],
         "effort_update_hours": 4,
         "effort_saas_hours": 3,
-        "recommendation": "Verificar si com.etendoerp.printdocumentws (ya instalado) cubre la misma funcionalidad. Si es así, eliminar este módulo GPS legacy."
+        "recommendation": "Verificar si com.etendoerp.printdocumentws (ya instalado) cubre la misma funcionalidad. Si es así, eliminar este módulo GPS legacy.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
       },
       {
         "java_package": "org.openbravo.financial.dimensionalpandlreport",
@@ -5794,7 +5941,13 @@
         ],
         "effort_update_hours": 8,
         "effort_saas_hours": 4,
-        "recommendation": "Evaluar si el bundle Financial Reports Advanced (ya instalado) cubre este reporte. Si es así, eliminar. Si tiene funcionalidad extra, analizar migración."
+        "recommendation": "Evaluar si el bundle Financial Reports Advanced (ya instalado) cubre este reporte. Si es así, eliminar. Si tiene funcionalidad extra, analizar migración.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Generate Profit And Loss Fact Acct"
+        ],
+        "elimination_candidate": true
       },
       {
         "java_package": "com.etendoerp.quicksalesorder",
@@ -5810,7 +5963,21 @@
         ],
         "effort_update_hours": 8,
         "effort_saas_hours": 6,
-        "recommendation": "Módulo de Etendo Software sin mantenimiento activo. Verificar si la funcionalidad puede cubrirse con la nueva UI móvil o si debe mantenerse como módulo independiente."
+        "recommendation": "Módulo de Etendo Software sin mantenimiento activo. Verificar si la funcionalidad puede cubrirse con la nueva UI móvil o si debe mantenerse como módulo independiente.",
+        "usage_score": 1,
+        "windows_used": [
+          "Products In App"
+        ],
+        "windows_unused": [
+          "import orders from app",
+          "Default values app",
+          "Questions for App",
+          "Secondary Categories",
+          "Geolocation",
+          "Visit",
+          "Create Orders From App"
+        ],
+        "elimination_candidate": false
       },
       {
         "java_package": "com.smf.generalledger.originalcurrency",
@@ -5825,7 +5992,13 @@
         ],
         "effort_update_hours": 6,
         "effort_saas_hours": 8,
-        "recommendation": "Funcionalidad de valor para instalaciones multi-moneda. Candidato a incluir en Financial Reports Advanced Bundle oficial. Evaluar con el equipo de producto."
+        "recommendation": "Funcionalidad de valor para instalaciones multi-moneda. Candidato a incluir en Financial Reports Advanced Bundle oficial. Evaluar con el equipo de producto.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "General Ledger Report with Original Currency"
+        ],
+        "elimination_candidate": false
       },
       {
         "java_package": "com.smf.pucara.template",
@@ -5838,7 +6011,11 @@
         "api_changes_applicable": [],
         "effort_update_hours": 2,
         "effort_saas_hours": 4,
-        "recommendation": "Son datos de referencia, no código ejecutable. El riesgo de migración es bajo pero los datos deben verificarse tras cada actualización de esquema."
+        "recommendation": "Son datos de referencia, no código ejecutable. El riesgo de migración es bajo pero los datos deben verificarse tras cada actualización de esquema.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
       },
       {
         "java_package": "org.openbravo.idl",
@@ -5854,7 +6031,14 @@
         ],
         "effort_update_hours": 6,
         "effort_saas_hours": 3,
-        "recommendation": "Si se usa para cargas puntuales, puede reemplazarse con scripts o el REST API de Etendo. Si se usa regularmente, evaluar actualización."
+        "recommendation": "Si se usa para cargas puntuales, puede reemplazarse con scripts o el REST API de Etendo. Si se usa regularmente, evaluar actualización.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Import",
+          "Entity Default Values"
+        ],
+        "elimination_candidate": true
       },
       {
         "java_package": "translation_modules_group",
@@ -5867,7 +6051,11 @@
         "api_changes_applicable": [],
         "effort_update_hours": 0,
         "effort_saas_hours": 1,
-        "recommendation": "Siguen la suerte del módulo principal que traducen. No requieren trabajo independiente."
+        "recommendation": "Siguen la suerte del módulo principal que traducen. No requieren trabajo independiente.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
       }
     ],
     "effort_summary": {
@@ -5878,8 +6066,13 @@
       "saas_core_hours": 91.0,
       "saas_custom_hours": 0,
       "saas_unmaintained_hours": 380,
-      "saas_total_hours": 471.0
-    }
+      "saas_total_hours": 471.0,
+      "elimination_candidates": 12,
+      "effort_saved_eliminating_min": 0,
+      "effort_saved_eliminating_max": 0
+    },
+    "mixpanel_source_instance": "MyPime Supermix Pucara",
+    "mixpanel_date_range": "90 días"
   },
   "ui_readiness": {
     "generated": "2026-04-24",
