@@ -1,0 +1,4253 @@
+{
+  "client": {
+    "name": "Albastar",
+    "hostname": "naza"
+  },
+  "platform": {
+    "type": "etendo",
+    "version": "24.4.19"
+  },
+  "modules": {
+    "gradle_jar": [],
+    "gradle_source": [
+      {
+        "java_package": "com.etendoerp.accounting.dimensions.assets",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.accounting.dimensions.assets",
+        "name": "Accounting Dimensions Assets",
+        "version": "1.2.2",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.dimensions.assets.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.accounting.dimensions.assets.template",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.accounting.dimensions.assets.template",
+        "name": "Accounting Dimensions Assets Template",
+        "version": "1.2.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.dimensions.assets.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.accounting.templates",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.accounting.templates",
+        "name": "New Accounting Templates",
+        "version": "1.14.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.templates.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bank.account.management",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.advanced.bank.account.management",
+        "name": "Advanced Bank Account Management",
+        "version": "1.4.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bank.account.management.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bank.account.management.template",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.advanced.bank.account.management.template",
+        "name": "Advanced Bank Account Management Template",
+        "version": "1.2.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bank.account.management.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.advanced.bpsettlement",
+        "name": "Advanced Business Partner Settlement",
+        "version": "1.13.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bpsettlement.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.advanced.financial.docs.processing",
+        "name": "Advanced Financial Documents Processing",
+        "version": "1.12.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.template",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.advanced.financial.docs.processing.template",
+        "name": "Advanced Financial Documents Processing Template",
+        "version": "1.13.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.advanced.intercompany",
+        "name": "Advanced Intercompany",
+        "version": "1.15.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.intercompany.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.automated.remittance",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.automated.remittance",
+        "name": "Automated Remittance",
+        "version": "1.4.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.automated.remittance.git",
+        "latest_version": "2.4.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.bankingpool",
+        "name": "Banking Pool",
+        "version": "1.14.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bankingpool.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.bulk.posting",
+        "name": "Bulk Posting",
+        "version": "1.16.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.posting.git",
+        "latest_version": "2.4.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.financial.extensions",
+        "name": "Financial Extensions",
+        "version": "1.26.2",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.financial.extensions.es_es",
+        "name": "Financial Extensions - Spanish Translation",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions.es_es",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.financial.reports.advanced",
+        "name": "Financial Reports Advanced",
+        "version": "1.15.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.gljournal.advanced",
+        "name": "GL Journal Advanced",
+        "version": "1.15.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.advanced.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.localization.spain.extensions",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.localization.spain.extensions",
+        "name": "Spain Localization Extensions",
+        "version": "1.27.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.payment.removal",
+        "name": "Payment Removal",
+        "version": "1.12.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.template",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.payment.removal.template",
+        "name": "Payment Removal Template",
+        "version": "1.13.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.reportvaluationstock.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.reportvaluationstock.es_es",
+        "name": "Report Valuation Stock - Spanish Translation",
+        "version": "1.8.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.reportvaluationstock.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.vat.regularization",
+        "name": "VAT Regularization",
+        "version": "1.5.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.vat.regularization.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.invoices",
+        "path": "/home/naza/workspace/Albastar/modules/com.openbravo.gps.idl.invoices",
+        "name": "Initial Data Load Extension for Invoices",
+        "version": "1.0.7",
+        "author": "GPS",
+        "bundle": "com.openbravo.gps.idl.invoices",
+        "latest_version": null
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.asset.amortization.report",
+        "name": "Asset Amortization Report",
+        "version": "1.13.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.asset.amortization.report.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.currency.apiconfig",
+        "name": "Currency API Configuration",
+        "version": "1.14.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.apiconfig.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.currency.conversionrate",
+        "name": "Conversion Rate Downloader",
+        "version": "1.14.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.conversionrate.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.gljournal.reverse",
+        "name": "Reverse GL Journal",
+        "version": "1.12.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 1,
+          "added_files": 1,
+          "deleted_files": 0,
+          "diff_lines_added": 29,
+          "diff_lines_removed": 8,
+          "files": [
+            {
+              "path": "src/com/smf/gljournal/reverse/Utilities.java",
+              "status": "modified",
+              "lines_added": 29,
+              "lines_removed": 8
+            },
+            {
+              "path": "src/com/smf/gljournal/reverse/Utilities_backup_20251215.java.bak",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.template",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.gljournal.reverse.template",
+        "name": "Reverse GL Journal Template",
+        "version": "1.12.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jobs.defaults.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.jobs.defaults.es_es",
+        "name": "Default Jobs (es_ES)",
+        "version": "1.11.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.defaults.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jobs.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.jobs.es_es",
+        "name": "Jobs - Spanish Translation",
+        "version": "1.5.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.securewebservices.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.securewebservices.es_es",
+        "name": "Secure web services implentation - Spanish Translation",
+        "version": "1.5.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.securewebservices.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.ticketbai",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.ticketbai",
+        "name": "TicketBAI Integration",
+        "version": "1.14.0",
+        "author": "SMF Consulting",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.ticketbai.git",
+        "latest_version": "2.10.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.advpaymentmngt.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.advpaymentmngt.es_es",
+        "name": "Advanced Payables and Receivables - Spanish Translation",
+        "version": "3.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.advpaymentmngt.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.alerts.accounting30",
+        "name": "Alerts: Accounting",
+        "version": "3.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.alerts.accounting30.es_es",
+        "name": "Alerts: Accounting - Spanish Translation",
+        "version": "3.11.0",
+        "author": "Openbravo, S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.application.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.client.application.es_es",
+        "name": "User Interface Application Translation Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.application.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.htmlwidget.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.client.htmlwidget.es_es",
+        "name": "HTML Widget Translation Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.htmlwidget.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.kernel.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.client.kernel.es_es",
+        "name": "User Interface Client Kernel Translation Spanish Spain(esES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.kernel.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.myob.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.client.myob.es_es",
+        "name": "Workspace & Widgets Translation: Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.myob.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.querylist.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.client.querylist.es_es",
+        "name": "Query/List Widget Translation Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.querylist.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.widgets.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.client.widgets.es_es",
+        "name": "Widgets Collection Translation Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.widgets.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.finance.checkprinting",
+        "name": "Check Printing",
+        "version": "1.14.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.finance.checkprinting.es_es",
+        "name": "Check Printing Spanish Translation",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.financial.bpsettlement",
+        "name": "Business Partner Settlements",
+        "version": "1.16.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.bpsettlement.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.financial.paymentreport.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.financial.paymentreport.es_es",
+        "name": "Payment Report - Spanish Translation",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.paymentreport.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.localization.spain.referencedata.accounts",
+        "name": "Chart of accounts: PGC 2007 General",
+        "version": "3.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "name": "Chart of accounts: PGC 2007 PYMEs",
+        "version": "3.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.pymes.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.localization.spain.referencedata.taxes",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "version": "1.15.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
+        "version": "1.9.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.cashvat.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.localization.spain.referencedata.translation.eses",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "version": "3.13.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.translation.eses.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain30",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.localization.spain30",
+        "name": "Localization pack Spain (España)",
+        "version": "3.20.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain30.git",
+        "latest_version": "4.2.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.cashvat.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat190.cashvat.es",
+        "name": "Withholding Report: Modelo 190 (Spain) Cash VAT compatible",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.cashvat.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat190.es",
+        "name": "Withholding Report: Modelo 190 (Spain)",
+        "version": "3.22.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.cashvat.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat303.cashvat.es",
+        "name": "Tax Report: Modelo 303 (Spain) Cash VAT compatible",
+        "version": "1.19.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.cashvat.es.git",
+        "latest_version": "2.6.0",
+        "diff": {
+          "modified_files": 4,
+          "added_files": 1,
+          "deleted_files": 1,
+          "diff_lines_added": 2777,
+          "diff_lines_removed": 5,
+          "files": [
+            {
+              "path": "build.gradle",
+              "status": "modified",
+              "lines_added": 3,
+              "lines_removed": 3
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_DATASET.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "legal/OBC_Licensing.txt",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "referencedata/standard/303_Report_Tax_Parameters_Cash_VAT.xml",
+              "status": "modified",
+              "lines_added": 2772,
+              "lines_removed": 0
+            },
+            {
+              "path": "LICENSE",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat303.es",
+        "name": "Tax Report: Modelo 303 (Spain)",
+        "version": "1.30.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.es.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 6,
+          "added_files": 4,
+          "deleted_files": 0,
+          "diff_lines_added": 13640,
+          "diff_lines_removed": 21,
+          "files": [
+            {
+              "path": "build.gradle",
+              "status": "modified",
+              "lines_added": 4,
+              "lines_removed": 4
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_DATASET.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "referencedata/standard/303_Report_Tax_Parameters.xml",
+              "status": "modified",
+              "lines_added": 13479,
+              "lines_removed": 8
+            },
+            {
+              "path": "src/org/openbravo/module/aeat303/es/report/v2024/AEAT303ReportFromOctober2024.java",
+              "status": "modified",
+              "lines_added": 6,
+              "lines_removed": 6
+            },
+            {
+              "path": "src/org/openbravo/module/aeat303/es/report/v2025/AEAT303Report2025.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "LICENSE",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "doc/2026/DR303e26.xlsx",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "doc/2026/DR303e26v101.xlsx",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "src/org/openbravo/module/aeat303/es/report/v2026/AEAT303Report2026.java",
+              "status": "added",
+              "lines_added": 148,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.cashvat.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat347apr.cashvat.es",
+        "name": "Spain AEAT Modelo 347 for APR Cash VAT compatible",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.cashvat.es.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat347apr.es",
+        "name": "Spain AEAT Modelo 347 for APR",
+        "version": "4.19.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.git",
+        "latest_version": "5.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat347apr.es.es_es",
+        "name": "Spain AEAT Modelo 347 for APR- Spanish Translation",
+        "version": "1.15.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.es_es.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat349.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat349.es",
+        "name": "Modelo 349",
+        "version": "2.17.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat349.es.git",
+        "latest_version": "3.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.cashvat.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat390.cashvat.es",
+        "name": "Tax Report: Modelo 390 (Spain) Cash VAT compatible",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.cashvat.es.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat390.es",
+        "name": "Tax Report: Modelo 390 (Spain)",
+        "version": "3.18.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.es.git",
+        "latest_version": "4.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.bptaxidkey",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.bptaxidkey",
+        "name": "Tipo de Número de Identificación de Tercero",
+        "version": "0.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.bptaxidkey.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cashvat",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.cashvat",
+        "name": "Cash VAT Management",
+        "version": "1.7.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cashvat.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.cifnifvalidator",
+        "name": "CIF and NIF validator",
+        "version": "1.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.cifnifvalidator.es_es",
+        "name": "Validador de CIF y NIF",
+        "version": "1.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.countryisocode",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.countryisocode",
+        "name": "3 digits ISO country codes",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.countryisocode.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno43.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.cuaderno43.es",
+        "name": "Cuaderno 43",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cuaderno43.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.epigrafes.iae.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.epigrafes.iae.es",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.epigrafes.iae.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.eucountries",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.eucountries",
+        "name": "European Union countries",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.eucountries.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.finactvalidator.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.finactvalidator.es",
+        "name": "Validador de número de cuenta financiera",
+        "version": "3.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.finactvalidator.es.git",
+        "latest_version": "4.2.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.incoterms",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.incoterms",
+        "name": "Incoterms",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.incoterms.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.intrastat",
+        "name": "Intrastat",
+        "version": "3.14.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.intrastat.es_es",
+        "name": "Intrastat – Spanish translation",
+        "version": "1.14.1",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.spain",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.intrastat.spain",
+        "name": "Intrastat for Spain",
+        "version": "1.14.1",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.spain.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.invoicesregisterbook",
+        "name": "Invoices Register Book",
+        "version": "2.14.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.git",
+        "latest_version": "3.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.invoicesregisterbook.es_es",
+        "name": "Libro de Facturas",
+        "version": "1.13.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.es_es.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.invoicesregisterbook.estaxes",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "version": "3.13.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.estaxes.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.invoicetaxreportenhanced30",
+        "name": "Multidimensional Tax Report",
+        "version": "3.11.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "name": "Multidimensional Tax Report Spanish (es_ES)",
+        "version": "3.11.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.es_es.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.organization.representative.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.organization.representative.es",
+        "name": "Legal Representative of the Organization",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.organization.representative.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.paymentmethod.type",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.paymentmethod.type",
+        "name": "Payment Method Type",
+        "version": "1.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.paymentmethod.type.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.remittance",
+        "name": "Remittances infrastructure",
+        "version": "3.18.1",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.git",
+        "latest_version": "4.3.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.template",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.remittance.template",
+        "name": "Remittance Infrastructure Template",
+        "version": "1.12.1",
+        "author": "Futit Services S.L.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.sii",
+        "name": "Spain SII",
+        "version": "1.25.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 13,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 36,
+          "diff_lines_removed": 13,
+          "files": [
+            {
+              "path": "src-db/database/model/functions/AEATSII_C_INVOICE_POST_EP.xml",
+              "status": "modified",
+              "lines_added": 11,
+              "lines_removed": 0
+            },
+            {
+              "path": "src-db/database/model/functions/AEATSII_REACTIVATE_INV.xml",
+              "status": "modified",
+              "lines_added": 12,
+              "lines_removed": 0
+            },
+            {
+              "path": "src/org/openbravo/module/sii/utils/SIISOAPUtils.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/org/openbravo/module/sii/paymentfiles/IDFacturaPayment.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/org/openbravo/module/sii/invoicefiles/RegistroLRFacturasEmitidas.java",
+              "status": "modified",
+              "lines_added": 2,
+              "lines_removed": 2
+            },
+            {
+              "path": "src/org/openbravo/module/sii/invoicefiles/FacturaRectificada.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/org/openbravo/module/sii/invoicefiles/IDFactura.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/org/openbravo/module/sii/invoicefiles/RegistroLRFacturasRecibidas.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/org/openbravo/module/sii/process/MultiUnsubscribeInvoice.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/org/openbravo/module/sii/process/MultiInvoiceSIIModification.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/org/openbravo/module/sii/process/MultiEnvioFactura.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/org/openbravo/module/sii/process/CorrectDuplicateInvoiceError.java",
+              "status": "modified",
+              "lines_added": 2,
+              "lines_removed": 2
+            },
+            {
+              "path": "src/org/openbravo/module/sii/process/background/SendInvoicesGroupsToAEAT.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.sii.es_es",
+        "name": "Spain SII Translation Spanish",
+        "version": "1.25.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.es_es.git",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii.template",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.sii.template",
+        "name": "Spain SII Template",
+        "version": "1.25.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.template.git",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.taximprovements.es",
+        "name": "Spanish Tax Module Improvements",
+        "version": "0.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.taximprovements.es_es",
+        "name": "Módulo de Impuestos para España mejorado",
+        "version": "0.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es_es.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.taxreportlauncher",
+        "name": "Tax Report Launcher",
+        "version": "1.12.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.taxreportlauncher.es",
+        "name": "Generador de declaraciones de impuestos",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.numbertoword.es_es",
+        "name": "Number To Word Spanish Translation",
+        "version": "1.13.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.es_es.git",
+        "latest_version": "1.13.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.numbertoword_es",
+        "name": "Number To Word (Spanish)",
+        "version": "1.13.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword_es.git",
+        "latest_version": "1.13.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain.dataset",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.proflocalization.spain.dataset",
+        "name": "Professional Localization pack Spain (España) Datasets",
+        "version": "1.17.1",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.proflocalization.spain.dataset.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "name": "Orders Awaiting Delivery Spanish (Spain) Translation",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.reports.ordersawaitingdelivery.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.datasource.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.service.datasource.es_es",
+        "name": "JSON Datasource Translation: Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.datasource.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.integration.google.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.service.integration.google.es_es",
+        "name": "Integration with Google APIs Translation Spanish Spain",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.google.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.integration.openid.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.service.integration.openid.es_es",
+        "name": "OpenID Service Integration Translation Spanish Spain",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.openid.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spain.regions",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.spain.regions",
+        "name": "Provincias de España",
+        "version": "1.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spain.regions.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.spanishdefaultdata.paymentmethods",
+        "name": "Métodos de Pago",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentmethods.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentterms",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.spanishdefaultdata.paymentterms",
+        "name": "Condiciones de pago",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentterms.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.userinterface.selector.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.userinterface.selector.es_es",
+        "name": "User Interface Selector Translation: Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.selector.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.userinterface.smartclient.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.userinterface.smartclient.es_es",
+        "name": "Smartclient Translation: Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.smartclient.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.utility.multiplebpselector",
+        "name": "Openbravo Multi Business Partner Selector",
+        "version": "1.12.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.utility.multiplebpselector.es_es",
+        "name": "Openbravo Multi Business Partner Selector Spanish (Spain)",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.v3.translation.pack.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.v3.translation.pack.es_es",
+        "name": "Openbravo 3.0 Translation Pack: Spanish Spain (es_ES)",
+        "version": "3.17.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.v3.translation.pack.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      }
+    ],
+    "local_maintained": [
+      {
+        "java_package": "com.smf.jasperutilities",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.jasperutilities",
+        "name": "SMF Jasper Utilities",
+        "version": "1.0.2",
+        "author": "SMF",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jasperutilities.git",
+        "latest_version": "1.0.2",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.numbertoword",
+        "name": "Number To Word",
+        "version": "1.22.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      }
+    ],
+    "local_not_maintained": [
+      {
+        "java_package": "__MACOSX",
+        "path": "/home/naza/workspace/Albastar/modules/__MACOSX"
+      },
+      {
+        "java_package": "com.etendoerp.accounting.templates.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.accounting.templates.es_es",
+        "name": "Nuevas plantillas de contabilidad",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bank.account.management.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.advanced.bank.account.management.es_es",
+        "name": "Advanced Bank Account Management - Spanish translation",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.advanced.bpsettlement.es_es",
+        "name": "Liquidación Avanzada de Socios Comerciales",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.advanced.financial.docs.processing.es_es",
+        "name": "Procesamiento Avanzado de Documentos Financieros",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.advanced.intercompany.es_es",
+        "name": "Intercompany Avanzado",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "version": "1.1.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.bankingpool.es_es",
+        "name": "Pool Bancario",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.bulk.posting.es_es",
+        "name": "Contabilización Masiva",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.financial.reports.advanced.es_es",
+        "name": "Informes Financieros Avanzados",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.gljournal.advanced.es_es",
+        "name": "Asientos Manuales Avanzados",
+        "version": "1.6.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.payment.removal.es_es",
+        "name": "Eliminación de Pagos",
+        "version": "1.5.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendoerp.vat.regularization.es_es",
+        "name": "VAT Regularization - Spanish Translation",
+        "version": "1.0.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.openbravo.gps.clone.invoices",
+        "path": "/home/naza/workspace/Albastar/modules/com.openbravo.gps.clone.invoices",
+        "name": "Clone invoices",
+        "version": "1.0.5",
+        "author": "Xabier Merino, Openbravo S.L.U"
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.orders",
+        "path": "/home/naza/workspace/Albastar/modules/com.openbravo.gps.idl.orders",
+        "name": "Initial Data Load Extension for Orders",
+        "version": "1.0.2",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.precognis.controlnif",
+        "path": "/home/naza/workspace/Albastar/modules/com.precognis.controlnif",
+        "name": "Control NIF en Terceros",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.precognis.modproject",
+        "path": "/home/naza/workspace/Albastar/modules/com.precognis.modproject",
+        "name": "Modificaciones en Proyecto",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.precognis.modproject.template",
+        "path": "/home/naza/workspace/Albastar/modules/com.precognis.modproject.template",
+        "name": "Template Modificacion Proyectos",
+        "version": "1.0.3",
+        "author": null
+      },
+      {
+        "java_package": "com.precognis.numeracion",
+        "path": "/home/naza/workspace/Albastar/modules/com.precognis.numeracion",
+        "name": "Numeracion terceros",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.precognis.printing",
+        "path": "/home/naza/workspace/Albastar/modules/com.precognis.printing",
+        "name": "Precognis Printing Module",
+        "version": "2.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.precognis.tarifasproducto",
+        "path": "/home/naza/workspace/Albastar/modules/com.precognis.tarifasproducto",
+        "name": "Tarifas Producto",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.precognis.vistafacpre",
+        "path": "/home/naza/workspace/Albastar/modules/com.precognis.vistafacpre",
+        "name": "Vista Facturas y Prepagos",
+        "version": "1.0.4",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.asset.amortization.report.es_es",
+        "name": "Asset Amortization Report - Spanish translation",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.currency.apiconfig.es_es",
+        "name": "Configuración de la API de Moneda",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.currency.conversionrate.es_es",
+        "name": "Descargador de Tasa de Conversión",
+        "version": "1.3.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.gljournal.clone",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.gljournal.clone",
+        "name": "Clone GL Journal",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.gljournal.reverse.es_es",
+        "name": "Anulación de Asientos Manuales",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.remittance.sabadellbank",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.remittance.sabadellbank",
+        "name": "Remesas: Nuevo Tipo de Remesa",
+        "version": "0.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.remittance.selector",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.remittance.selector",
+        "name": "Remittance Selector",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.webservices",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.webservices",
+        "name": "Web Services",
+        "version": "1.0.0",
+        "author": "SMF S.L."
+      },
+      {
+        "java_package": "com.smf.webservices.es_ES",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.webservices.es_ES",
+        "name": "Web Services Translation Spanish",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L."
+      },
+      {
+        "java_package": "com.smf.webservices.template",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.webservices.template",
+        "name": "Web Services Template",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "org.openbravo.contract",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.contract",
+        "name": "Contract Management Infrastructure",
+        "version": "1.1.101",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.contract.es_ES",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.contract.es_ES",
+        "name": "Contract Management Infrastructure Translation Spanish es_ES",
+        "version": "1.1.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.contract.services",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.contract.services",
+        "name": "Service Contract Management",
+        "version": "1.2.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.contract.services.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.contract.services.es_es",
+        "name": "Service Contract Management Translation Spanish es_ES",
+        "version": "1.2.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.financial.bpsettlement.es_es",
+        "name": "Liquidaciones de Terceros",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.idl",
+        "name": "Initial Data Load",
+        "version": "3.0.1000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl.translation.es_ES",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.idl.translation.es_ES",
+        "name": "Initial Data Load Spanish (Spain) Translation",
+        "version": "3.0.300",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.abreviado",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.localization.spain.referencedata.accounts.abreviado",
+        "name": "Chart of accounts: PGC 2010 Abreviado",
+        "version": "3.0.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.temporal.taxes.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat303.temporal.taxes.es",
+        "name": "Impuestos Temporales Modelo 303",
+        "version": "1.0.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.temporal.taxparameters.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat303.temporal.taxparameters.es",
+        "name": "Parámetros Temporales Modelo 303",
+        "version": "1.0.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat340.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.aeat340.es",
+        "name": "Tax Report: Modelo 340 (Spain)",
+        "version": "3.8.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.cuaderno19.es",
+        "name": "Cuaderno 19",
+        "version": "1.2.12",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno34.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.cuaderno34.es",
+        "name": "Cuaderno 34",
+        "version": "1.2.9",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno58.es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.cuaderno58.es",
+        "name": "Cuaderno 58",
+        "version": "3.0.4",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.einvoice",
+        "name": "Electronic Invoice",
+        "version": "0.1.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice.es_ES",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.einvoice.es_ES",
+        "name": "Facturación Electrónica",
+        "version": "0.1.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.facturae",
+        "name": "Facturae API",
+        "version": "2.0.3",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae31",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.facturae31",
+        "name": "Facturación Electrónica - Facturae 3.1",
+        "version": "0.3.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.facturae32",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.facturae32",
+        "name": "Facturación Electrónica - Facturae 3.2",
+        "version": "0.1.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "version": "1.4.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoiceTaxReportEnhanced30.cashvat",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.invoiceTaxReportEnhanced30.cashvat",
+        "name": "Multidimensional Tax Report Cash VAT",
+        "version": "1.3.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoiceTaxReportEnhanced30.cashvat.es_ES",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.invoiceTaxReportEnhanced30.cashvat.es_ES",
+        "name": "Multidimensional Tax Report Cash VAT Spanish (es_ES)",
+        "version": "1.0.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicematchingalgorithm",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.invoicematchingalgorithm",
+        "name": "Advanced Matching Algorithm",
+        "version": "2.0.301",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
+        "name": "Configuración IVA de Caja para el Libro de Facturas",
+        "version": "1.2.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.es_es",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.remittance.es_es",
+        "name": "Remittances infrastructure - Spanish Translation",
+        "version": "1.6.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.sepamatchingalgorithm",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.module.sepamatchingalgorithm",
+        "name": "SEPA Matching Algorithm",
+        "version": "1.0.0",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain.dataset.cashvat",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.proflocalization.spain.dataset.cashvat",
+        "name": "Professional Localization pack Spain Cash VAT Datasets",
+        "version": "1.3.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain30",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.proflocalization.spain30",
+        "name": "Professional Localization pack Spain (España)",
+        "version": "3.32.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.camt",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.sepa.iso20022.camt",
+        "name": "SEPA Bank-to-Customer Statement",
+        "version": "1.0.400",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.util.javax.xml.soap",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.util.javax.xml.soap",
+        "name": "Javax XML SOAP API",
+        "version": "1.16.2",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.util.jaxws",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.util.jaxws",
+        "name": "JAX-WS Java API for XML Web Services",
+        "version": "2.2.12",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.util.saaj.impl",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.util.saaj.impl",
+        "name": "SOAP with Attachments API for Java Implementation",
+        "version": "1.11.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "path": "/home/naza/workspace/Albastar/modules/org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "version": "1.0.0",
+        "author": null
+      }
+    ],
+    "custom": [
+      {
+        "java_package": "com.etendo.albastar.accountingcustomization",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendo.albastar.accountingcustomization",
+        "name": "Accounting Customization",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 11385,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.etendo.albastar.accountingcustomization.template",
+        "path": "/home/naza/workspace/Albastar/modules/com.etendo.albastar.accountingcustomization.template",
+        "name": "accounting customization template",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 116,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.albastar.custom.template",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.albastar.custom.template",
+        "name": "SMF ALbastar Custom Template",
+        "version": "1.0.0",
+        "author": "SMF",
+        "line_count": 212,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.albastar.idljournal",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.albastar.idljournal",
+        "name": "SMF Custom IDL Journal",
+        "version": "1.0.0",
+        "author": "SMF",
+        "line_count": 561,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.albastar.invoice.acctemplate",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.albastar.invoice.acctemplate",
+        "name": "SMF Accounting Template Invoice",
+        "version": "1.0.0",
+        "author": "SMF",
+        "line_count": 1005,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.albastar.siicustomization",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.albastar.siicustomization",
+        "name": "SMF SII Customization",
+        "version": "1.0.1",
+        "author": "SMF",
+        "line_count": 267,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.albastar.siicustomization.template",
+        "path": "/home/naza/workspace/Albastar/modules/com.smf.albastar.siicustomization.template",
+        "name": "SMF SII Customization Template",
+        "version": "1.0.1",
+        "author": "SMF",
+        "line_count": 175,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      }
+    ]
+  },
+  "core_divergences": {
+    "status": "modified",
+    "base_version": "expanded",
+    "baseline_type": "expanded",
+    "folders_checked": [
+      "src",
+      "src-db",
+      "src-core",
+      "src-wad",
+      "modules_core",
+      "src-trl",
+      "src-util"
+    ],
+    "modified_files": 6,
+    "added_files": 0,
+    "deleted_files": 0,
+    "diff_lines_added": 7875,
+    "diff_lines_removed": 462,
+    "files": [
+      {
+        "path": "src/org/openbravo/erpCommon/utility/reporting/printing/PrintController.java",
+        "status": "modified",
+        "lines_added": 206,
+        "lines_removed": 310
+      },
+      {
+        "path": "src/org/openbravo/erpReports/RptFIN_PaymentLines.jrxml",
+        "status": "modified",
+        "lines_added": 123,
+        "lines_removed": 26
+      },
+      {
+        "path": "src-db/database/formalChangesScript.xml",
+        "status": "modified",
+        "lines_added": 7524,
+        "lines_removed": 104
+      },
+      {
+        "path": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/actionHandler/AddPaymentActionHandler.java",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 5
+      },
+      {
+        "path": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/actionHandler/AddPaymentOnProcessActionHandler.java",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 12
+      },
+      {
+        "path": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/process/FIN_PaymentProcess.java",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 5
+      }
+    ]
+  },
+  "migration_score": 37,
+  "migratability": "very_hard",
+  "score_breakdown": {
+    "openbravo_platform": 0,
+    "core_divergences": -15.0,
+    "core_diff_lines": 8337,
+    "local_not_maintained": -20,
+    "local_not_maintained_translations": 23,
+    "local_not_maintained_regular": 45,
+    "custom_modules": -28.0,
+    "custom_modules_detail": [
+      {
+        "java_package": "com.etendo.albastar.accountingcustomization",
+        "line_count": 11385,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.etendo.albastar.accountingcustomization.template",
+        "line_count": 116,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      },
+      {
+        "java_package": "com.smf.albastar.custom.template",
+        "line_count": 212,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      },
+      {
+        "java_package": "com.smf.albastar.idljournal",
+        "line_count": 561,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.smf.albastar.invoice.acctemplate",
+        "line_count": 1005,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.smf.albastar.siicustomization",
+        "line_count": 267,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      },
+      {
+        "java_package": "com.smf.albastar.siicustomization.template",
+        "line_count": 175,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      }
+    ],
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
+  },
+  "custom_assessment": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-24",
+    "core_customizations": [
+      {
+        "name": "Migración formalChangesScript",
+        "description": "Artefacto XML generado automáticamente por el sistema de migraciones de base de datos de Etendo. Contiene sentencias DDL/DML aplicadas durante upgrades. No es código funcional.",
+        "files": [
+          "src-db/database/formalChangesScript.xml"
+        ],
+        "lines_changed": 7628,
+        "conclusion": "eliminate",
+        "justification": "Artefacto auto-generado por el proceso de upgrade de Etendo. Se regenera automáticamente en cada actualización; mantenerlo modificado bloquea futuros upgrades al crear conflictos de merge.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1
+      },
+      {
+        "name": "PrintController — Soporte de selección de templates",
+        "description": "Modificaciones al servlet de impresión de documentos para permitir al usuario seleccionar entre diferentes templates de impresión (ej: múltiples diseños de factura). Introduce el parámetro 'templates' en el flujo de impresión y lo propaga al ReportManager para elegir el template activo.",
+        "files": [
+          "src/org/openbravo/erpCommon/utility/reporting/printing/PrintController.java"
+        ],
+        "lines_changed": 516,
+        "conclusion": "upstream",
+        "justification": "La selección de templates de impresión es una funcionalidad genérica y valiosa para cualquier instalación Etendo con múltiples diseños de documento. El módulo de Accounting Templates de Etendo ya contempla múltiples templates; este patch es el mecanismo de selección que debería estar en core.",
+        "api_changes_applicable": [
+          "commons-fileupload 1.4 → 1.5 (DiskFileItemFactory API minor change)",
+          "commons-lang 2.6 → lang3 3.17.0 (package rename)"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 12
+      },
+      {
+        "name": "RptFIN_PaymentLines — Reporte de líneas de pago con anticipos",
+        "description": "Reporte Jasper personalizado para la ventana de pagos que incluye las líneas de facturas, pedidos, ítems GL y una fila adicional de 'Anticipo aplicado' mostrando el importe negativo de créditos usados. Muestra la justificación del pago con subtotal por moneda.",
+        "files": [
+          "src/org/openbravo/erpReports/RptFIN_PaymentLines.jrxml"
+        ],
+        "lines_changed": 149,
+        "conclusion": "eliminate",
+        "justification": "El diseño del reporte incluye texto en español ('Anticipo aplicado', 'Justification') y lógica específica al formato de pago de Albastar. No es candidato a upstream. En el camino SaaS se reemplaza regenerando el reporte desde la nueva UI o usando el report de pagos estándar de Etendo.",
+        "api_changes_applicable": [
+          "jasperreports 6.0.0 → 6.17.0 (regenerar con JasperStudio actualizado)"
+        ],
+        "effort_update_hours": 3,
+        "effort_saas_hours": 2
+      },
+      {
+        "name": "Bloqueo de partners en procesamiento de pagos",
+        "description": "Validación añadida en tres clases del módulo de gestión de pagos avanzados: impide completar o registrar un pago cuando el socio comercial está marcado como bloqueado para pagos ('BusinessPartnerBlocked'). El bloqueo se verifica antes de procesar la acción 'P' (Process) o 'D' (Deposit) y lanza una excepción con mensaje localizable.",
+        "files": [
+          "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/actionHandler/AddPaymentOnProcessActionHandler.java",
+          "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/actionHandler/AddPaymentActionHandler.java",
+          "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/process/FIN_PaymentProcess.java"
+        ],
+        "lines_changed": 44,
+        "conclusion": "upstream",
+        "justification": "El control de socios bloqueados para pagos es una funcionalidad de riesgo financiero genérica que beneficia a todos los clientes con crédito gestionado. FIN_Utility.isBlockedBusinessPartner() ya existe en el core; solo faltaba invocarla en estos tres puntos del flujo de pagos.",
+        "api_changes_applicable": [
+          "commons-lang 2.6 → lang3 3.17.0 (StringUtils package rename en clases dependientes)"
+        ],
+        "effort_update_hours": 3,
+        "effort_saas_hours": 4
+      }
+    ],
+    "custom_modules": [
+      {
+        "java_package": "com.etendo.albastar.accountingcustomization",
+        "name": "Accounting Customization",
+        "description": "Motor contable personalizado que sobreescribe las reglas de registro de facturas (DocInvoiceCustomization extiende DocInvoiceTemplate) y transacciones financieras (DocFINPaymentCustom extiende DocFINPaymentTemplate). Implementa lógica específica de agrupación de asientos, conversión de divisas, y generación de líneas de tipo 'DocDoubtfulDebt' (deudas de dudoso cobro). Modifica también la tabla C_INVOICELINE con campos adicionales y un trigger de dimensiones contables.",
+        "generalization": "client_specific",
+        "complexity": "critical",
+        "api_changes_applicable": [
+          "commons-lang 2.6 → lang3 3.17.0 (StringUtils en múltiples clases — renombrar imports)",
+          "hibernate-core 5.4.2 → 5.6.15 (OBCriteria API, deprecaciones menores)",
+          "DocInvoiceTemplate/DocFINPaymentTemplate API may have signature changes in 25.4.x"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 32,
+        "recommendation": "Auditar y documentar exactamente qué reglas contables difieren del estándar Etendo. Coordinar con Albastar para validar si la nueva versión de Accounting Templates (Financial Extensions 25.x) ya cubre estas reglas. Si no, refactorizar como módulo de contabilidad propio con interfaz clara hacia el motor estándar.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.etendo.albastar.accountingcustomization.template",
+        "name": "Accounting Customization Template",
+        "description": "Módulo de configuración/template para la contabilización personalizada. Contiene únicamente configuración de datos de referencia (configScript.xml). No contiene código Java.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el destino de com.etendo.albastar.accountingcustomization. Sin esfuerzo independiente.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.albastar.custom.template",
+        "name": "SMF Albastar Custom Template",
+        "description": "Módulo template de customizaciones SMF para Albastar. Solo contiene configScript.xml y dependencias de módulo. Sin código Java ni lógica de negocio.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Módulo configuración. Sigue los módulos funcionales que dependen de él.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.albastar.idljournal",
+        "name": "SMF Custom IDL Journal",
+        "description": "Adaptador de carga inicial de datos (IDL – Initial Data Load) para importar asientos contables desde archivos CSV externos. Crea GLBatch, GLJournal y GLJournalLine en Etendo mapeando 25 parámetros (organización, esquema contable, cuenta, centro de coste, dimensiones, importes débito/crédito, etc.) y los contabiliza automáticamente al finalizar. Depende del módulo org.openbravo.idl que está sin mantenimiento.",
+        "generalization": "bundle_candidate",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "commons-lang 2.6 → lang3 3.17.0 (StringUtils import en JournalEntriesProcess)",
+          "org.openbravo.idl sin mantenimiento — requiere fork o reemplazo por mecanismo nativo",
+          "hibernate-core 5.4.2 → 5.6.15 (HQL queries API)"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 12,
+        "recommendation": "Evaluar si el módulo de importación nativa de Etendo (Data Import o integration platform EtendoRX) puede reemplazar el IDL. Si no, publicar como bundle 'GL Journal Importer' dado que múltiples clientes necesitan importar asientos desde sistemas externos (Excel, ERP legacy).",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.albastar.invoice.acctemplate",
+        "name": "SMF Accounting Template Invoice",
+        "description": "Template de contabilización de facturas sin agrupación de líneas (TemplateInvoiceNoGrouping extiende DocInvoiceTemplate). Genera asientos contables individuales por línea de factura en lugar de agruparlos por impuesto o producto, lo que produce un detalle más granular en el libro mayor.",
+        "generalization": "bundle_candidate",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "commons-lang 2.6 → lang3 3.17.0 (StringUtils en TemplateInvoiceNoGrouping)",
+          "DocInvoiceTemplate API changes in 25.4.x"
+        ],
+        "effort_update_hours": 10,
+        "effort_saas_hours": 8,
+        "recommendation": "La contabilización sin agrupación de líneas es un requisito contable habitual en España. Evaluar si Financial Extensions 25.x ya ofrece un modo de 'sin agrupación' en Accounting Templates. Si no, proponer como opción del bundle de Accounting Templates existente.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.albastar.siicustomization",
+        "name": "SMF SII Customization",
+        "description": "Callout que copia automáticamente el campo 'Description' de la factura al campo SII (Sistema de Información Inmediata de la AEAT) 'Descripción SII'. Se activa cuando el usuario modifica la descripción de la factura, propagando el valor al campo específico del módulo SII de Hacienda.",
+        "generalization": "bundle_candidate",
+        "complexity": "trivial",
+        "api_changes_applicable": [
+          "SimpleCallout API — estable entre versiones, sin breaking changes conocidos"
+        ],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 4,
+        "recommendation": "Incorporar como mejora del módulo SII oficial de Etendo. La copia automática de descripción elimina trabajo manual para todos los clientes españoles con SII activo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.albastar.siicustomization.template",
+        "name": "SMF SII Customization Template",
+        "description": "Template de configuración para el módulo SII customization. Solo datos de referencia.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el destino de com.smf.albastar.siicustomization.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      }
+    ],
+    "unmaintained_modules": [
+      {
+        "java_package": "__MACOSX",
+        "name": "macOS filesystem artifact",
+        "function": "Directorio oculto generado por macOS al comprimir archivos. No es un módulo Etendo.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Eliminar del repositorio. No es un módulo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "name": "Analytics Exporter",
+        "function": "Módulo de Futit Services para exportar datos analíticos desde Etendo. Posiblemente exporta registros de AD a formatos de análisis externos.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "commons-lang si se usa; API Etendo entre 1.1.1 y versión actual"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Contactar con Futit Services para verificar si existe versión actualizada. Si no, evaluar si EtendoRX o la API REST nativa cubre el caso de uso.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Analytics Synchronization",
+          "Analytics Sync Process"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.openbravo.gps.clone.invoices",
+        "name": "GPS Clone Invoices",
+        "function": "Clonación de facturas completas (cabecera + líneas) desde una factura existente. Funcionalidad de copia de documentos.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Copy Record (Financial Extensions / core)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "commons-lang si se usa"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 2,
+        "recommendation": "Verificar si Copy Record nativo de Etendo (ENABLECOPYFULL en Financial Extensions) cubre el mismo caso de uso. Si es así, eliminar y usar el estándar.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.orders",
+        "name": "GPS IDL Orders",
+        "function": "Carga inicial de datos (IDL) para importar pedidos desde sistemas externos. Depende de org.openbravo.idl.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "org.openbravo.idl sin mantenimiento",
+          "commons-lang → lang3"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 8,
+        "recommendation": "Evaluar migración a EtendoRX o al mecanismo de integración nativo. El IDL framework está obsoleto; este módulo necesita reescritura si se mantiene la carga de pedidos externos.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.precognis.controlnif",
+        "name": "Precognis Control NIF",
+        "function": "Validación del NIF/CIF español en socio comercial. Verifica el formato y dígito de control del identificador fiscal español.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "API de callout/event handler puede haber cambiado"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6,
+        "recommendation": "Funcionalidad genérica para España. Proponer a Etendo como mejora del módulo de localización española o del bundle Financial Extensions Spain.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.precognis.modproject",
+        "name": "Precognis Mod Project",
+        "function": "Módulo de gestión de proyectos extendida por Precognis. Agrega campos o comportamientos al módulo de proyectos estándar.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "API de ventanas/procesos puede haber evolucionado"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Evaluar si las extensiones de proyecto son específicas de Albastar o generalizables. Si es lo segundo, considerar contribución al módulo de proyectos de Etendo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.precognis.modproject.template",
+        "name": "Precognis Mod Project Template",
+        "function": "Template de configuración del módulo de proyectos Precognis.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el destino de com.precognis.modproject.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.precognis.numeracion",
+        "name": "Precognis Numeración",
+        "function": "Gestión de series y numeraciones de documentos personalizadas. Extiende el sistema de secuencias de Etendo con reglas adicionales.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Document Sequences (core Etendo)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Sequence API changes"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3,
+        "recommendation": "Verificar si las secuencias nativas de Etendo 25.x cubren el caso de uso. Si hay lógica específica (prefijos dinámicos por organización, etc.), evaluar migración.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.precognis.printing",
+        "name": "Precognis Printing",
+        "function": "Customizaciones del sistema de impresión de documentos. Probablemente extiende o modifica los templates de impresión estándar de Etendo.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "PrintController API (ya modificado en core de esta instalación)"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 4,
+        "recommendation": "Coordinar con la customización de PrintController del core. Puede haber conflictos entre ambas modificaciones.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.precognis.tarifasproducto",
+        "name": "Precognis Tarifas Producto",
+        "function": "Gestión de tarifas y precios de producto con lógica adicional sobre la lista de precios estándar de Etendo.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Price List (core Etendo)",
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Price list API changes en 25.x"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 4,
+        "recommendation": "Mapear las reglas de tarifa del módulo contra las capacidades de Price Lists en Etendo 25.x. La mayoría de casos de tarifa por volumen/cliente ya están cubiertos nativamente.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.precognis.vistafacpre",
+        "name": "Precognis Vista Factura/Presupuesto",
+        "function": "Vista personalizada de facturas y presupuestos. Probablemente una ventana o consulta AD personalizada sobre documentos de venta.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3,
+        "recommendation": "Evaluar si la vista cubre una necesidad de reporting que puede resolverse con el módulo de informes de Financial Extensions.",
+        "usage_score": 3,
+        "windows_used": [
+          "Vista facturas-prepago"
+        ],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.gljournal.clone",
+        "name": "SMF GL Journal Clone",
+        "function": "Clonación de asientos contables (GL Journal). Permite duplicar un asiento completo como punto de partida para nuevos asientos similares.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "GL Journal Advanced (com.etendoerp.gljournal.advanced)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2,
+        "recommendation": "Verificar si GL Journal Advanced de Financial Extensions incluye clonación. Si sí, migrar y eliminar este módulo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.smf.remittance.sabadellbank",
+        "name": "SMF Remittance Sabadell Bank",
+        "function": "Generador de ficheros de remesa en formato específico del Banco Sabadell. Produce ficheros de cobro/pago para carga directa en la plataforma online del Sabadell.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Formato XML/SEPA del Sabadell puede haber cambiado",
+          "commons-lang si se usa"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Validar con Albastar si el banco sigue requiriendo este formato específico o si ahora acepta SEPA estándar (ISO 20022). Si es posible, migrar a org.openbravo.sepa.iso20022.credittransfer (también sin mantenimiento pero más estándar).",
+        "usage_score": 2,
+        "windows_used": [
+          "Create Remittance File (.txt)"
+        ],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.remittance.selector",
+        "name": "SMF Remittance Selector",
+        "function": "Selector de efectos/remesas para seleccionar qué pagos incluir en una remesa bancaria. Extiende la funcionalidad de selección del módulo de remesas.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Remittance (Financial Extensions)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3,
+        "recommendation": "Verificar si el selector de remesas de Financial Extensions 25.x cubre el caso de uso. Si sí, eliminar este módulo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Pending Payments View"
+        ],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.smf.webservices",
+        "name": "SMF Web Services",
+        "function": "Endpoints de web services SOAP/REST propios de SMF para exponer datos de Etendo a sistemas externos. Probablemente expone facturas, pagos u otros documentos vía SOAP.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "Etendo REST API (core) / EtendoRX",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "jaxws 2.2.12 → Jakarta EE equivalente (major change)",
+          "org.openbravo.util.jaxws sin mantenimiento",
+          "org.openbravo.util.javax.xml.soap sin mantenimiento"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 8,
+        "recommendation": "Migrar los consumers de estos WS a la API REST nativa de Etendo (ya disponible en 25.x) o a EtendoRX. El stack SOAP está obsoleto y las dependencias JAX-WS no tienen mantenimiento.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.smf.webservices.template",
+        "name": "SMF Web Services Template",
+        "function": "Template de configuración para los web services SMF.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el destino de com.smf.webservices.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.contract",
+        "name": "Openbravo Contract",
+        "function": "Módulo de gestión de contratos: creación, seguimiento de vigencia, renovación automática y vinculación con pedidos o proyectos.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "commons-lang → lang3",
+          "Hibernate 5.4 → 5.6",
+          "API de ventanas/procesos Etendo"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 12,
+        "recommendation": "Módulo de alto riesgo sin reemplazo oficial. Si Albastar usa contratos activamente, requerir fork y actualización al mantenedor original, o evaluar desarrollo propio en Etendo 25.x.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Contract Template",
+          "Contract",
+          "Churn Reason",
+          "Contract Type"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.contract.services",
+        "name": "Openbravo Contract Services",
+        "function": "Extensión de contratos para servicios recurrentes: facturación periódica automática desde contratos activos.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "commons-lang → lang3",
+          "Hibernate 5.4 → 5.6"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 8,
+        "recommendation": "Evaluar junto con org.openbravo.contract. Si la facturación recurrente es crítica para Albastar, es un candidato a módulo propio o bundle de Etendo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Unbilled Revenue Process Configuration",
+          "Prorating Percentage Configuration",
+          "Invoice Process Configuration",
+          "Sales Invoice Proposal",
+          "Billing Group",
+          "Contract Invoice Schedule",
+          "Unbilled Revenue",
+          "Unbilled Revenue Proposal",
+          "Renew contracts Background",
+          "Renew contract",
+          "Update Invoice Plan",
+          "Process Service Contract",
+          "Create Contract from Template",
+          "Contract Billing Background",
+          "OBSCNTR_C_Order_Post",
+          "Process Service Contract (use ONLY for 1st data load)",
+          "Clean Temporal Data"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "name": "Openbravo IDL (Initial Data Load)",
+        "function": "Framework de carga masiva inicial de datos desde CSV/Excel a Etendo. Base sobre la que se apoyan com.smf.albastar.idljournal y com.openbravo.gps.idl.orders.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "commons-lang → lang3 (masivo en todo el framework)",
+          "Hibernate 5.4 → 5.6",
+          "Java 17 compatibility"
+        ],
+        "effort_update_hours": 24,
+        "effort_saas_hours": 8,
+        "recommendation": "Framework obsoleto. Si se mantienen los módulos IDL de Albastar, requiere fork completo del framework y actualización de dependencias. Evaluar reemplazo por EtendoRX data connectors o importación nativa.",
+        "usage_score": 1,
+        "windows_used": [
+          "Data Import Entries",
+          "Data Import Entry Archive"
+        ],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "name": "Openbravo IDL Java",
+        "function": "Componente Java del framework IDL para ejecutar procesos de carga de datos.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Idem org.openbravo.idl"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 4,
+        "recommendation": "Junto con org.openbravo.idl. Actualizar en bloque si se decide mantener el framework IDL.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.abreviado",
+        "name": "Spain Localization — Plan General Contable Abreviado",
+        "function": "Datos de referencia del Plan General Contable Abreviado español (PGC Abreviado). Contiene el catálogo de cuentas contables para empresas que no aplican el PGC completo.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Spain Localization (org.openbravo.proflocalization.spain30 o Financial Extensions Spain)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2,
+        "recommendation": "Verificar si Financial Extensions Spain 25.x incluye el PGC abreviado como opción de datos de referencia.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.temporal.taxes.es",
+        "name": "AEAT 303 Impuestos Temporales",
+        "function": "Configuración de impuestos temporales para el modelo 303 de IVA de la AEAT española. Datos de referencia para la declaración trimestral de IVA.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 3,
+        "effort_saas_hours": 2,
+        "recommendation": "Verificar si Financial Extensions Spain 25.x incluye datos de referencia AEAT 303 actualizados.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.temporal.taxparameters.es",
+        "name": "AEAT 303 Parámetros de Impuestos",
+        "function": "Parámetros de impuestos para configuración del modelo 303 de IVA.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1,
+        "recommendation": "Idem org.openbravo.module.aeat303.temporal.taxes.es.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.aeat340.es",
+        "name": "AEAT Modelo 340",
+        "function": "Generación del modelo 340 de la AEAT (declaración de operaciones incluidas en libros registro). Módulo fiscal Spain-specific, actualmente derogado (AEAT eliminó el modelo 340 para la mayoría de obligados con SII).",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "SII (Sistema de Información Inmediata) — ya instalado",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 2,
+        "recommendation": "El modelo 340 fue reemplazado por el SII para la mayoría de empresas. Verificar con Albastar si aún está obligada al 340 (algunas empresas mantienen la obligación). Si no, eliminar.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Lanzar Modelo 340",
+          "Generar Modelo 340"
+        ],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es",
+        "name": "Cuaderno 19 — Domiciliación SEPA",
+        "function": "Generación de ficheros de domiciliación bancaria en formato Cuaderno 19 (norma AEB) para cobros por domiciliación a clientes. Formato bancario español anterior al SEPA.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank (también sin mantenimiento)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Formato bancario AEB obsoleto — evaluación requerida"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "La norma AEB ha migrado a SEPA en la mayoría de bancos españoles. Validar con Albastar si sus bancos aún aceptan C19 o han migrado a XML SEPA. Si han migrado, reemplazar con org.openbravo.sepa.iso20022 (a su vez necesita actualización).",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno34.es",
+        "name": "Cuaderno 34 — Transferencias nacionales",
+        "function": "Generación de ficheros de transferencias nacionales en formato Cuaderno 34 (norma AEB).",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 4,
+        "recommendation": "Idem Cuaderno 19. Las transferencias SEPA (XML ISO 20022) han reemplazado al C34. Validar con banco y migrar a SEPA si procede.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno58.es",
+        "name": "Cuaderno 58 — Confirming",
+        "function": "Generación de ficheros de confirming en formato Cuaderno 58 para gestión de pagos a proveedores vía confirming bancario.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Formato AEB C58 — específico de cada banco"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "No hay reemplazo SEPA para confirming (es un servicio financiero, no solo un formato). Verificar si el banco de Albastar ha migrado el confirming a SEPA 20022. Si mantiene C58, requiere fork y mantenimiento.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice",
+        "name": "Openbravo eInvoice",
+        "function": "Módulo de facturación electrónica. Genera facturas en formato electrónico para intercambio B2B o con administraciones públicas.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "API de generación de documentos",
+          "Formatos XML evolucionados (Factura-e 3.2.x, PEPPOL)"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Evaluar si el uso de eInvoice de Albastar es Factura-e (cubierto por org.openbravo.module.facturae) o PEPPOL/EDI. Consolidar con el módulo Factura-e y evaluar módulo PEPPOL propio si aplica.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Electronic Invoice Format",
+          "Electronic Invoice Platform",
+          "Generate And Send Electronic Invoice",
+          "Generate Electronic Invoice"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.module.facturae",
+        "name": "Factura-e (Formato 3.x)",
+        "function": "Generación de facturas electrónicas en formato Factura-e para presentación ante la Administración Pública española (AEAT, FACe). Formato XML firmado digitalmente.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Certificado de firma digital puede requerir actualización",
+          "Formato Factura-e evolucionado a 3.2.2",
+          "commons-lang → lang3"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 12,
+        "recommendation": "Si Albastar emite a AAPP, este módulo es crítico. No hay reemplazo oficial en Etendo 25.x. Requiere fork, actualización a Factura-e 3.2.2 y mantenimiento de firma digital.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.module.facturae31",
+        "name": "Factura-e v3.1",
+        "function": "Soporte específico del formato Factura-e versión 3.1.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Consolidar con org.openbravo.module.facturae. Versión 3.1 es obsoleta (AEAT acepta desde 3.2).",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.facturae32",
+        "name": "Factura-e v3.2",
+        "function": "Soporte específico del formato Factura-e versión 3.2 (versión actual requerida por AEAT).",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "commons-lang → lang3"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Módulo más crítico del stack Factura-e. Mantener y actualizar como parte del fork de org.openbravo.module.facturae.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.module.invoiceTaxReportEnhanced30.cashvat",
+        "name": "Invoice Tax Report Enhanced — Cash VAT",
+        "function": "Informe de impuestos de facturas mejorado con soporte para IVA de caja (régimen especial de criterio de caja RECC).",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Reports Advanced (com.etendoerp.financial.reports.advanced)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3,
+        "recommendation": "Verificar si Financial Reports Advanced de Etendo cubre el informe de IVA de caja. Si sí, eliminar este módulo.",
+        "usage_score": 1,
+        "windows_used": [
+          "Multidimensional Tax Report Cash VAT"
+        ],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
+        "name": "Invoice Register Book — Spain Cash VAT",
+        "function": "Libro de registro de facturas para el régimen de IVA de caja en España (RECC). Requerimiento de la AEAT para empresas acogidas al RECC.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Reports Advanced (Spain)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3,
+        "recommendation": "Verificar cobertura en Financial Reports Advanced. Si no la cubre, considerar fork y mantenimiento como módulo Spain Localization.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.invoicematchingalgorithm",
+        "name": "Invoice Matching Algorithm",
+        "function": "Algoritmo de emparejamiento automático de facturas con pagos y albaranes. Automatiza la conciliación de documentos financieros.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Advanced Payment Management (Financial Extensions)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "commons-lang → lang3 si aplica"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 4,
+        "recommendation": "Verificar si el módulo de gestión avanzada de pagos de Financial Extensions (ya instalado) incluye matching automático. Si sí, migrar configuración y eliminar.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.sepamatchingalgorithm",
+        "name": "SEPA Matching Algorithm",
+        "function": "Algoritmo de emparejamiento específico para extractos bancarios SEPA (CAMT.053). Concilia automáticamente movimientos SEPA con pagos Etendo.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Banking Pool (com.etendoerp.bankingpool — ya instalado)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3,
+        "recommendation": "Banking Pool de Etendo (ya instalado) incluye matching de extractos SEPA. Verificar si cubre el caso de uso y eliminar este módulo si es así.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain30",
+        "name": "Spain Professional Localization 3.0",
+        "function": "Localización española profesional completa: plan de cuentas, tipos de impuestos, tipos de documentos, calendarios fiscales, formatos de impresión y configuración para el mercado español.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Extensions Spain (Etendo 25.x)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 4,
+        "recommendation": "Módulo crítico para la configuración del entorno español. Financial Extensions Spain de Etendo debería cubrir esto. Validar plan de cuentas y tipos de documento antes de migrar.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain.dataset.cashvat",
+        "name": "Spain Localization — Cash VAT Dataset",
+        "function": "Datos de referencia del IVA de caja para la localización española.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Extensions Spain",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "Sigue el destino de org.openbravo.proflocalization.spain30.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "name": "SEPA ISO 20022 — Base",
+        "function": "Módulo base para generación de ficheros SEPA ISO 20022. Proporciona la infraestructura XML para todos los subtipos SEPA (transferencias, domiciliaciones, extractos).",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java XML libraries (Woodstox 3→4, JAXB)",
+          "commons-lang → lang3"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 10,
+        "recommendation": "Módulo crítico para pagos bancarios. No hay reemplazo oficial en Etendo 25.x. Requiere fork del grupo completo SEPA (4 módulos). Prioridad alta si Albastar usa transferencias SEPA o domiciliaciones.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.camt",
+        "name": "SEPA ISO 20022 — CAMT (extractos bancarios)",
+        "function": "Importación de extractos bancarios en formato CAMT.053 (ISO 20022). Permite conciliar movimientos bancarios automáticamente.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "Banking Pool (com.etendoerp.bankingpool — ya instalado)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Banking Pool ya instalado debería cubrir la importación CAMT. Verificar y eliminar si Banking Pool es suficiente.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA ISO 20022 — Direct Debit (cliente-a-banco)",
+        "function": "Generación de ficheros XML SEPA para domiciliación bancaria (adeudo directo SEPA core). Estándar actual para cobros por domiciliación en la zona SEPA.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "ISO 20022 XML namespace evolution"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Actualizar junto con el módulo base SEPA. Si Albastar usa cobros por domiciliación, este módulo es crítico.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA ISO 20022 — Credit Transfer (cliente-a-banco)",
+        "function": "Generación de ficheros XML SEPA para transferencias bancarias (Credit Transfer PAIN.001). Estándar para pagos a proveedores en la zona SEPA.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "ISO 20022 PAIN.001 XML namespace changes"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Idem SEPA Direct Debit. Crítico para pago a proveedores. Actualizar en bloque con el grupo SEPA.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.util.javax.xml.soap",
+        "name": "Javax XML SOAP utility",
+        "function": "Librería de utilidad que provee las APIs SOAP (javax.xml.soap) para módulos que usan web services SOAP.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Jakarta EE SOAP API",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "javax.xml.soap migrado a Jakarta (jakarta.xml.soap) en Java 17+"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2,
+        "recommendation": "Reemplazar por la dependencia estándar de Jakarta SOAP. Necesario si com.smf.webservices se mantiene.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.util.jaxws",
+        "name": "JAX-WS utility",
+        "function": "Librería de utilidad JAX-WS (Java API for XML Web Services) para desarrollo de clientes y servidores SOAP.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Jakarta XML Web Services (jakarta.xml.ws)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "jaxws → Jakarta EE migration para Java 17"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3,
+        "recommendation": "Migrar a Jakarta Web Services si se mantienen WS SOAP, o eliminar si se migra a REST.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.util.saaj.impl",
+        "name": "SAAJ implementation",
+        "function": "Implementación SAAJ (SOAP with Attachments API for Java) para envío de mensajes SOAP con adjuntos.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Jakarta SAAJ",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "Sigue el destino de com.smf.webservices. Eliminar junto con el stack SOAP.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "name": "OpenCSV utility",
+        "function": "Librería OpenCSV envuelta como módulo Etendo para parseo y generación de archivos CSV.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "OpenCSV disponible directamente via Gradle en 25.x",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 0,
+        "recommendation": "En Etendo 25.x OpenCSV puede declararse como dependencia directa en build.gradle. Eliminar el módulo wrapper.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      }
+    ],
+    "effort_summary": {
+      "update_core_hours": 13,
+      "update_custom_hours": 47,
+      "update_unmaintained_hours": 289,
+      "update_total_hours": 349,
+      "saas_core_hours": 19,
+      "saas_custom_hours": 60,
+      "saas_unmaintained_hours": 166,
+      "saas_total_hours": 245,
+      "elimination_candidates": 28,
+      "effort_saved_eliminating_hours": 78
+    },
+    "_translation_packs_note": "23 módulos de traducción (es_ES/es_es) siguen el destino del módulo principal. Esfuerzo individual: 0h. Se omiten del detalle para no inflar la lista.",
+    "mixpanel_source_instance": "albastar",
+    "mixpanel_date_range": "90 días"
+  },
+  "ui_readiness": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-24",
+    "install_root": "/home/naza/workspace/Albastar",
+    "ad_counts": {
+      "windows_M": 243,
+      "windows_T": 39,
+      "windows_Q": 7,
+      "windows_pick_execute": 51,
+      "ref_ImageBLOB": 15,
+      "ref_PAttribute": 30,
+      "ref_Binary": 5,
+      "ref_Assignment": 3,
+      "ref_SelectorAsLink": 1,
+      "ref_TreeReference": 1,
+      "button_DocAction": 6,
+      "button_Posted": 32,
+      "button_CreateFrom": 8,
+      "button_PaymentRule": 9,
+      "button_ChangeProjectStatus": 1,
+      "process_AD_S": 153,
+      "process_AD_M": 200,
+      "process_AD_ISREPORT": 111,
+      "process_AD_ISBACKGROUND": 25,
+      "process_AD_ISJASPER": 3,
+      "process_PD_A": 28,
+      "process_PD_M": 12,
+      "process_PD_PickExecute": 87,
+      "process_PD_Report": 8,
+      "display_logic_fields": 2563,
+      "callouts": 95,
+      "selectors": 172,
+      "ad_forms": 26,
+      "alert_rules": 20,
+      "status_bar_fields": 210,
+      "field_groups_all": 1628,
+      "field_groups_collapsed": 93,
+      "readonly_logic": 1069,
+      "isupdateable_N": 5359,
+      "complex_defaults": 2321,
+      "hqlfilterclause": 38,
+      "menu_windows": 285,
+      "menu_reports": 85
+    },
+    "features": [
+      {
+        "section": "1.1",
+        "priority": "media",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "ad_count": 243,
+        "reason": "243 ventanas de tipo Maintain representan el grueso del sistema. Status TO CHECK con 78% indica que la funcionalidad básica funciona pero pueden existir edge cases. Riesgo bajo-medio.",
+        "title": "Ventanas tipo M (Maintain)"
+      },
+      {
+        "section": "1.2",
+        "priority": "alta",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "ad_count": 39,
+        "reason": "39 ventanas transaccionales con lógica de negocio crítica (pedidos, facturas, pagos). Las ventanas T concentran la mayoría del valor de negocio y cualquier bug tiene impacto directo en operaciones.",
+        "title": "Ventanas tipo T (Transaction)"
+      },
+      {
+        "section": "1.3",
+        "priority": "media",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "ad_count": 7,
+        "reason": "Solo 7 ventanas de consulta. Impacto moderado; si fallan, el usuario puede usar filtros de grid como alternativa.",
+        "title": "Ventanas tipo Q (Query)"
+      },
+      {
+        "section": "1.4",
+        "priority": "critica",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "ad_count": 51,
+        "reason": "51 ventanas P&E con solo 55% completado. Estas ventanas son popups de selección+acción muy usados en procesos clave (selección de facturas, pagos, recepciones). Un bloqueo aquí paraliza flujos operativos completos.",
+        "title": "Ventanas Pick & Execute"
+      },
+      {
+        "section": "2",
+        "priority": "alta",
+        "status": "PARCIAL",
+        "completion_pct": 40,
+        "ad_count": 15,
+        "reason": "15 columnas con referencia Image BLOB (carga de imágenes binarias). Status PARCIAL con implementación incompleta — los usuarios no podrán subir/ver imágenes hasta que esté completo.",
+        "title": "Tipos de referencia — Image BLOB"
+      },
+      {
+        "section": "2",
+        "priority": "alta",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "ad_count": 30,
+        "reason": "30 columnas con atributos de producto (lotes, series, tallas/colores). PAttribute es fundamental para la gestión de almacén y trazabilidad de Albastar. Status PARCIAL significa funcionalidad incompleta en un área crítica.",
+        "title": "Tipos de referencia — PAttribute"
+      },
+      {
+        "section": "2",
+        "priority": "media",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "ad_count": 10,
+        "reason": "10 columnas en total (Binary=5, Assignment=3, SelectorAsLink=1, TreeRef=1). Volumen bajo pero tipos con implementación incompleta. La baja frecuencia reduce el impacto operativo.",
+        "title": "Tipos de referencia — Binary / Assignment / SelectorAsLink / TreeRef"
+      },
+      {
+        "section": "2.B",
+        "priority": "critica",
+        "status": "TO CHECK",
+        "completion_pct": 85,
+        "ad_count": 6,
+        "reason": "DocAction es el mecanismo central para completar/anular/reactivar documentos (facturas, pedidos, pagos). Albastar tiene customización en el motor de pago (blocking de BusinessPartner) que depende de este flujo. Cualquier rotura bloquea la operación completa.",
+        "title": "Botón DocAction (cambio de estado de documentos)"
+      },
+      {
+        "section": "2.B",
+        "priority": "critica",
+        "status": "PARCIAL",
+        "completion_pct": 30,
+        "ad_count": 32,
+        "reason": "32 instancias del botón Posted con solo 30% completado. Albastar tiene 3 módulos de customización contable (DocInvoiceCustomization, TemplateInvoiceNoGrouping, FinPaymentTemplate) que dependen del motor contable. La contabilización es una función core del negocio.",
+        "title": "Botón Posted (contabilización)"
+      },
+      {
+        "section": "2.B",
+        "priority": "critica",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "ad_count": 8,
+        "reason": "8 instancias de CreateFrom usadas para generar facturas desde pedidos, albaranes, etc. Flujo crítico en operaciones de Albastar. Status arquitectónico — si el popup P&E subyacente falla, todos los flujos de creación desde documento fallan.",
+        "title": "Botón CreateFrom (crear desde documento origen)"
+      },
+      {
+        "section": "2.B",
+        "priority": "alta",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "ad_count": 9,
+        "reason": "9 instancias. PaymentRule determina cómo se cobra/paga cada documento. Albastar tiene módulo SII y customizaciones de pago; si este botón falla, los flujos de cobro/pago quedan bloqueados.",
+        "title": "Botón PaymentRule (regla de pago)"
+      },
+      {
+        "section": "2.B",
+        "priority": "media",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "ad_count": 1,
+        "reason": "1 instancia. Botón específico de gestión de proyectos. Impacto bajo por baja frecuencia aunque sea NOT DONE.",
+        "title": "Botón ChangeProjectStatus"
+      },
+      {
+        "section": "3.A.2",
+        "priority": "media",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "ad_count": 153,
+        "reason": "153 procesos estándar con popup de parámetros generado por AD. La mayoría son procesos auxiliares. Status 72% indica funcionalidad esencial cubierta.",
+        "title": "Procesos tipo S — Standard (formulario de parámetros AD)"
+      },
+      {
+        "section": "3.A.2",
+        "priority": "critica",
+        "status": "BLOQUEADO",
+        "completion_pct": 0,
+        "ad_count": 200,
+        "reason": "200 procesos con UI manual (JavaScript OB.*) que no tienen equivalente en React. Bloqueador arquitectónico: los namespaces OB.* no existen en la nueva UI. Albastar tiene módulos custom que probablemente incluyen procesos M. Requiere reescritura completa o eliminación de todos estos procesos.",
+        "title": "Procesos tipo M — Manual JS (OB.* namespaces)"
+      },
+      {
+        "section": "3.A.2",
+        "priority": "critica",
+        "status": "PARCIAL",
+        "completion_pct": 50,
+        "ad_count": 111,
+        "reason": "111 reportes legacy (HTML/Jasper). Albastar tiene reportes custom (RptFIN_PaymentLines.jrxml, menu_reports=85). Los reportes son funcionalidad de negocio visible; el 50% no completado significa la mitad de los reportes no funcionarán.",
+        "title": "Reports legacy (ISREPORT=Y, HTML/PDF)"
+      },
+      {
+        "section": "3.A.2",
+        "priority": "alta",
+        "status": "NOT DONE",
+        "completion_pct": 10,
+        "ad_count": 25,
+        "reason": "25 procesos en background (scheduled jobs). Status NOT DONE al 10%. Albastar tiene módulos con procesos programados (IDL journals, SII). Sin esta funcionalidad, las automatizaciones nocturnas y tareas programadas dejarán de funcionar.",
+        "title": "Procesos Background (ISBACKGROUND=Y)"
+      },
+      {
+        "section": "3.A.4",
+        "priority": "media",
+        "status": "PARCIAL",
+        "completion_pct": 60,
+        "ad_count": 3,
+        "reason": "3 reportes Jasper. Volumen bajo pero Albastar tiene un reporte Jasper custom (RptFIN_PaymentLines) que deberá ser regenerado en React si se migra.",
+        "title": "Procesos Jasper (ISJASPER=Y)"
+      },
+      {
+        "section": "3.B.1",
+        "priority": "alta",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "ad_count": 28,
+        "reason": "28 Process Definitions tipo Action Handler. Estos son los procesos modernos con Java backend. 75% completado; edge cases pendientes pueden afectar flujos transaccionales críticos.",
+        "title": "Process Definition tipo A (Action Handler)"
+      },
+      {
+        "section": "3.B.2",
+        "priority": "critica",
+        "status": "BLOQUEADO",
+        "completion_pct": 25,
+        "ad_count": 12,
+        "reason": "12 PD con UI manual JavaScript. Bloqueador idéntico al §3.A.2-M: los namespaces OB.* no existen en React. Requiere reescritura completa de la UI de estos procesos.",
+        "title": "Process Definition tipo M (Manual JS — BLOQUEADO)"
+      },
+      {
+        "section": "3.B.3",
+        "priority": "alta",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "ad_count": 87,
+        "reason": "87 PD tipo P&E. Son los procesos modernos con popup de selección. 72% completado; con 87 instancias cualquier bug afecta múltiples flujos de usuario.",
+        "title": "Process Definition Pick & Execute"
+      },
+      {
+        "section": "3.B.4",
+        "priority": "media",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "ad_count": 8,
+        "reason": "8 PD tipo Report. Volumen bajo; impacto acotado a los reportes específicos registrados como PD.",
+        "title": "Process Definition Report"
+      },
+      {
+        "section": "4",
+        "priority": "critica",
+        "status": "BUG ACTIVO",
+        "completion_pct": 65,
+        "ad_count": 2563,
+        "reason": "2563 campos con Display Logic y un bug activo conocido. Con esta densidad, cualquier campo que no se oculte/muestre correctamente introduce errores de UX o datos incorrectos. Bug activo significa que el problema ya está siendo reportado en producción.",
+        "title": "Display Logic en campos (visibilidad dinámica)"
+      },
+      {
+        "section": "5",
+        "priority": "critica",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "ad_count": 38,
+        "reason": "38 tabs con HQLFILTERCLAUSE (filtros SQL/HQL preconfigurados) y status NOT DONE al 0%. Estos filtros precargan solo los registros relevantes (ej: facturas del ejercicio activo). Sin ellos los usuarios ven todos los registros sin filtrar, lo que degrada rendimiento y usabilidad.",
+        "title": "Tab Filters y HQL Filter Clause"
+      },
+      {
+        "section": "6",
+        "priority": "alta",
+        "status": "TO CHECK",
+        "completion_pct": 82,
+        "ad_count": 95,
+        "reason": "95 callouts que disparan lógica cuando el usuario cambia un campo. Albastar tiene un callout custom (SiiDescription). Con 82% completado hay riesgo de callouts que no se disparan, generando datos inconsistentes silenciosamente.",
+        "title": "Callouts (eventos en campos)"
+      },
+      {
+        "section": "8",
+        "priority": "alta",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "ad_count": 172,
+        "reason": "172 selectores personalizados. Los selectores son la forma principal de seleccionar entidades relacionadas (clientes, productos, proyectos). Con 70% completado y 172 instancias, el riesgo de selectores rotos es significativo.",
+        "title": "Selectores (lookups y FK)"
+      },
+      {
+        "section": "9",
+        "priority": "media",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "reason": "El modo grid es la vista de entrada en la mayoría de ventanas. Con 72% completado pueden existir problemas de paginación, ordenación o columnas que no se muestran correctamente.",
+        "title": "Vista de grid (modo lista inicial)"
+      },
+      {
+        "section": "10",
+        "priority": "media",
+        "status": "TO CHECK",
+        "completion_pct": 73,
+        "reason": "Features transversales como botones de toolbar, comportamientos de formulario, etc. 73% completado indica funcionalidad core presente con edge cases pendientes.",
+        "title": "Funcionalidades transversales (cross-cutting)"
+      },
+      {
+        "section": "18",
+        "priority": "critica",
+        "status": "NOT DONE",
+        "completion_pct": 15,
+        "ad_count": 26,
+        "reason": "26 AD Forms con solo 15% completado. Los AD Forms son pantallas especiales con lógica de UI totalmente custom (no generadas por AD estándar). Con 26 formularios y 15% de avance, la gran mayoría no funcionará en la nueva UI — esto incluye pantallas críticas como el calendario de pagos, configuración de impuestos, etc.",
+        "title": "AD Forms (formularios especiales)"
+      },
+      {
+        "section": "22",
+        "priority": "media",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "ad_count": 1628,
+        "reason": "1628 field groups en total (93 colapsables). Afectan la organización visual del formulario. Con 78% completado y los 93 colapsables como caso de uso crítico, pueden existir formularios con layout desordenado.",
+        "title": "Field Groups (secciones colapsables)"
+      },
+      {
+        "section": "23",
+        "priority": "media",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "ad_count": 210,
+        "reason": "210 campos en status bar (información de auditoría y estado al pie del formulario). 75% completado — algunos campos de estado pueden no mostrarse.",
+        "title": "Status Bar (barra de estado)"
+      },
+      {
+        "section": "25",
+        "priority": "critica",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "ad_count": 2321,
+        "reason": "2321 campos con lógica de default (expresiones complejas). PARCIAL al 45% significa que más de la mitad de los defaults no se calcularán. En un sistema ERP, los defaults incorrectos generan datos inválidos que pueden propagarse silenciosamente por todo el sistema.",
+        "title": "Default Values (valores por defecto)"
+      },
+      {
+        "section": "26",
+        "priority": "alta",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "ad_count": 1069,
+        "reason": "1069 columnas con READONLYLOGIC y status NOT DONE al 0%. Sin esta funcionalidad los campos que deberían ser de solo lectura según contexto serán editables, permitiendo modificaciones inválidas en datos ya contabilizados o cerrados.",
+        "title": "Read-Only Logic"
+      },
+      {
+        "section": "32",
+        "priority": "alta",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "ad_count": 20,
+        "reason": "20 reglas de alerta activas. Las alertas notifican a usuarios sobre condiciones de negocio (facturas vencidas, stock bajo). Con 70% completado hay riesgo de alertas silenciosas.",
+        "title": "Alertas (AD_ALERTRULE)"
+      }
+    ],
+    "priority_summary": {
+      "critica": [
+        "1.4 — P&E Windows (51 instancias, PARCIAL 55%)",
+        "2.B — Posted button (32 instancias, PARCIAL 30%)",
+        "2.B — DocAction button (6 instancias, motor contable custom)",
+        "2.B — CreateFrom button (8 instancias)",
+        "3.A.2 — Procesos M manual JS (200, BLOQUEADO)",
+        "3.A.2 — Legacy Reports (111, PARCIAL 50%)",
+        "3.B.2 — PD Manual JS (12, BLOQUEADO)",
+        "4 — Display Logic (2563, BUG ACTIVO)",
+        "5 — Tab HQL Filters (38, NOT DONE 0%)",
+        "18 — AD Forms (26, NOT DONE 15%)",
+        "25 — Default Values (2321, PARCIAL 45%)"
+      ],
+      "alta": [
+        "1.2 — Transaction Windows (39)",
+        "2 — Image BLOB (15, PARCIAL)",
+        "2 — PAttribute (30, PARCIAL 55%)",
+        "2.B — PaymentRule button (9)",
+        "3.A.2 — Background processes (25, NOT DONE 10%)",
+        "3.B.1 — PD Action Handler (28)",
+        "3.B.3 — PD Pick & Execute (87)",
+        "6 — Callouts (95)",
+        "8 — Selectors (172)",
+        "26 — ReadOnly Logic (1069, NOT DONE 0%)",
+        "32 — Alerts (20)"
+      ],
+      "media": [
+        "1.1 — Maintain Windows (243)",
+        "1.3 — Query Windows (7)",
+        "2 — Binary/Assignment/SelectorAsLink/TreeRef (10 total)",
+        "2.B — ChangeProjectStatus (1)",
+        "3.A.2 — Standard Processes (153)",
+        "3.A.4 — Jasper processes (3)",
+        "3.B.4 — PD Report (8)",
+        "9 — Grid view",
+        "10 — Cross-cutting features",
+        "22 — Field Groups (1628/93 colapsables)",
+        "23 — Status Bar (210)"
+      ],
+      "no_aplica": [
+        "11 — Autenticación",
+        "15 — Loading states",
+        "16 — Consistencia visual",
+        "17 — Toolbar estándar",
+        "21 — Widgets personalizados (0 instancias)",
+        "27 — MDI (multi-document interface)",
+        "28 — Keyboard shortcuts",
+        "30 — Grouping",
+        "31 — Import masivo",
+        "33 — Personalización de columnas (0 instancias)",
+        "34 — Calendar view (0 instancias)"
+      ]
+    },
+    "overall_readiness_pct": 42,
+    "note": "Cliente con alto uso de funcionalidades no completadas en la nueva UI. Bloqueadores principales: 200 procesos M (BLOQUEADO), 12 PD Manual JS (BLOQUEADO), 2563 campos con Display Logic (BUG ACTIVO), 26 AD Forms (NOT DONE 15%), y motor contable customizado dependiente de Posted (PARCIAL 30%)."
+  }
+}
