@@ -1,59 +1,564 @@
 {
-  "generated": "2026-04-22",
+  "generated": "2026-04-24",
   "analyzed_clients": [
-    "MDF"
+    "Acico",
+    "Albastar",
+    "Bed4U",
+    "Bercaber",
+    "Depique",
+    "Enertis",
+    "Flexellon",
+    "Luján Agrícola",
+    "MDF",
+    "Montblanc",
+    "NEXE",
+    "VdShop"
   ],
   "ui_feature_roadmap": [
     {
-      "section": "26",
-      "title": "Filtros y orden por defecto de pestaña (HQLFILTERCLAUSE)",
-      "status": "NOT DONE",
-      "completion_pct": 0,
-      "portfolio_score": 4,
+      "section": "2.B",
+      "title": "Botones hardcoded (DocAction + Posted + CreateFrom) — agregado para scoring",
+      "status": "PARCIAL",
+      "completion_pct": 35,
+      "portfolio_score": 47,
       "clients_critica": [
-        "MDF"
+        "Acico",
+        "Albastar",
+        "Albastar",
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "Luján Agrícola",
+        "MDF",
+        "Montblanc",
+        "NEXE"
       ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 1,
-      "avg_ad_count": 52
+      "clients_alta": [
+        "Albastar"
+      ],
+      "clients_media": [
+        "Albastar"
+      ],
+      "total_affected": 14,
+      "avg_ad_count": 58
     },
     {
-      "section": "21",
-      "title": "Workspace / Dashboard (My Openbravo)",
-      "status": "NOT DONE",
-      "completion_pct": 5,
-      "portfolio_score": 4,
+      "section": "4",
+      "title": "Display Logic (visibilidad dinámica de campos)",
+      "status": "BUG ACTIVO",
+      "completion_pct": 50,
+      "portfolio_score": 36,
       "clients_critica": [
-        "MDF"
+        "Acico",
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "Luján Agrícola",
+        "MDF",
+        "Montblanc",
+        "NEXE"
       ],
       "clients_alta": [],
       "clients_media": [],
-      "total_affected": 1,
+      "total_affected": 10,
+      "avg_ad_count": 2524
+    },
+    {
+      "section": "26",
+      "title": "Filtros por Defecto de Tab (HQLFILTERCLAUSE)",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 27,
+      "clients_critica": [
+        "Acico",
+        "Bed4U",
+        "Bercaber",
+        "MDF",
+        "NEXE"
+      ],
+      "clients_alta": [
+        "Albastar",
+        "Luján Agrícola",
+        "Montblanc"
+      ],
+      "clients_media": [
+        "Depique"
+      ],
+      "total_affected": 9,
+      "avg_ad_count": 201
+    },
+    {
+      "section": "1.2",
+      "title": "Ventanas tipo Transaction (T)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 25,
+      "clients_critica": [
+        "Acico",
+        "Bed4U",
+        "Bercaber",
+        "NEXE"
+      ],
+      "clients_alta": [
+        "Albastar",
+        "Depique",
+        "Luján Agrícola",
+        "Montblanc"
+      ],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 10,
       "avg_ad_count": 40
     },
     {
       "section": "18",
-      "title": "Application Forms (AD_FORM)",
+      "title": "AD Forms (formularios especiales)",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 24,
+      "clients_critica": [
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "MDF",
+        "Montblanc"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 6,
+      "avg_ad_count": 27
+    },
+    {
+      "section": "1.4",
+      "title": "Ventanas Pick and Execute (OBUIAPP_PickAndExecute)",
+      "status": "PARCIAL",
+      "completion_pct": 55,
+      "portfolio_score": 24,
+      "clients_critica": [
+        "Acico",
+        "Albastar",
+        "Luján Agrícola",
+        "MDF"
+      ],
+      "clients_alta": [
+        "Bercaber",
+        "Depique",
+        "Montblanc",
+        "NEXE"
+      ],
+      "clients_media": [],
+      "total_affected": 9,
+      "avg_ad_count": 82
+    },
+    {
+      "section": "21",
+      "title": "Workspace / Dashboard (My Etendo)",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 23,
+      "clients_critica": [
+        "Acico",
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "MDF"
+      ],
+      "clients_alta": [
+        "NEXE"
+      ],
+      "clients_media": [
+        "Montblanc"
+      ],
+      "total_affected": 8,
+      "avg_ad_count": 21
+    },
+    {
+      "section": "5",
+      "title": "Comportamientos de Tab (SR, RO, ED, display logic)",
+      "status": "TO CHECK",
+      "completion_pct": 65,
+      "portfolio_score": 20,
+      "clients_critica": [
+        "Albastar",
+        "Bed4U",
+        "Bercaber"
+      ],
+      "clients_alta": [
+        "Acico",
+        "Depique",
+        "Luján Agrícola"
+      ],
+      "clients_media": [
+        "MDF",
+        "Montblanc"
+      ],
+      "total_affected": 8,
+      "avg_ad_count": 154
+    },
+    {
+      "section": "8",
+      "title": "Selectores y campos FK (OBUISEL_Selector)",
+      "status": "TO CHECK",
+      "completion_pct": 65,
+      "portfolio_score": 19,
+      "clients_critica": [
+        "Depique",
+        "Luján Agrícola"
+      ],
+      "clients_alta": [
+        "Acico",
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "NEXE"
+      ],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 9,
+      "avg_ad_count": 212
+    },
+    {
+      "section": "25",
+      "title": "Valores por Defecto de Columnas",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 18,
+      "clients_critica": [
+        "Acico",
+        "Albastar",
+        "MDF"
+      ],
+      "clients_alta": [
+        "Bed4U",
+        "Bercaber",
+        "Depique"
+      ],
+      "clients_media": [],
+      "total_affected": 6,
+      "avg_ad_count": 4490
+    },
+    {
+      "section": "6",
+      "title": "Callouts (lógica de negocio en cambio de campo)",
+      "status": "TO CHECK",
+      "completion_pct": 60,
+      "portfolio_score": 18,
+      "clients_critica": [
+        "Depique"
+      ],
+      "clients_alta": [
+        "Acico",
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Luján Agrícola",
+        "NEXE"
+      ],
+      "clients_media": [
+        "MDF",
+        "Montblanc"
+      ],
+      "total_affected": 10,
+      "avg_ad_count": 120
+    },
+    {
+      "section": "2",
+      "title": "Tipos de referencia — Image BLOB",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 16,
+      "clients_critica": [],
+      "clients_alta": [
+        "Albastar",
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "Luján Agrícola",
+        "MDF"
+      ],
+      "clients_media": [
+        "Albastar",
+        "Montblanc"
+      ],
+      "total_affected": 9,
+      "avg_ad_count": 47
+    },
+    {
+      "section": "3",
+      "title": "Procesos (todos los tipos) — agregado para scoring",
+      "status": "PARCIAL",
+      "completion_pct": 50,
+      "portfolio_score": 16,
+      "clients_critica": [
+        "Acico",
+        "MDF"
+      ],
+      "clients_alta": [
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "NEXE"
+      ],
+      "clients_media": [],
+      "total_affected": 7,
+      "avg_ad_count": 440
+    },
+    {
+      "section": "3.A.2",
+      "title": "Procesos tipo S — Standard (formulario de parámetros AD)",
+      "status": "TO CHECK",
+      "completion_pct": 10,
+      "portfolio_score": 15,
+      "clients_critica": [
+        "Albastar",
+        "Albastar",
+        "Montblanc"
+      ],
+      "clients_alta": [
+        "Albastar"
+      ],
+      "clients_media": [
+        "Albastar"
+      ],
+      "total_affected": 5,
+      "avg_ad_count": 137
+    },
+    {
+      "section": "7",
+      "title": "Máquina de estados de documento",
+      "status": "TO CHECK",
+      "completion_pct": 70,
+      "portfolio_score": 11,
+      "clients_critica": [
+        "Bed4U",
+        "Bercaber"
+      ],
+      "clients_alta": [
+        "Acico"
+      ],
+      "clients_media": [
+        "Luján Agrícola"
+      ],
+      "total_affected": 4,
+      "avg_ad_count": 100
+    },
+    {
+      "section": "1.1",
+      "title": "Ventanas tipo Maintain (M)",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 11,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico",
+        "Depique",
+        "Luján Agrícola"
+      ],
+      "clients_media": [
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "MDF",
+        "Montblanc"
+      ],
+      "total_affected": 9,
+      "avg_ad_count": 263
+    },
+    {
+      "section": "AD_FORM",
+      "title": "Formularios de Aplicación (AD_FORM)",
       "status": "NOT DONE",
       "completion_pct": 15,
-      "portfolio_score": 4,
+      "portfolio_score": 8,
       "clients_critica": [
+        "Acico",
+        "NEXE"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 29
+    },
+    {
+      "section": "3.B.2",
+      "title": "Process Definition Manual JS (UIPattern=M)",
+      "status": "BLOQUEADO",
+      "completion_pct": 25,
+      "portfolio_score": 8,
+      "clients_critica": [
+        "Acico",
+        "Albastar"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 2,
+      "avg_ad_count": 16
+    },
+    {
+      "section": "3b",
+      "title": "Procesos Manual JS (AD_PROCESS UIPATTERN=M) — Procesos con JavaScript legado",
+      "status": "BLOQUEADO",
+      "completion_pct": 25,
+      "portfolio_score": 8,
+      "clients_critica": [
+        "Depique",
         "MDF"
       ],
       "clients_alta": [],
       "clients_media": [],
-      "total_affected": 1,
-      "avg_ad_count": 27
+      "total_affected": 2,
+      "avg_ad_count": 346
     },
     {
-      "section": "2.B",
-      "title": "Botones hardcoded (DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus)",
-      "status": "PARCIAL",
-      "completion_pct": 35,
+      "section": "14",
+      "title": "ReadOnly Logic (lógica de solo lectura por campo)",
+      "status": "TO CHECK",
+      "completion_pct": 60,
+      "portfolio_score": 8,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico",
+        "Bed4U",
+        "Bercaber",
+        "MDF"
+      ],
+      "clients_media": [],
+      "total_affected": 5,
+      "avg_ad_count": 520
+    },
+    {
+      "section": "23",
+      "title": "Status Bar (barra de estado)",
+      "status": "TO CHECK",
+      "completion_pct": 70,
+      "portfolio_score": 8,
+      "clients_critica": [],
+      "clients_alta": [
+        "Bed4U",
+        "Bercaber",
+        "Depique"
+      ],
+      "clients_media": [
+        "Albastar",
+        "MDF"
+      ],
+      "total_affected": 6,
+      "avg_ad_count": 203
+    },
+    {
+      "section": "1.3",
+      "title": "Ventanas tipo Query/Info (Q)",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 7,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Acico",
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "Luján Agrícola",
+        "MDF"
+      ],
+      "total_affected": 7,
+      "avg_ad_count": 9
+    },
+    {
+      "section": "5.1",
+      "title": "Display Logic en Tabs (visibilidad de pestañas)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 6,
+      "clients_critica": [
+        "NEXE"
+      ],
+      "clients_alta": [
+        "Acico"
+      ],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 50
+    },
+    {
+      "section": "3.B.1",
+      "title": "Process Definition Action (UIPattern=A)",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 6,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico",
+        "Albastar",
+        "Montblanc"
+      ],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 41
+    },
+    {
+      "section": "33",
+      "title": "Personalización de Vistas (Saved Views)",
+      "status": "NOT DONE",
+      "completion_pct": 10,
+      "portfolio_score": 5,
+      "clients_critica": [
+        "Acico"
+      ],
+      "clients_alta": [],
+      "clients_media": [
+        "MDF"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "9",
+      "title": "Comportamientos del grid/lista",
+      "status": "TO CHECK",
+      "completion_pct": 68,
+      "portfolio_score": 5,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico"
+      ],
+      "clients_media": [
+        "Albastar",
+        "Depique",
+        "MDF"
+      ],
+      "total_affected": 4,
+      "avg_ad_count": 592
+    },
+    {
+      "section": "2.multi_selector",
+      "title": "Tipos de referencia de campo — Multi-Selector",
+      "status": "NOT DONE",
+      "completion_pct": 0,
       "portfolio_score": 4,
       "clients_critica": [
-        "MDF"
+        "Acico"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 63
+    },
+    {
+      "section": "3.A.2b",
+      "title": "Procesos en background (ISBACKGROUND=Y)",
+      "status": "NOT DONE",
+      "completion_pct": 10,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "Acico"
       ],
       "clients_alta": [],
       "clients_media": [],
@@ -61,302 +566,417 @@
       "avg_ad_count": 55
     },
     {
-      "section": "3b",
-      "title": "Procesos legados AD_PROCESS (R&P, Background, Manual Action)",
+      "section": "32",
+      "title": "Alertas (AD_ALERTRULE)",
+      "status": "TO CHECK",
+      "completion_pct": 10,
+      "portfolio_score": 4,
+      "clients_critica": [],
+      "clients_alta": [
+        "Albastar",
+        "Bed4U"
+      ],
+      "clients_media": [],
+      "total_affected": 2,
+      "avg_ad_count": 20
+    },
+    {
+      "section": "2.B.2",
+      "title": "Botón Posted (Contabilizado)",
       "status": "PARCIAL",
-      "completion_pct": 45,
+      "completion_pct": 30,
       "portfolio_score": 4,
       "clients_critica": [
-        "MDF"
+        "Acico"
       ],
       "clients_alta": [],
       "clients_media": [],
       "total_affected": 1,
-      "avg_ad_count": 473
+      "avg_ad_count": 309
     },
     {
-      "section": "25",
-      "title": "Expresiones de valor por defecto (Default Values)",
+      "section": "3.A.2c",
+      "title": "Procesos Manual Action (UIPattern=M, AD_PROCESS)",
       "status": "PARCIAL",
-      "completion_pct": 45,
+      "completion_pct": 40,
       "portfolio_score": 4,
       "clients_critica": [
-        "MDF"
+        "Acico"
       ],
       "clients_alta": [],
       "clients_media": [],
       "total_affected": 1,
-      "avg_ad_count": 4470
+      "avg_ad_count": 245
     },
     {
-      "section": "1.4",
-      "title": "Ventanas Pick and Execute",
+      "section": "29",
+      "title": "Tree views",
+      "status": "TO CHECK",
+      "completion_pct": 40,
+      "portfolio_score": 4,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "MDF"
+      ],
+      "total_affected": 4,
+      "avg_ad_count": 1
+    },
+    {
+      "section": "3.A.2a",
+      "title": "Reports legacy HTML (ISREPORT=Y)",
+      "status": "PARCIAL",
+      "completion_pct": 50,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "Acico"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 119
+    },
+    {
+      "section": "3.A",
+      "title": "Report and Process (AD_PROCESS)",
       "status": "PARCIAL",
       "completion_pct": 55,
       "portfolio_score": 4,
       "clients_critica": [
-        "MDF"
+        "Luján Agrícola"
       ],
       "clients_alta": [],
       "clients_media": [],
       "total_affected": 1,
-      "avg_ad_count": 50
-    },
-    {
-      "section": "3",
-      "title": "Process Definitions modernas (OBUIAPP_PROCESS)",
-      "status": "PARCIAL",
-      "completion_pct": 60,
-      "portfolio_score": 4,
-      "clients_critica": [
-        "MDF"
-      ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 1,
-      "avg_ad_count": 143
-    },
-    {
-      "section": "4",
-      "title": "Display Logic en campos (visibilidad condicional)",
-      "status": "BUG ACTIVO",
-      "completion_pct": 65,
-      "portfolio_score": 4,
-      "clients_critica": [
-        "MDF"
-      ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 1,
-      "avg_ad_count": 2477
-    },
-    {
-      "section": "14",
-      "title": "Informes (acceso desde menú)",
-      "status": "TO CHECK",
-      "completion_pct": 60,
-      "portfolio_score": 2,
-      "clients_critica": [],
-      "clients_alta": [
-        "MDF"
-      ],
-      "clients_media": [],
-      "total_affected": 1,
-      "avg_ad_count": 89
-    },
-    {
-      "section": "2",
-      "title": "Tipos de referencia sin implementar (widgets de campo)",
-      "status": "PARCIAL",
-      "completion_pct": 65,
-      "portfolio_score": 2,
-      "clients_critica": [],
-      "clients_alta": [
-        "MDF"
-      ],
-      "clients_media": [],
-      "total_affected": 1,
-      "avg_ad_count": 0
-    },
-    {
-      "section": "33",
-      "title": "Personalización de vistas (Saved Views)",
-      "status": "NOT DONE",
-      "completion_pct": 10,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 0
-    },
-    {
-      "section": "8",
-      "title": "Selectores y campos FK (OBUISEL_Selector)",
-      "status": "TO CHECK",
-      "completion_pct": 65,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 167
-    },
-    {
-      "section": "5",
-      "title": "Comportamientos de pestaña (SR, ED, read-only, filtros, display logic)",
-      "status": "TO CHECK",
-      "completion_pct": 72,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 96
-    },
-    {
-      "section": "9",
-      "title": "Comportamientos de grid (edición inline, columnas, filtros)",
-      "status": "TO CHECK",
-      "completion_pct": 72,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 0
-    },
-    {
-      "section": "12",
-      "title": "Navegación y menú",
-      "status": "TO CHECK",
-      "completion_pct": 72,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 517
-    },
-    {
-      "section": "29",
-      "title": "Vistas de árbol (Tree Views)",
-      "status": "TO CHECK",
-      "completion_pct": 72,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 1
-    },
-    {
-      "section": "10",
-      "title": "Comportamientos transversales (adjuntos, notas, readonly logic, copy record)",
-      "status": "TO CHECK",
-      "completion_pct": 73,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 1037
-    },
-    {
-      "section": "23",
-      "title": "Status Bar (barra de estado inferior del formulario)",
-      "status": "TO CHECK",
-      "completion_pct": 75,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 210
-    },
-    {
-      "section": "24",
-      "title": "Sistema de layout del formulario (columnas, ancho, orden)",
-      "status": "TO CHECK",
-      "completion_pct": 75,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 0
-    },
-    {
-      "section": "1.1",
-      "title": "Ventanas Maintain (CRUD de datos maestros)",
-      "status": "TO CHECK",
-      "completion_pct": 78,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 232
-    },
-    {
-      "section": "1.2",
-      "title": "Ventanas Transaction (ciclo de vida de documento)",
-      "status": "TO CHECK",
-      "completion_pct": 78,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 40
-    },
-    {
-      "section": "1.3",
-      "title": "Ventanas Query / Info (consulta de solo lectura)",
-      "status": "TO CHECK",
-      "completion_pct": 78,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "MDF"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 7
+      "avg_ad_count": 412
     },
     {
       "section": "22",
-      "title": "Field Groups (secciones colapsables del formulario)",
+      "title": "Field Groups (secciones colapsables)",
       "status": "TO CHECK",
-      "completion_pct": 78,
+      "completion_pct": 70,
+      "portfolio_score": 4,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "MDF"
+      ],
+      "total_affected": 5,
+      "avg_ad_count": 1520
+    },
+    {
+      "section": "3.B.3",
+      "title": "Process Definition Standard (OBUIAPP_PickAndExecute)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 4,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico",
+        "Albastar"
+      ],
+      "clients_media": [],
+      "total_affected": 2,
+      "avg_ad_count": 120
+    },
+    {
+      "section": "5.2",
+      "title": "Tabs de solo lectura (UIPATTERN=RO)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 4,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico",
+        "NEXE"
+      ],
+      "clients_media": [],
+      "total_affected": 3,
+      "avg_ad_count": 153
+    },
+    {
+      "section": "12",
+      "title": "Navigation and application structure",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 4,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "MDF"
+      ],
+      "total_affected": 4,
+      "avg_ad_count": 521
+    },
+    {
+      "section": "10",
+      "title": "Funcionalidades transversales (cross-cutting)",
+      "status": "TO CHECK",
+      "completion_pct": 73,
+      "portfolio_score": 4,
+      "clients_critica": [],
+      "clients_alta": [
+        "Depique"
+      ],
+      "clients_media": [
+        "Albastar",
+        "MDF"
+      ],
+      "total_affected": 3,
+      "avg_ad_count": 1048
+    },
+    {
+      "section": "2.image_blob",
+      "title": "Tipos de referencia de campo — Image BLOB",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 20
+    },
+    {
+      "section": "11",
+      "title": "Autenticación y Sesión (JWT)",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "2.pattribute",
+      "title": "Tipos de referencia de campo — PAttribute (Atributos de Producto)",
+      "status": "PARCIAL",
+      "completion_pct": 55,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 45
+    },
+    {
+      "section": "3.B",
+      "title": "Process Definitions (OBUIAPP_PROCESS)",
+      "status": "PARCIAL",
+      "completion_pct": 55,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "Luján Agrícola"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 204
+    },
+    {
+      "section": "2.general_qty",
+      "title": "Tipos de referencia de campo — General Quantity",
+      "status": "PARCIAL",
+      "completion_pct": 60,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 20
+    },
+    {
+      "section": "24",
+      "title": "Form Layout System — Distribución de columnas del formulario",
+      "status": "PARCIAL",
+      "completion_pct": 60,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Depique",
+        "MDF"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 1520
+    },
+    {
+      "section": "3.B.4",
+      "title": "Process Definition Report (OBUIAPP_Report / Jasper)",
+      "status": "TO CHECK",
+      "completion_pct": 70,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Acico",
+        "Albastar"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 6
+    },
+    {
+      "section": "3.A.1",
+      "title": "Procesos estándar R&P (UIPattern=S)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 166
+    },
+    {
+      "section": "2.B.1",
+      "title": "Botón DocAction (Acción de Documento)",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 6
+    },
+    {
+      "section": "2.rich_text",
+      "title": "Tipos de referencia de campo — Rich Text",
+      "status": "NOT DONE",
+      "completion_pct": 0,
       "portfolio_score": 1,
       "clients_critica": [],
       "clients_alta": [],
       "clients_media": [
-        "MDF"
+        "Acico"
       ],
       "total_affected": 1,
-      "avg_ad_count": 1552
+      "avg_ad_count": 8
     },
     {
-      "section": "6",
-      "title": "Callouts (lógica de campo server-side)",
-      "status": "TO CHECK",
-      "completion_pct": 82,
+      "section": "2.binary",
+      "title": "Tipos de referencia de campo — Binary",
+      "status": "NOT DONE",
+      "completion_pct": 0,
       "portfolio_score": 1,
       "clients_critica": [],
       "clients_alta": [],
       "clients_media": [
-        "MDF"
+        "Acico"
       ],
       "total_affected": 1,
-      "avg_ad_count": 95
+      "avg_ad_count": 8
     },
     {
-      "section": "34",
-      "title": "Vistas de calendario",
+      "section": "2.link",
+      "title": "Tipos de referencia de campo — Link (URL)",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Acico"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 6
+    },
+    {
+      "section": "2.assignment",
+      "title": "Tipos de referencia de campo — Assignment (Asignación de Recursos)",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Acico"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 5
+    },
+    {
+      "section": "2.color",
+      "title": "Tipos de referencia de campo — Color",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Acico"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 2
+    },
+    {
+      "section": "3.A.4",
+      "title": "Procesos Jasper (ISJASPER=Y)",
+      "status": "PARCIAL",
+      "completion_pct": 60,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Albastar"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 3
+    },
+    {
+      "section": "2.B.3",
+      "title": "Botón CreateFrom (Crear Desde Documento)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Acico"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 8
+    },
+    {
+      "section": "3a",
+      "title": "Procesos R&P estándar (AD_PROCESS UIPATTERN=S) — Procesos con popup de parámetros",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Depique"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 179
+    },
+    {
+      "section": "2.B.4",
+      "title": "Botón ChangeProjectStatus",
       "status": "NOT DONE",
       "completion_pct": 0,
       "portfolio_score": 0,
@@ -367,10 +987,10 @@
       "avg_ad_count": 0
     },
     {
-      "section": "11",
-      "title": "Autenticación, sesión y autorización",
-      "status": "PARCIAL",
-      "completion_pct": 45,
+      "section": "34",
+      "title": "Vistas de Calendario",
+      "status": "NOT DONE",
+      "completion_pct": 0,
       "portfolio_score": 0,
       "clients_critica": [],
       "clients_alta": [],
@@ -379,10 +999,94 @@
       "avg_ad_count": 0
     },
     {
-      "section": "32",
-      "title": "Sistema de alertas",
+      "section": "16",
+      "title": "Final consistency validation",
+      "status": "TO CHECK",
+      "completion_pct": 0,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "30",
+      "title": "Grouping in grid",
+      "status": "TO CHECK",
+      "completion_pct": 0,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "19",
+      "title": "Linked Items / KMO — Ítems relacionados",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 8
+    },
+    {
+      "section": "31",
+      "title": "Data import system",
+      "status": "NO IMPLEMENTADO",
+      "completion_pct": 20,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "17",
+      "title": "Toolbar buttons",
+      "status": "PARCIAL",
+      "completion_pct": 70,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "27",
+      "title": "MDI tab interface",
       "status": "TO CHECK",
       "completion_pct": 70,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "28",
+      "title": "Keyboard shortcuts",
+      "status": "TO CHECK",
+      "completion_pct": 70,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "15",
+      "title": "Loading indicators and feedback",
+      "status": "TO CHECK",
+      "completion_pct": 75,
       "portfolio_score": 0,
       "clients_critica": [],
       "clients_alta": [],
@@ -393,13 +1097,1168 @@
   ],
   "ui_clients_meta": [
     {
+      "slug": "Acico",
+      "name": "Acico",
+      "ui_score": 77,
+      "global_status": ""
+    },
+    {
+      "slug": "Albastar",
+      "name": "Albastar",
+      "ui_score": 94,
+      "global_status": ""
+    },
+    {
+      "slug": "Bed4U",
+      "name": "Bed4U",
+      "ui_score": 91,
+      "global_status": "blocked"
+    },
+    {
+      "slug": "Bercaber",
+      "name": "Bercaber",
+      "ui_score": 87,
+      "global_status": "blocked"
+    },
+    {
+      "slug": "Depique",
+      "name": "Depique",
+      "ui_score": 83,
+      "global_status": "blocked"
+    },
+    {
+      "slug": "Enertis",
+      "name": "Enertis",
+      "ui_score": 100,
+      "global_status": ""
+    },
+    {
+      "slug": "Luján Agrícola",
+      "name": "Luján Agrícola",
+      "ui_score": 88,
+      "global_status": ""
+    },
+    {
       "slug": "MDF",
       "name": "MDF",
       "ui_score": 87,
       "global_status": "blocked"
+    },
+    {
+      "slug": "Montblanc",
+      "name": "Montblanc",
+      "ui_score": 92,
+      "global_status": "blocked"
+    },
+    {
+      "slug": "NEXE",
+      "name": "NEXE",
+      "ui_score": 85,
+      "global_status": "blocked"
+    },
+    {
+      "slug": "VdShop",
+      "name": "VdShop",
+      "ui_score": 80,
+      "global_status": ""
     }
   ],
   "module_maintenance_candidates": [
+    {
+      "java_package": "org.openbravo.idl",
+      "name": "Openbravo IDL (Initial Data Load)",
+      "function": "Framework de carga masiva inicial de datos desde CSV/Excel a Etendo. Base sobre la que se apoyan com.smf.albastar.idljournal y com.openbravo.gps.idl.orders.",
+      "clients": [
+        "Albastar",
+        "Depique",
+        "Enertis",
+        "MDF",
+        "Montblanc",
+        "VdShop"
+      ],
+      "client_count": 6,
+      "max_risk": "high",
+      "has_replacement": true,
+      "official_replacement_name": "EtendoRX Connectors / com.etendoerp.etendorx",
+      "generalization": "redundant",
+      "api_changes": [
+        "Framework marcado como legacy en Etendo — riesgo de eliminación",
+        "Gradle 8.12.1",
+        "Hibernate 5.4 → 5.6",
+        "Java 17 compatibility",
+        "Módulo de Openbravo sin mantenimiento activo en el ecosistema Etendo",
+        "No maintainer: Openbravo SLU",
+        "No maintainer: Openbravo SLU no longer maintains IDL",
+        "OpenCSV: IDLInvoice.java depends on au.com.bytecode.opencsv via org.openbravo.utility.opencsv (also unmaintained)",
+        "commons-lang → lang3 (masivo en todo el framework)"
+      ],
+      "avg_effort_update_hours": 11,
+      "avg_effort_saas_hours": 8,
+      "priority_score": 18
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022",
+      "name": "SEPA ISO 20022 — Base",
+      "function": "Módulo base para generación de ficheros SEPA ISO 20022. Proporciona la infraestructura XML para todos los subtipos SEPA (transferencias, domiciliaciones, extractos).",
+      "clients": [
+        "Albastar",
+        "Enertis",
+        "MDF",
+        "Montblanc",
+        "VdShop"
+      ],
+      "client_count": 5,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.financial.extensions (includes SEPA)",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3: likely uses StringUtils",
+        "Hibernate 5.4→5.6: likely",
+        "Java XML libraries (Woodstox 3→4, JAXB)",
+        "Las bibliotecas JAX-WS (org.openbravo.util.jaxws) en las que puede apoyarse ahora son dependencias Gradle en Etendo 25",
+        "No maintainer for Openbravo-origin SEPA modules",
+        "No maintainer: Openbravo SLU no longer maintains these",
+        "No mantenido desde era Openbravo — pendiente de refactoring para Hibernate 5.6.x y Java 17",
+        "OpenCSV actualizado — verificar compatibilidad si el módulo lee ficheros CSV",
+        "commons-lang → lang3"
+      ],
+      "avg_effort_update_hours": 15,
+      "avg_effort_saas_hours": 9,
+      "priority_score": 15
+    },
+    {
+      "java_package": "org.openbravo.module.cuaderno19.es",
+      "name": "Cuaderno 19 — Domiciliación SEPA",
+      "function": "Generación de ficheros de domiciliación bancaria en formato Cuaderno 19 (norma AEB) para cobros por domiciliación a clientes. Formato bancario español anterior al SEPA.",
+      "clients": [
+        "Albastar",
+        "Enertis",
+        "Montblanc",
+        "VdShop"
+      ],
+      "client_count": 4,
+      "max_risk": "high",
+      "has_replacement": true,
+      "official_replacement_name": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+      "generalization": "redundant",
+      "api_changes": [
+        "Apache Commons Lang 2→3: likely",
+        "Formato bancario AEB obsoleto — evaluación requerida",
+        "No maintainer",
+        "No maintainer: Openbravo SLU no longer maintains these"
+      ],
+      "avg_effort_update_hours": 8,
+      "avg_effort_saas_hours": 5,
+      "priority_score": 12
+    },
+    {
+      "java_package": "org.openbravo.module.facturae",
+      "name": "Factura-e (Formato 3.x)",
+      "function": "Generación de facturas electrónicas en formato Factura-e para presentación ante la Administración Pública española (AEAT, FACe). Formato XML firmado digitalmente.",
+      "clients": [
+        "Albastar",
+        "Enertis",
+        "Montblanc",
+        "VdShop"
+      ],
+      "client_count": 4,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.localization.spain.extensions",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3: likely",
+        "Certificado de firma digital puede requerir actualización",
+        "Formato Factura-e evolucionado a 3.2.2",
+        "No maintainer: Openbravo SLU",
+        "No maintainer: Openbravo SLU no longer maintains these",
+        "XML SOAP dependencies (org.openbravo.util.jaxws) — riesgo de compatibilidad Java 17",
+        "commons-lang → lang3",
+        "iText: iText jar removed in Etendo 25.x — com.lowagie:itext 2.1.7 added as replacement, check usage"
+      ],
+      "avg_effort_update_hours": 17,
+      "avg_effort_saas_hours": 10,
+      "priority_score": 12
+    },
+    {
+      "java_package": "org.openbravo.module.idljava",
+      "name": "IDL Java Integration",
+      "function": "Java implementation of the Openbravo IDL (Interface Definition Language) for external system integration.",
+      "clients": [
+        "Acico",
+        "Albastar",
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 4,
+      "max_risk": "high",
+      "has_replacement": true,
+      "official_replacement_name": "EtendoRX Connectors",
+      "generalization": "redundant",
+      "api_changes": [
+        "Idem org.openbravo.idl"
+      ],
+      "avg_effort_update_hours": 5,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 12
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+      "name": "SEPA ISO 20022 — Credit Transfer (cliente-a-banco)",
+      "function": "Generación de ficheros XML SEPA para transferencias bancarias (Credit Transfer PAIN.001). Estándar para pagos a proveedores en la zona SEPA.",
+      "clients": [
+        "Albastar",
+        "Depique",
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 4,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.financial.extensions (incluye SEPA en versiones recientes)",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Depende de SEPA Framework base — mismo riesgo",
+        "Gradle 8.12.1",
+        "ISO 20022 PAIN.001 XML namespace changes"
+      ],
+      "avg_effort_update_hours": 7,
+      "avg_effort_saas_hours": 5,
+      "priority_score": 12
+    },
+    {
+      "java_package": "org.openbravo.module.aeat340.es",
+      "name": "AEAT Modelo 340 Tax Report",
+      "function": "Generates the Spanish AEAT Modelo 340 tax declaration (declaración informativa de operaciones incluidas en los libros registro del IVA). Note: Modelo 340 was superseded by SII in 2017 for large taxpayers.",
+      "clients": [
+        "Acico",
+        "Albastar",
+        "Enertis",
+        "Montblanc",
+        "VdShop"
+      ],
+      "client_count": 5,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "org.openbravo.module.sii (SII ya instalado)",
+      "generalization": "redundant",
+      "api_changes": [
+        "No maintainer: Openbravo SLU",
+        "No maintainer: Openbravo SLU no longer maintains"
+      ],
+      "avg_effort_update_hours": 5,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 10
+    },
+    {
+      "java_package": "org.openbravo.utility.opencsv",
+      "name": "OpenCSV Library",
+      "function": "OpenCSV library wrapper for CSV parsing operations.",
+      "clients": [
+        "Acico",
+        "Albastar",
+        "Enertis",
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 5,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "com.opencsv:opencsv gestionado por Etendo 25",
+      "generalization": "redundant",
+      "api_changes": [
+        "Etendo 25 incluye OpenCSV 5.5.2 como dependencia Gradle — este wrapper es obsoleto",
+        "No maintainer",
+        "Old au.com.bytecode.opencsv API is incompatible with current com.opencsv"
+      ],
+      "avg_effort_update_hours": 1,
+      "avg_effort_saas_hours": 1,
+      "priority_score": 10
+    },
+    {
+      "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+      "name": "Bank Statement CSV Importer",
+      "function": "Imports bank statements from generic CSV files into Etendo's bank reconciliation module.",
+      "clients": [
+        "Acico",
+        "Enertis",
+        "MDF"
+      ],
+      "client_count": 3,
+      "max_risk": "high",
+      "has_replacement": true,
+      "official_replacement_name": "org.openbravo.bankstatement.importer.generic.csv",
+      "generalization": "redundant",
+      "api_changes": [
+        "No maintainer",
+        "OpenCSV: may use old opencsv library",
+        "commons-io 2.4→2.16.1, opencsv actualizado como Gradle dep — revisar compatibilidad"
+      ],
+      "avg_effort_update_hours": 3,
+      "avg_effort_saas_hours": 4,
+      "priority_score": 9
+    },
+    {
+      "java_package": "org.openbravo.module.einvoice",
+      "name": "Electronic Invoice Spain — Translations",
+      "function": "Spanish translations for the Openbravo e-invoice module (Factura Electrónica). Legal fiscal compliance module for Spain.",
+      "clients": [
+        "Acico",
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 3,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "Etendo Spanish Localization (com.etendoerp.es.localization includes e-invoice)",
+      "generalization": "client_specific",
+      "api_changes": [
+        "API de generación de documentos",
+        "Formatos XML evolucionados (Factura-e 3.2.x, PEPPOL)"
+      ],
+      "avg_effort_update_hours": 5,
+      "avg_effort_saas_hours": 5,
+      "priority_score": 9
+    },
+    {
+      "java_package": "org.openbravo.module.facturae32",
+      "name": "Factura-e v3.2",
+      "function": "Soporte específico del formato Factura-e versión 3.2 (versión actual requerida por AEAT).",
+      "clients": [
+        "Albastar",
+        "Depique",
+        "VdShop"
+      ],
+      "client_count": 3,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.einvoice.facturae (verificar disponibilidad)",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Gradle 8.12.1",
+        "commons-lang → lang3"
+      ],
+      "avg_effort_update_hours": 9,
+      "avg_effort_saas_hours": 5,
+      "priority_score": 9
+    },
+    {
+      "java_package": "org.openbravo.proflocalization.spain30",
+      "name": "Spain Localization (Openbravo 3.30)",
+      "function": "Spanish fiscal localization package from Openbravo 3.30 era. Includes chart of accounts, tax rates, payment methods, and Spanish-specific AR/AP configurations.",
+      "clients": [
+        "Acico",
+        "Albastar",
+        "Enertis"
+      ],
+      "client_count": 3,
+      "max_risk": "high",
+      "has_replacement": true,
+      "official_replacement_name": "com.etendoerp.localization.spain.extensions",
+      "generalization": "redundant",
+      "api_changes": [
+        "No maintainer: Openbravo SLU no longer maintains for Etendo"
+      ],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 5,
+      "priority_score": 9
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+      "name": "SEPA ISO 20022 — Direct Debit (cliente-a-banco)",
+      "function": "Generación de ficheros XML SEPA para domiciliación bancaria (adeudo directo SEPA core). Estándar actual para cobros por domiciliación en la zona SEPA.",
+      "clients": [
+        "Albastar",
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 3,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Depende de SEPA Framework base",
+        "ISO 20022 XML namespace evolution"
+      ],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 5,
+      "priority_score": 9
+    },
+    {
+      "java_package": "org.openbravo.util.javax.xml.soap",
+      "name": "Javax XML SOAP utility",
+      "function": "Librería de utilidad que provee las APIs SOAP (javax.xml.soap) para módulos que usan web services SOAP.",
+      "clients": [
+        "Albastar",
+        "Enertis",
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 4,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "Etendo 25 incluye jakarta.xml.soap como dependencia gestionada",
+      "generalization": "redundant",
+      "api_changes": [
+        "Etendo 25 incluye jakarta.xml.soap como dependencia Gradle — este módulo wrapper es obsoleto",
+        "Java 17 elimina javax.xml.soap del JDK — debe usarse dependencia explícita",
+        "Java 17: SOAP/JAX-WS APIs moved to jakarta.* namespace; javax.xml.soap is included in Java 17 but jakarta.xml.soap is the future",
+        "javax.xml.soap migrado a Jakarta (jakarta.xml.soap) en Java 17+"
+      ],
+      "avg_effort_update_hours": 3,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 8
+    },
+    {
+      "java_package": "com.etendoerp.analytics.exporter",
+      "name": "Analytics Exporter",
+      "function": "Módulo de Futit Services para exportar datos analíticos desde Etendo. Posiblemente exporta registros de AD a formatos de análisis externos.",
+      "clients": [
+        "Albastar",
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 3,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": "Integración Mixpanel nativa de Etendo SaaS",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "commons-lang si se usa; API Etendo entre 1.1.1 y versión actual"
+      ],
+      "avg_effort_update_hours": 5,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 6
+    },
+    {
+      "java_package": "com.openbravo.gps.clone.invoices",
+      "name": "Invoice Cloning",
+      "function": "Provides functionality to clone (copy) invoice documents, creating a new invoice with the same lines and header data as the source.",
+      "clients": [
+        "Acico",
+        "Albastar",
+        "Montblanc"
+      ],
+      "client_count": 3,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": "Copy Record (Financial Extensions / core)",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "No maintainer",
+        "commons-lang si se usa"
+      ],
+      "avg_effort_update_hours": 5,
+      "avg_effort_saas_hours": 5,
+      "priority_score": 6
+    },
+    {
+      "java_package": "org.openbravo.util.jaxws",
+      "name": "JAX-WS utility",
+      "function": "Librería de utilidad JAX-WS (Java API for XML Web Services) para desarrollo de clientes y servidores SOAP.",
+      "clients": [
+        "Albastar",
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 3,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "Etendo 25 incluye saaj-impl como dependencia gestionada",
+      "generalization": "redundant",
+      "api_changes": [
+        "Etendo 25 incluye jakarta.xml.ws como dependencia Gradle",
+        "Java 17 elimina JAX-WS del JDK — requiere dependencia explícita",
+        "jaxws → Jakarta EE migration para Java 17"
+      ],
+      "avg_effort_update_hours": 2,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 6
+    },
+    {
+      "java_package": "org.openbravo.util.saaj.impl",
+      "name": "SAAJ implementation",
+      "function": "Implementación SAAJ (SOAP with Attachments API for Java) para envío de mensajes SOAP con adjuntos.",
+      "clients": [
+        "Albastar",
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 3,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "com.sun.xml.messaging.saaj:saaj-impl incluido en Etendo 25",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 1,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 6
+    },
+    {
+      "java_package": "com.etendoerp.psd2.bank.integration",
+      "name": "Bank Integration PSD2 — Integración bancaria PSD2",
+      "function": "Integración con bancos via protocolo PSD2 para importación automática de extractos bancarios y conciliación. Funcionalidad financiera crítica si está en uso.",
+      "clients": [
+        "Depique",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Gradle 8.12.1",
+        "PostgreSQL JDBC 42.5 → 42.7",
+        "Verificar versión de la librería de conectividad bancaria PSD2 usada"
+      ],
+      "avg_effort_update_hours": 12,
+      "avg_effort_saas_hours": 7,
+      "priority_score": 6
+    },
+    {
+      "java_package": "com.openbravo.gps.idl.orders",
+      "name": "GPS IDL Orders",
+      "function": "Carga inicial de datos (IDL) para importar pedidos desde sistemas externos. Depende de org.openbravo.idl.",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "commons-lang → lang3",
+        "org.openbravo.idl sin mantenimiento"
+      ],
+      "avg_effort_update_hours": 8,
+      "avg_effort_saas_hours": 5,
+      "priority_score": 6
+    },
+    {
+      "java_package": "org.openbravo.contract",
+      "name": "Openbravo Contract",
+      "function": "Módulo de gestión de contratos: creación, seguimiento de vigencia, renovación automática y vinculación con pedidos o proyectos.",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "API de ventanas/procesos Etendo",
+        "Hibernate 5.4 → 5.6",
+        "Hibernate 5.4 → 5.6 — verificar queries HQL",
+        "commons-lang → lang3",
+        "org.apache.commons.lang → lang3"
+      ],
+      "avg_effort_update_hours": 15,
+      "avg_effort_saas_hours": 10,
+      "priority_score": 6
+    },
+    {
+      "java_package": "org.openbravo.contract.services",
+      "name": "Openbravo Contract Services",
+      "function": "Extensión de contratos para servicios recurrentes: facturación periódica automática desde contratos activos.",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Hibernate 5.4 → 5.6",
+        "commons-lang → lang3"
+      ],
+      "avg_effort_update_hours": 10,
+      "avg_effort_saas_hours": 7,
+      "priority_score": 6
+    },
+    {
+      "java_package": "org.openbravo.module.cuaderno34.es",
+      "name": "Cuaderno 34 — Transferencias nacionales",
+      "function": "Generación de ficheros de transferencias nacionales en formato Cuaderno 34 (norma AEB).",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "high",
+      "has_replacement": true,
+      "official_replacement_name": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 4,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 6
+    },
+    {
+      "java_package": "org.openbravo.module.cuaderno58.es",
+      "name": "Cuaderno 58 — Confirming",
+      "function": "Generación de ficheros de confirming en formato Cuaderno 58 para gestión de pagos a proveedores vía confirming bancario.",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Formato AEB C58 — específico de cada banco"
+      ],
+      "avg_effort_update_hours": 5,
+      "avg_effort_saas_hours": 4,
+      "priority_score": 6
+    },
+    {
+      "java_package": "org.openbravo.module.facturae31",
+      "name": "Factura-e v3.1",
+      "function": "Soporte específico del formato Factura-e versión 3.1.",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 7,
+      "avg_effort_saas_hours": 4,
+      "priority_score": 6
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022.camt",
+      "name": "SEPA ISO 20022 — CAMT (extractos bancarios)",
+      "function": "Importación de extractos bancarios en formato CAMT.053 (ISO 20022). Permite conciliar movimientos bancarios automáticamente.",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "high",
+      "has_replacement": true,
+      "official_replacement_name": "com.etendoerp.psd2.bank.integration",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 4,
+      "priority_score": 6
+    },
+    {
+      "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
+      "name": "Finance Balance Excel Export Report",
+      "function": "Generates a financial balance sheet / trial balance report as an Excel file. Used for accounting review and external reporting.",
+      "clients": [
+        "Acico",
+        "MDF"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache POI 3.10 → 5.4 if the Excel generation uses HSSF API",
+        "Probable uso de Apache POI 3.x — misma problemática que com.smf.mdf.reports (CellType enum, etc.)",
+        "Verificar si depende de JARs de lib/runtime"
+      ],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 10,
+      "priority_score": 4
+    },
+    {
+      "java_package": "com.openbravo.gps.idl.invoices",
+      "name": "Initial Data Load Extension for Invoices (GPS)",
+      "function": "Extension del framework IDL de Openbravo para carga masiva de facturas. Herramienta de migración de datos.",
+      "clients": [
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Depende de org.openbravo.idl (módulo sin mantenimiento)"
+      ],
+      "avg_effort_update_hours": 2,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 4
+    },
+    {
+      "java_package": "com.smf.financialcurrentbalance",
+      "name": "SMF Financial Modules Cluster",
+      "function": "Group of SMF-developed financial utilities: financialcurrentbalance (current balance widget), invoices (invoice customizations), ledgeroriginalcurrency (GL original currency), reports.accounts (accounting reports), showbpbankacct (BP bank account in payment plan), ws.attachments (attachment webservice), additionalpocolumns (extra PO columns), currency.conversionrate (exchange rate downloader), integrations.support + jira (support ticket from Etendo to Jira).",
+      "clients": [
+        "Enertis",
+        "Montblanc"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3: likely for most modules",
+        "Hibernate 5.4→5.6: likely for modules with Java",
+        "No maintainer"
+      ],
+      "avg_effort_update_hours": 18,
+      "avg_effort_saas_hours": 10,
+      "priority_score": 4
+    },
+    {
+      "java_package": "com.smf.remittance.selector",
+      "name": "SMF Remittance Selector",
+      "function": "Selector de efectos/remesas para seleccionar qué pagos incluir en una remesa bancaria. Extiende la funcionalidad de selección del módulo de remesas.",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "Funcionalidad base en org.openbravo.module.remittance (mantenido)",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 3,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 4
+    },
+    {
+      "java_package": "org.openbravo.module.invoiceTaxReportEnhanced30.cashvat",
+      "name": "Invoice Tax Report Enhanced — Cash VAT",
+      "function": "Informe de impuestos de facturas mejorado con soporte para IVA de caja (régimen especial de criterio de caja RECC).",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "Sigue al módulo principal",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 3,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 4
+    },
+    {
+      "java_package": "org.openbravo.module.invoicematchingalgorithm",
+      "name": "Invoice Matching Algorithm",
+      "function": "Provides algorithms for automatically matching purchase invoices against goods receipts (3-way matching). Automates the reconciliation between PO, receipt, and invoice.",
+      "clients": [
+        "Acico",
+        "Albastar"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "Advanced Payment Management (Financial Extensions)",
+      "generalization": "redundant",
+      "api_changes": [
+        "commons-lang → lang3 si aplica"
+      ],
+      "avg_effort_update_hours": 5,
+      "avg_effort_saas_hours": 5,
+      "priority_score": 4
+    },
+    {
+      "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
+      "name": "Invoice Register Book — Spain Cash VAT",
+      "function": "Libro de registro de facturas para el régimen de IVA de caja en España (RECC). Requerimiento de la AEAT para empresas acogidas al RECC.",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "com.etendoerp.localization.spain.extensions",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 2,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 4
+    },
+    {
+      "java_package": "com.etendoerp.accounting.templates",
+      "name": "Etendo Bundle Spanish Translations (13 modules)",
+      "function": "Spanish translation packs for Etendo official bundles: accounting.templates, advanced.bpsettlement, advanced.financial.docs.processing, advanced.intercompany, bankingpool, bulk.posting, financial.reports.advanced, gljournal.advanced, payment.removal (com.etendoerp.*), org.openbravo.financial.bpsettlement.es_es, com.smf.asset.amortization.report.es_es, com.smf.currency.apiconfig.es_es, com.smf.gljournal.reverse.es_es. These translations are now part of the official Etendo bundles.",
+      "clients": [
+        "Enertis",
+        "MDF",
+        "Montblanc"
+      ],
+      "client_count": 3,
+      "max_risk": "low",
+      "has_replacement": true,
+      "official_replacement_name": "Translations bundled in respective Etendo modules",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 2,
+      "avg_effort_saas_hours": 1,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.idl.translation",
+      "name": "IDL — Spanish Translation",
+      "function": "Spanish translations for org.openbravo.module.idljava.",
+      "clients": [
+        "Acico",
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 3,
+      "max_risk": "low",
+      "has_replacement": false,
+      "official_replacement_name": "org.openbravo.idl",
+      "generalization": "client_specific",
+      "api_changes": [],
+      "avg_effort_update_hours": 0,
+      "avg_effort_saas_hours": 0,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_axialyze_integration_and_ui_stack",
+      "name": "aXialyze integration, payment y UI elements",
+      "function": "Agrupa com.aXialyze.integration.utils, com.axialyze.bankstatements, com.axialyze.genericimportentryhandler, com.axialyze.payment y ui.elements.aXialyze.com(+template). Es infraestructura de integracion y UI sin ventanas/procesos propios verificables en el backup.",
+      "clients": [
+        "Flexellon"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [],
+      "avg_effort_update_hours": 24,
+      "avg_effort_saas_hours": 28,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_cleardrop_workorder_stack",
+      "name": "Cleardrop work order, MO invoicing y maintenance extension",
+      "function": "Agrupa biz.cleardrop.confirmmopripro, invoicablesPIT, moinvoicing, moinvoicingtemp, moworkorder, moworkorder.pack, moworkorder.template y biz.cleardrop.openbravo.maintenance. En el source aparecen procesos/forms como MO Work Order, Print Aflever Bon, ConfirmMOPriPro y Update MO.",
+      "clients": [
+        "Flexellon"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [],
+      "avg_effort_update_hours": 32,
+      "avg_effort_saas_hours": 36,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_dutch_maintenance_stack",
+      "name": "Mantenimiento holandes y paquetes satelite",
+      "function": "Agrupa nl.globalorange.maintenance, maintenanceext, maintenancetemplate, mopackage, la configuracion fiscal nl.globalorange.localization.dutch.referencedata.taxes y el paquete de traduccion nl.kowboyz.*. El source expone ventanas como Maintenance Orders, Time Sheet y Product Expense.",
+      "clients": [
+        "Flexellon"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [],
+      "avg_effort_update_hours": 36,
+      "avg_effort_saas_hours": 40,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_legacy_banking_and_remittance_formats",
+      "name": "SEPA, Cuadernos y conectores bancarios legacy",
+      "function": "Agrupa org.openbravo.sepa.iso20022, camt, direct debit, credit transfer, org.openbravo.module.cuaderno19.es, cuaderno34.es, cuaderno58.es y org.openbravo.bankstatement.importer.generic.csv.",
+      "clients": [
+        "Bed4U"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Revisar librerias XML/bancarias y flujos de remittance/import de extractos en 25.4.x"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 14,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_legacy_finance_reporting_stack",
+      "name": "Reporting financiero legacy y helpers SMF/Openbravo",
+      "function": "Agrupa com.openbravo.gps.finance.balanceexcelexport.report, com.smf.generalledger.originalcurrency, com.smf.financial.module, com.smf.financialcurrentbalance, com.smf.operating.results, com.smf.purchase.order, com.smf.regularization.order, com.smf.add.payment, com.smf.multipleorgselector, com.smf.caption.expense, com.smf.expense.order, remittance.module y remittance.template.",
+      "clients": [
+        "NEXE"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Fuerte dependencia de reporting/process stack classic, filtros por organizacion y finance helpers legacy"
+      ],
+      "avg_effort_update_hours": 32,
+      "avg_effort_saas_hours": 34,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_openia_crm_suite",
+      "name": "Openia CRM",
+      "function": "Modulo grande it.openia.crm con decenas de ventanas, procesos y forms CRM (Leads, Opportunities, Cases, Activities, Calendar, etc.). Se pudo verificar el set de nombres desde AD, pero no hubo match exacto en Mixpanel en 90 dias para esa superficie.",
+      "clients": [
+        "Flexellon"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [],
+      "avg_effort_update_hours": 24,
+      "avg_effort_saas_hours": 30,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_precognis_business_suite",
+      "name": "Suite Precognis de proyectos, financiacion y operativa",
+      "function": "Agrupa el bloque grande de modulos com.precognis.*: proyectos, financiacion, printing, controlpedido, vistas, menu, terceros, gastos, tesoreria y templates satelite. Es el frente legacy mas voluminoso fuera de los custom com.smf.nexe.",
+      "clients": [
+        "NEXE"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Alto acople al AD legacy y a procesos operativos no cubiertos por nueva UI"
+      ],
+      "avg_effort_update_hours": 46,
+      "avg_effort_saas_hours": 52,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_sepa_and_banking_formats",
+      "name": "SEPA y formatos bancarios legacy",
+      "function": "Agrupa org.openbravo.sepa.iso20022, camt, direct debit, credit transfer y los formatos Cuaderno 19/34/58 todavia presentes en la instalacion.",
+      "clients": [
+        "Bercaber"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Validar compatibilidad de generacion/parseo bancario y librerias XML al migrar a 25.4.x"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 8,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_spain_banking_and_fiscal_legacy",
+      "name": "Banca, SEPA y fiscalidad Spain legacy",
+      "function": "Agrupa org.openbravo.module.aeat340.es, cuaderno19/34/58, invoicesregisterbook.estaxes.2012, org.openbravo.sepa.iso20022 y derivados, mas utilidades XML/SOAP antiguas como org.openbravo.util.jaxws, javax.xml.soap, saaj.impl y opencsv.",
+      "clients": [
+        "NEXE"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Auditar librerias SOAP/XML y formatos bancarios/fiscales antes del upgrade",
+        "Riesgo regulatorio y tecnico mayor que el de un simple modulo de negocio"
+      ],
+      "avg_effort_update_hours": 38,
+      "avg_effort_saas_hours": 30,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_spain_einvoice_stack",
+      "name": "Stack de facturacion electronica Espana",
+      "function": "Agrupa org.openbravo.module.einvoice, org.openbravo.module.facturae, facturae31, facturae32 y org.openbravo.module.wscamerfactura para generacion e intercambio de factura electronica.",
+      "clients": [
+        "Bercaber"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Auditar compatibilidad de librerias XML/WS y formatos Facturae al actualizar a 25.4.x"
+      ],
+      "avg_effort_update_hours": 24,
+      "avg_effort_saas_hours": 12,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_spain_fiscal_and_einvoice_stack",
+      "name": "Facturacion electronica y fiscalidad Spain legacy",
+      "function": "Agrupa org.openbravo.module.einvoice, facturae, facturae31, facturae32, wscamerfactura, aeat340, invoiceTaxReportEnhanced30.cashvat, invoicesregisterbook.estaxes.cashvat, proflocalization cashvat, org.openbravo.util.jaxws y org.openbravo.utility.opencsv.",
+      "clients": [
+        "Bed4U"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Auditar compatibilidad de librerias SOAP/XML y formatos fiscales Spain al actualizar"
+      ],
+      "avg_effort_update_hours": 40,
+      "avg_effort_saas_hours": 32,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.etendoerp.productioncost",
+      "name": "Production Cost Module",
+      "function": "Production costing module providing cost calculation for manufacturing transactions. May overlap with com.smf.acico.costing.",
+      "clients": [
+        "Acico"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Costing engine API changes between 24.1 and 25.4"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 16,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.openbravo.gps.customexpensesheet",
+      "name": "Custom Expense Sheet (GPS)",
+      "function": "GPS customizations for employee expense sheets: custom fields, validation logic, and printing templates. Includes translation (es_ES) and template (com.openbravo.gps.customexpensesheet.template) sub-modules.",
+      "clients": [
+        "Enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Apache Commons Lang 2→3: likely",
+        "Hibernate 5.4→5.6: likely",
+        "No maintainer"
+      ],
+      "avg_effort_update_hours": 24,
+      "avg_effort_saas_hours": 16,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.openbravo.gps.followup.economics",
+      "name": "Economic KPIs Follow-up (GPS + Openbravo)",
+      "function": "Project economic KPI dashboard modules: com.openbravo.gps.followup.economics (GPS enhancements) and org.openbravo.services.followup.economics (base module, also unmaintained). Tracks real costs vs budget for projects, linked directly to the ENEPCU_BUDGETPROJECT custom table.",
+      "clients": [
+        "Enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3: likely",
+        "Hibernate 5.4→5.6: likely uses Criteria API",
+        "No maintainer: GPS and Openbravo SLU no longer maintain these"
+      ],
+      "avg_effort_update_hours": 24,
+      "avg_effort_saas_hours": 20,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.openbravo.gps.modifications",
+      "name": "GPS Montblanc Modifications (unmaintained GPS module)",
+      "function": "GPS-authored client-specific modifications module ('Montblanc's Modifications'). Exact functionality requires source review but given the name and GPS authorship, likely contains additional UI customizations, field additions, or process overrides not captured in the main GPS Montblanc module.",
+      "clients": [
+        "Montblanc"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Likely uses classic servlet patterns",
+        "No maintainer: GPS no longer active"
+      ],
+      "avg_effort_update_hours": 16,
+      "avg_effort_saas_hours": 16,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.openbravo.gps.projects",
+      "name": "GPS Advanced Project Functionality Suite",
+      "function": "GPS-developed advanced project management modules: gps.projects (core advanced features), gps.projects.hr (HR resource assignment), gps.projects.multipleemployeeselector (multi-employee picker), gps.projects.quickhrphase (quick phase creation), gps.projects.quicktimesheet (quick timesheet). Together these form the backbone of Enertis project tracking beyond core Etendo.",
+      "clients": [
+        "Enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3: likely uses StringUtils from lang2",
+        "Hibernate 5.4→5.6: likely uses deprecated Criteria API",
+        "Java 17: GPS modules were written for Java 8/11 — potential issues",
+        "No maintainer: GPS is no longer active; these modules have no upstream maintainer"
+      ],
+      "avg_effort_update_hours": 60,
+      "avg_effort_saas_hours": 80,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.precognis.inoutposting",
+      "name": "Goods InOut Accounting Posting",
+      "function": "Custom accounting posting logic for goods receipts and shipments (M_InOut). Provides an alternative posting mechanism or additional posting behavior beyond the standard M_INOUT_POST function.",
+      "clients": [
+        "Acico"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Accounting engine API changes between 24.1 and 25.4",
+        "No maintainer (Precognis)"
+      ],
+      "avg_effort_update_hours": 30,
+      "avg_effort_saas_hours": 40,
+      "priority_score": 3
+    },
     {
       "java_package": "com.smf.almis.fitintegration",
       "name": "FIT Integration",
@@ -420,11 +2279,11 @@
       "priority_score": 3
     },
     {
-      "java_package": "org.openbravo.sepa.iso20022",
-      "name": "SEPA Framework and Utilities",
-      "function": "Framework base para procesamiento de pagos SEPA (ISO 20022). Genera los ficheros XML necesarios para la remesa de pagos y domiciliaciones ante bancos en la zona euro.",
+      "java_package": "com.smf.carrierintegration.dhlintegration",
+      "name": "DHL Integration — Integración con transportista DHL",
+      "function": "Integración con la API de DHL para generación de etiquetas de envío, seguimiento y gestión de expediciones. Módulo operativo de alta criticidad si Depique opera logística con DHL.",
       "clients": [
-        "MDF"
+        "Depique"
       ],
       "client_count": 1,
       "max_risk": "high",
@@ -432,49 +2291,637 @@
       "official_replacement_name": null,
       "generalization": "bundle_candidate",
       "api_changes": [
-        "Las bibliotecas JAX-WS (org.openbravo.util.jaxws) en las que puede apoyarse ahora son dependencias Gradle en Etendo 25",
-        "OpenCSV actualizado — verificar compatibilidad si el módulo lee ficheros CSV"
+        "API DHL puede haber cambiado",
+        "Gradle 8.12.1"
       ],
-      "avg_effort_update_hours": 6,
+      "avg_effort_update_hours": 16,
       "avg_effort_saas_hours": 12,
       "priority_score": 3
     },
     {
-      "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
-      "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
-      "function": "Genera ficheros XML SEPA de domiciliación directa (CORE y B2B) según el estándar ISO 20022.",
+      "java_package": "com.smf.createwrfromwe",
+      "name": "Create Work Requirements from Work Efforts",
+      "function": "Provides functionality to generate Work Requirements directly from Work Efforts in the manufacturing module. Fills a gap in the standard Etendo manufacturing workflow.",
       "clients": [
-        "MDF"
+        "Acico"
       ],
       "client_count": 1,
       "max_risk": "high",
       "has_replacement": false,
       "official_replacement_name": null,
       "generalization": "bundle_candidate",
+      "api_changes": [
+        "Manufacturing module API changes between 24.1 and 25.4"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 30,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.customizationshipmentinout",
+      "name": "Shipment InOut Customization",
+      "function": "Customizes the Goods Shipment/Receipt document behavior. Likely adds fields or workflow changes to inbound/outbound shipment processing.",
+      "clients": [
+        "Acico"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
       "api_changes": [],
-      "avg_effort_update_hours": 3,
+      "avg_effort_update_hours": 15,
+      "avg_effort_saas_hours": 20,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.edicom",
+      "name": "EDICOM Base Module",
+      "function": "Base EDI communication module for the EDICOM platform (version 2.3.5). Provides the common infrastructure for EDI message exchange that com.smf.edicom.acico depends on.",
+      "clients": [
+        "Acico"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2.x → 3.x (likely used throughout)",
+        "No maintainer to apply API updates"
+      ],
+      "avg_effort_update_hours": 40,
+      "avg_effort_saas_hours": 80,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.integrate.print.seur",
+      "name": "Integrate With Carrier & Print Label SEUR",
+      "function": "Impresión de etiquetas y gestión de envíos con SEUR. Cubre generación de manifiestos, etiquetas y comunicación con la plataforma de SEUR.",
+      "clients": [
+        "Depique"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Gradle 8.12.1"
+      ],
+      "avg_effort_update_hours": 12,
+      "avg_effort_saas_hours": 10,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.localizacion.argentina + .template + .webpos + .webpos.template",
+      "name": "SMF Argentina Localization (4 modules)",
+      "function": "Argentine fiscal localization: AFIP electronic invoice (CAE generation via AFIP web services), Argentine tax handling (perceptions, VAT, IIBB), WebPOS fiscal integration.",
+      "clients": [
+        "Luján Agrícola"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "AFIP web service URLs and certificate requirements may have changed since module version 1.0.1",
+        "Commons Lang 2 → 3 if module uses it internally",
+        "Java 17 requirement in Etendo 26"
+      ],
+      "avg_effort_update_hours": 40,
+      "avg_effort_saas_hours": 20,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.remittance.sabadellbank",
+      "name": "SMF Remittance Sabadell Bank",
+      "function": "Generador de ficheros de remesa en formato específico del Banco Sabadell. Produce ficheros de cobro/pago para carga directa en la plataforma online del Sabadell.",
+      "clients": [
+        "Albastar"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Formato XML/SEPA del Sabadell puede haber cambiado",
+        "commons-lang si se usa"
+      ],
+      "avg_effort_update_hours": 8,
       "avg_effort_saas_hours": 6,
       "priority_score": 3
     },
     {
-      "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
-      "name": "SEPA Credit Transfer Customer-to-Bank",
-      "function": "Genera ficheros XML SEPA de transferencia bancaria (Credit Transfer) según ISO 20022.",
+      "java_package": "com.smf.senasa.trazaagro.integration",
+      "name": "SENASA Agro-Traceability Integration",
+      "function": "Integration with SENASA (Argentina's National Service of Agricultural Health and Food Quality) for product traceability reporting in the agro-chemical supply chain.",
       "clients": [
-        "MDF"
+        "Luján Agrícola"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "No active maintainer",
+        "SENASA web service API may have changed since module creation"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 8,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.warehousemanagementws",
+      "name": "SMF Warehouse Management Web Services",
+      "function": "Alternative/extended WMS web services from SMF. May provide additional endpoints beyond the Etendo standard WMAWS.",
+      "clients": [
+        "Acico"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [],
+      "avg_effort_update_hours": 15,
+      "avg_effort_saas_hours": 20,
+      "priority_score": 3
+    },
+    {
+      "java_package": "eu.practics.prestashop + eu.practics.prestashop.es_ES + eu.practics.javaextensionpoints",
+      "name": "Practics Prestashop Integration (3 modules)",
+      "function": "Bidirectional Prestashop e-commerce connector: product catalog sync, order import, customer sync. com.smf.lujan.prestashop adds Luján-specific customizations on top.",
+      "clients": [
+        "Luján Agrícola"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Java extension points framework may need recompilation",
+        "No active maintainer confirmed for Etendo 25.x",
+        "Practics module version 1.2.145 — unknown compatibility with 25.x"
+      ],
+      "avg_effort_update_hours": 40,
+      "avg_effort_saas_hours": 16,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.idl + org.openbravo.idl.variants + org.openbravo.module.idljava + com.openbravo.gps.idl.invoices + com.openbravo.gps.idl.orders",
+      "name": "IDL Data Integration Framework (5 modules)",
+      "function": "Incremental Data Load framework for importing external data (orders and invoices from GPS systems). Custom module uses IdlOrders.java and ProductsProcessIDL.java to load external data into Etendo.",
+      "clients": [
+        "Luján Agrícola"
       ],
       "client_count": 1,
       "max_risk": "high",
       "has_replacement": false,
       "official_replacement_name": null,
       "generalization": "bundle_candidate",
-      "api_changes": [],
-      "avg_effort_update_hours": 3,
-      "avg_effort_saas_hours": 6,
+      "api_changes": [
+        "GPS IDL modules use old OpenCSV (au.com.bytecode) — breaking change in 25.1",
+        "IDL framework not maintained for Etendo 25.x"
+      ],
+      "avg_effort_update_hours": 24,
+      "avg_effort_saas_hours": 16,
       "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.projects.progress",
+      "name": "Project Progress Tool",
+      "function": "Tracks project progress milestones and invoiced amounts per phase. Directly referenced in com.smf.enertis.project.customization (ProjectProgressEventHandler observes PP001projectprogress entity). Removing this module would break the custom event handler.",
+      "clients": [
+        "Enertis"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Hibernate 5.4→5.6: likely uses Criteria API",
+        "No maintainer: Openbravo SLU no longer maintains this"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 16,
+      "priority_score": 3
+    },
+    {
+      "java_package": "_translations_low_risk_group",
+      "name": "Packs de traduccion de bajo riesgo",
+      "function": "Agrupa el volumen grande de traducciones es_ES dentro de local_not_maintained sin logica propia relevante.",
+      "clients": [
+        "Bed4U",
+        "Bercaber"
+      ],
+      "client_count": 2,
+      "max_risk": "low",
+      "has_replacement": true,
+      "official_replacement_name": "Packs oficiales de traduccion y de localizacion asociados a cada bundle principal",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 0,
+      "avg_effort_saas_hours": 0,
+      "priority_score": 2
+    },
+    {
+      "java_package": "com.etendoerp.financial.reports.advanced",
+      "name": "Informes Financieros Avanzados (ES)",
+      "function": "Traducción al español.",
+      "clients": [
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "low",
+      "has_replacement": true,
+      "official_replacement_name": "Versión actualizada en com.etendoerp.financial.reports.advanced (mantenido como gradle_source)",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 0,
+      "avg_effort_saas_hours": 0,
+      "priority_score": 2
+    },
+    {
+      "java_package": "com.etendoerp.gljournal.advanced",
+      "name": "Asientos Manuales Avanzados (ES)",
+      "function": "Traducción al español.",
+      "clients": [
+        "MDF",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "low",
+      "has_replacement": true,
+      "official_replacement_name": "Versión actualizada en com.etendoerp.gljournal.advanced (mantenido como gradle_source)",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 0,
+      "avg_effort_saas_hours": 0,
+      "priority_score": 2
+    },
+    {
+      "java_package": "com.smf.asset.amortization.report",
+      "name": "Asset Amortization Report — Spanish Translation",
+      "function": "Spanish translations for an asset amortization report module.",
+      "clients": [
+        "Acico",
+        "MDF"
+      ],
+      "client_count": 2,
+      "max_risk": "low",
+      "has_replacement": true,
+      "official_replacement_name": "com.smf.asset.amortization.report",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 0,
+      "avg_effort_saas_hours": 1,
+      "priority_score": 2
+    },
+    {
+      "java_package": "org.openbravo.proflocalization.spain.dataset.cashvat",
+      "name": "Spain Localization — Cash VAT Dataset",
+      "function": "Datos de referencia del IVA de caja para la localización española.",
+      "clients": [
+        "Albastar",
+        "VdShop"
+      ],
+      "client_count": 2,
+      "max_risk": "low",
+      "has_replacement": true,
+      "official_replacement_name": "com.etendoerp.localization.spain.extensions",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 1,
+      "avg_effort_saas_hours": 1,
+      "priority_score": 2
+    },
+    {
+      "java_package": "org.openbravo.utility.hqlquerytool",
+      "name": "HQL Query Tool",
+      "function": "Admin utility for executing HQL (Hibernate Query Language) queries directly from the Etendo interface. Used for data analysis and debugging.",
+      "clients": [
+        "Acico",
+        "MDF"
+      ],
+      "client_count": 2,
+      "max_risk": "low",
+      "has_replacement": false,
+      "official_replacement_name": "Etendo Admin Query Tool (if available) or equivalent",
+      "generalization": "redundant",
+      "api_changes": [],
+      "avg_effort_update_hours": 1,
+      "avg_effort_saas_hours": 1,
+      "priority_score": 2
     }
   ],
   "generalizable_customizations": [
+    {
+      "type": "core",
+      "client": "Acico",
+      "name": "Business Partner Credit & Caution blocking in Shipment Posting",
+      "description": "Adds validation during goods shipment completion that checks the business partner's credit blocking (customer_blocking, vendor_blocking) and goods blocking (so_goods_blocking, po_goods_blocking) flags. Also validates uniqueness of the Navision external reference (bpartner_extref) across shipment lines, preventing completion when more than one external BP reference is present.",
+      "justification": "Business partner credit hold enforcement on document completion is a generic ERP requirement. The blocking logic belongs in core M_INOUT_POST and would benefit any Etendo installation that needs financial risk controls at the logistics level. The Navision-specific external reference check should be moved to the Navision integration module.",
+      "effort_saas_hours": 6
+    },
+    {
+      "type": "module",
+      "client": "Acico",
+      "name": "Broker/Commission Management",
+      "java_package": "com.smf.acico.brokerreport",
+      "description": "Commission and rappel management for commercial agents (brokers). Maintains a materialized view of broker-related data (RefreshMVData background job). Generates purchase credit notes and summary invoices from broker records. Supports rappel invoicing (CreateInvoiceRappel) and settlement of purchase invoices (SettlementPurchaseInvoices). Includes UI process buttons and filter expressions for default product selection.",
+      "complexity": "major",
+      "effort_saas_hours": 24,
+      "recommendation": "Broker/commission management is a common requirement for distribution and manufacturing companies with external sales agents. Candidate to be promoted as an official Etendo marketplace module under the Sales Extensions bundle. Requires generalization (remove ACICO-specific hardcoded values), update of POI Excel code, and documentation."
+    },
+    {
+      "type": "module",
+      "client": "Acico",
+      "name": "Custom Costing Engine",
+      "java_package": "com.smf.acico.costing",
+      "description": "Multi-method costing engine with 8 costing types: PurchaseCosting, InventoryCosting, ProductionCosting, MovementCosting, FinalCosting, LastDayCosting, OutAndStockFinalCosting, ReturnFromCustomerCosting, and CostVarianceCosting. Includes landed cost distribution by weight, background jobs for calculate/delete costing, and utility classes for inventory, movements, production, and transactions. Resolves costing for ACICO's complex manufacturing and multi-warehouse environment.",
+      "complexity": "major",
+      "effort_saas_hours": 40,
+      "recommendation": "This is the most technically sophisticated custom module in the installation. The multi-method costing architecture is genuinely generalizable. Evaluate against Etendo's standard Average Cost and standard Landed Cost modules first. If gaps exist (LastDay costing, CostVariance), propose as an Advanced Costing Extensions bundle. The 13-file Commons Lang migration and costing API compatibility check are the main update tasks."
+    },
+    {
+      "type": "module",
+      "client": "Acico",
+      "name": "Business Partner Credit and Caution Management",
+      "java_package": "com.smf.acico.creditandcaution",
+      "description": "Adds configurable credit blocking (customer_blocking, vendor_blocking) and goods blocking (so_goods_blocking, po_goods_blocking) fields to the Business Partner. These flags are checked during document completion (integrated with core M_INOUT_POST) to prevent completing transactions for financially blocked partners.",
+      "complexity": "minor",
+      "effort_saas_hours": 8,
+      "recommendation": "This is a clean, focused module that fills a real gap in Etendo's credit management. Bundle candidate for Financial Extensions. The module is well-scoped and already integrated with core. Recommend upstreaming to Etendo Financial Extensions with minor generalization work."
+    },
+    {
+      "type": "module",
+      "client": "Acico",
+      "name": "Mass Invoice Email Distribution",
+      "java_package": "com.smf.acico.send.massive.invoicing.process.fromusercon",
+      "description": "Batch process to send invoice PDFs by email to customer contacts. Selects invoices to process, generates PDF via Jasper, and emails each to the corresponding business partner contact. Includes background job scheduling (SendInvoiceBackground) and per-invoice email logic with attachment handling.",
+      "complexity": "minor",
+      "effort_saas_hours": 12,
+      "recommendation": "Mass invoice emailing is a standard commercial need. Candidate for an Email Extensions or Document Distribution bundle. The JasperReports upgrade (6.0→6.17) is the main technical risk. Minor generalization work needed to remove ACICO-specific document type filters."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Acico",
+      "name": "Budget Creation from Excel",
+      "java_package": "com.smf.create.budget.excel",
+      "description": "Import and processing functionality for budget creation from Excel files.",
+      "risk": "low",
+      "effort_saas_hours": 6,
+      "recommendation": "Low risk. Evaluate against Etendo's standard budget module Excel import. If not covered, the update is straightforward."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Acico",
+      "name": "Incidents Management Window",
+      "java_package": "com.smf.incidenciaswindow",
+      "description": "Provides a simple incidents/issues tracking window for recording operational incidents.",
+      "risk": "low",
+      "effort_saas_hours": 6,
+      "recommendation": "Simple window definition. Low risk. Evaluate if ACICO still actively uses this or if it can be eliminated."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Acico",
+      "name": "IVA Navarra Multidimensional Tax Report",
+      "java_package": "com.etendoerp.ivanavarra.multidimensional.tax.report",
+      "description": "Specialized tax report for IVA (VAT) under the Navarra foral regime (a special tax jurisdiction in Spain with separate VAT rules). Generates multidimensional tax summaries for Navarra tax declarations.",
+      "risk": "medium",
+      "effort_saas_hours": 8,
+      "recommendation": "Fiscally specific to Navarra regime. Evaluate whether ACICO still has Navarra fiscal obligations. If yes, this must be maintained or an official Navarra localization module acquired."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Acico",
+      "name": "Freight Management",
+      "java_package": "org.openbravo.materialmgmt.freightmgmt",
+      "description": "Freight cost management and calculation for logistics operations. Adds freight-related fields and calculations to sales orders and shipments.",
+      "risk": "medium",
+      "effort_saas_hours": 12,
+      "recommendation": "Relevant for ACICO's distribution operations. No clear maintained replacement. Evaluate against Etendo Logistics Extensions. Fork and maintain if still needed."
+    },
+    {
+      "type": "core",
+      "client": "Albastar",
+      "name": "PrintController — Soporte de selección de templates",
+      "description": "Modificaciones al servlet de impresión de documentos para permitir al usuario seleccionar entre diferentes templates de impresión (ej: múltiples diseños de factura). Introduce el parámetro 'templates' en el flujo de impresión y lo propaga al ReportManager para elegir el template activo.",
+      "justification": "La selección de templates de impresión es una funcionalidad genérica y valiosa para cualquier instalación Etendo con múltiples diseños de documento. El módulo de Accounting Templates de Etendo ya contempla múltiples templates; este patch es el mecanismo de selección que debería estar en core.",
+      "effort_saas_hours": 12
+    },
+    {
+      "type": "core",
+      "client": "Albastar",
+      "name": "Bloqueo de partners en procesamiento de pagos",
+      "description": "Validación añadida en tres clases del módulo de gestión de pagos avanzados: impide completar o registrar un pago cuando el socio comercial está marcado como bloqueado para pagos ('BusinessPartnerBlocked'). El bloqueo se verifica antes de procesar la acción 'P' (Process) o 'D' (Deposit) y lanza una excepción con mensaje localizable.",
+      "justification": "El control de socios bloqueados para pagos es una funcionalidad de riesgo financiero genérica que beneficia a todos los clientes con crédito gestionado. FIN_Utility.isBlockedBusinessPartner() ya existe en el core; solo faltaba invocarla en estos tres puntos del flujo de pagos.",
+      "effort_saas_hours": 4
+    },
+    {
+      "type": "module",
+      "client": "Albastar",
+      "name": "SMF Custom IDL Journal",
+      "java_package": "com.smf.albastar.idljournal",
+      "description": "Adaptador de carga inicial de datos (IDL – Initial Data Load) para importar asientos contables desde archivos CSV externos. Crea GLBatch, GLJournal y GLJournalLine en Etendo mapeando 25 parámetros (organización, esquema contable, cuenta, centro de coste, dimensiones, importes débito/crédito, etc.) y los contabiliza automáticamente al finalizar. Depende del módulo org.openbravo.idl que está sin mantenimiento.",
+      "complexity": "major",
+      "effort_saas_hours": 12,
+      "recommendation": "Evaluar si el módulo de importación nativa de Etendo (Data Import o integration platform EtendoRX) puede reemplazar el IDL. Si no, publicar como bundle 'GL Journal Importer' dado que múltiples clientes necesitan importar asientos desde sistemas externos (Excel, ERP legacy)."
+    },
+    {
+      "type": "module",
+      "client": "Albastar",
+      "name": "SMF Accounting Template Invoice",
+      "java_package": "com.smf.albastar.invoice.acctemplate",
+      "description": "Template de contabilización de facturas sin agrupación de líneas (TemplateInvoiceNoGrouping extiende DocInvoiceTemplate). Genera asientos contables individuales por línea de factura en lugar de agruparlos por impuesto o producto, lo que produce un detalle más granular en el libro mayor.",
+      "complexity": "major",
+      "effort_saas_hours": 8,
+      "recommendation": "La contabilización sin agrupación de líneas es un requisito contable habitual en España. Evaluar si Financial Extensions 25.x ya ofrece un modo de 'sin agrupación' en Accounting Templates. Si no, proponer como opción del bundle de Accounting Templates existente."
+    },
+    {
+      "type": "module",
+      "client": "Albastar",
+      "name": "SMF SII Customization",
+      "java_package": "com.smf.albastar.siicustomization",
+      "description": "Callout que copia automáticamente el campo 'Description' de la factura al campo SII (Sistema de Información Inmediata de la AEAT) 'Descripción SII'. Se activa cuando el usuario modifica la descripción de la factura, propagando el valor al campo específico del módulo SII de Hacienda.",
+      "complexity": "trivial",
+      "effort_saas_hours": 4,
+      "recommendation": "Incorporar como mejora del módulo SII oficial de Etendo. La copia automática de descripción elimina trabajo manual para todos los clientes españoles con SII activo."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Albastar",
+      "name": "Precognis Control NIF",
+      "java_package": "com.precognis.controlnif",
+      "description": "Validación del NIF/CIF español en socio comercial. Verifica el formato y dígito de control del identificador fiscal español.",
+      "risk": "medium",
+      "effort_saas_hours": 6,
+      "recommendation": "Funcionalidad genérica para España. Proponer a Etendo como mejora del módulo de localización española o del bundle Financial Extensions Spain."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Bed4U",
+      "name": "Reporting financiero legacy GPS/SMF",
+      "java_package": "_legacy_reporting_and_excel_helpers",
+      "description": "Agrupa com.openbravo.gps.finance.balanceexcelexport.report, org.openbravo.financialmgmt.accounting.report.notposted, com.smf.inventoryreport y com.smf.budget.report.base.",
+      "risk": "medium",
+      "effort_saas_hours": 12,
+      "recommendation": "Conviene cruzarlo con los modulos custom ledger/trial balance/printing.reports para decidir que reportes siguen vivos y cuales son puro arrastre historico."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Bercaber",
+      "name": "Reportes y ayudas financieras legacy GPS/SMF",
+      "java_package": "_legacy_reporting_tools",
+      "description": "Agrupa com.openbravo.gps.finance.balanceexcelexport.report, com.smf.inventoryreport, com.smf.budget.report.base, com.smf.product.fixedprice* y com.smf.productcategory.variationofexistences.",
+      "risk": "medium",
+      "effort_saas_hours": 10,
+      "recommendation": "Primero confirmar uso real. Si estos reportes siguen siendo clave, conviene reagruparlos en un paquete mantenible; si no, son buenos candidatos a limpieza antes de la migracion."
+    },
+    {
+      "type": "core",
+      "client": "Depique",
+      "name": "MaterialReceiptPending — Formulario de recepción de compras pendientes",
+      "description": "Formulario clásico (servlet + HTML) que permite seleccionar líneas de órdenes de compra pendientes de recibir y generar albaranes de entrada en masa. La customización añade soporte completo de UOM Management (unidades de medida alternativas): muestra columna AUM opcional, convierte cantidades entre unidades, valida que el almacén del albarán pertenezca a la organización.",
+      "justification": "La funcionalidad UOM en recepción de compras es útil para cualquier instalación que use gestión de unidades de medida alternativas. El soporte de AUM en albaranes de entrada debería estar en core. La validación almacén-organización también es un fix de robustez válido para upstream.",
+      "effort_saas_hours": 2
+    },
+    {
+      "type": "core",
+      "client": "Depique",
+      "name": "C_ORDERLINE2_TRG — Trigger de reserva de stock en líneas de pedido",
+      "description": "Modificación al trigger de base de datos que gestiona las reservas de stock cuando cambia la cantidad entregada en líneas de pedido. El ajuste (+4/-4 líneas) afina el manejo de cantidades en UOM alternativas al cerrar reservas.",
+      "justification": "Corrección relacionada con el manejo de UOM en reservas de stock. Si la instalación usa UOM Management, este fix puede ser necesario también en otras instalaciones. Candidato a revisión para upstream.",
+      "effort_saas_hours": 1
+    },
+    {
+      "type": "module",
+      "client": "Depique",
+      "name": "Automatización lectura de códigos de barras EAN-13",
+      "java_package": "com.redk.openbravo.depique.ean13",
+      "description": "Gestión de códigos EAN-13 para productos: generación automática de UPC/EAN vía trigger de BD, función de cálculo de dígito de control. Incluye un proceso de importación de líneas de albarán por código de barras (IDL_import.java) usando el framework IDL clásico.",
+      "complexity": "minor",
+      "effort_saas_hours": 16,
+      "recommendation": "El soporte de EAN-13 es una necesidad común en retail/distribución. Candidato a bundle oficial de Etendo (com.etendoerp.product.ean13 o similar). Requiere reimplementar el import como Process Definition moderno y verificar si com.etendoerp.product.characteristics cubre el caso de uso."
+    },
+    {
+      "type": "module",
+      "client": "Depique",
+      "name": "Import Products With Brand — Importación de productos con marca",
+      "java_package": "com.smf.depique.importproduct",
+      "description": "Extensión del framework IDL (Initial Data Load) de Openbravo para importar productos incluyendo el campo Brand (Marca). El estándar de Etendo no incluye la marca en la importación masiva de productos.",
+      "complexity": "minor",
+      "effort_saas_hours": 8,
+      "recommendation": "Funcionalidad claramente generalizable. Podría integrarse en el módulo oficial de importación de productos de Etendo o como extensión del módulo com.etendoerp.integration.openbravo.idl si existe. A corto plazo, verificar si el Import Framework moderno de Etendo cubre el caso."
+    },
+    {
+      "type": "module",
+      "client": "Depique",
+      "name": "General Performance Optimizations — Optimizaciones de rendimiento",
+      "java_package": "com.smf.depique.performance",
+      "description": "Override del proceso PriceListCreateAll clásico (servlet) para mejorar el rendimiento en la creación masiva de tarifas de venta. Incluye script de módulo para ajustar el árbol natural de organizaciones.",
+      "complexity": "minor",
+      "effort_saas_hours": 6,
+      "recommendation": "Si la optimización de PriceListCreateAll resuelve un problema de rendimiento real con catálogos grandes, es candidata a contribución upstream. Reimplementar como Process Definition moderno (OBUIAPP_Process) para compatibilidad con nueva UI."
+    },
+    {
+      "type": "module",
+      "client": "Depique",
+      "name": "SMF Self Service Management — Portal de autoservicio B2B",
+      "java_package": "com.smf.depique.selfservice.management",
+      "description": "Módulo de autoservicio para clientes B2B: permite crear pedidos de compra desde facturas de venta (CrearPedido), generar facturas automáticamente (GenerarFactura), con configuración por organización (SMFDSM_CONFIG). Incluye un callout de descuentos en líneas de factura y trigger para aplicar descuentos automáticos.",
+      "complexity": "major",
+      "effort_saas_hours": 24,
+      "recommendation": "La funcionalidad de portal B2B de autoservicio tiene alta demanda en el mercado Etendo. Candidato fuerte a bundle oficial. La arquitectura ya usa Process Definition moderno (BaseProcessActionHandler). Requiere refactoring para eliminar dependencias hardcoded del cliente y hacer la configuración genérica."
+    },
+    {
+      "type": "module",
+      "client": "Depique",
+      "name": "Warehouse Management Application — App móvil de gestión de almacén",
+      "java_package": "com.smf.depique.warehousemanagement.application",
+      "description": "Aplicación móvil de gestión de almacén (probablemente Android/React Native). El LOC contabilizado (~4.4M) incluye código compilado o assets binarios. Trabaja en conjunto con el módulo warehousemanagementws para operaciones de movimiento de stock desde terminales móviles.",
+      "complexity": "critical",
+      "effort_saas_hours": 30,
+      "recommendation": "La app móvil de almacén es un activo de alto valor. En contexto SaaS, evaluar migración a Etendo Mobile (com.etendoerp.etendoRx o similar) o mantener como solución autónoma que consume APIs REST del módulo WS. Requiere auditoría del código fuente real (excluir binarios del conteo)."
+    },
+    {
+      "type": "module",
+      "client": "Depique",
+      "name": "Depique Warehouse Management WS — Web Services de almacén",
+      "java_package": "com.smf.depique.warehousemanagementws",
+      "description": "Backend de servicios REST para la app móvil de almacén. Expone endpoints para: obtener movimientos pendientes, procesarlos, gestionar ubicaciones, usuarios, almacenes y SSCCs. Usa JWT para autenticación via com.smf.securewebservices.",
+      "complexity": "major",
+      "effort_saas_hours": 20,
+      "recommendation": "Los WS de almacén son reutilizables para cualquier cliente que use app móvil de almacén. Generalizar eliminando referencias a packages 'depique' y publicar como bundle de gestión de almacén móvil."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Depique",
+      "name": "SMF Magento Sync Provider — Sincronización con Magento",
+      "java_package": "com.smf.magento",
+      "description": "Sincronización bidireccional de productos, precios, stock y pedidos entre Etendo y Magento (e-commerce). Depique puede gestionar una tienda online conectada al ERP.",
+      "risk": "medium",
+      "effort_saas_hours": 16,
+      "recommendation": "Evaluar uso real con Mixpanel. La integración Magento es de alto valor para distribuidores con e-commerce. Si activo, requiere revisión de compatibilidad de API Magento. Candidato a bundle oficial."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Enertis",
+      "name": "Help Desk Tool (GPS)",
+      "java_package": "com.openbravo.gps.helpdesktool",
+      "description": "GPS-developed internal help desk ticketing system integrated with Etendo. Manages support requests linked to projects and customers.",
+      "risk": "medium",
+      "effort_saas_hours": 8,
+      "recommendation": "Fork and update if actively used. If SaaS route, evaluate external help desk integration (Jira/Zendesk) instead — com.smf.integrations.support.jira is already installed."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Enertis",
+      "name": "Import Data (Openbravo)",
+      "java_package": "org.openbravo.importdata",
+      "description": "Generic data import framework for Etendo. Used alongside IDL for bulk data loading operations.",
+      "risk": "low",
+      "effort_saas_hours": 3,
+      "recommendation": "Fork and compile-test. Small utility module."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Enertis",
+      "name": "GPS Utility Modules",
+      "java_package": "com.openbravo.gps.localization.standardalgorithmunmatch",
+      "description": "Minor GPS utility modules: standardalgorithmunmatch (payment matching algorithm variant that allows unmatch), org.openbravo.gps.copyrole (copy user roles between organizations), org.openbravo.utility.draganddropselector3lists + implementation (3-list drag-and-drop selector widget), org.openbravo.client.analytics (analytics/reporting widget), org.openbravo.client.widgets.finance (finance workspace widgets).",
+      "risk": "low",
+      "effort_saas_hours": 10,
+      "recommendation": "Evaluate active usage. standardalgorithmunmatch may be important for financial operations. copyrole and drag-and-drop selectors are administrative utilities. Fork and update as needed."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Flexellon",
+      "name": "OFX y stack SEPA legacy",
+      "java_package": "_legacy_banking_formats",
+      "description": "Agrupa org.openbravo.module.standardOFX y los modulos org.openbravo.sepa.iso20022* de credit transfer/direct debit/camt. El source no expone AD_WINDOW/AD_PROCESS propios suficientes para atribuirles uso Mixpanel directo en esta corrida.",
+      "risk": "medium",
+      "effort_saas_hours": 12,
+      "recommendation": "No hay evidencia suficiente para darlos por muertos ni por activos solo con Mixpanel. Si el cliente sigue operando import/export bancario por estos formatos, este stack merece una validacion funcional separada."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Luján Agrícola",
+      "name": "Openbravo Infrastructure Modules (7 modules)",
+      "java_package": "org.openbravo.bankstatement.importer.generic.csv + org.openbravo.fileblob + org.openbravo.materialmgmt.freightmgmt + org.openbravo.service.integration.amazon.s3 + org.openbravo.util.javax.xml.soap + org.openbravo.utility.hqlquerytool + org.openbravo.utility.opencsv",
+      "description": "Generic infrastructure: CSV bank statement import, file BLOB storage, freight management, Amazon S3 integration, SOAP utilities, HQL query tool, OpenCSV library wrapper.",
+      "risk": "medium",
+      "effort_saas_hours": 6,
+      "recommendation": "org.openbravo.utility.opencsv must be removed and replaced with Etendo 25.1's native opencsv. org.openbravo.fileblob: assess usage and check if file attachment improvements cover the need. Amazon S3 and freight management: assess if still needed."
+    },
     {
       "type": "core",
       "client": "MDF",
@@ -492,24 +2939,126 @@
       "effort_saas_hours": 1
     },
     {
-      "type": "module_unmaintained",
-      "client": "MDF",
-      "name": "P&L and Balance Sheet export to Excel",
-      "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
-      "description": "Exporta la Cuenta de Pérdidas y Ganancias y el Balance de Situación a formato Excel (Apache POI). Desarrollado por GPS, proveedor externo.",
-      "risk": "medium",
-      "effort_saas_hours": 8,
-      "recommendation": "Verificar si Financial Reports Advanced cubre esta exportación. Si no, reconstruir como OBUIAPP_Report o acción POI compatible con POI 5.x. Contactar con GPS para soporte o asumir el módulo."
+      "type": "core",
+      "client": "Montblanc",
+      "name": "M_INOUT_POST — invoice qty update query optimization",
+      "description": "A 6-line modification in the shipment posting function (M_INOUT_POST) that changes the subquery used when updating m_inoutline.qtyinvoiced. Montblanc's version uses a DISTINCT subquery (FROM (SELECT DISTINCT m_inoutline_id FROM c_invoiceline)) and adds the condition AND mi.qtyinvoiced IS DISTINCT FROM mi.movementqty — preventing no-op updates when quantities already match.",
+      "justification": "The DISTINCT optimization reduces duplicate row processing and the IS DISTINCT FROM guard prevents unnecessary updates — both are genuine quality improvements with no client-specific business logic. Should be proposed to Etendo core.",
+      "effort_saas_hours": 2
+    },
+    {
+      "type": "module",
+      "client": "Montblanc",
+      "name": "Invoice Goods Shipment",
+      "java_package": "com.openbravo.gps.montblanc.invoicegoodshipment",
+      "description": "Specialized invoice generation form that simultaneously creates a goods shipment (goods receipt) linked to the invoice — designed for scenarios where invoices arrive before physical stock movements are recorded in the warehouse. Contains a single GenerateInvoicesmanual.java servlet variant that extends the base GPS invoice generation with shipment creation logic.",
+      "complexity": "minor",
+      "effort_saas_hours": 20,
+      "recommendation": "The invoice+shipment combined generation pattern is useful beyond Montblanc (many distributors need it). Generalize as an Etendo bundle Process Definition. For update route, compile-test against 25.4.x classic UI."
+    },
+    {
+      "type": "module",
+      "client": "Montblanc",
+      "name": "SMF Montblanc Customizations",
+      "java_package": "com.smf.montblanc.customizations",
+      "description": "SMF-developed customizations: (1) CreateShipmentFromInvoice.java — Process Action Handler that creates a purchase goods receipt from a purchase invoice; finds the first available warehouse and locator, copies all invoice lines as shipment lines, links them back, and opens the created shipment in a new tab; (2) SMFCUS_PRODUCTIONRUN_STANDARD — custom PostgreSQL function for production run processing; (3) C_ORDER_CHK_RESTRINCTIONS_TRG — DB trigger that prevents modifying header fields (BP, document type, date, amounts, warehouse, etc.) on completed sales orders; (4) SMFCUS_INV_CAND_SHIPMENT_V — view joining orders, shipments, and invoice lines to show orders pending invoicing with amounts; (5) SMFCUS_ATTRIBUTEVALUE_TRL — attribute value translation table; (6) Modifications to C_BPARTNER and C_INVOICE.",
+      "complexity": "minor",
+      "effort_saas_hours": 12,
+      "recommendation": "CreateShipmentFromInvoice is a genuinely reusable pattern — generalize as a Warehouse Extensions candidate. The DB trigger and view are Montblanc-specific data integrity rules. For SaaS, evaluate if the trigger logic can be replaced by Etendo's document completion protection."
     },
     {
       "type": "module_unmaintained",
-      "client": "MDF",
-      "name": "CSV Generic Bank Statement Importer",
-      "java_package": "org.openbravo.bankstatement.importer.generic.csv",
-      "description": "Importa extractos bancarios desde archivos CSV genéricos al módulo de conciliación bancaria de Etendo.",
-      "risk": "high",
+      "client": "Montblanc",
+      "name": "SMF Mass Invoicing Suite",
+      "java_package": "com.etendoerp.send.massive.invoicing",
+      "description": "Four related modules for mass invoice sending: etendoerp.send.massive.invoicing (Etendo check/send), smf.send.mass.invoicing.fromusercontact (send from user contact + es_ES), smf.send.massive.invoicing.process.fromusercontact (process), smf.sendordersbyemail (send orders by email). Batch email delivery of invoices and orders to customers.",
+      "risk": "medium",
+      "effort_saas_hours": 8,
+      "recommendation": "Consolidate into a single maintained module. Email sending functionality is generic and reusable. Check if com.etendoerp.sales.extensions covers some of this."
+    },
+    {
+      "type": "core",
+      "client": "VdShop",
+      "name": "Extensión del módulo Report Valuation Stock (ETRVS_TRANSACTION_ZERO)",
+      "description": "Extensión significativa del módulo de valoración de stock que añade detección de transacciones que dejan stock a cero o negativo. Incluye una nueva tabla (ETRVS_TRANSACTION_ZERO), un proceso background (TransactionCostingBackground) que ejecuta la verificación antes del motor de costeo estándar, y un proceso de verificación (TransactionReset) que itera sobre transacciones no procesadas y registra las problemáticas. También modifica la tabla M_TRANSACTION añadiendo el campo ETRVS_ISVERIFIED.",
+      "justification": "La detección de transacciones de stock que resultan en stock cero o negativo es una funcionalidad de auditoría de costeo con valor genérico para cualquier instalación Etendo. Puede proponerse al equipo de Etendo para incluirlo en versiones futuras del módulo oficial de valoración de stock. El proceso también importa SMFVDIImportsfile (del módulo importfile del cliente) que debe desacoplarse antes del upstream.",
+      "effort_saas_hours": 16
+    },
+    {
+      "type": "core",
+      "client": "VdShop",
+      "name": "VariablesBase + VariablesSecureApp — extensión para carga programática de ficheros",
+      "description": "Añade métodos setFileBase() en VariablesBase y setFile()/setCommand() en VariablesSecureApp para simular una carga de fichero multipart desde un File del sistema de ficheros (sin petición HTTP real). Esta extensión es necesaria para que el módulo de importación FTP (com.smf.vdshop.importfile) pueda invocar el flujo de carga de fichero de IDL sin pasar por el servlet.",
+      "justification": "La capacidad de construir un VariablesBase programático a partir de un File es una utilidad de testing e integración genérica. Se puede proponer al equipo de Etendo como extensión del API de base, desacoplando la dependencia de que sea solo en contexto HTTP. En la migración SaaS, el módulo de importación debe migrarse a EtendoRX/conectores oficiales, haciendo innecesaria esta extensión.",
+      "effort_saas_hours": 2
+    },
+    {
+      "type": "core",
+      "client": "VdShop",
+      "name": "OperativeQuantity_To_BaseQuantity — soporte ventana Incoming Shipment",
+      "description": "Añade soporte para la ventana Incoming Shipment (AD_WINDOW_ID=800013) al callout de conversión de unidad de medida operativa a base. La línea añadida extiende el bloque finally de la conversión para cubrir esta ventana adicional.",
+      "justification": "Extensión correcta del callout de UOM para cubrir una ventana de recepción adicional. Es una mejora genérica de la plataforma que debería incluirse en el core, ya que cualquier cliente con gestión de UOM y ventana de Incoming Shipment se beneficiaría.",
+      "effort_saas_hours": 1
+    },
+    {
+      "type": "module",
+      "client": "VdShop",
+      "name": "Invoice Web Services Module",
+      "java_package": "com.smf.vdshop.invoice.webservice",
+      "description": "Web service REST para procesamiento batch de facturas. Permite filtrar facturas por tipo de transacción, tercero, tipo de documento y rango de fechas, y ejecutar la acción de contabilización (process) sobre todas las que cumplan los criterios en una sola llamada HTTP POST.",
+      "complexity": "minor",
+      "effort_saas_hours": 6,
+      "recommendation": "Candidato a generalizar como bundle del marketplace de Etendo ('Batch Invoice Processing WS'). La funcionalidad de procesar lotes de facturas por criterios es útil para integraciones B2B. Refactorizar para soportar más acciones (reversión, cierre) y publicar como módulo oficial."
+    },
+    {
+      "type": "module",
+      "client": "VdShop",
+      "name": "Order Web Services Module",
+      "java_package": "com.smf.vdshop.order.webservice",
+      "description": "Web service REST para procesamiento batch de pedidos. Permite filtrar pedidos (compra/venta) por tercero, tipo de documento y fechas, y ejecutar acciones sobre el lote. Incluye también UpdateGRQuantityService y UpdateOrderDelivery para gestión de cantidades de recepciones.",
+      "complexity": "minor",
+      "effort_saas_hours": 6,
+      "recommendation": "Candidato a bundle 'Batch Order Processing WS'. Junto con el módulo de invoice webservice, formarían un pack de APIs REST para integraciones de automatización. Limpiar imports deprecados y generalizar los parámetros de filtro."
+    },
+    {
+      "type": "module",
+      "client": "VdShop",
+      "name": "Warehouse Purchase Order Module",
+      "java_package": "com.smf.vdshop.warehouse.purchaseorder",
+      "description": "Proceso que auto-crea albaranes de entrada (Goods Receipts) al confirmar pedidos de compra. Extiende el proceso ProcessOrders de smf.jobs para interceptar la acción 'CO' (confirm) y automáticamente generar el albarán de recepción con las líneas y cantidades del pedido, asignando el tipo de documento, almacén y localizador. También valida en 'RE' (reactivate) que el pedido no tenga ya una recepción asociada.",
+      "complexity": "minor",
+      "effort_saas_hours": 6,
+      "recommendation": "Candidato a bundle 'Auto Goods Receipt on PO Confirmation'. Es una funcionalidad de warehouse workflow común en distribución. Generalizar el mapeo de localizador (ahora hardcoded) y publicar como módulo oficial de Etendo Warehouse Extensions."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "VdShop",
+      "name": "Service Contract Invoice Presentment",
+      "java_package": "org.openbravo.contract.invoice.presentment",
+      "description": "Presentación y envío de facturas generadas desde contratos de servicio.",
+      "risk": "medium",
       "effort_saas_hours": 4,
-      "recommendation": "La conciliación bancaria es proceso crítico. Verificar si Financial Extensions incluye importación CSV en versiones recientes. Si no, mantener y actualizar dependencias."
+      "recommendation": "Parte del ecosistema de contratos."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "VdShop",
+      "name": "Service Contract Management Template",
+      "java_package": "org.openbravo.contract.services.template",
+      "description": "Módulo template (AD sin Java) del módulo de contratos de servicio.",
+      "risk": "low",
+      "effort_saas_hours": 1,
+      "recommendation": "Sigue el módulo principal de contratos."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "VdShop",
+      "name": "Report Valuation Stock Template",
+      "java_package": "com.etendoerp.reportvaluationstock.template",
+      "description": "Módulo template (AD XML) del módulo de valoración de stock extendido por el cliente. Contiene la estructura de ventana/proceso/menú para el proceso TransactionReset.",
+      "risk": "medium",
+      "effort_saas_hours": 2,
+      "recommendation": "Parte del ecosistema de la extensión de valoración de stock del cliente. Si la extensión se propone upstream, este template debe acompañarla."
     }
   ]
 }
