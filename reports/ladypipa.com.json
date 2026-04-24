@@ -1,0 +1,3900 @@
+{
+  "client": {
+    "name": "ladypipa.com",
+    "hostname": "axel-IdeaPad-3-15IML05"
+  },
+  "platform": {
+    "type": "etendo",
+    "version": "24.2.6"
+  },
+  "modules": {
+    "gradle_jar": [
+      {
+        "java_package": "com.etendoerp.accounting.dimensions.assets",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.accounting.dimensions.assets",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.dimensions.assets.git",
+        "name": "Accounting Dimensions Assets",
+        "version": "1.2.3",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.accounting.dimensions.assets.template",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.accounting.dimensions.assets.template",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.dimensions.assets.template.git",
+        "name": "Accounting Dimensions Assets Template",
+        "version": "1.2.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.accounting.templates",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.accounting.templates",
+        "latest_version": "2.4.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.templates.git",
+        "name": "New Accounting Templates",
+        "version": "1.14.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.accounting.templates.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.accounting.templates.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Nuevas plantillas de contabilidad",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bank.account.management",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.advanced.bank.account.management",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bank.account.management.git",
+        "name": "Advanced Bank Account Management",
+        "version": "1.4.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bank.account.management.template",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.advanced.bank.account.management.template",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bank.account.management.template.git",
+        "name": "Advanced Bank Account Management Template",
+        "version": "1.2.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.advanced.bpsettlement",
+        "latest_version": "2.5.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bpsettlement.git",
+        "name": "Advanced Business Partner Settlement",
+        "version": "1.13.4",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.advanced.bpsettlement.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Liquidación Avanzada de Socios Comerciales",
+        "version": "1.1.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.advanced.financial.docs.processing",
+        "latest_version": "2.4.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.git",
+        "name": "Advanced Financial Documents Processing",
+        "version": "1.12.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.advanced.financial.docs.processing.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Procesamiento Avanzado de Documentos Financieros",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.template",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.advanced.financial.docs.processing.template",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.template.git",
+        "name": "Advanced Financial Documents Processing Template",
+        "version": "1.13.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.advanced.intercompany",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.intercompany.git",
+        "name": "Advanced Intercompany",
+        "version": "1.15.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.advanced.intercompany.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Intercompany Avanzado",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.automated.remittance",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.automated.remittance",
+        "latest_version": "2.4.1",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.automated.remittance.git",
+        "name": "Automated Remittance",
+        "version": "1.4.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.bankingpool",
+        "latest_version": "2.4.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bankingpool.git",
+        "name": "Banking Pool",
+        "version": "1.14.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.bankingpool.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Pool Bancario",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.bulk.posting",
+        "latest_version": "2.4.1",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.posting.git",
+        "name": "Bulk Posting",
+        "version": "1.16.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.bulk.posting.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Contabilización Masiva",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.financial.extensions",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Financial Extensions",
+        "version": "1.28.0",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.financial.reports.advanced",
+        "latest_version": "2.9.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.git",
+        "name": "Financial Reports Advanced",
+        "version": "1.17.0",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.financial.reports.advanced.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Informes Financieros Avanzados",
+        "version": "1.2.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.gljournal.advanced",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.advanced.git",
+        "name": "GL Journal Advanced",
+        "version": "1.15.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.gljournal.advanced.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Asientos Manuales Avanzados",
+        "version": "1.5.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.clone",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.gljournal.clone",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.git",
+        "name": "Clone GL Journal",
+        "version": "1.4.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.clone.template",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.gljournal.clone.template",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.template.git",
+        "name": "Clone GL Journal Template",
+        "version": "1.4.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.localization.spain.extensions",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.localization.spain.extensions",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Spain Localization Extensions",
+        "version": "1.26.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.payment.removal",
+        "latest_version": "2.4.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.git",
+        "name": "Payment Removal",
+        "version": "1.12.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.payment.removal.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Eliminación de Pagos",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.template",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.payment.removal.template",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.template.git",
+        "name": "Payment Removal Template",
+        "version": "1.13.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.procurement.extensions",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.procurement.extensions",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Procurement Extensions",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.procurement.extensions.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.procurement.extensions.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Procurement Extensions Spanish Translation",
+        "version": "1.0.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.purchase.invoice.validations",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.purchase.invoice.validations",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.procurement.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.purchase.invoice.validations.git",
+        "name": "Purchase Invoice Validations",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.purchase.invoice.validations.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.purchase.invoice.validations.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Purchase Invoice Validations Spanish Translation",
+        "version": "1.0.1",
+        "author": "Etendo Commercial License"
+      },
+      {
+        "java_package": "com.etendoerp.reportvaluationstock.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.reportvaluationstock.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.reportvaluationstock.es_es.git",
+        "name": "Report Valuation Stock - Spanish Translation",
+        "version": "1.8.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.etendoerp.vat.regularization",
+        "latest_version": "2.4.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.vat.regularization.git",
+        "name": "VAT Regularization",
+        "version": "1.5.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.asset.amortization.report",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.asset.amortization.report.git",
+        "name": "Asset Amortization Report",
+        "version": "1.13.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.currency.apiconfig",
+        "latest_version": "2.4.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.apiconfig.git",
+        "name": "Currency API Configuration",
+        "version": "1.14.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.currency.apiconfig.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Configuración de la API de Moneda",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.currency.conversionrate",
+        "latest_version": "2.5.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.conversionrate.git",
+        "name": "Conversion Rate Downloader",
+        "version": "1.14.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.currency.conversionrate.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Descargador de Tasa de Conversión",
+        "version": "1.2.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.gljournal.reverse",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.git",
+        "name": "Reverse GL Journal",
+        "version": "1.12.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.template",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.gljournal.reverse.template",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.template.git",
+        "name": "Reverse GL Journal Template",
+        "version": "1.12.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.smf.jobs.defaults.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.jobs.defaults.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.defaults.es_es.git",
+        "name": "Default Jobs (es_ES)",
+        "version": "1.11.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.jobs.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.jobs.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.es_es.git",
+        "name": "Jobs - Spanish Translation",
+        "version": "1.5.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.smf.securewebservices.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.securewebservices.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.securewebservices.es_es.git",
+        "name": "Secure web services implentation - Spanish Translation",
+        "version": "1.5.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.smf.ticketbai",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/com.smf.ticketbai",
+        "latest_version": "2.10.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.ticketbai.git",
+        "name": "TicketBAI Integration",
+        "version": "1.14.0",
+        "author": "SMF Consulting"
+      },
+      {
+        "java_package": "org.openbravo.advpaymentmngt.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.advpaymentmngt.es_es",
+        "latest_version": "4.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.advpaymentmngt.es_es.git",
+        "name": "Advanced Payables and Receivables - Spanish Translation",
+        "version": "3.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.alerts.accounting30",
+        "latest_version": "4.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.git",
+        "name": "Alerts: Accounting",
+        "version": "3.11.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.alerts.accounting30.es_es",
+        "latest_version": "4.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.es_es.git",
+        "name": "Alerts: Accounting - Spanish Translation",
+        "version": "3.11.0",
+        "author": "Openbravo, S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.client.application.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.client.application.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.application.es_es.git",
+        "name": "User Interface Application Translation Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.client.htmlwidget.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.client.htmlwidget.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.htmlwidget.es_es.git",
+        "name": "HTML Widget Translation Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.client.kernel.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.client.kernel.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.kernel.es_es.git",
+        "name": "User Interface Client Kernel Translation Spanish Spain(esES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.client.myob.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.client.myob.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.myob.es_es.git",
+        "name": "Workspace & Widgets Translation: Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.client.querylist.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.client.querylist.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.querylist.es_es.git",
+        "name": "Query/List Widget Translation Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.client.widgets.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.client.widgets.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.widgets.es_es.git",
+        "name": "Widgets Collection Translation Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.finance.checkprinting",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.git",
+        "name": "Check Printing",
+        "version": "1.13.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.finance.checkprinting.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.es_es.git",
+        "name": "Check Printing Spanish Translation",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.financial.bpsettlement",
+        "latest_version": "2.4.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.bpsettlement.git",
+        "name": "Business Partner Settlements",
+        "version": "1.16.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.financial.bpsettlement.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Liquidaciones de Terceros",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "org.openbravo.financial.paymentreport.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.financial.paymentreport.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.paymentreport.es_es.git",
+        "name": "Payment Report - Spanish Translation",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.localization.spain.referencedata.accounts",
+        "latest_version": "4.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.git",
+        "name": "Chart of accounts: PGC 2007 General",
+        "version": "3.11.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "latest_version": "4.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.pymes.git",
+        "name": "Chart of accounts: PGC 2007 PYMEs",
+        "version": "3.11.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.localization.spain.referencedata.taxes",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.git",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "version": "1.15.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.cashvat.git",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
+        "version": "1.9.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.localization.spain30",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.localization.spain30",
+        "latest_version": "4.2.1",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain30.git",
+        "name": "Localization pack Spain (España)",
+        "version": "3.20.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.cashvat.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.aeat190.cashvat.es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.cashvat.es.git",
+        "name": "Withholding Report: Modelo 190 (Spain) Cash VAT compatible",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.aeat190.es",
+        "latest_version": "4.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.es.git",
+        "name": "Withholding Report: Modelo 190 (Spain)",
+        "version": "3.22.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.cashvat.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.aeat303.cashvat.es",
+        "latest_version": "2.6.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.cashvat.es.git",
+        "name": "Tax Report: Modelo 303 (Spain) Cash VAT compatible",
+        "version": "1.15.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.aeat303.es",
+        "latest_version": "2.5.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.es.git",
+        "name": "Tax Report: Modelo 303 (Spain)",
+        "version": "1.26.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.cashvat.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.aeat347apr.cashvat.es",
+        "latest_version": "2.4.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.cashvat.es.git",
+        "name": "Spain AEAT Modelo 347 for APR Cash VAT compatible",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.aeat347apr.es",
+        "latest_version": "5.3.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.git",
+        "name": "Spain AEAT Modelo 347 for APR",
+        "version": "4.19.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.aeat347apr.es.es_es",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.es_es.git",
+        "name": "Spain AEAT Modelo 347 for APR- Spanish Translation",
+        "version": "1.15.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat349.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.aeat349.es",
+        "latest_version": "3.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat349.es.git",
+        "name": "Modelo 349",
+        "version": "2.17.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.cashvat.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.aeat390.cashvat.es",
+        "latest_version": "2.5.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.cashvat.es.git",
+        "name": "Tax Report: Modelo 390 (Spain) Cash VAT compatible",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.aeat390.es",
+        "latest_version": "4.4.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.es.git",
+        "name": "Tax Report: Modelo 390 (Spain)",
+        "version": "3.17.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.bptaxidkey",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.bptaxidkey",
+        "latest_version": "1.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.bptaxidkey.git",
+        "name": "Tipo de Número de Identificación de Tercero",
+        "version": "0.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cashvat",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.cashvat",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cashvat.git",
+        "name": "Cash VAT Management",
+        "version": "1.7.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.cifnifvalidator",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.git",
+        "name": "CIF and NIF validator",
+        "version": "1.11.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.cifnifvalidator.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.es_es.git",
+        "name": "Validador de CIF y NIF",
+        "version": "1.11.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.countryisocode",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.countryisocode",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.countryisocode.git",
+        "name": "3 digits ISO country codes",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno43.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.cuaderno43.es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cuaderno43.es.git",
+        "name": "Cuaderno 43",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.epigrafes.iae.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.epigrafes.iae.es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.epigrafes.iae.es.git",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.eucountries",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.eucountries",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.eucountries.git",
+        "name": "European Union countries",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.module.finactvalidator.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.finactvalidator.es",
+        "latest_version": "4.2.1",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.finactvalidator.es.git",
+        "name": "Validador de número de cuenta financiera",
+        "version": "3.12.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.incoterms",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.incoterms",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.incoterms.git",
+        "name": "Incoterms",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.intrastat",
+        "latest_version": "4.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.git",
+        "name": "Intrastat",
+        "version": "3.14.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.intrastat.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.es_es.git",
+        "name": "Intrastat – Spanish translation",
+        "version": "1.14.0",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.spain",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.intrastat.spain",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.spain.git",
+        "name": "Intrastat for Spain",
+        "version": "1.14.0",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.invoicesregisterbook",
+        "latest_version": "3.3.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.git",
+        "name": "Invoices Register Book",
+        "version": "2.14.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.invoicesregisterbook.es_es",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.es_es.git",
+        "name": "Libro de Facturas",
+        "version": "1.13.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.invoicesregisterbook.estaxes",
+        "latest_version": "4.3.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.estaxes.git",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "version": "3.13.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.invoicetaxreportenhanced30",
+        "latest_version": "4.3.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.git",
+        "name": "Multidimensional Tax Report",
+        "version": "3.11.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "latest_version": "4.3.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.es_es.git",
+        "name": "Multidimensional Tax Report Spanish (es_ES)",
+        "version": "3.11.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.organization.representative.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.organization.representative.es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.organization.representative.es.git",
+        "name": "Legal Representative of the Organization",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.paymentmethod.type",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.paymentmethod.type",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.paymentmethod.type.git",
+        "name": "Payment Method Type",
+        "version": "1.11.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.remittance",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.remittance",
+        "latest_version": "4.3.1",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.git",
+        "name": "Remittances infrastructure",
+        "version": "3.18.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.remittance.es_es",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Remittances infrastructure - Spanish Translation",
+        "version": "1.5.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.template",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.remittance.template",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.template.git",
+        "name": "Remittance Infrastructure Template",
+        "version": "1.12.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "org.openbravo.module.sii.template",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.sii.template",
+        "latest_version": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.template.git",
+        "name": "Spain SII Template",
+        "version": "1.25.0",
+        "author": "IMonferrer @ Opentix"
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.taximprovements.es",
+        "latest_version": "1.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es.git",
+        "name": "Spanish Tax Module Improvements",
+        "version": "0.11.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.taximprovements.es_es",
+        "latest_version": "1.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es_es.git",
+        "name": "Módulo de Impuestos para España mejorado",
+        "version": "0.11.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.taxreportlauncher",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.git",
+        "name": "Tax Report Launcher",
+        "version": "1.12.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher.es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.module.taxreportlauncher.es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.es.git",
+        "name": "Generador de declaraciones de impuestos",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.numbertoword",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.numbertoword",
+        "latest_version": "2.3.0",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.git",
+        "name": "Number To Word",
+        "version": "1.20.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "org.openbravo.numbertoword.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.numbertoword.es_es",
+        "latest_version": "1.13.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.es_es.git",
+        "name": "Number To Word Spanish Translation",
+        "version": "1.13.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.numbertoword_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.numbertoword_es",
+        "latest_version": "1.13.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword_es.git",
+        "name": "Number To Word (Spanish)",
+        "version": "1.13.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain.dataset",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.proflocalization.spain.dataset",
+        "latest_version": "2.4.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.proflocalization.spain.dataset.git",
+        "name": "Professional Localization pack Spain (España) Datasets",
+        "version": "1.17.1",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.reports.ordersawaitingdelivery.es_es.git",
+        "name": "Orders Awaiting Delivery Spanish (Spain) Translation",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.service.datasource.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.service.datasource.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.datasource.es_es.git",
+        "name": "JSON Datasource Translation: Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.service.integration.google.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.service.integration.google.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.google.es_es.git",
+        "name": "Integration with Google APIs Translation Spanish Spain",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.service.integration.openid.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.service.integration.openid.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.openid.es_es.git",
+        "name": "OpenID Service Integration Translation Spanish Spain",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.spain.regions",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.spain.regions",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spain.regions.git",
+        "name": "Provincias de España",
+        "version": "1.11.0",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.spanishdefaultdata.paymentmethods",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentmethods.git",
+        "name": "Métodos de Pago",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentterms",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.spanishdefaultdata.paymentterms",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentterms.git",
+        "name": "Condiciones de pago",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.userinterface.selector.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.userinterface.selector.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.selector.es_es.git",
+        "name": "User Interface Selector Translation: Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.userinterface.smartclient.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.userinterface.smartclient.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.smartclient.es_es.git",
+        "name": "Smartclient Translation: Spanish Spain (es_ES)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.util.javax.xml.soap",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.util.javax.xml.soap",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "Javax XML SOAP API",
+        "version": "1.16.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.util.saaj.impl",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.util.saaj.impl",
+        "latest_version": null,
+        "bundle": "",
+        "git_url": null,
+        "name": "SOAP with Attachments API for Java Implementation",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.utility.multiplebpselector",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.git",
+        "name": "Openbravo Multi Business Partner Selector",
+        "version": "1.12.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.utility.multiplebpselector.es_es",
+        "latest_version": "2.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.es_es.git",
+        "name": "Openbravo Multi Business Partner Selector Spanish (Spain)",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.v3.translation.pack.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/build/etendo/modules/org.openbravo.v3.translation.pack.es_es",
+        "latest_version": "4.2.0",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.v3.translation.pack.es_es.git",
+        "name": "Openbravo 3.0 Translation Pack: Spanish Spain (es_ES)",
+        "version": "3.17.0",
+        "author": "Openbravo SLU"
+      }
+    ],
+    "gradle_source": [
+      {
+        "java_package": "com.etendoerp.financial.extensions.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.etendoerp.financial.extensions.es_es",
+        "name": "Financial Extensions - Spanish Translation",
+        "version": "1.4.2",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions.es_es",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.translation.ese",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.localization.spain.referencedata.translation.ese",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "version": "3.2.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.translation.ese.git",
+        "latest_version": null
+      },
+      {
+        "java_package": "org.openbravo.module.sii",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.module.sii",
+        "name": "Spain SII",
+        "version": "1.15.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 13,
+          "added_files": 30,
+          "deleted_files": 1,
+          "diff_lines_added": 222,
+          "diff_lines_removed": 90,
+          "files": [
+            {
+              "path": "build.gradle",
+              "status": "modified",
+              "lines_added": 9,
+              "lines_removed": 12
+            },
+            {
+              "path": "src/org/openbravo/module/sii/process/MultiEnvioFactura.java",
+              "status": "modified",
+              "lines_added": 3,
+              "lines_removed": 3
+            },
+            {
+              "path": "src/org/openbravo/module/sii/process/MultiCashReceiptSIIModification.java",
+              "status": "modified",
+              "lines_added": 2,
+              "lines_removed": 2
+            },
+            {
+              "path": "src/org/openbravo/module/sii/utils/SIIUtils.java",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src/org/openbravo/module/sii/utils/SIISOAPUtils.java",
+              "status": "modified",
+              "lines_added": 52,
+              "lines_removed": 17
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE_DEPENDENCY.xml",
+              "status": "modified",
+              "lines_added": 14,
+              "lines_removed": 0
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_ELEMENT.xml",
+              "status": "modified",
+              "lines_added": 12,
+              "lines_removed": 0
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_COLUMN.xml",
+              "status": "modified",
+              "lines_added": 39,
+              "lines_removed": 5
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_FIELD.xml",
+              "status": "modified",
+              "lines_added": 28,
+              "lines_removed": 4
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "src-db/database/model/triggers/AEATSII_INVOICE_TRG.xml",
+              "status": "modified",
+              "lines_added": 7,
+              "lines_removed": 43
+            },
+            {
+              "path": "src-db/database/model/tables/AEATSII_CONFIG.xml",
+              "status": "modified",
+              "lines_added": 5,
+              "lines_removed": 0
+            },
+            {
+              "path": "src-db/database/model/modifiedTables/C_BPARTNER.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 2
+            },
+            {
+              "path": "build/resources/main/META-INF/beans.xml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".gitignore",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "lib/runtime/valnif.jar",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "lib/runtime/jdom-2.0.6.1.jar",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/config",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/description",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/index",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/packed-refs",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/applypatch-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-merge-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/prepare-commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/fsmonitor-watchman.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-rebase.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-receive.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/push-to-checkout.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-applypatch.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-push.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/post-update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-a8afcc7633bf7347b3b3d2c6f6bed67881698ba9.pack",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-a8afcc7633bf7347b3b3d2c6f6bed67881698ba9.idx",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/info/exclude",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "src-db/database/model/triggers/AEATSII_UPDATESII_KEYLIST_TRG.xml",
+              "status": "added",
+              "lines_added": 48,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.module.sii.es_es",
+        "name": "Spain SII Translation Spanish",
+        "version": "1.15.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.es_es.git",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 3,
+          "added_files": 27,
+          "deleted_files": 2,
+          "diff_lines_added": 14,
+          "diff_lines_removed": 4,
+          "files": [
+            {
+              "path": "bitbucket-pipelines.yml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "build.gradle",
+              "status": "modified",
+              "lines_added": 3,
+              "lines_removed": 3
+            },
+            {
+              "path": "sonar-project.properties",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "referencedata/translation/es_ES/AD_ELEMENT_TRL_es_ES.xml",
+              "status": "modified",
+              "lines_added": 10,
+              "lines_removed": 0
+            },
+            {
+              "path": ".gitignore",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/config",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/description",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/index",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/packed-refs",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/applypatch-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-merge-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/prepare-commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/fsmonitor-watchman.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-rebase.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-receive.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/push-to-checkout.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-applypatch.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-push.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/post-update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-e0bae18fe043d337251c7d0376ec46a787ab26cf.idx",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-e0bae18fe043d337251c7d0376ec46a787ab26cf.pack",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/info/exclude",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      }
+    ],
+    "local_maintained": [
+      {
+        "java_package": "com.etendoerp.webhookevents",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.etendoerp.webhookevents",
+        "name": "Webhook Events",
+        "version": "1.5.3",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@github.com:etendosoftware/com.etendoerp.webhookevents.git",
+        "latest_version": "2.6.1"
+      },
+      {
+        "java_package": "com.smf.jasperutilities",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.smf.jasperutilities",
+        "name": "SMF Jasper Utilities",
+        "version": "1.0.1",
+        "author": "SMF",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jasperutilities.git",
+        "latest_version": "1.0.2",
+        "diff": {
+          "modified_files": 2,
+          "added_files": 27,
+          "deleted_files": 11,
+          "diff_lines_added": 9,
+          "diff_lines_removed": 5,
+          "files": [
+            {
+              "path": "build.gradle",
+              "status": "modified",
+              "lines_added": 8,
+              "lines_removed": 4
+            },
+            {
+              "path": "lib/runtime/jasperreports-6.0.0.jar",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "lib/runtime/jasperreports-fonts-6.0.0.jar",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".idea/workspace.xml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".idea/vcs.xml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".idea/gradle.xml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".idea/misc.xml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".idea/sonarlint/issuestore/index.pb",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".idea/sonarlint/issuestore/8/4/84b6109d7a3d2c9c1d582e11cb2b0b8fd846ab7a",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".idea/sonarlint/securityhotspotstore/index.pb",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".idea/modules/com.smf.jasperutilities.iml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "src-db/database/sourcedata/AD_MODULE.xml",
+              "status": "modified",
+              "lines_added": 1,
+              "lines_removed": 1
+            },
+            {
+              "path": "build/resources/main/META-INF/beans.xml",
+              "status": "deleted",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".gitignore",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/config",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/description",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/index",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/packed-refs",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/applypatch-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-merge-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/prepare-commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/fsmonitor-watchman.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-rebase.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/commit-msg.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-receive.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/push-to-checkout.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-commit.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-applypatch.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/pre-push.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/hooks/post-update.sample",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/logs/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/remotes/origin/HEAD",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/refs/heads/master",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-51a0981a0196a30fbca6d61291dee9b723a0d022.idx",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/objects/pack/pack-51a0981a0196a30fbca6d61291dee9b723a0d022.pack",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": ".git/info/exclude",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "org.openbravo.warehouse.pickinglist",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.warehouse.pickinglist",
+        "name": "Warehouse Picking List",
+        "version": "1.4.2600",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.warehouse.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.warehouse.pickinglist.git",
+        "latest_version": "3.4.5"
+      },
+      {
+        "java_package": "org.openbravo.warehouse.structure",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.warehouse.structure",
+        "name": "Warehouse Structure",
+        "version": "1.0.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.warehouse.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.warehouse.structure.git",
+        "latest_version": "3.3.0"
+      }
+    ],
+    "local_not_maintained": [
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "version": "1.1.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.openbravo.gps.finance.balanceexcelexport.report",
+        "name": "P&L and Balance Sheet export to excel",
+        "version": "1.0.19000",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.finance.balanceexcelexport.report.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.openbravo.gps.finance.balanceexcelexport.report.es_es",
+        "name": "PyG y Balance exportación a excel",
+        "version": "1.0.400",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.invoices",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.openbravo.gps.idl.invoices",
+        "name": "Initial Data Load Extension for Invoices",
+        "version": "1.0.5",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.orders",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.openbravo.gps.idl.orders",
+        "name": "Initial Data Load Extension for Orders",
+        "version": "1.0.2",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.practicsbs.shopify",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.practicsbs.shopify",
+        "name": "Shopify Integration",
+        "version": "1.0.111",
+        "author": "Practics Business Solutions, S.L"
+      },
+      {
+        "java_package": "com.practicsbs.shopify.template",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.practicsbs.shopify.template",
+        "name": "Shopify integration template",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.edicom",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.smf.edicom",
+        "name": "SMF EDI",
+        "version": "2.3.5",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.edicom.csv",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.smf.edicom.csv",
+        "name": "Edicom CSV Processing",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.ladypipa.template",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/com.smf.ladypipa.template",
+        "name": "Ladypipa template",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "eu.practics.javaextensionpoints",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/eu.practics.javaextensionpoints",
+        "name": "Java Extension Points",
+        "version": "1.0.11",
+        "author": "Practics Business Solutions, S.L."
+      },
+      {
+        "java_package": "eu.practics.mailogger",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/eu.practics.mailogger",
+        "name": "Mail Logger",
+        "version": "1.0.8",
+        "author": "Practics Business Solutions, S.L."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.bankstatement.importer.generic.csv",
+        "name": "CSV Generic Bank Statement Importer",
+        "version": "1.1.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.bankstatement.importer.generic.csv.es_es",
+        "name": "CSV Generic Bank Statement Importer Translation Spanish ES",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financialmgmt.accounting.report.notposted",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.financialmgmt.accounting.report.notposted",
+        "name": "Not Posted Transactions",
+        "version": "1.1.2000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.idl",
+        "name": "Initial Data Load",
+        "version": "3.0.207000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl.translation.es_ES",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.idl.translation.es_ES",
+        "name": "Initial Data Load Spanish (Spain) Translation",
+        "version": "3.0.401",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.materialmgmt.freightmgmt",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.materialmgmt.freightmgmt",
+        "name": "Freight Management",
+        "version": "1.0.700",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.materialmgmt.freightmgmt.es_es",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.materialmgmt.freightmgmt.es_es",
+        "name": "Freight Management Spanish (Spain) Translation",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "version": "1.4.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicematchingalgorithm",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.module.invoicematchingalgorithm",
+        "name": "Advanced Matching Algorithm",
+        "version": "2.0.301",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.sepamatchingalgorithm",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.module.sepamatchingalgorithm",
+        "name": "SEPA Matching Algorithm",
+        "version": "1.0.0",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.camt",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.sepa.iso20022.camt",
+        "name": "SEPA Bank-to-Customer Statement",
+        "version": "1.0.400",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "path": "/home/axel/Escritorio/ReporteMigrabilidad/Ladypipa/modules/org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "version": "1.0.0",
+        "author": null
+      }
+    ],
+    "custom": []
+  },
+  "core_divergences": {
+    "status": "modified",
+    "base_version": "expanded",
+    "baseline_type": "expanded",
+    "folders_checked": [
+      "src",
+      "src-db",
+      "src-core",
+      "src-wad",
+      "modules_core",
+      "src-trl",
+      "src-util"
+    ],
+    "modified_files": 79,
+    "added_files": 13,
+    "deleted_files": 0,
+    "diff_lines_added": 3300,
+    "diff_lines_removed": 625,
+    "files": [
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderProvidedJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTaxInvoice.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoicesJR.html",
+        "status": "modified",
+        "lines_added": 17,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderInvoicedJasper.html",
+        "status": "modified",
+        "lines_added": 36,
+        "lines_removed": 20
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportExpense.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAgingBalance.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAnnualCertification.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportPurchaseDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 22,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAssetDepreciationSchedule.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportOrderNotInvoiceFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderOpenItemJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedgerJournal.html",
+        "status": "modified",
+        "lines_added": 7,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/GeneralAccountingReports.html",
+        "status": "modified",
+        "lines_added": 34,
+        "lines_removed": 18
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipper.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorFilterJR.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportToInvoiceConsignmentJR.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportDebtPayment.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionCost.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashflowForecast.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionRunJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProfitabilityJR.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 42,
+        "lines_removed": 23
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBankJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTrialBalance.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWarehousePartnerJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProgress.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialTransactionEditionJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportParetoProduct.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedger.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/MInOutTraceReports.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceDiscountJR.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectBuildingSiteJR.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportStandardCostJRFilter.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesJRFilter.html",
+        "status": "modified",
+        "lines_added": 38,
+        "lines_removed": 19
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBudgetGenerateExcel.html",
+        "status": "modified",
+        "lines_added": 10,
+        "lines_removed": 5
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementDaily.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductMovement.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGuaranteeDateJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentFilterJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CashBankOperations.html",
+        "status": "modified",
+        "lines_added": 26,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateAccountingReport.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PrintInvoices.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateTaxReport.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/ExpenseAPInvoice.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PriceListCreateAll.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupDeleted.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ChangeProjectStatus.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_ShipmentPO.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_Shipment.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/UpdateMaintenanceScheduled.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ProjectCopyFrom.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ExpenseSOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialClientSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrderCreate.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/CallAcctServer.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ModuleManagementHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ShowSessionVariables.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialOrgSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Account.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Location_F1.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/AccountElementValue.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/DebtPayment.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/ProductMultiple.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/LocatorMultiple.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportPaymentFilter.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/common/hooks/PrintControllerHookManager.java",
+        "status": "added",
+        "lines_added": 208,
+        "lines_removed": 0
+      },
+      {
+        "path": "src/org/openbravo/common/hooks/PrintControllerHookPrioritizer.java",
+        "status": "added",
+        "lines_added": 31,
+        "lines_removed": 0
+      },
+      {
+        "path": "src/org/openbravo/common/hooks/PrintControllerHook.java",
+        "status": "added",
+        "lines_added": 57,
+        "lines_removed": 0
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html.orig",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src-db/database/formalChangesScript.xml",
+        "status": "modified",
+        "lines_added": 1198,
+        "lines_removed": 150
+      },
+      {
+        "path": "modules_core/org.openbravo.reports.ordersawaitingdelivery/src/org/openbravo/reports/ordersawaitingdelivery/erpCommon/ad_reports/ReportOrderNotShipped.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/ad_actionbutton/ImportBankFile.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "modules_core/org.openbravo.financial.paymentreport/src/org/openbravo/financial/paymentreport/erpCommon/ad_reports/PaymentReport.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 12
+      },
+      {
+        "path": "modules_core/org.openbravo.client.kernel/src/org/openbravo/client/kernel/reference/ProcessFileUploadUIDefinition.java",
+        "status": "added",
+        "lines_added": 30,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/org.openbravo.client.application/src-test/org/openbravo/client/application/test/db/model/triggers/ProcessTest.java",
+        "status": "added",
+        "lines_added": 540,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/org.openbravo.client.application/web/org.openbravo.client.application/js/form/formitem/ob-formitem-processfileupload.js",
+        "status": "added",
+        "lines_added": 79,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/org.openbravo.client.application/src/org/openbravo/client/application/event/FileUploadColumnEventHandler.java",
+        "status": "added",
+        "lines_added": 94,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/org.openbravo.client.application/src-db/database/model/triggers/OBUIAPP_PROCESS_MOD_TRG.xml",
+        "status": "added",
+        "lines_added": 94,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.jobs.defaults/src/com/smf/jobs/defaults/Utils/ProcessUtils.java",
+        "status": "added",
+        "lines_added": 87,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_PREFERENCE.xml",
+        "status": "added",
+        "lines_added": 14,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REFERENCE.xml",
+        "status": "added",
+        "lines_added": 15,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REF_LIST.xml",
+        "status": "added",
+        "lines_added": 39,
+        "lines_removed": 0
+      }
+    ]
+  },
+  "migration_score": 65,
+  "migratability": "moderate",
+  "score_breakdown": {
+    "openbravo_platform": 0,
+    "core_divergences": -15.0,
+    "core_diff_lines": 3925,
+    "local_not_maintained": -20,
+    "local_not_maintained_translations": 4,
+    "local_not_maintained_regular": 23,
+    "custom_modules": 0,
+    "custom_modules_detail": [],
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
+  },
+  "custom_assessment": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-24",
+    "core_customizations": [
+      {
+        "name": "formalChangesScript.xml",
+        "description": "Artefacto automático generado por el sistema de migración de base de datos de Etendo. No representa lógica de negocio.",
+        "files": [
+          "src-db/database/formalChangesScript.xml"
+        ],
+        "lines_changed": 1348,
+        "conclusion": "eliminate",
+        "justification": "Archivo auto-generado por el pipeline de migración. No aporta lógica reutilizable; se descarta en cada upgrade.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "name": "PrintControllerHook infrastructure",
+        "description": "Infraestructura de hooks pre/post para el controlador de impresión. Permite que módulos externos inyecten lógica antes y después de imprimir documentos, con soporte de priorización y manejo de errores.",
+        "files": [
+          "src/org/openbravo/common/hooks/PrintControllerHook.java",
+          "src/org/openbravo/common/hooks/PrintControllerHookManager.java",
+          "src/org/openbravo/common/hooks/PrintControllerHookPrioritizer.java"
+        ],
+        "lines_changed": 296,
+        "conclusion": "upstream",
+        "justification": "Es un mecanismo de extensibilidad genérico y bien diseñado para el flujo de impresión, valioso para cualquier instalación Etendo que necesite interceptar o modificar el proceso de impresión de documentos. No contiene lógica específica de este cliente.",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2→3 (org.apache.commons.lang → lang3)"
+        ],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 8
+      },
+      {
+        "name": "File Upload en Process Definition",
+        "description": "Implementación completa del tipo de campo 'File Upload' para Process Definitions: widget SmartClient, validación de tamaño de archivo, UI Definition Java, event handler que previene su uso en ventanas estándar, y trigger de base de datos actualizado.",
+        "files": [
+          "modules_core/org.openbravo.client.application/src/org/openbravo/client/application/event/FileUploadColumnEventHandler.java",
+          "modules_core/org.openbravo.client.application/web/org.openbravo.client.application/js/form/formitem/ob-formitem-processfileupload.js",
+          "modules_core/org.openbravo.client.kernel/src/org/openbravo/client/kernel/reference/ProcessFileUploadUIDefinition.java",
+          "modules_core/org.openbravo.client.application/src-db/database/model/triggers/OBUIAPP_PROCESS_MOD_TRG.xml"
+        ],
+        "lines_changed": 297,
+        "conclusion": "upstream",
+        "justification": "Funcionalidad de plataforma (parámetro de tipo archivo en process definitions) que beneficia a todos los usuarios de Etendo. La implementación es limpia, modular y sigue los patrones de la plataforma.",
+        "api_changes_applicable": [
+          "OB.PropertyStore (verificar API en React)",
+          "isc.FileItem (SmartClient → verificar compat)"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 8
+      },
+      {
+        "name": "ProcessUtils — utilidad para procesos masivos",
+        "description": "Clase utilitaria del framework de Jobs que centraliza la lógica de acumulación y reporte de resultados en operaciones masivas (post/unpost de múltiples registros), con conteo de éxitos y errores.",
+        "files": [
+          "modules_core/com.smf.jobs.defaults/src/com/smf/jobs/defaults/Utils/ProcessUtils.java"
+        ],
+        "lines_changed": 87,
+        "conclusion": "upstream",
+        "justification": "Utilidad genérica para cualquier módulo que use el Jobs framework de SMF. Evita duplicación de código en todos los ActionHandlers que procesan listas de registros.",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2→3",
+          "MutableInt (commons-lang2 → commons-lang3)"
+        ],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 3
+      },
+      {
+        "name": "SMF Secure Web Services — algoritmo JWT configurable",
+        "description": "Extensión del módulo SMF Secure Web Services que agrega un selector de algoritmo de cifrado JWT (HS256 / ES256) con la preferencia por defecto configurada en ES256.",
+        "files": [
+          "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REFERENCE.xml",
+          "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REF_LIST.xml",
+          "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_PREFERENCE.xml"
+        ],
+        "lines_changed": 68,
+        "conclusion": "upstream",
+        "justification": "Mejora de seguridad generalizable: permitir elegir entre HS256 (simétrico) y ES256 (asimétrico) es una necesidad legítima de cualquier instalación con requerimientos de seguridad estrictos. Debería subirse a smf.securewebservices.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 2
+      },
+      {
+        "name": "ProcessTest.java — test de proceso en módulo de producción",
+        "description": "Archivo de test unitario para lógica de procesos, ubicado en el árbol src-test de un módulo core de producción.",
+        "files": [
+          "modules_core/org.openbravo.client.application/src-test/org/openbravo/client/application/test/db/model/triggers/ProcessTest.java"
+        ],
+        "lines_changed": 540,
+        "conclusion": "eliminate",
+        "justification": "Código de test que no debe vivir como customización del core de producción. Si los tests son valiosos, deben migrarse al repositorio de tests oficial de Etendo.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 1
+      },
+      {
+        "name": "HTML templates de reportes y formularios legacy",
+        "description": "Más de 35 plantillas HTML de la interfaz clásica Openbravo para reportes, formularios de proceso y action buttons (ReportSalesDimensionalAnalyze, ReportInvoice*, CashBankOperations, RequisitionToOrder, etc.).",
+        "files": [
+          "src/org/openbravo/erpCommon/ad_reports/",
+          "src/org/openbravo/erpCommon/ad_forms/",
+          "src/org/openbravo/erpCommon/ad_process/",
+          "src/org/openbravo/erpCommon/ad_actionButton/",
+          "src/org/openbravo/erpCommon/info/"
+        ],
+        "lines_changed": 920,
+        "conclusion": "eliminate",
+        "justification": "Plantillas de la UI clásica pre-React que no tienen valor en el contexto de la migración a SaaS. En la nueva UI se reimplementan como Process Definitions o vistas React.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      }
+    ],
+    "custom_modules": [],
+    "unmaintained_modules": [
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "function": "Exportación de datos de uso y analytics de la instalación Etendo hacia sistemas externos.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 8,
+        "recommendation": "Verificar si existe versión mantenida en el repositorio Etendo. Si no, evaluar forking y actualización de APIs.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Analytics Synchronization"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
+        "name": "P&L and Balance Sheet export to Excel",
+        "function": "Exportación del estado de resultados y balance a formato Excel para análisis financiero.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Apache POI 3.10→5.4 (API completamente renovada: CellType enum, font/style APIs)",
+          "Java 17"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 8,
+        "recommendation": "Requiere migración significativa de Apache POI (3→5). Si Financial Extensions no cubre esta funcionalidad, forking y actualización completa de la generación de Excel.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.openbravo.gps.finance.balanceexcelexport.report.es_es",
+        "name": "PyG y Balance exportación a excel (ES)",
+        "function": "Traducción al español del módulo de exportación de P&L.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue la suerte del módulo principal. No requiere acción independiente.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.invoices",
+        "name": "Initial Data Load Extension for Invoices",
+        "function": "Extensión del módulo IDL para carga masiva inicial de facturas.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Java 17",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1,
+        "recommendation": "Módulo de uso puntual (carga inicial de datos). Evaluar si aún se usa; si no, eliminar.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.orders",
+        "name": "Initial Data Load Extension for Orders",
+        "function": "Extensión del módulo IDL para carga masiva inicial de pedidos.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Java 17",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1,
+        "recommendation": "Módulo de uso puntual. Evaluar si aún se usa; si no, eliminar.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.practicsbs.shopify",
+        "name": "Shopify Integration",
+        "function": "Integración bidireccional con la plataforma de e-commerce Shopify: sincronización de productos, inventario, pedidos y clientes entre Etendo y Shopify.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17 mandatory",
+          "Apache Commons Lang 2→3",
+          "Apache Commons Collections 3→4",
+          "Gradle 8.12.1",
+          "Shopify API version (puede haber cambiado)"
+        ],
+        "effort_update_hours": 40,
+        "effort_saas_hours": 24,
+        "recommendation": "Integración crítica sin reemplazo oficial. Requiere fork completo, actualización de APIs de Java y verificación de compatibilidad con la API actual de Shopify. Candidato a convertirse en módulo oficial del marketplace Etendo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Shopify Configuration"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.practicsbs.shopify.template",
+        "name": "Shopify integration template",
+        "function": "Template de configuración para la integración Shopify.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1,
+        "recommendation": "Sigue la suerte del módulo Shopify principal.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.smf.edicom",
+        "name": "SMF EDI",
+        "function": "Integración EDI con Edicom para intercambio electrónico de documentos B2B (pedidos, albaranes, facturas) con clientes y proveedores mediante estándares EDI/XML.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17",
+          "Apache Commons Lang 2→3",
+          "ANTLR 2→3 (si usa parsing)"
+        ],
+        "effort_update_hours": 30,
+        "effort_saas_hours": 16,
+        "recommendation": "Integración B2B crítica. Contactar con SMF para versión actualizada o evaluar fork. Sin este módulo la operativa EDI del cliente queda paralizada.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "EDICOM Config"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "com.smf.edicom.csv",
+        "name": "Edicom CSV Processing",
+        "function": "Procesamiento de ficheros CSV específicos del protocolo EDI de Edicom.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Java 17",
+          "OpenCSV dependency"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Complemento del módulo EDI principal. Actualizar junto con com.smf.edicom.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Edicom CSV Orders"
+        ],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "com.smf.ladypipa.template",
+        "name": "Ladypipa template",
+        "function": "Módulo template propio de Ladypipa para albergar customizaciones específicas de la empresa.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Java 17"
+        ],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 2,
+        "recommendation": "Verificar si tiene contenido activo. Si es solo un template vacío, puede eliminarse o consolidarse.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "eu.practics.javaextensionpoints",
+        "name": "Java Extension Points",
+        "function": "Framework de puntos de extensión Java para inyección de comportamiento personalizado en módulos Etendo.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17",
+          "CDI API changes"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 4,
+        "recommendation": "Verificar qué módulos dependen de él. Si es una dependencia de Shopify o EDI, se actualiza en el mismo proceso.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Java Extension Points"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "eu.practics.mailogger",
+        "name": "Mail Logger",
+        "function": "Registro y trazabilidad de correos electrónicos enviados desde Etendo (log de destinatarios, asunto y estado de envío).",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17",
+          "Apache Commons Lang 2→3",
+          "JavaMail API"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 4,
+        "recommendation": "Funcionalidad valiosa pero no bloqueante. Verificar si Financial/Platform Extensions incorpora logging de emails. Si no, forking y actualización.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+        "name": "CSV Generic Bank Statement Importer",
+        "function": "Importación genérica de extractos bancarios en formato CSV para la conciliación bancaria.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Extensions Bundle (verificar cobertura)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Java 17",
+          "Apache Commons Lang 2→3",
+          "OpenCSV"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Verificar si el bundle Financial Extensions incluye importación CSV de extractos bancarios. Si sí, migrar la configuración al módulo oficial.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "CSV Importer Configuration"
+        ],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv.es_es",
+        "name": "CSV Generic Bank Statement Importer — ES",
+        "function": "Traducción española del importador CSV.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Extensions Bundle",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue la suerte del módulo principal.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.financialmgmt.accounting.report.notposted",
+        "name": "Not Posted Transactions",
+        "function": "Reporte de transacciones contables pendientes de contabilizar (no publicadas).",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Extensions Bundle (verificar)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Java 17",
+          "Jasper si aplica"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 2,
+        "recommendation": "Verificar cobertura en Financial Extensions. Si está incluido, desinstalar. Si no, forking.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Report Not Posted"
+        ],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "name": "Initial Data Load",
+        "function": "Framework para carga masiva de datos maestros y transaccionales en Etendo.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Java 17",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 2,
+        "recommendation": "Módulo de uso puntual para migraciones de datos. Evaluar si todavía se usa en operativa diaria.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Entity Default Values"
+        ],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.idl.translation.es_ES",
+        "name": "Initial Data Load — ES Translation",
+        "function": "Traducción española del módulo IDL.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue la suerte del módulo IDL principal.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.materialmgmt.freightmgmt",
+        "name": "Freight Management",
+        "function": "Gestión de fletes y costes de transporte asociados a albaranes y pedidos.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17",
+          "Apache Commons Lang 2→3",
+          "Hibernate API"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 8,
+        "recommendation": "Funcionalidad de negocio relevante para una empresa de retail. Verificar si Warehouse Extensions cubre gestión de fletes. Si no, forking y actualización.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Freight Category",
+          "Delivery Period",
+          "Select Freight Pick/Execute",
+          "Carrier"
+        ],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.materialmgmt.freightmgmt.es_es",
+        "name": "Freight Management — ES",
+        "function": "Traducción española del módulo de gestión de fletes.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue la suerte del módulo principal.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "function": "Extensión Java del framework IDL para carga de datos con lógica de negocio personalizada.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Java 17",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 2,
+        "recommendation": "Evaluar uso actual. Si es solo para migraciones pasadas, eliminar.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.invoicematchingalgorithm",
+        "name": "Advanced Matching Algorithm",
+        "function": "Algoritmo avanzado de conciliación automática de facturas con pagos y extractos bancarios.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Extensions Bundle — Payment matching",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Java 17",
+          "Hibernate API",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 8,
+        "recommendation": "Verificar si Financial Extensions incluye conciliación avanzada. Si sí, migrar configuración. Si no, forking con actualización completa de APIs.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      },
+      {
+        "java_package": "org.openbravo.module.sepamatchingalgorithm",
+        "name": "SEPA Matching Algorithm",
+        "function": "Algoritmo de conciliación específico para extractos bancarios en formato SEPA.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17",
+          "Hibernate",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 8,
+        "recommendation": "Conciliación bancaria SEPA es crítica para el mercado español. Actualizar junto con el framework SEPA.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "function": "Framework base para el estándar ISO 20022 / SEPA: domiciliaciones, transferencias y extractos bancarios según normativa bancaria europea.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17",
+          "JAXB API (cambios en Java 17)",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 16,
+        "recommendation": "Módulo crítico para operativa bancaria en España/Europa. Verificar si Financial Extensions Bundle incluye soporte SEPA actualizado. Si no, requiere fork y actualización completa incluyendo JAXB.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.camt",
+        "name": "SEPA Bank-to-Customer Statement",
+        "function": "Procesamiento de extractos bancarios CAMT (Bank-to-Customer Cash Management) para conciliación automática.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17",
+          "JAXB",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 4,
+        "recommendation": "Actualizar en el mismo proceso que el framework SEPA principal.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+        "function": "Generación de ficheros XML de domiciliaciones SEPA (CORE y B2B) para envío al banco.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17",
+          "JAXB",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 10,
+        "effort_saas_hours": 6,
+        "recommendation": "Actualizar en el mismo proceso que el framework SEPA principal.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "function": "Generación de ficheros XML de transferencias SEPA para envío al banco.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17",
+          "JAXB",
+          "Apache Commons Lang 2→3"
+        ],
+        "effort_update_hours": 10,
+        "effort_saas_hours": 6,
+        "recommendation": "Actualizar en el mismo proceso que el framework SEPA principal.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "function": "Librería utilitaria OpenCSV para lectura y escritura de ficheros CSV.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "OpenCSV como dependencia Gradle directa",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Java 17"
+        ],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "Reemplazar por dependencia Gradle directa a la versión actual de OpenCSV en lugar de empaquetar la librería como módulo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true
+      }
+    ],
+    "effort_summary": {
+      "update_core_hours": 4,
+      "update_custom_hours": 0,
+      "update_unmaintained_hours": 227,
+      "update_total_hours": 231,
+      "saas_core_hours": 22,
+      "saas_custom_hours": 0,
+      "saas_unmaintained_hours": 140,
+      "saas_total_hours": 162,
+      "elimination_candidates": 15,
+      "effort_saved_eliminating_hours": 28
+    },
+    "mixpanel_source_instance": "ladypipa.com",
+    "mixpanel_date_range": "90 días"
+  },
+  "ui_readiness": {
+    "generated": "2026-04-24",
+    "global_status": "blocked",
+    "summary": {
+      "critica": 4,
+      "alta": 1,
+      "media": 16,
+      "no_aplica": 17
+    },
+    "features": [
+      {
+        "section": "3.B.2",
+        "title": "Procesos Manuales JS (Process Definition UIPattern=M) — BLOQUEADOR",
+        "status": "BLOQUEADO",
+        "completion_pct": 25,
+        "priority": "critica",
+        "reason": "Este cliente tiene 17 Process Definitions con UIPattern=M (Manual JS). Estos procesos usan namespaces OB.* de la UI clásica (OB.OpenClose.*, OB.OBWPL.*, etc.) que NO existen en React. Es un bloqueador arquitectónico: sin reimplementación completa o shim iframe, estos 17 procesos son inoperativos en la nueva UI.",
+        "ad_count": 17,
+        "code_evidence": []
+      },
+      {
+        "section": "3.A.2",
+        "title": "Procesos Legacy Manual JS (AD_PROCESS UIPattern=M) — BLOQUEADOR",
+        "status": "BLOQUEADO",
+        "completion_pct": 25,
+        "priority": "critica",
+        "reason": "Este cliente tiene 11 procesos AD_PROCESS con UIPattern=M (Manual, ejecución por JS custom). Igual que los PD Manual, estos procesos dependen de namespaces OB.* de la UI clásica que no existen en React. Con 11 procesos legacy + 17 PD Manual, el cliente tiene 28 procesos bloqueados arquitectónicamente.",
+        "ad_count": 11,
+        "code_evidence": []
+      },
+      {
+        "section": "25",
+        "title": "Valores por defecto (DEFAULTVALUE)",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "critica",
+        "reason": "Este cliente tiene 394 columnas con DEFAULTVALUE definido y 688 campos obligatorios. Según all-features-analysis.md sección 25, el estado es PARCIAL 45%: aunque field.column.defaultValue está disponible en el JSON de metadata, el UI NUNCA lo lee. Los defaults solo funcionan via round-trip servidor en modo NEW. Con 394 columnas afectadas y 688 obligatorias, formularios de creación pueden comportarse incorrectamente.",
+        "ad_count": 394,
+        "code_evidence": []
+      },
+      {
+        "section": "4",
+        "title": "Display Logic (lógica de visibilidad de campos) — BUG ACTIVO",
+        "status": "BUG ACTIVO",
+        "completion_pct": 65,
+        "priority": "critica",
+        "reason": "Este cliente tiene 189 campos con DISPLAYLOGIC en 10 módulos. Según all-features-analysis.md sección 4, existe un BUG ACTIVO documentado: la sintaxis @field_name@ causa crashes de JavaScript en la UI React. Con 189 expresiones de display logic activas, cualquier ventana que las use puede fallar en producción.",
+        "ad_count": 189,
+        "code_evidence": []
+      },
+      {
+        "section": "1.4",
+        "title": "Ventanas Pick and Execute",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "alta",
+        "reason": "Este cliente tiene 4 ventanas OBUIAPP_PickAndExecute y 14 Process Definitions con patrón P&E. Con 18 instancias P&E en total y un estado PARCIAL 55%, es alta prioridad. Los gaps incluyen: validación de campos inline obligatorios antes del Execute, modo single-select (ismultirecord=N), forwarding de contexto del padre, y respuesta openDirectTab.",
+        "ad_count": 18,
+        "code_evidence": []
+      },
+      {
+        "section": "26",
+        "title": "Filtros y orden por defecto de tabs (HQLFILTERCLAUSE)",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "media",
+        "reason": "Este cliente tiene 6 tabs con HQLFILTERCLAUSE definido. Según all-features-analysis.md sección 26, el estado es NOT DONE 0%: TabBuilder.java no envía hqlFilterClause al UI y el frontend no los consume. Con 6 filtros, algunas vistas pueden mostrar datos sin los filtros esperados.",
+        "ad_count": 6,
+        "code_evidence": []
+      },
+      {
+        "section": "2.B",
+        "title": "Botones hardcoded (DocAction, Posted, CreateFrom, PaymentRule)",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "priority": "media",
+        "reason": "El cliente tiene 1 ventana Transaction que usa el botón DocAction. Según all-features-analysis.md sección 2.B el estado es PARCIAL 35%. DocAction está implementado pero con bug de labels. Posted está al 30%. Con solo 1 ventana Transaction el impacto es acotado pero el botón de gestión documental es crítico.",
+        "ad_count": 1,
+        "code_evidence": []
+      },
+      {
+        "section": "14",
+        "title": "Reportes (acceso desde menú)",
+        "status": "TO CHECK",
+        "completion_pct": 60,
+        "priority": "media",
+        "reason": "Este cliente tiene 1 reporte AD_PROCESS (ISREPORT=Y) y 10 procesos en background en módulos propios. Los reportes Jasper se renderizan en PDF en servidor. Estado TO CHECK 60% para la sección de reportes.",
+        "ad_count": 11,
+        "code_evidence": []
+      },
+      {
+        "section": "2",
+        "title": "Tipos de campo no implementados",
+        "status": "PARCIAL",
+        "completion_pct": 65,
+        "priority": "media",
+        "reason": "Este cliente tiene 2 columnas de tipo PAttribute (ID:35, PARCIAL 55%) y 3 columnas encriptadas. No usa Rich Text, Image BLOB, Upload File, Color, Multi-Selector ni SelectorAsLink. El tipo PAttribute (atributos de producto) requiere validación del selector de conjunto de atributos.",
+        "ad_count": 5,
+        "code_evidence": []
+      },
+      {
+        "section": "3.A.1",
+        "title": "Procesos estándar y en background (AD_PROCESS)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "Este cliente tiene 10 procesos en background (ISBACKGROUND=Y) y 1 proceso estándar (S). Los background no requieren UI React directa. El proceso estándar puede necesitar validación en el modal de parámetros. Estado TO CHECK 72%.",
+        "ad_count": 11,
+        "code_evidence": []
+      },
+      {
+        "section": "5",
+        "title": "Comportamientos de tab (UITYPE, filtros, read-only)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "Este cliente tiene 6 tabs con HQLFILTERCLAUSE (filtros HQL por defecto). No tiene tabs ISREADONLY=Y, ni tabs con UITYPE=ED o SR en módulos propios. El estado de la sección es TO CHECK 72%. Los 6 filtros HQL son relevantes para sección 26.",
+        "ad_count": 6,
+        "code_evidence": []
+      },
+      {
+        "section": "9",
+        "title": "Comportamientos de grid (editable, grid-inicial, columnas de selección)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "Este cliente no tiene tabs editable-grid (UITYPE=ED) ni columnas de selección en sus módulos propios. Sin embargo, sus 23 ventanas Maintain y 4 P&E usan comportamientos grid estándar. Estado TO CHECK 72%.",
+        "ad_count": 23,
+        "code_evidence": []
+      },
+      {
+        "section": "12",
+        "title": "Menú y navegación",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "Este cliente tiene 32 entradas de menú en sus módulos propios. Estado TO CHECK 72%. La navegación básica está implementada.",
+        "ad_count": 32,
+        "code_evidence": []
+      },
+      {
+        "section": "10",
+        "title": "Comportamientos transversales (ReadOnly logic, campos no editables)",
+        "status": "TO CHECK",
+        "completion_pct": 73,
+        "priority": "media",
+        "reason": "Este cliente tiene 47 columnas con READONLYLOGIC (editabilidad condicional) y 448 columnas con ISUPDATEABLE=N. No tiene adjuntos ni notas habilitados en módulos propios. Estado TO CHECK 73%. La readonlylogic afecta directamente la experiencia de edición en ventanas.",
+        "ad_count": 495,
+        "code_evidence": []
+      },
+      {
+        "section": "1.1",
+        "title": "Ventanas Maintain (Maestros)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "Este cliente tiene 23 ventanas tipo Maintain (maestros de datos). Según all-features-analysis.md sección 1.1 el estado es TO CHECK al 75%. Los gaps identificados incluyen multi-record delete desde grid, Copy Record en tabs hijo (enablecopyfull), y comportamiento del flag Active. La estructura básica está implementada.",
+        "ad_count": 23,
+        "code_evidence": []
+      },
+      {
+        "section": "3.B.1",
+        "title": "Process Definitions — Acción (Action Handler Java)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "Este cliente tiene 1 Process Definition tipo Action (A), con 48 parámetros totales en sus PDs. El patrón Action está implementado al 75%. Con solo 1 PD de tipo Action el impacto es bajo.",
+        "ad_count": 1,
+        "code_evidence": []
+      },
+      {
+        "section": "23",
+        "title": "Status Bar (barra de estado inferior)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "Este cliente tiene 29 campos marcados como ISSHOWNINSTATUSBAR=Y en sus módulos propios. Estado TO CHECK 75%. La status bar muestra campos clave del registro sin ocupar espacio del formulario.",
+        "ad_count": 29,
+        "code_evidence": []
+      },
+      {
+        "section": "24",
+        "title": "Sistema de layout del formulario",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "Este cliente tiene 15 campos con STARTNEWLINE=Y y 448 campos ISUPDATEABLE=N. El layout básico del formulario está implementado. Estado TO CHECK 75%.",
+        "ad_count": 463,
+        "code_evidence": []
+      },
+      {
+        "section": "1.2",
+        "title": "Ventanas Transaction (Documentos con ciclo de vida)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "Este cliente tiene 1 ventana Transaction. Según all-features-analysis.md sección 1.2 el estado es TO CHECK al 78%. Brechas críticas: DocAction dropdown (bug de labels), botón Posted (30% completitud), y protección contra edición concurrente no validada. Con solo 1 ventana T el impacto es limitado.",
+        "ad_count": 1,
+        "code_evidence": []
+      },
+      {
+        "section": "1.3",
+        "title": "Ventanas Query (Consulta / Solo lectura)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "Este cliente tiene 1 ventana Query. Según all-features-analysis.md sección 1.3 el estado es TO CHECK al 78%. El modo read-only básico está implementado; pendiente validar lista exacta de botones ocultos en modo Q.",
+        "ad_count": 1,
+        "code_evidence": []
+      },
+      {
+        "section": "22",
+        "title": "Field Groups (secciones colapsables del formulario)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "Este cliente tiene 98 campos asignados a grupos de campo (AD_FIELDGROUP_ID) en sus módulos propios. Estado TO CHECK 78%. Los field groups organizan visualmente los formularios en secciones colapsables.",
+        "ad_count": 98,
+        "code_evidence": []
+      },
+      {
+        "section": "34",
+        "title": "Vistas de calendario",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "no_aplica",
+        "reason": "No se encontraron referencias a OBCalendar ni OBMultiCalendar en los módulos propios de este cliente. La sección no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "21",
+        "title": "Workspace / Dashboard Widgets",
+        "status": "NOT DONE",
+        "completion_pct": 5,
+        "priority": "no_aplica",
+        "reason": "No se encontraron widgets de dashboard (OBKMO_WIDGET_CLASS) en los módulos propios de este cliente. La sección no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "33",
+        "title": "Personalización de vistas (Saved Views)",
+        "status": "NOT DONE",
+        "completion_pct": 10,
+        "priority": "no_aplica",
+        "reason": "No se encontraron personalizaciones de UI (OBUIAPP_UIPERSONALIZATION) en los módulos propios de este cliente. La sección no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "18",
+        "title": "Application Forms (AD_FORM)",
+        "status": "NOT DONE",
+        "completion_pct": 15,
+        "priority": "no_aplica",
+        "reason": "No se encontraron Application Forms (AD_FORM) en los módulos propios de este cliente. La sección no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "31",
+        "title": "Sistema de importación de datos",
+        "status": "NOT DONE",
+        "completion_pct": 20,
+        "priority": "no_aplica",
+        "reason": "Infraestructura de plataforma (c_import_entry), no configurable por cliente.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "11",
+        "title": "Autenticación, Sesión y Autorización",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "no_aplica",
+        "reason": "Comportamiento de plataforma (JWT/login), sin datos en AD XML.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "8",
+        "title": "Selectores OBUISEL y Out Parameters",
+        "status": "TO CHECK",
+        "completion_pct": 65,
+        "priority": "no_aplica",
+        "reason": "No se encontraron selectores OBUISEL personalizados ni columnas de tipo MultiSelector o SelectorAsLink en los módulos propios de este cliente. La sección no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "30",
+        "title": "Agrupación en grid",
+        "status": "TO CHECK",
+        "completion_pct": 65,
+        "priority": "no_aplica",
+        "reason": "2 preferencias globales, no evaluable por AD XML.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "32",
+        "title": "Sistema de alertas",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "reason": "No se encontraron reglas de alerta (AD_ALERTRULE) en los módulos propios de este cliente. La sección no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "17",
+        "title": "Botones de toolbar",
+        "status": "PARCIAL",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "reason": "Botones estándar hardcodeados en JS; no hay AD XML por ventana.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "28",
+        "title": "Atajos de teclado",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "reason": "Preferencias globales, no por ventana.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "19",
+        "title": "Linked Items / KMO",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "no_aplica",
+        "reason": "No se encontraron definiciones OBKMO en los módulos propios de este cliente. La sección no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "29",
+        "title": "Vistas de árbol",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "no_aplica",
+        "reason": "No se encontraron tabs con HASTREE=Y en los módulos propios de este cliente. La sección no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "16",
+        "title": "Validación de consistencia final",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "no_aplica",
+        "reason": "Checklist de aceptación QA, no evaluable por AD XML.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "27",
+        "title": "Multi-Window Tab Interface (MDI)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "no_aplica",
+        "reason": "Comportamiento del shell, sin datos AD XML.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "15",
+        "title": "Indicadores de carga y feedback",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "no_aplica",
+        "reason": "Comportamiento puro de UI, sin representación en AD XML.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "6",
+        "title": "Callouts",
+        "status": "TO CHECK",
+        "completion_pct": 82,
+        "priority": "no_aplica",
+        "reason": "No se encontraron callouts definidos en los módulos propios de este cliente. La sección no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      }
+    ]
+  }
+}
