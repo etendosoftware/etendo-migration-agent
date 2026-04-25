@@ -1,0 +1,3974 @@
+{
+  "client": {
+    "name": "Opengy",
+    "hostname": "Samuel-PC"
+  },
+  "platform": {
+    "type": "etendo",
+    "version": "24.2.8"
+  },
+  "modules": {
+    "gradle_jar": [],
+    "gradle_source": [
+      {
+        "java_package": "com.etendoerp.accounting.templates",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.accounting.templates",
+        "name": "New Accounting Templates",
+        "version": "1.12.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.templates.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.advanced.bpsettlement",
+        "name": "Advanced Business Partner Settlement",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bpsettlement.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.advanced.financial.docs.processing",
+        "name": "Advanced Financial Documents Processing",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.template",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.advanced.financial.docs.processing.template",
+        "name": "Advanced Financial Documents Processing Template",
+        "version": "1.11.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.advanced.intercompany",
+        "name": "Advanced Intercompany",
+        "version": "1.13.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.intercompany.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.automated.remittance",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.automated.remittance",
+        "name": "Automated Remittance",
+        "version": "1.0.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.automated.remittance.git",
+        "latest_version": "2.4.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.bankingpool",
+        "name": "Banking Pool",
+        "version": "1.12.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bankingpool.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.bulk.posting",
+        "name": "Bulk Posting",
+        "version": "1.13.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.posting.git",
+        "latest_version": "2.4.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.financial.extensions",
+        "name": "Financial Extensions",
+        "version": "1.20.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.financial.extensions.es_es",
+        "name": "Financial Extensions - Spanish Translation",
+        "version": "1.7.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions.es_es",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.financial.reports.advanced",
+        "name": "Financial Reports Advanced",
+        "version": "1.11.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.gljournal.advanced",
+        "name": "GL Journal Advanced",
+        "version": "1.13.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.advanced.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.clone",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.gljournal.clone",
+        "name": "Clone GL Journal",
+        "version": "1.2.1",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.clone.template",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.gljournal.clone.template",
+        "name": "Clone GL Journal Template",
+        "version": "1.2.1",
+        "author": null,
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.localization.spain.extensions",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.localization.spain.extensions",
+        "name": "Spain Localization Extensions",
+        "version": "1.21.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.payment.removal",
+        "name": "Payment Removal",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.template",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.payment.removal.template",
+        "name": "Payment Removal Template",
+        "version": "1.11.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.reportvaluationstock.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.reportvaluationstock.es_es",
+        "name": "Report Valuation Stock - Spanish Translation",
+        "version": "1.7.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.reportvaluationstock.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.vat.regularization",
+        "name": "VAT Regularization",
+        "version": "1.3.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.vat.regularization.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.asset.amortization.report",
+        "name": "Asset Amortization Report",
+        "version": "1.10.1",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.asset.amortization.report.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.currency.apiconfig",
+        "name": "Currency API Configuration",
+        "version": "1.12.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.apiconfig.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.currency.conversionrate",
+        "name": "Conversion Rate Downloader",
+        "version": "1.12.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.conversionrate.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.gljournal.reverse",
+        "name": "Reverse GL Journal",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.template",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.gljournal.reverse.template",
+        "name": "Reverse GL Journal Template",
+        "version": "1.10.1",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.template.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jobs.defaults.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.jobs.defaults.es_es",
+        "name": "Default Jobs (es_ES)",
+        "version": "1.10.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.defaults.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jobs.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.jobs.es_es",
+        "name": "Jobs - Spanish Translation",
+        "version": "1.4.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.securewebservices.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.securewebservices.es_es",
+        "name": "Secure web services implentation - Spanish Translation",
+        "version": "1.4.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.securewebservices.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.ticketbai",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.ticketbai",
+        "name": "TicketBAI Integration",
+        "version": "1.11.2",
+        "author": "SMF Consulting",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.ticketbai.git",
+        "latest_version": "2.10.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.advpaymentmngt.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.advpaymentmngt.es_es",
+        "name": "Advanced Payables and Receivables - Spanish Translation",
+        "version": "3.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.advpaymentmngt.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.alerts.accounting30",
+        "name": "Alerts: Accounting",
+        "version": "3.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.alerts.accounting30.es_es",
+        "name": "Alerts: Accounting - Spanish Translation",
+        "version": "3.10.0",
+        "author": "Openbravo, S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.application.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.client.application.es_es",
+        "name": "User Interface Application Translation Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.application.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.htmlwidget.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.client.htmlwidget.es_es",
+        "name": "HTML Widget Translation Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.htmlwidget.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.kernel.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.client.kernel.es_es",
+        "name": "User Interface Client Kernel Translation Spanish Spain(esES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.kernel.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.myob.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.client.myob.es_es",
+        "name": "Workspace & Widgets Translation: Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.myob.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.querylist.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.client.querylist.es_es",
+        "name": "Query/List Widget Translation Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.querylist.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.client.widgets.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.client.widgets.es_es",
+        "name": "Widgets Collection Translation Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.widgets.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.finance.checkprinting",
+        "name": "Check Printing",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.finance.checkprinting.es_es",
+        "name": "Check Printing Spanish Translation",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.financial.bpsettlement",
+        "name": "Business Partner Settlements",
+        "version": "1.14.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.bpsettlement.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.financial.paymentreport.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.financial.paymentreport.es_es",
+        "name": "Payment Report - Spanish Translation",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.paymentreport.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.localization.spain.referencedata.accounts",
+        "name": "Chart of accounts: PGC 2007 General",
+        "version": "3.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "name": "Chart of accounts: PGC 2007 PYMEs",
+        "version": "3.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.pymes.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.localization.spain.referencedata.taxes",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "version": "1.14.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.cashvat.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.localization.spain.referencedata.translation.eses",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "version": "3.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.translation.eses.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.localization.spain30",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.localization.spain30",
+        "name": "Localization pack Spain (España)",
+        "version": "3.18.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain30.git",
+        "latest_version": "4.2.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.cashvat.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat190.cashvat.es",
+        "name": "Withholding Report: Modelo 190 (Spain) Cash VAT compatible",
+        "version": "1.9.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.cashvat.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat190.es",
+        "name": "Withholding Report: Modelo 190 (Spain)",
+        "version": "3.20.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.cashvat.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat303.cashvat.es",
+        "name": "Tax Report: Modelo 303 (Spain) Cash VAT compatible",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.cashvat.es.git",
+        "latest_version": "2.6.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat303.es",
+        "name": "Tax Report: Modelo 303 (Spain)",
+        "version": "1.23.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.es.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.cashvat.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat347apr.cashvat.es",
+        "name": "Spain AEAT Modelo 347 for APR Cash VAT compatible",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.cashvat.es.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat347apr.es",
+        "name": "Spain AEAT Modelo 347 for APR",
+        "version": "4.17.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.git",
+        "latest_version": "5.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat347apr.es.es_es",
+        "name": "Spain AEAT Modelo 347 for APR- Spanish Translation",
+        "version": "1.13.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.es_es.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat349.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat349.es",
+        "name": "Modelo 349",
+        "version": "2.16.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat349.es.git",
+        "latest_version": "3.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.cashvat.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat390.cashvat.es",
+        "name": "Tax Report: Modelo 390 (Spain) Cash VAT compatible",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.cashvat.es.git",
+        "latest_version": "2.5.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat390.es",
+        "name": "Tax Report: Modelo 390 (Spain)",
+        "version": "3.15.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.es.git",
+        "latest_version": "4.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.bptaxidkey",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.bptaxidkey",
+        "name": "Tipo de Número de Identificación de Tercero",
+        "version": "0.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.bptaxidkey.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cashvat",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.cashvat",
+        "name": "Cash VAT Management",
+        "version": "1.6.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cashvat.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.cifnifvalidator",
+        "name": "CIF and NIF validator",
+        "version": "1.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.cifnifvalidator.es_es",
+        "name": "Validador de CIF y NIF",
+        "version": "1.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.countryisocode",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.countryisocode",
+        "name": "3 digits ISO country codes",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.countryisocode.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno43.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.cuaderno43.es",
+        "name": "Cuaderno 43",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cuaderno43.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.epigrafes.iae.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.epigrafes.iae.es",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.epigrafes.iae.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.eucountries",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.eucountries",
+        "name": "European Union countries",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.eucountries.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.finactvalidator.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.finactvalidator.es",
+        "name": "Validador de número de cuenta financiera",
+        "version": "3.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.finactvalidator.es.git",
+        "latest_version": "4.2.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.incoterms",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.incoterms",
+        "name": "Incoterms",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.incoterms.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.intrastat",
+        "name": "Intrastat",
+        "version": "3.12.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.intrastat.es_es",
+        "name": "Intrastat – Spanish translation",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.spain",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.intrastat.spain",
+        "name": "Intrastat for Spain",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.spain.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.invoicesregisterbook",
+        "name": "Invoices Register Book",
+        "version": "2.13.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.git",
+        "latest_version": "3.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.invoicesregisterbook.es_es",
+        "name": "Libro de Facturas",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.es_es.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.invoicesregisterbook.estaxes",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "version": "3.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.estaxes.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.invoicetaxreportenhanced30",
+        "name": "Multidimensional Tax Report",
+        "version": "3.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 1,
+          "added_files": 2,
+          "deleted_files": 0,
+          "diff_lines_added": 10,
+          "diff_lines_removed": 5,
+          "files": [
+            {
+              "path": "src/org/openbravo/module/invoicetaxreportenhanced30/ad_reports/OBMTR30_InvoiceTaxReport.html",
+              "status": "modified",
+              "lines_added": 10,
+              "lines_removed": 5
+            },
+            {
+              "path": "localizacionparche.diff",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "src/org/openbravo/module/invoicetaxreportenhanced30/ad_reports/OBMTR30_InvoiceTaxReport.html.orig",
+              "status": "added",
+              "lines_added": 0,
+              "lines_removed": 0
+            }
+          ]
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "name": "Multidimensional Tax Report Spanish (es_ES)",
+        "version": "3.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.es_es.git",
+        "latest_version": "4.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.organization.representative.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.organization.representative.es",
+        "name": "Legal Representative of the Organization",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.organization.representative.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.paymentmethod.type",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.paymentmethod.type",
+        "name": "Payment Method Type",
+        "version": "1.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.paymentmethod.type.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.remittance",
+        "name": "Remittances infrastructure",
+        "version": "3.15.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.git",
+        "latest_version": "4.3.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.remittance.es_es",
+        "name": "Remittances infrastructure - Spanish Translation",
+        "version": "1.6.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "org.openbravo.module.remittance.es_es",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.template",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.remittance.template",
+        "name": "Remittance Infrastructure Template",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "org.openbravo.module.remittance.template",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.sii",
+        "name": "Spain SII",
+        "version": "1.23.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.sii.es_es",
+        "name": "Spain SII Translation Spanish",
+        "version": "1.23.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.es_es.git",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii.template",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.sii.template",
+        "name": "Spain SII Template",
+        "version": "1.23.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.template.git",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.taximprovements.es",
+        "name": "Spanish Tax Module Improvements",
+        "version": "0.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.taximprovements.es_es",
+        "name": "Módulo de Impuestos para España mejorado",
+        "version": "0.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es_es.git",
+        "latest_version": "1.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.taxreportlauncher",
+        "name": "Tax Report Launcher",
+        "version": "1.11.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.taxreportlauncher.es",
+        "name": "Generador de declaraciones de impuestos",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.numbertoword.es_es",
+        "name": "Number To Word Spanish Translation",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.es_es.git",
+        "latest_version": "1.13.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.numbertoword_es",
+        "name": "Number To Word (Spanish)",
+        "version": "1.12.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword_es.git",
+        "latest_version": "1.13.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain.dataset",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.proflocalization.spain.dataset",
+        "name": "Professional Localization pack Spain (España) Datasets",
+        "version": "1.16.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.proflocalization.spain.dataset.git",
+        "latest_version": "2.4.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "name": "Orders Awaiting Delivery Spanish (Spain) Translation",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.reports.ordersawaitingdelivery.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.datasource.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.service.datasource.es_es",
+        "name": "JSON Datasource Translation: Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.datasource.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.integration.google.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.service.integration.google.es_es",
+        "name": "Integration with Google APIs Translation Spanish Spain",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.google.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.service.integration.openid.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.service.integration.openid.es_es",
+        "name": "OpenID Service Integration Translation Spanish Spain",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.openid.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spain.regions",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.spain.regions",
+        "name": "Provincias de España",
+        "version": "1.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spain.regions.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.spanishdefaultdata.paymentmethods",
+        "name": "Métodos de Pago",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentmethods.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentterms",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.spanishdefaultdata.paymentterms",
+        "name": "Condiciones de pago",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentterms.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.userinterface.selector.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.userinterface.selector.es_es",
+        "name": "User Interface Selector Translation: Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.selector.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.userinterface.smartclient.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.userinterface.smartclient.es_es",
+        "name": "Smartclient Translation: Spanish Spain (es_ES)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.smartclient.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.utility.multiplebpselector",
+        "name": "Openbravo Multi Business Partner Selector",
+        "version": "1.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.utility.multiplebpselector.es_es",
+        "name": "Openbravo Multi Business Partner Selector Spanish (Spain)",
+        "version": "1.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.es_es.git",
+        "latest_version": "2.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.v3.translation.pack.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.v3.translation.pack.es_es",
+        "name": "Openbravo 3.0 Translation Pack: Spanish Spain (es_ES)",
+        "version": "3.15.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.v3.translation.pack.es_es.git",
+        "latest_version": "4.2.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      }
+    ],
+    "local_maintained": [
+      {
+        "java_package": "com.etendoerp.docker",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.docker",
+        "name": "Docker Help Utils",
+        "version": "1.4.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@github.com:etendosoftware/com.etendoerp.docker.git",
+        "latest_version": "2.9.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.etendorx",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.etendorx",
+        "name": "Etendo RX",
+        "version": "2.3.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@github.com:etendosoftware/com.etendoerp.etendorx.git",
+        "latest_version": "3.15.1",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.smf.jasperutilities",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.jasperutilities",
+        "name": "SMF Jasper Utilities",
+        "version": "1.0.2",
+        "author": "SMF",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jasperutilities.git",
+        "latest_version": "1.0.2",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.numbertoword",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.numbertoword",
+        "name": "Number To Word",
+        "version": "1.19.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.git",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      }
+    ],
+    "local_not_maintained": [
+      {
+        "java_package": "com.enertis.template",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.enertis.template",
+        "name": "Template Enertis",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.etendoerp.accounting.templates.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.accounting.templates.es_es",
+        "name": "Nuevas plantillas de contabilidad",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.advanced.bpsettlement.es_es",
+        "name": "Liquidación Avanzada de Socios Comerciales",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.advanced.financial.docs.processing.es_es",
+        "name": "Procesamiento Avanzado de Documentos Financieros",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.advanced.intercompany.es_es",
+        "name": "Intercompany Avanzado",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "version": "1.1.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.bankingpool.es_es",
+        "name": "Pool Bancario",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.bulk.posting.es_es",
+        "name": "Contabilización Masiva",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.financial.reports.advanced.es_es",
+        "name": "Informes Financieros Avanzados",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.gljournal.advanced.es_es",
+        "name": "Asientos Manuales Avanzados",
+        "version": "1.6.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.payment.removal.es_es",
+        "name": "Eliminación de Pagos",
+        "version": "1.5.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.psd2.bank.integration",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.psd2.bank.integration",
+        "name": "Bank Integration PSD2",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.psd2.bank.integration.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.psd2.bank.integration.es_es",
+        "name": "Bank Integration PSD2 Spanish Translation",
+        "version": "1.0.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.etendoerp.vat.regularization.es_es",
+        "name": "VAT Regularization - Spanish Translation",
+        "version": "1.0.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.openbravo.gps.customexpensesheet",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.customexpensesheet",
+        "name": "Customizations on Expense Sheet",
+        "version": "0.0.16",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.customexpensesheet.es_ES",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.customexpensesheet.es_ES",
+        "name": "Traducción del Módulo de Custom Expenses Sheet",
+        "version": "0.0.1",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.customexpensesheet.template",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.customexpensesheet.template",
+        "name": "Template for Customizations in Expense Sheet Employee",
+        "version": "0.0.11",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.customprintingforms",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.customprintingforms",
+        "name": "Custom Printing Forms",
+        "version": "0.0.6",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.enertis",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.enertis",
+        "name": "Customizaciones Enertis",
+        "version": "1.0.1",
+        "author": "GPS - Openbravo"
+      },
+      {
+        "java_package": "com.openbravo.gps.followup.economics",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.followup.economics",
+        "name": "Project Follow up: Economic KPIs. New developments",
+        "version": "1.0.0",
+        "author": "G.P.S"
+      },
+      {
+        "java_package": "com.openbravo.gps.helpdesktool",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.helpdesktool",
+        "name": "Help Desk Tool",
+        "version": "1.0.3",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.invoices",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.idl.invoices",
+        "name": "Initial Data Load Extension for Invoices",
+        "version": "1.0.7",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.standardalgorithmunmatch",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.localization.standardalgorithmunmatch",
+        "name": "Standard Matching Algorithm with Unmatch",
+        "version": "1.0.0",
+        "author": "GPS Openbravo S.L.U"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.projects",
+        "name": "Funcionalidad avanzada de proyectos",
+        "version": "1.0.2",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects.hr",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.projects.hr",
+        "name": "Asignación de recursos humanos a proyectos",
+        "version": "1.0.2",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects.multipleemployeeselector",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.projects.multipleemployeeselector",
+        "name": "Selector múltiple de empleados",
+        "version": "1.0.2",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects.quickhrphase",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.projects.quickhrphase",
+        "name": "Creación rápida de fases y asignación de empleados",
+        "version": "1.0.1",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects.quicktimesheet",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.openbravo.gps.projects.quicktimesheet",
+        "name": "Imputación ágil de dedicación a peticiones",
+        "version": "1.0.2",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.smf.abukai.customizations",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.abukai.customizations",
+        "name": "Abukai Customizations",
+        "version": "1.0.0",
+        "author": "SMF Consulting"
+      },
+      {
+        "java_package": "com.smf.abukai.customizations.es_ES",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.abukai.customizations.es_ES",
+        "name": "Abukai Customizations Translation Spanish",
+        "version": "1.0.1",
+        "author": "SMF Consulting"
+      },
+      {
+        "java_package": "com.smf.additionalpocolumns",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.additionalpocolumns",
+        "name": "Additional PO Columns",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.asset.amortization.report.es_es",
+        "name": "Asset Amortization Report - Spanish translation",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.currency.apiconfig.es_es",
+        "name": "Configuración de la API de Moneda",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.currency.conversionrate.es_es",
+        "name": "Descargador de Tasa de Conversión",
+        "version": "1.3.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.enertis.dimensions",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.enertis.dimensions",
+        "name": "Enertis Dimensions",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.financialcurrentbalance",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.financialcurrentbalance",
+        "name": "Current Balance",
+        "version": "1.0.0",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.gljournal.reverse.es_es",
+        "name": "Anulación de Asientos Manuales",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.integrations.support",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.integrations.support",
+        "name": "Support Ticket creation from Openbravo",
+        "version": "1.0.1",
+        "author": "SMF Consulting S.L"
+      },
+      {
+        "java_package": "com.smf.integrations.support.jira",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.integrations.support.jira",
+        "name": "SMF Integrations Jira for Customer",
+        "version": "1.0.1",
+        "author": "SMF Consulting S.L"
+      },
+      {
+        "java_package": "com.smf.invoices",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.invoices",
+        "name": "SMF Invoices",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.jobs.example",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.jobs.example",
+        "name": "Example Job and Actions",
+        "version": "0.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.ledgeroriginalcurrency",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.ledgeroriginalcurrency",
+        "name": "General Ledger Original Currency",
+        "version": "1.0.1",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.reports.accounts",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.reports.accounts",
+        "name": "Accounting Reports",
+        "version": "1.1.8",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.showbpbankacct",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.showbpbankacct",
+        "name": "Show BP Bank Account in Purchase Invoice Payment Plan",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.ws.attachments",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.ws.attachments",
+        "name": "Webservice Attachments",
+        "version": "1.0.0",
+        "author": "SMF Consulting"
+      },
+      {
+        "java_package": "org.openbravo.acctTab",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.acctTab",
+        "name": "Accounting tab for transactions",
+        "version": "1.1.2",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.bankstatement.importer.generic.csv",
+        "name": "CSV Generic Bank Statement Importer",
+        "version": "1.1.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.client.analytics",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.client.analytics",
+        "name": "Analytics",
+        "version": "1.4.5000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.client.widgets.finance",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.client.widgets.finance",
+        "name": "Finance and Accounting Widgets",
+        "version": "1.0.6",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.contract",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.contract",
+        "name": "Contract Management Infrastructure",
+        "version": "1.2.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.contract.es_ES",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.contract.es_ES",
+        "name": "Contract Management Infrastructure Translation Spanish es_ES",
+        "version": "1.1.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.contract.invoice.presentment",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.contract.invoice.presentment",
+        "name": "Service Contract Invoice Presentment",
+        "version": "1.1.2",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.contract.services",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.contract.services",
+        "name": "Service Contract Management",
+        "version": "1.2.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.contract.services.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.contract.services.es_es",
+        "name": "Service Contract Management Translation Spanish es_ES",
+        "version": "1.2.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.contract.services.template",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.contract.services.template",
+        "name": "Service Contract Management Template",
+        "version": "1.2.2",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement.es_es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.financial.bpsettlement.es_es",
+        "name": "Liquidaciones de Terceros",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "org.openbravo.financial.dimensionalreports",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.financial.dimensionalreports",
+        "name": "Multi-Dimensional Financial Reports Infrastructure",
+        "version": "1.6.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.dimensionaltrialbalancereport",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.financial.dimensionaltrialbalancereport",
+        "name": "Multi-Dimensional Trial Balance Report",
+        "version": "1.5.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.referencedata.accounts.generic",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.financial.referencedata.accounts.generic",
+        "name": "Generic Chart of Accounts",
+        "version": "1.0.10",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.gps.copyrole",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.gps.copyrole",
+        "name": "Copy Role Module",
+        "version": "0.1.5",
+        "author": "Openbravo GPS - Marcos Bernal"
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.idl",
+        "name": "Initial Data Load",
+        "version": "3.0.207000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl.translation.es_ES",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.idl.translation.es_ES",
+        "name": "Initial Data Load Spanish (Spain) Translation",
+        "version": "3.0.401",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.importdata",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.importdata",
+        "name": "Import Data",
+        "version": "1.1.7",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.interco",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.interco",
+        "name": "Inter-company Documents",
+        "version": "2.1.500",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.localization.us.community.coa",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.localization.us.community.coa",
+        "name": "US Localization - Community COA",
+        "version": "3.0.0",
+        "author": "Transitional Data Services, Inc."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat340.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.aeat340.es",
+        "name": "Tax Report: Modelo 340 (Spain)",
+        "version": "3.8.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.cuaderno19.es",
+        "name": "Cuaderno 19",
+        "version": "1.2.12",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno34.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.cuaderno34.es",
+        "name": "Cuaderno 34",
+        "version": "1.2.9",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno58.es",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.cuaderno58.es",
+        "name": "Cuaderno 58",
+        "version": "3.0.4",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.einvoice",
+        "name": "Electronic Invoice",
+        "version": "0.1.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice.es_ES",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.einvoice.es_ES",
+        "name": "Facturación Electrónica",
+        "version": "0.1.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.facturae",
+        "name": "Facturae API",
+        "version": "2.0.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.module.facturae31",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.facturae31",
+        "name": "Facturación Electrónica - Facturae 3.1",
+        "version": "0.3.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.facturae32",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.facturae32",
+        "name": "Facturación Electrónica - Facturae 3.2",
+        "version": "0.1.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "version": "1.4.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.procurement.contract",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.procurement.contract",
+        "name": "Procurement Contracts",
+        "version": "1.0.200",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain30",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.proflocalization.spain30",
+        "name": "Professional Localization pack Spain (España)",
+        "version": "3.31.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.projects.progress",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.projects.progress",
+        "name": "Project Progress Tool",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "version": "1.0.204000",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.services.followup.economics",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.services.followup.economics",
+        "name": "Project Follow up: Economic KPIs",
+        "version": "1.0.1",
+        "author": "GPS"
+      },
+      {
+        "java_package": "org.openbravo.services.followup.economics.es_ES",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.services.followup.economics.es_ES",
+        "name": "Spanish translation for Project Follow up: Economic KPIs",
+        "version": "1.0.1",
+        "author": "GPS"
+      },
+      {
+        "java_package": "org.openbravo.util.javax.xml.soap",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.util.javax.xml.soap",
+        "name": "Javax XML SOAP API",
+        "version": "1.16.2",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.util.jaxws",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.util.jaxws",
+        "name": "JAX-WS Java API for XML Web Services",
+        "version": "2.2.12",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.util.saaj.impl",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.util.saaj.impl",
+        "name": "SOAP with Attachments API for Java Implementation",
+        "version": "1.11.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.utility.draganddropselector3lists",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.utility.draganddropselector3lists",
+        "name": "Drag And Drop Selector Three Lists",
+        "version": "1.0.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.draganddropselector3listsimplementation",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.utility.draganddropselector3listsimplementation",
+        "name": "Drag And Drop Selector Three Lists Implementation",
+        "version": "1.0.301",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "version": "1.0.0",
+        "author": null
+      }
+    ],
+    "custom": [
+      {
+        "java_package": "com.smf.enertis.project.customization",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.enertis.project.customization",
+        "name": "Project Cuztomization",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 36723,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.es_ES",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.enertis.project.customization.es_ES",
+        "name": "Traducion de Project Customization",
+        "version": "1.0.0",
+        "author": "SMF",
+        "line_count": 4253,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.template",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.enertis.project.customization.template",
+        "name": "Customization Template",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 1114,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.opengy.customization",
+        "path": "/home/samuel/Documents/Trabajo/Opengy/backup-20260424-0000-UTC/Opengy/modules/com.smf.opengy.customization",
+        "name": "Opengy customizations",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 1281,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      }
+    ]
+  },
+  "core_divergences": {
+    "status": "modified",
+    "base_version": "expanded",
+    "baseline_type": "expanded",
+    "folders_checked": [
+      "src",
+      "src-db",
+      "src-core",
+      "src-wad",
+      "modules_core",
+      "src-trl",
+      "src-util"
+    ],
+    "modified_files": 80,
+    "added_files": 1,
+    "deleted_files": 0,
+    "diff_lines_added": 31806,
+    "diff_lines_removed": 475,
+    "files": [
+      {
+        "path": "src/org/openbravo/erpReports/ReportPaymentFilter.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/CallAcctServer.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ModuleManagementHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialOrgSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ShowSessionVariables.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialClientSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrderCreate.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PrintInvoices.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/ExpenseAPInvoice.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PriceListCreateAll.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CashBankOperations.html",
+        "status": "modified",
+        "lines_added": 26,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateAccountingReport.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateTaxReport.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Account.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/ProductMultiple.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/LocatorMultiple.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/DebtPayment.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Location_F1.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/AccountElementValue.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesJRFilter.html",
+        "status": "modified",
+        "lines_added": 38,
+        "lines_removed": 19
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderOpenItemJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTaxInvoice.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductMovement.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportExpense.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentFilterJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedgerJournal.html",
+        "status": "modified",
+        "lines_added": 7,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAnnualCertification.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportPurchaseDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 22,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedger.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBudgetGenerateExcel.html",
+        "status": "modified",
+        "lines_added": 10,
+        "lines_removed": 5
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProgress.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportDebtPayment.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashflowForecast.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceDiscountJR.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTrialBalance.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipper.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectBuildingSiteJR.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderProvidedJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportToInvoiceConsignmentJR.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderInvoicedJasper.html",
+        "status": "modified",
+        "lines_added": 36,
+        "lines_removed": 20
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionCost.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGuaranteeDateJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoicesJR.html",
+        "status": "modified",
+        "lines_added": 17,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorFilterJR.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBankJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAgingBalance.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWarehousePartnerJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionRunJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 42,
+        "lines_removed": 23
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/MInOutTraceReports.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportParetoProduct.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProfitabilityJR.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportStandardCostJRFilter.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportOrderNotInvoiceFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/GeneralAccountingReports.html",
+        "status": "modified",
+        "lines_added": 34,
+        "lines_removed": 18
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementDaily.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialTransactionEditionJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAssetDepreciationSchedule.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/UpdateMaintenanceScheduled.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ChangeProjectStatus.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ExpenseSOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_Shipment.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ProjectCopyFrom.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_ShipmentPO.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupDeleted.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html.orig",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src-db/database/formalChangesScript.xml",
+        "status": "modified",
+        "lines_added": 30980,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/org.openbravo.financial.paymentreport/src/org/openbravo/financial/paymentreport/erpCommon/ad_reports/PaymentReport.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 12
+      },
+      {
+        "path": "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_ELEMENT.xml",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/ad_actionbutton/ImportBankFile.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "modules_core/org.openbravo.reports.ordersawaitingdelivery/src/org/openbravo/reports/ordersawaitingdelivery/erpCommon/ad_reports/ReportOrderNotShipped.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      }
+    ]
+  },
+  "migration_score": 40,
+  "migratability": "hard",
+  "score_breakdown": {
+    "openbravo_platform": 0,
+    "core_divergences": -15.0,
+    "core_diff_lines": 32281,
+    "local_not_maintained": -20,
+    "local_not_maintained_translations": 23,
+    "local_not_maintained_regular": 66,
+    "custom_modules": -24.5,
+    "custom_modules_detail": [
+      {
+        "java_package": "com.smf.enertis.project.customization",
+        "line_count": 36723,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.es_ES",
+        "line_count": 4253,
+        "size_tier": "translation",
+        "size_label": "Traducción",
+        "penalty": -0.5
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.template",
+        "line_count": 1114,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.smf.opengy.customization",
+        "line_count": 1281,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      }
+    ],
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
+  },
+  "custom_assessment": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-24",
+    "core_customizations": [
+      {
+        "name": "Script de migración automática (formalChangesScript)",
+        "description": "Archivo XML de 30.980 líneas generado automáticamente por el motor de migraciones de base de datos de Etendo. Contiene sentencias DDL/DML acumuladas de versiones anteriores.",
+        "files": [
+          "src-db/database/formalChangesScript.xml"
+        ],
+        "lines_changed": 30980,
+        "conclusion": "eliminate",
+        "justification": "Es un artefacto de build auto-generado, no código de cliente. No contiene lógica de negocio ni valor que preservar; se regenera con cada upgrade.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 0
+      },
+      {
+        "name": "Plantillas HTML de informes y procesos legacy (ad_reports / ad_forms / ad_actionButton)",
+        "description": "79 archivos HTML que definen los formularios de parámetros de informes y procesos en la interfaz clásica Openbravo/Etendo (ej: filtro de análisis dimensional de ventas, diario de caja, conciliación bancaria). Los cambios detectados son ajustes menores de localización (idioma, favicon, rutas CSS) comunes en instalaciones España.",
+        "files": [
+          "src/org/openbravo/erpCommon/ad_reports/*.html",
+          "src/org/openbravo/erpCommon/ad_forms/*.html",
+          "src/org/openbravo/erpCommon/ad_process/*.html",
+          "src/org/openbravo/erpCommon/ad_actionButton/*.html",
+          "src/org/openbravo/erpCommon/info/*.html",
+          "src/org/openbravo/erpReports/*.html",
+          "modules_core/org.openbravo.advpaymentmngt/src/.../ad_actionbutton/ImportBankFile.html"
+        ],
+        "lines_changed": 1180,
+        "conclusion": "eliminate",
+        "justification": "Son plantillas de la UI clásica pre-React. En Etendo moderno estas pantallas se reimplementan como Process Definitions en React; los archivos HTML no se usan en el nuevo stack y no deben migrarse.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 3,
+        "effort_saas_hours": 0
+      },
+      {
+        "name": "Elemento AD en módulo securewebservices (AD_ELEMENT.xml)",
+        "description": "12 líneas añadidas en el XML de elementos del módulo Secure Web Services del core. Contiene definiciones de elementos como 'Expiration time', 'Default Role for Web Services' y 'Private key'. Indica divergencia de versión puntual entre la instalación y el baseline expandido.",
+        "files": [
+          "modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_ELEMENT.xml"
+        ],
+        "lines_changed": 12,
+        "conclusion": "already_upstream",
+        "justification": "Los elementos detectados son parte de la definición estándar del módulo Secure Web Services; en versiones más recientes del módulo estos elementos ya están incluidos. No requiere acción al actualizar.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      }
+    ],
+    "custom_modules": [
+      {
+        "java_package": "com.smf.enertis.project.customization",
+        "name": "Project Customization (Enertis)",
+        "description": "Módulo de gestión avanzada de proyectos para una empresa del sector energético (Enertis). Incluye: (1) Módulo CRM propio con ventanas de Oportunidades, Herramientas Digitales, Submercados y Soluciones Tecnológicas; (2) Seguimiento presupuestario por períodos (ENEPCU_BUDGETPROJECT) con clonación de presupuestos; (3) Cálculo automático de márgenes brutos por área de servicio (hardcoded: 38.55%, 26.38%, 45.45%, 40.85%); (4) Propagación automática del proyecto a pagos/cobros y transacciones financieras; (5) Informe de estado de proyectos exportado a Excel (Apache POI); (6) Proceso de cierre de proyecto (desactiva y cambia estado a OC); (7) IDL para carga masiva de asientos desde CSV; (8) Event handlers que actualizan el importe real facturado en PP001PROJECTPROGRESS; (9) Clone y revert de asientos manuales GL.",
+        "generalization": "client_specific",
+        "complexity": "critical",
+        "api_changes_applicable": [
+          "Commons Lang 2.6 → Lang3 3.17: JournalEntriesProcess.java importa org.apache.commons.lang.StringUtils — debe renombrarse a org.apache.commons.lang3.StringUtils",
+          "Apache POI 3.10.1 → 5.4.0: ProjectStatusReport.java usa HSSFWorkbook, HSSFFont.setBoldweight(), Cell.CELL_TYPE_* constantes enteras — todas cambiaron a enums y método setBold(true)",
+          "Hibernate 5.4 → 5.6: queries HQL con funciones SQL custom (ENEPCU_CURRENCY_RATE) deben verificarse",
+          "Gradle Plugin 1.3.3 → 2.2.1 + Gradle wrapper 7.3.2 → 8.12.1: requiere actualizar build.gradle del módulo"
+        ],
+        "effort_update_hours": 36,
+        "effort_saas_hours": 90,
+        "recommendation": "No es generalizable: los márgenes brutos hardcoded, las tablas CRM y el modelo de presupuesto por período son diseño propietario de Enertis/Opengy. Para la Ruta A (actualización): migrar imports de Commons Lang (3h), migrar POI API (12h), compilar y testear (21h). Para la Ruta B (SaaS): evaluar qué partes son reemplazables por funcionalidades estándar de Etendo (Projects, CRM nativo) vs qué debe permanecer como extensión productizada propia (60h análisis + 30h decisión de arquitectura)."
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.es_ES",
+        "name": "Project Customization — Traducción Español",
+        "description": "Pack de traducción al español del módulo com.smf.enertis.project.customization. Contiene mensajes AD, elementos y etiquetas de campo traducidos.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el destino del módulo principal. Sin esfuerzo adicional independiente."
+      },
+      {
+        "java_package": "com.smf.enertis.project.customization.template",
+        "name": "Project Customization Template",
+        "description": "Módulo plantilla de configuración para el despliegue del módulo de customización de proyectos. Contiene configScript.xml y definición del módulo AD.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [
+          "Gradle Plugin 1.3.3 → 2.2.1: posible actualización del build.gradle del módulo"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1,
+        "recommendation": "Sigue el destino del módulo principal. Mínimo esfuerzo de actualización."
+      },
+      {
+        "java_package": "com.smf.opengy.customization",
+        "name": "Opengy Customizations",
+        "description": "Módulo pequeño específico de Opengy que añade el campo 'Delivery Store' (EM_PNGCUS_DELIVERYSTORE) a la tabla C_ORDER (pedidos de venta) y define un informe personalizado en Jasper (.jrxml) para imprimir pedidos de venta con el lugar de entrega incluido.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [
+          "JasperReports: com.etendoerp:jasperreports:6.0.0 → net.sf.jasperreports:jasperreports:6.17.0 — relocalización de artefacto Maven, el .jrxml es compatible pero debe verificarse compilación",
+          "Gradle Plugin 1.3.3 → 2.2.1: build.gradle del módulo"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 3,
+        "recommendation": "Verificar compatibilidad del .jrxml con JasperReports 6.17.0 (probable que no requiera cambios). Evaluar si el campo EM_PNGCUS_DELIVERYSTORE debe permanecer o si 'Delivery Notes' nativo de Etendo cubre la necesidad."
+      }
+    ],
+    "unmaintained_modules": [
+      {
+        "java_package": "org.openbravo.sepa.iso20022 + org.openbravo.sepa.iso20022.coredirectdebit.customertobank + org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA ISO 20022 — Framework, Direct Debit y Credit Transfer",
+        "function": "Generación de ficheros de pago SEPA en formato XML ISO 20022 para domiciliaciones bancarias (CORE/B2B) y transferencias de crédito cliente-banco. Obligatorio para pagos bancarios en la zona euro.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "iText reemplazo (si generan PDF)",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 24,
+        "effort_saas_hours": 20,
+        "recommendation": "Candidato a bundle Etendo de localización España. Sin sustituto oficial actual. Para Ruta A: fork y actualizar dependencias (24h). Para Ruta B: evaluar si Cuaderno 43/SEPA existente cubre necesidad o si debe productizarse como módulo mantenido."
+      },
+      {
+        "java_package": "org.openbravo.module.facturae + org.openbravo.module.facturae31 + org.openbravo.module.facturae32",
+        "name": "Facturae — Facturación Electrónica España",
+        "function": "Generación de facturas electrónicas en formato Facturae 3.1/3.2 (obligatorio para facturas a administraciones públicas en España y próximamente universal por VeriFactu).",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "iText 5.5 → lowagie 2.1.7 (probable uso para PDF)",
+          "Commons Lang 2→3",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 24,
+        "effort_saas_hours": 16,
+        "recommendation": "Requisito legal España en expansión. Sin sustituto oficial en Etendo. Candidato prioritario a mantenimiento activo o bundle. Para Ruta A: fork y actualizar (24h). Incluye módulo einvoice que puede estar vinculado."
+      },
+      {
+        "java_package": "org.openbravo.module.einvoice + org.openbravo.module.einvoice.es_ES",
+        "name": "Electronic Invoice",
+        "function": "Infraestructura de facturación electrónica genérica de Openbravo. Puede ser dependencia de los módulos Facturae. La traducción sigue al módulo principal.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 8,
+        "recommendation": "Analizar dependencias con Facturae. Si Facturae3x dependen de einvoice, resolverlos juntos."
+      },
+      {
+        "java_package": "org.openbravo.projects.progress",
+        "name": "Project Progress Tool",
+        "function": "Módulo de seguimiento del avance de proyectos que define la entidad PP001PROJECTPROGRESS. Es una DEPENDENCIA DIRECTA del módulo custom com.smf.enertis.project.customization (ProjectProgressEventHandler y otros event handlers la referencian en tiempo de compilación).",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "Hibernate 5.4→5.6",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 10,
+        "recommendation": "Actualización BLOQUEANTE: sin este módulo el módulo custom Enertis no compila. Prioridad alta para actualizar junto con com.smf.enertis.project.customization."
+      },
+      {
+        "java_package": "com.openbravo.gps.projects + com.openbravo.gps.projects.hr + com.openbravo.gps.projects.quickhrphase + com.openbravo.gps.projects.quicktimesheet + com.openbravo.gps.projects.multipleemployeeselector",
+        "name": "GPS Projects Suite (avanzada de proyectos + RRHH)",
+        "function": "Suite de 5 módulos GPS que extienden la gestión de proyectos con asignación de recursos humanos, imputación ágil de horas, creación rápida de fases y selector múltiple de empleados. Dependiente de org.openbravo.projects.progress.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "Posible POI si generan Excel",
+          "Hibernate 5.4→5.6",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 60,
+        "effort_saas_hours": 30,
+        "recommendation": "Suite sin mantenimiento activo (autor: Openbravo GPS). Alto acoplamiento con la instalación. Para Ruta A: fork y actualizar los 5 módulos (60h). Para Ruta B: evaluar si las fases/recursos de Etendo estándar los cubren."
+      },
+      {
+        "java_package": "org.openbravo.contract + org.openbravo.contract.services + org.openbravo.contract.invoice.presentment + org.openbravo.procurement.contract + org.openbravo.contract.services.template",
+        "name": "Contract Management Suite",
+        "function": "Gestión de contratos de servicio: plantillas, presentación de facturas de contratos, infraestructura de contratos de compra. Incluye datos de referencia España (es_ES).",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 36,
+        "effort_saas_hours": 12,
+        "recommendation": "Evaluar si se utiliza activamente. Si no, candidato a eliminar. Si se usa: fork y actualizar (36h). Funcionalidad potencialmente cubierta por futuro módulo Etendo de contratos."
+      },
+      {
+        "java_package": "org.openbravo.idl + org.openbravo.module.idljava + org.openbravo.gps.idl.invoices",
+        "name": "Initial Data Load (IDL + Java extension + GPS extension)",
+        "function": "Infraestructura de carga masiva de datos inicial de Openbravo (IDL). El módulo Java extiende IDL con procesadores en Java. La extensión GPS añade soporte para carga de facturas. DEPENDENCIA de JournalEntriesProcess del módulo custom Enertis.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 8,
+        "recommendation": "Necesario mientras se use JournalEntriesProcess (carga de asientos desde CSV). Para Ruta A: actualizar dependencias (12h). Para Ruta B: evaluar si el proceso IDL puede sustituirse por importación nativa de Etendo."
+      },
+      {
+        "java_package": "com.smf.integrations.support + com.smf.integrations.support.jira",
+        "name": "SMF Support / Jira Integration",
+        "function": "Creación de tickets de soporte en Jira directamente desde la interfaz de Etendo. Permite a usuarios finales reportar incidencias sin salir de la aplicación.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Posible java-jwt 3.1→4.4 si usa autenticación JWT con Jira",
+          "Commons Lang 2→3",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Evaluar uso real. Si se usa activamente: fork y actualizar (8h). Si no, eliminar."
+      },
+      {
+        "java_package": "com.smf.abukai.customizations + com.smf.abukai.customizations.es_ES",
+        "name": "Abukai Customizations",
+        "function": "Integración con Abukai Expenses para captura móvil de gastos de empleados y notas de gasto. Permite escanear tickets con el móvil e importar los datos directamente al módulo de gastos de Etendo.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Evaluar si el servicio Abukai Expenses sigue activo y si se usa. Fork y actualizar si necesario (8h)."
+      },
+      {
+        "java_package": "com.etendoerp.psd2.bank.integration",
+        "name": "Bank Integration PSD2",
+        "function": "Integración bancaria PSD2 para consulta de saldos y movimientos bancarios directamente desde Etendo vía API bancaria abierta.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.psd2.bank.integration (Etendo bundle — versión más reciente disponible)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Gradle Plugin 1.3.3 → 2.2.1"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 4,
+        "recommendation": "El módulo es de Etendo Software pero está desactualizado (v1.2.0). Actualizar a la versión más reciente del bundle oficial (4h para actualizar versión en build.gradle y test)."
+      },
+      {
+        "java_package": "org.openbravo.interco",
+        "name": "Inter-company Documents",
+        "function": "Generación automática de documentos inter-empresa: cuando una organización emite un pedido/factura a otra organización del mismo grupo, crea automáticamente el documento espejo en la organización receptora.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 8,
+        "recommendation": "Evaluar si la funcionalidad está cubierta por el módulo Advanced Intercompany de Etendo (com.etendoerp.advanced.intercompany). Si sí, migrar datos y eliminar (8h); si no, fork y actualizar (12h)."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+        "name": "CSV Generic Bank Statement Importer",
+        "function": "Importador de extractos bancarios en formato CSV genérico. Permite configurar el mapping de columnas CSV a campos del extracto bancario de Etendo.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Evaluar si el Banking Pool de Etendo (com.etendoerp.bankingpool, ya instalado) cubre la importación CSV. Si sí, eliminar (6h migración); si no, fork y actualizar (8h)."
+      },
+      {
+        "java_package": "com.openbravo.gps.enertis + com.openbravo.gps.followup.economics + org.openbravo.services.followup.economics + org.openbravo.financial.dimensionalreports + org.openbravo.financial.dimensionaltrialbalancereport",
+        "name": "GPS Enertis + Follow-up económico + Informes Dimensionales",
+        "function": "Grupo de módulos GPS legacy: customizaciones Openbravo específicas para Enertis (anterior a los módulos SMF), seguimiento económico de proyectos (KPIs), e informes financieros multidimensionales (balance de prueba, cuenta de resultados por dimensión).",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "POI potencial",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 30,
+        "effort_saas_hours": 16,
+        "recommendation": "Evaluar superposición con módulos Enertis actuales (pueden estar duplicados). Muchos de estos módulos son del ecosistema Openbravo GPS anterior al fork Etendo; alta probabilidad de obsolescencia parcial o total."
+      },
+      {
+        "java_package": "com.openbravo.gps.customexpensesheet + com.openbravo.gps.customexpensesheet.template + com.openbravo.gps.customprintingforms",
+        "name": "GPS Custom Expense Sheet + Custom Printing Forms",
+        "function": "Customizaciones GPS en el módulo de hoja de gastos de empleados: campos adicionales, plantillas y formularios de impresión personalizados para albaranes, facturas y pedidos.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "JasperReports relocalización de artefacto",
+          "Commons Lang 2→3"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 8,
+        "recommendation": "Revisar si los formularios de impresión personalizados siguen siendo necesarios o si los informes Jasper del bundle financiero de Etendo los han sustituido."
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno19.es + org.openbravo.module.cuaderno34.es + org.openbravo.module.cuaderno58.es",
+        "name": "Cuadernos Bancarios España (19, 34, 58)",
+        "function": "Generación de ficheros de remesas bancarias según normas AEB: Cuaderno 19 (adeudos), Cuaderno 34 (transferencias nacionales), Cuaderno 58 (transferencias de nóminas). Obligatorios para pagos masivos bancarios en España.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Commons Lang 2→3",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 10,
+        "recommendation": "Requisito bancario España. Verificar si el bundle org.openbravo.module.cuaderno43.es (ya instalado) o el módulo SEPA existente los sustituye. Si no, fork y actualizar (16h)."
+      },
+      {
+        "java_package": "org.openbravo.module.aeat340.es",
+        "name": "AEAT Modelo 340 (Spain Tax Report)",
+        "function": "Informe fiscal español Modelo 340 (Libro de registro de facturas). Aunque el Modelo 340 fue suprimido para la mayoría de empresas con la implantación del SII, puede seguir siendo necesario para algunos contribuyentes.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "SII (ya instalado: org.openbravo.module.sii)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Commons Lang 2→3"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 2,
+        "recommendation": "Verificar si sigue siendo necesario. Si el SII ya cubre las obligaciones fiscales, este módulo es redundante y puede eliminarse (2h verificación)."
+      },
+      {
+        "java_package": "Módulos de traducción (23 módulos *_es_es, *_es_ES, *_en_US)",
+        "name": "Packs de traducción — agrupado",
+        "function": "23 módulos de traducción al español de funcionalidades financieras de Etendo y Openbravo (contabilidad, pagos, módulos locales). Siguen el destino del módulo principal al que traducen.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Packs de traducción equivalentes de Etendo (bundle financiero + localización España)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sin esfuerzo independiente. Siguen el destino del módulo padre en todos los casos."
+      },
+      {
+        "java_package": "Otros módulos sin mantenimiento de bajo riesgo (24 módulos)",
+        "name": "Módulos legacy de bajo riesgo — agrupado",
+        "function": "Grupo de módulos de utilidad o ya cubiertos por funcionalidades estándar: analytics, widgets financieros, copy role, balance actual, asientos en moneda original, importación de datos, SOAP/JAX-WS utilities, ayuda de organización en roles, múltiples módulos de informes contables, selector drag&drop, OpenCSV. La mayoría son infraestructura de bajo nivel o funcionalidades que Etendo ya incorpora de forma nativa.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Varios — funcionalidades nativas Etendo o dependencias de bajo nivel no expuestas al usuario",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Commons Lang 2→3 en los que tienen Java",
+          "Gradle Plugin + wrapper"
+        ],
+        "effort_update_hours": 40,
+        "effort_saas_hours": 16,
+        "recommendation": "Revisar uno a uno cuáles se usan activamente. Alta probabilidad de que 15-20 puedan eliminarse directamente. Para los restantes: actualización de compilación en batch (40h total)."
+      }
+    ],
+    "effort_summary": {
+      "update_core_hours": 4,
+      "update_custom_hours": 42,
+      "update_unmaintained_hours": 344,
+      "update_total_hours": 390,
+      "saas_core_hours": 0,
+      "saas_custom_hours": 94,
+      "saas_unmaintained_hours": 164,
+      "saas_total_hours": 258
+    }
+  },
+  "ui_readiness": {
+    "generated": "2026-04-24",
+    "features": [
+      {
+        "section": "1.1",
+        "title": "Ventanas tipo Maintain (M)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "ad_count": 289,
+        "ad_detail": "289 ventanas de tipo M (maestros CRUD)",
+        "reason": "Gran parte del catálogo de maestros de Opengy (clientes, proveedores, artículos, cuentas, proyectos) vive en ventanas tipo M. La base está implementada al 78% pero quedan brechas en multi-record delete, Copy Record con tabs hijo y propagación del flag Active. Con 289 ventanas, cualquier gap sistémico impacta a prácticamente toda la operativa."
+      },
+      {
+        "section": "1.2",
+        "title": "Ventanas tipo Transaction (T)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "alta",
+        "ad_count": 40,
+        "ad_detail": "40 ventanas transaccionales (pedidos, facturas, albaranes, pagos)",
+        "reason": "Las 40 ventanas transaccionales de Opengy representan el núcleo operativo diario: pedidos de venta/compra, facturas, albaranes y pagos. Dependen de DocAction (6 columnas) y Posted (64 columnas) que están sólo al 75% y 30% respectivamente. Un ciclo de documento incompleto bloquea completamente la operativa financiera de la empresa."
+      },
+      {
+        "section": "1.3",
+        "title": "Ventanas tipo Query/Info (Q)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "baja",
+        "ad_count": 10,
+        "ad_detail": "10 ventanas de consulta de solo lectura",
+        "reason": "Con solo 10 ventanas Q y todas en modo consulta, el riesgo es bajo. Las brechas (toolbar oculto correcto, zoom, popup selector) son edge-cases que no bloquean la operativa principal."
+      },
+      {
+        "section": "1.4",
+        "title": "Ventanas Pick and Execute",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "media",
+        "ad_count": 49,
+        "ad_detail": "49 ventanas OBUIAPP_PickAndExecute (selección de registros + ejecución)",
+        "reason": "Con 49 ventanas P&E (más que la mayoría del portfolio), Opengy hace un uso intensivo de este patrón para operaciones masivas. Al 55%, faltan la validación de campos inline obligatorios antes de ejecutar, el modo single-select y el forwarding de contexto del padre. Impacta directamente a flujos de aprobación, cierres masivos y gestión de pedidos."
+      },
+      {
+        "section": "2.B",
+        "title": "Botones de columna hardcoded (DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus)",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "priority": "critica",
+        "ad_count": 88,
+        "ad_detail": "Posted×64, PaymentRule×9, CreateFrom×8, DocAction×6, ChangeProjectStatus×1",
+        "reason": "Opengy tiene 64 columnas Posted (máximo del portfolio analizado), lo que indica un uso muy intensivo del motor contable. Ninguna de las tres vistas del botón Posted (N/Y/E) está implementada al 30%. Combinado con los 6 DocAction (labels incorrectos) y 1 ChangeProjectStatus (0%), el ciclo de documento completo está bloqueado en el nuevo UI."
+      },
+      {
+        "section": "2.B.2",
+        "title": "Posted — botón de contabilización",
+        "status": "PARCIAL",
+        "completion_pct": 30,
+        "priority": "critica",
+        "ad_count": 64,
+        "ad_detail": "64 columnas Posted en tablas de documento",
+        "reason": "Con 64 instancias del botón Posted, Opengy tiene una dependencia crítica del motor contable. Los tres estados visuales (No Contabilizado / Contabilizado / Error), el endpoint de post/unpost, la confirmación antes de descontabilizar y el manejo de períodos cerrados no están implementados. Sin Posted funcional, el equipo de contabilidad no puede verificar el estado de los asientos."
+      },
+      {
+        "section": "2.B.1",
+        "title": "DocAction — dropdown de acciones de documento",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "alta",
+        "ad_count": 6,
+        "ad_detail": "6 columnas DocAction (Completar, Anular, Cerrar, etc.)",
+        "reason": "La lógica de filtrado de transiciones por estado (docstatus) está implementada correctamente. El único gap conocido son los labels incorrectos en el dropdown. Con 6 instancias sobre documentos críticos (pedidos, facturas, albaranes), es un bug de presentación con alto impacto operativo — el usuario ve opciones con nombres incorrectos pero la ejecución es correcta."
+      },
+      {
+        "section": "2.B.3",
+        "title": "CreateFrom — creación de líneas desde documento fuente",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "baja",
+        "ad_count": 8,
+        "ad_detail": "8 columnas CreateFrom (facturas, albaranes, pedidos)",
+        "reason": "Implementado como Process Definition con contexto dinámico. Faltan validaciones: que el modal muestra la grid de líneas con checkboxes, cálculo de cantidad restante en entregas parciales, y cobertura de los 6 tipos de documento. Con 8 instancias en flujos de compra-venta, es alto impacto pero la base está bien encaminada."
+      },
+      {
+        "section": "2.29",
+        "title": "PAttribute — atributos de producto (lote, número de serie)",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "media",
+        "ad_count": 31,
+        "ad_detail": "31 columnas de tipo PAttribute en líneas de documento y stock",
+        "reason": "Opengy gestiona 31 columnas de atributos de producto (lote/serie), lo que implica trazabilidad activa en movimientos de almacén y líneas de factura. Al 55%, la dependencia entre el campo Product y el AttributeSet, el modo instance vs non-instance y los atributos obligatorios en el popup no están completamente cubiertos. Impacto en control de calidad y trazabilidad legal."
+      },
+      {
+        "section": "3.A.1",
+        "title": "Procesos R&P estándar (UIPattern=S)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "ad_count": 160,
+        "ad_detail": "160 procesos R&P de tipo Standard (popup de parámetros + ejecución)",
+        "reason": "Opengy tiene 160 procesos estándar que cubren desde cierres de periodo hasta generación de reportes financieros. Al 72%, los gaps en default values con expresiones (@#Date@, @SQL=...), el mapeo de tipos de parámetro y la secuencia de parámetros por seqno afectan directamente a la usabilidad de procesos de cierre contable y fiscal."
+      },
+      {
+        "section": "3.A.2a",
+        "title": "Reports legacy (isreport=Y, HTML/PDF)",
+        "status": "PARCIAL",
+        "completion_pct": 50,
+        "priority": "media",
+        "ad_count": 111,
+        "ad_detail": "111 procesos de informe legacy (HTML/PDF via iframe)",
+        "reason": "Con 111 reportes legacy, Opengy depende fuertemente de la capa de informes clásica. Al 50%, el rendering HTML en iframe funciona solo si el classic UI está corriendo en paralelo. Para un despliegue SaaS puro en React, todos estos reportes necesitan migración o reemplazo — un esfuerzo de gran calado."
+      },
+      {
+        "section": "3.A.2b",
+        "title": "Procesos de fondo (isbackground=Y)",
+        "status": "NO IMPLEMENTADO",
+        "completion_pct": 10,
+        "priority": "alta",
+        "ad_count": 36,
+        "ad_detail": "36 procesos de fondo (generación masiva de facturas, sincronización, cierres automáticos)",
+        "reason": "Con 36 procesos de fondo (más que la media del portfolio), Opengy tiene una dependencia significativa en operaciones automáticas. El Process Monitor (estado en tiempo real), las notificaciones de finalización y el polling/websocket no están implementados al 10%. El equipo operativo no puede saber si los procesos nocturnos terminaron correctamente sin acceder al log del servidor."
+      },
+      {
+        "section": "3.A.2c",
+        "title": "Procesos Manual Action (UIPattern=M, JS legacy)",
+        "status": "PARCIAL",
+        "completion_pct": 40,
+        "priority": "critica",
+        "ad_count": 221,
+        "ad_detail": "221 procesos AD_PROCESS con UIPattern=M (namespaces OB.* no existen en React)",
+        "reason": "221 procesos legacy de tipo Manual Action son el mayor bloqueador arquitectónico de Opengy. Dependen de namespaces OB.CurrentView, OB.MainView, OB.Utilities, etc. que no existen en React. Sin una decisión (iframe con classic UI paralelo, shim OB.*, o reimplementación caso a caso), ninguno de estos procesos funcionará en el nuevo UI. Impacta a aperturas/cierres de periodo, gestión de picking, conciliaciones y múltiples flujos financieros."
+      },
+      {
+        "section": "3.A.4",
+        "title": "Procesos Jasper (isjasper=Y)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "baja",
+        "ad_count": 3,
+        "ad_detail": "3 reportes Jasper (JasperReports engine)",
+        "reason": "Solo 3 reportes Jasper. El artefacto JasperReports fue relocalizado en 25.x (breaking change) pero el propio módulo com.smf.opengy.customization ya tiene un .jrxml (C_Order_New) que necesitará actualización. Con solo 3 instancias, el esfuerzo es manejable."
+      },
+      {
+        "section": "3.B.1",
+        "title": "Process Definition — Action (UIPattern=A)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "ad_count": 34,
+        "ad_detail": "34 Process Definitions de tipo Action (ActionHandler en Java)",
+        "reason": "34 PD Action implementados vía ProcessDefinitionModal y useProcessExecution. Al 75%, los gaps principales son el payload JSON exacto al ActionHandler, las response actions (openDirectTab, refreshGrid) y la verificación de AD_Process_Access client-side. Impacta a procesos de cierre y acciones sobre documentos en módulo financiero."
+      },
+      {
+        "section": "3.B.2",
+        "title": "Process Definition — Manual JS (UIPattern=M, BLOQUEADO)",
+        "status": "BLOQUEADO",
+        "completion_pct": 25,
+        "priority": "critica",
+        "ad_count": 16,
+        "ad_detail": "16 Process Definitions con UIPattern=M (OB.OpenClose, OB.RoleInheritance, picking, packing, EtendoRX)",
+        "reason": "16 PD Manual JS incluyen procesos críticos de Opengy: Open/Close Periods (obligatorio para cierres contables mensuales), Recalculate Role Permissions, Get Token/Middleware Token (EtendoRX), y múltiples procesos de gestión de picking y packing. Al 25% y BLOQUEADO por decisión arquitectónica pendiente sobre namespaces OB.*, ninguno puede migrarse sin resolver primero el bloqueador."
+      },
+      {
+        "section": "3.B.3",
+        "title": "Process Definition — Estándar (OBUIAPP_PickAndExecute)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "ad_count": 98,
+        "ad_detail": "98 Process Definitions de tipo estándar (popup de parámetros + ejecución)",
+        "reason": "98 PD Standard representan la mayoría de los procesos modernos de Opengy. ProcessDefinitionModal los maneja al 72%, pero faltan los default values con referencias al contexto padre (@C_BPartner_ID@), el grouping de parámetros por grupo y display logic en parámetros. Con 574 parámetros definidos en total, los defaults dinámicos son críticos para la usabilidad."
+      },
+      {
+        "section": "3.B.4",
+        "title": "Process Definition — Report (OBUIAPP_Report)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "ad_count": 8,
+        "ad_detail": "8 Process Definitions de tipo reporte (Jasper + formato PDF/Excel)",
+        "reason": "8 PD Report para generación de documentos financieros. Al 75%, falta el selector de formato de salida (PDF/Excel), el manejo de timeout para reportes grandes y el logo de empresa desde ad_image. Impacto directo en emisión de documentos comerciales (pedidos, albaranes, facturas)."
+      },
+      {
+        "section": "4",
+        "title": "Display Logic (lógica de visibilidad de campos)",
+        "status": "BUG ACTIVO",
+        "completion_pct": 65,
+        "priority": "critica",
+        "ad_count": 2631,
+        "ad_detail": "2.631 campos con display logic; 47 tabs con display logic",
+        "reason": "Con 2.631 campos usando display logic, Opengy tiene una de las dependencias más altas del portfolio en este mecanismo. El bug activo documentado (@field_name@ syntax causa errores JavaScript) afecta directamente a las ventanas de proyectos y finanzas donde los campos se muestran/ocultan según el estado del documento. Sin este fix, múltiples formularios rompen en el nuevo UI con errores de consola visibles al usuario."
+      },
+      {
+        "section": "5",
+        "title": "Comportamientos de pestaña (read-only, SR, ED, display logic)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "ad_count": 40,
+        "ad_detail": "40 pestañas ISREADONLY=Y + 47 pestañas con display logic",
+        "reason": "40 tabs read-only más 47 con display logic representan un patrón frecuente en las ventanas financieras de Opengy (historial de movimientos, líneas de diario, detalles de pago — todos en modo consulta). Al 72%, los gaps en SR tabs (sin grid, sin botón New/Delete) y el lazy loading de datos de tab pueden causar problemas de rendimiento con grandes volúmenes de líneas."
+      },
+      {
+        "section": "6",
+        "title": "Callouts (cálculos automáticos de campo)",
+        "status": "TO CHECK",
+        "completion_pct": 82,
+        "priority": "alta",
+        "ad_count": 368,
+        "ad_detail": "368 columnas con callout (AD_CALLOUT_ID); 96 con Java classname legacy",
+        "reason": "368 columnas con callouts representan cálculos automáticos críticos en Opengy: importes de línea, descuentos, impuestos, márgenes brutos (el módulo com.smf.enertis hardcodea % de margen por área de servicio). Al 82%, los gaps más críticos son callout chaining (callout A modifica campo X, X no debe re-disparar callout B), el manejo de WARNING/ERROR desde callout y los valores callout en campos read-only que deben enviarse en el payload de save."
+      },
+      {
+        "section": "8",
+        "title": "Selectores y campos FK (OBUISEL_Selector, out parameters)",
+        "status": "TO CHECK",
+        "completion_pct": 65,
+        "priority": "alta",
+        "ad_count": 577,
+        "ad_detail": "577 referencias a selectores OBUISEL en la AD",
+        "reason": "577 referencias a selectores es un número muy alto que indica uso intensivo de búsqueda de maestros en todos los documentos. La brecha crítica es Selector Out Parameters (isoutparameter=Y): seleccionar un proveedor puede poblar automáticamente forma de pago, condiciones de crédito, cuenta contable — comportamiento callout-like que actualmente no está implementado. Sin esto, el usuario debe rellenar manualmente todos los campos relacionados al cambiar un proveedor o cliente."
+      },
+      {
+        "section": "14",
+        "title": "Reportes accesibles desde menú",
+        "status": "TO CHECK",
+        "completion_pct": 60,
+        "priority": "alta",
+        "ad_count": 122,
+        "ad_detail": "122 reportes totales (111 legacy HTML/PDF + 8 PD Report + 3 Jasper)",
+        "reason": "Opengy tiene 122 reportes en total — uno de los catálogos más grandes del portfolio. Los 111 reportes legacy vía iframe requieren el classic UI corriendo en paralelo (impide despliegue SaaS puro). Al 60%, la brecha principal es el routing correcto del tipo de menú ProcessDefinition al popup de parámetros. Sin reportes funcionando, el equipo financiero y de operaciones no puede obtener extractos, balances ni informes fiscales."
+      },
+      {
+        "section": "18",
+        "title": "Application Forms (AD_FORM — formularios especiales)",
+        "status": "NO IMPLEMENTADO",
+        "completion_pct": 15,
+        "priority": "critica",
+        "ad_count": 31,
+        "ad_detail": "31 AD_FORM distribuidos en 9 módulos (wizards, GL Posting, Import, Session Prefs)",
+        "reason": "31 Application Forms incluyen procesos críticos para Opengy: Initial Client Setup (wizard de configuración inicial), GL Posting by DB Tables (motor de contabilización masiva), Create Invoices/Shipments from Orders (generación masiva de facturas y albaranes), Enterprise Module Management (gestor de paquetes). Al 15% y pendiente de decisión arquitectónica (iframe vs reimplementación React), ninguno de estos formularios funciona en el nuevo UI."
+      },
+      {
+        "section": "21",
+        "title": "Workspace / Dashboard (widgets del escritorio)",
+        "status": "NO IMPLEMENTADO",
+        "completion_pct": 5,
+        "priority": "critica",
+        "ad_count": 67,
+        "ad_detail": "67 referencias a clases de widget en la AD",
+        "reason": "Con 67 referencias a widgets en la AD, el dashboard es una funcionalidad activamente usada por el equipo de Opengy para monitorización de KPIs (ventas, cobros pendientes, proyectos activos). Al 5%, el workspace está prácticamente vacío. El contrato de API para widgets custom JS (SmartClient vs React) no está definido, lo que bloquea tanto los widgets nativos como los del módulo financiero."
+      },
+      {
+        "section": "22",
+        "title": "Field Groups (secciones colapsables de formulario)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "ad_count": 1779,
+        "ad_detail": "1.779 campos organizados en grupos colapsables",
+        "reason": "1.779 campos en grupos implica que la mayoría de los formularios de Opengy están organizados en secciones desplegables (Datos Generales, Información Fiscal, Contabilidad, etc.). Al 78%, el gap principal es si el estado collapse/expand persiste al navegar entre registros. En formularios con muchos grupos, un reset constante al default crea fricción operativa significativa."
+      },
+      {
+        "section": "23",
+        "title": "Status Bar (barra de estado inferior)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "ad_count": 263,
+        "ad_detail": "263 campos configurados para mostrarse en la barra de estado",
+        "reason": "263 campos en status bar reflejan un uso estándar del patrón Etendo para mostrar totales, estados y navegación de registros en los documentos de Opengy. Al 75%, los gaps en actualización en tiempo real mientras el usuario edita y la navegación Anterior/Siguiente con filtros activos afectan a la fluidez de revisión de documentos en lote."
+      },
+      {
+        "section": "25",
+        "title": "Default Value Expressions (valores por defecto de campo)",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "alta",
+        "ad_count": 5053,
+        "ad_detail": "5.053 columnas con defaultvalue definido (expresiones @#Date@, @SQL=..., literales, @ColumnName@)",
+        "reason": "5.053 columnas con defaultvalue es una cifra muy alta que indica que la mayoría de los formularios de Opengy dependen de valores por defecto para agilizar la entrada de datos. Al 45%, el gap crítico es que @ColumnName@ no es reactivo sin un callout: si el usuario cambia el cliente en un pedido, los campos que tienen como default campos del cliente no se actualizan hasta que el usuario guarda y recarga. Genera confusión y errores de datos en el equipo de ventas."
+      },
+      {
+        "section": "26",
+        "title": "Tab Default Filters y Sort Order",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "alta",
+        "ad_count": 39,
+        "ad_detail": "39 pestañas con HQLFILTERCLAUSE configurado (sub-pestañas con filtros pre-configurados)",
+        "reason": "39 tabs con filtros HQL definen qué registros se muestran en sub-pestañas (por ejemplo, solo movimientos del período activo, solo líneas no facturadas, solo pagos pendientes). Al 0%, si el backend no aplica estos filtros automáticamente, los usuarios verán datos sin filtrar en sub-pestañas críticas de documentos financieros — mezclando registros de todos los períodos y estados."
+      },
+      {
+        "section": "29",
+        "title": "Tree Views (vistas en árbol)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "ad_count": 3,
+        "ad_detail": "3 pestañas con hastree=Y (árbol de cuentas contables, organización, categorías)",
+        "reason": "3 tabs con vista árbol (plan de cuentas, árbol organizativo, posiblemente categorías de producto). El drag & drop y la jerarquía están implementados, pero el risk de performance sin lazy loading es real para el árbol de cuentas (potencialmente miles de nodos en una instalación con varios ejercicios). Verificar número de nodos antes de ir a producción."
+      },
+      {
+        "section": "32",
+        "title": "Alert System (alertas en tiempo real)",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "media",
+        "ad_count": 20,
+        "ad_detail": "20 reglas de alerta configuradas",
+        "reason": "20 alertas configuradas cubren probablemente situaciones críticas de Opengy: pagos vencidos, proyectos sin actualizar, stocks bajo mínimos. Al 70%, los gaps en acknowledge API, badge count, y navegación al registro destino (via referencekey_id → openDirectTab) hacen que las alertas se muestren pero no sean accionables. El equipo pierde el valor de la monitorización en tiempo real."
+      },
+      {
+        "section": "11",
+        "title": "Autenticación y sesión",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "ad_detail": "Infraestructura de autenticación JWT — no depende de la AD del cliente",
+        "reason": "La autenticación JWT es infraestructura del platform Etendo, no personalización de Opengy. El esfuerzo es independiente del cliente."
+      },
+      {
+        "section": "15",
+        "title": "Indicadores de carga y feedback",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "ad_detail": "Infraestructura de UX del platform — no depende de la AD del cliente",
+        "reason": "Los indicadores de carga son comportamiento transversal del platform. No hay configuración específica de Opengy que los afecte."
+      },
+      {
+        "section": "17",
+        "title": "Toolbar Buttons",
+        "status": "PARCIAL",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "ad_detail": "Toolbar estándar — sin botones de módulo custom en Opengy",
+        "reason": "Opengy no tiene módulos que registren botones adicionales en el toolbar. Las brechas del toolbar estándar (NEW_ROW, SAVE_CLOSE, personalization) son del platform."
+      },
+      {
+        "section": "33",
+        "title": "View Personalization (vistas guardadas)",
+        "status": "NOT DONE",
+        "completion_pct": 10,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "ad_detail": "OBUIAPP_UIPersonalization no implementado — feature del platform",
+        "reason": "Las vistas personalizadas son una feature de conveniencia del platform. Opengy no tiene configuración específica que las requiera."
+      },
+      {
+        "section": "34",
+        "title": "Calendar Views",
+        "status": "NO IMPLEMENTADO",
+        "completion_pct": 0,
+        "priority": "no_aplica",
+        "ad_count": 0,
+        "ad_detail": "Sin tabs de calendario identificados en la instalación de Opengy",
+        "reason": "No se detectaron tabs con OBCalendar o OBMultiCalendar en la instalación. Feature no relevante para Opengy."
+      }
+    ],
+    "priority_summary": {
+      "critica": [
+        "§3.A.2c — 221 procesos Manual Action JS (namespaces OB.* no existen en React — BLOQUEADO, decisión arquitectónica pendiente)",
+        "§3.B.2 — 16 PD Manual JS (Open Close Periods, Picking, Packing, EtendoRX — BLOQUEADO)",
+        "§2.B — 88 instancias de botones hardcoded (Posted×64 al 30%, DocAction×6 labels incorrectos, ChangeProjectStatus×1 no implementado)",
+        "§4 — 2.631 campos con Display Logic (BUG ACTIVO: @field_name@ causa errores JavaScript en formularios de proyectos y finanzas)",
+        "§18 — 31 Application Forms (GL Posting, Create Invoices/Shipments from Orders, Initial Client Setup — NO IMPLEMENTADO al 15%)",
+        "§21 — 67 widgets en dashboard (Workspace completamente vacío al 5% — equipo sin KPIs en tiempo real)"
+      ],
+      "alta": [
+        "§26 — 39 pestañas con HQL filters pre-configurados (NOT DONE 0%: sub-pestañas financieras sin filtrar por período/estado)",
+        "§25 — 5.053 defaults dinámicos (PARCIAL 45%: @ColumnName@ no reactivo sin callout — entrada de datos con confusión en pedidos/facturas)",
+        "§3.A.2b — 36 procesos de fondo (Process Monitor no implementado al 10% — visibilidad cero sobre procesos nocturnos)",
+        "§1.2 — 40 ventanas Transaction (DocAction labels + Posted al 30% — ciclo de documento bloqueado)",
+        "§14 — 122 reportes (111 legacy iframe requieren classic UI paralelo — incompatible con despliegue SaaS puro)",
+        "§6 — 368 callouts (callout chaining prevention y WARNING/ERROR response críticos para módulo financiero Enertis)",
+        "§8 — 577 selectores (Selector Out Parameters no implementado — relleno manual de campos relacionados al cambiar cliente/proveedor)"
+      ],
+      "media": [
+        "§1.1 — 289 ventanas Maintain (base al 78%, gaps en Copy Record con tabs hijo y multi-record delete)",
+        "§1.4 — 49 ventanas P&E (PARCIAL 55% — validación inline y single-select no cubiertos)",
+        "§3.A.1 — 160 procesos estándar (default values con expresiones @SQL= y @AD_ORG_ID@ en parámetros)",
+        "§3.B.3 — 98 PD Standard (default con contexto padre, grouping y display logic en parámetros — 574 parámetros definidos)",
+        "§22 — 1.779 campos en grupos colapsables (persistencia de estado collapse/expand entre registros)",
+        "§3.A.2a — 111 reportes legacy vía iframe (operatividad dependiente de classic UI en paralelo)",
+        "§5 — 40 pestañas read-only + 47 con display logic (lazy loading y SR tabs sin grid)",
+        "§23 — 263 campos en status bar (actualización en tiempo real y navegación Anterior/Siguiente con filtros)",
+        "§25 — 5.053 defaults (ver alta — también afecta a formularios de entrada masiva)",
+        "§2.29 — 31 columnas PAttribute (trazabilidad lote/serie — dependencia de campo Product)",
+        "§32 — 20 alertas (navigate-to-record y acknowledge API no completamente implementados)",
+        "§3.B.4 — 8 PD Report (selector formato PDF/Excel y timeout para reportes grandes)",
+        "§3.B.1 — 34 PD Action (payload JSON y response actions openDirectTab/refreshGrid)",
+        "§29 — 3 vistas árbol (risk de performance sin lazy loading en árbol de cuentas)"
+      ]
+    }
+  }
+}

@@ -190,7 +190,7 @@ def generate_gradle_properties(
     lines += [
         f"githubUser={github_user}",
         f"githubToken={github_token}",
-        "org.gradle.jvmargs=-Xmx6g -Dfile.encoding=UTF-8",
+        "org.gradle.jvmargs=-Xmx16g -Dfile.encoding=UTF-8",
         "org.gradle.daemon=false",
     ]
     return "\n".join(lines) + "\n"
@@ -477,7 +477,7 @@ def expand_baseline(
         # each task gets its own 'yes Y' pipe for interactive confirmations.
         # GRADLE_OPTS sets heap for the Gradle client process (not the daemon).
         env = os.environ.copy()
-        env["GRADLE_OPTS"] = "-Xmx6g -Dfile.encoding=UTF-8"
+        env["GRADLE_OPTS"] = "-Xmx16g -Dfile.encoding=UTF-8"
         info_flag = " --info" if verbose else ""
 
         for task in ("expandCore", "expandModules"):
