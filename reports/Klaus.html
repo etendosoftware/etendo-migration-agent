@@ -263,7 +263,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       <div class="meta-item"><span>Plataforma </span><strong>Etendo 25.2.7</strong></div>
       <div class="meta-item"><span>Base de comparación </span><strong>vexpanded</strong></div>
       <div class="meta-item"><span>Módulos totales </span><strong>161</strong></div>
-      <div class="meta-item"><span>Generado </span><strong>2026-04-27 14:15</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-04-27 14:24</strong></div>
     </div>
   </div>
 
@@ -2708,7 +2708,7 @@ Variegate System Sdn Bhd.</span>
     <h2>🔬 Análisis de Customizaciones</h2>
     <p class="asmnt-meta">
       Generado por <strong>etendo-custom-assessor v2.0</strong>
-      · 2026-04-27 
+      · 2026-04-27 <span class="asmnt-mx-tag">📊 Mixpanel: <strong>Klaus</strong> / últimos 90 días</span>
     </p>
     
       <div class="asmnt-section-label">1 · Modificaciones al Core</div>
@@ -2785,15 +2785,20 @@ Variegate System Sdn Bhd.</span>
           <th>Recomendación</th>
         </tr></thead>
         <tbody>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>com.etendoerp.klaus.customization.template</strong> 
+              <strong>com.etendoerp.klaus.customization.template</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Módulo de plantilla que marca como solo-lectura 9 campos específicos del Diccionario de Aplicación mediante configScript.xml. No contiene código Java ni lógica de negocio; solo aplica ajustes de configuración AD (ISREADONLY=Y en 9 AD_FIELD).</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Específico cliente</span></td>
             <td><span class="asmnt-badge asmnt-trivial">Trivial</span></td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Mantener como módulo de configuración del cliente. Para migración SaaS, evaluar si los campos afectados deben configurarse como read-only a nivel de rol en lugar de a nivel de módulo, lo que permitiría mayor flexibilidad sin personalización de código.</td>
           </tr></tbody>
@@ -2817,19 +2822,29 @@ Variegate System Sdn Bhd.</span>
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">16h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Evaluar si los informes de Financial Reports Advanced o Analytical Accounting cubren esta funcionalidad. Si no, reimplementar como Process Definition Report (Jasper/PDF). Candidato a bundle de informes financieros.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>it.extrasys.advmdm</strong> 
+              <strong>it.extrasys.advmdm</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Módulo contenedor/coordinador de dependencias para el ecosistema Extra S.r.l. Sin tablas, ventanas ni código Java propios. Actúa como módulo padre de declaración de dependencias.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
             <td class="asmnt-rec">Sin impacto funcional directo. Se elimina automáticamente si se eliminan los módulos it.extrasys.* que dependen de él.</td>
           </tr>
@@ -2841,67 +2856,97 @@ Variegate System Sdn Bhd.</span>
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">16h</span></td>
             <td class="asmnt-rec">Reescribir los 4 callouts usando SimpleCallout (patrón moderno soportado en Etendo 25.x). La funcionalidad de bloqueo de clientes es generalizable: candidato a bundle oficial 'Customer Credit Control'.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>it.extrasys.product</strong> 
+              <strong>it.extrasys.product</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Añade una entidad 'Product Group' (tabla PRDC_PRODUCTGROUP) que permite clasificar productos en grupos adicionales más allá de la categoría estándar. Incluye ventana de mantenimiento y campo extra en la ventana de Producto (EM_Prdc_Productgroup_ID).</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Verificar si la categoría de producto estándar o un campo personalizado en el módulo de configuración del cliente puede sustituir esta clasificación. Si se mantiene, sin cambios de código necesarios.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>it.extrasys.utility</strong> 
+              <strong>it.extrasys.utility</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Librería de utilidades compartidas para los módulos it.extrasys.*. Incluye: generación de links OB.Utilities.openView (JavaScript Classic UI), callout utilities con patrón MockHttpServletResponse, gestión de secuencias documentales via stored procedure, e impresión de documentos (facturas, pedidos, albaranes) en idioma del tercero.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">24h</span></td><td><span class="asmnt-effort asmnt-effort-saas">24h</span></td>
             <td class="asmnt-rec">Actualización significativa requerida: migrar log4j a SLF4J, reescribir callout utilities al patrón SimpleCallout. Los links generados con OB.Utilities.openView no funcionarán en la nueva UI; necesitan rediseño. Se recomienda evaluar si la funcionalidad de impresión por idioma del tercero puede reemplazarse con plantillas de impresión nativas de Etendo.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.onegolive.module.pdp</strong> 
+              <strong>org.onegolive.module.pdp</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Gestión de precios y costes de productos por proveedor. Añade tabla de precios/costes (PDP_Precio_Coste_Productos) con ventana dedicada. Incluye callout de descuento en factura (PDP_InvoiceDiscount usando SimpleCallout).</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Verificar si el módulo de gestión de listas de precio de Etendo (Price Lists) o el módulo de compras avanzado cubre esta funcionalidad. El callout usa SimpleCallout (moderno), por lo que la migración técnica es de bajo esfuerzo.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.acctTab</strong> 
+              <strong>org.openbravo.acctTab</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Añade una pestaña de 'Asientos Contables' a ventanas de transacción que no la tienen por defecto, permitiendo ver las entradas contables (Fact_Acct) generadas por el documento.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Verificar si el bundle Financial Extensions (ya instalado como gradle_source) provee la pestaña de contabilidad. Si es así, este módulo es redundante y puede eliminarse.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.client.widgets.materialManagement</strong> 
+              <strong>org.openbravo.client.widgets.materialManagement</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Widgets de dashboard (Workspace) para gestión de materiales: visualización de stock, movimientos, y alertas de inventario en el panel de inicio de Openbravo.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Eliminar. La infraestructura de widgets del Workspace no está implementada en la nueva UI de Etendo. Si se necesita visibilidad de stock, reimplementar como pantalla/reporte nativo de React.</td>
           </tr>
@@ -2913,115 +2958,165 @@ Variegate System Sdn Bhd.</span>
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">20h</span></td>
             <td class="asmnt-rec">Alto riesgo: el AD_FORM de facturación masiva no funcionará en la nueva UI. Evaluar reimplementación como Process Definition (PD Action) con parámetros y grid de selección, o mantener via iframe con Classic UI activo. Si el cliente usa activamente esta funcionalidad, es un bloqueador de migración a la nueva UI.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.idl</strong> 
+              <strong>org.openbravo.idl</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Herramienta de carga inicial de datos que permite definir entidades, campos y mapeos para importar datos desde archivos externos (CSV, XML) al sistema Etendo. Incluye un AD_FORM para el proceso de importación.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
             <td class="asmnt-rec">Verificar si el módulo se usa activamente para importaciones recurrentes. Si solo se usó en la implementación inicial, puede desactivarse sin impacto. Migrar procesos de carga de datos a la API REST de Etendo o módulo de importación nativo.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.legacy.axis</strong> 
+              <strong>org.openbravo.legacy.axis</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Librería de compatibilidad para servicios web SOAP basada en Apache Axis (framework legacy). Proporciona soporte para integración con sistemas externos vía SOAP/WSDL.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Eliminar si no hay integraciones activas que dependen de SOAP/Axis. En Java 17, Apache Axis v1 no es compatible. Las integraciones modernas deben usar la API REST de Etendo.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.module.aeat340.es</strong> 
+              <strong>org.openbravo.module.aeat340.es</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Informe fiscal español Modelo 340 (Declaración informativa de operaciones incluidas en los libros registro). Este modelo fue suspendido por la AEAT en 2014 y reemplazado por el SII.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Eliminar. El Modelo 340 fue suspendido por la AEAT en 2014 para empresas en SII. El cliente ya tiene el módulo SII instalado.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.module.cuaderno19.es</strong> 
+              <strong>org.openbravo.module.cuaderno19.es</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Generación de ficheros bancarios en formato Cuaderno 19 AEB (adeudos domiciliados directos, débito en cuenta). Permite exportar remesas de cobros domiciliados en el formato bancario español pre-SEPA.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">El cliente ya tiene el módulo SEPA Direct Debit instalado. Verificar si sigue enviando remesas en formato Cuaderno 19 (ya obsoleto) o ha migrado a SEPA. Si usa SEPA, eliminar.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.module.cuaderno34.es</strong> 
+              <strong>org.openbravo.module.cuaderno34.es</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Generación de ficheros bancarios en formato Cuaderno 34 AEB (órdenes de transferencia bancaria, créditos en cuenta). Formato bancario español pre-SEPA para transferencias.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Mismo caso que Cuaderno 19. Si el cliente usa SEPA Credit Transfer (ya instalado), este módulo es redundante. Verificar y eliminar si es el caso.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.module.cuaderno58.es</strong> 
+              <strong>org.openbravo.module.cuaderno58.es</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Generación de ficheros bancarios en formato Cuaderno 58 AEB (gestión de efectos — pagarés, letras de cambio). Formato específico para efectos comerciales domiciliados.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">El Cuaderno 58 para efectos comerciales no tiene equivalente SEPA directo. Verificar si el cliente sigue usando pagarés/letras. Si es así, este módulo es un riesgo de migración que requiere evaluación con el banco del cliente.</td>
           </tr>
-          <tr class=" asmnt-row-med">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.module.idljava</strong> 
+              <strong>org.openbravo.module.idljava</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Extensión del módulo IDL que añade soporte para implementaciones de carga de datos en Java (permite escribir transformaciones personalizadas en código Java en lugar de solo reglas de mapeo declarativas).</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Sigue la suerte del módulo IDL padre. Si IDL se elimina, este también.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.module.invoicesregisterbook.estaxes.2011</strong> 
+              <strong>org.openbravo.module.invoicesregisterbook.estaxes.2011</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Datos de referencia de configuración de impuestos españoles para el libro de registro de facturas, formato 2011.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
             <td class="asmnt-rec">Datos de referencia desactualizados (2011). Verificar si los tipos impositivos vigentes están configurados en el módulo de localización España actual.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.module.invoicesregisterbook.estaxes.2012</strong> 
+              <strong>org.openbravo.module.invoicesregisterbook.estaxes.2012</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Datos de referencia de configuración de impuestos españoles para el libro de registro de facturas, formato 2012.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
             <td class="asmnt-rec">Mismo caso que 2011. Datos desactualizados.</td>
           </tr>
@@ -3033,7 +3128,12 @@ Variegate System Sdn Bhd.</span>
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">24h</span></td><td><span class="asmnt-effort asmnt-effort-saas">24h</span></td>
             <td class="asmnt-rec">Módulo crítico para operaciones bancarias SEPA. Sin este módulo, los módulos de Direct Debit y Credit Transfer no funcionan. No tiene reemplazo oficial en Etendo 25.x. Requiere actualización a jakarta.xml.soap y posible fork/mantenimiento. Candidato prioritario para bundle oficial de Etendo Spain Banking.</td>
           </tr>
@@ -3045,7 +3145,12 @@ Variegate System Sdn Bhd.</span>
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">12h</span></td><td><span class="asmnt-effort asmnt-effort-saas">12h</span></td>
             <td class="asmnt-rec">Funcionalidad bancaria crítica si el cliente usa domiciliaciones. Requiere que el SEPA Framework esté actualizado primero. Sin reemplazo oficial. Bundle banking candidate.</td>
           </tr>
@@ -3057,31 +3162,46 @@ Variegate System Sdn Bhd.</span>
             </td>
             <td><span class="asmnt-badge asmnt-major">High</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">12h</span></td><td><span class="asmnt-effort asmnt-effort-saas">12h</span></td>
             <td class="asmnt-rec">Igual que Direct Debit. Crítico si el cliente realiza pagos bancarios SEPA. Bundle banking candidate.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.util.javax.xml.soap</strong> 
+              <strong>org.openbravo.util.javax.xml.soap</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Wrapper de compatibilidad que provee la librería javax.xml.soap (SAAJ) para módulos que dependen de la API SOAP de Java EE. Necesario en Java 11+ donde javax.xml.soap fue removida del JDK.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Verificar si algún módulo activo aún depende de javax.xml.soap. El módulo SII ya migró a jakarta.xml.soap. Si no hay dependencias activas, eliminar para evitar conflictos de classpath en Java 17.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>org.openbravo.utility.opencsv</strong> 
+              <strong>org.openbravo.utility.opencsv</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Wrapper del módulo OpenCSV (librería Java para parseo de archivos CSV). Necesario en versiones antiguas donde OpenCSV no estaba incluido en el core de Etendo.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">✅</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
             <td class="asmnt-rec">Verificar si OpenCSV ya está disponible como dependencia de Gradle en Etendo 25.x. Si es así, eliminar este wrapper para evitar duplicaciones de classpath.</td>
           </tr>
@@ -3089,11 +3209,16 @@ Variegate System Sdn Bhd.</span>
             <td>
               <strong>com.etendoerp.analytics.exporter</strong> 
               <div class="asmnt-desc">Módulo de Futit Services que exporta datos de uso y sincronización de analíticas a un servicio receptor configurable. Incluye proceso de sincronización en background y ventana de configuración de sincronizaciones.</div>
-              
+              <div class="win-group"><span class="win-tag win-used">Analytics Synchronization</span></div>
             </td>
             <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Módulo de Futit no publicado en el catálogo oficial. Verificar si sigue activo y siendo mantenido. Si el cliente tiene Mixpanel configurado, este módulo puede estar relacionado con el envío de eventos. Contactar con Futit para obtener versión actualizada compatible con Etendo 25.x.</td>
           </tr>
@@ -3105,19 +3230,29 @@ Variegate System Sdn Bhd.</span>
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Módulo de GPS (Openbravo partner) sin código Java. Solo AD configuration. Bajo riesgo técnico. Verificar si la nueva UI de Etendo incluye visibilidad del historial de correos enviados.</td>
           </tr>
-          <tr class="">
+          <tr class="asmnt-row-elim">
             <td>
-              <strong>com.openbravo.gps.somequerywidgets</strong> 
+              <strong>com.openbravo.gps.somequerywidgets</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
               <div class="asmnt-desc">Widgets de dashboard que muestran listas de contactos y terceros mediante consultas HQL configurables (OBCQL_WIDGET_QUERY). Versión 0.0.1 — nunca llegó a versión estable.</div>
               
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
             <td class="asmnt-rec">Eliminar. Versión 0.0.1 (nunca estable), y la infraestructura de widgets del Workspace no está implementada en la nueva UI de Etendo.</td>
           </tr>
@@ -3129,7 +3264,12 @@ Variegate System Sdn Bhd.</span>
             </td>
             <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
             <td style="text-align:center;font-size:14px">❌</td>
-            <td><span style="color:#d1d5db;font-size:11px;">—</span></td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
             <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
             <td class="asmnt-rec">Informe de negocio útil y genérico. Sin código Java, solo Process R&P legacy. Verificar si los Informes Avanzados de Financial Extensions o algún report de Jasper cubre esta funcionalidad. Candidato para bundle de Reports.</td>
           </tr></tbody>
@@ -3966,7 +4106,7 @@ Variegate System Sdn Bhd.</span>
 </div>
 </div>
 
-  <div class="footer">Generado por Etendo Migration Agent · 2026-04-27 14:15</div>
+  <div class="footer">Generado por Etendo Migration Agent · 2026-04-27 14:24</div>
 </div>
 <script>
 function toggle(header) {

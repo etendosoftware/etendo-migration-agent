@@ -13,6 +13,7 @@
     "Gloria Pets",
     "Guaguas Municipales",
     "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+    "Klaus",
     "Luján Agrícola",
     "MDF",
     "Montblanc",
@@ -31,7 +32,7 @@
       "title": "Botones hardcoded (DocAction + Posted + CreateFrom) — agregado para scoring",
       "status": "PARCIAL",
       "completion_pct": 35,
-      "portfolio_score": 80,
+      "portfolio_score": 84,
       "clients_critica": [
         "Acico",
         "Albastar",
@@ -44,6 +45,7 @@
         "Fueltruck",
         "Gloria Pets",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "Luján Agrícola",
         "MDF",
         "Montblanc",
@@ -60,7 +62,7 @@
         "Albastar",
         "ladypipa.com"
       ],
-      "total_affected": 23,
+      "total_affected": 24,
       "avg_ad_count": 59
     },
     {
@@ -68,7 +70,7 @@
       "title": "Display Logic (visibilidad dinámica de campos)",
       "status": "BUG ACTIVO",
       "completion_pct": 50,
-      "portfolio_score": 72,
+      "portfolio_score": 76,
       "clients_critica": [
         "Acico",
         "Albastar",
@@ -79,6 +81,7 @@
         "Fueltruck",
         "Gloria Pets",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "Luján Agrícola",
         "MDF",
         "Montblanc",
@@ -91,15 +94,15 @@
       ],
       "clients_alta": [],
       "clients_media": [],
-      "total_affected": 19,
-      "avg_ad_count": 2862
+      "total_affected": 20,
+      "avg_ad_count": 2840
     },
     {
       "section": "18",
       "title": "AD Forms (formularios especiales)",
       "status": "NOT DONE",
       "completion_pct": 5,
-      "portfolio_score": 52,
+      "portfolio_score": 56,
       "clients_critica": [
         "Albastar",
         "Bed4U",
@@ -109,6 +112,7 @@
         "Fueltruck",
         "Gloria Pets",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "MDF",
         "Montblanc",
         "MyPime Supermix Pucara",
@@ -117,48 +121,15 @@
       ],
       "clients_alta": [],
       "clients_media": [],
-      "total_affected": 13,
+      "total_affected": 14,
       "avg_ad_count": 30
-    },
-    {
-      "section": "26",
-      "title": "Filtros por Defecto de Tab (HQLFILTERCLAUSE)",
-      "status": "NOT DONE",
-      "completion_pct": 0,
-      "portfolio_score": 48,
-      "clients_critica": [
-        "Acico",
-        "Bed4U",
-        "Bercaber",
-        "Cerveceria",
-        "MDF",
-        "NEXE",
-        "Pazo Pondal S.L."
-      ],
-      "clients_alta": [
-        "Albastar",
-        "Fueltruck",
-        "Gloria Pets",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "Luján Agrícola",
-        "Montblanc",
-        "MyPime Supermix Pucara",
-        "Opengy",
-        "Regalador"
-      ],
-      "clients_media": [
-        "Depique",
-        "ladypipa.com"
-      ],
-      "total_affected": 18,
-      "avg_ad_count": 133
     },
     {
       "section": "1.4",
       "title": "Ventanas Pick and Execute (OBUIAPP_PickAndExecute)",
       "status": "PARCIAL",
       "completion_pct": 55,
-      "portfolio_score": 48,
+      "portfolio_score": 52,
       "clients_critica": [
         "Acico",
         "Albastar",
@@ -166,6 +137,7 @@
         "Fueltruck",
         "Gloria Pets",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "Luján Agrícola",
         "MDF"
       ],
@@ -182,21 +154,56 @@
         "Opengy",
         "Regalador"
       ],
-      "total_affected": 18,
-      "avg_ad_count": 74
+      "total_affected": 19,
+      "avg_ad_count": 73
+    },
+    {
+      "section": "26",
+      "title": "Filtros por Defecto de Tab (HQLFILTERCLAUSE)",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 50,
+      "clients_critica": [
+        "Acico",
+        "Bed4U",
+        "Bercaber",
+        "Cerveceria",
+        "MDF",
+        "NEXE",
+        "Pazo Pondal S.L."
+      ],
+      "clients_alta": [
+        "Albastar",
+        "Fueltruck",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
+        "Luján Agrícola",
+        "Montblanc",
+        "MyPime Supermix Pucara",
+        "Opengy",
+        "Regalador"
+      ],
+      "clients_media": [
+        "Depique",
+        "ladypipa.com"
+      ],
+      "total_affected": 19,
+      "avg_ad_count": 128
     },
     {
       "section": "1.2",
       "title": "Ventanas tipo Transaction (T)",
       "status": "TO CHECK",
       "completion_pct": 72,
-      "portfolio_score": 44,
+      "portfolio_score": 48,
       "clients_critica": [
         "Acico",
         "Bed4U",
         "Bercaber",
         "Cerveceria",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "NEXE"
       ],
       "clients_alta": [
@@ -215,7 +222,7 @@
         "Pazo Pondal S.L.",
         "ladypipa.com"
       ],
-      "total_affected": 19,
+      "total_affected": 20,
       "avg_ad_count": 40
     },
     {
@@ -223,11 +230,12 @@
       "title": "Valores por Defecto de Columnas",
       "status": "PARCIAL",
       "completion_pct": 45,
-      "portfolio_score": 42,
+      "portfolio_score": 46,
       "clients_critica": [
         "Acico",
         "Albastar",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "MDF",
         "Pazo Pondal S.L.",
         "ladypipa.com"
@@ -244,20 +252,21 @@
         "Regalador"
       ],
       "clients_media": [],
-      "total_affected": 15,
-      "avg_ad_count": 4327
+      "total_affected": 16,
+      "avg_ad_count": 4333
     },
     {
       "section": "21",
       "title": "Workspace / Dashboard (My Etendo)",
       "status": "NOT DONE",
       "completion_pct": 5,
-      "portfolio_score": 36,
+      "portfolio_score": 40,
       "clients_critica": [
         "Acico",
         "Bed4U",
         "Bercaber",
         "Depique",
+        "Klaus",
         "MDF",
         "MyPime Supermix Pucara",
         "Opengy",
@@ -270,7 +279,7 @@
         "Gloria Pets",
         "Montblanc"
       ],
-      "total_affected": 12,
+      "total_affected": 13,
       "avg_ad_count": 34
     },
     {
@@ -278,7 +287,7 @@
       "title": "Selectores y campos FK (OBUISEL_Selector)",
       "status": "TO CHECK",
       "completion_pct": 65,
-      "portfolio_score": 36,
+      "portfolio_score": 38,
       "clients_critica": [
         "Cerveceria",
         "Depique",
@@ -292,6 +301,7 @@
         "Bercaber",
         "Fueltruck",
         "Gloria Pets",
+        "Klaus",
         "NEXE",
         "Opengy",
         "Regalador"
@@ -300,15 +310,15 @@
         "MDF",
         "Pazo Pondal S.L."
       ],
-      "total_affected": 16,
-      "avg_ad_count": 303
+      "total_affected": 17,
+      "avg_ad_count": 294
     },
     {
       "section": "5",
       "title": "Comportamientos de Tab (SR, RO, ED, display logic)",
       "status": "TO CHECK",
       "completion_pct": 65,
-      "portfolio_score": 32,
+      "portfolio_score": 34,
       "clients_critica": [
         "Albastar",
         "Bed4U",
@@ -320,6 +330,7 @@
         "Depique",
         "Gloria Pets",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "Luján Agrícola"
       ],
       "clients_media": [
@@ -332,15 +343,15 @@
         "Regalador",
         "ladypipa.com"
       ],
-      "total_affected": 17,
-      "avg_ad_count": 421
+      "total_affected": 18,
+      "avg_ad_count": 400
     },
     {
       "section": "6",
       "title": "Callouts (lógica de negocio en cambio de campo)",
       "status": "TO CHECK",
       "completion_pct": 60,
-      "portfolio_score": 30,
+      "portfolio_score": 32,
       "clients_critica": [
         "Depique"
       ],
@@ -351,6 +362,7 @@
         "Bercaber",
         "Cerveceria",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "Luján Agrícola",
         "NEXE",
         "Opengy",
@@ -364,8 +376,8 @@
         "MyPime Supermix Pucara",
         "Pazo Pondal S.L."
       ],
-      "total_affected": 18,
-      "avg_ad_count": 150
+      "total_affected": 19,
+      "avg_ad_count": 148
     },
     {
       "section": "3.B.2",
@@ -386,6 +398,30 @@
       "clients_media": [],
       "total_affected": 7,
       "avg_ad_count": 22
+    },
+    {
+      "section": "3",
+      "title": "Procesos (todos los tipos) — agregado para scoring",
+      "status": "PARCIAL",
+      "completion_pct": 50,
+      "portfolio_score": 28,
+      "clients_critica": [
+        "Acico",
+        "Cerveceria",
+        "Klaus",
+        "MDF"
+      ],
+      "clients_alta": [
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "NEXE"
+      ],
+      "clients_media": [],
+      "total_affected": 11,
+      "avg_ad_count": 349
     },
     {
       "section": "2",
@@ -417,34 +453,11 @@
       "avg_ad_count": 354
     },
     {
-      "section": "3",
-      "title": "Procesos (todos los tipos) — agregado para scoring",
-      "status": "PARCIAL",
-      "completion_pct": 50,
-      "portfolio_score": 24,
-      "clients_critica": [
-        "Acico",
-        "Cerveceria",
-        "MDF"
-      ],
-      "clients_alta": [
-        "Bed4U",
-        "Bercaber",
-        "Depique",
-        "Gloria Pets",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "NEXE"
-      ],
-      "clients_media": [],
-      "total_affected": 10,
-      "avg_ad_count": 371
-    },
-    {
       "section": "1.1",
       "title": "Ventanas tipo Maintain (M)",
       "status": "TO CHECK",
       "completion_pct": 75,
-      "portfolio_score": 24,
+      "portfolio_score": 26,
       "clients_critica": [
         "Cerveceria"
       ],
@@ -452,6 +465,7 @@
         "Acico",
         "Depique",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "Luján Agrícola"
       ],
       "clients_media": [
@@ -468,26 +482,53 @@
         "Regalador",
         "ladypipa.com"
       ],
-      "total_affected": 18,
-      "avg_ad_count": 302
+      "total_affected": 19,
+      "avg_ad_count": 299
     },
     {
       "section": "3b",
       "title": "Legacy Processes & Reports (AD_PROCESS)",
       "status": "PARCIAL",
       "completion_pct": 25,
-      "portfolio_score": 20,
+      "portfolio_score": 24,
       "clients_critica": [
         "Cerveceria",
         "Depique",
         "Gloria Pets",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "MDF"
       ],
       "clients_alta": [],
       "clients_media": [],
-      "total_affected": 5,
-      "avg_ad_count": 378
+      "total_affected": 6,
+      "avg_ad_count": 373
+    },
+    {
+      "section": "14",
+      "title": "ReadOnly Logic (lógica de solo lectura por campo)",
+      "status": "TO CHECK",
+      "completion_pct": 60,
+      "portfolio_score": 22,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico",
+        "Bed4U",
+        "Bercaber",
+        "Cerveceria",
+        "Fueltruck",
+        "Gloria Pets",
+        "Klaus",
+        "MDF",
+        "Opengy",
+        "Regalador"
+      ],
+      "clients_media": [
+        "MyPime Supermix Pucara",
+        "ladypipa.com"
+      ],
+      "total_affected": 13,
+      "avg_ad_count": 274
     },
     {
       "section": "3.A.2c",
@@ -508,29 +549,55 @@
       "avg_ad_count": 236
     },
     {
-      "section": "14",
-      "title": "ReadOnly Logic (lógica de solo lectura por campo)",
+      "section": "7",
+      "title": "Máquina de estados de documento",
       "status": "TO CHECK",
-      "completion_pct": 60,
+      "completion_pct": 70,
+      "portfolio_score": 20,
+      "clients_critica": [
+        "Bed4U",
+        "Bercaber",
+        "Cerveceria"
+      ],
+      "clients_alta": [
+        "Acico",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus"
+      ],
+      "clients_media": [
+        "Fueltruck",
+        "Luján Agrícola"
+      ],
+      "total_affected": 8,
+      "avg_ad_count": 70
+    },
+    {
+      "section": "23",
+      "title": "Status Bar (barra de estado)",
+      "status": "TO CHECK",
+      "completion_pct": 70,
       "portfolio_score": 20,
       "clients_critica": [],
       "clients_alta": [
-        "Acico",
         "Bed4U",
         "Bercaber",
         "Cerveceria",
-        "Fueltruck",
-        "Gloria Pets",
-        "MDF",
-        "Opengy",
-        "Regalador"
+        "Depique",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus"
       ],
       "clients_media": [
+        "Albastar",
+        "Gloria Pets",
+        "MDF",
         "MyPime Supermix Pucara",
+        "Opengy",
+        "Pazo Pondal S.L.",
+        "Regalador",
         "ladypipa.com"
       ],
-      "total_affected": 12,
-      "avg_ad_count": 289
+      "total_affected": 15,
+      "avg_ad_count": 233
     },
     {
       "section": "3.A.2",
@@ -554,43 +621,21 @@
       "avg_ad_count": 116
     },
     {
-      "section": "7",
-      "title": "Máquina de estados de documento",
+      "section": "22",
+      "title": "Field Groups (secciones colapsables)",
       "status": "TO CHECK",
-      "completion_pct": 70,
-      "portfolio_score": 18,
-      "clients_critica": [
-        "Bed4U",
-        "Bercaber",
-        "Cerveceria"
-      ],
-      "clients_alta": [
-        "Acico",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
-      ],
-      "clients_media": [
-        "Fueltruck",
-        "Luján Agrícola"
-      ],
-      "total_affected": 7,
-      "avg_ad_count": 75
-    },
-    {
-      "section": "23",
-      "title": "Status Bar (barra de estado)",
-      "status": "TO CHECK",
-      "completion_pct": 70,
-      "portfolio_score": 18,
+      "completion_pct": 60,
+      "portfolio_score": 16,
       "clients_critica": [],
       "clients_alta": [
-        "Bed4U",
-        "Bercaber",
         "Cerveceria",
-        "Depique",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus"
       ],
       "clients_media": [
         "Albastar",
+        "Bed4U",
+        "Bercaber",
         "Gloria Pets",
         "MDF",
         "MyPime Supermix Pucara",
@@ -600,40 +645,14 @@
         "ladypipa.com"
       ],
       "total_affected": 14,
-      "avg_ad_count": 232
-    },
-    {
-      "section": "22",
-      "title": "Field Groups (secciones colapsables)",
-      "status": "TO CHECK",
-      "completion_pct": 60,
-      "portfolio_score": 14,
-      "clients_critica": [],
-      "clients_alta": [
-        "Cerveceria",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
-      ],
-      "clients_media": [
-        "Albastar",
-        "Bed4U",
-        "Bercaber",
-        "Gloria Pets",
-        "MDF",
-        "MyPime Supermix Pucara",
-        "Opengy",
-        "Pazo Pondal S.L.",
-        "Regalador",
-        "ladypipa.com"
-      ],
-      "total_affected": 13,
-      "avg_ad_count": 1866
+      "avg_ad_count": 1842
     },
     {
       "section": "9",
       "title": "Comportamientos del grid/lista",
       "status": "TO CHECK",
       "completion_pct": 68,
-      "portfolio_score": 13,
+      "portfolio_score": 14,
       "clients_critica": [],
       "clients_alta": [
         "Acico",
@@ -645,12 +664,13 @@
         "Fueltruck",
         "Gloria Pets",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "MDF",
         "MyPime Supermix Pucara",
         "Pazo Pondal S.L.",
         "ladypipa.com"
       ],
-      "total_affected": 11,
+      "total_affected": 12,
       "avg_ad_count": 504
     },
     {
@@ -658,7 +678,7 @@
       "title": "Ventanas tipo Query/Info (Q)",
       "status": "TO CHECK",
       "completion_pct": 75,
-      "portfolio_score": 13,
+      "portfolio_score": 14,
       "clients_critica": [],
       "clients_alta": [
         "Cerveceria"
@@ -671,13 +691,38 @@
         "Depique",
         "Gloria Pets",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "Luján Agrícola",
         "MDF",
         "Pazo Pondal S.L.",
         "ladypipa.com"
       ],
-      "total_affected": 15,
+      "total_affected": 16,
       "avg_ad_count": 9
+    },
+    {
+      "section": "10",
+      "title": "Funcionalidades transversales (cross-cutting)",
+      "status": "TO CHECK",
+      "completion_pct": 73,
+      "portfolio_score": 13,
+      "clients_critica": [],
+      "clients_alta": [
+        "Cerveceria",
+        "Depique",
+        "Klaus"
+      ],
+      "clients_media": [
+        "Albastar",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "MDF",
+        "MyPime Supermix Pucara",
+        "Pazo Pondal S.L.",
+        "ladypipa.com"
+      ],
+      "total_affected": 10,
+      "avg_ad_count": 2016
     },
     {
       "section": "2.B.2",
@@ -696,27 +741,52 @@
       "avg_ad_count": 135
     },
     {
-      "section": "10",
-      "title": "Funcionalidades transversales (cross-cutting)",
+      "section": "29",
+      "title": "Tree views",
       "status": "TO CHECK",
-      "completion_pct": 73,
+      "completion_pct": 40,
+      "portfolio_score": 11,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Bed4U",
+        "Bercaber",
+        "Cerveceria",
+        "Depique",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
+        "MDF",
+        "Opengy",
+        "Pazo Pondal S.L.",
+        "Regalador"
+      ],
+      "total_affected": 11,
+      "avg_ad_count": 2
+    },
+    {
+      "section": "12",
+      "title": "Navigation and application structure",
+      "status": "TO CHECK",
+      "completion_pct": 72,
       "portfolio_score": 11,
       "clients_critica": [],
       "clients_alta": [
-        "Cerveceria",
-        "Depique"
+        "Cerveceria"
       ],
       "clients_media": [
-        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Depique",
         "Gloria Pets",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
         "MDF",
         "MyPime Supermix Pucara",
-        "Pazo Pondal S.L.",
         "ladypipa.com"
       ],
-      "total_affected": 9,
-      "avg_ad_count": 2140
+      "total_affected": 10,
+      "avg_ad_count": 565
     },
     {
       "section": "33",
@@ -739,29 +809,6 @@
       "avg_ad_count": 668
     },
     {
-      "section": "29",
-      "title": "Tree views",
-      "status": "TO CHECK",
-      "completion_pct": 40,
-      "portfolio_score": 10,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "Bed4U",
-        "Bercaber",
-        "Cerveceria",
-        "Depique",
-        "Gloria Pets",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "MDF",
-        "Opengy",
-        "Pazo Pondal S.L.",
-        "Regalador"
-      ],
-      "total_affected": 10,
-      "avg_ad_count": 2
-    },
-    {
       "section": "3.A.2a",
       "title": "Reports legacy HTML (ISREPORT=Y)",
       "status": "PARCIAL",
@@ -778,29 +825,6 @@
       ],
       "total_affected": 4,
       "avg_ad_count": 118
-    },
-    {
-      "section": "12",
-      "title": "Navigation and application structure",
-      "status": "TO CHECK",
-      "completion_pct": 72,
-      "portfolio_score": 10,
-      "clients_critica": [],
-      "clients_alta": [
-        "Cerveceria"
-      ],
-      "clients_media": [
-        "Bed4U",
-        "Bercaber",
-        "Depique",
-        "Gloria Pets",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "MDF",
-        "MyPime Supermix Pucara",
-        "ladypipa.com"
-      ],
-      "total_affected": 9,
-      "avg_ad_count": 571
     },
     {
       "section": "3.B.1",
@@ -1317,6 +1341,20 @@
       "avg_ad_count": 14
     },
     {
+      "section": "31",
+      "title": "Data import system",
+      "status": "NO IMPLEMENTADO",
+      "completion_pct": 20,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Klaus"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 1
+    },
+    {
       "section": "2.ref_parcial",
       "title": "Reference Types — Tipos PARCIAL/NOT DONE presentes",
       "status": "PARCIAL",
@@ -1467,18 +1505,6 @@
       "avg_ad_count": 0
     },
     {
-      "section": "31",
-      "title": "Data import system",
-      "status": "NO IMPLEMENTADO",
-      "completion_pct": 20,
-      "portfolio_score": 0,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 0,
-      "avg_ad_count": 0
-    },
-    {
       "section": "30",
       "title": "Grouping in grid",
       "status": "TO CHECK",
@@ -1601,6 +1627,12 @@
       "global_status": "blocked"
     },
     {
+      "slug": "Klaus",
+      "name": "Klaus",
+      "ui_score": 88,
+      "global_status": "blocked"
+    },
+    {
       "slug": "Luján Agrícola",
       "name": "Luján Agrícola",
       "ui_score": 88,
@@ -1672,6 +1704,7 @@
         "Depique",
         "Enertis",
         "Fueltruck",
+        "Klaus",
         "MDF",
         "Montblanc",
         "MyPime Supermix Pucara",
@@ -1680,12 +1713,13 @@
         "VdShop",
         "ladypipa.com"
       ],
-      "client_count": 12,
+      "client_count": 13,
       "max_risk": "high",
       "has_replacement": false,
       "official_replacement_name": "EtendoRX Connectors / com.etendoerp.etendorx",
       "generalization": "client_specific",
       "api_changes": [
+        "AD_FORM no portado a React UI",
         "Apache Commons Lang 2→3",
         "Apache Commons Lang → lang3 — ya migrado",
         "Framework marcado como legacy en Etendo — riesgo de eliminación",
@@ -1704,9 +1738,9 @@
         "commons_lang_3",
         "java_17"
       ],
-      "avg_effort_update_hours": 10,
+      "avg_effort_update_hours": 9,
       "avg_effort_saas_hours": 9,
-      "priority_score": 36
+      "priority_score": 39
     },
     {
       "java_package": "org.openbravo.sepa.iso20022",
@@ -1718,6 +1752,7 @@
         "Enertis",
         "Fueltruck",
         "Guaguas Municipales",
+        "Klaus",
         "MDF",
         "Montblanc",
         "Pazo Pondal S.L.",
@@ -1725,12 +1760,13 @@
         "VdShop",
         "ladypipa.com"
       ],
-      "client_count": 11,
+      "client_count": 12,
       "max_risk": "high",
       "has_replacement": false,
       "official_replacement_name": "com.etendoerp.financial.extensions (Financial Extensions Bundle)",
       "generalization": "bundle_candidate",
       "api_changes": [
+        "Apache Commons Lang 2.6 → 3.17.0 (package migration)",
         "Apache Commons Lang 2→3",
         "Apache Commons Lang 2→3: likely uses StringUtils",
         "Apache Commons Lang → lang3 — ya migrado",
@@ -1749,11 +1785,49 @@
         "OpenCSV actualizado — verificar compatibilidad si el módulo lee ficheros CSV",
         "Removed javax.xml.soap → jakarta.xml.bind",
         "commons-lang → lang3",
+        "javax.xml.soap → jakarta.xml.soap (Java 17/Jakarta EE 9 migration — el cliente ya tiene org.openbravo.util.javax.xml.soap como shim)",
         "jaxb-runtime 3.0.2 API changes"
       ],
-      "avg_effort_update_hours": 15,
-      "avg_effort_saas_hours": 12,
-      "priority_score": 33
+      "avg_effort_update_hours": 16,
+      "avg_effort_saas_hours": 13,
+      "priority_score": 36
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+      "name": "SEPA ISO 20022 — Credit Transfer (cliente-a-banco)",
+      "function": "Generación de ficheros XML SEPA para transferencias bancarias (Credit Transfer PAIN.001). Estándar para pagos a proveedores en la zona SEPA.",
+      "clients": [
+        "Albastar",
+        "Cerveceria",
+        "Depique",
+        "Fueltruck",
+        "Klaus",
+        "MDF",
+        "Pazo Pondal S.L.",
+        "Regalador",
+        "VdShop",
+        "ladypipa.com"
+      ],
+      "client_count": 10,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.financial.extensions",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3",
+        "Apache Commons Lang → lang3 — ya migrado",
+        "Depende de SEPA Framework base — mismo riesgo",
+        "Dependiente del SEPA Framework (ver arriba)",
+        "Gradle 8.12.1",
+        "ISO 20022 PAIN.001 XML namespace changes",
+        "JAXB",
+        "Java 17",
+        "Java 17 mandatory",
+        "javax.xml → jakarta.xml"
+      ],
+      "avg_effort_update_hours": 10,
+      "avg_effort_saas_hours": 8,
+      "priority_score": 30
     },
     {
       "java_package": "org.openbravo.bankstatement.importer.generic.csv",
@@ -1795,41 +1869,6 @@
       "priority_score": 27
     },
     {
-      "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
-      "name": "SEPA ISO 20022 — Credit Transfer (cliente-a-banco)",
-      "function": "Generación de ficheros XML SEPA para transferencias bancarias (Credit Transfer PAIN.001). Estándar para pagos a proveedores en la zona SEPA.",
-      "clients": [
-        "Albastar",
-        "Cerveceria",
-        "Depique",
-        "Fueltruck",
-        "MDF",
-        "Pazo Pondal S.L.",
-        "Regalador",
-        "VdShop",
-        "ladypipa.com"
-      ],
-      "client_count": 9,
-      "max_risk": "high",
-      "has_replacement": false,
-      "official_replacement_name": "com.etendoerp.financial.extensions",
-      "generalization": "bundle_candidate",
-      "api_changes": [
-        "Apache Commons Lang 2→3",
-        "Apache Commons Lang → lang3 — ya migrado",
-        "Depende de SEPA Framework base — mismo riesgo",
-        "Gradle 8.12.1",
-        "ISO 20022 PAIN.001 XML namespace changes",
-        "JAXB",
-        "Java 17",
-        "Java 17 mandatory",
-        "javax.xml → jakarta.xml"
-      ],
-      "avg_effort_update_hours": 10,
-      "avg_effort_saas_hours": 8,
-      "priority_score": 27
-    },
-    {
       "java_package": "org.openbravo.module.aeat340.es",
       "name": "AEAT Modelo 340 Tax Report",
       "function": "Generates the Spanish AEAT Modelo 340 tax declaration (declaración informativa de operaciones incluidas en los libros registro del IVA). Note: Modelo 340 was superseded by SII in 2017 for large taxpayers.",
@@ -1837,13 +1876,14 @@
         "Acico",
         "Albastar",
         "Enertis",
+        "Klaus",
         "Montblanc",
         "Opengy",
         "Pazo Pondal S.L.",
         "Regalador",
         "VdShop"
       ],
-      "client_count": 8,
+      "client_count": 9,
       "max_risk": "high",
       "has_replacement": true,
       "official_replacement_name": "org.openbravo.module.sii (SII ya instalado)",
@@ -1858,9 +1898,9 @@
         "No maintainer: Openbravo SLU",
         "No maintainer: Openbravo SLU no longer maintains"
       ],
-      "avg_effort_update_hours": 9,
+      "avg_effort_update_hours": 8,
       "avg_effort_saas_hours": 5,
-      "priority_score": 24
+      "priority_score": 27
     },
     {
       "java_package": "org.openbravo.module.idljava",
@@ -1871,12 +1911,13 @@
         "Albastar",
         "Cerveceria",
         "Fueltruck",
+        "Klaus",
         "MDF",
         "Pazo Pondal S.L.",
         "VdShop",
         "ladypipa.com"
       ],
-      "client_count": 8,
+      "client_count": 9,
       "max_risk": "high",
       "has_replacement": false,
       "official_replacement_name": "EtendoRX Connectors",
@@ -1889,7 +1930,42 @@
       ],
       "avg_effort_update_hours": 5,
       "avg_effort_saas_hours": 4,
-      "priority_score": 24
+      "priority_score": 27
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+      "name": "SEPA ISO 20022 — Direct Debit (cliente-a-banco)",
+      "function": "Generación de ficheros XML SEPA para domiciliación bancaria (adeudo directo SEPA core). Estándar actual para cobros por domiciliación en la zona SEPA.",
+      "clients": [
+        "Albastar",
+        "Cerveceria",
+        "Fueltruck",
+        "Klaus",
+        "MDF",
+        "Pazo Pondal S.L.",
+        "Regalador",
+        "VdShop",
+        "ladypipa.com"
+      ],
+      "client_count": 9,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.financial.extensions",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3",
+        "Apache Commons Lang → lang3 — ya migrado",
+        "Depende de SEPA Framework base",
+        "Dependiente del SEPA Framework (ver arriba)",
+        "ISO 20022 XML namespace evolution",
+        "JAXB",
+        "Java 17",
+        "Java 17 mandatory",
+        "javax.xml → jakarta.xml"
+      ],
+      "avg_effort_update_hours": 10,
+      "avg_effort_saas_hours": 9,
+      "priority_score": 27
     },
     {
       "java_package": "org.openbravo.module.invoicematchingalgorithm",
@@ -1925,37 +2001,73 @@
       "priority_score": 24
     },
     {
-      "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
-      "name": "SEPA ISO 20022 — Direct Debit (cliente-a-banco)",
-      "function": "Generación de ficheros XML SEPA para domiciliación bancaria (adeudo directo SEPA core). Estándar actual para cobros por domiciliación en la zona SEPA.",
+      "java_package": "com.etendoerp.analytics.exporter",
+      "name": "Analytics Exporter",
+      "function": "Módulo de Futit Services para exportar datos analíticos desde Etendo. Posiblemente exporta registros de AD a formatos de análisis externos.",
       "clients": [
         "Albastar",
         "Cerveceria",
         "Fueltruck",
+        "Guaguas Municipales",
+        "Klaus",
+        "MDF",
+        "MyPime Hercam",
+        "Pazo Pondal S.L.",
+        "Regalador",
+        "VdShop",
+        "ladypipa.com"
+      ],
+      "client_count": 11,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.analytics (versión actualizada)",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3",
+        "Java 17",
+        "Java 17 mandatory",
+        "Verificar compatibilidad con cambios de API en 25.4.x",
+        "commons-collections 3.2.2 → 4.4 (package rename si se usa)",
+        "commons-lang 2.6 → 3.x",
+        "commons-lang si se usa; API Etendo entre 1.1.1 y versión actual"
+      ],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 5,
+      "priority_score": 22
+    },
+    {
+      "java_package": "org.openbravo.utility.opencsv",
+      "name": "OpenCSV Library",
+      "function": "OpenCSV library wrapper for CSV parsing operations.",
+      "clients": [
+        "Acico",
+        "Albastar",
+        "Cerveceria",
+        "Enertis",
+        "Fueltruck",
+        "Klaus",
         "MDF",
         "Pazo Pondal S.L.",
         "Regalador",
         "VdShop",
         "ladypipa.com"
       ],
-      "client_count": 8,
-      "max_risk": "high",
-      "has_replacement": false,
-      "official_replacement_name": "com.etendoerp.financial.extensions",
-      "generalization": "bundle_candidate",
+      "client_count": 11,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "OpenCSV como dependencia Gradle directa",
+      "generalization": "redundant",
       "api_changes": [
-        "Apache Commons Lang 2→3",
-        "Apache Commons Lang → lang3 — ya migrado",
-        "Depende de SEPA Framework base",
-        "ISO 20022 XML namespace evolution",
-        "JAXB",
+        "Etendo 25 incluye OpenCSV 5.5.2 como dependencia Gradle — este wrapper es obsoleto",
         "Java 17",
-        "Java 17 mandatory",
-        "javax.xml → jakarta.xml"
+        "No maintainer",
+        "Old au.com.bytecode.opencsv API is incompatible with current com.opencsv",
+        "OpenCSV 5.5.2 ya resolvible vía Gradle en Etendo 25.x",
+        "opencsv 5.5.2 disponible en Maven Central; Etendo 25.1 no bundlea opencsv en la plataforma pero el módulo lo lleva"
       ],
-      "avg_effort_update_hours": 10,
-      "avg_effort_saas_hours": 8,
-      "priority_score": 24
+      "avg_effort_update_hours": 1,
+      "avg_effort_saas_hours": 1,
+      "priority_score": 22
     },
     {
       "java_package": "com.openbravo.gps.idl.invoices",
@@ -2025,70 +2137,33 @@
       "priority_score": 21
     },
     {
-      "java_package": "com.etendoerp.analytics.exporter",
-      "name": "Analytics Exporter",
-      "function": "Módulo de Futit Services para exportar datos analíticos desde Etendo. Posiblemente exporta registros de AD a formatos de análisis externos.",
+      "java_package": "org.openbravo.module.cuaderno19.es",
+      "name": "Cuaderno 19 — Domiciliación SEPA",
+      "function": "Generación de ficheros de domiciliación bancaria en formato Cuaderno 19 (norma AEB) para cobros por domiciliación a clientes. Formato bancario español anterior al SEPA.",
       "clients": [
         "Albastar",
-        "Cerveceria",
-        "Fueltruck",
-        "Guaguas Municipales",
-        "MDF",
-        "MyPime Hercam",
-        "Pazo Pondal S.L.",
-        "Regalador",
-        "VdShop",
-        "ladypipa.com"
-      ],
-      "client_count": 10,
-      "max_risk": "medium",
-      "has_replacement": false,
-      "official_replacement_name": "com.etendoerp.analytics (versión actualizada)",
-      "generalization": "bundle_candidate",
-      "api_changes": [
-        "Apache Commons Lang 2→3",
-        "Java 17",
-        "Java 17 mandatory",
-        "Verificar compatibilidad con cambios de API en 25.4.x",
-        "commons-collections 3.2.2 → 4.4 (package rename si se usa)",
-        "commons-lang 2.6 → 3.x",
-        "commons-lang si se usa; API Etendo entre 1.1.1 y versión actual"
-      ],
-      "avg_effort_update_hours": 6,
-      "avg_effort_saas_hours": 5,
-      "priority_score": 20
-    },
-    {
-      "java_package": "org.openbravo.utility.opencsv",
-      "name": "OpenCSV Library",
-      "function": "OpenCSV library wrapper for CSV parsing operations.",
-      "clients": [
-        "Acico",
-        "Albastar",
-        "Cerveceria",
         "Enertis",
-        "Fueltruck",
-        "MDF",
-        "Pazo Pondal S.L.",
+        "Klaus",
+        "Montblanc",
         "Regalador",
-        "VdShop",
-        "ladypipa.com"
+        "VdShop"
       ],
-      "client_count": 10,
-      "max_risk": "medium",
+      "client_count": 6,
+      "max_risk": "high",
       "has_replacement": true,
-      "official_replacement_name": "OpenCSV como dependencia Gradle directa",
+      "official_replacement_name": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
       "generalization": "redundant",
       "api_changes": [
-        "Etendo 25 incluye OpenCSV 5.5.2 como dependencia Gradle — este wrapper es obsoleto",
-        "Java 17",
+        "Apache Commons Lang 2→3: likely",
+        "Formato bancario AEB obsoleto — evaluación requerida",
+        "Gradle 7→8",
+        "Java 17 mandatory",
         "No maintainer",
-        "Old au.com.bytecode.opencsv API is incompatible with current com.opencsv",
-        "opencsv 5.5.2 disponible en Maven Central; Etendo 25.1 no bundlea opencsv en la plataforma pero el módulo lo lleva"
+        "No maintainer: Openbravo SLU no longer maintains these"
       ],
-      "avg_effort_update_hours": 1,
-      "avg_effort_saas_hours": 1,
-      "priority_score": 20
+      "avg_effort_update_hours": 10,
+      "avg_effort_saas_hours": 7,
+      "priority_score": 18
     },
     {
       "java_package": "org.openbravo.module.einvoice",
@@ -2238,34 +2313,6 @@
       "priority_score": 15
     },
     {
-      "java_package": "org.openbravo.module.cuaderno19.es",
-      "name": "Cuaderno 19 — Domiciliación SEPA",
-      "function": "Generación de ficheros de domiciliación bancaria en formato Cuaderno 19 (norma AEB) para cobros por domiciliación a clientes. Formato bancario español anterior al SEPA.",
-      "clients": [
-        "Albastar",
-        "Enertis",
-        "Montblanc",
-        "Regalador",
-        "VdShop"
-      ],
-      "client_count": 5,
-      "max_risk": "high",
-      "has_replacement": true,
-      "official_replacement_name": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
-      "generalization": "redundant",
-      "api_changes": [
-        "Apache Commons Lang 2→3: likely",
-        "Formato bancario AEB obsoleto — evaluación requerida",
-        "Gradle 7→8",
-        "Java 17 mandatory",
-        "No maintainer",
-        "No maintainer: Openbravo SLU no longer maintains these"
-      ],
-      "avg_effort_update_hours": 11,
-      "avg_effort_saas_hours": 7,
-      "priority_score": 15
-    },
-    {
       "java_package": "org.openbravo.module.facturae32",
       "name": "Factura-e v3.2",
       "function": "Soporte específico del formato Factura-e versión 3.2 (versión actual requerida por AEAT).",
@@ -2324,17 +2371,19 @@
       "clients": [
         "Albastar",
         "Enertis",
+        "Klaus",
         "MDF",
         "Pazo Pondal S.L.",
         "Regalador",
         "VdShop"
       ],
-      "client_count": 6,
+      "client_count": 7,
       "max_risk": "medium",
       "has_replacement": true,
       "official_replacement_name": "Etendo 25 incluye jakarta.xml.soap como dependencia gestionada",
       "generalization": "redundant",
       "api_changes": [
+        "En Java 17 (Etendo 25.x), debe usarse jakarta.xml.soap. Este shim podría causar conflictos de classpath.",
         "Etendo 25 incluye jakarta.xml.soap como dependencia Gradle — este módulo wrapper es obsoleto",
         "Java 17 elimina javax.xml.soap del JDK — debe usarse dependencia explícita",
         "Java 17: SOAP/JAX-WS APIs moved to jakarta.* namespace; javax.xml.soap is included in Java 17 but jakarta.xml.soap is the future",
@@ -2344,7 +2393,7 @@
       ],
       "avg_effort_update_hours": 2,
       "avg_effort_saas_hours": 2,
-      "priority_score": 12
+      "priority_score": 14
     },
     {
       "java_package": "com.etendoerp.psd2.bank.integration",
@@ -2423,6 +2472,53 @@
       ],
       "avg_effort_update_hours": 10,
       "avg_effort_saas_hours": 10,
+      "priority_score": 12
+    },
+    {
+      "java_package": "org.openbravo.module.cuaderno34.es",
+      "name": "Cuaderno 34 — Transferencias nacionales",
+      "function": "Generación de ficheros de transferencias nacionales en formato Cuaderno 34 (norma AEB).",
+      "clients": [
+        "Albastar",
+        "Klaus",
+        "Regalador",
+        "VdShop"
+      ],
+      "client_count": 4,
+      "max_risk": "high",
+      "has_replacement": true,
+      "official_replacement_name": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+      "generalization": "redundant",
+      "api_changes": [
+        "Gradle 7→8",
+        "Java 17 mandatory"
+      ],
+      "avg_effort_update_hours": 9,
+      "avg_effort_saas_hours": 6,
+      "priority_score": 12
+    },
+    {
+      "java_package": "org.openbravo.module.cuaderno58.es",
+      "name": "Cuaderno 58 — Confirming",
+      "function": "Generación de ficheros de confirming en formato Cuaderno 58 para gestión de pagos a proveedores vía confirming bancario.",
+      "clients": [
+        "Albastar",
+        "Klaus",
+        "Regalador",
+        "VdShop"
+      ],
+      "client_count": 4,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Formato AEB C58 — específico de cada banco",
+        "Gradle 7→8",
+        "Java 17 mandatory"
+      ],
+      "avg_effort_update_hours": 10,
+      "avg_effort_saas_hours": 7,
       "priority_score": 12
     },
     {
@@ -2595,51 +2691,6 @@
       ],
       "avg_effort_update_hours": 16,
       "avg_effort_saas_hours": 19,
-      "priority_score": 9
-    },
-    {
-      "java_package": "org.openbravo.module.cuaderno34.es",
-      "name": "Cuaderno 34 — Transferencias nacionales",
-      "function": "Generación de ficheros de transferencias nacionales en formato Cuaderno 34 (norma AEB).",
-      "clients": [
-        "Albastar",
-        "Regalador",
-        "VdShop"
-      ],
-      "client_count": 3,
-      "max_risk": "high",
-      "has_replacement": true,
-      "official_replacement_name": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
-      "generalization": "redundant",
-      "api_changes": [
-        "Gradle 7→8",
-        "Java 17 mandatory"
-      ],
-      "avg_effort_update_hours": 11,
-      "avg_effort_saas_hours": 7,
-      "priority_score": 9
-    },
-    {
-      "java_package": "org.openbravo.module.cuaderno58.es",
-      "name": "Cuaderno 58 — Confirming",
-      "function": "Generación de ficheros de confirming en formato Cuaderno 58 para gestión de pagos a proveedores vía confirming bancario.",
-      "clients": [
-        "Albastar",
-        "Regalador",
-        "VdShop"
-      ],
-      "client_count": 3,
-      "max_risk": "high",
-      "has_replacement": false,
-      "official_replacement_name": null,
-      "generalization": "client_specific",
-      "api_changes": [
-        "Formato AEB C58 — específico de cada banco",
-        "Gradle 7→8",
-        "Java 17 mandatory"
-      ],
-      "avg_effort_update_hours": 11,
-      "avg_effort_saas_hours": 8,
       "priority_score": 9
     },
     {
@@ -3273,6 +3324,26 @@
       "api_changes": [],
       "avg_effort_update_hours": 2,
       "avg_effort_saas_hours": 2,
+      "priority_score": 4
+    },
+    {
+      "java_package": "org.openbravo.acctTab",
+      "name": "Accounting Tab for Transactions",
+      "function": "Adds an accounting tab to transaction windows (invoices, payments, shipments) showing the accounting entries generated. Used for audit and reconciliation.",
+      "clients": [
+        "Enertis",
+        "Klaus"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "com.etendoerp.financial.extensions (Accounting tab incluida en Financial Extensions bundle)",
+      "generalization": "redundant",
+      "api_changes": [
+        "No maintainer"
+      ],
+      "avg_effort_update_hours": 5,
+      "avg_effort_saas_hours": 4,
       "priority_score": 4
     },
     {
@@ -4750,6 +4821,25 @@
       "priority_score": 3
     },
     {
+      "java_package": "org.openbravo.document.massinvoicing",
+      "name": "Openbravo Mass Invoicing",
+      "function": "Asistente (AD_FORM) para generación masiva de facturas a partir de plantillas de factura periódica. Permite definir plantillas con productos, precios y periodos, y generar lotes de facturas en un solo proceso.",
+      "clients": [
+        "Klaus"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "AD_FORM no portado a React UI (NOT DONE 15%) — el asistente no funcionará en nueva UI sin reimplementación o iframe"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 20,
+      "priority_score": 3
+    },
+    {
       "java_package": "org.openbravo.idl + org.openbravo.idl.variants + org.openbravo.module.idljava + com.openbravo.gps.idl.invoices + com.openbravo.gps.idl.orders",
       "name": "IDL Data Integration Framework (5 modules)",
       "function": "Incremental Data Load framework for importing external data (orders and invoices from GPS systems). Custom module uses IdlOrders.java and ProductsProcessIDL.java to load external data into Etendo.",
@@ -5652,6 +5742,70 @@
       "risk": "medium",
       "effort_saas_hours": 12,
       "recommendation": "Funcionalidad de precios escalonados es común en ventas B2B. Evaluar si Price List Extensions de Etendo lo cubre."
+    },
+    {
+      "type": "core",
+      "client": "Klaus",
+      "name": "M_INOUT_POST — optimización de actualización de QtyInvoiced",
+      "description": "Modifica la función PL/SQL que contabiliza albaranes para evitar actualizaciones innecesarias de la cantidad facturada. Reemplaza un WHERE EXISTS por un subquery con DISTINCT y añade la condición `mi.qtyinvoiced IS DISTINCT FROM mi.movementqty` para omitir filas donde la cantidad ya coincide.",
+      "justification": "Es una mejora de rendimiento y corrección de comportamiento que previene actualizaciones redundantes durante el cierre contable de albaranes. El uso de DISTINCT y el guard IS DISTINCT FROM reduce la carga en bases de datos con alta volumetría de facturas parciales. Beneficia a cualquier instalación Etendo.",
+      "effort_saas_hours": 3
+    },
+    {
+      "type": "core",
+      "client": "Klaus",
+      "name": "SII 2025 — Soporte IGIC Canarias y nuevas validaciones (org.openbravo.module.sii)",
+      "description": "Parche sobre el módulo SII (Suministro Inmediato de Información) del bundle Spain Extensions. Añade soporte para IGIC (Impuesto General Indirecto Canario), nuevas clases de validación con reglas vigentes desde el 1-Oct-2025, triggers de borrado para facturas/albaranes/pedidos, y script de módulo para migrar el estado SIF de organizaciones. Incluye 4 clases Java nuevas y 3 triggers de BD.",
+      "justification": "Cambio de cumplimiento regulatorio (IGIC Canarias, normativa SII efectiva 1-Oct-2025). Debe integrarse en el bundle oficial `com.etendoerp.localization.spain.extensions` para beneficiar a todos los clientes españoles con sedes en Canarias o que emitan facturas IGIC.",
+      "effort_saas_hours": 20
+    },
+    {
+      "type": "core",
+      "client": "Klaus",
+      "name": "SIF General — Nuevas columnas y gestión de certificados (com.etendoerp.sif.general)",
+      "description": "Parche sobre el módulo SIF General del bundle Spain Extensions. Añade columnas nuevas en C_INVOICE y AD_ORGINFO para VeriFactu/SIF, actualiza la gestión de certificados digitales, elimina parámetros obsoletos de OBUIAPP_PARAMETER y añade elementos AD nuevos.",
+      "justification": "Actualización regulatoria del módulo SIF (Suministro Inmediato de Facturas / VeriFactu). Las nuevas columnas en C_INVOICE y AD_ORGINFO son necesarias para el cumplimiento con los requisitos españoles de VeriFactu. Debe subirse al bundle oficial.",
+      "effort_saas_hours": 12
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Klaus",
+      "name": "Tabular Financial Report",
+      "java_package": "biz.variegate.vsfmr",
+      "description": "Genera informes financieros tabulares detallados: Cuenta de Pérdidas y Ganancias detallada y Balance de Situación detallado. Accesibles desde menú como Reports R&P legacy (HttpSecureAppServlet).",
+      "risk": "medium",
+      "effort_saas_hours": 8,
+      "recommendation": "Evaluar si los informes de Financial Reports Advanced o Analytical Accounting cubren esta funcionalidad. Si no, reimplementar como Process Definition Report (Jasper/PDF). Candidato a bundle de informes financieros."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Klaus",
+      "name": "Block Customer",
+      "java_package": "it.extrasys.blockcustomer",
+      "description": "Bloquea la creación de pedidos de venta y albaranes cuando el cliente tiene un flag de bloqueo activo. Implementado mediante callouts legacy (HttpSecureAppServlet + patrón decorator) que interceptan el callout estándar SL_InOut_BPartner y SL_Order_BPartner y muestran un mensaje de advertencia.",
+      "risk": "medium",
+      "effort_saas_hours": 16,
+      "recommendation": "Reescribir los 4 callouts usando SimpleCallout (patrón moderno soportado en Etendo 25.x). La funcionalidad de bloqueo de clientes es generalizable: candidato a bundle oficial 'Customer Credit Control'."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Klaus",
+      "name": "Mail Audit",
+      "java_package": "com.openbravo.gps.communications.mailaudit",
+      "description": "Registra y permite consultar los correos electrónicos enviados desde Etendo (emails de documentos, notificaciones). Vincula registros de email con documentos origen para trazabilidad.",
+      "risk": "low",
+      "effort_saas_hours": 4,
+      "recommendation": "Módulo de GPS (Openbravo partner) sin código Java. Solo AD configuration. Bajo riesgo técnico. Verificar si la nueva UI de Etendo incluye visibilidad del historial de correos enviados."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "Klaus",
+      "name": "Shipments Awaiting Invoice Report",
+      "java_package": "org.openbravo.reports.shipmentsawaitinginvoice",
+      "description": "Informe que muestra los albaranes de venta o compra que han sido completados pero que aún no han sido facturados, facilitando el seguimiento del proceso de facturación pendiente.",
+      "risk": "low",
+      "effort_saas_hours": 4,
+      "recommendation": "Informe de negocio útil y genérico. Sin código Java, solo Process R&P legacy. Verificar si los Informes Avanzados de Financial Extensions o algún report de Jasper cubre esta funcionalidad. Candidato para bundle de Reports."
     },
     {
       "type": "module_unmaintained",

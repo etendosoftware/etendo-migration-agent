@@ -3185,7 +3185,12 @@
         "api_changes_applicable": [],
         "effort_update_hours": 1,
         "effort_saas_hours": 2,
-        "recommendation": "Mantener como módulo de configuración del cliente. Para migración SaaS, evaluar si los campos afectados deben configurarse como read-only a nivel de rol en lugar de a nivel de módulo, lo que permitiría mayor flexibilidad sin personalización de código."
+        "recommendation": "Mantener como módulo de configuración del cliente. Para migración SaaS, evaluar si los campos afectados deben configurarse como read-only a nivel de rol en lugar de a nivel de módulo, lo que permitiría mayor flexibilidad sin personalización de código.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       }
     ],
     "unmaintained_modules": [
@@ -3203,7 +3208,15 @@
         ],
         "effort_update_hours": 16,
         "effort_saas_hours": 8,
-        "recommendation": "Evaluar si los informes de Financial Reports Advanced o Analytical Accounting cubren esta funcionalidad. Si no, reimplementar como Process Definition Report (Jasper/PDF). Candidato a bundle de informes financieros."
+        "recommendation": "Evaluar si los informes de Financial Reports Advanced o Analytical Accounting cubren esta funcionalidad. Si no, reimplementar como Process Definition Report (Jasper/PDF). Candidato a bundle de informes financieros.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Detailed Balance Sheet",
+          "Detailed Profit and Loss Report"
+        ],
+        "elimination_candidate": false,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "it.extrasys.advmdm",
@@ -3216,7 +3229,12 @@
         "api_changes_applicable": [],
         "effort_update_hours": 1,
         "effort_saas_hours": 1,
-        "recommendation": "Sin impacto funcional directo. Se elimina automáticamente si se eliminan los módulos it.extrasys.* que dependen de él."
+        "recommendation": "Sin impacto funcional directo. Se elimina automáticamente si se eliminan los módulos it.extrasys.* que dependen de él.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "it.extrasys.blockcustomer",
@@ -3232,7 +3250,12 @@
         ],
         "effort_update_hours": 8,
         "effort_saas_hours": 16,
-        "recommendation": "Reescribir los 4 callouts usando SimpleCallout (patrón moderno soportado en Etendo 25.x). La funcionalidad de bloqueo de clientes es generalizable: candidato a bundle oficial 'Customer Credit Control'."
+        "recommendation": "Reescribir los 4 callouts usando SimpleCallout (patrón moderno soportado en Etendo 25.x). La funcionalidad de bloqueo de clientes es generalizable: candidato a bundle oficial 'Customer Credit Control'.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "it.extrasys.product",
@@ -3245,7 +3268,14 @@
         "api_changes_applicable": [],
         "effort_update_hours": 2,
         "effort_saas_hours": 4,
-        "recommendation": "Verificar si la categoría de producto estándar o un campo personalizado en el módulo de configuración del cliente puede sustituir esta clasificación. Si se mantiene, sin cambios de código necesarios."
+        "recommendation": "Verificar si la categoría de producto estándar o un campo personalizado en el módulo de configuración del cliente puede sustituir esta clasificación. Si se mantiene, sin cambios de código necesarios.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Product Group"
+        ],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "it.extrasys.utility",
@@ -3263,7 +3293,17 @@
         ],
         "effort_update_hours": 24,
         "effort_saas_hours": 24,
-        "recommendation": "Actualización significativa requerida: migrar log4j a SLF4J, reescribir callout utilities al patrón SimpleCallout. Los links generados con OB.Utilities.openView no funcionarán en la nueva UI; necesitan rediseño. Se recomienda evaluar si la funcionalidad de impresión por idioma del tercero puede reemplazarse con plantillas de impresión nativas de Etendo."
+        "recommendation": "Actualización significativa requerida: migrar log4j a SLF4J, reescribir callout utilities al patrón SimpleCallout. Los links generados con OB.Utilities.openView no funcionarán en la nueva UI; necesitan rediseño. Se recomienda evaluar si la funcionalidad de impresión por idioma del tercero puede reemplazarse con plantillas de impresión nativas de Etendo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "PrintPaymentsBPLanguageProcess",
+          "PrintShipmentsBPLanguageProcess",
+          "PrintInvoicesBPLanguageProcess",
+          "PrintOrdersBPLanguageProcess"
+        ],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.onegolive.module.pdp",
@@ -3278,7 +3318,14 @@
         ],
         "effort_update_hours": 4,
         "effort_saas_hours": 8,
-        "recommendation": "Verificar si el módulo de gestión de listas de precio de Etendo (Price Lists) o el módulo de compras avanzado cubre esta funcionalidad. El callout usa SimpleCallout (moderno), por lo que la migración técnica es de bajo esfuerzo."
+        "recommendation": "Verificar si el módulo de gestión de listas de precio de Etendo (Price Lists) o el módulo de compras avanzado cubre esta funcionalidad. El callout usa SimpleCallout (moderno), por lo que la migración técnica es de bajo esfuerzo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Precio-Coste de Productos"
+        ],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.acctTab",
@@ -3291,7 +3338,12 @@
         "api_changes_applicable": [],
         "effort_update_hours": 4,
         "effort_saas_hours": 4,
-        "recommendation": "Verificar si el bundle Financial Extensions (ya instalado como gradle_source) provee la pestaña de contabilidad. Si es así, este módulo es redundante y puede eliminarse."
+        "recommendation": "Verificar si el bundle Financial Extensions (ya instalado como gradle_source) provee la pestaña de contabilidad. Si es así, este módulo es redundante y puede eliminarse.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.client.widgets.materialManagement",
@@ -3306,7 +3358,12 @@
         ],
         "effort_update_hours": 2,
         "effort_saas_hours": 2,
-        "recommendation": "Eliminar. La infraestructura de widgets del Workspace no está implementada en la nueva UI de Etendo. Si se necesita visibilidad de stock, reimplementar como pantalla/reporte nativo de React."
+        "recommendation": "Eliminar. La infraestructura de widgets del Workspace no está implementada en la nueva UI de Etendo. Si se necesita visibilidad de stock, reimplementar como pantalla/reporte nativo de React.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.document.massinvoicing",
@@ -3321,7 +3378,15 @@
         ],
         "effort_update_hours": 20,
         "effort_saas_hours": 20,
-        "recommendation": "Alto riesgo: el AD_FORM de facturación masiva no funcionará en la nueva UI. Evaluar reimplementación como Process Definition (PD Action) con parámetros y grid de selección, o mantener via iframe con Classic UI activo. Si el cliente usa activamente esta funcionalidad, es un bloqueador de migración a la nueva UI."
+        "recommendation": "Alto riesgo: el AD_FORM de facturación masiva no funcionará en la nueva UI. Evaluar reimplementación como Process Definition (PD Action) con parámetros y grid de selección, o mantener via iframe con Classic UI activo. Si el cliente usa activamente esta funcionalidad, es un bloqueador de migración a la nueva UI.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Invoice Template",
+          "Mass Invoicing"
+        ],
+        "elimination_candidate": false,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.idl",
@@ -3336,7 +3401,15 @@
         ],
         "effort_update_hours": 8,
         "effort_saas_hours": 8,
-        "recommendation": "Verificar si el módulo se usa activamente para importaciones recurrentes. Si solo se usó en la implementación inicial, puede desactivarse sin impacto. Migrar procesos de carga de datos a la API REST de Etendo o módulo de importación nativo."
+        "recommendation": "Verificar si el módulo se usa activamente para importaciones recurrentes. Si solo se usó en la implementación inicial, puede desactivarse sin impacto. Migrar procesos de carga de datos a la API REST de Etendo o módulo de importación nativo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Import",
+          "Entity Default Values"
+        ],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.legacy.axis",
@@ -3351,7 +3424,12 @@
         ],
         "effort_update_hours": 2,
         "effort_saas_hours": 2,
-        "recommendation": "Eliminar si no hay integraciones activas que dependen de SOAP/Axis. En Java 17, Apache Axis v1 no es compatible. Las integraciones modernas deben usar la API REST de Etendo."
+        "recommendation": "Eliminar si no hay integraciones activas que dependen de SOAP/Axis. En Java 17, Apache Axis v1 no es compatible. Las integraciones modernas deben usar la API REST de Etendo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.module.aeat340.es",
@@ -3364,7 +3442,15 @@
         "api_changes_applicable": [],
         "effort_update_hours": 2,
         "effort_saas_hours": 2,
-        "recommendation": "Eliminar. El Modelo 340 fue suspendido por la AEAT en 2014 para empresas en SII. El cliente ya tiene el módulo SII instalado."
+        "recommendation": "Eliminar. El Modelo 340 fue suspendido por la AEAT en 2014 para empresas en SII. El cliente ya tiene el módulo SII instalado.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Generar Modelo 340",
+          "Lanzar Modelo 340"
+        ],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.module.cuaderno19.es",
@@ -3377,7 +3463,12 @@
         "api_changes_applicable": [],
         "effort_update_hours": 4,
         "effort_saas_hours": 4,
-        "recommendation": "El cliente ya tiene el módulo SEPA Direct Debit instalado. Verificar si sigue enviando remesas en formato Cuaderno 19 (ya obsoleto) o ha migrado a SEPA. Si usa SEPA, eliminar."
+        "recommendation": "El cliente ya tiene el módulo SEPA Direct Debit instalado. Verificar si sigue enviando remesas en formato Cuaderno 19 (ya obsoleto) o ha migrado a SEPA. Si usa SEPA, eliminar.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.module.cuaderno34.es",
@@ -3390,7 +3481,12 @@
         "api_changes_applicable": [],
         "effort_update_hours": 4,
         "effort_saas_hours": 4,
-        "recommendation": "Mismo caso que Cuaderno 19. Si el cliente usa SEPA Credit Transfer (ya instalado), este módulo es redundante. Verificar y eliminar si es el caso."
+        "recommendation": "Mismo caso que Cuaderno 19. Si el cliente usa SEPA Credit Transfer (ya instalado), este módulo es redundante. Verificar y eliminar si es el caso.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.module.cuaderno58.es",
@@ -3403,7 +3499,12 @@
         "api_changes_applicable": [],
         "effort_update_hours": 4,
         "effort_saas_hours": 4,
-        "recommendation": "El Cuaderno 58 para efectos comerciales no tiene equivalente SEPA directo. Verificar si el cliente sigue usando pagarés/letras. Si es así, este módulo es un riesgo de migración que requiere evaluación con el banco del cliente."
+        "recommendation": "El Cuaderno 58 para efectos comerciales no tiene equivalente SEPA directo. Verificar si el cliente sigue usando pagarés/letras. Si es así, este módulo es un riesgo de migración que requiere evaluación con el banco del cliente.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.module.idljava",
@@ -3416,7 +3517,12 @@
         "api_changes_applicable": [],
         "effort_update_hours": 4,
         "effort_saas_hours": 4,
-        "recommendation": "Sigue la suerte del módulo IDL padre. Si IDL se elimina, este también."
+        "recommendation": "Sigue la suerte del módulo IDL padre. Si IDL se elimina, este también.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.2011",
@@ -3429,7 +3535,12 @@
         "api_changes_applicable": [],
         "effort_update_hours": 1,
         "effort_saas_hours": 1,
-        "recommendation": "Datos de referencia desactualizados (2011). Verificar si los tipos impositivos vigentes están configurados en el módulo de localización España actual."
+        "recommendation": "Datos de referencia desactualizados (2011). Verificar si los tipos impositivos vigentes están configurados en el módulo de localización España actual.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.2012",
@@ -3442,7 +3553,12 @@
         "api_changes_applicable": [],
         "effort_update_hours": 1,
         "effort_saas_hours": 1,
-        "recommendation": "Mismo caso que 2011. Datos desactualizados."
+        "recommendation": "Mismo caso que 2011. Datos desactualizados.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.sepa.iso20022",
@@ -3458,7 +3574,12 @@
         ],
         "effort_update_hours": 24,
         "effort_saas_hours": 24,
-        "recommendation": "Módulo crítico para operaciones bancarias SEPA. Sin este módulo, los módulos de Direct Debit y Credit Transfer no funcionan. No tiene reemplazo oficial en Etendo 25.x. Requiere actualización a jakarta.xml.soap y posible fork/mantenimiento. Candidato prioritario para bundle oficial de Etendo Spain Banking."
+        "recommendation": "Módulo crítico para operaciones bancarias SEPA. Sin este módulo, los módulos de Direct Debit y Credit Transfer no funcionan. No tiene reemplazo oficial en Etendo 25.x. Requiere actualización a jakarta.xml.soap y posible fork/mantenimiento. Candidato prioritario para bundle oficial de Etendo Spain Banking.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
@@ -3473,7 +3594,12 @@
         ],
         "effort_update_hours": 12,
         "effort_saas_hours": 12,
-        "recommendation": "Funcionalidad bancaria crítica si el cliente usa domiciliaciones. Requiere que el SEPA Framework esté actualizado primero. Sin reemplazo oficial. Bundle banking candidate."
+        "recommendation": "Funcionalidad bancaria crítica si el cliente usa domiciliaciones. Requiere que el SEPA Framework esté actualizado primero. Sin reemplazo oficial. Bundle banking candidate.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
@@ -3488,7 +3614,12 @@
         ],
         "effort_update_hours": 12,
         "effort_saas_hours": 12,
-        "recommendation": "Igual que Direct Debit. Crítico si el cliente realiza pagos bancarios SEPA. Bundle banking candidate."
+        "recommendation": "Igual que Direct Debit. Crítico si el cliente realiza pagos bancarios SEPA. Bundle banking candidate.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": false,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.util.javax.xml.soap",
@@ -3503,7 +3634,12 @@
         ],
         "effort_update_hours": 2,
         "effort_saas_hours": 2,
-        "recommendation": "Verificar si algún módulo activo aún depende de javax.xml.soap. El módulo SII ya migró a jakarta.xml.soap. Si no hay dependencias activas, eliminar para evitar conflictos de classpath en Java 17."
+        "recommendation": "Verificar si algún módulo activo aún depende de javax.xml.soap. El módulo SII ya migró a jakarta.xml.soap. Si no hay dependencias activas, eliminar para evitar conflictos de classpath en Java 17.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.utility.opencsv",
@@ -3518,7 +3654,12 @@
         ],
         "effort_update_hours": 1,
         "effort_saas_hours": 1,
-        "recommendation": "Verificar si OpenCSV ya está disponible como dependencia de Gradle en Etendo 25.x. Si es así, eliminar este wrapper para evitar duplicaciones de classpath."
+        "recommendation": "Verificar si OpenCSV ya está disponible como dependencia de Gradle en Etendo 25.x. Si es así, eliminar este wrapper para evitar duplicaciones de classpath.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "com.etendoerp.analytics.exporter",
@@ -3531,7 +3672,16 @@
         "api_changes_applicable": [],
         "effort_update_hours": 8,
         "effort_saas_hours": 4,
-        "recommendation": "Módulo de Futit no publicado en el catálogo oficial. Verificar si sigue activo y siendo mantenido. Si el cliente tiene Mixpanel configurado, este módulo puede estar relacionado con el envío de eventos. Contactar con Futit para obtener versión actualizada compatible con Etendo 25.x."
+        "recommendation": "Módulo de Futit no publicado en el catálogo oficial. Verificar si sigue activo y siendo mantenido. Si el cliente tiene Mixpanel configurado, este módulo puede estar relacionado con el envío de eventos. Contactar con Futit para obtener versión actualizada compatible con Etendo 25.x.",
+        "usage_score": 1,
+        "windows_used": [
+          "Analytics Synchronization"
+        ],
+        "windows_unused": [
+          "Analytics Sync Process"
+        ],
+        "elimination_candidate": false,
+        "mixpanel_events_90d": 5
       },
       {
         "java_package": "com.openbravo.gps.communications.mailaudit",
@@ -3544,7 +3694,14 @@
         "api_changes_applicable": [],
         "effort_update_hours": 4,
         "effort_saas_hours": 4,
-        "recommendation": "Módulo de GPS (Openbravo partner) sin código Java. Solo AD configuration. Bajo riesgo técnico. Verificar si la nueva UI de Etendo incluye visibilidad del historial de correos enviados."
+        "recommendation": "Módulo de GPS (Openbravo partner) sin código Java. Solo AD configuration. Bajo riesgo técnico. Verificar si la nueva UI de Etendo incluye visibilidad del historial de correos enviados.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Mail Audit"
+        ],
+        "elimination_candidate": false,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "com.openbravo.gps.somequerywidgets",
@@ -3559,7 +3716,12 @@
         ],
         "effort_update_hours": 2,
         "effort_saas_hours": 2,
-        "recommendation": "Eliminar. Versión 0.0.1 (nunca estable), y la infraestructura de widgets del Workspace no está implementada en la nueva UI de Etendo."
+        "recommendation": "Eliminar. Versión 0.0.1 (nunca estable), y la infraestructura de widgets del Workspace no está implementada en la nueva UI de Etendo.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [],
+        "elimination_candidate": true,
+        "mixpanel_events_90d": 0
       },
       {
         "java_package": "org.openbravo.reports.shipmentsawaitinginvoice",
@@ -3572,7 +3734,14 @@
         "api_changes_applicable": [],
         "effort_update_hours": 4,
         "effort_saas_hours": 4,
-        "recommendation": "Informe de negocio útil y genérico. Sin código Java, solo Process R&P legacy. Verificar si los Informes Avanzados de Financial Extensions o algún report de Jasper cubre esta funcionalidad. Candidato para bundle de Reports."
+        "recommendation": "Informe de negocio útil y genérico. Sin código Java, solo Process R&P legacy. Verificar si los Informes Avanzados de Financial Extensions o algún report de Jasper cubre esta funcionalidad. Candidato para bundle de Reports.",
+        "usage_score": 0,
+        "windows_used": [],
+        "windows_unused": [
+          "Shipments Awaiting Invoice Report"
+        ],
+        "elimination_candidate": false,
+        "mixpanel_events_90d": 0
       }
     ],
     "effort_summary": {
@@ -3583,8 +3752,13 @@
       "saas_core_hours": 35,
       "saas_custom_hours": 2,
       "saas_unmaintained_hours": 186,
-      "saas_total_hours": 223
-    }
+      "saas_total_hours": 223,
+      "elimination_candidates": 19,
+      "effort_saved_eliminating_update": 73,
+      "effort_saved_eliminating_saas": 80
+    },
+    "mixpanel_source_instance": "Klaus",
+    "mixpanel_date_range": "90 días"
   },
   "ui_readiness": {
     "generated": "2026-04-27",
