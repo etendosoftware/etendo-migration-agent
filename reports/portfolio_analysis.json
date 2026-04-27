@@ -10,7 +10,9 @@
     "Enertis",
     "Flexellon",
     "Fueltruck",
+    "Gloria Pets",
     "Guaguas Municipales",
+    "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
     "Luján Agrícola",
     "MDF",
     "Montblanc",
@@ -29,7 +31,7 @@
       "title": "Botones hardcoded (DocAction + Posted + CreateFrom) — agregado para scoring",
       "status": "PARCIAL",
       "completion_pct": 35,
-      "portfolio_score": 72,
+      "portfolio_score": 80,
       "clients_critica": [
         "Acico",
         "Albastar",
@@ -40,6 +42,8 @@
         "Cerveceria",
         "Depique",
         "Fueltruck",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Luján Agrícola",
         "MDF",
         "Montblanc",
@@ -56,7 +60,7 @@
         "Albastar",
         "ladypipa.com"
       ],
-      "total_affected": 21,
+      "total_affected": 23,
       "avg_ad_count": 59
     },
     {
@@ -64,7 +68,7 @@
       "title": "Display Logic (visibilidad dinámica de campos)",
       "status": "BUG ACTIVO",
       "completion_pct": 50,
-      "portfolio_score": 64,
+      "portfolio_score": 72,
       "clients_critica": [
         "Acico",
         "Albastar",
@@ -73,6 +77,8 @@
         "Cerveceria",
         "Depique",
         "Fueltruck",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Luján Agrícola",
         "MDF",
         "Montblanc",
@@ -85,15 +91,41 @@
       ],
       "clients_alta": [],
       "clients_media": [],
-      "total_affected": 17,
-      "avg_ad_count": 2852
+      "total_affected": 19,
+      "avg_ad_count": 2862
+    },
+    {
+      "section": "18",
+      "title": "AD Forms (formularios especiales)",
+      "status": "NOT DONE",
+      "completion_pct": 5,
+      "portfolio_score": 52,
+      "clients_critica": [
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Cerveceria",
+        "Depique",
+        "Fueltruck",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "MDF",
+        "Montblanc",
+        "MyPime Supermix Pucara",
+        "Opengy",
+        "Regalador"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 13,
+      "avg_ad_count": 30
     },
     {
       "section": "26",
       "title": "Filtros por Defecto de Tab (HQLFILTERCLAUSE)",
       "status": "NOT DONE",
       "completion_pct": 0,
-      "portfolio_score": 44,
+      "portfolio_score": 48,
       "clients_critica": [
         "Acico",
         "Bed4U",
@@ -106,6 +138,8 @@
       "clients_alta": [
         "Albastar",
         "Fueltruck",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Luján Agrícola",
         "Montblanc",
         "MyPime Supermix Pucara",
@@ -116,44 +150,22 @@
         "Depique",
         "ladypipa.com"
       ],
-      "total_affected": 16,
-      "avg_ad_count": 138
-    },
-    {
-      "section": "18",
-      "title": "AD Forms (formularios especiales)",
-      "status": "NOT DONE",
-      "completion_pct": 5,
-      "portfolio_score": 44,
-      "clients_critica": [
-        "Albastar",
-        "Bed4U",
-        "Bercaber",
-        "Cerveceria",
-        "Depique",
-        "Fueltruck",
-        "MDF",
-        "Montblanc",
-        "MyPime Supermix Pucara",
-        "Opengy",
-        "Regalador"
-      ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 11,
-      "avg_ad_count": 31
+      "total_affected": 18,
+      "avg_ad_count": 133
     },
     {
       "section": "1.4",
       "title": "Ventanas Pick and Execute (OBUIAPP_PickAndExecute)",
       "status": "PARCIAL",
       "completion_pct": 55,
-      "portfolio_score": 40,
+      "portfolio_score": 48,
       "clients_critica": [
         "Acico",
         "Albastar",
         "Cerveceria",
         "Fueltruck",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Luján Agrícola",
         "MDF"
       ],
@@ -170,7 +182,7 @@
         "Opengy",
         "Regalador"
       ],
-      "total_affected": 16,
+      "total_affected": 18,
       "avg_ad_count": 74
     },
     {
@@ -178,18 +190,20 @@
       "title": "Ventanas tipo Transaction (T)",
       "status": "TO CHECK",
       "completion_pct": 72,
-      "portfolio_score": 38,
+      "portfolio_score": 44,
       "clients_critica": [
         "Acico",
         "Bed4U",
         "Bercaber",
         "Cerveceria",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "NEXE"
       ],
       "clients_alta": [
         "Albastar",
         "Depique",
         "Fueltruck",
+        "Gloria Pets",
         "Luján Agrícola",
         "Montblanc",
         "Opengy",
@@ -201,7 +215,7 @@
         "Pazo Pondal S.L.",
         "ladypipa.com"
       ],
-      "total_affected": 17,
+      "total_affected": 19,
       "avg_ad_count": 40
     },
     {
@@ -209,10 +223,11 @@
       "title": "Valores por Defecto de Columnas",
       "status": "PARCIAL",
       "completion_pct": 45,
-      "portfolio_score": 36,
+      "portfolio_score": 42,
       "clients_critica": [
         "Acico",
         "Albastar",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "MDF",
         "Pazo Pondal S.L.",
         "ladypipa.com"
@@ -223,20 +238,21 @@
         "Cerveceria",
         "Depique",
         "Fueltruck",
+        "Gloria Pets",
         "MyPime Supermix Pucara",
         "Opengy",
         "Regalador"
       ],
       "clients_media": [],
-      "total_affected": 13,
-      "avg_ad_count": 4301
+      "total_affected": 15,
+      "avg_ad_count": 4327
     },
     {
       "section": "21",
       "title": "Workspace / Dashboard (My Etendo)",
       "status": "NOT DONE",
       "completion_pct": 5,
-      "portfolio_score": 35,
+      "portfolio_score": 36,
       "clients_critica": [
         "Acico",
         "Bed4U",
@@ -251,9 +267,10 @@
         "NEXE"
       ],
       "clients_media": [
+        "Gloria Pets",
         "Montblanc"
       ],
-      "total_affected": 11,
+      "total_affected": 12,
       "avg_ad_count": 34
     },
     {
@@ -261,10 +278,11 @@
       "title": "Selectores y campos FK (OBUISEL_Selector)",
       "status": "TO CHECK",
       "completion_pct": 65,
-      "portfolio_score": 30,
+      "portfolio_score": 36,
       "clients_critica": [
         "Cerveceria",
         "Depique",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Luján Agrícola"
       ],
       "clients_alta": [
@@ -273,6 +291,7 @@
         "Bed4U",
         "Bercaber",
         "Fueltruck",
+        "Gloria Pets",
         "NEXE",
         "Opengy",
         "Regalador"
@@ -281,8 +300,72 @@
         "MDF",
         "Pazo Pondal S.L."
       ],
-      "total_affected": 14,
-      "avg_ad_count": 259
+      "total_affected": 16,
+      "avg_ad_count": 303
+    },
+    {
+      "section": "5",
+      "title": "Comportamientos de Tab (SR, RO, ED, display logic)",
+      "status": "TO CHECK",
+      "completion_pct": 65,
+      "portfolio_score": 32,
+      "clients_critica": [
+        "Albastar",
+        "Bed4U",
+        "Bercaber"
+      ],
+      "clients_alta": [
+        "Acico",
+        "Cerveceria",
+        "Depique",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Luján Agrícola"
+      ],
+      "clients_media": [
+        "Fueltruck",
+        "MDF",
+        "Montblanc",
+        "MyPime Supermix Pucara",
+        "Opengy",
+        "Pazo Pondal S.L.",
+        "Regalador",
+        "ladypipa.com"
+      ],
+      "total_affected": 17,
+      "avg_ad_count": 421
+    },
+    {
+      "section": "6",
+      "title": "Callouts (lógica de negocio en cambio de campo)",
+      "status": "TO CHECK",
+      "completion_pct": 60,
+      "portfolio_score": 30,
+      "clients_critica": [
+        "Depique"
+      ],
+      "clients_alta": [
+        "Acico",
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Cerveceria",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Luján Agrícola",
+        "NEXE",
+        "Opengy",
+        "Regalador"
+      ],
+      "clients_media": [
+        "Fueltruck",
+        "Gloria Pets",
+        "MDF",
+        "Montblanc",
+        "MyPime Supermix Pucara",
+        "Pazo Pondal S.L."
+      ],
+      "total_affected": 18,
+      "avg_ad_count": 150
     },
     {
       "section": "3.B.2",
@@ -305,77 +388,70 @@
       "avg_ad_count": 22
     },
     {
-      "section": "5",
-      "title": "Comportamientos de Tab (SR, RO, ED, display logic)",
-      "status": "TO CHECK",
-      "completion_pct": 65,
-      "portfolio_score": 28,
+      "section": "2",
+      "title": "Tipos de referencia — Image BLOB",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 26,
       "clients_critica": [
+        "Gloria Pets"
+      ],
+      "clients_alta": [
         "Albastar",
-        "Bed4U",
-        "Bercaber"
-      ],
-      "clients_alta": [
-        "Acico",
-        "Cerveceria",
-        "Depique",
-        "Luján Agrícola"
-      ],
-      "clients_media": [
-        "Fueltruck",
-        "MDF",
-        "Montblanc",
-        "MyPime Supermix Pucara",
-        "Opengy",
-        "Pazo Pondal S.L.",
-        "Regalador",
-        "ladypipa.com"
-      ],
-      "total_affected": 15,
-      "avg_ad_count": 465
-    },
-    {
-      "section": "6",
-      "title": "Callouts (lógica de negocio en cambio de campo)",
-      "status": "TO CHECK",
-      "completion_pct": 60,
-      "portfolio_score": 27,
-      "clients_critica": [
-        "Depique"
-      ],
-      "clients_alta": [
-        "Acico",
         "Albastar",
         "Bed4U",
         "Bercaber",
         "Cerveceria",
+        "Depique",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Luján Agrícola",
-        "NEXE",
-        "Opengy",
-        "Regalador"
+        "MDF"
       ],
       "clients_media": [
-        "Fueltruck",
-        "MDF",
+        "Albastar",
         "Montblanc",
         "MyPime Supermix Pucara",
-        "Pazo Pondal S.L."
+        "ladypipa.com"
       ],
-      "total_affected": 16,
-      "avg_ad_count": 157
+      "total_affected": 14,
+      "avg_ad_count": 354
+    },
+    {
+      "section": "3",
+      "title": "Procesos (todos los tipos) — agregado para scoring",
+      "status": "PARCIAL",
+      "completion_pct": 50,
+      "portfolio_score": 24,
+      "clients_critica": [
+        "Acico",
+        "Cerveceria",
+        "MDF"
+      ],
+      "clients_alta": [
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "NEXE"
+      ],
+      "clients_media": [],
+      "total_affected": 10,
+      "avg_ad_count": 371
     },
     {
       "section": "1.1",
       "title": "Ventanas tipo Maintain (M)",
       "status": "TO CHECK",
       "completion_pct": 75,
-      "portfolio_score": 21,
+      "portfolio_score": 24,
       "clients_critica": [
         "Cerveceria"
       ],
       "clients_alta": [
         "Acico",
         "Depique",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Luján Agrícola"
       ],
       "clients_media": [
@@ -383,6 +459,7 @@
         "Bed4U",
         "Bercaber",
         "Fueltruck",
+        "Gloria Pets",
         "MDF",
         "Montblanc",
         "MyPime Supermix Pucara",
@@ -391,8 +468,26 @@
         "Regalador",
         "ladypipa.com"
       ],
-      "total_affected": 16,
-      "avg_ad_count": 300
+      "total_affected": 18,
+      "avg_ad_count": 302
+    },
+    {
+      "section": "3b",
+      "title": "Legacy Processes & Reports (AD_PROCESS)",
+      "status": "PARCIAL",
+      "completion_pct": 25,
+      "portfolio_score": 20,
+      "clients_critica": [
+        "Cerveceria",
+        "Depique",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "MDF"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 5,
+      "avg_ad_count": 378
     },
     {
       "section": "3.A.2c",
@@ -413,51 +508,29 @@
       "avg_ad_count": 236
     },
     {
-      "section": "2",
-      "title": "Tipos de referencia — Image BLOB",
-      "status": "PARCIAL",
-      "completion_pct": 45,
+      "section": "14",
+      "title": "ReadOnly Logic (lógica de solo lectura por campo)",
+      "status": "TO CHECK",
+      "completion_pct": 60,
       "portfolio_score": 20,
       "clients_critica": [],
       "clients_alta": [
-        "Albastar",
-        "Albastar",
+        "Acico",
         "Bed4U",
         "Bercaber",
         "Cerveceria",
-        "Depique",
-        "Luján Agrícola",
-        "MDF"
+        "Fueltruck",
+        "Gloria Pets",
+        "MDF",
+        "Opengy",
+        "Regalador"
       ],
       "clients_media": [
-        "Albastar",
-        "Montblanc",
         "MyPime Supermix Pucara",
         "ladypipa.com"
       ],
       "total_affected": 12,
-      "avg_ad_count": 42
-    },
-    {
-      "section": "3",
-      "title": "Procesos (todos los tipos) — agregado para scoring",
-      "status": "PARCIAL",
-      "completion_pct": 50,
-      "portfolio_score": 20,
-      "clients_critica": [
-        "Acico",
-        "Cerveceria",
-        "MDF"
-      ],
-      "clients_alta": [
-        "Bed4U",
-        "Bercaber",
-        "Depique",
-        "NEXE"
-      ],
-      "clients_media": [],
-      "total_affected": 8,
-      "avg_ad_count": 419
+      "avg_ad_count": 289
     },
     {
       "section": "3.A.2",
@@ -481,65 +554,44 @@
       "avg_ad_count": 116
     },
     {
-      "section": "14",
-      "title": "ReadOnly Logic (lógica de solo lectura por campo)",
-      "status": "TO CHECK",
-      "completion_pct": 60,
-      "portfolio_score": 18,
-      "clients_critica": [],
-      "clients_alta": [
-        "Acico",
-        "Bed4U",
-        "Bercaber",
-        "Cerveceria",
-        "Fueltruck",
-        "MDF",
-        "Opengy",
-        "Regalador"
-      ],
-      "clients_media": [
-        "MyPime Supermix Pucara",
-        "ladypipa.com"
-      ],
-      "total_affected": 11,
-      "avg_ad_count": 308
-    },
-    {
       "section": "7",
       "title": "Máquina de estados de documento",
       "status": "TO CHECK",
       "completion_pct": 70,
-      "portfolio_score": 16,
+      "portfolio_score": 18,
       "clients_critica": [
         "Bed4U",
         "Bercaber",
         "Cerveceria"
       ],
       "clients_alta": [
-        "Acico"
+        "Acico",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
       ],
       "clients_media": [
         "Fueltruck",
         "Luján Agrícola"
       ],
-      "total_affected": 6,
-      "avg_ad_count": 80
+      "total_affected": 7,
+      "avg_ad_count": 75
     },
     {
       "section": "23",
       "title": "Status Bar (barra de estado)",
       "status": "TO CHECK",
       "completion_pct": 70,
-      "portfolio_score": 15,
+      "portfolio_score": 18,
       "clients_critica": [],
       "clients_alta": [
         "Bed4U",
         "Bercaber",
         "Cerveceria",
-        "Depique"
+        "Depique",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
       ],
       "clients_media": [
         "Albastar",
+        "Gloria Pets",
         "MDF",
         "MyPime Supermix Pucara",
         "Opengy",
@@ -547,24 +599,85 @@
         "Regalador",
         "ladypipa.com"
       ],
-      "total_affected": 12,
-      "avg_ad_count": 236
+      "total_affected": 14,
+      "avg_ad_count": 232
     },
     {
-      "section": "3b",
-      "title": "Legacy Processes & Reports (AD_PROCESS)",
-      "status": "PARCIAL",
-      "completion_pct": 25,
-      "portfolio_score": 12,
-      "clients_critica": [
+      "section": "22",
+      "title": "Field Groups (secciones colapsables)",
+      "status": "TO CHECK",
+      "completion_pct": 60,
+      "portfolio_score": 14,
+      "clients_critica": [],
+      "clients_alta": [
         "Cerveceria",
-        "Depique",
-        "MDF"
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
       ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 3,
-      "avg_ad_count": 354
+      "clients_media": [
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Gloria Pets",
+        "MDF",
+        "MyPime Supermix Pucara",
+        "Opengy",
+        "Pazo Pondal S.L.",
+        "Regalador",
+        "ladypipa.com"
+      ],
+      "total_affected": 13,
+      "avg_ad_count": 1866
+    },
+    {
+      "section": "9",
+      "title": "Comportamientos del grid/lista",
+      "status": "TO CHECK",
+      "completion_pct": 68,
+      "portfolio_score": 13,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico",
+        "Cerveceria"
+      ],
+      "clients_media": [
+        "Albastar",
+        "Depique",
+        "Fueltruck",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "MDF",
+        "MyPime Supermix Pucara",
+        "Pazo Pondal S.L.",
+        "ladypipa.com"
+      ],
+      "total_affected": 11,
+      "avg_ad_count": 504
+    },
+    {
+      "section": "1.3",
+      "title": "Ventanas tipo Query/Info (Q)",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 13,
+      "clients_critica": [],
+      "clients_alta": [
+        "Cerveceria"
+      ],
+      "clients_media": [
+        "Acico",
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Luján Agrícola",
+        "MDF",
+        "Pazo Pondal S.L.",
+        "ladypipa.com"
+      ],
+      "total_affected": 15,
+      "avg_ad_count": 9
     },
     {
       "section": "2.B.2",
@@ -583,75 +696,70 @@
       "avg_ad_count": 135
     },
     {
-      "section": "9",
-      "title": "Comportamientos del grid/lista",
+      "section": "10",
+      "title": "Funcionalidades transversales (cross-cutting)",
       "status": "TO CHECK",
-      "completion_pct": 68,
+      "completion_pct": 73,
       "portfolio_score": 11,
       "clients_critica": [],
       "clients_alta": [
-        "Acico",
-        "Cerveceria"
+        "Cerveceria",
+        "Depique"
       ],
       "clients_media": [
         "Albastar",
-        "Depique",
-        "Fueltruck",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "MDF",
         "MyPime Supermix Pucara",
         "Pazo Pondal S.L.",
         "ladypipa.com"
       ],
       "total_affected": 9,
-      "avg_ad_count": 572
+      "avg_ad_count": 2140
     },
     {
-      "section": "22",
-      "title": "Field Groups (secciones colapsables)",
-      "status": "TO CHECK",
-      "completion_pct": 70,
-      "portfolio_score": 11,
-      "clients_critica": [],
+      "section": "33",
+      "title": "Personalización de Vistas (Saved Views)",
+      "status": "NOT DONE",
+      "completion_pct": 10,
+      "portfolio_score": 10,
+      "clients_critica": [
+        "Acico"
+      ],
       "clients_alta": [
-        "Cerveceria"
+        "Cerveceria",
+        "MyPime Supermix Pucara"
       ],
       "clients_media": [
-        "Albastar",
+        "Gloria Pets",
+        "MDF"
+      ],
+      "total_affected": 6,
+      "avg_ad_count": 668
+    },
+    {
+      "section": "29",
+      "title": "Tree views",
+      "status": "TO CHECK",
+      "completion_pct": 40,
+      "portfolio_score": 10,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
         "Bed4U",
         "Bercaber",
+        "Cerveceria",
+        "Depique",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "MDF",
-        "MyPime Supermix Pucara",
         "Opengy",
         "Pazo Pondal S.L.",
-        "Regalador",
-        "ladypipa.com"
+        "Regalador"
       ],
-      "total_affected": 11,
-      "avg_ad_count": 1808
-    },
-    {
-      "section": "1.3",
-      "title": "Ventanas tipo Query/Info (Q)",
-      "status": "TO CHECK",
-      "completion_pct": 75,
-      "portfolio_score": 11,
-      "clients_critica": [],
-      "clients_alta": [
-        "Cerveceria"
-      ],
-      "clients_media": [
-        "Acico",
-        "Albastar",
-        "Bed4U",
-        "Bercaber",
-        "Depique",
-        "Luján Agrícola",
-        "MDF",
-        "Pazo Pondal S.L.",
-        "ladypipa.com"
-      ],
-      "total_affected": 13,
-      "avg_ad_count": 9
+      "total_affected": 10,
+      "avg_ad_count": 2
     },
     {
       "section": "3.A.2a",
@@ -670,6 +778,29 @@
       ],
       "total_affected": 4,
       "avg_ad_count": 118
+    },
+    {
+      "section": "12",
+      "title": "Navigation and application structure",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 10,
+      "clients_critica": [],
+      "clients_alta": [
+        "Cerveceria"
+      ],
+      "clients_media": [
+        "Bed4U",
+        "Bercaber",
+        "Depique",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "MDF",
+        "MyPime Supermix Pucara",
+        "ladypipa.com"
+      ],
+      "total_affected": 9,
+      "avg_ad_count": 571
     },
     {
       "section": "3.B.1",
@@ -712,23 +843,26 @@
       "avg_ad_count": 37
     },
     {
-      "section": "33",
-      "title": "Personalización de Vistas (Saved Views)",
-      "status": "NOT DONE",
-      "completion_pct": 10,
+      "section": "24",
+      "title": "Form Layout System (diseño del formulario)",
+      "status": "TO CHECK",
+      "completion_pct": 60,
       "portfolio_score": 9,
-      "clients_critica": [
-        "Acico"
-      ],
+      "clients_critica": [],
       "clients_alta": [
-        "Cerveceria",
-        "MyPime Supermix Pucara"
+        "Cerveceria"
       ],
       "clients_media": [
-        "MDF"
+        "Depique",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "MDF",
+        "MyPime Supermix Pucara",
+        "Pazo Pondal S.L.",
+        "Regalador",
+        "ladypipa.com"
       ],
-      "total_affected": 5,
-      "avg_ad_count": 668
+      "total_affected": 8,
+      "avg_ad_count": 2520
     },
     {
       "section": "3.B.3",
@@ -751,27 +885,6 @@
       "avg_ad_count": 124
     },
     {
-      "section": "10",
-      "title": "Funcionalidades transversales (cross-cutting)",
-      "status": "TO CHECK",
-      "completion_pct": 73,
-      "portfolio_score": 9,
-      "clients_critica": [],
-      "clients_alta": [
-        "Cerveceria",
-        "Depique"
-      ],
-      "clients_media": [
-        "Albastar",
-        "MDF",
-        "MyPime Supermix Pucara",
-        "Pazo Pondal S.L.",
-        "ladypipa.com"
-      ],
-      "total_affected": 7,
-      "avg_ad_count": 1222
-    },
-    {
       "section": "AD_FORM",
       "title": "Formularios de Aplicación (AD_FORM)",
       "status": "NOT DONE",
@@ -785,69 +898,6 @@
       "clients_media": [],
       "total_affected": 3,
       "avg_ad_count": 29
-    },
-    {
-      "section": "29",
-      "title": "Tree views",
-      "status": "TO CHECK",
-      "completion_pct": 40,
-      "portfolio_score": 8,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "Bed4U",
-        "Bercaber",
-        "Cerveceria",
-        "Depique",
-        "MDF",
-        "Opengy",
-        "Pazo Pondal S.L.",
-        "Regalador"
-      ],
-      "total_affected": 8,
-      "avg_ad_count": 2
-    },
-    {
-      "section": "24",
-      "title": "Form Layout System (diseño del formulario)",
-      "status": "TO CHECK",
-      "completion_pct": 60,
-      "portfolio_score": 8,
-      "clients_critica": [],
-      "clients_alta": [
-        "Cerveceria"
-      ],
-      "clients_media": [
-        "Depique",
-        "MDF",
-        "MyPime Supermix Pucara",
-        "Pazo Pondal S.L.",
-        "Regalador",
-        "ladypipa.com"
-      ],
-      "total_affected": 7,
-      "avg_ad_count": 1331
-    },
-    {
-      "section": "12",
-      "title": "Navigation and application structure",
-      "status": "TO CHECK",
-      "completion_pct": 72,
-      "portfolio_score": 8,
-      "clients_critica": [],
-      "clients_alta": [
-        "Cerveceria"
-      ],
-      "clients_media": [
-        "Bed4U",
-        "Bercaber",
-        "Depique",
-        "MDF",
-        "MyPime Supermix Pucara",
-        "ladypipa.com"
-      ],
-      "total_affected": 7,
-      "avg_ad_count": 580
     },
     {
       "section": "2.B.1",
@@ -1267,20 +1317,6 @@
       "avg_ad_count": 14
     },
     {
-      "section": "19",
-      "title": "Linked Items (KMO)",
-      "status": "TO CHECK",
-      "completion_pct": 5,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "Cerveceria"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 20
-    },
-    {
       "section": "2.ref_parcial",
       "title": "Reference Types — Tipos PARCIAL/NOT DONE presentes",
       "status": "PARCIAL",
@@ -1335,6 +1371,20 @@
       ],
       "total_affected": 1,
       "avg_ad_count": 668
+    },
+    {
+      "section": "19",
+      "title": "Linked Items (KMO)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "Cerveceria"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 20
     },
     {
       "section": "20",
@@ -1537,6 +1587,18 @@
       "name": "Fueltruck",
       "ui_score": 87,
       "global_status": ""
+    },
+    {
+      "slug": "Gloria Pets",
+      "name": "Gloria Pets",
+      "ui_score": 88,
+      "global_status": "blocked"
+    },
+    {
+      "slug": "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+      "name": "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+      "ui_score": 88,
+      "global_status": "blocked"
     },
     {
       "slug": "Luján Agrícola",
@@ -1926,6 +1988,43 @@
       "priority_score": 21
     },
     {
+      "java_package": "org.openbravo.module.facturae",
+      "name": "Factura-e (Formato 3.x)",
+      "function": "Generación de facturas electrónicas en formato Factura-e para presentación ante la Administración Pública española (AEAT, FACe). Formato XML firmado digitalmente.",
+      "clients": [
+        "Albastar",
+        "Cerveceria",
+        "Enertis",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Montblanc",
+        "Regalador",
+        "VdShop"
+      ],
+      "client_count": 7,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.localization.spain.extensions",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3",
+        "Apache Commons Lang 2→3: likely",
+        "Certificado de firma digital puede requerir actualización",
+        "Formato Factura-e evolucionado a 3.2.2",
+        "Java 17 mandatory",
+        "Librería SOAP/JAX-WS — verificar javax.xml.soap y jaxws en Java 17",
+        "No maintainer: Openbravo SLU",
+        "No maintainer: Openbravo SLU no longer maintains these",
+        "Sin git — sin soporte para 25.x",
+        "Spain Localization de Etendo puede incluir Facturae",
+        "XML SOAP dependencies (org.openbravo.util.jaxws) — riesgo de compatibilidad Java 17",
+        "commons-lang → lang3",
+        "iText: iText jar removed in Etendo 25.x — com.lowagie:itext 2.1.7 added as replacement, check usage"
+      ],
+      "avg_effort_update_hours": 15,
+      "avg_effort_saas_hours": 11,
+      "priority_score": 21
+    },
+    {
       "java_package": "com.etendoerp.analytics.exporter",
       "name": "Analytics Exporter",
       "function": "Módulo de Futit Services para exportar datos analíticos desde Etendo. Posiblemente exporta registros de AD a formatos de análisis externos.",
@@ -1992,38 +2091,33 @@
       "priority_score": 20
     },
     {
-      "java_package": "org.openbravo.module.facturae",
-      "name": "Factura-e (Formato 3.x)",
-      "function": "Generación de facturas electrónicas en formato Factura-e para presentación ante la Administración Pública española (AEAT, FACe). Formato XML firmado digitalmente.",
+      "java_package": "org.openbravo.module.einvoice",
+      "name": "Electronic Invoice Spain — Translations",
+      "function": "Spanish translations for the Openbravo e-invoice module (Factura Electrónica). Legal fiscal compliance module for Spain.",
       "clients": [
+        "Acico",
         "Albastar",
         "Cerveceria",
-        "Enertis",
-        "Montblanc",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Regalador",
         "VdShop"
       ],
       "client_count": 6,
       "max_risk": "high",
       "has_replacement": false,
-      "official_replacement_name": "com.etendoerp.localization.spain.extensions",
-      "generalization": "bundle_candidate",
+      "official_replacement_name": "org.openbravo.module.facturae (módulo más moderno en el mismo sistema)",
+      "generalization": "client_specific",
       "api_changes": [
-        "Apache Commons Lang 2→3",
-        "Apache Commons Lang 2→3: likely",
-        "Certificado de firma digital puede requerir actualización",
-        "Formato Factura-e evolucionado a 3.2.2",
+        "API de generación de documentos",
+        "Formatos XML evolucionados (Factura-e 3.2.x, PEPPOL)",
+        "Gradle 7→8",
         "Java 17 mandatory",
-        "No maintainer: Openbravo SLU",
-        "No maintainer: Openbravo SLU no longer maintains these",
+        "Jettison coordinate change",
         "Sin git — sin soporte para 25.x",
-        "Spain Localization de Etendo puede incluir Facturae",
-        "XML SOAP dependencies (org.openbravo.util.jaxws) — riesgo de compatibilidad Java 17",
-        "commons-lang → lang3",
-        "iText: iText jar removed in Etendo 25.x — com.lowagie:itext 2.1.7 added as replacement, check usage"
+        "Spain Localization Extensions de Etendo puede reemplazar esto"
       ],
-      "avg_effort_update_hours": 15,
-      "avg_effort_saas_hours": 10,
+      "avg_effort_update_hours": 8,
+      "avg_effort_saas_hours": 7,
       "priority_score": 18
     },
     {
@@ -2115,6 +2209,35 @@
       "priority_score": 15
     },
     {
+      "java_package": "org.openbravo.interco",
+      "name": "Inter-company Documents",
+      "function": "Generates inter-company purchase orders from sales orders across organizations sharing a client. Required if Enertis operates with multiple legal entities in the same Etendo instance.",
+      "clients": [
+        "Enertis",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "MyPime Hercam",
+        "MyPime Supermix Pucara",
+        "Opengy"
+      ],
+      "client_count": 5,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.advanced.intercompany (ya instalado como local_maintained)",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3: likely",
+        "Commons Lang 2→3",
+        "Gradle Plugin + wrapper",
+        "Módulo Openbravo sin mantenimiento en Etendo; verificar si existe reemplazo oficial",
+        "No maintainer: Openbravo SLU",
+        "commons_lang_3",
+        "hibernate_5_6"
+      ],
+      "avg_effort_update_hours": 7,
+      "avg_effort_saas_hours": 6,
+      "priority_score": 15
+    },
+    {
       "java_package": "org.openbravo.module.cuaderno19.es",
       "name": "Cuaderno 19 — Domiciliación SEPA",
       "function": "Generación de ficheros de domiciliación bancaria en formato Cuaderno 19 (norma AEB) para cobros por domiciliación a clientes. Formato bancario español anterior al SEPA.",
@@ -2139,35 +2262,6 @@
         "No maintainer: Openbravo SLU no longer maintains these"
       ],
       "avg_effort_update_hours": 11,
-      "avg_effort_saas_hours": 7,
-      "priority_score": 15
-    },
-    {
-      "java_package": "org.openbravo.module.einvoice",
-      "name": "Electronic Invoice Spain — Translations",
-      "function": "Spanish translations for the Openbravo e-invoice module (Factura Electrónica). Legal fiscal compliance module for Spain.",
-      "clients": [
-        "Acico",
-        "Albastar",
-        "Cerveceria",
-        "Regalador",
-        "VdShop"
-      ],
-      "client_count": 5,
-      "max_risk": "high",
-      "has_replacement": false,
-      "official_replacement_name": "Spain Localization bundle",
-      "generalization": "client_specific",
-      "api_changes": [
-        "API de generación de documentos",
-        "Formatos XML evolucionados (Factura-e 3.2.x, PEPPOL)",
-        "Gradle 7→8",
-        "Java 17 mandatory",
-        "Jettison coordinate change",
-        "Sin git — sin soporte para 25.x",
-        "Spain Localization Extensions de Etendo puede reemplazar esto"
-      ],
-      "avg_effort_update_hours": 9,
       "avg_effort_saas_hours": 7,
       "priority_score": 15
     },
@@ -2332,33 +2426,6 @@
       "priority_score": 12
     },
     {
-      "java_package": "org.openbravo.interco",
-      "name": "Inter-company Documents",
-      "function": "Generates inter-company purchase orders from sales orders across organizations sharing a client. Required if Enertis operates with multiple legal entities in the same Etendo instance.",
-      "clients": [
-        "Enertis",
-        "MyPime Hercam",
-        "MyPime Supermix Pucara",
-        "Opengy"
-      ],
-      "client_count": 4,
-      "max_risk": "high",
-      "has_replacement": false,
-      "official_replacement_name": "com.etendoerp.advanced.intercompany (ya instalado como local_maintained)",
-      "generalization": "bundle_candidate",
-      "api_changes": [
-        "Apache Commons Lang 2→3: likely",
-        "Commons Lang 2→3",
-        "Gradle Plugin + wrapper",
-        "No maintainer: Openbravo SLU",
-        "commons_lang_3",
-        "hibernate_5_6"
-      ],
-      "avg_effort_update_hours": 7,
-      "avg_effort_saas_hours": 5,
-      "priority_score": 12
-    },
-    {
       "java_package": "org.openbravo.module.facturae31",
       "name": "Factura-e v3.1",
       "function": "Soporte específico del formato Factura-e versión 3.1.",
@@ -2448,6 +2515,34 @@
       ],
       "avg_effort_update_hours": 7,
       "avg_effort_saas_hours": 6,
+      "priority_score": 9
+    },
+    {
+      "java_package": "com.smf.integration.magento",
+      "name": "Integración Magento 2.x (6 módulos)",
+      "function": "Sincronización bidireccional con tienda Magento 2.x: productos, precios, stock, descuentos, imágenes, pedidos entrantes y gestión de flete. Core del canal de venta online de Gloria Pets.",
+      "clients": [
+        "Gloria Pets",
+        "MyPime Hercam",
+        "MyPime Supermix Pucara"
+      ],
+      "client_count": 3,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Etendo 25: Java 17 mandatory",
+        "Etendo 25: commons-lang 2→3",
+        "Magento 2.x API pueden haber cambiado (versión de Magento del cliente desconocida)",
+        "Módulo template puede requerir actualización de plantillas JasperReports",
+        "commons_collections4",
+        "commons_lang_3",
+        "hibernate_5_6",
+        "java_17"
+      ],
+      "avg_effort_update_hours": 47,
+      "avg_effort_saas_hours": 50,
       "priority_score": 9
     },
     {
@@ -2770,29 +2865,6 @@
       "priority_score": 6
     },
     {
-      "java_package": "com.smf.integration.magento",
-      "name": "Magento 2.x Integration",
-      "function": "Integración bidireccional con tienda online Magento 2.x: sincronización de productos, precios, pedidos y clientes entre Etendo y Magento.",
-      "clients": [
-        "MyPime Hercam",
-        "MyPime Supermix Pucara"
-      ],
-      "client_count": 2,
-      "max_risk": "high",
-      "has_replacement": false,
-      "official_replacement_name": null,
-      "generalization": "bundle_candidate",
-      "api_changes": [
-        "commons_collections4",
-        "commons_lang_3",
-        "hibernate_5_6",
-        "java_17"
-      ],
-      "avg_effort_update_hours": 30,
-      "avg_effort_saas_hours": 16,
-      "priority_score": 6
-    },
-    {
       "java_package": "com.smf.integration.magento.template",
       "name": "Template Magento 2.x Integration",
       "function": "Plantilla de datos de referencia para la integración con Magento. Sigue la suerte del módulo principal.",
@@ -3104,6 +3176,24 @@
       ],
       "avg_effort_update_hours": 5,
       "avg_effort_saas_hours": 6,
+      "priority_score": 4
+    },
+    {
+      "java_package": "com.smf.gljournal.clone",
+      "name": "SMF GL Journal Clone",
+      "function": "Clonación de asientos contables (GL Journal). Permite duplicar un asiento completo como punto de partida para nuevos asientos similares.",
+      "clients": [
+        "Albastar",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": "GL Journal Advanced (com.etendoerp.gljournal.advanced)",
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 3,
+      "avg_effort_saas_hours": 4,
       "priority_score": 4
     },
     {
@@ -3581,6 +3671,27 @@
       "priority_score": 3
     },
     {
+      "java_package": "cat.practics.fshedi.module",
+      "name": "EDI Module (cat.practics)",
+      "function": "Intercambio electrónico de pedidos y documentos logísticos (EDI) con clientes y proveedores. Crítico para la operativa de distribución alimentaria de Gloria Pets, que intercambia pedidos electrónicamente con grandes superficies y distribuidores.",
+      "clients": [
+        "Gloria Pets"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Etendo 25: Java 17 mandatory",
+        "Etendo 25: commons-lang 2→3 probable",
+        "Sin mantenedor activo desde versión desconocida"
+      ],
+      "avg_effort_update_hours": 24,
+      "avg_effort_saas_hours": 40,
+      "priority_score": 3
+    },
+    {
       "java_package": "com.etendoerp.productioncost",
       "name": "Production Cost Module",
       "function": "Production costing module providing cost calculation for manufacturing transactions. May overlap with com.smf.acico.costing.",
@@ -3983,6 +4094,27 @@
       "priority_score": 3
     },
     {
+      "java_package": "com.smf.carrierintegration.group",
+      "name": "Integraciones Transportistas (Dachser, DHL, Redur, Seur)",
+      "function": "Integración con 4 transportistas para generación de etiquetas, tracking de envíos y comunicación de expediciones. Crítico para el proceso de entrega de pedidos de distribución alimentaria.",
+      "clients": [
+        "Gloria Pets"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "APIs de transportistas pueden haber evolucionado (actualizar credenciales/endpoints)",
+        "Etendo 25: Java 17 mandatory",
+        "Etendo 25: commons-lang 2→3"
+      ],
+      "avg_effort_update_hours": 48,
+      "avg_effort_saas_hours": 64,
+      "priority_score": 3
+    },
+    {
       "java_package": "com.smf.createwrfromwe",
       "name": "Create Work Requirements from Work Efforts",
       "function": "Provides functionality to generate Work Requirements directly from Work Efforts in the manufacturing module. Fills a gap in the standard Etendo manufacturing workflow.",
@@ -4039,6 +4171,28 @@
       "priority_score": 3
     },
     {
+      "java_package": "com.smf.gloria.dispatch_and_commercial_group",
+      "name": "Módulos SMF Gloria — Dispatch, Commercial, Reports, etc. (15 módulos)",
+      "function": "Conjunto de módulos SMF específicos de Gloria Pets: gestión de despacho/expediciones, histórico de comerciales, creación manual de facturas, cubo de facturas BI, integración Edicom, filtros custom, consulta de stock WebService, widgets de dashboard, informes Gloria, envío masivo de facturas/presupuestos por email, integración Truck&Wheel.",
+      "clients": [
+        "Gloria Pets"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Etendo 25: JasperReports 6.17 — actualizar plantillas de reportes Gloria",
+        "Etendo 25: Java 17 mandatory",
+        "Etendo 25: commons-lang 2→3 probable en módulos con Java",
+        "Módulos con SmartClient JS (widgets, webpos) requieren revisión para nueva UI React"
+      ],
+      "avg_effort_update_hours": 120,
+      "avg_effort_saas_hours": 200,
+      "priority_score": 3
+    },
+    {
       "java_package": "com.smf.guaguas.sii",
       "name": "Guaguas SII Trigger Functions Customizations",
       "function": "",
@@ -4070,6 +4224,133 @@
       "api_changes": [],
       "avg_effort_update_hours": 15,
       "avg_effort_saas_hours": 25,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.idm.customizations",
+      "name": "IDM Customizations",
+      "function": "Módulo paraguas que agrupa customizaciones generales de IDM: campos adicionales en ventanas core, lógicas de visualización custom, adaptaciones de flujos estándar. Versión 1.1.10 indica mantenimiento activo pasado.",
+      "clients": [
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Evaluar imports de Commons Lang y Log4j al actualizar"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 30,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.idm.invoices.customizations",
+      "name": "Invoices Customizations",
+      "function": "Personalizaciones en el flujo de facturación de IDM: condiciones adicionales, campos extra en facturas y adaptaciones del proceso de generación de facturas.",
+      "clients": [
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Verificar compatibilidad con InvoiceEventHandler API en 25.4"
+      ],
+      "avg_effort_update_hours": 12,
+      "avg_effort_saas_hours": 20,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.idm.machine.reserve",
+      "name": "Reserva Producción (Machine Reserve)",
+      "function": "Gestión de reservas de producción vinculadas a máquinas de la empresa. Permite reservar stock asociado a una máquina específica en pedidos de venta y producción.",
+      "clients": [
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "API de reservas de Etendo — verificar compatibilidad con ReservationUtils en 25.4"
+      ],
+      "avg_effort_update_hours": 16,
+      "avg_effort_saas_hours": 24,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.idm.purchaseplanning",
+      "name": "IDM Purchase Planning",
+      "function": "Planificación de compras para IDM: sugiere pedidos de compra basados en stock mínimo, demanda prevista y tiempos de entrega de proveedores.",
+      "clients": [
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 16,
+      "avg_effort_saas_hours": 24,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.idm.repairorder",
+      "name": "Orden de Reparación",
+      "function": "Gestión del ciclo de vida de órdenes de reparación de maquinaria: creación desde incidencia, partes, materiales consumidos y facturación.",
+      "clients": [
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 32,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.idm.sat.incidences",
+      "name": "Incidencias SAT",
+      "function": "Gestión de incidencias del Servicio de Atención Técnica (SAT): registro, seguimiento y resolución de averías y reclamaciones de clientes.",
+      "clients": [
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 16,
+      "avg_effort_saas_hours": 24,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.idm.warehousemanagement",
+      "name": "Warehouse Management IDM",
+      "function": "Extensiones de gestión de almacén específicas de IDM: control de entregas parciales, cantidades de entrega real (ogdeliveredqty), estados de almacén en líneas de pedido.",
+      "clients": [
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l."
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Verificar campos smfwm en API de OrderLine/ShipmentLine en 25.4"
+      ],
+      "avg_effort_update_hours": 12,
+      "avg_effort_saas_hours": 20,
       "priority_score": 3
     },
     {
@@ -5283,6 +5564,94 @@
       "description": "El campo NIF/CIF (TAXID) de la tabla C_BPartner fue ampliado de 20 a 100 caracteres. Es la misma operación que realiza el ModuleScript TaxExpander del módulo com.smf.fueltruck.template, pero también aplicada directamente en el modelo de core.",
       "justification": "La restricción de 20 caracteres es insuficiente para identificadores fiscales europeos (NIF-IVA, CIF, Tax ID extranjeros). Esta ampliación a 100 caracteres beneficia a cualquier cliente en España o con socios comerciales internacionales y debería incluirse en Etendo core.",
       "effort_saas_hours": 2
+    },
+    {
+      "type": "module",
+      "client": "Gloria Pets",
+      "name": "Dairy Customization",
+      "java_package": "com.smf.dairy.customization",
+      "description": "Módulo de sector lácteo que extiende C_ORDER y C_ORDERLINE con una referencia al pedido de origen (DAIR_C_ORDER_ID). El event handler SetOriginOrderLine vincula automáticamente las líneas de un pedido de devolución con las líneas del albarán original, y actualiza el campo 'Pedido Origen' del cabecero cuando todas las líneas de devolución provienen del mismo pedido. Permite el seguimiento completo de devoluciones en la industria láctea.",
+      "complexity": "minor",
+      "effort_saas_hours": 16,
+      "recommendation": "Candidato a bundle oficial 'Return Order Tracking for Dairy'. El concepto (vincular devoluciones al pedido origen) es genérico y reutilizable en otras industrias. Proponer a Etendo como módulo del marketplace. Si se generaliza, eliminar el flag isCsgcIsdairy del core y reemplazar por configuración del módulo."
+    },
+    {
+      "type": "core",
+      "client": "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+      "name": "CreateInvoiceLinesFromHandler — fix de condiciones de pago nulas",
+      "description": "Corrección de error en el proceso de creación de líneas de factura desde pedido: cuando el tercero no tiene condiciones de pago configuradas (PaymentTerms null), el sistema lanzaba una NPE. El fix temporalmente asigna las condiciones de pago de la factura al tercero durante el proceso y las restaura al finalizar.",
+      "justification": "Es un bug fix legítimo en el core: terceros sin condiciones de pago configuradas es un escenario válido. El fix evita NPE con un manejo defensivo. Proponer como bug fix al equipo de Etendo core.",
+      "effort_saas_hours": 3
+    },
+    {
+      "type": "module",
+      "client": "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+      "name": "Generate Shipments Custom",
+      "java_package": "com.smf.generateshipments.custom",
+      "description": "Formulario AD_FORM custom de generación masiva de albaranes de venta con validación de stock previa. Añade un filtro configurable ('Solo líneas con stock') basado en la función GSMC_CHECKSTOCK que verifica disponibilidad en almacén antes de generar envíos. Opcionalmente puede buscar en todos los almacenes según preferencia del cliente.",
+      "complexity": "minor",
+      "effort_saas_hours": 16,
+      "recommendation": "La funcionalidad de validación de stock antes de generar albaranes es genérica y útil para múltiples clientes industriales. Candidato a bundle oficial smf.warehouse.shipment.validation. Para SaaS: reimplementar como Process Definition Action con React UI."
+    },
+    {
+      "type": "module",
+      "client": "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+      "name": "Generate Shipments Custom Template",
+      "java_package": "com.smf.generateshipments.custom.template",
+      "description": "Módulo plantilla para generate shipments custom. No contiene lógica.",
+      "complexity": "trivial",
+      "effort_saas_hours": 0,
+      "recommendation": "Sigue el destino del módulo principal."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+      "name": "IDM Sales Margin",
+      "java_package": "com.smf.idm.salesmargin",
+      "description": "Cálculo y visualización de márgenes de venta por línea de pedido, con comparativa coste–precio de venta y alertas de margen negativo.",
+      "risk": "medium",
+      "effort_saas_hours": 12,
+      "recommendation": "Funcionalidad de márgenes en pedidos es común y generalizable. Candidato a bundle oficial en Sales Extensions."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+      "name": "Gestión de Visitas",
+      "java_package": "com.smf.idm.visitmanagement",
+      "description": "Registro y seguimiento de visitas comerciales: citas, clientes visitados, objetivos, resultados e informes de actividad comercial.",
+      "risk": "medium",
+      "effort_saas_hours": 20,
+      "recommendation": "Funcionalidad CRM básica. Evaluar integración con el módulo Contact Management de Etendo existente."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+      "name": "ReOpen Orders",
+      "java_package": "com.smf.orders.reopen",
+      "description": "Permite reabrir pedidos de venta ya completados para añadir líneas adicionales o corregir cantidades sin necesidad de crear un nuevo pedido.",
+      "risk": "medium",
+      "effort_saas_hours": 10,
+      "recommendation": "Funcionalidad útil para múltiples clientes. Candidato a bundle oficial en Sales Extensions."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+      "name": "Sales Agent and Sales Representative Fields",
+      "java_package": "com.smf.idm.agentandcommercial",
+      "description": "Separa los campos de Agente Comercial y Representante de Ventas en pedidos de venta, permitiendo asignar ambos roles independientemente a un mismo pedido.",
+      "risk": "medium",
+      "effort_saas_hours": 8,
+      "recommendation": "Separación de roles comerciales es una necesidad común en distribución. Candidato a Sales Extensions."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+      "name": "Price Escalation",
+      "java_package": "com.smf.idm.pricescalation",
+      "description": "Gestión de escalado de precios por volumen o condiciones especiales de contrato para IDM.",
+      "risk": "medium",
+      "effort_saas_hours": 12,
+      "recommendation": "Funcionalidad de precios escalonados es común en ventas B2B. Evaluar si Price List Extensions de Etendo lo cubre."
     },
     {
       "type": "module_unmaintained",
