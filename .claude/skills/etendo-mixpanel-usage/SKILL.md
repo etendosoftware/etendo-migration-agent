@@ -45,6 +45,7 @@ MANUAL_MIXPANEL_OVERRIDES = {
     "ccsa"          : "Cerveceria Cubana",
     "supermix"      : "MyPime Supermix Pucara",
     "mipyme"        : "MyPime Hercam",
+    "pazo_pondal_s_l": "Pazo Pondal S.L.",
 }
 
 # If no instance was given in $ARGUMENTS, use override or slug as fallback

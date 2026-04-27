@@ -128,6 +128,7 @@ MANUAL_MIXPANEL_OVERRIDES = {
     "ccsa"          : "Cerveceria Cubana",
     "supermix"      : "MyPime Supermix Pucara",
     "mipyme"        : "MyPime Hercam",
+    "pazo_pondal_s_l": "Pazo Pondal S.L.",
 }
 
 for slug, source_instance in MANUAL_MIXPANEL_OVERRIDES.items():
