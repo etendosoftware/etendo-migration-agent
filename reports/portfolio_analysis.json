@@ -1,6 +1,7 @@
 {
   "generated": "2026-04-27",
   "analyzed_clients": [
+    "APEX",
     "Acico",
     "Albastar",
     "Bed4U",
@@ -23,17 +24,19 @@
     "Opengy",
     "Pazo Pondal S.L.",
     "Regalador",
+    "TCX 08 SOLUCIONS INTEGRALS, SL",
     "VdShop",
     "ladypipa.com"
   ],
   "ui_feature_roadmap": [
     {
       "section": "2.B",
-      "title": "Botones hardcoded (DocAction + Posted + CreateFrom) — agregado para scoring",
+      "title": "Botones Hardcoded (DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus)",
       "status": "PARCIAL",
       "completion_pct": 35,
-      "portfolio_score": 84,
+      "portfolio_score": 88,
       "clients_critica": [
+        "APEX",
         "Acico",
         "Albastar",
         "Albastar",
@@ -62,16 +65,17 @@
         "Albastar",
         "ladypipa.com"
       ],
-      "total_affected": 24,
+      "total_affected": 25,
       "avg_ad_count": 59
     },
     {
       "section": "4",
-      "title": "Display Logic (visibilidad dinámica de campos)",
+      "title": "Display Logic (Visibilidad de Campos)",
       "status": "BUG ACTIVO",
       "completion_pct": 50,
-      "portfolio_score": 76,
+      "portfolio_score": 84,
       "clients_critica": [
+        "APEX",
         "Acico",
         "Albastar",
         "Bed4U",
@@ -90,20 +94,22 @@
         "Opengy",
         "Pazo Pondal S.L.",
         "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
         "ladypipa.com"
       ],
       "clients_alta": [],
       "clients_media": [],
-      "total_affected": 20,
-      "avg_ad_count": 2840
+      "total_affected": 22,
+      "avg_ad_count": 2797
     },
     {
       "section": "18",
-      "title": "AD Forms (formularios especiales)",
-      "status": "NOT DONE",
+      "title": "Formularios de Aplicación (AD_FORM)",
+      "status": "NO IMPLEMENTADO",
       "completion_pct": 5,
-      "portfolio_score": 56,
+      "portfolio_score": 64,
       "clients_critica": [
+        "APEX",
         "Albastar",
         "Bed4U",
         "Bercaber",
@@ -117,20 +123,22 @@
         "Montblanc",
         "MyPime Supermix Pucara",
         "Opengy",
-        "Regalador"
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "clients_alta": [],
       "clients_media": [],
-      "total_affected": 14,
+      "total_affected": 16,
       "avg_ad_count": 30
     },
     {
       "section": "1.4",
-      "title": "Ventanas Pick and Execute (OBUIAPP_PickAndExecute)",
-      "status": "PARCIAL",
+      "title": "Ventanas Pick and Execute",
+      "status": "TO CHECK",
       "completion_pct": 55,
-      "portfolio_score": 52,
+      "portfolio_score": 60,
       "clients_critica": [
+        "APEX",
         "Acico",
         "Albastar",
         "Cerveceria",
@@ -139,7 +147,8 @@
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Klaus",
         "Luján Agrícola",
-        "MDF"
+        "MDF",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "clients_alta": [
         "Bercaber",
@@ -154,16 +163,17 @@
         "Opengy",
         "Regalador"
       ],
-      "total_affected": 19,
-      "avg_ad_count": 73
+      "total_affected": 21,
+      "avg_ad_count": 70
     },
     {
       "section": "26",
-      "title": "Filtros por Defecto de Tab (HQLFILTERCLAUSE)",
+      "title": "Filtros y Ordenación por Defecto de Pestañas",
       "status": "NOT DONE",
       "completion_pct": 0,
-      "portfolio_score": 50,
+      "portfolio_score": 56,
       "clients_critica": [
+        "APEX",
         "Acico",
         "Bed4U",
         "Bercaber",
@@ -182,29 +192,32 @@
         "Montblanc",
         "MyPime Supermix Pucara",
         "Opengy",
-        "Regalador"
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "clients_media": [
         "Depique",
         "ladypipa.com"
       ],
-      "total_affected": 19,
-      "avg_ad_count": 128
+      "total_affected": 21,
+      "avg_ad_count": 122
     },
     {
       "section": "1.2",
-      "title": "Ventanas tipo Transaction (T)",
+      "title": "Ventanas Transaction (Ciclo de Vida de Documento)",
       "status": "TO CHECK",
       "completion_pct": 72,
-      "portfolio_score": 48,
+      "portfolio_score": 56,
       "clients_critica": [
+        "APEX",
         "Acico",
         "Bed4U",
         "Bercaber",
         "Cerveceria",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Klaus",
-        "NEXE"
+        "NEXE",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "clients_alta": [
         "Albastar",
@@ -222,15 +235,15 @@
         "Pazo Pondal S.L.",
         "ladypipa.com"
       ],
-      "total_affected": 20,
+      "total_affected": 22,
       "avg_ad_count": 40
     },
     {
       "section": "25",
-      "title": "Valores por Defecto de Columnas",
+      "title": "Expresiones de Valor por Defecto",
       "status": "PARCIAL",
-      "completion_pct": 45,
-      "portfolio_score": 46,
+      "completion_pct": 40,
+      "portfolio_score": 50,
       "clients_critica": [
         "Acico",
         "Albastar",
@@ -241,6 +254,7 @@
         "ladypipa.com"
       ],
       "clients_alta": [
+        "APEX",
         "Bed4U",
         "Bercaber",
         "Cerveceria",
@@ -249,18 +263,19 @@
         "Gloria Pets",
         "MyPime Supermix Pucara",
         "Opengy",
-        "Regalador"
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "clients_media": [],
-      "total_affected": 16,
-      "avg_ad_count": 4333
+      "total_affected": 18,
+      "avg_ad_count": 4211
     },
     {
       "section": "21",
-      "title": "Workspace / Dashboard (My Etendo)",
-      "status": "NOT DONE",
+      "title": "Workspace / Dashboard (My Openbravo)",
+      "status": "NO IMPLEMENTADO",
       "completion_pct": 5,
-      "portfolio_score": 40,
+      "portfolio_score": 42,
       "clients_critica": [
         "Acico",
         "Bed4U",
@@ -276,18 +291,20 @@
         "NEXE"
       ],
       "clients_media": [
+        "APEX",
         "Gloria Pets",
-        "Montblanc"
+        "Montblanc",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
-      "total_affected": 13,
-      "avg_ad_count": 34
+      "total_affected": 15,
+      "avg_ad_count": 39
     },
     {
       "section": "8",
-      "title": "Selectores y campos FK (OBUISEL_Selector)",
+      "title": "Selectores y Campos FK (OBUISEL)",
       "status": "TO CHECK",
       "completion_pct": 65,
-      "portfolio_score": 38,
+      "portfolio_score": 41,
       "clients_critica": [
         "Cerveceria",
         "Depique",
@@ -304,27 +321,30 @@
         "Klaus",
         "NEXE",
         "Opengy",
-        "Regalador"
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "clients_media": [
+        "APEX",
         "MDF",
         "Pazo Pondal S.L."
       ],
-      "total_affected": 17,
-      "avg_ad_count": 294
+      "total_affected": 19,
+      "avg_ad_count": 272
     },
     {
       "section": "5",
-      "title": "Comportamientos de Tab (SR, RO, ED, display logic)",
+      "title": "Comportamientos de Pestaña (Tab SR, ED, readonly, filtros)",
       "status": "TO CHECK",
       "completion_pct": 65,
-      "portfolio_score": 34,
+      "portfolio_score": 37,
       "clients_critica": [
         "Albastar",
         "Bed4U",
         "Bercaber"
       ],
       "clients_alta": [
+        "APEX",
         "Acico",
         "Cerveceria",
         "Depique",
@@ -341,21 +361,23 @@
         "Opengy",
         "Pazo Pondal S.L.",
         "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
         "ladypipa.com"
       ],
-      "total_affected": 18,
-      "avg_ad_count": 400
+      "total_affected": 20,
+      "avg_ad_count": 373
     },
     {
       "section": "6",
-      "title": "Callouts (lógica de negocio en cambio de campo)",
+      "title": "Callouts (Lógica en Cambio de Campo)",
       "status": "TO CHECK",
       "completion_pct": 60,
-      "portfolio_score": 32,
+      "portfolio_score": 36,
       "clients_critica": [
         "Depique"
       ],
       "clients_alta": [
+        "APEX",
         "Acico",
         "Albastar",
         "Bed4U",
@@ -366,7 +388,8 @@
         "Luján Agrícola",
         "NEXE",
         "Opengy",
-        "Regalador"
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "clients_media": [
         "Fueltruck",
@@ -376,15 +399,15 @@
         "MyPime Supermix Pucara",
         "Pazo Pondal S.L."
       ],
-      "total_affected": 19,
-      "avg_ad_count": 148
+      "total_affected": 21,
+      "avg_ad_count": 143
     },
     {
       "section": "3.B.2",
       "title": "Process Definition Manual JS (UIPattern=M)",
       "status": "BLOQUEADO",
       "completion_pct": 25,
-      "portfolio_score": 28,
+      "portfolio_score": 32,
       "clients_critica": [
         "Acico",
         "Albastar",
@@ -392,20 +415,22 @@
         "Opengy",
         "Pazo Pondal S.L.",
         "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
         "ladypipa.com"
       ],
       "clients_alta": [],
       "clients_media": [],
-      "total_affected": 7,
+      "total_affected": 8,
       "avg_ad_count": 22
     },
     {
       "section": "3",
-      "title": "Procesos (todos los tipos) — agregado para scoring",
+      "title": "Definiciones de Proceso (OBUIAPP_Process)",
       "status": "PARCIAL",
       "completion_pct": 50,
-      "portfolio_score": 28,
+      "portfolio_score": 32,
       "clients_critica": [
+        "APEX",
         "Acico",
         "Cerveceria",
         "Klaus",
@@ -420,53 +445,26 @@
         "NEXE"
       ],
       "clients_media": [],
-      "total_affected": 11,
-      "avg_ad_count": 349
-    },
-    {
-      "section": "2",
-      "title": "Tipos de referencia — Image BLOB",
-      "status": "PARCIAL",
-      "completion_pct": 45,
-      "portfolio_score": 26,
-      "clients_critica": [
-        "Gloria Pets"
-      ],
-      "clients_alta": [
-        "Albastar",
-        "Albastar",
-        "Bed4U",
-        "Bercaber",
-        "Cerveceria",
-        "Depique",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "Luján Agrícola",
-        "MDF"
-      ],
-      "clients_media": [
-        "Albastar",
-        "Montblanc",
-        "MyPime Supermix Pucara",
-        "ladypipa.com"
-      ],
-      "total_affected": 14,
-      "avg_ad_count": 354
+      "total_affected": 12,
+      "avg_ad_count": 330
     },
     {
       "section": "1.1",
-      "title": "Ventanas tipo Maintain (M)",
+      "title": "Ventanas Maintain (Maestros)",
       "status": "TO CHECK",
       "completion_pct": 75,
-      "portfolio_score": 26,
+      "portfolio_score": 30,
       "clients_critica": [
         "Cerveceria"
       ],
       "clients_alta": [
+        "APEX",
         "Acico",
         "Depique",
         "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
         "Klaus",
-        "Luján Agrícola"
+        "Luján Agrícola",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "clients_media": [
         "Albastar",
@@ -482,16 +480,48 @@
         "Regalador",
         "ladypipa.com"
       ],
-      "total_affected": 19,
-      "avg_ad_count": 299
+      "total_affected": 21,
+      "avg_ad_count": 292
+    },
+    {
+      "section": "2",
+      "title": "Tipos de Referencia (Widgets de campo)",
+      "status": "PARCIAL",
+      "completion_pct": 45,
+      "portfolio_score": 29,
+      "clients_critica": [
+        "Gloria Pets"
+      ],
+      "clients_alta": [
+        "APEX",
+        "Albastar",
+        "Albastar",
+        "Bed4U",
+        "Bercaber",
+        "Cerveceria",
+        "Depique",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Luján Agrícola",
+        "MDF"
+      ],
+      "clients_media": [
+        "Albastar",
+        "Montblanc",
+        "MyPime Supermix Pucara",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
+        "ladypipa.com"
+      ],
+      "total_affected": 16,
+      "avg_ad_count": 309
     },
     {
       "section": "3b",
-      "title": "Legacy Processes & Reports (AD_PROCESS)",
+      "title": "Procesos Legados (AD_PROCESS Report & Process)",
       "status": "PARCIAL",
       "completion_pct": 25,
-      "portfolio_score": 24,
+      "portfolio_score": 28,
       "clients_critica": [
+        "APEX",
         "Cerveceria",
         "Depique",
         "Gloria Pets",
@@ -501,17 +531,18 @@
       ],
       "clients_alta": [],
       "clients_media": [],
-      "total_affected": 6,
+      "total_affected": 7,
       "avg_ad_count": 373
     },
     {
       "section": "14",
-      "title": "ReadOnly Logic (lógica de solo lectura por campo)",
+      "title": "Informes (Acceso desde Menú)",
       "status": "TO CHECK",
       "completion_pct": 60,
-      "portfolio_score": 22,
+      "portfolio_score": 24,
       "clients_critica": [],
       "clients_alta": [
+        "APEX",
         "Acico",
         "Bed4U",
         "Bercaber",
@@ -527,8 +558,62 @@
         "MyPime Supermix Pucara",
         "ladypipa.com"
       ],
-      "total_affected": 13,
-      "avg_ad_count": 274
+      "total_affected": 14,
+      "avg_ad_count": 263
+    },
+    {
+      "section": "7",
+      "title": "Máquina de Estados de Documento",
+      "status": "TO CHECK",
+      "completion_pct": 70,
+      "portfolio_score": 24,
+      "clients_critica": [
+        "APEX",
+        "Bed4U",
+        "Bercaber",
+        "Cerveceria"
+      ],
+      "clients_alta": [
+        "Acico",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus"
+      ],
+      "clients_media": [
+        "Fueltruck",
+        "Luján Agrícola"
+      ],
+      "total_affected": 9,
+      "avg_ad_count": 67
+    },
+    {
+      "section": "23",
+      "title": "Barra de Estado (Status Bar)",
+      "status": "TO CHECK",
+      "completion_pct": 70,
+      "portfolio_score": 22,
+      "clients_critica": [],
+      "clients_alta": [
+        "Bed4U",
+        "Bercaber",
+        "Cerveceria",
+        "Depique",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus"
+      ],
+      "clients_media": [
+        "APEX",
+        "Albastar",
+        "Gloria Pets",
+        "MDF",
+        "MyPime Supermix Pucara",
+        "Opengy",
+        "Pazo Pondal S.L.",
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
+        "ladypipa.com"
+      ],
+      "total_affected": 17,
+      "avg_ad_count": 229
     },
     {
       "section": "3.A.2c",
@@ -547,57 +632,6 @@
       "clients_media": [],
       "total_affected": 5,
       "avg_ad_count": 236
-    },
-    {
-      "section": "7",
-      "title": "Máquina de estados de documento",
-      "status": "TO CHECK",
-      "completion_pct": 70,
-      "portfolio_score": 20,
-      "clients_critica": [
-        "Bed4U",
-        "Bercaber",
-        "Cerveceria"
-      ],
-      "clients_alta": [
-        "Acico",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "Klaus"
-      ],
-      "clients_media": [
-        "Fueltruck",
-        "Luján Agrícola"
-      ],
-      "total_affected": 8,
-      "avg_ad_count": 70
-    },
-    {
-      "section": "23",
-      "title": "Status Bar (barra de estado)",
-      "status": "TO CHECK",
-      "completion_pct": 70,
-      "portfolio_score": 20,
-      "clients_critica": [],
-      "clients_alta": [
-        "Bed4U",
-        "Bercaber",
-        "Cerveceria",
-        "Depique",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "Klaus"
-      ],
-      "clients_media": [
-        "Albastar",
-        "Gloria Pets",
-        "MDF",
-        "MyPime Supermix Pucara",
-        "Opengy",
-        "Pazo Pondal S.L.",
-        "Regalador",
-        "ladypipa.com"
-      ],
-      "total_affected": 15,
-      "avg_ad_count": 233
     },
     {
       "section": "3.A.2",
@@ -622,10 +656,10 @@
     },
     {
       "section": "22",
-      "title": "Field Groups (secciones colapsables)",
+      "title": "Grupos de Campo (Secciones Colapsables del Formulario)",
       "status": "TO CHECK",
       "completion_pct": 60,
-      "portfolio_score": 16,
+      "portfolio_score": 18,
       "clients_critica": [],
       "clients_alta": [
         "Cerveceria",
@@ -633,6 +667,7 @@
         "Klaus"
       ],
       "clients_media": [
+        "APEX",
         "Albastar",
         "Bed4U",
         "Bercaber",
@@ -642,23 +677,42 @@
         "Opengy",
         "Pazo Pondal S.L.",
         "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
         "ladypipa.com"
       ],
-      "total_affected": 14,
-      "avg_ad_count": 1842
+      "total_affected": 16,
+      "avg_ad_count": 1777
+    },
+    {
+      "section": "2.B.2",
+      "title": "Botón Posted (Contabilizado)",
+      "status": "PARCIAL",
+      "completion_pct": 30,
+      "portfolio_score": 16,
+      "clients_critica": [
+        "Acico",
+        "Opengy",
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 4,
+      "avg_ad_count": 108
     },
     {
       "section": "9",
-      "title": "Comportamientos del grid/lista",
+      "title": "Comportamientos de Rejilla (Grid)",
       "status": "TO CHECK",
       "completion_pct": 68,
-      "portfolio_score": 14,
+      "portfolio_score": 16,
       "clients_critica": [],
       "clients_alta": [
         "Acico",
         "Cerveceria"
       ],
       "clients_media": [
+        "APEX",
         "Albastar",
         "Depique",
         "Fueltruck",
@@ -668,22 +722,24 @@
         "MDF",
         "MyPime Supermix Pucara",
         "Pazo Pondal S.L.",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
         "ladypipa.com"
       ],
-      "total_affected": 12,
-      "avg_ad_count": 504
+      "total_affected": 14,
+      "avg_ad_count": 455
     },
     {
       "section": "1.3",
-      "title": "Ventanas tipo Query/Info (Q)",
+      "title": "Ventanas Query (Consulta)",
       "status": "TO CHECK",
       "completion_pct": 75,
-      "portfolio_score": 14,
+      "portfolio_score": 16,
       "clients_critica": [],
       "clients_alta": [
         "Cerveceria"
       ],
       "clients_media": [
+        "APEX",
         "Acico",
         "Albastar",
         "Bed4U",
@@ -695,83 +751,21 @@
         "Luján Agrícola",
         "MDF",
         "Pazo Pondal S.L.",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
         "ladypipa.com"
       ],
-      "total_affected": 16,
+      "total_affected": 18,
       "avg_ad_count": 9
     },
     {
-      "section": "10",
-      "title": "Funcionalidades transversales (cross-cutting)",
-      "status": "TO CHECK",
-      "completion_pct": 73,
-      "portfolio_score": 13,
-      "clients_critica": [],
-      "clients_alta": [
-        "Cerveceria",
-        "Depique",
-        "Klaus"
-      ],
-      "clients_media": [
-        "Albastar",
-        "Gloria Pets",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "MDF",
-        "MyPime Supermix Pucara",
-        "Pazo Pondal S.L.",
-        "ladypipa.com"
-      ],
-      "total_affected": 10,
-      "avg_ad_count": 2016
-    },
-    {
-      "section": "2.B.2",
-      "title": "Botón Posted (Contabilizado)",
-      "status": "PARCIAL",
-      "completion_pct": 30,
-      "portfolio_score": 12,
-      "clients_critica": [
-        "Acico",
-        "Opengy",
-        "Regalador"
-      ],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 3,
-      "avg_ad_count": 135
-    },
-    {
-      "section": "29",
-      "title": "Tree views",
-      "status": "TO CHECK",
-      "completion_pct": 40,
-      "portfolio_score": 11,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "Bed4U",
-        "Bercaber",
-        "Cerveceria",
-        "Depique",
-        "Gloria Pets",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "Klaus",
-        "MDF",
-        "Opengy",
-        "Pazo Pondal S.L.",
-        "Regalador"
-      ],
-      "total_affected": 11,
-      "avg_ad_count": 2
-    },
-    {
       "section": "12",
-      "title": "Navigation and application structure",
+      "title": "Navegación y Estructura de Menú",
       "status": "TO CHECK",
       "completion_pct": 72,
-      "portfolio_score": 11,
+      "portfolio_score": 14,
       "clients_critica": [],
       "clients_alta": [
+        "APEX",
         "Cerveceria"
       ],
       "clients_media": [
@@ -783,17 +777,69 @@
         "Klaus",
         "MDF",
         "MyPime Supermix Pucara",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
         "ladypipa.com"
       ],
-      "total_affected": 10,
-      "avg_ad_count": 565
+      "total_affected": 12,
+      "avg_ad_count": 549
+    },
+    {
+      "section": "10",
+      "title": "Comportamientos Transversales (Adjuntos, Notas, Copia, ReadOnly)",
+      "status": "TO CHECK",
+      "completion_pct": 73,
+      "portfolio_score": 14,
+      "clients_critica": [],
+      "clients_alta": [
+        "Cerveceria",
+        "Depique",
+        "Klaus"
+      ],
+      "clients_media": [
+        "APEX",
+        "Albastar",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "MDF",
+        "MyPime Supermix Pucara",
+        "Pazo Pondal S.L.",
+        "ladypipa.com"
+      ],
+      "total_affected": 11,
+      "avg_ad_count": 1906
+    },
+    {
+      "section": "29",
+      "title": "Vistas de Árbol",
+      "status": "TO CHECK",
+      "completion_pct": 40,
+      "portfolio_score": 13,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "APEX",
+        "Bed4U",
+        "Bercaber",
+        "Cerveceria",
+        "Depique",
+        "Gloria Pets",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "Klaus",
+        "MDF",
+        "Opengy",
+        "Pazo Pondal S.L.",
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "total_affected": 13,
+      "avg_ad_count": 2
     },
     {
       "section": "33",
       "title": "Personalización de Vistas (Saved Views)",
       "status": "NOT DONE",
       "completion_pct": 10,
-      "portfolio_score": 10,
+      "portfolio_score": 12,
       "clients_critica": [
         "Acico"
       ],
@@ -802,11 +848,98 @@
         "MyPime Supermix Pucara"
       ],
       "clients_media": [
+        "APEX",
         "Gloria Pets",
-        "MDF"
+        "MDF",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
-      "total_affected": 6,
-      "avg_ad_count": 668
+      "total_affected": 8,
+      "avg_ad_count": 334
+    },
+    {
+      "section": "2.B.1",
+      "title": "Botón DocAction (Acción de Documento)",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 12,
+      "clients_critica": [
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "clients_alta": [
+        "Acico",
+        "Opengy"
+      ],
+      "clients_media": [],
+      "total_affected": 4,
+      "avg_ad_count": 6
+    },
+    {
+      "section": "24",
+      "title": "Sistema de Layout de Formulario",
+      "status": "TO CHECK",
+      "completion_pct": 60,
+      "portfolio_score": 11,
+      "clients_critica": [],
+      "clients_alta": [
+        "Cerveceria"
+      ],
+      "clients_media": [
+        "APEX",
+        "Depique",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "MDF",
+        "MyPime Supermix Pucara",
+        "Pazo Pondal S.L.",
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
+        "ladypipa.com"
+      ],
+      "total_affected": 10,
+      "avg_ad_count": 2000
+    },
+    {
+      "section": "3.B.3",
+      "title": "Process Definition Standard (OBUIAPP_PickAndExecute)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 11,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico",
+        "Albastar",
+        "Fueltruck",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "clients_media": [
+        "Opengy",
+        "Pazo Pondal S.L.",
+        "Regalador"
+      ],
+      "total_affected": 7,
+      "avg_ad_count": 120
+    },
+    {
+      "section": "3.B.1",
+      "title": "Process Definition Action (UIPattern=A)",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 11,
+      "clients_critica": [],
+      "clients_alta": [
+        "Acico",
+        "Albastar",
+        "Montblanc"
+      ],
+      "clients_media": [
+        "Fueltruck",
+        "Opengy",
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
+        "ladypipa.com"
+      ],
+      "total_affected": 8,
+      "avg_ad_count": 42
     },
     {
       "section": "3.A.2a",
@@ -827,25 +960,25 @@
       "avg_ad_count": 118
     },
     {
-      "section": "3.B.1",
-      "title": "Process Definition Action (UIPattern=A)",
+      "section": "32",
+      "title": "Sistema de Alertas",
       "status": "TO CHECK",
-      "completion_pct": 75,
-      "portfolio_score": 10,
+      "completion_pct": 10,
+      "portfolio_score": 9,
       "clients_critica": [],
       "clients_alta": [
-        "Acico",
         "Albastar",
-        "Montblanc"
+        "Bed4U"
       ],
       "clients_media": [
-        "Fueltruck",
+        "APEX",
+        "MyPime Supermix Pucara",
         "Opengy",
         "Regalador",
-        "ladypipa.com"
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "total_affected": 7,
-      "avg_ad_count": 46
+      "avg_ad_count": 26
     },
     {
       "section": "3.A.2b",
@@ -867,48 +1000,6 @@
       "avg_ad_count": 37
     },
     {
-      "section": "24",
-      "title": "Form Layout System (diseño del formulario)",
-      "status": "TO CHECK",
-      "completion_pct": 60,
-      "portfolio_score": 9,
-      "clients_critica": [],
-      "clients_alta": [
-        "Cerveceria"
-      ],
-      "clients_media": [
-        "Depique",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "MDF",
-        "MyPime Supermix Pucara",
-        "Pazo Pondal S.L.",
-        "Regalador",
-        "ladypipa.com"
-      ],
-      "total_affected": 8,
-      "avg_ad_count": 2520
-    },
-    {
-      "section": "3.B.3",
-      "title": "Process Definition Standard (OBUIAPP_PickAndExecute)",
-      "status": "TO CHECK",
-      "completion_pct": 72,
-      "portfolio_score": 9,
-      "clients_critica": [],
-      "clients_alta": [
-        "Acico",
-        "Albastar",
-        "Fueltruck"
-      ],
-      "clients_media": [
-        "Opengy",
-        "Pazo Pondal S.L.",
-        "Regalador"
-      ],
-      "total_affected": 6,
-      "avg_ad_count": 124
-    },
-    {
       "section": "AD_FORM",
       "title": "Formularios de Aplicación (AD_FORM)",
       "status": "NOT DONE",
@@ -922,42 +1013,6 @@
       "clients_media": [],
       "total_affected": 3,
       "avg_ad_count": 29
-    },
-    {
-      "section": "2.B.1",
-      "title": "Botón DocAction (Acción de Documento)",
-      "status": "TO CHECK",
-      "completion_pct": 75,
-      "portfolio_score": 8,
-      "clients_critica": [
-        "Regalador"
-      ],
-      "clients_alta": [
-        "Acico",
-        "Opengy"
-      ],
-      "clients_media": [],
-      "total_affected": 3,
-      "avg_ad_count": 6
-    },
-    {
-      "section": "32",
-      "title": "Alertas (AD_ALERTRULE)",
-      "status": "TO CHECK",
-      "completion_pct": 10,
-      "portfolio_score": 7,
-      "clients_critica": [],
-      "clients_alta": [
-        "Albastar",
-        "Bed4U"
-      ],
-      "clients_media": [
-        "MyPime Supermix Pucara",
-        "Opengy",
-        "Regalador"
-      ],
-      "total_affected": 5,
-      "avg_ad_count": 30
     },
     {
       "section": "3.A.1",
@@ -996,6 +1051,23 @@
       "avg_ad_count": 50
     },
     {
+      "section": "2.B.3",
+      "title": "Botón CreateFrom (Crear Desde Documento)",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 5,
+      "clients_critica": [],
+      "clients_alta": [
+        "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "clients_media": [
+        "Acico"
+      ],
+      "total_affected": 4,
+      "avg_ad_count": 8
+    },
+    {
       "section": "2.multi_selector",
       "title": "Tipos de referencia de campo — Multi-Selector",
       "status": "NOT DONE",
@@ -1022,6 +1094,20 @@
       "clients_media": [],
       "total_affected": 1,
       "avg_ad_count": 412
+    },
+    {
+      "section": "3.A.2 Manual",
+      "title": "Legacy Manual Action Processes (AD_PROCESS UIPATTERN=M)",
+      "status": "PARCIAL",
+      "completion_pct": 40,
+      "portfolio_score": 4,
+      "clients_critica": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 182
     },
     {
       "section": "2.22",
@@ -1157,22 +1243,6 @@
       "avg_ad_count": 153
     },
     {
-      "section": "2.B.3",
-      "title": "Botón CreateFrom (Crear Desde Documento)",
-      "status": "TO CHECK",
-      "completion_pct": 72,
-      "portfolio_score": 3,
-      "clients_critica": [],
-      "clients_alta": [
-        "Regalador"
-      ],
-      "clients_media": [
-        "Acico"
-      ],
-      "total_affected": 3,
-      "avg_ad_count": 8
-    },
-    {
       "section": "2.image_blob",
       "title": "Tipos de referencia de campo — Image BLOB",
       "status": "NOT DONE",
@@ -1201,8 +1271,38 @@
       "avg_ad_count": 28
     },
     {
+      "section": "19",
+      "title": "Elementos Enlazados (KMO / Linked Items)",
+      "status": "TO CHECK",
+      "completion_pct": 10,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "APEX",
+        "Cerveceria"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 43
+    },
+    {
+      "section": "31",
+      "title": "Sistema de Importación de Datos",
+      "status": "NO IMPLEMENTADO",
+      "completion_pct": 20,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "APEX",
+        "Klaus"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 2
+    },
+    {
       "section": "11",
-      "title": "Autenticación y Sesión (JWT)",
+      "title": "Autenticación y Sesión",
       "status": "PARCIAL",
       "completion_pct": 45,
       "portfolio_score": 2,
@@ -1213,6 +1313,20 @@
       "clients_media": [],
       "total_affected": 1,
       "avg_ad_count": 0
+    },
+    {
+      "section": "3.A.2 Reports",
+      "title": "Legacy Informes HTML/PDF (AD_PROCESS isReport=Y / isBackground=Y)",
+      "status": "PARCIAL",
+      "completion_pct": 50,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "clients_media": [],
+      "total_affected": 1,
+      "avg_ad_count": 128
     },
     {
       "section": "2.pattribute",
@@ -1255,6 +1369,65 @@
       "clients_media": [],
       "total_affected": 1,
       "avg_ad_count": 20
+    },
+    {
+      "section": "20",
+      "title": "Búsqueda Global / Quick Launch",
+      "status": "TO CHECK",
+      "completion_pct": 72,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "APEX",
+        "Cerveceria"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 557
+    },
+    {
+      "section": "13",
+      "title": "Creación, Edición y Persistencia de Registros",
+      "status": "TO CHECK",
+      "completion_pct": 75,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "APEX",
+        "Cerveceria"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 8297
+    },
+    {
+      "section": "35",
+      "title": "Estados de Vista (Form/Grid)",
+      "status": "TO CHECK",
+      "completion_pct": 78,
+      "portfolio_score": 2,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "APEX",
+        "Cerveceria"
+      ],
+      "total_affected": 2,
+      "avg_ad_count": 77
+    },
+    {
+      "section": "34",
+      "title": "Vistas de Calendario",
+      "status": "NO IMPLEMENTADO",
+      "completion_pct": 0,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 145
     },
     {
       "section": "2.rich_text",
@@ -1327,6 +1500,20 @@
       "avg_ad_count": 2
     },
     {
+      "section": "2.B.4",
+      "title": "Botón ChangeProjectStatus",
+      "status": "NOT DONE",
+      "completion_pct": 0,
+      "portfolio_score": 1,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "total_affected": 1,
+      "avg_ad_count": 1
+    },
+    {
       "section": "2.27",
       "title": "Image BLOB — imágenes binarias en campos",
       "status": "NO IMPLEMENTADO",
@@ -1339,20 +1526,6 @@
       ],
       "total_affected": 1,
       "avg_ad_count": 14
-    },
-    {
-      "section": "31",
-      "title": "Data import system",
-      "status": "NO IMPLEMENTADO",
-      "completion_pct": 20,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "Klaus"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 1
     },
     {
       "section": "2.ref_parcial",
@@ -1398,7 +1571,7 @@
     },
     {
       "section": "17",
-      "title": "Toolbar buttons",
+      "title": "Botones de Toolbar",
       "status": "PARCIAL",
       "completion_pct": 70,
       "portfolio_score": 1,
@@ -1411,32 +1584,32 @@
       "avg_ad_count": 668
     },
     {
-      "section": "19",
-      "title": "Linked Items (KMO)",
+      "section": "2.B.5",
+      "title": "PaymentRule Button",
       "status": "TO CHECK",
-      "completion_pct": 72,
+      "completion_pct": 70,
       "portfolio_score": 1,
       "clients_critica": [],
       "clients_alta": [],
       "clients_media": [
-        "Cerveceria"
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "total_affected": 1,
-      "avg_ad_count": 20
+      "avg_ad_count": 9
     },
     {
-      "section": "20",
-      "title": "Quick Launch / Global Search",
+      "section": "13/25",
+      "title": "Record Creation, Defaults and Mandatory Validation",
       "status": "TO CHECK",
-      "completion_pct": 72,
+      "completion_pct": 70,
       "portfolio_score": 1,
       "clients_critica": [],
       "clients_alta": [],
       "clients_media": [
-        "Cerveceria"
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
       ],
       "total_affected": 1,
-      "avg_ad_count": 668
+      "avg_ad_count": 4270
     },
     {
       "section": "3a",
@@ -1453,60 +1626,8 @@
       "avg_ad_count": 179
     },
     {
-      "section": "13",
-      "title": "Creación, Edición y Persistencia de Registros",
-      "status": "TO CHECK",
-      "completion_pct": 75,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "Cerveceria"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 0
-    },
-    {
-      "section": "35",
-      "title": "View States (Form/Grid Layout)",
-      "status": "TO CHECK",
-      "completion_pct": 78,
-      "portfolio_score": 1,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [
-        "Cerveceria"
-      ],
-      "total_affected": 1,
-      "avg_ad_count": 77
-    },
-    {
-      "section": "2.B.4",
-      "title": "Botón ChangeProjectStatus",
-      "status": "NOT DONE",
-      "completion_pct": 0,
-      "portfolio_score": 0,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 0,
-      "avg_ad_count": 0
-    },
-    {
-      "section": "34",
-      "title": "Vistas de Calendario",
-      "status": "NOT DONE",
-      "completion_pct": 0,
-      "portfolio_score": 0,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 0,
-      "avg_ad_count": 0
-    },
-    {
       "section": "30",
-      "title": "Grouping in grid",
+      "title": "Agrupación en Rejilla",
       "status": "TO CHECK",
       "completion_pct": 65,
       "portfolio_score": 0,
@@ -1517,20 +1638,8 @@
       "avg_ad_count": 0
     },
     {
-      "section": "27",
-      "title": "MDI tab interface",
-      "status": "TO CHECK",
-      "completion_pct": 70,
-      "portfolio_score": 0,
-      "clients_critica": [],
-      "clients_alta": [],
-      "clients_media": [],
-      "total_affected": 0,
-      "avg_ad_count": 0
-    },
-    {
       "section": "28",
-      "title": "Keyboard shortcuts",
+      "title": "Atajos de Teclado",
       "status": "TO CHECK",
       "completion_pct": 70,
       "portfolio_score": 0,
@@ -1542,9 +1651,21 @@
     },
     {
       "section": "16",
-      "title": "Final consistency validation",
+      "title": "Validación Final de Consistencia",
       "status": "TO CHECK",
-      "completion_pct": 72,
+      "completion_pct": 70,
+      "portfolio_score": 0,
+      "clients_critica": [],
+      "clients_alta": [],
+      "clients_media": [],
+      "total_affected": 0,
+      "avg_ad_count": 0
+    },
+    {
+      "section": "27",
+      "title": "Interfaz Multi-Ventana (MDI)",
+      "status": "TO CHECK",
+      "completion_pct": 70,
       "portfolio_score": 0,
       "clients_critica": [],
       "clients_alta": [],
@@ -1554,7 +1675,7 @@
     },
     {
       "section": "15",
-      "title": "Loading indicators and feedback",
+      "title": "Indicadores de Carga y Feedback",
       "status": "TO CHECK",
       "completion_pct": 75,
       "portfolio_score": 0,
@@ -1566,6 +1687,12 @@
     }
   ],
   "ui_clients_meta": [
+    {
+      "slug": "APEX",
+      "name": "APEX",
+      "ui_score": 90,
+      "global_status": "blocked"
+    },
     {
       "slug": "Acico",
       "name": "Acico",
@@ -1681,6 +1808,12 @@
       "global_status": ""
     },
     {
+      "slug": "TCX 08 SOLUCIONS INTEGRALS, SL",
+      "name": "TCX 08 SOLUCIONS INTEGRALS, SL",
+      "ui_score": 90,
+      "global_status": "blocked"
+    },
+    {
       "slug": "VdShop",
       "name": "VdShop",
       "ui_score": 80,
@@ -1696,9 +1829,10 @@
   "module_maintenance_candidates": [
     {
       "java_package": "org.openbravo.idl",
-      "name": "Openbravo IDL (Initial Data Load)",
-      "function": "Framework de carga masiva inicial de datos desde CSV/Excel a Etendo. Base sobre la que se apoyan com.smf.albastar.idljournal y com.openbravo.gps.idl.orders.",
+      "name": "Initial Data Load",
+      "function": "Framework para carga masiva de datos maestros mediante ficheros XML/CSV en formatos predefinidos.",
       "clients": [
+        "APEX",
         "Albastar",
         "Cerveceria",
         "Depique",
@@ -1713,7 +1847,7 @@
         "VdShop",
         "ladypipa.com"
       ],
-      "client_count": 13,
+      "client_count": 14,
       "max_risk": "high",
       "has_replacement": false,
       "official_replacement_name": "EtendoRX Connectors / com.etendoerp.etendorx",
@@ -1725,6 +1859,7 @@
         "Framework marcado como legacy en Etendo — riesgo de eliminación",
         "Gradle 8.12.1",
         "Hibernate 5.4 → 5.6",
+        "IDL framework: sin mantenimiento desde Openbravo; compatibilidad con Etendo 25.x no garantizada",
         "Java 17",
         "Java 17 compatibility",
         "Java 17 mandatory",
@@ -1738,15 +1873,16 @@
         "commons_lang_3",
         "java_17"
       ],
-      "avg_effort_update_hours": 9,
+      "avg_effort_update_hours": 10,
       "avg_effort_saas_hours": 9,
-      "priority_score": 39
+      "priority_score": 42
     },
     {
       "java_package": "org.openbravo.sepa.iso20022",
-      "name": "SEPA ISO 20022 — Base",
-      "function": "Módulo base para generación de ficheros SEPA ISO 20022. Proporciona la infraestructura XML para todos los subtipos SEPA (transferencias, domiciliaciones, extractos).",
+      "name": "SEPA Framework and Utilities",
+      "function": "Framework base SEPA ISO 20022 para generación de ficheros de pago y domiciliación según el estándar europeo.",
       "clients": [
+        "APEX",
         "Albastar",
         "Cerveceria",
         "Enertis",
@@ -1760,7 +1896,7 @@
         "VdShop",
         "ladypipa.com"
       ],
-      "client_count": 12,
+      "client_count": 13,
       "max_risk": "high",
       "has_replacement": false,
       "official_replacement_name": "com.etendoerp.financial.extensions (Financial Extensions Bundle)",
@@ -1783,6 +1919,7 @@
         "No maintainer: Openbravo SLU no longer maintains these",
         "No mantenido desde era Openbravo — pendiente de refactoring para Hibernate 5.6.x y Java 17",
         "OpenCSV actualizado — verificar compatibilidad si el módulo lee ficheros CSV",
+        "Payment framework API: compatibilidad con FIN_Payment de Etendo requerida",
         "Removed javax.xml.soap → jakarta.xml.bind",
         "commons-lang → lang3",
         "javax.xml.soap → jakarta.xml.soap (Java 17/Jakarta EE 9 migration — el cliente ya tiene org.openbravo.util.javax.xml.soap como shim)",
@@ -1790,13 +1927,14 @@
       ],
       "avg_effort_update_hours": 16,
       "avg_effort_saas_hours": 13,
-      "priority_score": 36
+      "priority_score": 39
     },
     {
       "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
-      "name": "SEPA ISO 20022 — Credit Transfer (cliente-a-banco)",
-      "function": "Generación de ficheros XML SEPA para transferencias bancarias (Credit Transfer PAIN.001). Estándar para pagos a proveedores en la zona SEPA.",
+      "name": "SEPA Credit Transfer Customer-to-Bank",
+      "function": "Generación de ficheros SEPA de transferencia de crédito (pagos a proveedores).",
       "clients": [
+        "APEX",
         "Albastar",
         "Cerveceria",
         "Depique",
@@ -1808,7 +1946,7 @@
         "VdShop",
         "ladypipa.com"
       ],
-      "client_count": 10,
+      "client_count": 11,
       "max_risk": "high",
       "has_replacement": false,
       "official_replacement_name": "com.etendoerp.financial.extensions",
@@ -1827,6 +1965,74 @@
       ],
       "avg_effort_update_hours": 10,
       "avg_effort_saas_hours": 8,
+      "priority_score": 33
+    },
+    {
+      "java_package": "org.openbravo.module.idljava",
+      "name": "Initial Data Load Extension for Java",
+      "function": "Extensión Java del framework IDL para definir formatos de carga personalizados.",
+      "clients": [
+        "APEX",
+        "Acico",
+        "Albastar",
+        "Cerveceria",
+        "Fueltruck",
+        "Klaus",
+        "MDF",
+        "Pazo Pondal S.L.",
+        "VdShop",
+        "ladypipa.com"
+      ],
+      "client_count": 10,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "EtendoRX Connectors",
+      "generalization": "client_specific",
+      "api_changes": [
+        "Apache Commons Lang 2→3",
+        "Dependiente de org.openbravo.idl",
+        "Idem org.openbravo.idl",
+        "Java 17",
+        "Sigue la suerte de org.openbravo.idl"
+      ],
+      "avg_effort_update_hours": 5,
+      "avg_effort_saas_hours": 4,
+      "priority_score": 30
+    },
+    {
+      "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+      "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+      "function": "Generación de ficheros SEPA de domiciliación bancaria (CORE y B2B) para cobros.",
+      "clients": [
+        "APEX",
+        "Albastar",
+        "Cerveceria",
+        "Fueltruck",
+        "Klaus",
+        "MDF",
+        "Pazo Pondal S.L.",
+        "Regalador",
+        "VdShop",
+        "ladypipa.com"
+      ],
+      "client_count": 10,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.financial.extensions",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3",
+        "Apache Commons Lang → lang3 — ya migrado",
+        "Depende de SEPA Framework base",
+        "Dependiente del SEPA Framework (ver arriba)",
+        "ISO 20022 XML namespace evolution",
+        "JAXB",
+        "Java 17",
+        "Java 17 mandatory",
+        "javax.xml → jakarta.xml"
+      ],
+      "avg_effort_update_hours": 10,
+      "avg_effort_saas_hours": 9,
       "priority_score": 30
     },
     {
@@ -1903,75 +2109,11 @@
       "priority_score": 27
     },
     {
-      "java_package": "org.openbravo.module.idljava",
-      "name": "IDL Java Integration",
-      "function": "Java implementation of the Openbravo IDL (Interface Definition Language) for external system integration.",
-      "clients": [
-        "Acico",
-        "Albastar",
-        "Cerveceria",
-        "Fueltruck",
-        "Klaus",
-        "MDF",
-        "Pazo Pondal S.L.",
-        "VdShop",
-        "ladypipa.com"
-      ],
-      "client_count": 9,
-      "max_risk": "high",
-      "has_replacement": false,
-      "official_replacement_name": "EtendoRX Connectors",
-      "generalization": "client_specific",
-      "api_changes": [
-        "Apache Commons Lang 2→3",
-        "Dependiente de org.openbravo.idl",
-        "Idem org.openbravo.idl",
-        "Java 17"
-      ],
-      "avg_effort_update_hours": 5,
-      "avg_effort_saas_hours": 4,
-      "priority_score": 27
-    },
-    {
-      "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
-      "name": "SEPA ISO 20022 — Direct Debit (cliente-a-banco)",
-      "function": "Generación de ficheros XML SEPA para domiciliación bancaria (adeudo directo SEPA core). Estándar actual para cobros por domiciliación en la zona SEPA.",
-      "clients": [
-        "Albastar",
-        "Cerveceria",
-        "Fueltruck",
-        "Klaus",
-        "MDF",
-        "Pazo Pondal S.L.",
-        "Regalador",
-        "VdShop",
-        "ladypipa.com"
-      ],
-      "client_count": 9,
-      "max_risk": "high",
-      "has_replacement": false,
-      "official_replacement_name": "com.etendoerp.financial.extensions",
-      "generalization": "bundle_candidate",
-      "api_changes": [
-        "Apache Commons Lang 2→3",
-        "Apache Commons Lang → lang3 — ya migrado",
-        "Depende de SEPA Framework base",
-        "Dependiente del SEPA Framework (ver arriba)",
-        "ISO 20022 XML namespace evolution",
-        "JAXB",
-        "Java 17",
-        "Java 17 mandatory",
-        "javax.xml → jakarta.xml"
-      ],
-      "avg_effort_update_hours": 10,
-      "avg_effort_saas_hours": 9,
-      "priority_score": 27
-    },
-    {
       "java_package": "org.openbravo.module.invoicematchingalgorithm",
-      "name": "Invoice Matching Algorithm",
-      "function": "Provides algorithms for automatically matching purchase invoices against goods receipts (3-way matching). Automates the reconciliation between PO, receipt, and invoice.",
+      "name": "Advanced Matching Algorithm",
+      "function": "Algoritmo avanzado de emparejamiento automático de pagos con facturas pendientes.",
       "clients": [
+        "APEX",
         "Acico",
         "Albastar",
         "Cerveceria",
@@ -1981,7 +2123,7 @@
         "Regalador",
         "ladypipa.com"
       ],
-      "client_count": 8,
+      "client_count": 9,
       "max_risk": "high",
       "has_replacement": true,
       "official_replacement_name": "Financial Extensions Bundle — Payment matching",
@@ -1993,18 +2135,20 @@
         "Hibernate API",
         "Java 17",
         "Java 17 mandatory",
+        "Payment matching API: verificar compatibilidad con Advanced Payment Management de Etendo",
         "Sin git — sin soporte para 25.x",
         "commons-lang → lang3 si aplica"
       ],
-      "avg_effort_update_hours": 8,
+      "avg_effort_update_hours": 9,
       "avg_effort_saas_hours": 7,
-      "priority_score": 24
+      "priority_score": 27
     },
     {
       "java_package": "com.etendoerp.analytics.exporter",
-      "name": "Analytics Exporter",
-      "function": "Módulo de Futit Services para exportar datos analíticos desde Etendo. Posiblemente exporta registros de AD a formatos de análisis externos.",
+      "name": "Etendo Analytics Exporter",
+      "function": "Exportación de datos analíticos de Etendo a sistemas externos de BI.",
       "clients": [
+        "APEX",
         "Albastar",
         "Cerveceria",
         "Fueltruck",
@@ -2014,10 +2158,11 @@
         "MyPime Hercam",
         "Pazo Pondal S.L.",
         "Regalador",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
         "VdShop",
         "ladypipa.com"
       ],
-      "client_count": 11,
+      "client_count": 13,
       "max_risk": "medium",
       "has_replacement": false,
       "official_replacement_name": "com.etendoerp.analytics (versión actualizada)",
@@ -2031,15 +2176,16 @@
         "commons-lang 2.6 → 3.x",
         "commons-lang si se usa; API Etendo entre 1.1.1 y versión actual"
       ],
-      "avg_effort_update_hours": 6,
-      "avg_effort_saas_hours": 5,
-      "priority_score": 22
+      "avg_effort_update_hours": 5,
+      "avg_effort_saas_hours": 4,
+      "priority_score": 26
     },
     {
       "java_package": "org.openbravo.utility.opencsv",
-      "name": "OpenCSV Library",
-      "function": "OpenCSV library wrapper for CSV parsing operations.",
+      "name": "OpenCSV",
+      "function": "Librería OpenCSV empaquetada como módulo Openbravo para parseo de ficheros CSV.",
       "clients": [
+        "APEX",
         "Acico",
         "Albastar",
         "Cerveceria",
@@ -2052,7 +2198,7 @@
         "VdShop",
         "ladypipa.com"
       ],
-      "client_count": 11,
+      "client_count": 12,
       "max_risk": "medium",
       "has_replacement": true,
       "official_replacement_name": "OpenCSV como dependencia Gradle directa",
@@ -2067,7 +2213,7 @@
       ],
       "avg_effort_update_hours": 1,
       "avg_effort_saas_hours": 1,
-      "priority_score": 22
+      "priority_score": 24
     },
     {
       "java_package": "com.openbravo.gps.idl.invoices",
@@ -2135,6 +2281,36 @@
       "avg_effort_update_hours": 15,
       "avg_effort_saas_hours": 11,
       "priority_score": 21
+    },
+    {
+      "java_package": "org.openbravo.interco",
+      "name": "Inter-company Documents",
+      "function": "Generación automática de documentos espejo entre organizaciones del mismo grupo empresarial (inter-company).",
+      "clients": [
+        "APEX",
+        "Enertis",
+        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
+        "MyPime Hercam",
+        "MyPime Supermix Pucara",
+        "Opengy"
+      ],
+      "client_count": 6,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.advanced.intercompany (ya instalado como local_maintained)",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Apache Commons Lang 2→3: likely",
+        "Commons Lang 2→3",
+        "Gradle Plugin + wrapper",
+        "Módulo Openbravo sin mantenimiento en Etendo; verificar si existe reemplazo oficial",
+        "No maintainer: Openbravo SLU",
+        "commons_lang_3",
+        "hibernate_5_6"
+      ],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 7,
+      "priority_score": 18
     },
     {
       "java_package": "org.openbravo.module.cuaderno19.es",
@@ -2284,35 +2460,6 @@
       "priority_score": 15
     },
     {
-      "java_package": "org.openbravo.interco",
-      "name": "Inter-company Documents",
-      "function": "Generates inter-company purchase orders from sales orders across organizations sharing a client. Required if Enertis operates with multiple legal entities in the same Etendo instance.",
-      "clients": [
-        "Enertis",
-        "IDM  Ingeniería y Desarrollo de Maquinaria s.l.",
-        "MyPime Hercam",
-        "MyPime Supermix Pucara",
-        "Opengy"
-      ],
-      "client_count": 5,
-      "max_risk": "high",
-      "has_replacement": false,
-      "official_replacement_name": "com.etendoerp.advanced.intercompany (ya instalado como local_maintained)",
-      "generalization": "bundle_candidate",
-      "api_changes": [
-        "Apache Commons Lang 2→3: likely",
-        "Commons Lang 2→3",
-        "Gradle Plugin + wrapper",
-        "Módulo Openbravo sin mantenimiento en Etendo; verificar si existe reemplazo oficial",
-        "No maintainer: Openbravo SLU",
-        "commons_lang_3",
-        "hibernate_5_6"
-      ],
-      "avg_effort_update_hours": 7,
-      "avg_effort_saas_hours": 6,
-      "priority_score": 15
-    },
-    {
       "java_package": "org.openbravo.module.facturae32",
       "name": "Factura-e v3.2",
       "function": "Soporte específico del formato Factura-e versión 3.2 (versión actual requerida por AEAT).",
@@ -2420,6 +2567,31 @@
       ],
       "avg_effort_update_hours": 10,
       "avg_effort_saas_hours": 8,
+      "priority_score": 12
+    },
+    {
+      "java_package": "com.openbravo.gps.printandsend",
+      "name": "Print and send documents",
+      "function": "Envío de documentos por email directamente desde Etendo (facturas, albaranes, pedidos).",
+      "clients": [
+        "APEX",
+        "MyPime Hercam",
+        "MyPime Supermix Pucara",
+        "Pazo Pondal S.L."
+      ],
+      "client_count": 4,
+      "max_risk": "high",
+      "has_replacement": true,
+      "official_replacement_name": "Email functionality en Etendo Core 25.4.x",
+      "generalization": "redundant",
+      "api_changes": [
+        "Email/SMTP API: verificar cambios en configuración de correo en 25.x",
+        "JasperReports 6.0→6.17",
+        "Java 17",
+        "java_17"
+      ],
+      "avg_effort_update_hours": 7,
+      "avg_effort_saas_hours": 6,
       "priority_score": 12
     },
     {
@@ -2591,29 +2763,6 @@
       "priority_score": 12
     },
     {
-      "java_package": "com.openbravo.gps.printandsend",
-      "name": "Print and send documents",
-      "function": "Funcionalidad de impresión y envío de documentos (facturas, albaranes) por email directamente desde las ventanas de Etendo.",
-      "clients": [
-        "MyPime Hercam",
-        "MyPime Supermix Pucara",
-        "Pazo Pondal S.L."
-      ],
-      "client_count": 3,
-      "max_risk": "high",
-      "has_replacement": true,
-      "official_replacement_name": "Email functionality en Etendo Core 25.4.x",
-      "generalization": "redundant",
-      "api_changes": [
-        "JasperReports 6.0→6.17",
-        "Java 17",
-        "java_17"
-      ],
-      "avg_effort_update_hours": 7,
-      "avg_effort_saas_hours": 6,
-      "priority_score": 9
-    },
-    {
       "java_package": "com.smf.integration.magento",
       "name": "Integración Magento 2.x (6 módulos)",
       "function": "Sincronización bidireccional con tienda Magento 2.x: productos, precios, stock, descuentos, imágenes, pedidos entrantes y gestión de flete. Core del canal de venta online de Gloria Pets.",
@@ -2692,6 +2841,53 @@
       "avg_effort_update_hours": 16,
       "avg_effort_saas_hours": 19,
       "priority_score": 9
+    },
+    {
+      "java_package": "eu.practics.javaextensionpoints",
+      "name": "Java Extension Points",
+      "function": "Framework de puntos de extensión Java para customizaciones de Practics, proporcionando infraestructura CDI para hooks y extensiones en módulos del cliente.",
+      "clients": [
+        "MyPime Hercam",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
+        "ladypipa.com"
+      ],
+      "client_count": 3,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": "com.etendoerp.common.hooks (HookManager de Etendo Core)",
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "CDI API changes",
+        "Java 17"
+      ],
+      "avg_effort_update_hours": 7,
+      "avg_effort_saas_hours": 6,
+      "priority_score": 9
+    },
+    {
+      "java_package": "org.openbravo.materialmgmt.freightmgmt",
+      "name": "Freight Management",
+      "function": "Freight cost management and calculation for logistics operations. Adds freight-related fields and calculations to sales orders and shipments.",
+      "clients": [
+        "Acico",
+        "MyPime Hercam",
+        "TCX 08 SOLUCIONS INTEGRALS, SL",
+        "ladypipa.com"
+      ],
+      "client_count": 4,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": "Versión actualizada en marketplace de Etendo",
+      "generalization": "client_specific",
+      "api_changes": [
+        "Apache Commons Lang 2→3",
+        "Hibernate API",
+        "Java 17",
+        "commons-lang 2.6 → commons-lang3 3.17.0"
+      ],
+      "avg_effort_update_hours": 11,
+      "avg_effort_saas_hours": 9,
+      "priority_score": 8
     },
     {
       "java_package": "org.openbravo.util.jaxws",
@@ -2807,29 +3003,6 @@
       ],
       "avg_effort_update_hours": 3,
       "avg_effort_saas_hours": 3,
-      "priority_score": 6
-    },
-    {
-      "java_package": "org.openbravo.materialmgmt.freightmgmt",
-      "name": "Freight Management",
-      "function": "Freight cost management and calculation for logistics operations. Adds freight-related fields and calculations to sales orders and shipments.",
-      "clients": [
-        "Acico",
-        "MyPime Hercam",
-        "ladypipa.com"
-      ],
-      "client_count": 3,
-      "max_risk": "medium",
-      "has_replacement": false,
-      "official_replacement_name": "Versión actualizada en marketplace de Etendo",
-      "generalization": "client_specific",
-      "api_changes": [
-        "Apache Commons Lang 2→3",
-        "Hibernate API",
-        "Java 17"
-      ],
-      "avg_effort_update_hours": 9,
-      "avg_effort_saas_hours": 6,
       "priority_score": 6
     },
     {
@@ -2978,27 +3151,6 @@
       "priority_score": 6
     },
     {
-      "java_package": "eu.practics.javaextensionpoints",
-      "name": "Java Extension Points",
-      "function": "Framework de puntos de extensión Java para inyección de comportamiento personalizado en módulos Etendo.",
-      "clients": [
-        "MyPime Hercam",
-        "ladypipa.com"
-      ],
-      "client_count": 2,
-      "max_risk": "high",
-      "has_replacement": false,
-      "official_replacement_name": "Sistema de hooks nativo de Etendo (Weld CDI hooks, @Inject)",
-      "generalization": "bundle_candidate",
-      "api_changes": [
-        "CDI API changes",
-        "Java 17"
-      ],
-      "avg_effort_update_hours": 6,
-      "avg_effort_saas_hours": 4,
-      "priority_score": 6
-    },
-    {
       "java_package": "org.openbravo.projects.progress",
       "name": "Project Progress Tool",
       "function": "Tracks project progress milestones and invoiced amounts per phase. Directly referenced in com.smf.enertis.project.customization (ProjectProgressEventHandler observes PP001projectprogress entity). Removing this module would break the custom event handler.",
@@ -3063,6 +3215,26 @@
       "avg_effort_update_hours": 0,
       "avg_effort_saas_hours": 0,
       "priority_score": 5
+    },
+    {
+      "java_package": "cat.practics.printlabels",
+      "name": "Print Report Labels",
+      "function": "Módulo de impresión de etiquetas para almacén (probablemente ZPL o PDF), utilizado en operaciones de expedición y recepción.",
+      "clients": [
+        "Guaguas Municipales",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "commons-lang 2.6 → commons-lang3 3.17.0"
+      ],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 10,
+      "priority_score": 4
     },
     {
       "java_package": "com.etendoerp.commons.utils",
@@ -3309,6 +3481,28 @@
       "priority_score": 4
     },
     {
+      "java_package": "com.smf.service.restful",
+      "name": "Restful Web Services",
+      "function": "Extensiones REST personalizadas de SMF Consulting para Etendo. Expone endpoints adicionales para integraciones de terceros.",
+      "clients": [
+        "MDF",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "EtendoRX (headless API nativa de Etendo)",
+      "generalization": "redundant",
+      "api_changes": [
+        "Cambios en javax.* → jakarta.* en Java 17 / Etendo 25 si el módulo usa JAX-RS",
+        "JAX-RS: verificar con Tomcat 9 + Etendo 25",
+        "JWT library: verificar compatibilidad con Java 17"
+      ],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 11,
+      "priority_score": 4
+    },
+    {
       "java_package": "mySystem.CustomizationTemplate",
       "name": "System Customization",
       "function": "Módulo plantilla de sistema. Probablemente vacío o con configuraciones mínimas de inicialización del sistema.",
@@ -3386,6 +3580,27 @@
       "priority_score": 4
     },
     {
+      "java_package": "org.openbravo.financialmgmt.accounting.report.notposted",
+      "name": "Not Posted Transactions",
+      "function": "Informe de transacciones pendientes de contabilizar.",
+      "clients": [
+        "APEX",
+        "ladypipa.com"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "Financial Extensions Bundle (verificar)",
+      "generalization": "redundant",
+      "api_changes": [
+        "Jasper si aplica",
+        "Java 17"
+      ],
+      "avg_effort_update_hours": 2,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 4
+    },
+    {
       "java_package": "org.openbravo.idl.variants",
       "name": "IDL for Variants",
       "function": "Extensión del IDL para variantes de producto (Openbravo SLU, v1.1.211001). Usa Apache Commons Lang — ya migrado a lang3.",
@@ -3403,6 +3618,47 @@
       ],
       "avg_effort_update_hours": 2,
       "avg_effort_saas_hours": 2,
+      "priority_score": 4
+    },
+    {
+      "java_package": "org.openbravo.importdata",
+      "name": "Import Data",
+      "function": "Importación de datos desde ficheros CSV/Excel para múltiples entidades (productos, business partners, etc.).",
+      "clients": [
+        "APEX",
+        "Enertis"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "AD_FORM: arquitectura no portada a React UI",
+        "No maintainer"
+      ],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 4,
+      "priority_score": 4
+    },
+    {
+      "java_package": "org.openbravo.mobile.core",
+      "name": "Mobile Core Infrastructure",
+      "function": "Infraestructura base del módulo Mobile de Openbravo (OB Mobile POS). Framework para aplicaciones móviles.",
+      "clients": [
+        "Pazo Pondal S.L.",
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": true,
+      "official_replacement_name": "Nueva UI React de Etendo (responsive)",
+      "generalization": "redundant",
+      "api_changes": [
+        "Stack Enyo/SmartClient obsoleto. No compatible con Etendo 25+ (Java 17, nuevo build system)"
+      ],
+      "avg_effort_update_hours": 2,
+      "avg_effort_saas_hours": 9,
       "priority_score": 4
     },
     {
@@ -3439,6 +3695,26 @@
       "api_changes": [],
       "avg_effort_update_hours": 2,
       "avg_effort_saas_hours": 2,
+      "priority_score": 4
+    },
+    {
+      "java_package": "org.openbravo.module.standardOFX",
+      "name": "OFX Bank Statement Format",
+      "function": "Importación de extractos bancarios en formato OFX (Open Financial Exchange).",
+      "clients": [
+        "APEX",
+        "Regalador"
+      ],
+      "client_count": 2,
+      "max_risk": "medium",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Java 17 mandatory"
+      ],
+      "avg_effort_update_hours": 6,
+      "avg_effort_saas_hours": 5,
       "priority_score": 4
     },
     {
@@ -3978,6 +4254,26 @@
       ],
       "avg_effort_update_hours": 60,
       "avg_effort_saas_hours": 30,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.practicsbs.mobile.distributionorders",
+      "name": "Mobile Distribution Orders",
+      "function": "Interfaz móvil para gestión de órdenes de distribución entre almacenes, basada en Mobile Core.",
+      "clients": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "org.openbravo.distributionorder también sin mantenimiento",
+        "org.openbravo.mobile.core obsoleto (stack Enyo incompatible con Etendo 25)"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 24,
       "priority_score": 3
     },
     {
@@ -4674,6 +4970,47 @@
       "priority_score": 3
     },
     {
+      "java_package": "com.smf.tcx.analytics",
+      "name": "SMF Tcx Analytics",
+      "function": "Servicio REST (JAX-RS + JWT) para registro y consulta de marcajes de tiempo en operaciones de manufactura: inicio/fin de operación, alertas de fase, y actualización de prioridades en órdenes de trabajo. Depende de com.smf.service.restful para autenticación JWT.",
+      "clients": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "com.smf.service.restful a evaluar si se reemplaza por EtendoRX",
+        "commons-lang 2.6 → commons-lang3 3.17.0"
+      ],
+      "avg_effort_update_hours": 16,
+      "avg_effort_saas_hours": 20,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.smf.tcx.customizations",
+      "name": "SFM Tcx Customizations",
+      "function": "Módulo de customizaciones principales para TCX: generación de requisiciones de compra desde órdenes de producción MRP, creación de órdenes de trabajo desde planes de proceso, informes de albarán personalizados (Jasper + FO), gestión de líneas de producción, restricciones en facturas y pedidos, y marcaje de operaciones en líneas de manufactura.",
+      "clients": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Hibernate 5.4.2 → 5.6.15 (verificar queries HQL)",
+        "JasperReports 6.0.0 → 6.17.0 (recompilar .jrxml)",
+        "commons-lang 2.6 → commons-lang3 3.17.0 (imports StringUtils, StringEscapeUtils)"
+      ],
+      "avg_effort_update_hours": 30,
+      "avg_effort_saas_hours": 60,
+      "priority_score": 3
+    },
+    {
       "java_package": "com.smf.ticketbai (version gap)",
       "name": "TicketBAI Integration (version gap note)",
       "function": "",
@@ -4705,6 +5042,28 @@
       "api_changes": [],
       "avg_effort_update_hours": 15,
       "avg_effort_saas_hours": 20,
+      "priority_score": 3
+    },
+    {
+      "java_package": "com.tcxsoluciones.developments",
+      "name": "TCX Soluciones Developments",
+      "function": "Módulo propio de TCX: impresión de partes de proceso/plan (servlet legacy con iText PDF), gestión de calendario de festivos (tabla TCXS_CALENDAR_HOLIDAYS), callouts de fecha sugerida para pedidos y requisiciones, y reactivación de órdenes de trabajo.",
+      "clients": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "CRÍTICO: iText 5.5.0 (itextpdf-5.5.0.jar, itext-pdfa-5.5.0.jar) eliminado en Etendo 25 — las librerías empaquetadas en lib/runtime quedarán sin funcionar",
+        "HttpSecureAppServlet (servlet legacy) requiere validación con Tomcat 9",
+        "Usar iText 2.1.7 (ahora incluido en Etendo 25) o migrar a JasperReports",
+        "commons-lang 2.6 → commons-lang3 3.17.0"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 24,
       "priority_score": 3
     },
     {
@@ -4783,6 +5142,65 @@
       "priority_score": 3
     },
     {
+      "java_package": "eu.practics.mobile.packingpicking",
+      "name": "Mobile Packing And Picking",
+      "function": "Interfaz móvil para operaciones de packing y picking en almacén, dependiente de org.openbravo.mobile.core (también sin mantenimiento).",
+      "clients": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "commons-lang 2.6 → commons-lang3 3.17.0",
+        "org.openbravo.mobile.core obsoleto: stack JavaScript Enyo/SmartClient no compatible con React"
+      ],
+      "avg_effort_update_hours": 40,
+      "avg_effort_saas_hours": 60,
+      "priority_score": 3
+    },
+    {
+      "java_package": "eu.practics.packingpicking",
+      "name": "Packing Utilities",
+      "function": "Utilidades de embalaje y preparación de expediciones para el sector moda/manufactura: procesos de packing con generación de bultos, validación de cantidades, e integración con el sistema de carrier.",
+      "clients": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Sin mantenedor (Practics): requiere fork interno para actualizar",
+        "commons-lang 2.6 → commons-lang3 3.17.0"
+      ],
+      "avg_effort_update_hours": 30,
+      "avg_effort_saas_hours": 60,
+      "priority_score": 3
+    },
+    {
+      "java_package": "eu.practics.picking",
+      "name": "Picking Utilities",
+      "function": "Utilidades de picking para gestión de listas de preparación de pedidos en almacén.",
+      "clients": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "commons-lang 2.6 → commons-lang3 3.17.0"
+      ],
+      "avg_effort_update_hours": 20,
+      "avg_effort_saas_hours": 40,
+      "priority_score": 3
+    },
+    {
       "java_package": "eu.practics.prestashop",
       "name": "Prestashop Integration",
       "function": "",
@@ -4818,6 +5236,27 @@
       ],
       "avg_effort_update_hours": 40,
       "avg_effort_saas_hours": 16,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.distributionorder",
+      "name": "Distribution Orders",
+      "function": "Gestión de órdenes de distribución entre almacenes: transferencias inter-almacén con documentos de expedición y recepción asociados. Funcionalidad crítica para cadena de suministro.",
+      "clients": [
+        "TCX 08 SOLUCIONS INTEGRALS, SL"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "bundle_candidate",
+      "api_changes": [
+        "Hibernate 5.4.2 → 5.6.15 (HQL queries a revisar)",
+        "Sin mantenedor externo: fuente original Openbravo SLU, abandonada",
+        "commons-lang 2.6 → commons-lang3 3.17.0"
+      ],
+      "avg_effort_update_hours": 40,
+      "avg_effort_saas_hours": 60,
       "priority_score": 3
     },
     {
@@ -4915,6 +5354,25 @@
         "Commons Lang 2→3",
         "Gradle Plugin + wrapper",
         "iText 5.5 → lowagie 2.1.7 (probable uso para PDF)"
+      ],
+      "avg_effort_update_hours": 24,
+      "avg_effort_saas_hours": 16,
+      "priority_score": 3
+    },
+    {
+      "java_package": "org.openbravo.obbo",
+      "name": "Booking Control",
+      "function": "Control de reservas/bookings: gestión del ciclo de vida de reservas de recursos o servicios.",
+      "clients": [
+        "APEX"
+      ],
+      "client_count": 1,
+      "max_risk": "high",
+      "has_replacement": false,
+      "official_replacement_name": null,
+      "generalization": "client_specific",
+      "api_changes": [
+        "Sin mantenimiento desde versiones Openbravo; impacto desconocido en 25.x"
       ],
       "avg_effort_update_hours": 24,
       "avg_effort_saas_hours": 16,
@@ -5122,6 +5580,24 @@
       "priority_score": 2
     },
     {
+      "java_package": "com.openbravo.gps.showpostedgrid",
+      "name": "Show Posted Column in Grid Mode",
+      "function": "Muestra el estado contable (columna Posted) en la vista de rejilla de ventanas de transacciones.",
+      "clients": [
+        "APEX",
+        "Regalador"
+      ],
+      "client_count": 2,
+      "max_risk": "low",
+      "has_replacement": false,
+      "official_replacement_name": "Etendo UI React — Posted button (Sección 2.B, PARCIAL en 25.x)",
+      "generalization": "bundle_candidate",
+      "api_changes": [],
+      "avg_effort_update_hours": 2,
+      "avg_effort_saas_hours": 2,
+      "priority_score": 2
+    },
+    {
       "java_package": "com.smf.alertrecipient",
       "name": "Alertas y Receptores",
       "function": "Personalización del sistema de alertas de Etendo para definir receptores por rol o usuario específico.",
@@ -5267,6 +5743,146 @@
     }
   ],
   "generalizable_customizations": [
+    {
+      "type": "module",
+      "client": "APEX",
+      "name": "Customizations for Apex",
+      "java_package": "com.openbravo.gps.apex.customizations",
+      "description": "Funciones PL/SQL personalizadas (GPSCUS_DELIVERYSTATUS, GPSCUS_INVOICESTATUS) para calcular el porcentaje de entrega y facturación de pedidos, registradas como funciones HQL. Trigger GPSCUS_NONSTOCKEDPRODUCT_TRG que valida recepciones de productos no almacenables.",
+      "complexity": "minor",
+      "effort_saas_hours": 4,
+      "recommendation": "Las funciones HQL de estado de entrega/facturación son candidatas a incorporarse al bundle de Financial Extensions o Warehouse Extensions de Etendo, ya que aportan valor para cualquier cliente que gestione pedidos con seguimiento de entrega parcial."
+    },
+    {
+      "type": "module",
+      "client": "APEX",
+      "name": "Project Budget",
+      "java_package": "com.openbravo.gps.apex.project.budget",
+      "description": "Módulo de presupuestación de proyectos: gestión de materiales, costes de RRHH (categorías salariales, coste/hora), fases de proyecto presupuestadas. Incluye callouts para recálculo en tiempo real, procesos de copia de presupuesto y lista de materiales, carga masiva de materia prima, e informes Jasper agrupados por proyecto.",
+      "complexity": "major",
+      "effort_saas_hours": 32,
+      "recommendation": "Módulo con potencial como bundle del marketplace Etendo para gestión de presupuesto en proyectos de obra/construcción. Requiere migración de callouts a EventHandlers y actualización de API Hibernate. Evaluar junto con Etendo Projects si existe solapamiento."
+    },
+    {
+      "type": "module",
+      "client": "APEX",
+      "name": "Work in Progress",
+      "java_package": "com.openbravo.gps.apex.wip",
+      "description": "Módulo de Work In Progress (WIP): extensión completa del servidor contable de Etendo para imputar costes de tiempo y gastos de empleados a proyectos. Implementa DocTimeExpense (generación de asientos para hojas de tiempo por categoría salarial), DocIntCons (asientos para consumos internos de WIP), y event handlers que activan el posteo contable al confirmar órdenes, facturas y consumos internos relacionados con proyectos WIP.",
+      "complexity": "critical",
+      "effort_saas_hours": 48,
+      "recommendation": "Este es el módulo más complejo y de mayor riesgo de migración. La extensión del AcctServer para WIP es arquitectónicamente crítica. Evaluar si la funcionalidad puede cubrirse con el módulo de Expense Accounting de Etendo en versiones recientes. Si no, requiere un sprint dedicado de migración con validación contable exhaustiva. Es candidato a bundle marketplace si se generaliza la imputación de tiempo/gastos a proyectos."
+    },
+    {
+      "type": "module",
+      "client": "APEX",
+      "name": "Mass Process Expenses",
+      "java_package": "org.openbravo.custom.massprocessexpenses",
+      "description": "Proceso masivo para procesar hojas de gastos/tiempo (S_TIMEEXPENSE) en un rango de fechas. Permite lanzar el proceso contable de múltiples hojas de gastos de una vez en lugar de una por una.",
+      "complexity": "minor",
+      "effort_saas_hours": 4,
+      "recommendation": "Funcionalidad de valor general: cualquier empresa que use hojas de tiempo/gastos se beneficia del procesamiento masivo. Candidato a bundle en el contexto de Expense Management de Etendo."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "APEX",
+      "name": "Filter by dates in GL Posting by DB Tables",
+      "java_package": "com.openbravo.gps.glpostingbydbtables.filterdates",
+      "description": "Formulario AD_FORM para recontabilizar transacciones filtradas por tabla de base de datos y rango de fechas.",
+      "risk": "medium",
+      "effort_saas_hours": 10,
+      "recommendation": "Funcionalidad útil para contables. La recontabilización masiva por período/tabla es una necesidad frecuente. Requiere reescritura como Process Definition para ser compatible con React UI."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "APEX",
+      "name": "Manual Balances",
+      "java_package": "com.openbravo.gps.manualbalances",
+      "description": "Gestión de saldos manuales en cuentas contables (ajustes manuales de balance).",
+      "risk": "medium",
+      "effort_saas_hours": 8,
+      "recommendation": "Funcionalidad de valor para cualquier cliente que necesite ajustes de balance contable manuales. Evaluar si el GL Journal avanzado (com.etendoerp.gljournal.advanced instalado) cubre esta necesidad."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "APEX",
+      "name": "Print Journal Entries from documents",
+      "java_package": "com.openbravo.gps.printjournalentries",
+      "description": "Impresión de asientos contables generados por un documento (factura, albarán, etc.).",
+      "risk": "low",
+      "effort_saas_hours": 4,
+      "recommendation": "Funcionalidad útil para auditoría. Sin reemplazo oficial conocido. Bajo esfuerzo de actualización."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "APEX",
+      "name": "Project Tasks Template",
+      "java_package": "com.openbravo.gps.project.taskstemplate",
+      "description": "Plantillas de tareas para proyectos (crea conjuntos estándar de tareas al crear un proyecto).",
+      "risk": "medium",
+      "effort_saas_hours": 6,
+      "recommendation": "Módulo de valor para la gestión de proyectos repetitivos. Candidato a bundle en el contexto de Project Management de Etendo."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "APEX",
+      "name": "Project Template",
+      "java_package": "com.openbravo.gps.project.template",
+      "description": "Templates de proyectos completos para replicar estructuras de proyecto estándar.",
+      "risk": "medium",
+      "effort_saas_hours": 6,
+      "recommendation": "Candidato a bundle junto con Project Tasks Template."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "APEX",
+      "name": "Matched Purchase Transactions",
+      "java_package": "com.openbravo.gps.purchase.report.matchedpurchasetransactions",
+      "description": "Informe de transacciones de compra emparejadas entre pedidos y recepciones.",
+      "risk": "low",
+      "effort_saas_hours": 3,
+      "recommendation": "Informe de valor operacional. Actualización directa si el código es Jasper o Process Definition."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "APEX",
+      "name": "Report Time Sheet Dimensional",
+      "java_package": "com.openbravo.gps.reports.reporttimesheetdimensional",
+      "description": "Informe dimensional de hojas de tiempo: análisis multidimensional de horas registradas por empleado, proyecto, actividad.",
+      "risk": "low",
+      "effort_saas_hours": 3,
+      "recommendation": "Informe de alto valor para control de horas de proyecto. Candidato a bundle de Project Management."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "APEX",
+      "name": "Daily Material Stock Report",
+      "java_package": "com.openbravo.gps.warehouse.reports.dailymaterialstock",
+      "description": "Informe diario de stock de materiales por almacén y producto.",
+      "risk": "low",
+      "effort_saas_hours": 2,
+      "recommendation": "Informe operacional de bajo riesgo. Actualización directa."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "APEX",
+      "name": "Aging Reports with Transaction Date",
+      "java_package": "com.smf.agingreports.transactiondate",
+      "description": "Informes de antigüedad de saldos usando la fecha de transacción en lugar de la fecha contable.",
+      "risk": "low",
+      "effort_saas_hours": 3,
+      "recommendation": "Funcionalidad de valor financiero. Verificar si Financial Reports Advanced (com.etendoerp.financial.reports.advanced instalado) cubre esta variante por fecha de transacción."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "APEX",
+      "name": "Copy Role Module",
+      "java_package": "org.openbravo.gps.copyrole",
+      "description": "Copia roles de acceso entre organizaciones o usuarios.",
+      "risk": "low",
+      "effort_saas_hours": 3,
+      "recommendation": "Funcionalidad de administración útil. Sin reemplazo oficial conocido. Bajo esfuerzo."
+    },
     {
       "type": "core",
       "client": "Acico",
@@ -5616,16 +6232,6 @@
       "risk": "medium",
       "effort_saas_hours": 16,
       "recommendation": "Evaluar uso real con Mixpanel. La integración Magento es de alto valor para distribuidores con e-commerce. Si activo, requiere revisión de compatibilidad de API Magento. Candidato a bundle oficial."
-    },
-    {
-      "type": "module_unmaintained",
-      "client": "Enertis",
-      "name": "Import Data (Openbravo)",
-      "java_package": "org.openbravo.importdata",
-      "description": "Generic data import framework for Etendo. Used alongside IDL for bulk data loading operations.",
-      "risk": "low",
-      "effort_saas_hours": 3,
-      "recommendation": "Fork and compile-test. Small utility module."
     },
     {
       "type": "module_unmaintained",
@@ -6280,16 +6886,6 @@
     {
       "type": "module_unmaintained",
       "client": "Regalador",
-      "name": "OFX Bank Statement Format",
-      "java_package": "org.openbravo.module.standardOFX",
-      "description": "Importador de extractos bancarios en formato OFX (Open Financial Exchange), estándar usado por bancos americanos y algunos europeos.",
-      "risk": "medium",
-      "effort_saas_hours": 4,
-      "recommendation": "Verificar si el cliente recibe extractos OFX. Si no, candidato a eliminación. Si sí, fork y actualización."
-    },
-    {
-      "type": "module_unmaintained",
-      "client": "Regalador",
       "name": "Pending Products",
       "java_package": "com.openbravo.gps.PendingProducts",
       "description": "Ventana o informe que muestra productos con recepciones pendientes de procesar (pedidos de compra con líneas sin albarán).",
@@ -6299,13 +6895,43 @@
     },
     {
       "type": "module_unmaintained",
-      "client": "Regalador",
-      "name": "Show Posted Column in Grid Mode",
-      "java_package": "com.openbravo.gps.showpostedgrid",
-      "description": "Pequeño módulo que añade la columna 'Posted' a la vista de grid de ventanas de documentos contables, permitiendo ver el estado contable sin abrir cada registro.",
+      "client": "TCX 08 SOLUCIONS INTEGRALS, SL",
+      "name": "Barcode generation in reports",
+      "java_package": "org.openbravo.service.reporting.barcode",
+      "description": "Librería de generación de códigos de barras (probablemente ZXing o Barcode4J) para usar en informes JasperReports.",
       "risk": "low",
-      "effort_saas_hours": 2,
-      "recommendation": "Trivial de actualizar (solo AD XML). Candidato a bundle oficial genérico."
+      "effort_saas_hours": 4,
+      "recommendation": "Verificar si ZXing o Barcode4J están incluidos en Etendo 25. Si es así, eliminar. Si no, fork."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "TCX 08 SOLUCIONS INTEGRALS, SL",
+      "name": "Printing Stations",
+      "java_package": "com.practicsbs.printingstations",
+      "description": "Gestión de estaciones de impresión en almacén: asignación de impresoras físicas por puesto de trabajo para impresión de etiquetas y documentos.",
+      "risk": "medium",
+      "effort_saas_hours": 16,
+      "recommendation": "Funcionalidad genérica de almacén, potencialmente reutilizable. Sin mantenedor: fork o evaluar solución de impresión en la nube compatible con SaaS."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "TCX 08 SOLUCIONS INTEGRALS, SL",
+      "name": "UPC Generator",
+      "java_package": "com.practicsbs.upcgenerator",
+      "description": "Generador de códigos UPC/EAN para artículos, integrado probablemente con la ficha de producto.",
+      "risk": "low",
+      "effort_saas_hours": 8,
+      "recommendation": "Funcionalidad genérica de gestión de artículos. Evaluar si Etendo Product Management la cubre nativamente."
+    },
+    {
+      "type": "module_unmaintained",
+      "client": "TCX 08 SOLUCIONS INTEGRALS, SL",
+      "name": "Carrier Integration Base",
+      "java_package": "org.openbravo.erputil.carrierintegration",
+      "description": "Infraestructura base para integración con sistemas de transportistas (carrier): modelo de datos y API para conectar proveedores de transporte.",
+      "risk": "medium",
+      "effort_saas_hours": 10,
+      "recommendation": "Sin reemplazo oficial en Etendo. La integración con transportistas es una necesidad común; candidato a bundle oficial. A corto plazo: fork."
     },
     {
       "type": "core",
