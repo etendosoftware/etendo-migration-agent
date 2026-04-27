@@ -1,0 +1,3795 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etendo Migration Report — MyPime Hercam</title>
+  <style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       background: #f8fafc; color: #1e293b; font-size: 14px; }
+
+.page { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
+
+/* Header */
+.report-header { background: #fff; border: 1px solid #e2e8f0; border-top: 4px solid #3b82f6;
+                 color: #0f172a; padding: 28px 32px; border-radius: 12px; margin-bottom: 24px; }
+.report-header h1 { font-size: 22px; font-weight: 700; color: #0f172a; }
+.report-header .sub { font-size: 13px; color: #6b7280; margin-top: 6px; }
+.header-meta { display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
+.meta-item { font-size: 13px; }
+.meta-item strong { color: #1e293b; }
+.meta-item span { color: #6b7280; }
+
+/* Cards */
+.card { background: #fff; border-radius: 10px; border: 1px solid #e2e8f0;
+        padding: 20px 24px; margin-bottom: 20px; }
+.card h2 { font-size: 15px; font-weight: 600; color: #374151; margin-bottom: 16px;
+           padding-bottom: 10px; border-bottom: 1px solid #f1f5f9; }
+
+/* Score section */
+.score-section { display: flex; gap: 32px; align-items: flex-start; flex-wrap: wrap; }
+.score-ring-wrap { text-align: center; }
+.score-ring { width: 120px; height: 120px; }
+.score-label { font-size: 14px; font-weight: 600; margin-top: 6px; }
+.score-right { flex: 1; min-width: 240px; }
+.breakdown-table { width: 100%; border-collapse: collapse; }
+.breakdown-table td { padding: 5px 4px; vertical-align: middle; }
+.bd-label { font-size: 12px; color: #475569; white-space: nowrap; width: 240px; }
+.bd-bar-cell { padding: 0 12px; }
+.bd-bar { height: 8px; border-radius: 4px; min-width: 4px; }
+.bd-bar-base { background: #22c55e; }
+.bd-bar-neg  { background: #ef4444; }
+.bd-val { font-size: 12px; font-weight: 600; text-align: right; white-space: nowrap; }
+.bd-val-base { color: #22c55e; }
+.bd-val-neg  { color: #ef4444; }
+.bd-val-ok   { color: #22c55e; }
+.bd-ok-badge { font-size: 11px; color: #22c55e; font-weight: 500; }
+.bd-row-ok td { opacity: 0.75; }
+.bd-cap { font-size: 11px; font-weight: 400; color: #9ca3af; }
+.bd-val-result { font-size: 14px; }
+.bd-row-base td { padding-bottom: 8px; }
+.bd-row-sep td { padding: 4px 0; }
+.bd-sep-line { border-top: 1px solid #e2e8f0; }
+.bd-row-total td { padding-top: 4px; }
+.bd-label-total  { font-weight: 600; color: #334155; }
+.bd-row-result td { padding-top: 8px; border-top: 2px solid #e2e8f0; }
+.bd-label-result { font-weight: 700; font-size: 13px; color: #0f172a; }
+
+/* Module pills */
+.module-pills { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+.module-pill { display: flex; align-items: center; gap: 8px; padding: 10px 16px;
+               border-radius: 8px; border: 1px solid #e2e8f0; background: #f8fafc; }
+.pill-icon { font-size: 18px; font-weight: 700; }
+.pill-info strong { display: block; font-size: 18px; font-weight: 700; }
+.pill-info span  { font-size: 11px; color: #6b7280; }
+
+/* Module blocks */
+.module-block { margin-bottom: 8px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+.module-header { display: flex; align-items: center; gap: 10px; padding: 12px 16px;
+                 cursor: pointer; background: #f8fafc; user-select: none; }
+.module-header:hover { background: #f1f5f9; }
+.cat-icon { font-size: 16px; font-weight: 700; width: 20px; text-align: center; }
+.cat-label { font-size: 13px; font-weight: 600; flex: 1; }
+.cat-count { font-size: 12px; font-weight: 700; color: #fff; padding: 2px 8px; border-radius: 12px; }
+.chevron { font-size: 12px; color: #9ca3af; transition: transform 0.2s; }
+.module-header.open .chevron { transform: rotate(180deg); }
+.module-body { display: none; padding: 0 16px 12px; }
+.module-body.open { display: block; }
+
+/* Module table */
+.mod-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.mod-row td { padding: 7px 4px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.mod-row:last-child td { border-bottom: none; }
+.mod-pkg { width: 50%; }
+.pkg { font-size: 12px; font-family: 'SF Mono', Consolas, monospace; color: #1e293b; word-break: break-all; }
+
+/* Version gap */
+.ver-row { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; margin-bottom: 3px; }
+.ver-installed { font-size: 12px; color: #475569; background: #f1f5f9; padding: 2px 7px;
+                 border-radius: 4px; font-family: 'SF Mono', Consolas, monospace; }
+.ver-latest { font-size: 12px; color: #1e293b; background: #e0f2fe; padding: 2px 7px;
+              border-radius: 4px; font-family: 'SF Mono', Consolas, monospace; font-weight: 600; }
+.gap-arrow-ok     { font-size: 11px; color: #22c55e; }
+.gap-arrow-patch  { font-size: 11px; color: #f59e0b; }
+.gap-arrow-minor  { font-size: 11px; color: #f97316; }
+.gap-arrow-major  { font-size: 11px; color: #ef4444; }
+.gap-badge { font-size: 10px; padding: 2px 6px; border-radius: 10px; font-weight: 600;
+             text-transform: uppercase; letter-spacing: 0.03em; }
+.gap-ok     { background: #dcfce7; color: #166534; }
+.gap-patch  { background: #fef9c3; color: #854d0e; }
+.gap-minor  { background: #ffedd5; color: #9a3412; }
+.gap-major  { background: #fee2e2; color: #991b1b; }
+
+.author { font-size: 11px; color: #9ca3af; margin-right: 4px; }
+.bundle { font-size: 11px; color: #3b82f6; background: #eff6ff; padding: 1px 6px; border-radius: 4px; }
+
+/* Diff badges */
+.mod-diff { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px; }
+.diff-badge { font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+.diff-badge.df    { background: #fef3c7; color: #92400e; }
+.diff-badge.add   { background: #dcfce7; color: #166534; }
+.diff-badge.del   { background: #fee2e2; color: #991b1b; }
+.diff-badge.lines { background: #f3f4f6; color: #374151; }
+
+/* Core */
+.core-note { font-size: 12px; color: #6b7280; background: #f8fafc; border: 1px solid #e2e8f0;
+             border-radius: 6px; padding: 8px 12px; margin-bottom: 16px; }
+.core-stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.stat-pill { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
+             padding: 10px 16px; text-align: center; }
+.stat-pill strong { display: block; font-size: 20px; font-weight: 700; color: #1e293b; }
+.stat-pill span   { font-size: 11px; color: #6b7280; }
+.stat-pill.add-pill strong { color: #16a34a; }
+.stat-pill.del-pill strong { color: #dc2626; }
+
+.file-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.file-table th { text-align: left; padding: 6px 8px; background: #f8fafc;
+                 border-bottom: 2px solid #e2e8f0; font-size: 11px; color: #6b7280;
+                 font-weight: 600; white-space: nowrap; }
+.file-table td { padding: 5px 8px; border-bottom: 1px solid #f8fafc; }
+.file-table tr:hover td { background: #f8fafc; }
+.file-path { font-family: 'SF Mono', Consolas, monospace; color: #1e293b; word-break: break-all; }
+.file-add  { color: #16a34a; font-weight: 600; text-align: right; white-space: nowrap; }
+.file-del  { color: #dc2626; font-weight: 600; text-align: right; white-space: nowrap; }
+.file-total{ color: #6b7280; text-align: right; white-space: nowrap; }
+.status-badge { font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+.status-added   { background: #dcfce7; color: #166534; }
+.status-deleted { background: #fee2e2; color: #991b1b; }
+
+.empty { color: #9ca3af; font-size: 13px; font-style: italic; padding: 8px 0; }
+.footer { text-align: center; font-size: 11px; color: #9ca3af; margin-top: 32px; }
+
+/* Translation badge */
+.translation-badge {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: #f1f5f9;
+    color: #64748b;
+    font-weight: 600;
+    vertical-align: middle;
+    letter-spacing: 0.02em;
+}
+
+/* Custom module detail */
+.custom-detail { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.loc-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px;
+             background: #f3f4f6; color: #374151; font-family: 'SF Mono', Consolas, monospace; }
+.pen-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px;
+             background: #fef2f2; color: #991b1b; font-weight: 600; }
+.tier-badge { font-size: 10px; padding: 2px 7px; border-radius: 4px; font-weight: 600;
+              text-transform: uppercase; letter-spacing: 0.03em; }
+.tier-micro  { background: #f0fdf4; color: #166534; }
+.tier-small       { background: #fefce8; color: #854d0e; }
+.tier-medium      { background: #fff7ed; color: #9a3412; }
+.tier-large       { background: #fef2f2; color: #991b1b; }
+.tier-translation { background: #f1f5f9; color: #64748b; }
+
+/* Methodology */
+.meth-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.meth-block { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px 20px; }
+.meth-title { font-size: 13px; font-weight: 700; color: #1e293b; margin-bottom: 12px;
+              padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; }
+.meth-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.meth-table th { text-align: left; padding: 5px 8px; background: #f1f5f9;
+                 border-bottom: 2px solid #e2e8f0; font-size: 11px; color: #6b7280;
+                 font-weight: 600; white-space: nowrap; }
+.meth-table td { padding: 6px 8px; border-bottom: 1px solid #f1f5f9; vertical-align: top; color: #374151; }
+.meth-table tr:last-child td { border-bottom: none; }
+.meth-note { font-size: 11px; color: #6b7280; margin-top: 10px; line-height: 1.5; }
+
+/* Category chips */
+.cat-chip { font-size: 10px; padding: 2px 8px; border-radius: 10px; font-weight: 600;
+            white-space: nowrap; }
+.chip-jar  { background: #e0f2fe; color: #0369a1; }
+.chip-src  { background: #dcfce7; color: #166534; }
+.chip-mnt  { background: #dbeafe; color: #1d4ed8; }
+.chip-nmnt { background: #ffedd5; color: #9a3412; }
+.chip-cust { background: #f3e8ff; color: #7e22ce; }
+
+/* Migratability badges */
+.mig-badge { font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+.mig-easy  { background: #dcfce7; color: #166534; }
+.mig-mod   { background: #fef9c3; color: #854d0e; }
+.mig-hard  { background: #ffedd5; color: #9a3412; }
+.mig-vhard { background: #fee2e2; color: #991b1b; }
+
+/* ── Custom Assessor ────────────────────────────────────────────────────── */
+.asmnt-meta { font-size: 12px; color: #64748b; margin-bottom: 16px; }
+.asmnt-section-label { font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.5px; color: #6b7280; margin: 18px 0 10px; }
+.asmnt-badge { display: inline-block; padding: 2px 8px; border-radius: 4px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.3px; }
+.asmnt-trivial  { background: #dcfce7; color: #166534; }
+.asmnt-minor    { background: #fef9c3; color: #854d0e; }
+.asmnt-major    { background: #fee2e2; color: #991b1b; }
+.asmnt-critical { background: #fce7f3; color: #9d174d; }
+.asmnt-type     { background: #e0f2fe; color: #075985; }
+.asmnt-effort { font-size: 11px; color: #64748b; background: #f1f5f9;
+  padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.asmnt-effort-upd  { background: #eff6ff; color: #1d4ed8; }
+.asmnt-effort-saas { background: #f0fdf4; color: #166534; }
+.asmnt-th-effort { font-size: 10px; }
+.asmnt-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.asmnt-table th { text-align: left; padding: 7px 10px; background: #f8fafc;
+  color: #64748b; font-weight: 600; border-bottom: 2px solid #e2e8f0;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; }
+.asmnt-table td { padding: 8px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.asmnt-table tr:last-child td { border-bottom: none; }
+.asmnt-table tr:hover td { background: #f8fafc; }
+.asmnt-desc { color: #475569; font-size: 12px; margin-top: 3px; }
+.asmnt-rec  { color: #0f172a; font-size: 12px; }
+.asmnt-row-high td { background: #fff5f5; }
+.asmnt-row-med  td { background: #fffbeb; }
+.asmnt-effort-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
+  padding: 14px 20px; margin-top: 12px; display: flex; gap: 32px; flex-wrap: wrap; }
+.asmnt-stat { text-align: center; }
+.asmnt-stat-total { border-left: 1px solid #e2e8f0; padding-left: 32px; }
+.asmnt-stat-val       { font-size: 22px; font-weight: 700; color: #3b82f6; }
+.asmnt-stat-val-total { font-size: 22px; font-weight: 700; color: #f97316; }
+.asmnt-stat-lbl { font-size: 11px; color: #6b7280; margin-top: 2px; }
+.asmnt-note { font-size: 11px; color: #6b7280; margin-top: 10px; }
+.asmnt-mx-tag { font-size: 11px; background: #eff6ff; color: #3b82f6; border: 1px solid #bfdbfe;
+  padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+.asmnt-elim-cand { background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; font-size: 10px; padding: 1px 6px; border-radius: 4px; }
+.asmnt-row-elim td { background: #fef9f9; opacity: 0.85; }
+.asmnt-upstream  { background: #d1fae5; color: #065f46; }
+.asmnt-already   { background: #dbeafe; color: #1e40af; }
+.asmnt-elim      { background: #fee2e2; color: #991b1b; }
+.asmnt-stat-saved { border-left: 2px solid #22c55e; padding-left: 12px; }
+.usage-score { font-size: 12px; white-space: nowrap; }
+.usage-score-null { color: #9ca3af; font-style: italic; font-size: 11px; }
+.usage-score-zero { background: #f1f5f9; color: #9ca3af; font-size: 10px; padding: 2px 6px; border-radius: 4px; }
+.usage-bar { height: 4px; background: #e5e7eb; border-radius: 2px; margin-top: 3px; width: 60px; }
+.usage-fill { height: 4px; border-radius: 2px; }
+.win-group { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 3px; }
+.win-tag { font-size: 10px; padding: 1px 5px; border-radius: 3px; }
+.win-used   { background: #d1fae5; color: #065f46; }
+.win-unused { background: #fee2e2; color: #991b1b; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="report-header">
+    <h1>Etendo Migration Report</h1>
+    <div class="sub">Análisis de migración a SaaS</div>
+    <div class="header-meta">
+      <div class="meta-item"><span>Cliente </span><strong>MyPime Hercam</strong></div>
+      <div class="meta-item"><span>Hostname </span><strong>naza</strong></div>
+      <div class="meta-item"><span>Plataforma </span><strong>Etendo 24.4.21</strong></div>
+      <div class="meta-item"><span>Base de comparación </span><strong>vexpanded</strong></div>
+      <div class="meta-item"><span>Módulos totales </span><strong>187</strong></div>
+      <div class="meta-item"><span>Generado </span><strong>2026-04-27 08:53</strong></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Metodología de puntuación</h2>
+    
+<div class="meth-grid">
+
+  <div class="meth-block">
+    <div class="meth-title">Categorías de módulos</div>
+    <table class="meth-table">
+      <thead><tr><th>Categoría</th><th>Descripción</th><th>Cómo se penaliza</th><th>Por qué</th></tr></thead>
+      <tbody>
+        <tr><td><span class="cat-chip chip-jar">Gradle JAR</span></td>
+            <td>Módulos resueltos como binarios (JARs) por Gradle. No tienen código fuente editable en la instalación.</td>
+            <td>Solo se penaliza si están desactualizados:<br>
+                −0.15 por módulo con gap <em>major</em> (máximo −3)<br>
+                −0.05 por módulo con gap <em>minor/patch</em> (máximo −1)</td>
+            <td>Actualizar un JAR es solo cambiar el número de versión en build.gradle. Sin riesgo de pérdida de código. Es el escenario ideal de migración.</td></tr>
+        <tr><td><span class="cat-chip chip-src">Gradle Sources</span></td>
+            <td>Módulos cuyo bundle está declarado en build.gradle pero tienen fuentes expandidas en /modules/. Deberían ser JAR pero alguien los desempaquetó.</td>
+            <td>−0.1 por cada archivo con diferencias respecto a la versión limpia (máximo −5 por módulo)</td>
+            <td>Tener el fuente local indica posibles divergencias. La penalización es baja porque el módulo sigue siendo soportado y la ruta de migración es volver a JAR.</td></tr>
+        <tr><td><span class="cat-chip chip-mnt">Local Mantenido</span></td>
+            <td>Módulo con código fuente en /modules/, reconocido en el catálogo de Etendo pero no declarado como dependencia Gradle. Puede tener divergencias respecto a la versión publicada.</td>
+            <td>−0.2 por cada archivo con diferencias respecto a la versión limpia (máximo −10 por módulo)</td>
+            <td>Mayor penalización que Gradle Sources porque no está gestionado como dependencia. Cada archivo divergente implica trabajo de análisis para determinar si es customización o desactualización.</td></tr>
+        <tr><td><span class="cat-chip chip-nmnt">Local sin Mant.</span></td>
+            <td>Módulo con código fuente en /modules/ que no aparece en el catálogo de Etendo. Puede ser de terceros, legacy de Openbravo, o un módulo abandonado.</td>
+            <td>−3 por módulo regular, −0.3 por pack de traducción (cap conjunto −20)</td>
+            <td>Sin soporte oficial no hay ruta de actualización garantizada. Cada uno requiere evaluación manual para decidir si se reemplaza, se integra como customización, o se descarta.</td></tr>
+        <tr><td><span class="cat-chip chip-cust">Customización</span></td>
+            <td>Módulo desarrollado por o para el cliente (el java_package contiene el nombre del cliente o el segmento "custom"). Representa lógica de negocio propia.</td>
+            <td>Penalización escalonada por volumen de código (LOC). Ver tabla de tamaños. Máximo global −35.</td>
+            <td>Las customizaciones son el mayor obstáculo para migrar a SaaS: deben generalizarse o reescribirse. A mayor volumen de código, mayor el esfuerzo estimado de análisis y portabilidad.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="meth-block">
+    <div class="meth-title">Tamaño de customizaciones (LOC)</div>
+    <table class="meth-table">
+      <thead><tr><th>Tamaño</th><th>LOC</th><th>Penalización</th><th>Criterio</th></tr></thead>
+      <tbody>
+        <tr><td><span class="tier-badge tier-micro">micro</span></td>
+            <td>&lt; 500</td><td>−1</td>
+            <td>Adaptación puntual, fácil de generalizar.</td></tr>
+        <tr><td><span class="tier-badge tier-small">small</span></td>
+            <td>500 – 2.000</td><td>−4</td>
+            <td>Funcionalidad acotada, esfuerzo de análisis moderado.</td></tr>
+        <tr><td><span class="tier-badge tier-medium">medium</span></td>
+            <td>2.000 – 8.000</td><td>−9</td>
+            <td>Módulo con lógica propia. Requiere diseño para generalizar.</td></tr>
+        <tr><td><span class="tier-badge tier-large">large</span></td>
+            <td>&gt; 8.000</td><td>−16</td>
+            <td>Desarrollo significativo. Alta complejidad de migración.</td></tr>
+      </tbody>
+    </table>
+    <p class="meth-note">Cap global de customizaciones: −35. El LOC se cuenta sobre archivos de texto
+    (.java, .xml, .sql, .js, .css, .html, .properties, .gradle, etc.). Los packs de traducción penalizan −0.5 fijo sin importar el tamaño.</p>
+  </div>
+
+  <div class="meth-block">
+    <div class="meth-title">Core y otros factores</div>
+    <table class="meth-table">
+      <thead><tr><th>Factor</th><th>Penalización</th><th>Cap</th></tr></thead>
+      <tbody>
+        <tr><td>Plataforma Openbravo (sin build.gradle)</td><td>−20 fijo</td><td>−20</td></tr>
+        <tr><td>Líneas de diferencia en core (por cada 100 líneas)</td><td>−0.5</td><td>−15</td></tr>
+        <tr><td>Módulos mantenidos con divergencias (por módulo)</td><td>−1 / −3 / −6 / −10 según volumen</td><td>−10</td></tr>
+      </tbody>
+    </table>
+    <p class="meth-note">El score parte de 100 y se le restan todas las penalizaciones. La penalización
+    máxima posible es <strong>−100</strong>, por lo que el score mínimo es 0. Los módulos Gradle Source
+    desactualizados y las dependencias JAR no penalizan — se resuelven con una actualización estándar.</p>
+  </div>
+
+  <div class="meth-block">
+    <div class="meth-title">Escala de migratabilidad</div>
+    <table class="meth-table">
+      <thead><tr><th>Score</th><th>Nivel</th><th>Significado</th></tr></thead>
+      <tbody>
+        <tr><td>80 – 100</td><td><span class="mig-badge mig-easy">Fácil</span></td>
+            <td>Migración directa. Principalmente actualizaciones de versión.</td></tr>
+        <tr><td>60 – 79</td><td><span class="mig-badge mig-mod">Moderada</span></td>
+            <td>Requiere trabajo de adaptación pero es manejable.</td></tr>
+        <tr><td>40 – 59</td><td><span class="mig-badge mig-hard">Difícil</span></td>
+            <td>Presencia significativa de customizaciones o módulos no mantenidos.</td></tr>
+        <tr><td>0 – 39</td><td><span class="mig-badge mig-vhard">Muy difícil</span></td>
+            <td>Customizaciones extensas o core muy divergente. Proyecto de mediano plazo.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+  </div>
+
+  <div class="card">
+    <h2>Puntuación de migración</h2>
+    <div class="score-section">
+      
+<div class="score-ring-wrap">
+  <svg viewBox="0 0 120 120" class="score-ring">
+    <circle cx="60" cy="60" r="54" fill="none" stroke="#e5e7eb" stroke-width="10"/>
+    <circle cx="60" cy="60" r="54" fill="none" stroke="#f97316" stroke-width="10"
+      stroke-dasharray="186.6 152.7"
+      stroke-dashoffset="84.8"
+      stroke-linecap="round"/>
+    <text x="60" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#f97316">55</text>
+    <text x="60" y="73" text-anchor="middle" font-size="9" fill="#6b7280">/100</text>
+  </svg>
+  <div class="score-label" style="color:#f97316">Difícil</div>
+</div>
+      <div class="score-right">
+        <p style="font-size:13px;color:#475569;margin-bottom:12px;">Factores de penalización:</p>
+        
+<table class="breakdown-table">
+  <tbody>
+      <tr class="bd-row-base">
+        <td class="bd-label">Puntuación base</td>
+        <td class="bd-bar-cell"><div class="bd-bar bd-bar-base" style="width:100%"></div></td>
+        <td class="bd-val bd-val-base">100</td>
+      </tr>
+      <tr class="bd-row-ok">
+        <td class="bd-label">Plataforma Openbravo</td>
+        <td class="bd-bar-cell"><span class="bd-ok-badge">✓ sin penalización</span></td>
+        <td class="bd-val bd-val-ok">0</td>
+      </tr>
+      <tr class="bd-row-penalty">
+        <td class="bd-label">Divergencias en core</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar bd-bar-neg" style="width:75.0%"></div>
+        </td>
+        <td class="bd-val bd-val-neg">-15.0<span class="bd-cap"> / -15</span></td>
+      </tr>
+      <tr class="bd-row-penalty">
+        <td class="bd-label">Módulos locales sin mantenimiento</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar bd-bar-neg" style="width:100.0%"></div>
+        </td>
+        <td class="bd-val bd-val-neg">-20.0<span class="bd-cap"> / -20</span></td>
+      </tr>
+      <tr class="bd-row-ok">
+        <td class="bd-label">Customizaciones</td>
+        <td class="bd-bar-cell"><span class="bd-ok-badge">✓ sin penalización</span></td>
+        <td class="bd-val bd-val-ok">0</td>
+      </tr>
+      <tr class="bd-row-penalty">
+        <td class="bd-label">Divergencias en módulos locales mantenidos</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar bd-bar-neg" style="width:50.0%"></div>
+        </td>
+        <td class="bd-val bd-val-neg">-10.0<span class="bd-cap"> / -10</span></td>
+      </tr>
+      <tr class="bd-row-sep"><td colspan="3"><div class="bd-sep-line"></div></td></tr>
+      <tr class="bd-row-total">
+        <td class="bd-label bd-label-total">Total penalizaciones</td>
+        <td class="bd-bar-cell"></td>
+        <td class="bd-val bd-val-neg">-45.0<span class="bd-cap"> / -100</span></td>
+      </tr>
+      <tr class="bd-row-result">
+        <td class="bd-label bd-label-result">Score final</td>
+        <td class="bd-bar-cell">
+          <div class="bd-bar bd-bar-result" style="width:55%;background:#f97316"></div>
+        </td>
+        <td class="bd-val bd-val-result" style="color:#f97316">55</td>
+      </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Módulos (187)</h2>
+    <div class="module-pills">
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#0ea5e9">⬡</div>
+        <div class="pill-info">
+          <strong style="color:#0ea5e9">15</strong>
+          <span>Dependencias Gradle JAR</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#22c55e">✓</div>
+        <div class="pill-info">
+          <strong style="color:#22c55e">0</strong>
+          <span>Dependencias Gradle Sources</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#3b82f6">↑</div>
+        <div class="pill-info">
+          <strong style="color:#3b82f6">55</strong>
+          <span>Módulos Locales Mantenidos</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#f97316">⚠</div>
+        <div class="pill-info">
+          <strong style="color:#f97316">117</strong>
+          <span>Módulos Locales sin Mantenimiento</span>
+        </div>
+      </div>
+      <div class="module-pill">
+        <div class="pill-icon" style="color:#a855f7">✎</div>
+        <div class="pill-info">
+          <strong style="color:#a855f7">0</strong>
+          <span>Customizaciones</span>
+        </div>
+      </div></div>
+    
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #0ea5e9">
+    <span class="cat-icon" style="color:#0ea5e9">⬡</span>
+    <span class="cat-label">Dependencias Gradle JAR</span>
+    <span class="cat-count" style="background:#0ea5e9">15</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <table class='mod-table'><tbody>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.asyncprocess</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.11.2</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.6.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.15.14</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.12.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot.agents</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.14</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.12.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot.devassistant</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.10.15</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.12.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot.extensions</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.15.15</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.copilot.toolpack</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.10.14</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.12.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.docker</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.8.2</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.9.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.etendorx</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.12.6</span><span class="gap-arrow-major">→</span><span class="ver-latest">v3.15.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.openapi</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.5.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.reactor</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.9.1</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.subapp.copilot</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.9.14</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.12.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.copilot.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.task</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.11</span><span class="gap-arrow-major">→</span><span class="ver-latest">v3.15.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.ean128</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.7.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.mobile.scan</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.8.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.mobile.extensions</span>
+        
+      </td>
+    </tr></tbody></table>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #22c55e">
+    <span class="cat-icon" style="color:#22c55e">✓</span>
+    <span class="cat-label">Dependencias Gradle Sources</span>
+    <span class="cat-count" style="background:#22c55e">0</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <p class='empty'>Sin módulos en esta categoría.</p>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #3b82f6">
+    <span class="cat-icon" style="color:#3b82f6">↑</span>
+    <span class="cat-label">Módulos Locales Mantenidos</span>
+    <span class="cat-count" style="background:#3b82f6">55</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <table class='mod-table'><tbody>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.dynamic.app</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.9.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">9 con diferencias</span>
+        <span class="diff-badge add">+53 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1522 / -12 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.integration.powerbi</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.7.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.etendobi.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">5 con diferencias</span>
+        <span class="diff-badge add">+49 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+61 / -22 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.powerbi.inclusion.exclusion</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.7.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.etendobi.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+51 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1090 / -5 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.powerbi.queries</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.7.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.etendobi.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+46 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+9 / -6 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.reportvaluationstock.es_es</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.8.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Etendo Software</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+32 nuevos</span>
+        <span class="diff-badge del">-0 eliminados</span>
+        <span class="diff-badge lines">+4 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.subapp.classic</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.mobile.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.webhookevents</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.15.0</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.6.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">15 con diferencias</span>
+        <span class="diff-badge add">+54 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1711 / -19 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.jasperutilities</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span><span class="gap-arrow-patch">→</span><span class="ver-latest">v1.0.2</span><span class="gap-badge gap-patch">patch</span></div>
+        <span class='author'>SMF</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.advpaymentmngt.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.alerts.accounting30</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.500</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.application.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1400</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.htmlwidget.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.kernel.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.myob.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.301</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.querylist.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.widgets.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.financial.paymentreport.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.localization.spain.referencedata.accounts</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.localization.spain.referencedata.accounts.pymes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.localization.spain.referencedata.taxes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.204400</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">5 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+11 / -1964 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.localization.spain.referencedata.translation.esES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.213000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.localization.spain30</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.6.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.aeat303.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.8.204900</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.5.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">12 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-8 eliminados</span>
+        <span class="diff-badge lines">+853 / -26554 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.aeat347apr.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v4.4.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v5.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">8 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+13 / -25 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.aeat390.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.3.204200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.4.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">23 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-10 eliminados</span>
+        <span class="diff-badge lines">+1910 / -18625 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.bptaxidkey</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.0.300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v1.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.cashvat</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.201</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.cifnifvalidator</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.204100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.cifnifvalidator.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.countryisocode</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.cuaderno43.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.epigrafes.iae.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">16 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-2 eliminados</span>
+        <span class="diff-badge lines">+5 / -896 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.eucountries</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.300</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+2 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.finactvalidator.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.1.204100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.1</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.invoiceTaxReportEnhanced30</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.800</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.invoicesregisterbook</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.5.204100</span><span class="gap-arrow-major">→</span><span class="ver-latest">v3.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">17 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-9 eliminados</span>
+        <span class="diff-badge lines">+2549 / -2589 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.organization.representative.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.taximprovements.ES</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.0.600</span><span class="gap-arrow-major">→</span><span class="ver-latest">v1.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.taximprovements.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.0.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v1.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.taxreportlauncher</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.500</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">3 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+7 / -6 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.taxreportlauncher.es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+10 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.numbertoword</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">2 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+7 / -7 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.numbertoword_en</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>This is a packaging in a module done by Openbravo SLU of the code snippet "POS - Number To Words In Ticket (Spanish)" by Macumbero and Zil__, published on Openbravo wiki,http://wiki.openbravo.com/wiki/POS_-_Number_To_Words_In_Ticket_(Spanish) and used under Creative Commons Attribution-ShareAlike 2.5 Spain License: http://creativecommons.org/licenses/by-sa/2.5/es/.</span>
+        <span class='bundle'>com.etendoerp.platform.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+6 / -5 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.numbertoword_es</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span><span class="gap-arrow-minor">→</span><span class="ver-latest">v1.13.0</span><span class="gap-badge gap-minor">minor</span></div>
+        <span class='author'>This is a packaging in a module done by Openbravo SLU of the code snippet "POS - Number To Words In Ticket (Spanish)" by Macumbero and Zil__, published on Openbravo wiki,http://wiki.openbravo.com/wiki/POS_-_Number_To_Words_In_Ticket_(Spanish) and used under Creative Commons Attribution-ShareAlike 2.5 Spain License: http://creativecommons.org/licenses/by-sa/2.5/es/.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+2 / -2 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.reports.ordersawaitingdelivery.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.service.datasource.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.service.integration.google.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.service.integration.openid.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.spain.regions</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-1 eliminados</span>
+        <span class="diff-badge lines">+1 / -1 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.userinterface.selector.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.212000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.userinterface.smartclient.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.211001</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.utility.multiplebpselector</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v2.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      <div class="mod-diff">
+        <span class="diff-badge df">1 con diferencias</span>
+        <span class="diff-badge add">+1 nuevos</span>
+        <span class="diff-badge del">-3 eliminados</span>
+        <span class="diff-badge lines">+8 / -5 líneas</span>
+      </div>
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.v3.translation.pack.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.4.204000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v4.2.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo SLU</span>
+        <span class='bundle'>com.etendoerp.localization.spain.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.warehouse.pickinglist</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.3000</span><span class="gap-arrow-major">→</span><span class="ver-latest">v3.4.5</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.warehouse.structure</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.200</span><span class="gap-arrow-major">→</span><span class="ver-latest">v3.3.0</span><span class="gap-badge gap-major">major</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        <span class='bundle'>com.etendoerp.warehouse.extensions</span>
+        
+      </td>
+    </tr></tbody></table>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #f97316">
+    <span class="cat-icon" style="color:#f97316">⚠</span>
+    <span class="cat-label">Módulos Locales sin Mantenimiento</span>
+    <span class="cat-count" style="background:#f97316">117</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <table class='mod-table'><tbody>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.analytics.exporter</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.1</span></div>
+        <span class='author'>Futit Services S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.commons.utils</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Matias Lopez</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.integration.powerbi.es_es</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.powerbi.inclusion.exclusion.es_es</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        <span class='author'>Etendo software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.quicksalesorder</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.quicksalesorder.es_es</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Etendo Software</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.etendoerp.webhookevents.es_es</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.openbravo.gps.finance.balanceexcelexport.report</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.6</span></div>
+        <span class='author'>GPS</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.openbravo.gps.printandsend</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.100</span></div>
+        <span class='author'>Openbravo - GPS</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.alertrecipient</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>smf</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.almacenes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.budgetbybrand</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.5</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.customizationshipmentinout</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.generalledger.originalcurrency</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.info.attributeset</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.0.1</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.integration.magento</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF Consulting S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.integration.magento.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF Consulting S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.ipsa.exclude</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.ipsa.producto</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.mipyme.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.multipleorgselector</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.multiselectorwarehouse</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.phs.warehouse.verificationcontrol</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.product.stock</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF Consulting S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.activos</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.agenda</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.bpartner</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.bpartnertabsectemplate</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.changeorg</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.commission</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.contabilidad</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.contabilidadstock</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationcommision</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationconsignee</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationincidencias</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationproject</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizations_only_ipsa</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.customizationsbpartner</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.fiscalaccounting</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.globalcustomizations</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.idls</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.import_order</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.informes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.informesaduana</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.informestock</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.intercompany</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.2</span></div>
+        <span class='author'>smf</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.licitacion</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>smf</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.marcapropia</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.margentarifas</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.marketing</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>smf</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.poscustomizations</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.pricelist</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.project</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.projectprogress</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.regsanitario</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.reportprint</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.saleswidget</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.template</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.5</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.templateipsa</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.2</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.templatestock</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.utility</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.pucara.vendor</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.6</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.reactive.goods</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF Consulting S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.smf.template.almacenes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>SMF</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.tegik.warehouse.pickinglist.es_MX</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v0.0.5</span></div>
+        <span class='author'>TEGIK</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.ms.pedidos</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Dixan Hernández Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pms.costing</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Dixan Hernández Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pms.discount</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span></div>
+        
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pms.multilang</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Dixan Hernández Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pms.paymentevd</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.3</span></div>
+        <span class='author'>Dixan Hernández Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pms.projects</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Dixan Hernández Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.alerts</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.appventas</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.ascomercial</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.cartascred</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.customizationshercam</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.1</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.customizationsphs</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.incidencias</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.licitacion</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.marketing</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.pagosregsan</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.pedcomp</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.2</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.proccom</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.productos</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.2</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.proyectos</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.reclama</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.regmarcas</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.reportes</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Elizabeth Rey García</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.pucara.tercerosycontactos</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.0</span></div>
+        <span class='author'>Wiliam Pereira Santiago</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">com.wps.retail.giftcard</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        <span class='author'>Dixan Hernández Matos</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">eu.practics.javaextensionpoints</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.8</span></div>
+        <span class='author'>Practics Business Solutions, S.L.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">eu.practics.prestashop</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.145</span></div>
+        <span class='author'>Practics Business Solutions, S.L</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.bankstatement.importer.generic.csv</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.1.100</span></div>
+        <span class='author'>Openbravo SLU</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.client.analytics</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.9000</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.financial.dimensionalpandlreport</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.6.300</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.financial.dimensionalreports</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.6.100</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.idl</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v3.0.211001</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.interco</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.1.600</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.materialmgmt.freightmgmt</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.700</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.mobile.core</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.202201</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.idljava</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.0</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.module.invoicematchingalgorithm</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.0.301</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.config</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.202201</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.discounts</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.202201</span></div>
+        <span class='author'>Openbravo SLU</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.giftcards</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.3.1400</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.pack</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.8.202201</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.poshwmanager</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.202201</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.posterminal</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.2.202201</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.posterminal.es_ES</span><span class='translation-badge'>🌐 traducción</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.900</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.returns</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.202201</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.retail.sampledata</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.202201</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.util.javax.xml.soap</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.4.0</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.util.saaj.impl</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.5.0</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.utility.draganddropselector3lists</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.100</span></div>
+        <span class='author'>Openbravo SLU</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.utility.draganddropselector3listsimplementation</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.301</span></div>
+        <span class='author'>Openbravo SLU</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.utility.hqlquerytool</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v2.0.200</span></div>
+        <span class='author'>Openbravo S.L.U.</span>
+        
+        
+      </td>
+    </tr>
+    <tr class="mod-row">
+      <td class="mod-pkg"><span class="pkg">org.openbravo.utility.opencsv</span></td>
+      <td class="mod-meta">
+        <div class="ver-row"><span class="ver-installed">v1.0.0</span></div>
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+  </div>
+</div>
+<div class="module-block">
+  <div class="module-header" onclick="toggle(this)" style="border-left:4px solid #a855f7">
+    <span class="cat-icon" style="color:#a855f7">✎</span>
+    <span class="cat-label">Customizaciones</span>
+    <span class="cat-count" style="background:#a855f7">0</span>
+    <span class="chevron">▾</span>
+  </div>
+  <div class="module-body">
+    <p class='empty'>Sin módulos en esta categoría.</p>
+  </div>
+</div>
+  </div>
+
+  <div class="card">
+    <h2>Divergencias en core (vs vexpanded)</h2>
+    
+<p class="core-note">
+  Las diferencias incluyen tanto customizaciones como desactualización de versión.
+  Base de comparación: <strong>vexpanded</strong>.
+</p>
+<div class="core-stats">
+  <div class="stat-pill"><strong>94</strong><span>con diferencias</span></div>
+  <div class="stat-pill"><strong>11</strong><span>archivos nuevos</span></div>
+  <div class="stat-pill"><strong>10</strong><span>archivos eliminados</span></div>
+  <div class="stat-pill add-pill"><strong>+5990</strong><span>líneas</span></div>
+  <div class="stat-pill del-pill"><strong>-2164</strong><span>líneas</span></div>
+</div>
+<table class="file-table">
+  <thead>
+    <tr><th>Archivo</th><th>Líneas +</th><th>Líneas -</th><th>Total</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="file-path">src-db/database/formalChangesScript.xml</td>
+      <td class="file-add">+4408</td>
+      <td class="file-del">-0</td>
+      <td class="file-total">4408</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/src/com/smf/securewebservices/utils/SecureWebServicesUtils.java</td>
+      <td class="file-add">+153</td>
+      <td class="file-del">-505</td>
+      <td class="file-total">658</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/datasource/StockReservationPickAndEditDataSource.java</td>
+      <td class="file-add">+237</td>
+      <td class="file-del">-305</td>
+      <td class="file-total">542</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/utility/reporting/printing/PrintController.java</td>
+      <td class="file-add">+72</td>
+      <td class="file-del">-307</td>
+      <td class="file-total">379</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/ReportsUtility.java</td>
+      <td class="file-add">+125</td>
+      <td class="file-del">-1</td>
+      <td class="file-total">126</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.reports.ordersawaitingdelivery/src/org/openbravo/reports/ordersawaitingdelivery/erpCommon/ad_reports/ReportOrderNotShipped.jrxml</td>
+      <td class="file-add">+55</td>
+      <td class="file-del">-56</td>
+      <td class="file-total">111</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/utility/FIN_Utility.java</td>
+      <td class="file-add">+3</td>
+      <td class="file-del">-85</td>
+      <td class="file-total">88</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/web/org.openbravo.client.application/js/toolbar/ob-toolbar.js</td>
+      <td class="file-add">+53</td>
+      <td class="file-del">-30</td>
+      <td class="file-total">83</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/src-db/database/sourcedata/AD_COLUMN.xml</td>
+      <td class="file-add">+0</td>
+      <td class="file-del">-81</td>
+      <td class="file-total">81</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/businessUtility/CancelAndReplaceUtils.java</td>
+      <td class="file-add">+0</td>
+      <td class="file-del">-80</td>
+      <td class="file-total">80</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/filterexpression/TransactionAddPaymentDisplayLogics.java</td>
+      <td class="file-add">+22</td>
+      <td class="file-del">-58</td>
+      <td class="file-total">80</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/process/FIN_PaymentProcess.java</td>
+      <td class="file-add">+54</td>
+      <td class="file-del">-26</td>
+      <td class="file-total">80</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/utility/MimeTypeUtil.java</td>
+      <td class="file-add">+51</td>
+      <td class="file-del">-28</td>
+      <td class="file-total">79</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/web/com.smf.securewebservices/js/generateprivatekey.js</td>
+      <td class="file-add">+8</td>
+      <td class="file-del">-67</td>
+      <td class="file-total">75</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/filterexpression/TransactionAddPaymentDefaultValues.java</td>
+      <td class="file-add">+28</td>
+      <td class="file-del">-31</td>
+      <td class="file-total">59</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/src-db/database/sourcedata/AD_FIELD.xml</td>
+      <td class="file-add">+0</td>
+      <td class="file-del">-57</td>
+      <td class="file-total">57</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/actionHandler/AddPaymentOnProcessActionHandler.java</td>
+      <td class="file-add">+44</td>
+      <td class="file-del">-12</td>
+      <td class="file-total">56</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs.defaults/src/com/smf/jobs/defaults/ProcessOrders.java</td>
+      <td class="file-add">+42</td>
+      <td class="file-del">-8</td>
+      <td class="file-total">50</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/businessUtility/PriceAdjustment.java</td>
+      <td class="file-add">+19</td>
+      <td class="file-del">-22</td>
+      <td class="file-total">41</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/web/com.smf.securewebservices/doc/index.html</td>
+      <td class="file-add">+19</td>
+      <td class="file-del">-22</td>
+      <td class="file-total">41</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/event/LandedCostDuplicateReceiptValidator.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/hooks/PrintControllerHookPrioritizer.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/hooks/PrintControllerHook.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/hooks/DataSourceFilterHook.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/common/hooks/PrintControllerHookManager.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">src/org/openbravo/erpCommon/ad_forms/AcctServerPatch.patch <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs/src-db/database/sourcedata/AD_DATASET_TABLE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.jobs.defaults/src/com/smf/jobs/defaults/Utils/ProcessUtils.java <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REFERENCE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_REF_LIST.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.smf.securewebservices/src-db/database/sourcedata/AD_PREFERENCE.xml <span class="status-badge status-deleted">eliminado</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/excludeFilter.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_NEXTNO.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_DOC.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_DOCTYPE.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-db/database/model/functions/LEGAP_SEQUENCE_NEXT.xml <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/build/classes/com/etendoerp/legacy/advancedpaymentmngt/modulescript/RenameSequenceFunctions.class <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/com.etendoerp.legacy.advpaymentmngt/src-util/modulescript/src/com.etendoerp.legacy.advancedpaymentmngt.modulescript/RenameSequenceFunctions.java <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/src/ob-toolbarPATCH.patch <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/src/TreeTablesEventHandlerPATCH.patch <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr>
+    <tr>
+      <td class="file-path">modules_core/org.openbravo.client.application/src/org/openbravo/client/application/event/TreeTablesEventHandler.java.orig <span class="status-badge status-added">nuevo</span></td>
+      <td class="file-add">—</td><td class="file-del">—</td><td class="file-total">—</td>
+    </tr></tbody>
+</table>
+  </div>
+
+  
+  <div class="card">
+    <h2>🔬 Análisis de Customizaciones</h2>
+    <p class="asmnt-meta">
+      Generado por <strong>etendo-custom-assessor v2.0</strong>
+      · 2026-04-27 <span class="asmnt-mx-tag">📊 Mixpanel: <strong>MyPime Hercam</strong> / últimos 90 días</span>
+    </p>
+    
+      <div class="asmnt-section-label">1 · Modificaciones al Core</div>
+      <table class="asmnt-table">
+        <thead><tr>
+          <th>Customización</th><th>Conclusión</th><th>Justificación</th>
+          <th class="asmnt-th-effort" title="Horas para actualizar a 25.4.x">Actualiz.</th>
+          <th class="asmnt-th-effort" title="Horas para migrar a SaaS">SaaS</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Script de cambios formales de base de datos: sentencias DDL/DML acumuladas para sincronizar el esquema de la instalación con modificaciones realizadas sobre el core y módulos.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-elim">Eliminar</span></td>
+            <td>Archivo auto-generado por el proceso de build. En Etendo 25.x el mecanismo de migraciones es diferente (Liquibase). No requiere migración manual.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Utilidades del módulo Secure Web Services: gestión de tokens JWT, resolución de almacenes por organización, listado de roles de usuario. Modificación sustancial del archivo base.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>com.smf.securewebservices es un módulo mantenido por SMF. Las modificaciones deben evaluarse para incorporación en la versión oficial del módulo o mantenerse como patch del módulo actualizado a 25.4.x. Requiere revisión con el equipo de SMF.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Datasource de la ventana Pick & Edit de Reservas de Stock: lógica de filtrado, ordenamiento y construcción de filas para el grid de selección de stock reservado en pedidos.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>Modificación significativa de un datasource del core. En 25.4.x esta clase puede haber cambiado. Requiere análisis de diferencias con la versión upstream y re-aplicación de los cambios necesarios.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">10h</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Controlador de impresión de documentos: servlet que gestiona la generación de reportes JasperReports (PDF, HTML, email) para órdenes, facturas, albaranes.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>PrintController es un componente crítico del core que cambia entre versiones. Las 307 líneas eliminadas sugieren una refactorización importante o eliminación de código legacy. Requiere validación contra la versión 25.4.x.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">6h</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Utilidad de informes: se añadieron métodos para calcular el saldo inicial de la dimensión de usuario User1 (UserDimension1) además del saldo por business partner estándar. Permite filtrar asientos contables por dimensión analítica.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>Adición de funcionalidad genérica y reutilizable en la clase de utilidades de informes. Candidato a incluirse en Etendo core como extensión de la API existente.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Plantilla JasperReports del informe 'Órdenes Pendientes de Entrega': ajustes en columnas, expresiones de cálculo, o texto de cabeceras del informe clásico.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-elim">Eliminar</span></td>
+            <td>Los informes clásicos JasperReports son reemplazados por reportes modernos en 25.4.x o se mantienen como módulo separado. Este informe modificado puede regenerarse o eliminarse dado que su funcionalidad es cubierta por el módulo estándar con configuración.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Funciones PL/SQL del módulo legacy de gestión avanzada de pagos: LEGAP_SEQUENCE_DOCTYPE, LEGAP_SEQUENCE_DOC, LEGAP_SEQUENCE_NEXT, LEGAP_SEQUENCE_NEXTNO, RenameSequenceFunctions. Gestionan numeración de documentos de pago.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-already">Ya en Etendo</span></td>
+            <td>com.etendoerp.legacy.advpaymentmngt es un módulo propio de Etendo diseñado para esta migración. Estas funciones son parte de la solución de migración oficial y ya están contempladas en el proceso de actualización a 25.4.x.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Utilidades del módulo de Gestión Avanzada de Pagos: 85 líneas eliminadas sugieren la remoción de métodos deprecated o refactorización del cálculo de estados de pago.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>FIN_Utility es un componente central del módulo APRM. Las modificaciones deben validarse contra la versión 25.4.x del módulo.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Toolbar del cliente JavaScript (Smartclient): modificaciones al componente de barra de herramientas de la UI clásica, probablemente añadiendo botones custom o modificando comportamiento de botones existentes.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-elim">Eliminar</span></td>
+            <td>El toolbar de Smartclient no existe en Etendo 25.x (UI moderna React). Esta customización es irrelevante para la migración a SaaS. Para actualización on-premise se elimina o se valida si el comportamiento ha cambiado.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Módulo APRM: lógica de visualización, valores por defecto y manejadores de acción del popup 'Añadir Pago' en la ventana de Transacciones Financieras. Adaptaciones al flujo de pagos y fondos.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>Estas clases son parte del módulo APRM oficial. Las modificaciones deben evaluarse contra la versión 25.4.x y re-aplicarse si es necesario.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Configuración de la Application Dictionary del módulo de Jobs (procesos en lote): eliminación o modificación de columnas y campos del módulo.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>com.smf.jobs es un módulo mantenido. Los cambios en la AD deben validarse contra la versión actualizada.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Acciones de Jobs para procesamiento masivo de Órdenes, Facturas y Albaranes: implementan la interfaz Action del framework de Jobs, permitiendo completar/reactivar documentos en lote desde la UI.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-already">Ya en Etendo</span></td>
+            <td>Estas clases están en modules_core (com.smf.jobs.defaults). Son parte de la versión instalada del módulo oficial de Etendo/SMF. En 25.4.x el módulo ya incluye estas funcionalidades. La verificación requiere 1h.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Utilidades de Cancelar y Reemplazar pedidos: 80 líneas eliminadas, posiblemente removiendo restricciones o validaciones del proceso de sustitución de órdenes.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>Clase del core modificada por eliminación de código. Requiere verificar si los cambios siguen siendo necesarios en 25.4.x o si el comportamiento ha sido corregido upstream.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Proveedor de propiedades de la aplicación: se eliminaron líneas relacionadas con la carga de propiedades, probablemente para delegar en EtendoPropertiesProvider.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-already">Ya en Etendo</span></td>
+            <td>El import de EtendoPropertiesProvider visible en el código confirma que esta es la migración oficial al sistema de propiedades de Etendo. Ya está incorporado en 25.4.x.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Utilidades del core: MimeTypeUtil (detección de tipo MIME), AcctServer (motor de contabilización), Fact (registro de asientos contables). Modificaciones menores a lógica de contabilización.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>Modificaciones al motor contable del core. Requieren revisión cuidadosa contra 25.4.x para evitar regresiones contables.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">5h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Frontend del módulo SWS: script de generación de clave privada JWT, documentación HTML de la API y mensajes de la Application Dictionary. Actualizaciones a la interfaz de gestión de tokens.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>Cambios en el frontend del módulo SWS mantenido por SMF. Deben validarse contra la versión actualizada del módulo.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong></strong>
+              <div class="asmnt-desc">Varios archivos del core con modificaciones menores: ajuste de precios en órdenes, reseteo de contabilización, pantalla de login y múltiples archivos con 1-10 líneas modificadas.</div>
+            </td>
+            <td><span class="asmnt-badge asmnt-upstream">Upstream</span></td>
+            <td>Modificaciones dispersas en archivos del core. La mayoría son correcciones que deberían estar ya en 25.4.x o requieren re-aplicación.</td>
+            <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+          </tr></tbody>
+      </table>
+    
+    
+      <div class="asmnt-section-label">3 · Módulos sin Mantenimiento</div>
+      <table class="asmnt-table">
+        <thead><tr>
+          <th>Módulo</th><th>Riesgo</th><th>Reemplazo</th>
+          <th>Uso</th>
+          <th class="asmnt-th-effort" title="Horas para actualizar a 25.4.x">Actualiz.</th>
+          <th class="asmnt-th-effort" title="Horas para migrar a SaaS">SaaS</th>
+          <th>Recomendación</th>
+        </tr></thead>
+        <tbody>
+          <tr class="">
+            <td>
+              <strong>com.etendoerp.integration.powerbi.es_es</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+            <td class="asmnt-rec">Reemplazar con la versión actual del marketplace de Etendo.</td>
+          </tr>
+          <tr class="">
+            <td>
+              <strong>com.etendoerp.powerbi.inclusion.exclusion.es_es</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+            <td class="asmnt-rec">Reemplazar con la versión actual del marketplace.</td>
+          </tr>
+          <tr class="">
+            <td>
+              <strong>com.etendoerp.quicksalesorder.es_es</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+            <td class="asmnt-rec">Reemplazar con versión actual del marketplace.</td>
+          </tr>
+          <tr class="">
+            <td>
+              <strong>com.etendoerp.webhookevents.es_es</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+            <td class="asmnt-rec">Módulo de traducción simple, sin riesgo. Actualizar o recrear si es necesario.</td>
+          </tr>
+          <tr class="">
+            <td>
+              <strong>org.openbravo.retail.posterminal.es_ES</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+            <td class="asmnt-rec">Incluida en versión actualizada del módulo Web POS.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.tegik.warehouse.pickinglist.es_MX</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">—</span></td><td><span class="asmnt-effort asmnt-effort-saas">—</span></td>
+            <td class="asmnt-rec">Traducción de tercero, baja prioridad. Evaluar si sigue siendo necesaria.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.etendoerp.analytics.exporter</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Verificar disponibilidad en marketplace de Etendo 25.x. Alta probabilidad de reemplazo oficial.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.etendoerp.commons.utils</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Evaluar incorporación de utilidades en el bundle SMF o en módulos dependientes. Verificar si las utilidades están ya disponibles en Etendo 25.x core.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.etendoerp.quicksalesorder</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Módulo oficial de Etendo. Reemplazar con la versión actualizada del marketplace.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.openbravo.gps.finance.balanceexcelexport.report</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">5h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
+            <td class="asmnt-rec">Módulo GPS sin mantenimiento activo. Evaluar reemplazo con el módulo dimensional de Openbravo (org.openbravo.financial.dimensionalpandlreport ya instalado) o actualización manual.</td>
+          </tr>
+          <tr class=" asmnt-row-high">
+            <td>
+              <strong>com.openbravo.gps.printandsend</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">6h</span></td>
+            <td class="asmnt-rec">Módulo GPS crítico para operaciones de envío de documentos. Alto riesgo por dependencias con el core de impresión (PrintController modificado). Evaluar migración a la funcionalidad nativa de Etendo 25.x.</td>
+          </tr>
+          <tr class="">
+            <td>
+              <strong>com.smf.alertrecipient</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
+            <td class="asmnt-rec">Módulo SMF de baja complejidad. Actualizar a versión compatible con 25.4.x o integrar en el sistema de alertas nativo.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.smf.almacenes</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">5h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
+            <td class="asmnt-rec">Módulo SMF de picking. Evaluar si la funcionalidad está cubierta por org.openbravo.warehouse.pickinglist ya instalado. Alto riesgo por solapamiento.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.budgetbybrand</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">5h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
+            <td class="asmnt-rec">Módulo SMF con funcionalidad específica de control de presupuestos por marca. Candidato a bundle SMF. Requiere actualización a APIs de 25.4.x.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.customizationshipmentinout</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
+            <td class="asmnt-rec">Módulo SMF de customización de albaranes compartido entre clientes. Candidato a bundle. Actualizar a 25.4.x.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.generalledger.originalcurrency</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
+            <td class="asmnt-rec">Informe financiero específico muy útil en entornos multi-moneda. Candidato a bundle SMF. Depende de ReportsUtility.java modificado.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.info.attributeset</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
+            <td class="asmnt-rec">Módulo SMF para gestión de atributos. Candidato a bundle. Evaluar compatibilidad con el componente PAttribute de Etendo 25.4.x.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.smf.integration.magento</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">15h</span></td>
+            <td class="asmnt-rec">Integración crítica con el ecommerce. Módulo sin mantenimiento activo. Requiere evaluación profunda: actualización a APIs actuales de Magento y Etendo 25.x, o migración a un conector moderno (EtendoRX).</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.smf.integration.magento.template</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">5h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
+            <td class="asmnt-rec">Depende del módulo principal de integración Magento. Actualizar junto con com.smf.integration.magento.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.smf.ipsa.exclude</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
+            <td class="asmnt-rec">Módulo de filtros IPSA de baja complejidad. Evaluar si sigue siendo relevante para Hercam o si era específico de otro cliente del grupo.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.smf.ipsa.producto</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
+            <td class="asmnt-rec">Módulo específico de análisis IPSA. Verificar si aplica a Hercam o es exclusivo de otros clientes del grupo.</td>
+          </tr>
+          <tr class="">
+            <td>
+              <strong>com.smf.mipyme.template</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
+            <td class="asmnt-rec">Plantilla de datos de configuración. Revisar qué datos contiene y si siguen siendo relevantes tras la migración.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.multipleorgselector</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
+            <td class="asmnt-rec">Componente SMF reutilizable para entornos multi-organización. Candidato a bundle. Actualizar a APIs de 25.4.x.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.multiselectorwarehouse</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Componente SMF para selección de almacenes. Candidato a bundle junto con Multiple Organization Selector.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.phs.warehouse.verificationcontrol</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">5h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
+            <td class="asmnt-rec">Módulo de control de calidad en almacén compartido entre Pucara, Hercam y Supermix (PHS). Candidato claro a bundle SMF. Actualizar.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.product.stock</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Módulo SMF de visualización de stock. Candidato a bundle. Evaluar compatibilidad con el sistema de storage details de 25.4.x.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.smf.pucara.activos</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">5h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
+            <td class="asmnt-rec">Módulo de activos fijos del grupo Pucara. Evaluar si Hercam lo utiliza activamente. Candidato a bundle si es compartido.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.smf.pucara.agenda</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Módulo de agenda del grupo. Verificar uso activo en Hercam. Baja prioridad de migración.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.pucara.bpartner</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
+            <td class="asmnt-rec">Módulo base del grupo. Candidato a bundle. Actualizar a 25.4.x.</td>
+          </tr>
+          <tr class="">
+            <td>
+              <strong>com.smf.pucara.bpartnertabsectemplate</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">1h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
+            <td class="asmnt-rec">Configuración de secuencias de terceros. Migrar datos de configuración a la nueva instalación.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.pucara.changeorg</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
+            <td class="asmnt-rec">Módulo SMF de cambio de organización. Candidato a bundle para entornos multi-organización. Actualizar.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.smf.pucara.commission</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">5h</span></td>
+            <td class="asmnt-rec">Módulo de comisiones del grupo. Evaluar si las reglas de cálculo son específicas de Hercam o compartidas. Actualizar a 25.4.x.</td>
+          </tr>
+          <tr class=" asmnt-row-high">
+            <td>
+              <strong>com.smf.pucara.contabilidad</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">6h</span></td>
+            <td class="asmnt-rec">Módulo contable crítico. Depende de modificaciones al core contable (AcctServer, Fact). Requiere testing exhaustivo tras actualización.</td>
+          </tr>
+          <tr class=" asmnt-row-high">
+            <td>
+              <strong>com.smf.pucara.contabilidadstock</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">6h</span></td><td><span class="asmnt-effort asmnt-effort-saas">5h</span></td>
+            <td class="asmnt-rec">Módulo contable de stock. Depende del módulo de contabilidad base. Evaluar compatibilidad con el costing engine de 25.4.x.</td>
+          </tr>
+          <tr class=" asmnt-row-high">
+            <td>
+              <strong>com.wps.pucara.customizationshercam</strong> 
+              <div class="asmnt-desc"></div>
+              <div class="win-group"><span class="win-tag win-used">Stock Mínimos y Máximos V3</span></div>
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">15h</span></td>
+            <td class="asmnt-rec">Módulo principal de Hercam con lógica de negocio crítica: generación automática de órdenes de compra desde ventas, gestión de límites de stock y cobertura. La función WPSCH_PURCHASE_FROM_SALE tiene IDs hardcodeados de business partners y listas de precios — esto requiere revisión. Los triggers y la vista de stock son candidatos a bundle si el patrón se generaliza. Prioridad alta para actualización.</td>
+          </tr>
+          <tr class=" asmnt-row-high">
+            <td>
+              <strong>com.wps.pucara.customizationsphs</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">10h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
+            <td class="asmnt-rec">Módulo compartido PHS con 13 archivos Java. Candidato principal a bundle SMF. Actualizar a 25.4.x como prioridad.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.pucara.globalcustomizations</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">5h</span></td><td><span class="asmnt-effort asmnt-effort-saas">4h</span></td>
+            <td class="asmnt-rec">Módulo de customizaciones globales del grupo. Candidato a bundle. Revisar qué contiene exactamente (probablemente solo AD sourcedata).</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.smf.pucara.intercompany</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">5h</span></td>
+            <td class="asmnt-rec">Módulo custom de intercompañía que probablemente extiende org.openbravo.interco. Evaluar si la funcionalidad custom sigue siendo necesaria con la versión 25.4.x del módulo oficial.</td>
+          </tr>
+          <tr class=" asmnt-row-high">
+            <td>
+              <strong>com.smf.pucara.pedcomp_and_proccom_and_cartascred_and_others</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">40h</span></td><td><span class="asmnt-effort asmnt-effort-saas">30h</span></td>
+            <td class="asmnt-rec">Familia de módulos WPS con funcionalidades de negocio críticas. Alta complejidad acumulada. Los módulos de Licitación, Comisiones y Cartas de Crédito son especialmente complejos. Prioridad máxima: inventariar dependencias, establecer plan de actualización por grupos funcionales y evaluar generalización a bundle.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>eu.practics.javaextensionpoints</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">8h</span></td><td><span class="asmnt-effort asmnt-effort-saas">5h</span></td>
+            <td class="asmnt-rec">Módulo de extensión de Practics. Evaluar si los módulos dependientes pueden migrar al sistema de hooks nativo de Etendo 25.x (CDI/Weld), que ya provee esta funcionalidad.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>eu.practics.prestashop</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">15h</span></td>
+            <td class="asmnt-rec">Integración ecommerce crítica de Practics. Versión 1.2.145 muy desactualizada. Evaluar estado del conector y compatibilidad con APIs actuales de PrestaShop y Etendo 25.x. Alternativa: migrar a EtendoRX.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>org.openbravo.bankstatement.importer.generic.csv</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Módulo Openbravo SLU. Buscar versión compatible con Etendo 25.4.x en el marketplace.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>org.openbravo.client.analytics</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Módulo de analytics legacy de Openbravo. Evaluar si la funcionalidad está cubierta por PowerBI o el módulo de analytics de Etendo 25.x.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>org.openbravo.financial.dimensionalpandlreport + org.openbravo.financial.dimensionalreports</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">4h</span></td><td><span class="asmnt-effort asmnt-effort-saas">3h</span></td>
+            <td class="asmnt-rec">Módulos Openbravo SLU de informes dimensionales. Buscar versión compatible en el marketplace de Etendo 25.4.x.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>org.openbravo.idl + org.openbravo.module.idljava</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
+            <td class="asmnt-rec">Módulo de utilidad para implementación. Reemplazar con versión actualizada de Etendo.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>org.openbravo.interco</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Módulo oficial Openbravo. Buscar versión compatible con Etendo 25.4.x.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>org.openbravo.materialmgmt.freightmgmt</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Módulo oficial Openbravo de gestión de fletes. Buscar versión compatible con Etendo 25.4.x.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>org.openbravo.retail.* (10 módulos Web POS y Retail)</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">10h</span></td>
+            <td class="asmnt-rec">La suite Web POS de Openbravo (versión 202201) está desactualizada. Etendo 25.x ofrece su propia solución POS. Evaluar migración a Etendo POS o si el cliente usa activamente el TPV. Muy alto riesgo de incompatibilidad.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>org.openbravo.module.invoicematchingalgorithm</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">3h</span></td><td><span class="asmnt-effort asmnt-effort-saas">2h</span></td>
+            <td class="asmnt-rec">Módulo oficial Openbravo. Buscar versión compatible en marketplace.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>org.openbravo.util.javax.xml.soap + org.openbravo.util.saaj.impl + org.openbravo.utility.draganddropselector3lists* + org.openbravo.utility.hqlquerytool + org.openbravo.utility.opencsv</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-trivial">Low</span></td>
+            <td style="text-align:center;font-size:14px">✅</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">2h</span></td><td><span class="asmnt-effort asmnt-effort-saas">1h</span></td>
+            <td class="asmnt-rec">Módulos de infraestructura/utilidad. Verificar disponibilidad en Etendo 25.4.x. La mayoría están incluidos en el core actualizado.</td>
+          </tr>
+          <tr class=" asmnt-row-high">
+            <td>
+              <strong>com.wps.ms.pedidos + com.wps.pms.costing + com.wps.pms.discount + com.wps.pms.multilang + com.wps.pms.paymentevd + com.wps.pms.projects + com.wps.retail.giftcard</strong> 
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">15h</span></td>
+            <td class="asmnt-rec">Módulos WPS de uso global. Las evidencias de pago y tarjetas regalo son funcionalidades únicas. Prioridad alta para inventariar dependencias y actualizar.</td>
+          </tr>
+          <tr class=" asmnt-row-high">
+            <td>
+              <strong>com.smf.pucara.fiscalaccounting + com.smf.pucara.idls + com.smf.pucara.import_order + com.smf.pucara.informes + com.smf.pucara.informesaduana + com.smf.pucara.informestock + com.smf.pucara.licitacion + com.smf.pucara.marcapropia + com.smf.pucara.margentarifas + com.smf.pucara.marketing + com.smf.pucara.poscustomizations + com.smf.pucara.pricelist</strong> 
+              <div class="asmnt-desc"></div>
+              <div class="win-group"><span class="win-tag win-used">Versiones de Tarifas</span></div>
+            </td>
+            <td><span class="asmnt-badge asmnt-major">High</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">35h</span></td><td><span class="asmnt-effort asmnt-effort-saas">25h</span></td>
+            <td class="asmnt-rec">Familia numerosa de módulos SMF del grupo Pucara. Muchos son candidatos a bundle: Informes (stock, aduana), Tarifas, Licitación. Los módulos de Contabilidad Fiscal y POS Customizations requieren atención especial por impacto en procesos críticos.</td>
+          </tr>
+          <tr class=" asmnt-row-med">
+            <td>
+              <strong>com.smf.pucara.project + com.smf.pucara.projectprogress + com.smf.pucara.regsanitario + com.smf.pucara.reportprint + com.smf.pucara.saleswidget + com.smf.pucara.template + com.smf.pucara.templateipsa + com.smf.pucara.templatestock + com.smf.pucara.utility + com.smf.pucara.vendor + com.smf.reactive.goods + com.smf.template.almacenes</strong> 
+              <div class="asmnt-desc"></div>
+              <div class="win-group"><span class="win-tag win-used">Terceros (Permisos)</span></div>
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:10%;height:100%;background:#f59e0b;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#f59e0b;font-weight:700;">1.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">20h</span></td><td><span class="asmnt-effort asmnt-effort-saas">15h</span></td>
+            <td class="asmnt-rec">Módulos complementarios del grupo. El Registro Sanitario y Proyectos son funcionalidades específicas del sector. Reactivar Bienes (com.smf.reactive.goods) es muy útil como bundle. Evaluar prioridades con el cliente.</td>
+          </tr>
+          <tr class="asmnt-row-elim">
+            <td>
+              <strong>com.smf.pucara.customizationcommision + com.smf.pucara.customizationconsignee + com.smf.pucara.customizationincidencias + com.smf.pucara.customizationproject + com.smf.pucara.customizations_only_ipsa + com.smf.pucara.customizationsbpartner</strong> <span class="asmnt-badge asmnt-elim-cand">🗑 Eliminar</span>
+              <div class="asmnt-desc"></div>
+              
+            </td>
+            <td><span class="asmnt-badge asmnt-minor">Medium</span></td>
+            <td style="text-align:center;font-size:14px">❌</td>
+            <td><div style="display:flex;align-items:center;gap:5px;white-space:nowrap;">
+      <div style="width:48px;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;">
+        <div style="width:0%;height:100%;background:#d1d5db;border-radius:3px;"></div>
+      </div>
+      <span style="font-size:12px;color:#d1d5db;font-weight:700;">0.0</span>
+    </div></td>
+            <td><span class="asmnt-effort asmnt-effort-upd">12h</span></td><td><span class="asmnt-effort asmnt-effort-saas">8h</span></td>
+            <td class="asmnt-rec">Módulos de customización específica del grupo. Evaluar vigencia de cada customización y si sigue siendo necesaria en 25.4.x. Algunos pueden ser eliminados si la funcionalidad ha sido incorporada al core.</td>
+          </tr></tbody>
+      </table>
+    
+      <div class="asmnt-section-label" style="margin-top:24px">Esfuerzo Estimado — dos rutas</div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
+        <div class="asmnt-effort-box" style="flex:1;min-width:260px;border-top:3px solid #3b82f6;">
+          <div style="font-size:11px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">
+            Ruta A · Actualización a 25.4.x
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">55h</div>
+            <div class="asmnt-stat-lbl">Core</div>
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">—</div>
+            <div class="asmnt-stat-lbl">Módulos custom</div>
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">370h</div>
+            <div class="asmnt-stat-lbl">Sin mantenimiento</div>
+          </div>
+          <div class="asmnt-stat asmnt-stat-total">
+            <div class="asmnt-stat-val-total">425h</div>
+            <div class="asmnt-stat-lbl">Total</div>
+          </div>
+        </div>
+        <div class="asmnt-effort-box" style="flex:1;min-width:260px;border-top:3px solid #22c55e;">
+          <div style="font-size:11px;font-weight:700;color:#166534;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">
+            Ruta B · Migración a SaaS
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">42h</div>
+            <div class="asmnt-stat-lbl">Core</div>
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">—</div>
+            <div class="asmnt-stat-lbl">Módulos custom</div>
+          </div>
+          <div class="asmnt-stat">
+            <div class="asmnt-stat-val" style="font-size:16px">265h</div>
+            <div class="asmnt-stat-lbl">Sin mantenimiento</div>
+          </div>
+          <div class="asmnt-stat asmnt-stat-total">
+            <div class="asmnt-stat-val-total">307h</div>
+            <div class="asmnt-stat-lbl">Total</div>
+          </div>
+        </div>
+      </div>
+      <p class="asmnt-note">
+        * Estimaciones en horas para un desarrollador junior asistido por Claude Code.
+        Ruta A = mantener la instalación on-premise actualizada a Etendo 25.4.x.
+        Ruta B = eliminar o generalizar customizaciones para migrar a SaaS.
+        Los módulos marcados con 🗑 pueden omitirse de Ruta B (sin uso en Mixpanel).
+      </p>
+  </div>
+
+  
+
+  <div class="footer">Generado por Etendo Migration Agent · 2026-04-27 08:53</div>
+</div>
+<script>
+function toggle(header) {
+  header.classList.toggle('open');
+  header.nextElementSibling.classList.toggle('open');
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var first = document.querySelector('.module-header');
+  if (first) toggle(first);
+});
+</script>
+</body>
+</html>
