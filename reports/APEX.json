@@ -1,0 +1,2727 @@
+{
+  "client": {
+    "name": "APEX",
+    "hostname": "Samuel-PC"
+  },
+  "platform": {
+    "type": "etendo",
+    "version": "24.1.5"
+  },
+  "modules": {
+    "gradle_jar": [],
+    "gradle_source": [
+      {
+        "java_package": "com.etendoerp.accounting.templates",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.accounting.templates",
+        "name": "New Accounting Templates",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.templates.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.advanced.bpsettlement",
+        "name": "Advanced Business Partner Settlement",
+        "version": "1.8.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bpsettlement.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.advanced.financial.docs.processing",
+        "name": "Advanced Financial Documents Processing",
+        "version": "1.8.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.template",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.advanced.financial.docs.processing.template",
+        "name": "Advanced Financial Documents Processing Template",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.advanced.intercompany",
+        "name": "Advanced Intercompany",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.intercompany.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.bankingpool",
+        "name": "Banking Pool",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bankingpool.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.bulk.posting",
+        "name": "Bulk Posting",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.posting.git",
+        "latest_version": "2.4.1"
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.financial.extensions",
+        "name": "Financial Extensions",
+        "version": "1.14.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.financial.reports.advanced",
+        "name": "Financial Reports Advanced",
+        "version": "1.9.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.git",
+        "latest_version": "2.9.0"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.gljournal.advanced",
+        "name": "GL Journal Advanced",
+        "version": "1.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.advanced.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.payment.removal",
+        "name": "Payment Removal",
+        "version": "1.8.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.template",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.payment.removal.template",
+        "name": "Payment Removal Template",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.smf.asset.amortization.report",
+        "name": "Asset Amortization Report",
+        "version": "1.8.0",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.asset.amortization.report.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.smf.currency.apiconfig",
+        "name": "Currency API Configuration",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.apiconfig.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.smf.currency.conversionrate",
+        "name": "Conversion Rate Downloader",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.conversionrate.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.smf.gljournal.reverse",
+        "name": "Reverse GL Journal",
+        "version": "1.8.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.template",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.smf.gljournal.reverse.template",
+        "name": "Reverse GL Journal Template",
+        "version": "1.8.0",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.financial.bpsettlement",
+        "name": "Business Partner Settlements",
+        "version": "1.12.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.bpsettlement.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "org.openbravo.module.remittance",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.module.remittance",
+        "name": "Remittances infrastructure",
+        "version": "3.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.git",
+        "latest_version": "4.3.1"
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.template",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.module.remittance.template",
+        "name": "Remittance Infrastructure Template",
+        "version": "1.6.0",
+        "author": "Etendo Software",
+        "bundle": "org.openbravo.module.remittance.template",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 1,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 17,
+          "diff_lines_removed": 1,
+          "files": [
+            {
+              "path": "src-db/database/configScript.xml",
+              "status": "modified",
+              "lines_added": 17,
+              "lines_removed": 1
+            }
+          ]
+        }
+      }
+    ],
+    "local_maintained": [
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.utility.multiplebpselector",
+        "name": "Openbravo Multi Business Partner Selector",
+        "version": "1.8.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.git",
+        "latest_version": "2.2.0"
+      }
+    ],
+    "local_not_maintained": [
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "version": "1.1.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.openbravo.gps.costingcontrol",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.costingcontrol",
+        "name": "Costing Control",
+        "version": "1.0.0",
+        "author": "Openbravo SL"
+      },
+      {
+        "java_package": "com.openbravo.gps.documentno",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.documentno",
+        "name": "Include DocumentNo",
+        "version": "1.0.8",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.documentnoTemplate",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.documentnoTemplate",
+        "name": "Include DocumentNo Template",
+        "version": "1.0.8",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.glpostingbydbtables.filterdates",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.glpostingbydbtables.filterdates",
+        "name": "Filter by dates in GL Posting by DB Tables",
+        "version": "1.0.1",
+        "author": "GPS - Openbravo"
+      },
+      {
+        "java_package": "com.openbravo.gps.invoice.improvements",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.invoice.improvements",
+        "name": "com.openbravo.gps.invoice.improvements",
+        "version": "1.0.3",
+        "author": "GPS - Openbravo"
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.accounting.reports",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.accounting.reports",
+        "name": "Accounting Reports: Czech Republic",
+        "version": "1.0.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.accounting.templates",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.accounting.templates",
+        "name": "Accounting Templates: Czech Republic",
+        "version": "0.0.10",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.assets",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.assets",
+        "name": "Assets for the Czech Republic",
+        "version": "0.0.3",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.assets.template",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.assets.template",
+        "name": "Template for Assets in Czech Republic",
+        "version": "0.0.2",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.payments.variablesymbol",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.payments.variablesymbol",
+        "name": "Variable Symbol",
+        "version": "0.0.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.referencedata.accounts",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.referencedata.accounts",
+        "name": "Chart Of Accounts: Czech Republic",
+        "version": "0.0.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.referencedata.doctypesas",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.referencedata.doctypesas",
+        "name": "Document Types 2013 AS",
+        "version": "1.0.0",
+        "author": "GPS - Openbravo"
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.referencedata.doctypesma",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.referencedata.doctypesma",
+        "name": "Document Types 2013 MA",
+        "version": "1.0.0",
+        "author": "GPS - Openbravo"
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.referencedata.taxes",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.referencedata.taxes",
+        "name": "Taxes Configuration: Czech Republic",
+        "version": "0.0.5",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.remittances",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.remittances",
+        "name": "Czech Remittances",
+        "version": "0.0.5",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.taximprovements",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.taximprovements",
+        "name": "Taxes Improvements: Czech Republic",
+        "version": "0.0.2",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.variablesymbolmatchingalgorithm",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.localization.czechrepublic.variablesymbolmatchingalgorithm",
+        "name": "Variable Symbol Matching Algorithm",
+        "version": "1.0.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.manualbalances",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.manualbalances",
+        "name": "Manual Balances",
+        "version": "0.0.3",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.printandsend",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.printandsend",
+        "name": "Print and send documents",
+        "version": "1.1.200",
+        "author": "Openbravo - GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.printjournalentries",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.printjournalentries",
+        "name": "Print Journal Entries from documents",
+        "version": "0.0.3",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "com.openbravo.gps.project.taskstemplate",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.project.taskstemplate",
+        "name": "Project Tasks Template",
+        "version": "2.0.4",
+        "author": null
+      },
+      {
+        "java_package": "com.openbravo.gps.project.template",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.project.template",
+        "name": "Project Template",
+        "version": "1.0.0",
+        "author": "Openbravo - GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.projects.multipleemployeeselector",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.projects.multipleemployeeselector",
+        "name": "Selector múltiple de empleados",
+        "version": "1.0.1",
+        "author": "Openbravo GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.purchase.report.matchedpurchasetransactions",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.purchase.report.matchedpurchasetransactions",
+        "name": "Matched Purchase Transactions",
+        "version": "0.0.2",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.openbravo.gps.reports.reporttimesheetdimensional",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.reports.reporttimesheetdimensional",
+        "name": "Report Time Sheet Dimensional",
+        "version": "1.0.3",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.showpostedgrid",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.showpostedgrid",
+        "name": "Show Posted Column in Grid Mode",
+        "version": "1.0.1",
+        "author": "GPS - Openbravo"
+      },
+      {
+        "java_package": "com.openbravo.gps.warehouse.reports.dailymaterialstock",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.warehouse.reports.dailymaterialstock",
+        "name": "Daily Material Stock Report",
+        "version": "0.0.5",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "com.smf.agingreports.transactiondate",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.smf.agingreports.transactiondate",
+        "name": "Aging Reports with Transaction Date",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.remittanceconfiguration",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.smf.remittanceconfiguration",
+        "name": "Remittance configuration",
+        "version": "1.0.0",
+        "author": "SMF Consulting"
+      },
+      {
+        "java_package": "org.openbravo.financialmgmt.accounting.report.notposted",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.financialmgmt.accounting.report.notposted",
+        "name": "Not Posted Transactions",
+        "version": "1.1.1000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.gps.copyrole",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.gps.copyrole",
+        "name": "Copy Role Module",
+        "version": "0.1.5",
+        "author": "Openbravo GPS - Marcos Bernal"
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.idl",
+        "name": "Initial Data Load",
+        "version": "3.0.211001",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.importdata",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.importdata",
+        "name": "Import Data",
+        "version": "1.1.7",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.interco",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.interco",
+        "name": "Inter-company Documents",
+        "version": "2.1.500",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "version": "1.4.0",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicematchingalgorithm",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.module.invoicematchingalgorithm",
+        "name": "Advanced Matching Algorithm",
+        "version": "2.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.standardOFX",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.module.standardOFX",
+        "name": "OFX Bank Statement Format",
+        "version": "1.0.10",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.obbo",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.obbo",
+        "name": "Booking Control",
+        "version": "3.0.200",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "version": "1.0.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+        "version": "1.0.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "version": "1.0.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "version": "1.0.0",
+        "author": null
+      }
+    ],
+    "custom": [
+      {
+        "java_package": "com.openbravo.gps.apex.alerts",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.alerts",
+        "name": "Apex Alerts",
+        "version": "0.0.1",
+        "author": "Openbravo S.L.U.",
+        "line_count": 224,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.customizations",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.customizations",
+        "name": "Customizations for apex",
+        "version": "1.0.2",
+        "author": "Openbravo S.L.U",
+        "line_count": 512,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.idl",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.idl",
+        "name": "IDL Extension for Apex",
+        "version": "0.0.6",
+        "author": "Openbravo S.L.U.",
+        "line_count": 11072,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.process",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.process",
+        "name": "Process",
+        "version": "0.0.16",
+        "author": "Openbravo S.L.U.",
+        "line_count": 11379,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.procurement",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.procurement",
+        "name": "Procurement Management",
+        "version": "0.0.5",
+        "author": "Openbravo S.L.U.",
+        "line_count": 2027,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.project.budget",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.project.budget",
+        "name": "Project Budget",
+        "version": "0.0.19",
+        "author": "Openbravo S.L.U.",
+        "line_count": 11179,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.project.reports",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.project.reports",
+        "name": "Project Reports",
+        "version": "0.0.23",
+        "author": "Openbravo S.L.U.",
+        "line_count": 18375,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.referencedata.product",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.referencedata.product",
+        "name": "Referencedata: Product",
+        "version": "0.0.2",
+        "author": "Openbravo S.L.U.",
+        "line_count": 538,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.referencedata.roleoverviewer",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.referencedata.roleoverviewer",
+        "name": "Referencedata: Role Overviewer",
+        "version": "0.0.1",
+        "author": "Openbravo S.L.U.",
+        "line_count": 676,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.referencedata.roles",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.referencedata.roles",
+        "name": "Referencedata: Roles Definition",
+        "version": "0.0.3",
+        "author": "Openbravo S.L.U.",
+        "line_count": 2099,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.sales",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.sales",
+        "name": "Sales Management",
+        "version": "0.0.4",
+        "author": "Openbravo S.L.U.",
+        "line_count": 346,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.template",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.template",
+        "name": "Apex Template",
+        "version": "0.0.29",
+        "author": "Openbravo S.L.U.",
+        "line_count": 1837,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.warehouse",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.warehouse",
+        "name": "Warehouse Management",
+        "version": "0.0.14",
+        "author": "Opebravo S.L.U.",
+        "line_count": 6659,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.wip",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.wip",
+        "name": "Work in Progress",
+        "version": "0.0.15",
+        "author": "Openbravo SLU",
+        "line_count": 10123,
+        "custom_size": {
+          "key": "large",
+          "label": "> 8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.wip.template",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.openbravo.gps.apex.wip.template",
+        "name": "WIP Template",
+        "version": "0.0.10",
+        "author": "Openbravo GPS",
+        "line_count": 261,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.apex.customization",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.smf.apex.customization",
+        "name": "SMF Apex Customization",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 4261,
+        "custom_size": {
+          "key": "medium",
+          "label": "2.000–8.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.apex.legacycolumns",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.smf.apex.legacycolumns",
+        "name": "Apex's Legacy Columns",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 1289,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      },
+      {
+        "java_package": "com.smf.apex.template",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/com.smf.apex.template",
+        "name": "Apex Template",
+        "version": "1.0.0",
+        "author": null,
+        "line_count": 148,
+        "custom_size": {
+          "key": "micro",
+          "label": "< 500 LOC"
+        }
+      },
+      {
+        "java_package": "org.openbravo.custom.massprocessexpenses",
+        "path": "/home/samuel/Documents/Trabajo/APEX/apex/modules/org.openbravo.custom.massprocessexpenses",
+        "name": "Mass Process Expenses",
+        "version": "1.1.4",
+        "author": "Openbravo GPS - Rafa de Miguel",
+        "line_count": 1294,
+        "custom_size": {
+          "key": "small",
+          "label": "500–2.000 LOC"
+        }
+      }
+    ]
+  },
+  "core_divergences": {
+    "status": "modified",
+    "base_version": "expanded",
+    "baseline_type": "expanded",
+    "folders_checked": [
+      "src",
+      "src-db",
+      "src-core",
+      "src-wad",
+      "modules_core",
+      "src-trl",
+      "src-util"
+    ],
+    "modified_files": 79,
+    "added_files": 1,
+    "deleted_files": 0,
+    "diff_lines_added": 20070,
+    "diff_lines_removed": 475,
+    "files": [
+      {
+        "path": "src/org/openbravo/erpReports/ReportPaymentFilter.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/CallAcctServer.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ModuleManagementHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialOrgSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/ShowSessionVariables.html",
+        "status": "modified",
+        "lines_added": 8,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/InitialClientSetup.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_forms/RequisitionToOrderCreate.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PrintInvoices.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/ExpenseAPInvoice.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/PriceListCreateAll.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CashBankOperations.html",
+        "status": "modified",
+        "lines_added": 26,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateAccountingReport.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_process/CreateTaxReport.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Account.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/ProductMultiple.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/LocatorMultiple.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/DebtPayment.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/Location_F1.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/info/AccountElementValue.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerDimensionalAnalysesJRFilter.html",
+        "status": "modified",
+        "lines_added": 38,
+        "lines_removed": 19
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderOpenItemJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTaxInvoice.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductMovement.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportExpense.html",
+        "status": "modified",
+        "lines_added": 13,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentFilterJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedgerJournal.html",
+        "status": "modified",
+        "lines_added": 7,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAnnualCertification.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportPurchaseDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 22,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGeneralLedger.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipmentDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBudgetGenerateExcel.html",
+        "status": "modified",
+        "lines_added": 10,
+        "lines_removed": 5
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProgress.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportDebtPayment.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportCashflowForecast.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceDiscountJR.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportTrialBalance.html",
+        "status": "modified",
+        "lines_added": 3,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportShipper.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 8
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectBuildingSiteJR.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderProvidedJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportToInvoiceConsignmentJR.html",
+        "status": "modified",
+        "lines_added": 11,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesOrderInvoicedJasper.html",
+        "status": "modified",
+        "lines_added": 36,
+        "lines_removed": 20
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceCustomerFilterJR.html",
+        "status": "modified",
+        "lines_added": 14,
+        "lines_removed": 7
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionCost.html",
+        "status": "modified",
+        "lines_added": 5,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportGuaranteeDateJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoicesJR.html",
+        "status": "modified",
+        "lines_added": 17,
+        "lines_removed": 10
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorFilterJR.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportBankJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAgingBalance.html",
+        "status": "modified",
+        "lines_added": 9,
+        "lines_removed": 6
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWarehousePartnerJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProductionRunJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportSalesDimensionalAnalyzeJRFilter.html",
+        "status": "modified",
+        "lines_added": 42,
+        "lines_removed": 23
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportInvoiceVendorDimensionalAnalysesFilterJR.html",
+        "status": "modified",
+        "lines_added": 28,
+        "lines_removed": 15
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/MInOutTraceReports.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportParetoProduct.html",
+        "status": "modified",
+        "lines_added": 12,
+        "lines_removed": 9
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportProjectProfitabilityJR.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 13
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportStandardCostJRFilter.html",
+        "status": "modified",
+        "lines_added": 18,
+        "lines_removed": 11
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportOrderNotInvoiceFilterJR.html",
+        "status": "modified",
+        "lines_added": 20,
+        "lines_removed": 12
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/GeneralAccountingReports.html",
+        "status": "modified",
+        "lines_added": 34,
+        "lines_removed": 18
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportWorkRequirementDaily.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportMaterialTransactionEditionJR.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_reports/ReportAssetDepreciationSchedule.html",
+        "status": "modified",
+        "lines_added": 23,
+        "lines_removed": 14
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/UpdateMaintenanceScheduled.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ChangeProjectStatus.html",
+        "status": "modified",
+        "lines_added": 1,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ExpenseSOrder.html",
+        "status": "modified",
+        "lines_added": 6,
+        "lines_removed": 3
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_Shipment.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/ProjectCopyFrom.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/ad_actionButton/CreateFrom_ShipmentPO.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupHistory.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 4
+      },
+      {
+        "path": "src/org/openbravo/erpCommon/businessUtility/AuditTrailPopupDeleted.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 2
+      },
+      {
+        "path": "src/org/openbravo/erpReports/ReportRegisterFilter.html.orig",
+        "status": "added",
+        "lines_added": 0,
+        "lines_removed": 0
+      },
+      {
+        "path": "src-db/database/formalChangesScript.xml",
+        "status": "modified",
+        "lines_added": 19256,
+        "lines_removed": 0
+      },
+      {
+        "path": "modules_core/org.openbravo.financial.paymentreport/src/org/openbravo/financial/paymentreport/erpCommon/ad_reports/PaymentReport.html",
+        "status": "modified",
+        "lines_added": 24,
+        "lines_removed": 12
+      },
+      {
+        "path": "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/ad_actionbutton/ImportBankFile.html",
+        "status": "modified",
+        "lines_added": 2,
+        "lines_removed": 1
+      },
+      {
+        "path": "modules_core/org.openbravo.reports.ordersawaitingdelivery/src/org/openbravo/reports/ordersawaitingdelivery/erpCommon/ad_reports/ReportOrderNotShipped.html",
+        "status": "modified",
+        "lines_added": 4,
+        "lines_removed": 2
+      }
+    ]
+  },
+  "migration_score": 30,
+  "migratability": "very_hard",
+  "score_breakdown": {
+    "openbravo_platform": 0,
+    "core_divergences": -15.0,
+    "core_diff_lines": 20545,
+    "local_not_maintained": -20,
+    "local_not_maintained_translations": 0,
+    "local_not_maintained_regular": 43,
+    "custom_modules": -35,
+    "custom_modules_detail": [
+      {
+        "java_package": "com.openbravo.gps.apex.alerts",
+        "line_count": 224,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.customizations",
+        "line_count": 512,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.idl",
+        "line_count": 11072,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.process",
+        "line_count": 11379,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.procurement",
+        "line_count": 2027,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.project.budget",
+        "line_count": 11179,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.project.reports",
+        "line_count": 18375,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.referencedata.product",
+        "line_count": 538,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.referencedata.roleoverviewer",
+        "line_count": 676,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.referencedata.roles",
+        "line_count": 2099,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.sales",
+        "line_count": 346,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.template",
+        "line_count": 1837,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.warehouse",
+        "line_count": 6659,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.wip",
+        "line_count": 10123,
+        "size_tier": "large",
+        "size_label": "> 8.000 LOC",
+        "penalty": -16
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.wip.template",
+        "line_count": 261,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      },
+      {
+        "java_package": "com.smf.apex.customization",
+        "line_count": 4261,
+        "size_tier": "medium",
+        "size_label": "2.000–8.000 LOC",
+        "penalty": -9
+      },
+      {
+        "java_package": "com.smf.apex.legacycolumns",
+        "line_count": 1289,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      },
+      {
+        "java_package": "com.smf.apex.template",
+        "line_count": 148,
+        "size_tier": "micro",
+        "size_label": "< 500 LOC",
+        "penalty": -1
+      },
+      {
+        "java_package": "org.openbravo.custom.massprocessexpenses",
+        "line_count": 1294,
+        "size_tier": "small",
+        "size_label": "500–2.000 LOC",
+        "penalty": -4
+      }
+    ],
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
+  },
+  "custom_assessment": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-27",
+    "core_customizations": [
+      {
+        "name": "Migración formal — formalChangesScript",
+        "description": "Script de cambios formales de base de datos auto-generado por el sistema de migración de Openbravo/Etendo. Contiene DDL de migración acumulado que refleja todas las alteraciones de tablas realizadas históricamente.",
+        "files": [
+          "src-db/database/formalChangesScript.xml"
+        ],
+        "lines_changed": 19256,
+        "conclusion": "eliminate",
+        "justification": "Artefacto auto-generado de migración; no representa lógica de negocio. Se genera de nuevo en cada upgrade oficial. No hay nada que portar ni proponer a upstream.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0
+      },
+      {
+        "name": "Plantillas HTML de informes clásicos",
+        "description": "Modificaciones en 79 plantillas HTML de la interfaz clásica: filtros de informes (ventas, compras, contabilidad, almacén, proyectos), formularios de proceso y popups de selección. Los cambios típicos añaden filtros de organización, campos adicionales o ajustes de layout para los informes en papel.",
+        "files": [
+          "src/org/openbravo/erpCommon/ad_reports/*.html (45 archivos)",
+          "src/org/openbravo/erpCommon/ad_forms/*.html (6 archivos)",
+          "src/org/openbravo/erpCommon/ad_process/*.html (5 archivos)",
+          "src/org/openbravo/erpCommon/ad_actionButton/*.html (6 archivos)",
+          "src/org/openbravo/erpCommon/info/*.html (5 archivos)",
+          "src/org/openbravo/erpCommon/businessUtility/*.html (2 archivos)",
+          "src/org/openbravo/erpReports/*.html (2 archivos)",
+          "modules_core/**/*.html (3 archivos)"
+        ],
+        "lines_changed": 870,
+        "conclusion": "eliminate",
+        "justification": "Son plantillas de la UI clásica (Smartclient). En Etendo 25.x con la nueva UI React, estos ficheros ya no se usan en la interfaz principal. Los informes Jasper siguen funcionando; los filtros de formulario HTML se reemplazan con parámetros en Process Definition. No hay nada que migrar.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1
+      }
+    ],
+    "custom_modules": [
+      {
+        "java_package": "com.openbravo.gps.apex.alerts",
+        "name": "Apex Alerts",
+        "description": "Reglas de alerta de negocio: detecta facturas con moneda incorrecta respecto a la tarifa de precios, y facturas con número de documento duplicado o inválido.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 1,
+        "recommendation": "Revisar si las alertas están activas y en uso. En SaaS, reemplazar con alertas configurables de la nueva UI si están disponibles; si no, migrar las SQL como configuración de dato."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.customizations",
+        "name": "Customizations for Apex",
+        "description": "Funciones PL/SQL personalizadas (GPSCUS_DELIVERYSTATUS, GPSCUS_INVOICESTATUS) para calcular el porcentaje de entrega y facturación de pedidos, registradas como funciones HQL. Trigger GPSCUS_NONSTOCKEDPRODUCT_TRG que valida recepciones de productos no almacenables.",
+        "generalization": "bundle_candidate",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "HQL SQLFunctionRegister API — sin cambios breaking entre 24.x y 25.x"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 4,
+        "recommendation": "Las funciones HQL de estado de entrega/facturación son candidatas a incorporarse al bundle de Financial Extensions o Warehouse Extensions de Etendo, ya que aportan valor para cualquier cliente que gestione pedidos con seguimiento de entrega parcial."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.idl",
+        "name": "IDL Extension for Apex",
+        "description": "Extensión de Initial Data Load con datasets de datos maestros específicos de APEX (configuración inicial de la empresa).",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 1,
+        "recommendation": "Solo datos de referencia. Compatibilidad futura depende del módulo org.openbravo.idl (unmaintained). En SaaS, migrar los datos maestros directamente en la configuración inicial."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.process",
+        "name": "Process",
+        "description": "Procesos de automatización del ciclo de vida del proyecto: creación de requisiciones de compra desde fases de proyecto, generación de órdenes de compra desde el presupuesto del proyecto (CreatePOFromBudget), cierre y completado de proyectos (actualizando estado y enlazando con órdenes de venta), y actualización de inventario.",
+        "generalization": "client_specific",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "org.hibernate.Query deprecated → usar TypedQuery (Hibernate 5.x→6.x en versiones 25.x)",
+          "PInstanceProcessData / Proceso clásico → migrar a DalBaseProcess en 25.x",
+          "VariablesSecureApp en contexto de proceso → API sin cambios pero patrón legacy"
+        ],
+        "effort_update_hours": 12,
+        "effort_saas_hours": 16,
+        "recommendation": "Migrar los procesos de API clásica (implements Process) a DalBaseProcess o ActionHandler. Actualizar org.hibernate.Query a TypedQuery. El módulo es altamente específico de APEX (gestión de proyectos de obra/construcción), sin viabilidad de generalización."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.procurement",
+        "name": "Procurement Management",
+        "description": "Gestión de compras: callouts de servlet clásico para recalcular precios/impuestos en líneas de pedido de compra (APEXPR_SL_Order_Product, APEXPR_SL_Order_Tax) y formulario de aplicación AD_FORM para visualizar y gestionar recepciones de mercancía pendientes (MaterialReceiptPending).",
+        "generalization": "client_specific",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "HttpSecureAppServlet callouts: patrón legacy no soportado en nueva UI React",
+          "AD_FORM (MaterialReceiptPending): arquitectura no portada a React (Sección 18 NOT DONE)",
+          "xsql templates: sustituidos por DAL en 25.x"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 24,
+        "recommendation": "El callout de producto/impuesto puede reescribirse como EventHandler DAL en Etendo 25.x (más estable y compatible con React). El formulario MaterialReceiptPending requiere rediseño completo como ventana estándar o Process Definition — es la personalización de mayor riesgo de UI."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.project.budget",
+        "name": "Project Budget",
+        "description": "Módulo de presupuestación de proyectos: gestión de materiales, costes de RRHH (categorías salariales, coste/hora), fases de proyecto presupuestadas. Incluye callouts para recálculo en tiempo real, procesos de copia de presupuesto y lista de materiales, carga masiva de materia prima, e informes Jasper agrupados por proyecto.",
+        "generalization": "bundle_candidate",
+        "complexity": "major",
+        "api_changes_applicable": [
+          "HttpSecureAppServlet callouts: patrón legacy, migrar a EventHandler",
+          "org.hibernate.criterion (OBCriteria) — sintaxis cambia en Hibernate 6.x",
+          "SalaryCategoryCost model API: verificar cambios en modelo de datos HCM"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 32,
+        "recommendation": "Módulo con potencial como bundle del marketplace Etendo para gestión de presupuesto en proyectos de obra/construcción. Requiere migración de callouts a EventHandlers y actualización de API Hibernate. Evaluar junto con Etendo Projects si existe solapamiento."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.project.reports",
+        "name": "Project Reports",
+        "description": "Suite de informes Jasper específicos de gestión de proyectos: certificaciones de obra, consumo de stock por período, consumo de materiales, costes detallados del proyecto, unidades de material, rentabilidad y avance.",
+        "generalization": "client_specific",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "Jasper Reports engine: sin cambios breaking en 25.x",
+          "Callouts de filtro de informe (HttpSecureAppServlet): patrón legacy"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6,
+        "recommendation": "Los informes Jasper son portables directamente. Los callouts de parámetros HTML requieren migración a Process Definition parameters. Bajo riesgo técnico."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.referencedata.product",
+        "name": "Referencedata: Product",
+        "description": "Datos de referencia: categorías de producto y conjuntos de atributos predefinidos para APEX.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Solo datos. Sin código. Compatible con 25.x directamente."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.referencedata.roleoverviewer",
+        "name": "Referencedata: Role Overviewer",
+        "description": "Datos de referencia: definición del rol 'Overviewer' con accesos de solo lectura para supervisión.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Solo datos. Compatible directamente con 25.x."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.referencedata.roles",
+        "name": "Referencedata: Roles Definition",
+        "description": "Datos de referencia: definición de roles y permisos estándar de APEX.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Solo datos. Compatible directamente con 25.x."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.sales",
+        "name": "Sales Management",
+        "description": "Extensiones de ventas: triggers de base de datos para sincronizar campos al crear facturas o albaranes desde pedidos (APEXSA_CREATEFROMINVOICE_TRG, APEXSA_CREATEFROMSHIPMENT_TRG) y columnas adicionales en el business partner.",
+        "generalization": "client_specific",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "Triggers DB: sin cambios de compatibilidad en PL/SQL entre versiones"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 4,
+        "recommendation": "Triggers PL/SQL son portables. Las columnas adicionales en C_BPARTNER requieren verificar que no colisionen con campos añadidos en versiones recientes de Etendo. Riesgo bajo."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.template",
+        "name": "Apex Template",
+        "description": "Módulo de configuración/template base del cliente APEX. Solo contiene el configScript de inicialización.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sin contenido funcional. Solo infraestructura de módulo."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.warehouse",
+        "name": "Warehouse Management",
+        "description": "Gestión de almacén: informes Jasper de stock obsoleto y recepción de semielaborados, tabla propia APEXWA_CERTIFICATE para certificados de calidad en recepciones, función de validación de órdenes de compra (APEXWA_VALIDATEORDERCO) y trigger de gestión de certificados.",
+        "generalization": "client_specific",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "M_ATTRIBUTESETINSTANCE modificada: verificar compatibilidad con versiones 25.x de Etendo Warehouse"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6,
+        "recommendation": "Tabla APEXWA_CERTIFICATE y lógica de certificados de calidad es específica del proceso de fabricación de APEX. Los informes Jasper son portables. Verificar que las columnas añadidas en M_ATTRIBUTESETINSTANCE, M_INVENTORYLINE y M_STORAGE_DETAIL no colisionen con cambios de schema en 25.x."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.wip",
+        "name": "Work in Progress",
+        "description": "Módulo de Work In Progress (WIP): extensión completa del servidor contable de Etendo para imputar costes de tiempo y gastos de empleados a proyectos. Implementa DocTimeExpense (generación de asientos para hojas de tiempo por categoría salarial), DocIntCons (asientos para consumos internos de WIP), y event handlers que activan el posteo contable al confirmar órdenes, facturas y consumos internos relacionados con proyectos WIP.",
+        "generalization": "bundle_candidate",
+        "complexity": "critical",
+        "api_changes_applicable": [
+          "AcctServer/AcctSchema API: cambios entre 24.x y 25.x en el framework contable",
+          "org.apache.log4j.Logger: migrar a org.apache.logging.log4j.Logger (breaking en 25.x)",
+          "org.openbravo.erpCommon.ad_forms.DocLine/Fact/FactLine: API contable legacy, verificar compatibilidad",
+          "DateTimeData: deprecado en favor de OBDateUtils",
+          "SequenceIdData: deprecado en favor de SequenceUtil",
+          "FieldProviderFactory: deprecado en 25.x"
+        ],
+        "effort_update_hours": 40,
+        "effort_saas_hours": 48,
+        "recommendation": "Este es el módulo más complejo y de mayor riesgo de migración. La extensión del AcctServer para WIP es arquitectónicamente crítica. Evaluar si la funcionalidad puede cubrirse con el módulo de Expense Accounting de Etendo en versiones recientes. Si no, requiere un sprint dedicado de migración con validación contable exhaustiva. Es candidato a bundle marketplace si se generaliza la imputación de tiempo/gastos a proyectos."
+      },
+      {
+        "java_package": "com.openbravo.gps.apex.wip.template",
+        "name": "WIP Template",
+        "description": "Módulo de configuración/template para WIP. Solo contiene configScript.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sin contenido funcional. Solo infraestructura de módulo."
+      },
+      {
+        "java_package": "com.smf.apex.customization",
+        "name": "SMF Apex Customization",
+        "description": "Customizaciones de SMF Consulting para APEX: informes de valoración de stock (versiones Excel y PDF con Jasper), informe de resumen por categoría de producto, y registro de funciones HQL para DeliveryStatus e InvoiceStatus (accesibles en lógica de visualización y filtros).",
+        "generalization": "client_specific",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "SQLFunctionRegister (ApplicationScoped CDI): sin cambios breaking en 25.x",
+          "Jasper Reports: compatible"
+        ],
+        "effort_update_hours": 3,
+        "effort_saas_hours": 4,
+        "recommendation": "Las funciones HQL son portables directamente. Los informes de valoración de stock pueden coexistir con com.etendoerp.reportvaluationstock (ya instalado). Verificar que no hay duplicidad funcional."
+      },
+      {
+        "java_package": "com.smf.apex.legacycolumns",
+        "name": "Apex's Legacy Columns",
+        "description": "Columnas de seguimiento de cobros en facturas (TotalPaid, DaysTillDue, DueAmount, PaymentComplete) y lógica PaymentMonitor que actualiza automáticamente el estado de cobro de la factura al registrar pagos. Incluye un action button clásico (InvoicePaymentMonitor) de tipo servlet.",
+        "generalization": "client_specific",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "DebtPayment model: deprecado en favor de FIN_Payment en versiones recientes de Etendo",
+          "AcctServer.log4j reference: migrar a LogManager.getLogger()",
+          "InvoicePaymentMonitor (HttpSecureAppServlet action button): patrón legacy"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 12,
+        "recommendation": "La lógica PaymentMonitor usa DebtPayment (módulo legacy de pagos Openbravo), que fue reemplazado por FIN_Payment en Etendo. Verificar si el cliente usa Advanced Payment Management (com.etendoerp.advpaymentmngt instalado); si es así, este módulo puede ser redundante o requiere reescritura completa. Alto riesgo de regresión."
+      },
+      {
+        "java_package": "com.smf.apex.template",
+        "name": "Apex Template",
+        "description": "Módulo template de SMF. Solo configScript, sin lógica funcional.",
+        "generalization": "client_specific",
+        "complexity": "trivial",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sin contenido funcional."
+      },
+      {
+        "java_package": "org.openbravo.custom.massprocessexpenses",
+        "name": "Mass Process Expenses",
+        "description": "Proceso masivo para procesar hojas de gastos/tiempo (S_TIMEEXPENSE) en un rango de fechas. Permite lanzar el proceso contable de múltiples hojas de gastos de una vez en lugar de una por una.",
+        "generalization": "bundle_candidate",
+        "complexity": "minor",
+        "api_changes_applicable": [
+          "S_TIMEEXPENSE model: verificar si el modelo de datos de TimeExpense cambió en 25.x"
+        ],
+        "effort_update_hours": 3,
+        "effort_saas_hours": 4,
+        "recommendation": "Funcionalidad de valor general: cualquier empresa que use hojas de tiempo/gastos se beneficia del procesamiento masivo. Candidato a bundle en el contexto de Expense Management de Etendo."
+      }
+    ],
+    "unmaintained_modules": [
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "function": "Exportación de datos analíticos de Etendo a sistemas externos de BI.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Etendo Analytics (integrado en Financial Extensions bundle)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 2,
+        "recommendation": "Verificar si la versión actual del bundle com.etendoerp.financial.extensions (instalado) ya incluye esta funcionalidad. En ese caso, eliminar."
+      },
+      {
+        "java_package": "com.openbravo.gps.costingcontrol",
+        "name": "Costing Control",
+        "function": "Control adicional sobre el motor de costes de Etendo/Openbravo.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Costing engine API: cambios entre versiones de Etendo"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Evaluar si la funcionalidad de control de costes está cubierta por el motor de costes de Etendo 25.x. Si no, necesita revisión manual del código y prueba con el nuevo motor."
+      },
+      {
+        "java_package": "com.openbravo.gps.documentno",
+        "name": "Include DocumentNo",
+        "function": "Secuencias de numeración de documentos personalizadas para APEX.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 3,
+        "recommendation": "Verificar si la lógica de numeración es compatible con el sistema de secuencias de Etendo 25.x. Si el módulo solo define datos (referencias de secuencia), migración directa."
+      },
+      {
+        "java_package": "com.openbravo.gps.documentnoTemplate",
+        "name": "Include DocumentNo Template",
+        "function": "Template de datos para las secuencias de numeración DocumentNo.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sigue la suerte del módulo com.openbravo.gps.documentno."
+      },
+      {
+        "java_package": "com.openbravo.gps.glpostingbydbtables.filterdates",
+        "name": "Filter by dates in GL Posting by DB Tables",
+        "function": "Formulario AD_FORM para recontabilizar transacciones filtradas por tabla de base de datos y rango de fechas.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "AD_FORM architecture: NOT DONE en React UI (Sección 18)"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 10,
+        "recommendation": "Funcionalidad útil para contables. La recontabilización masiva por período/tabla es una necesidad frecuente. Requiere reescritura como Process Definition para ser compatible con React UI."
+      },
+      {
+        "java_package": "com.openbravo.gps.invoice.improvements",
+        "name": "com.openbravo.gps.invoice.improvements",
+        "function": "Mejoras en el proceso de facturación (detalles no accesibles sin código fuente completo).",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 3,
+        "recommendation": "Inspeccionar el código fuente para determinar el alcance exacto. Riesgo bajo dado el tamaño (v1.0.3)."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.accounting.reports",
+        "name": "Accounting Reports: Czech Republic",
+        "function": "Informes contables localizados para la República Checa.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2,
+        "recommendation": "Suite de localización para República Checa (9 módulos). Todos siguen el mismo patrón: sin mantenimiento activo, sin reemplazo oficial. En SaaS, evaluar si el cliente opera en CZ; si no, eliminar. Si opera en CZ, planificar adopción de localización oficial cuando esté disponible."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.accounting.templates",
+        "name": "Accounting Templates: Czech Republic",
+        "function": "Plantillas contables para República Checa.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sigue la suerte del paquete de localización CZ."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.assets",
+        "name": "Assets for the Czech Republic",
+        "function": "Gestión de activos localizada para República Checa.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sigue la suerte del paquete de localización CZ."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.assets.template",
+        "name": "Template for Assets in Czech Republic",
+        "function": "Template de datos para activos CZ.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sigue la suerte del paquete de localización CZ."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.payments.variablesymbol",
+        "name": "Variable Symbol",
+        "function": "Símbolo variable para pagos en la República Checa (número de referencia de pago).",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "Sigue la suerte del paquete de localización CZ."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.referencedata.accounts",
+        "name": "Chart Of Accounts: Czech Republic",
+        "function": "Plan de cuentas de República Checa.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sigue la suerte del paquete de localización CZ."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.referencedata.doctypesas",
+        "name": "Document Types 2013 AS",
+        "function": "Tipos de documento para normativa AS checa 2013.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sigue la suerte del paquete de localización CZ."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.referencedata.doctypesma",
+        "name": "Document Types 2013 MA",
+        "function": "Tipos de documento para normativa MA checa 2013.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sigue la suerte del paquete de localización CZ."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.referencedata.taxes",
+        "name": "Taxes Configuration: Czech Republic",
+        "function": "Configuración de impuestos para la República Checa.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "Sigue la suerte del paquete de localización CZ."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.remittances",
+        "name": "Czech Remittances",
+        "function": "Gestión de remesas bancarias para República Checa.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Remittance framework: depende de org.openbravo.module.remittance (también instalado)"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 4,
+        "recommendation": "Sigue la suerte del paquete de localización CZ y del módulo de remesas."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.taximprovements",
+        "name": "Taxes Improvements: Czech Republic",
+        "function": "Mejoras en cálculo de impuestos para normativa checa.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2,
+        "recommendation": "Sigue la suerte del paquete de localización CZ."
+      },
+      {
+        "java_package": "com.openbravo.gps.localization.czechrepublic.variablesymbolmatchingalgorithm",
+        "name": "Variable Symbol Matching Algorithm",
+        "function": "Algoritmo de emparejamiento de pagos usando el símbolo variable checo.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Advanced Matching Algorithm: depende de org.openbravo.module.invoicematchingalgorithm"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 4,
+        "recommendation": "Sigue la suerte del paquete de localización CZ."
+      },
+      {
+        "java_package": "com.openbravo.gps.manualbalances",
+        "name": "Manual Balances",
+        "function": "Gestión de saldos manuales en cuentas contables (ajustes manuales de balance).",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Accounting API: verificar compatibilidad con cambios en AcctSchema en 25.x"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 8,
+        "recommendation": "Funcionalidad de valor para cualquier cliente que necesite ajustes de balance contable manuales. Evaluar si el GL Journal avanzado (com.etendoerp.gljournal.advanced instalado) cubre esta necesidad."
+      },
+      {
+        "java_package": "com.openbravo.gps.printandsend",
+        "name": "Print and send documents",
+        "function": "Envío de documentos por email directamente desde Etendo (facturas, albaranes, pedidos).",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Email/SMTP API: verificar cambios en configuración de correo en 25.x"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 8,
+        "recommendation": "Funcionalidad muy demandada. Si Etendo 25.x incluye envío de documentos en Financial Extensions, evaluar migración. Si no, actualizar el módulo o sustituir con solución de impresión/email oficial."
+      },
+      {
+        "java_package": "com.openbravo.gps.printjournalentries",
+        "name": "Print Journal Entries from documents",
+        "function": "Impresión de asientos contables generados por un documento (factura, albarán, etc.).",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 3,
+        "effort_saas_hours": 4,
+        "recommendation": "Funcionalidad útil para auditoría. Sin reemplazo oficial conocido. Bajo esfuerzo de actualización."
+      },
+      {
+        "java_package": "com.openbravo.gps.project.taskstemplate",
+        "name": "Project Tasks Template",
+        "function": "Plantillas de tareas para proyectos (crea conjuntos estándar de tareas al crear un proyecto).",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6,
+        "recommendation": "Módulo de valor para la gestión de proyectos repetitivos. Candidato a bundle en el contexto de Project Management de Etendo."
+      },
+      {
+        "java_package": "com.openbravo.gps.project.template",
+        "name": "Project Template",
+        "function": "Templates de proyectos completos para replicar estructuras de proyecto estándar.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6,
+        "recommendation": "Candidato a bundle junto con Project Tasks Template."
+      },
+      {
+        "java_package": "com.openbravo.gps.projects.multipleemployeeselector",
+        "name": "Selector múltiple de empleados",
+        "function": "Selector multi-valor para asignar múltiples empleados a un proyecto o fase.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 3,
+        "recommendation": "Evaluar si el Multi Selector reference type (87E6CFF8) puede sustituirlo de forma nativa en 25.x."
+      },
+      {
+        "java_package": "com.openbravo.gps.purchase.report.matchedpurchasetransactions",
+        "name": "Matched Purchase Transactions",
+        "function": "Informe de transacciones de compra emparejadas entre pedidos y recepciones.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 3,
+        "recommendation": "Informe de valor operacional. Actualización directa si el código es Jasper o Process Definition."
+      },
+      {
+        "java_package": "com.openbravo.gps.reports.reporttimesheetdimensional",
+        "name": "Report Time Sheet Dimensional",
+        "function": "Informe dimensional de hojas de tiempo: análisis multidimensional de horas registradas por empleado, proyecto, actividad.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 3,
+        "recommendation": "Informe de alto valor para control de horas de proyecto. Candidato a bundle de Project Management."
+      },
+      {
+        "java_package": "com.openbravo.gps.showpostedgrid",
+        "name": "Show Posted Column in Grid Mode",
+        "function": "Muestra el estado contable (columna Posted) en la vista de rejilla de ventanas de transacciones.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Etendo UI React — Posted button (Sección 2.B, PARCIAL en 25.x)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "En la nueva UI de Etendo, el botón Posted se implementará como componente estándar. Este módulo será redundante una vez completada la Sección 2.B de la UI."
+      },
+      {
+        "java_package": "com.openbravo.gps.warehouse.reports.dailymaterialstock",
+        "name": "Daily Material Stock Report",
+        "function": "Informe diario de stock de materiales por almacén y producto.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 2,
+        "recommendation": "Informe operacional de bajo riesgo. Actualización directa."
+      },
+      {
+        "java_package": "com.smf.agingreports.transactiondate",
+        "name": "Aging Reports with Transaction Date",
+        "function": "Informes de antigüedad de saldos usando la fecha de transacción en lugar de la fecha contable.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 3,
+        "recommendation": "Funcionalidad de valor financiero. Verificar si Financial Reports Advanced (com.etendoerp.financial.reports.advanced instalado) cubre esta variante por fecha de transacción."
+      },
+      {
+        "java_package": "com.smf.remittanceconfiguration",
+        "name": "Remittance configuration",
+        "function": "Configuración avanzada de remesas: parámetros adicionales para el proceso de generación de ficheros de remesa bancaria.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Depende de org.openbravo.module.remittance (sin mantenimiento)"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 5,
+        "recommendation": "Depende del módulo de remesas de Openbravo. Si se migra el módulo de remesas a la solución oficial de Etendo, este módulo debe adaptarse o eliminarse."
+      },
+      {
+        "java_package": "org.openbravo.financialmgmt.accounting.report.notposted",
+        "name": "Not Posted Transactions",
+        "function": "Informe de transacciones pendientes de contabilizar.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "Verificar si el informe está cubierto por Bulk Posting (com.etendoerp.bulk.posting instalado) o Financial Reports Advanced."
+      },
+      {
+        "java_package": "org.openbravo.gps.copyrole",
+        "name": "Copy Role Module",
+        "function": "Copia roles de acceso entre organizaciones o usuarios.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 3,
+        "recommendation": "Funcionalidad de administración útil. Sin reemplazo oficial conocido. Bajo esfuerzo."
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "name": "Initial Data Load",
+        "function": "Framework para carga masiva de datos maestros mediante ficheros XML/CSV en formatos predefinidos.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "IDL framework: sin mantenimiento desde Openbravo; compatibilidad con Etendo 25.x no garantizada"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 12,
+        "recommendation": "El framework IDL es crítico si APEX lo usa para onboarding de datos. En SaaS, evaluar sustitución por el sistema de Data Import (org.openbravo.importdata también instalado) o herramientas ETL estándar."
+      },
+      {
+        "java_package": "org.openbravo.importdata",
+        "name": "Import Data",
+        "function": "Importación de datos desde ficheros CSV/Excel para múltiples entidades (productos, business partners, etc.).",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "AD_FORM: arquitectura no portada a React UI"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Evaluar sustitución por Data Import System nativo de Etendo 25.x (Sección 31). Si Etendo incluye importación CSV en SaaS, este módulo se elimina."
+      },
+      {
+        "java_package": "org.openbravo.interco",
+        "name": "Inter-company Documents",
+        "function": "Generación automática de documentos espejo entre organizaciones del mismo grupo empresarial (inter-company).",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.advanced.intercompany (instalado como gradle_source)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 8,
+        "recommendation": "El módulo com.etendoerp.advanced.intercompany de Etendo ya está instalado. Verificar si hay solapamiento funcional y migrar la configuración al módulo oficial. Planificar eliminación del módulo Openbravo legacy."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "function": "Extensión Java del framework IDL para definir formatos de carga personalizados.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Sigue la suerte de org.openbravo.idl"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 6,
+        "recommendation": "Sigue la suerte del módulo IDL padre."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicematchingalgorithm",
+        "name": "Advanced Matching Algorithm",
+        "function": "Algoritmo avanzado de emparejamiento automático de pagos con facturas pendientes.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Payment matching API: verificar compatibilidad con Advanced Payment Management de Etendo"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 12,
+        "recommendation": "El emparejamiento de pagos es crítico para el departamento financiero. Verificar si Advanced Payment Management (com.etendoerp.advpaymentmngt instalado) incluye este algoritmo. Si no, debe actualizarse o reemplazarse urgentemente."
+      },
+      {
+        "java_package": "org.openbravo.module.standardOFX",
+        "name": "OFX Bank Statement Format",
+        "function": "Importación de extractos bancarios en formato OFX (Open Financial Exchange).",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6,
+        "recommendation": "Funcionalidad de valor para conciliación bancaria. Sin reemplazo oficial conocido en Etendo. Evaluar si Banking Pool (com.etendoerp.bankingpool instalado) puede importar OFX nativamente."
+      },
+      {
+        "java_package": "org.openbravo.obbo",
+        "name": "Booking Control",
+        "function": "Control de reservas/bookings: gestión del ciclo de vida de reservas de recursos o servicios.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Sin mantenimiento desde versiones Openbravo; impacto desconocido en 25.x"
+        ],
+        "effort_update_hours": 24,
+        "effort_saas_hours": 16,
+        "recommendation": "Módulo de alto riesgo sin mantenimiento activo. Requiere análisis de uso real antes de invertir en actualización. Si el cliente ya no usa bookings, candidato a eliminación."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "function": "Framework base SEPA ISO 20022 para generación de ficheros de pago y domiciliación según el estándar europeo.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Payment framework API: compatibilidad con FIN_Payment de Etendo requerida"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 16,
+        "recommendation": "Los módulos SEPA son críticos para el departamento financiero (pagos masivos, domiciliaciones). Sin sustituto oficial en Etendo. Prioridad alta para actualización. Evaluar adopción del módulo SEPA de Etendo Localization Spain si existe versión compatible con República Checa."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+        "function": "Generación de ficheros SEPA de domiciliación bancaria (CORE y B2B) para cobros.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 8,
+        "recommendation": "Sigue la suerte del framework SEPA ISO 20022."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "function": "Generación de ficheros SEPA de transferencia de crédito (pagos a proveedores).",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 8,
+        "recommendation": "Sigue la suerte del framework SEPA ISO 20022."
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "function": "Librería OpenCSV empaquetada como módulo Openbravo para parseo de ficheros CSV.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "OpenCSV disponible como dependencia Maven directa en Etendo 25.x",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0.5,
+        "effort_saas_hours": 0.5,
+        "recommendation": "En Etendo 25.x, OpenCSV se gestiona como dependencia Gradle/Maven directa. Este módulo es redundante y puede eliminarse."
+      }
+    ],
+    "effort_summary": {
+      "update_core_hours": 2,
+      "update_custom_hours": 115,
+      "update_unmaintained_hours": 205,
+      "update_total_hours": 322,
+      "saas_core_hours": 1,
+      "saas_custom_hours": 154,
+      "saas_unmaintained_hours": 172,
+      "saas_total_hours": 327
+    }
+  },
+  "ui_readiness": {
+    "generated": "2026-04-27",
+    "global_status": "blocked",
+    "summary": {
+      "critica": 9,
+      "alta": 7,
+      "media": 16,
+      "no_aplica": 8
+    },
+    "features": [
+      {
+        "section": "26",
+        "title": "Filtros y Ordenación por Defecto de Pestañas",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "critica",
+        "reason": "Bloqueador funcional. Este cliente tiene 36 pestañas con HQLFILTERCLAUSE y 53 con FILTERCLAUSE (total 89 pestañas con filtros por defecto). Estado NOT DONE al 0%. Sin filtros por defecto, las ventanas mostrarán datos incorrectos o sin filtrar al abrirse, rompiendo el flujo de trabajo en todas las ventanas que los usan.",
+        "ad_count": 89,
+        "code_evidence": []
+      },
+      {
+        "section": "18",
+        "title": "Formularios de Aplicación (AD_FORM)",
+        "status": "NO IMPLEMENTADO",
+        "completion_pct": 15,
+        "priority": "critica",
+        "reason": "Bloqueador arquitectónico. Este cliente tiene 29 formularios AD_FORM: 22 en el core (GenerateInvoices, InitialClientSetup, GenerateShipments, PaymentsSelectionBank, etc.) más 7 en módulos (MaterialReceiptPending de Apex Procurement, Import IDL, Remittances, ImportData, GL Posting filter). La arquitectura AD_FORM no está portada a React (estado NO IMPLEMENTADO, 15%). Estos flujos de negocio críticos (generación masiva de facturas/albaranes, setup inicial, gestión de remesas) no funcionarán en la nueva UI.",
+        "ad_count": 29,
+        "code_evidence": []
+      },
+      {
+        "section": "2.B",
+        "title": "Botones Hardcoded (DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus)",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "priority": "critica",
+        "reason": "Bloqueador arquitectónico. Este cliente tiene 58 columnas de botones hardcoded: Posted(33), PaymentRule(10), CreateFrom(8), DocAction(6), ChangeProjectStatus(1). Cada uno requiere un componente React específico. El estado del Posted button es PARCIAL (35%), DocAction está en proceso, PaymentRule y CreateFrom sin validar en React. Afecta directamente a facturas, pagos, pedidos y proyectos.",
+        "ad_count": 58,
+        "code_evidence": []
+      },
+      {
+        "section": "3",
+        "title": "Definiciones de Proceso (OBUIAPP_Process)",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "critica",
+        "reason": "Este cliente tiene 111 procesos OBUIAPP (A=27, M=5, PickAndExecute=71, Report=8) con 436 parámetros definidos. Los 5 procesos con UIPattern=M (Manual JS) son bloqueadores arquitectónicos ya que dependen del namespace OB.* de la UI clásica, ausente en React. Los 71 PickAndExecute requieren validación completa. Estado general PARCIAL al 55%.",
+        "ad_count": 111,
+        "code_evidence": []
+      },
+      {
+        "section": "3b",
+        "title": "Procesos Legados (AD_PROCESS Report & Process)",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "critica",
+        "reason": "Este cliente tiene 373 procesos AD_PROCESS: 207 con UIPattern=M (procesos manuales JS — bloqueador crítico en React), 166 estándar, 121 son informes (ISREPORT=Y), 17 en background, 12 Jasper. Los 207 procesos Manual son bloqueadores ya que usan JavaScript OB.* que no existe en la nueva UI React.",
+        "ad_count": 373,
+        "code_evidence": []
+      },
+      {
+        "section": "4",
+        "title": "Display Logic (Visibilidad de Campos)",
+        "status": "BUG ACTIVO",
+        "completion_pct": 65,
+        "priority": "critica",
+        "reason": "Bloqueador activo. Este cliente tiene 2.387 campos con display logic definida, de los cuales 209 usan @$SessionVar@ (dependencias de sesión). El BUG ACTIVO de la sintaxis @field@ causa crashes JavaScript en cualquier ventana que lo use. Con 2.387 campos afectados este bug impacta en prácticamente todas las ventanas del cliente.",
+        "ad_count": 2387,
+        "code_evidence": []
+      },
+      {
+        "section": "7",
+        "title": "Máquina de Estados de Documento",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "critica",
+        "reason": "Cubierto por la combinación de ventanas Transaction (42) y botones DocAction (6). El flujo de estados Borrador→Completado→Cerrado/Anulado es crítico para facturas, pedidos y documentos WIP de APEX. Estado TO CHECK al 72%, con brechas en DocAction labels y protección de campos en estado Completado.",
+        "ad_count": 42,
+        "code_evidence": []
+      },
+      {
+        "section": "1.2",
+        "title": "Ventanas Transaction (Ciclo de Vida de Documento)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "critica",
+        "reason": "Este cliente tiene 42 ventanas Transaction (pedidos, facturas, albaranes, proyectos WIP). Además, tiene 6 columnas DocAction, 33 columnas Posted, 8 CreateFrom, 10 PaymentRule y 1 ChangeProjectStatus — todos botones hardcoded que dependen de implementación específica (Sección 2.B, PARCIAL al 35%). El estado máquina de documentos es crítico para el flujo financiero y de proyectos.",
+        "ad_count": 42,
+        "code_evidence": []
+      },
+      {
+        "section": "1.4",
+        "title": "Ventanas Pick and Execute",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "critica",
+        "reason": "Este cliente tiene 47 ventanas PickAndExecute y 71 procesos OBUIAPP_PickAndExecute. Volumen alto (>20 ventanas) con estado TO CHECK al 75%. Los procesos de selección masiva (picking de stock, selección de pedidos, pago masivo) son críticos en el flujo operativo de APEX.",
+        "ad_count": 47,
+        "code_evidence": []
+      },
+      {
+        "section": "25",
+        "title": "Expresiones de Valor por Defecto",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "alta",
+        "reason": "Este cliente tiene 4.253 valores por defecto definidos, de los cuales 2.191 son complejos (usan @variables de sesión o consultas SQL). Estado PARCIAL al 45%. Los valores por defecto con SQL o @SessionVar pueden no resolverse correctamente en React, afectando a la creación de nuevos registros en prácticamente todas las ventanas.",
+        "ad_count": 2191,
+        "code_evidence": []
+      },
+      {
+        "section": "14",
+        "title": "Informes (Acceso desde Menú)",
+        "status": "TO CHECK",
+        "completion_pct": 60,
+        "priority": "alta",
+        "reason": "Este cliente tiene 121 procesos de informe (ISREPORT=Y) y 12 informes Jasper (ISJASPER=Y), más 8 procesos OBUIAPP_Report. Los 92 entradas de menú tipo R son accesos a informes legacy. Estado TO CHECK al 60% — integración de informes Jasper en React requiere validación.",
+        "ad_count": 121,
+        "code_evidence": []
+      },
+      {
+        "section": "2",
+        "title": "Tipos de Referencia (Widgets de campo)",
+        "status": "PARCIAL",
+        "completion_pct": 65,
+        "priority": "alta",
+        "reason": "El cliente tiene tipos de referencia pendientes de implementar: Image BLOB (4AA6C3BE, 14 columnas, PARCIAL), PAttribute (ref 35, 33 columnas, PARCIAL), Binary (ref 23, 5 columnas, PARCIAL), Assignment (ref 33, 3 columnas, NOT DONE), SelectorAsLink (80B16307, 1 columna, PARCIAL). En total afecta a 56 columnas con tipos de widget no completamente implementados.",
+        "ad_count": 56,
+        "code_evidence": []
+      },
+      {
+        "section": "5",
+        "title": "Comportamientos de Pestaña (Tab SR, ED, readonly, filtros)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "alta",
+        "reason": "Este cliente tiene 40 pestañas readonly (ISREADONLY=Y), 39 pestañas con display logic, 36 con HQLFILTERCLAUSE y 53 con FILTERCLAUSE. Los filtros por defecto de pestañas están NOT DONE (Sección 26, 0% completitud) — esto afecta directamente a que las ventanas no filtren los registros correctamente al abrirse.",
+        "ad_count": 128,
+        "code_evidence": []
+      },
+      {
+        "section": "12",
+        "title": "Navegación y Estructura de Menú",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "alta",
+        "reason": "Este cliente tiene 446 entradas de menú: W(272 ventanas), R(92 informes), P(42 procesos), X(21 formularios AD_FORM), OBUIAPP_Process(17). Los 92 informes y 42 procesos legacy (AD_PROCESS) tendrán integración parcial en React. Estado TO CHECK al 72%.",
+        "ad_count": 446,
+        "code_evidence": []
+      },
+      {
+        "section": "1.1",
+        "title": "Ventanas Maintain (Maestros)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "alta",
+        "reason": "Este cliente tiene 223 ventanas de tipo Maintain (maestros). Estado TO CHECK al 75% según análisis. Brechas: validación de edge cases en navegación entre registros, comportamiento exact de ISREADONLY por pestaña (40 tabs readonly presentes), y display logic @field@ (BUG ACTIVO Sección 4 que afecta directamente a estas ventanas).",
+        "ad_count": 223,
+        "code_evidence": []
+      },
+      {
+        "section": "6",
+        "title": "Callouts (Lógica en Cambio de Campo)",
+        "status": "TO CHECK",
+        "completion_pct": 82,
+        "priority": "alta",
+        "reason": "Este cliente tiene 95 columnas con callout asignado. Callouts activos críticos: SL_Order_Amt(5), SL_Journal_Period(6), SL_JournalLineAmt(5), SL_CashJournal_Amounts(5), SL_Production_Conversion(4), más callouts propios de los módulos custom (APEXBU_*, APEXPR_*). Estado TO CHECK al 82% — verificar comportamiento en React.",
+        "ad_count": 95,
+        "code_evidence": []
+      },
+      {
+        "section": "21",
+        "title": "Workspace / Dashboard (My Openbravo)",
+        "status": "NO IMPLEMENTADO",
+        "completion_pct": 5,
+        "priority": "media",
+        "reason": "No hay widgets custom definidos (OBKMO_WIDGET_CLASS=0, OBKMO_WIDGET_INSTANCE=0). El Workspace no está implementado en React (5%). Sin impacto directo para APEX dado que no han desarrollado widgets propios.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "33",
+        "title": "Personalización de Vistas (Saved Views)",
+        "status": "NOT DONE",
+        "completion_pct": 10,
+        "priority": "media",
+        "reason": "No hay personalizaciones definidas en la AD (OBUIAPP_UIPERSONALIZATION=0). Estado NOT DONE al 10%. Sin impacto inmediato para APEX.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "31",
+        "title": "Sistema de Importación de Datos",
+        "status": "NO IMPLEMENTADO",
+        "completion_pct": 20,
+        "priority": "media",
+        "reason": "El cliente tiene instalado org.openbravo.importdata y org.openbravo.idl — ambos dependen de AD_FORM (no portado a React). Estado NO IMPLEMENTADO al 20%. Afecta los flujos de carga masiva de datos.",
+        "ad_count": 2,
+        "code_evidence": []
+      },
+      {
+        "section": "8",
+        "title": "Selectores y Campos FK (OBUISEL)",
+        "status": "TO CHECK",
+        "completion_pct": 65,
+        "priority": "media",
+        "reason": "El cliente no tiene selectores OBUISEL propios definidos (0 selectores custom, 0 out-parameters custom). Sí tiene 1 columna SelectorAsLink (PARCIAL). Los selectores del core y módulos estándar sí aplican. Estado TO CHECK al 65%.",
+        "ad_count": 1,
+        "code_evidence": []
+      },
+      {
+        "section": "32",
+        "title": "Sistema de Alertas",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "media",
+        "reason": "El cliente tiene alertas definidas en referencedata: 8 Financial_Alerts, 12 Cost_Engine_Alerts, 2 Business_Partner_Tax_Location y 6 alertas propias (Apex_Alerts: moneda incorrecta en factura, numeración). El sistema de alertas existe en React pero requiere validación. Estado TO CHECK al 70%.",
+        "ad_count": 28,
+        "code_evidence": []
+      },
+      {
+        "section": "9",
+        "title": "Comportamientos de Rejilla (Grid)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "Este cliente tiene 260 columnas de selección (ISSELECTIONCOLUMN=Y) para filtrado rápido en rejilla. No hay grids editables inline (ED tabs: 0) ni tabs con vista inicial de rejilla (ISSHOWNINITIALGRIDMODE: 0). Estado TO CHECK al 72%.",
+        "ad_count": 260,
+        "code_evidence": []
+      },
+      {
+        "section": "19",
+        "title": "Elementos Enlazados (KMO / Linked Items)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "La instalación tiene 52 ficheros XML con referencias OBKMO/WidgetClass pero no hay instancias de widgets personalizados (OBKMO_WIDGET_CLASS=0, OBKMO_WIDGET_INSTANCE=0). Infraestructura presente del core/módulos estándar. Estado TO CHECK.",
+        "ad_count": 52,
+        "code_evidence": []
+      },
+      {
+        "section": "20",
+        "title": "Búsqueda Global / Quick Launch",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "Cubierto por el menú (446 entradas). Sin artefactos AD específicos adicionales. Estado TO CHECK al 72%.",
+        "ad_count": 446,
+        "code_evidence": []
+      },
+      {
+        "section": "29",
+        "title": "Vistas de Árbol",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "Este cliente tiene 1 pestaña con HASTREE=Y. Uso mínimo de vistas de árbol. Estado TO CHECK al 72%.",
+        "ad_count": 1,
+        "code_evidence": []
+      },
+      {
+        "section": "10",
+        "title": "Comportamientos Transversales (Adjuntos, Notas, Copia, ReadOnly)",
+        "status": "TO CHECK",
+        "completion_pct": 73,
+        "priority": "media",
+        "reason": "Este cliente tiene 910 columnas con ReadOnlyLogic (21 con @$SessionVar) y 5.210 columnas no editables (ISUPDATEABLE=N). No usa adjuntos, notas ni copia de registros con hijos. El ReadOnlyLogic condicional con variables de sesión puede tener comportamiento incorrecto en React (relacionado con bug de Display Logic §4).",
+        "ad_count": 910,
+        "code_evidence": []
+      },
+      {
+        "section": "1.3",
+        "title": "Ventanas Query (Consulta)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "Este cliente tiene 9 ventanas Query (consulta de solo lectura). Estado TO CHECK al 75%. Brechas menores en validación de botones ocultos en modo Q.",
+        "ad_count": 9,
+        "code_evidence": []
+      },
+      {
+        "section": "13",
+        "title": "Creación, Edición y Persistencia de Registros",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "Este cliente tiene 8.297 campos mandatorios, 4.253 valores por defecto (2.191 complejos con @variables o SQL). Los valores por defecto complejos son PARCIAL en React (Sección 25, 45%). Estado TO CHECK al 75%.",
+        "ad_count": 8297,
+        "code_evidence": []
+      },
+      {
+        "section": "23",
+        "title": "Barra de Estado (Status Bar)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "Este cliente tiene 185 campos configurados para mostrarse en la barra de estado inferior. Estado TO CHECK al 75%.",
+        "ad_count": 185,
+        "code_evidence": []
+      },
+      {
+        "section": "24",
+        "title": "Sistema de Layout de Formulario",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "Este cliente tiene 200 campos con STARTNEWLINE=Y, 358 campos con foco inicial (ISFIRSTFOCUSEDFIELD=Y), 1.261 identificadores de registro (ISIDENTIFIER=Y) y 6 columnas encriptadas (ISENCRYPTED=Y). Estado TO CHECK al 75%.",
+        "ad_count": 200,
+        "code_evidence": []
+      },
+      {
+        "section": "22",
+        "title": "Grupos de Campo (Secciones Colapsables del Formulario)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "Este cliente tiene 1.375 campos asignados a grupos de campo (74 grupos distintos). Los grupos de campo organizan el formulario en secciones colapsables. Estado TO CHECK al 78% — verificar que el collapse/expand persiste entre registros.",
+        "ad_count": 1375,
+        "code_evidence": []
+      },
+      {
+        "section": "35",
+        "title": "Estados de Vista (Form/Grid)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "Cubierto por §9 (grid tabs: 0 con vista inicial en rejilla) y §5 (tab patterns). Estado TO CHECK al 78%.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "34",
+        "title": "Vistas de Calendario",
+        "status": "NO IMPLEMENTADO",
+        "completion_pct": 0,
+        "priority": "no_aplica",
+        "reason": "No hay referencias a OBCalendar en la AD de APEX (0 ficheros). No aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "11",
+        "title": "Autenticación y Sesión",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "no_aplica",
+        "reason": "Sin datos AD XML. La autenticación es configuración Java/JWT. No aplica evaluación por código AD.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "30",
+        "title": "Agrupación en Rejilla",
+        "status": "TO CHECK",
+        "completion_pct": 65,
+        "priority": "no_aplica",
+        "reason": "Controlado por preferencias globales. Sin datos AD específicos por ventana.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "17",
+        "title": "Botones de Toolbar",
+        "status": "PARCIAL",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "reason": "Botones estándar hardcoded en JS. No hay ENABLECOPYFULL activo (0). Estado PARCIAL al 70% — evaluación por QA.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "28",
+        "title": "Atajos de Teclado",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "reason": "Preferencia global, sin configuración por ventana en AD XML. No aplica evaluación cuantitativa.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "16",
+        "title": "Validación Final de Consistencia",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "no_aplica",
+        "reason": "Checklist de QA manual. No aplica evaluación por datos AD.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "27",
+        "title": "Interfaz Multi-Ventana (MDI)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "no_aplica",
+        "reason": "Comportamiento de shell. Sin datos AD XML específicos. Estado TO CHECK.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "15",
+        "title": "Indicadores de Carga y Feedback",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "no_aplica",
+        "reason": "Sin datos AD XML. Comportamiento de UI puro. No aplica evaluación cuantitativa.",
+        "ad_count": 0,
+        "code_evidence": []
+      }
+    ]
+  }
+}
