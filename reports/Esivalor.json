@@ -1,0 +1,2266 @@
+{
+  "client": {
+    "name": "Esivalor",
+    "hostname": "Samuel-PC"
+  },
+  "platform": {
+    "type": "etendo",
+    "version": "24.1.8"
+  },
+  "modules": {
+    "gradle_jar": [],
+    "gradle_source": [
+      {
+        "java_package": "com.etendoerp.accounting.templates",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.accounting.templates",
+        "name": "New Accounting Templates",
+        "version": "1.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.accounting.templates.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.advanced.bpsettlement",
+        "name": "Advanced Business Partner Settlement",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.bpsettlement.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.advanced.financial.docs.processing",
+        "name": "Advanced Financial Documents Processing",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.template",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.advanced.financial.docs.processing.template",
+        "name": "Advanced Financial Documents Processing Template",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.financial.docs.processing.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.advanced.intercompany",
+        "name": "Advanced Intercompany",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.advanced.intercompany.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.bankingpool",
+        "name": "Banking Pool",
+        "version": "1.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bankingpool.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.bulk.posting",
+        "name": "Bulk Posting",
+        "version": "1.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.bulk.posting.git",
+        "latest_version": "2.4.1"
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.financial.extensions",
+        "name": "Financial Extensions",
+        "version": "1.16.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.extensions.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.financial.extensions.es_es",
+        "name": "Financial Extensions - Spanish Translation",
+        "version": "1.6.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions.es_es",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.financial.reports.advanced",
+        "name": "Financial Reports Advanced",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.financial.reports.advanced.git",
+        "latest_version": "2.9.0"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.gljournal.advanced",
+        "name": "GL Journal Advanced",
+        "version": "1.12.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.advanced.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.clone",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.gljournal.clone",
+        "name": "Clone GL Journal",
+        "version": "1.1.0",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.clone.template",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.gljournal.clone.template",
+        "name": "Clone GL Journal Template",
+        "version": "1.1.0",
+        "author": null,
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.gljournal.clone.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.localization.spain.extensions",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.localization.spain.extensions",
+        "name": "Spain Localization Extensions",
+        "version": "1.12.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.payment.removal",
+        "name": "Payment Removal",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.template",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.payment.removal.template",
+        "name": "Payment Removal Template",
+        "version": "1.10.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.payment.removal.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.etendoerp.reportvaluationstock.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.reportvaluationstock.es_es",
+        "name": "Report Valuation Stock - Spanish Translation",
+        "version": "1.5.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.reportvaluationstock.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.vat.regularization",
+        "name": "VAT Regularization",
+        "version": "1.0.1",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.etendoerp.vat.regularization.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.asset.amortization.report",
+        "name": "Asset Amortization Report",
+        "version": "1.9.0",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.asset.amortization.report.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.currency.apiconfig",
+        "name": "Currency API Configuration",
+        "version": "1.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.apiconfig.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.currency.conversionrate",
+        "name": "Conversion Rate Downloader",
+        "version": "1.11.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.currency.conversionrate.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.gljournal.reverse",
+        "name": "Reverse GL Journal",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.template",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.gljournal.reverse.template",
+        "name": "Reverse GL Journal Template",
+        "version": "1.9.0",
+        "author": "SMF",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.gljournal.reverse.template.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "com.smf.jobs.defaults.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.jobs.defaults.es_es",
+        "name": "Default Jobs (es_ES)",
+        "version": "1.8.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.defaults.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "com.smf.jobs.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.jobs.es_es",
+        "name": "Jobs - Spanish Translation",
+        "version": "1.2.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jobs.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "com.smf.securewebservices.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.securewebservices.es_es",
+        "name": "Secure web services implentation - Spanish Translation",
+        "version": "1.2.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.securewebservices.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "com.smf.ticketbai",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.ticketbai",
+        "name": "TicketBAI Integration",
+        "version": "1.4.0",
+        "author": "SMF Consulting",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.ticketbai.git",
+        "latest_version": "2.10.0"
+      },
+      {
+        "java_package": "org.openbravo.advpaymentmngt.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.advpaymentmngt.es_es",
+        "name": "Advanced Payables and Receivables - Spanish Translation",
+        "version": "3.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.advpaymentmngt.es_es.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.alerts.accounting30",
+        "name": "Alerts: Accounting",
+        "version": "3.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.alerts.accounting30.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.alerts.accounting30.es_es",
+        "name": "Alerts: Accounting - Spanish Translation",
+        "version": "3.8.0",
+        "author": "Openbravo, S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.alerts.accounting30.es_es.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.application.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.client.application.es_es",
+        "name": "User Interface Application Translation Spanish Spain (es_ES)",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.application.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.htmlwidget.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.client.htmlwidget.es_es",
+        "name": "HTML Widget Translation Spanish Spain (es_ES)",
+        "version": "1.8.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.htmlwidget.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.kernel.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.client.kernel.es_es",
+        "name": "User Interface Client Kernel Translation Spanish Spain(esES)",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.kernel.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.myob.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.client.myob.es_es",
+        "name": "Workspace & Widgets Translation: Spanish Spain (es_ES)",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.myob.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.querylist.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.client.querylist.es_es",
+        "name": "Query/List Widget Translation Spanish Spain (es_ES)",
+        "version": "1.8.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.querylist.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.client.widgets.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.client.widgets.es_es",
+        "name": "Widgets Collection Translation Spanish Spain (es_ES)",
+        "version": "1.8.0",
+        "author": null,
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.client.widgets.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.finance.checkprinting",
+        "name": "Check Printing",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.finance.checkprinting.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.finance.checkprinting.es_es",
+        "name": "Check Printing Spanish Translation",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.finance.checkprinting.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.financial.bpsettlement",
+        "name": "Business Partner Settlements",
+        "version": "1.13.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.bpsettlement.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "org.openbravo.financial.paymentreport.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.financial.paymentreport.es_es",
+        "name": "Payment Report - Spanish Translation",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.financial.paymentreport.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.localization.spain.referencedata.accounts",
+        "name": "Chart of accounts: PGC 2007 General",
+        "version": "3.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "name": "Chart of accounts: PGC 2007 PYMEs",
+        "version": "3.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.accounts.pymes.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.localization.spain.referencedata.taxes",
+        "name": "Taxes: configuration for Spain (Impuestos para España)",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja España)",
+        "version": "1.3.101",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.taxes.cashvat.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.localization.spain.referencedata.translation.eses",
+        "name": "Translation: Spanish-Spain (es_ES) español-España",
+        "version": "3.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain.referencedata.translation.eses.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.localization.spain30",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.localization.spain30",
+        "name": "Localization pack Spain (España)",
+        "version": "3.14.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.localization.spain30.git",
+        "latest_version": "4.2.1"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat190.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.aeat190.es",
+        "name": "Withholding Report: Modelo 190 (Spain)",
+        "version": "3.15.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat190.es.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat303.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.aeat303.es",
+        "name": "Tax Report: Modelo 303 (Spain)",
+        "version": "1.16.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat303.es.git",
+        "latest_version": "2.5.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.aeat347apr.es",
+        "name": "Spain AEAT Modelo 347 for APR",
+        "version": "4.13.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.git",
+        "latest_version": "5.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat347apr.es.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.aeat347apr.es.es_es",
+        "name": "Spain AEAT Modelo 347 for APR- Spanish Translation",
+        "version": "1.9.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat347apr.es.es_es.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat349.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.aeat349.es",
+        "name": "Modelo 349",
+        "version": "2.12.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat349.es.git",
+        "latest_version": "3.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.aeat390.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.aeat390.es",
+        "name": "Tax Report: Modelo 390 (Spain)",
+        "version": "3.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.aeat390.es.git",
+        "latest_version": "4.4.0"
+      },
+      {
+        "java_package": "org.openbravo.module.bptaxidkey",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.bptaxidkey",
+        "name": "Tipo de Número de Identificación de Tercero",
+        "version": "0.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.bptaxidkey.git",
+        "latest_version": "1.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cashvat",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.cashvat",
+        "name": "Cash VAT Management",
+        "version": "1.3.201",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cashvat.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.cifnifvalidator",
+        "name": "CIF and NIF validator",
+        "version": "1.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cifnifvalidator.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.cifnifvalidator.es_es",
+        "name": "Validador de CIF y NIF",
+        "version": "1.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cifnifvalidator.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.countryisocode",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.countryisocode",
+        "name": "3 digits ISO country codes",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.countryisocode.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.cuaderno43.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.cuaderno43.es",
+        "name": "Cuaderno 43",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.cuaderno43.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.epigrafes.iae.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.epigrafes.iae.es",
+        "name": "I.A.E. Epigraphs (Epígrafes del I.A.E.)",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.epigrafes.iae.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.eucountries",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.eucountries",
+        "name": "European Union countries",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.eucountries.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.finactvalidator.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.finactvalidator.es",
+        "name": "Validador de número de cuenta financiera",
+        "version": "3.9.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.finactvalidator.es.git",
+        "latest_version": "4.2.1"
+      },
+      {
+        "java_package": "org.openbravo.module.incoterms",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.incoterms",
+        "name": "Incoterms",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.incoterms.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.intrastat",
+        "name": "Intrastat",
+        "version": "3.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.git",
+        "latest_version": "4.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.intrastat.es_es",
+        "name": "Intrastat – Spanish translation",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.intrastat.spain",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.intrastat.spain",
+        "name": "Intrastat for Spain",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.intrastat.spain.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.invoicesregisterbook",
+        "name": "Invoices Register Book",
+        "version": "2.11.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.git",
+        "latest_version": "3.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.invoicesregisterbook.es_es",
+        "name": "Libro de Facturas",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.es_es.git",
+        "latest_version": "2.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.invoicesregisterbook.estaxes",
+        "name": "Configuración de Impuestos para el Libro de Facturas",
+        "version": "3.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicesregisterbook.estaxes.git",
+        "latest_version": "4.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.invoicetaxreportenhanced30",
+        "name": "Multidimensional Tax Report",
+        "version": "3.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.git",
+        "latest_version": "4.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "name": "Multidimensional Tax Report Spanish (es_ES)",
+        "version": "3.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.invoicetaxreportenhanced30.es_es.git",
+        "latest_version": "4.3.0"
+      },
+      {
+        "java_package": "org.openbravo.module.organization.representative.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.organization.representative.es",
+        "name": "Legal Representative of the Organization",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.organization.representative.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.paymentmethod.type",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.paymentmethod.type",
+        "name": "Payment Method Type",
+        "version": "1.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.paymentmethod.type.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.remittance",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.remittance",
+        "name": "Remittances infrastructure",
+        "version": "3.12.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.financial.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.remittance.git",
+        "latest_version": "4.3.1"
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.remittance.es_es",
+        "name": "Remittances infrastructure - Spanish Translation",
+        "version": "1.6.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "org.openbravo.module.remittance.es_es",
+        "latest_version": null,
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.remittance.template",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.remittance.template",
+        "name": "Remittance Infrastructure Template",
+        "version": "1.7.0",
+        "author": "Etendo Software",
+        "bundle": "org.openbravo.module.remittance.template",
+        "latest_version": "2.3.0",
+        "diff": {
+          "modified_files": 0,
+          "added_files": 0,
+          "deleted_files": 0,
+          "diff_lines_added": 0,
+          "diff_lines_removed": 0,
+          "files": []
+        }
+      },
+      {
+        "java_package": "org.openbravo.module.sii",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.sii",
+        "name": "Spain SII",
+        "version": "1.18.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.git",
+        "latest_version": "2.9.0"
+      },
+      {
+        "java_package": "org.openbravo.module.sii.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.sii.es_es",
+        "name": "Spain SII Translation Spanish",
+        "version": "1.18.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.es_es.git",
+        "latest_version": null
+      },
+      {
+        "java_package": "org.openbravo.module.sii.template",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.sii.template",
+        "name": "Spain SII Template",
+        "version": "1.18.0",
+        "author": "IMonferrer @ Opentix",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.sii.template.git",
+        "latest_version": null
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.taximprovements.es",
+        "name": "Spanish Tax Module Improvements",
+        "version": "0.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es.git",
+        "latest_version": "1.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.taximprovements.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.taximprovements.es_es",
+        "name": "Módulo de Impuestos para España mejorado",
+        "version": "0.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taximprovements.es_es.git",
+        "latest_version": "1.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.taxreportlauncher",
+        "name": "Tax Report Launcher",
+        "version": "1.9.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.module.taxreportlauncher.es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.taxreportlauncher.es",
+        "name": "Generador de declaraciones de impuestos",
+        "version": "1.9.0",
+        "author": "Openbravo S.L.U",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.module.taxreportlauncher.es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.numbertoword.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.numbertoword.es_es",
+        "name": "Number To Word Spanish Translation",
+        "version": "1.10.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.es_es.git",
+        "latest_version": "1.13.0"
+      },
+      {
+        "java_package": "org.openbravo.numbertoword_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.numbertoword_es",
+        "name": "Number To Word (Spanish)",
+        "version": "1.10.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword_es.git",
+        "latest_version": "1.13.0"
+      },
+      {
+        "java_package": "org.openbravo.proflocalization.spain.dataset",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.proflocalization.spain.dataset",
+        "name": "Professional Localization pack Spain (España) Datasets",
+        "version": "1.12.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.proflocalization.spain.dataset.git",
+        "latest_version": "2.4.0"
+      },
+      {
+        "java_package": "org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "name": "Orders Awaiting Delivery Spanish (Spain) Translation",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.reports.ordersawaitingdelivery.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.service.datasource.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.service.datasource.es_es",
+        "name": "JSON Datasource Translation: Spanish Spain (es_ES)",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.datasource.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.service.integration.google.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.service.integration.google.es_es",
+        "name": "Integration with Google APIs Translation Spanish Spain",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.google.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.service.integration.openid.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.service.integration.openid.es_es",
+        "name": "OpenID Service Integration Translation Spanish Spain",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.service.integration.openid.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.spain.regions",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.spain.regions",
+        "name": "Provincias de España",
+        "version": "1.8.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spain.regions.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.spanishdefaultdata.paymentmethods",
+        "name": "Métodos de Pago",
+        "version": "1.9.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentmethods.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.spanishdefaultdata.paymentterms",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.spanishdefaultdata.paymentterms",
+        "name": "Condiciones de pago",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.spanishdefaultdata.paymentterms.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.userinterface.selector.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.userinterface.selector.es_es",
+        "name": "User Interface Selector Translation: Spanish Spain (es_ES)",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.selector.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.userinterface.smartclient.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.userinterface.smartclient.es_es",
+        "name": "Smartclient Translation: Spanish Spain (es_ES)",
+        "version": "1.8.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.userinterface.smartclient.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.utility.multiplebpselector",
+        "name": "Openbravo Multi Business Partner Selector",
+        "version": "1.9.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.utility.multiplebpselector.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.utility.multiplebpselector.es_es",
+        "name": "Openbravo Multi Business Partner Selector Spanish (Spain)",
+        "version": "1.9.0",
+        "author": "Openbravo S.L.U.",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.utility.multiplebpselector.es_es.git",
+        "latest_version": "2.2.0"
+      },
+      {
+        "java_package": "org.openbravo.v3.translation.pack.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.v3.translation.pack.es_es",
+        "name": "Openbravo 3.0 Translation Pack: Spanish Spain (es_ES)",
+        "version": "3.12.0",
+        "author": "Openbravo SLU",
+        "bundle": "com.etendoerp.localization.spain.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.v3.translation.pack.es_es.git",
+        "latest_version": "4.2.0"
+      }
+    ],
+    "local_maintained": [
+      {
+        "java_package": "com.smf.jasperutilities",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.jasperutilities",
+        "name": "SMF Jasper Utilities",
+        "version": "1.0.2",
+        "author": "SMF",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/com.smf.jasperutilities.git",
+        "latest_version": "1.0.2"
+      },
+      {
+        "java_package": "org.openbravo.numbertoword",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.numbertoword",
+        "name": "Number To Word",
+        "version": "1.15.0",
+        "author": "Etendo Software",
+        "bundle": "com.etendoerp.platform.extensions",
+        "git_url": "git@bitbucket.org:koodu_software/org.openbravo.numbertoword.git",
+        "latest_version": "2.3.0"
+      }
+    ],
+    "local_not_maintained": [
+      {
+        "java_package": "com.etendoerp.accounting.templates.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.accounting.templates.es_es",
+        "name": "Nuevas plantillas de contabilidad",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.advanced.bpsettlement.es_es",
+        "name": "Liquidación Avanzada de Socios Comerciales",
+        "version": "1.2.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.advanced.financial.docs.processing.es_es",
+        "name": "Procesamiento Avanzado de Documentos Financieros",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.advanced.intercompany.es_es",
+        "name": "Intercompany Avanzado",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "version": "1.1.1",
+        "author": "Futit Services S.L."
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.bankingpool.es_es",
+        "name": "Pool Bancario",
+        "version": "1.4.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.bulk.posting.es_es",
+        "name": "Contabilización Masiva",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.financial.reports.advanced.es_es",
+        "name": "Informes Financieros Avanzados",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.gljournal.advanced.es_es",
+        "name": "Asientos Manuales Avanzados",
+        "version": "1.6.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.payment.removal.es_es",
+        "name": "Eliminación de Pagos",
+        "version": "1.5.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.etendoerp.vat.regularization.es_es",
+        "name": "VAT Regularization - Spanish Translation",
+        "version": "1.0.1",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.openbravo.gps.finance.balanceexcelexport.report",
+        "name": "P&L and Balance Sheet export to excel",
+        "version": "1.0.7",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.invoices",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.openbravo.gps.idl.invoices",
+        "name": "Initial Data Load Extension for Invoices",
+        "version": "1.0.6",
+        "author": "GPS"
+      },
+      {
+        "java_package": "com.smf.almis.customizations",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.almis.customizations",
+        "name": "Customizations Almis",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.almis.fitintegration",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.almis.fitintegration",
+        "name": "FIT Integration",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.almis.reports",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.almis.reports",
+        "name": "SMF Almis Reports",
+        "version": "1.0.1",
+        "author": "SMF"
+      },
+      {
+        "java_package": "com.smf.almis.template",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.almis.template",
+        "name": "Plantilla Almis",
+        "version": "1.0.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.asset.amortization.report.es_es",
+        "name": "Asset Amortization Report - Spanish translation",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.currency.apiconfig.es_es",
+        "name": "Configuración de la API de Moneda",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.currency.conversionrate.es_es",
+        "name": "Descargador de Tasa de Conversión",
+        "version": "1.3.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.gljournal.reverse.es_es",
+        "name": "Anulación de Asientos Manuales",
+        "version": "1.1.0",
+        "author": null
+      },
+      {
+        "java_package": "com.smf.service.restful",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/com.smf.service.restful",
+        "name": "Restful Web Services",
+        "version": "1.0.0",
+        "author": "SMF Consulting S.L."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.bankstatement.importer.generic.csv",
+        "name": "CSV Generic Bank Statement Importer",
+        "version": "1.1.100",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv.es_ES",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.bankstatement.importer.generic.csv.es_ES",
+        "name": "CSV Generic Bank Statement Importer Translation Spanish ES",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement.es_es",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.financial.bpsettlement.es_es",
+        "name": "Liquidaciones de Terceros",
+        "version": "1.3.0",
+        "author": "Etendo Software"
+      },
+      {
+        "java_package": "org.openbravo.financial.invoicetaxreport",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.financial.invoicetaxreport",
+        "name": "Invoice Tax Report",
+        "version": "1.0.100",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.financialmgmt.accounting.report.notposted",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.financialmgmt.accounting.report.notposted",
+        "name": "Not Posted Transactions",
+        "version": "1.1.1000",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.idl",
+        "name": "Initial Data Load",
+        "version": "3.0.1101",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.idl.translation.es_ES",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.idl.translation.es_ES",
+        "name": "Initial Data Load Spanish (Spain) Translation",
+        "version": "3.0.401",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "version": "1.2.1",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicematchingalgorithm",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.invoicematchingalgorithm",
+        "name": "Advanced Matching Algorithm",
+        "version": "2.0.301",
+        "author": "Openbravo S.L.U."
+      },
+      {
+        "java_package": "org.openbravo.module.sepamatchingalgorithm",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.module.sepamatchingalgorithm",
+        "name": "SEPA Matching Algorithm",
+        "version": "1.0.0",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "version": "1.0.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.camt",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.sepa.iso20022.camt",
+        "name": "SEPA Bank-to-Customer Statement",
+        "version": "1.0.400",
+        "author": "Openbravo S.L.U"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
+        "version": "1.0.300",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "version": "1.0.401",
+        "author": "Openbravo SLU"
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "path": "/home/samuel/Documents/Trabajo/ALMIS/ESI_VALOR/Esivalor/EtendoERP/modules/org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "version": "1.0.0",
+        "author": null
+      }
+    ],
+    "custom": []
+  },
+  "core_divergences": {
+    "status": "modified",
+    "base_version": "expanded",
+    "baseline_type": "expanded",
+    "folders_checked": [
+      "src",
+      "src-db",
+      "src-core",
+      "src-wad",
+      "modules_core",
+      "src-trl",
+      "src-util"
+    ],
+    "modified_files": 1,
+    "added_files": 0,
+    "deleted_files": 0,
+    "diff_lines_added": 656,
+    "diff_lines_removed": 0,
+    "files": [
+      {
+        "path": "src-db/database/formalChangesScript.xml",
+        "status": "modified",
+        "lines_added": 656,
+        "lines_removed": 0
+      }
+    ]
+  },
+  "migration_score": 77,
+  "migratability": "moderate",
+  "score_breakdown": {
+    "openbravo_platform": 0,
+    "core_divergences": -3.28,
+    "core_diff_lines": 656,
+    "local_not_maintained": -20,
+    "local_not_maintained_translations": 17,
+    "local_not_maintained_regular": 20,
+    "custom_modules": 0,
+    "custom_modules_detail": [],
+    "local_maintained_divergences": 0,
+    "gradle_source_divergences": 0,
+    "jar_dependency_outdated": 0
+  },
+  "custom_assessment": {
+    "assessor_version": "2.0",
+    "generated": "2026-04-28",
+    "core_customizations": [
+      {
+        "name": "formalChangesScript.xml — Script de migración autogenerado",
+        "description": "Archivo XML con 656 líneas que registra cambios de esquema de base de datos aplicados durante actualizaciones previas. Es un artefacto autogenerado por el mecanismo de migración de Etendo/Openbravo, no código personalizado.",
+        "files": [
+          "src-db/database/formalChangesScript.xml"
+        ],
+        "lines_changed": 656,
+        "conclusion": "eliminate",
+        "justification": "Este archivo se genera automáticamente durante upgrades y no contiene lógica de negocio del cliente. En la versión 25.4.x el sistema gestiona estos cambios de forma diferente. No debe migrarse.",
+        "api_changes_applicable": [],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 1
+      }
+    ],
+    "custom_modules": [],
+    "unmaintained_modules": [
+      {
+        "java_package": "com.etendoerp.accounting.templates.es_es",
+        "name": "Nuevas Plantillas de Contabilidad (ES)",
+        "function": "Traducción al español del módulo de nuevas plantillas de contabilidad incluido en Financial Extensions. Sigue el ciclo de vida del módulo padre.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.accounting.templates (bundle financial.extensions)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Esperar a que Etendo publique el módulo padre actualizado en el bundle. La traducción sigue automáticamente."
+      },
+      {
+        "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
+        "name": "Liquidación Avanzada de Socios Comerciales (ES)",
+        "function": "Traducción al español del módulo Advanced Business Partner Settlement de Financial Extensions.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.advanced.bpsettlement (bundle financial.extensions)",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre. Sin acción requerida de forma independiente."
+      },
+      {
+        "java_package": "com.etendoerp.advanced.financial.docs.processing.es_es",
+        "name": "Procesamiento Avanzado de Documentos Financieros (ES)",
+        "function": "Traducción al español de Advanced Financial Docs Processing (Financial Extensions).",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.advanced.financial.docs.processing",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre."
+      },
+      {
+        "java_package": "com.etendoerp.advanced.intercompany.es_es",
+        "name": "Intercompany Avanzado (ES)",
+        "function": "Traducción al español de Advanced Intercompany (Financial Extensions).",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.advanced.intercompany",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre."
+      },
+      {
+        "java_package": "com.etendoerp.bankingpool.es_es",
+        "name": "Pool Bancario (ES)",
+        "function": "Traducción al español del módulo Banking Pool (Financial Extensions).",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.bankingpool",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre."
+      },
+      {
+        "java_package": "com.etendoerp.bulk.posting.es_es",
+        "name": "Contabilización Masiva (ES)",
+        "function": "Traducción al español de Bulk Posting (Financial Extensions).",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.bulk.posting",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre."
+      },
+      {
+        "java_package": "com.etendoerp.financial.reports.advanced.es_es",
+        "name": "Informes Financieros Avanzados (ES)",
+        "function": "Traducción al español de Financial Reports Advanced (Financial Extensions).",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.financial.reports.advanced",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre."
+      },
+      {
+        "java_package": "com.etendoerp.gljournal.advanced.es_es",
+        "name": "Asientos Manuales Avanzados (ES)",
+        "function": "Traducción al español de GL Journal Advanced (Financial Extensions).",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.gljournal.advanced",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre."
+      },
+      {
+        "java_package": "com.etendoerp.payment.removal.es_es",
+        "name": "Eliminación de Pagos (ES)",
+        "function": "Traducción al español de Payment Removal (Financial Extensions).",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.payment.removal",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre."
+      },
+      {
+        "java_package": "com.etendoerp.vat.regularization.es_es",
+        "name": "Regularización IVA (ES)",
+        "function": "Traducción al español de VAT Regularization (Localization Spain Extensions).",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.vat.regularization",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre."
+      },
+      {
+        "java_package": "com.smf.asset.amortization.report.es_es",
+        "name": "Informe de Amortización de Activos (ES)",
+        "function": "Traducción al español del informe de amortización de activos de SMF.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre com.smf.asset.amortization.report."
+      },
+      {
+        "java_package": "com.smf.currency.apiconfig.es_es",
+        "name": "Configuración API de Moneda (ES)",
+        "function": "Traducción al español del módulo de configuración de API de tipo de cambio.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre com.smf.currency.apiconfig."
+      },
+      {
+        "java_package": "com.smf.currency.conversionrate.es_es",
+        "name": "Descargador de Tasa de Conversión (ES)",
+        "function": "Traducción al español del módulo de descarga automática de tasas de cambio.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre."
+      },
+      {
+        "java_package": "com.smf.gljournal.reverse.es_es",
+        "name": "Anulación de Asientos Manuales (ES)",
+        "function": "Traducción al español del módulo de reversión de asientos manuales.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre com.smf.gljournal.reverse."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv.es_ES",
+        "name": "Importador Extracto Bancario CSV (ES)",
+        "function": "Traducción al español del importador genérico de extractos bancarios en CSV.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "org.openbravo.bankstatement.importer.generic.csv",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre."
+      },
+      {
+        "java_package": "org.openbravo.financial.bpsettlement.es_es",
+        "name": "Liquidaciones de Terceros (ES)",
+        "function": "Traducción al español del módulo de liquidación de socios comerciales de Openbravo.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Reemplazado por com.etendoerp.advanced.bpsettlement en Financial Extensions",
+        "generalization": "redundant",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "El módulo padre tiene reemplazo oficial en Financial Extensions. Evaluar eliminación."
+      },
+      {
+        "java_package": "org.openbravo.idl.translation.es_ES",
+        "name": "Initial Data Load - Traducción Español",
+        "function": "Traducción al español del módulo Initial Data Load de Openbravo.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 0,
+        "effort_saas_hours": 0,
+        "recommendation": "Sigue el módulo padre org.openbravo.idl."
+      },
+      {
+        "java_package": "com.smf.almis.customizations",
+        "name": "Customizations Almis — Plantilla Contable Amortización",
+        "function": "Sobreescribe la generación del asiento contable de amortización de activos para incluir el nombre del activo en la descripción de cada línea contable. Extiende DocAmortizationTemplate del core de Etendo mediante el mecanismo de AccountingTemplate.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Java 17 — recompilación obligatoria (25.1.0)",
+          "Gradle 8.12.1 — actualizar wrapper (25.1.0)"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 8,
+        "recommendation": "Verificar que DocAmortizationTemplate no cambió de firma entre 24.1.8 y 25.4.x; recompilar con Java 17. Para SaaS evaluar si Financial Extensions 2.x incluye esta capacidad de forma nativa."
+      },
+      {
+        "java_package": "com.smf.almis.fitintegration",
+        "name": "FIT Integration — API REST de integración contable externa",
+        "function": "Expone una API REST con autenticación JWT para integración bidireccional con un sistema externo ('FIT'). Provee endpoints para sincronización de socios comerciales (CRUD), creación de asientos contables manuales, creación de facturas de venta, consulta de balances contables, tasas de cambio y cuenta de resultados. Depende de com.smf.service.restful para la infraestructura JWT.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Apache Commons Lang 2.6 → 3.17: StringUtils y NumberUtils migran de org.apache.commons.lang.* a org.apache.commons.lang3.* (25.1.0)",
+          "Hibernate 5.6: OBCriteria sigue soportado pero Restrictions API puede cambiar; verificar (25.1.0)",
+          "Java 17 obligatorio: recompilación y pruebas de integración completas (25.1.0)",
+          "Jersey 2.27 en lib/runtime de com.smf.service.restful: requiere upgrade para Java 17 classloader"
+        ],
+        "effort_update_hours": 24,
+        "effort_saas_hours": 40,
+        "recommendation": "Alta prioridad. Migrar imports de commons-lang a commons-lang3, verificar compatibilidad con Hibernate 5.6, actualizar Jersey (via service.restful) y probar todos los endpoints de integración. Para SaaS evaluar migración a EtendoRX como microservicio externo."
+      },
+      {
+        "java_package": "com.smf.almis.reports",
+        "name": "SMF Almis Reports — Informes de factura personalizados",
+        "function": "Conjunto de informes Jasper (jrxml) para impresión de facturas con múltiples layouts de empresa: genérico, HLT, NRW, ESI. Incluye informe principal, líneas de factura y desglose de impuestos.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "JasperReports — verificar compatibilidad de versión en 25.4.x",
+          "Java 17: recompilación y prueba de generación de PDF"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 16,
+        "recommendation": "Probar generación de PDF de cada layout con la versión de JasperReports de 25.4.x. Para SaaS reimplementar como Process Definition Report con Jasper o evaluar si el template de factura oficial de Etendo es suficiente."
+      },
+      {
+        "java_package": "com.smf.almis.template",
+        "name": "Plantilla Almis",
+        "function": "Módulo tipo T (template) sin código fuente propio. Sirve como dependencia base para otros módulos Almis.",
+        "risk": "low",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [],
+        "effort_update_hours": 1,
+        "effort_saas_hours": 1,
+        "recommendation": "Actualizar versión y dependencias en AD_MODULE.xml. Sin cambios de código necesarios."
+      },
+      {
+        "java_package": "com.smf.service.restful",
+        "name": "Restful Web Services — Infraestructura JWT para APIs custom",
+        "function": "Framework base de servicios REST con autenticación JWT para Etendo. Provee filtros de autenticación, manejo de tokens, envío de email y utilidades para que otros módulos (como fitintegration) puedan exponer APIs REST seguras. Incluye librerías Jersey 2.27 empaquetadas en lib/runtime.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": "Evaluar EtendoRX como alternativa de microservicios",
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Jersey 2.27 en lib/runtime — requiere upgrade a versión compatible con Java 17 (módulos de classloader cambiaron)",
+          "javax.ws.rs → jakarta.ws.rs migración posible en versiones nuevas",
+          "Java 17 obligatorio: java.security y criptografía pueden requerir cambios (25.1.0)",
+          "Gradle 8 — dependencias en lib/runtime deben migrarse a artifacts de Gradle (26.1.0)"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 24,
+        "recommendation": "Crítico: actualizar Jersey de 2.27 a una versión compatible con Java 17 y Gradle 8. Evaluar si Etendo 25.4.x ya incluye un framework JWT equivalente que permita eliminar este módulo."
+      },
+      {
+        "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
+        "name": "P&L y Balance Sheet — Exportación a Excel",
+        "function": "Informe contable que exporta el Balance de Situación y la Cuenta de Resultados a formato Excel. Genera el árbol de cuentas con saldos período a período usando Apache POI. Accede al plan contable mediante las APIs legacy de Openbravo.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "com.etendoerp.financial.reports.advanced (Financial Extensions) — verificar si cubre este caso de uso exacto",
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Apache POI 3.10 → 5.4.0: Cell.CELL_TYPE_* → CellType enum; CellStyle.ALIGN_* → HorizontalAlignment.*; setBoldweight() → setBold(boolean) (25.1.0)",
+          "org.hibernate.Query → org.hibernate.query.Query (Hibernate 5.6) (25.1.0)",
+          "HttpSecureAppServlet: API legacy, puede estar eliminada o deprecada en 25.4.x",
+          "Java 17 obligatorio (25.1.0)"
+        ],
+        "effort_update_hours": 20,
+        "effort_saas_hours": 32,
+        "recommendation": "Verificar si Financial Reports Advanced (ya instalado como gradle_source) cubre la exportación a Excel de P&L/Balance. Si es así, eliminar este módulo. Si no, actualizar POI y APIs de Hibernate."
+      },
+      {
+        "java_package": "com.openbravo.gps.idl.invoices",
+        "name": "Initial Data Load Extension for Invoices",
+        "function": "Extensión del módulo IDL para carga inicial de datos de facturas. Añade campos y configuración al proceso de importación masiva de facturas.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "org.openbravo.idl (módulo padre) es módulo no mantenido — riesgo de compatibilidad",
+          "Java 17 obligatorio (25.1.0)"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 8,
+        "recommendation": "Evaluar si la funcionalidad de carga masiva de facturas sigue siendo necesaria en producción. Si se mantiene, actualizar con el módulo IDL padre."
+      },
+      {
+        "java_package": "org.openbravo.bankstatement.importer.generic.csv",
+        "name": "CSV Generic Bank Statement Importer",
+        "function": "Importador de extractos bancarios en formato CSV genérico. Permite cargar movimientos bancarios desde archivos CSV para su conciliación en la gestión de pagos.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Módulo de importación de extractos de Advanced Payment Management Extension (Financial Extensions)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Java 17 obligatorio (25.1.0)",
+          "API de importación bancaria puede haber cambiado en Financial Extensions 2.x"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 8,
+        "recommendation": "Verificar si Financial Extensions incluye importador CSV equivalente. En caso afirmativo, migrar configuración y eliminar este módulo."
+      },
+      {
+        "java_package": "org.openbravo.financial.invoicetaxreport",
+        "name": "Invoice Tax Report",
+        "function": "Informe de impuestos por factura. Muestra el detalle de IVA por factura para informes fiscales.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Informes de Financial Reports Advanced (Financial Extensions) o Localization Spain Extensions",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Java 17, Gradle 8 (25.1.0)",
+          "APIs de informe pueden haber cambiado en versión Etendo 25.x"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 8,
+        "recommendation": "Evaluar si Localization Spain Extensions (ya instalado) cubre este informe. Si es así, eliminar. Si no, actualizar para 25.4.x."
+      },
+      {
+        "java_package": "org.openbravo.financialmgmt.accounting.report.notposted",
+        "name": "Not Posted Transactions",
+        "function": "Informe que muestra transacciones pendientes de contabilizar (not posted). Útil para detectar documentos que no se han registrado en el libro mayor.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "Financial Reports Advanced o Bulk Posting (ya instalados) pueden cubrir este caso",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Java 17 (25.1.0)"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 4,
+        "recommendation": "Verificar si Bulk Posting (ya instalado) o Financial Reports Advanced incluyen esta funcionalidad. Si es así, eliminar. Riesgo bajo."
+      },
+      {
+        "java_package": "org.openbravo.idl",
+        "name": "Initial Data Load",
+        "function": "Framework de carga inicial de datos maestros desde archivos externos (CSV, Excel). Permite importar registros de clientes, proveedores, productos, etc. para la puesta en marcha de la instalación.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Java 17 obligatorio (25.1.0)",
+          "Gradle 8: lib/runtime JARs deben migrarse a artifacts (26.1.0)",
+          "Commons Collections 3 → 4: cambio de paquete (25.1.0)"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 12,
+        "recommendation": "Evaluar si IDL sigue siendo necesario en producción post-go-live. Si solo se usó para carga inicial, puede eliminarse. Si aún se usa periódicamente, actualizar o reemplazar con el Data Import de Etendo."
+      },
+      {
+        "java_package": "org.openbravo.module.idljava",
+        "name": "Initial Data Load Extension for Java",
+        "function": "Extensión del módulo IDL que permite definir transformaciones y validaciones en Java durante la carga inicial de datos.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "client_specific",
+        "api_changes_applicable": [
+          "Java 17 (25.1.0)",
+          "Sigue el ciclo de vida de org.openbravo.idl"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6,
+        "recommendation": "Sigue el destino del módulo padre org.openbravo.idl."
+      },
+      {
+        "java_package": "org.openbravo.module.invoicematchingalgorithm",
+        "name": "Advanced Matching Algorithm",
+        "function": "Algoritmo avanzado para conciliación automática de extractos bancarios con pagos de facturas. Permite configurar reglas de matching para automatizar el proceso de reconciliación.",
+        "risk": "medium",
+        "has_official_replacement": true,
+        "official_replacement_name": "Módulo de conciliación de Financial Extensions (Advanced Payment Management)",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "Java 17 (25.1.0)",
+          "API de Payment Management puede haber cambiado en Financial Extensions 2.x"
+        ],
+        "effort_update_hours": 6,
+        "effort_saas_hours": 10,
+        "recommendation": "Verificar si Financial Extensions 2.x incluye algoritmo de matching equivalente. Si es así, migrar configuración y eliminar. Candidato a eliminación con alto impacto de ahorro."
+      },
+      {
+        "java_package": "org.openbravo.module.sepamatchingalgorithm",
+        "name": "SEPA Matching Algorithm",
+        "function": "Algoritmo de conciliación bancaria específico para ficheros SEPA CAMT.053. Extiende el matching estándar con la lógica de identificación de transferencias SEPA.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17 (25.1.0)",
+          "Dependencia del módulo SEPA Framework (también no mantenido)",
+          "API de conciliación puede haber cambiado en Financial Extensions 2.x"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 12,
+        "recommendation": "Evaluar junto con el ecosistema SEPA completo. Si se migra SEPA Framework a Financial Extensions, este módulo debe actualizarse en paralelo."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022",
+        "name": "SEPA Framework and Utilities",
+        "function": "Framework base para generación y procesamiento de ficheros SEPA ISO 20022. Provee clases utilitarias, manejo de credenciales bancarias y estructura de datos SEPA para los módulos de transferencias y adeudos.",
+        "risk": "high",
+        "has_official_replacement": true,
+        "official_replacement_name": "Evaluar si Financial Extensions / Localization Spain Extensions incluyen soporte SEPA actualizado",
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17: módulos XML (Woodstox/JAXB) pueden requerir cambios (25.1.0, 26.1.0)",
+          "Woodstox 3 → 4 (versión mayor): cambios significativos en procesamiento XML (26.1.0)",
+          "Commons Collections 3 → 4: migración de imports (25.1.0)",
+          "ANTLR 2 → 3: cambio mayor de API (26.1.0)"
+        ],
+        "effort_update_hours": 16,
+        "effort_saas_hours": 24,
+        "recommendation": "Alta prioridad. SEPA es crítico para el negocio (pagos y cobros). Verificar si Localization Spain Extensions 1.12.x (ya instalado) incluye generación SEPA actualizada. Si no, hacer fork del ecosistema SEPA completo y actualizar."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.camt",
+        "name": "SEPA Bank-to-Customer Statement (CAMT.053)",
+        "function": "Módulo para importación y procesamiento de ficheros CAMT.053 (extractos bancarios SEPA). Permite descargar y procesar automáticamente los movimientos bancarios en formato SEPA.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Sigue el ciclo de SEPA Framework (breaking changes de Woodstox y Java 17)",
+          "JAXB: en Java 11+ requiere dependencia explícita; en Java 17 reforzado"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 12,
+        "recommendation": "Actualizar junto con org.openbravo.sepa.iso20022 (framework padre). Crítico para conciliación bancaria automatizada."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "name": "SEPA Direct Debit Customer-to-Bank (CORE y B2B)",
+        "function": "Generación de ficheros de adeudo directo SEPA (Core y Business-to-Business) para envío al banco. Permite cobrar automáticamente a clientes con mandato SEPA firmado.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Sigue el ciclo de SEPA Framework",
+          "Cambios en librería XML (Woodstox/JAXB) para Java 17"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 16,
+        "recommendation": "Crítico para el negocio (cobro a clientes). Actualizar junto con el ecosistema SEPA. Para SaaS evaluar si Financial Extensions cubre domiciliaciones SEPA."
+      },
+      {
+        "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "name": "SEPA Credit Transfer Customer-to-Bank",
+        "function": "Generación de ficheros de transferencia de crédito SEPA (pain.001) para envío al banco. Permite realizar pagos automáticos a proveedores en formato SEPA.",
+        "risk": "high",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Sigue el ciclo de SEPA Framework",
+          "Cambios en librería XML (Woodstox/JAXB) para Java 17"
+        ],
+        "effort_update_hours": 8,
+        "effort_saas_hours": 16,
+        "recommendation": "Crítico para el negocio (pagos a proveedores). Actualizar junto con el ecosistema SEPA. Para SaaS evaluar cobertura en Financial Extensions."
+      },
+      {
+        "java_package": "org.openbravo.utility.opencsv",
+        "name": "OpenCSV",
+        "function": "Wrapper del módulo Etendo para la librería OpenCSV (lectura/escritura de CSV). Utilizado como dependencia por módulos de importación.",
+        "risk": "low",
+        "has_official_replacement": true,
+        "official_replacement_name": "OpenCSV 5.5.2 está disponible como dependencia Gradle en Etendo 25.x",
+        "generalization": "redundant",
+        "api_changes_applicable": [
+          "En Etendo 25.x, commons-lang3 y opencsv se resuelven como artifacts Gradle — este módulo wrapper puede volverse obsoleto (26.1.0)"
+        ],
+        "effort_update_hours": 2,
+        "effort_saas_hours": 2,
+        "recommendation": "Verificar si Etendo 25.x incluye OpenCSV como dependencia Gradle nativa. Si es así, eliminar este módulo wrapper y actualizar las dependencias de los módulos que lo usan."
+      },
+      {
+        "java_package": "com.etendoerp.analytics.exporter",
+        "name": "Etendo Analytics Exporter",
+        "function": "Módulo de exportación de datos analíticos de Futit Services. Expone datos del ERP para consumo por herramientas de análisis externas.",
+        "risk": "medium",
+        "has_official_replacement": false,
+        "official_replacement_name": null,
+        "generalization": "bundle_candidate",
+        "api_changes_applicable": [
+          "Java 17 (25.1.0)",
+          "Gradle 8 (25.1.0)"
+        ],
+        "effort_update_hours": 4,
+        "effort_saas_hours": 6,
+        "recommendation": "Contactar con Futit Services para verificar si existe una versión actualizada compatible con Etendo 25.4.x. Si es así, actualizar. Si no, evaluar mantenimiento propio."
+      }
+    ],
+    "effort_summary": {
+      "update_core_hours": 2,
+      "update_custom_hours": 0,
+      "update_unmaintained_hours": 161,
+      "update_total_hours": 163,
+      "saas_core_hours": 1,
+      "saas_custom_hours": 0,
+      "saas_unmaintained_hours": 274,
+      "saas_total_hours": 275
+    }
+  },
+  "ui_readiness": {
+    "generated": "2026-04-28",
+    "global_status": "blocked",
+    "summary": {
+      "critica": 7,
+      "alta": 3,
+      "media": 14,
+      "no_aplica": 9
+    },
+    "features": [
+      {
+        "section": "18",
+        "title": "Application Forms (AD_FORM) — No implementado",
+        "status": "NOT DONE",
+        "completion_pct": 15,
+        "priority": "critica",
+        "reason": "24 formularios AD activos en esta instalación, incluidos críticos: 'Create Invoices from Orders', 'Create Shipments from Orders', 'GL Posting by DB Tables', 'Initial Client Setup', 'Enterprise module management', 'Settle/Protest Remittances', 'Requisition to Order'. Cada uno es un wizard o batch process que no tiene equivalente React. La decisión iframe vs reimplementación está pendiente.",
+        "ad_count": 24,
+        "code_evidence": []
+      },
+      {
+        "section": "3.A.2c_3.B.2",
+        "title": "Procesos Manual JS — BLOQUEADO (namespaces OB.* inexistentes en React)",
+        "status": "BLOQUEADO",
+        "completion_pct": 25,
+        "priority": "critica",
+        "reason": "192 AD_PROCESS con UIPATTERN=M y 11 OBUIAPP_PROCESS con UIPATTERN=M. Estos procesos ejecutan JavaScript que depende de OB.CurrentView, OB.MainView, OB.OpenClose.*, OB.OBWPL.* — namespaces que no existen en React. Incluyen gestión de periodos, permisos de roles, picking/packing y operaciones de Warehouse Management. Sin decisión arquitectónica (iframe vs reimplementación), son un bloqueo total.",
+        "ad_count": 203,
+        "code_evidence": []
+      },
+      {
+        "section": "2.B",
+        "title": "Botones Hardcoded — DocAction, Posted, CreateFrom, PaymentRule, ChangeProjectStatus",
+        "status": "PARCIAL",
+        "completion_pct": 35,
+        "priority": "critica",
+        "reason": "Esta instalación tiene 6 columnas DocAction, 31 Posted, 8 CreateFrom, 9 PaymentRule y 1 ChangeProjectStatus. Cada una requiere implementación React dedicada: Posted está al 30% (faltan los 3 estados visuales y el unpost), ChangeProjectStatus al 0%. Total: 55 botones hardcoded que no siguen el patrón metadata-driven estándar.",
+        "ad_count": 55,
+        "code_evidence": []
+      },
+      {
+        "section": "25",
+        "title": "Valores por Defecto — No se aplican client-side",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "critica",
+        "reason": "4.374 columnas tienen DEFAULTVALUE definido, de las cuales 2.248 usan expresiones complejas (@#Date@, @AD_ORG_ID@, @SQL=..., @ColumnName@). El UI nunca lee field.column.defaultValue — los defaults solo funcionan via round-trip al servidor en modo NEW. Los defaults de @ColumnName@ no son reactivos (no se recomputan cuando cambia el campo fuente). Impacto en creación de documentos financieros.",
+        "ad_count": 2248,
+        "code_evidence": []
+      },
+      {
+        "section": "3.A.2a",
+        "title": "Informes Legacy (AD_PROCESS ISREPORT=Y)",
+        "status": "PARCIAL",
+        "completion_pct": 50,
+        "priority": "critica",
+        "reason": "111 procesos con ISREPORT=Y más 5 con ISJASPER=Y. Los informes HTML/legacy dependen de iframe al classic UI; si el classic UI no está activo, los informes son inaccesibles. El cliente tiene módulos de informes custom (com.smf.almis.reports con 4 layouts de factura, com.openbravo.gps.finance.balanceexcelexport.report). Impacto operativo directo en facturación y contabilidad.",
+        "ad_count": 116,
+        "code_evidence": []
+      },
+      {
+        "section": "2",
+        "title": "Tipos de referencia no implementados — Amount, Search, Button, Price",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "critica",
+        "reason": "Los tipos de campo más críticos pendientes en esta instalación: Amount (ID 12) con 365 columnas sin precisión de moneda; Search (ID 30) con 1.843 columnas sin popup de búsqueda completo; Button (ID 28) con 337 columnas sin árbol de decisión centralizado; Price (ID 800008) con 69 columnas sin precisión de 4+ decimales. Son los tipos más usados en el módulo Financial Extensions.",
+        "ad_count": 2614,
+        "code_evidence": []
+      },
+      {
+        "section": "4",
+        "title": "Display Logic — Bug activo sintaxis @field_name@",
+        "status": "BUG ACTIVO",
+        "completion_pct": 65,
+        "priority": "critica",
+        "reason": "2.461 campos tienen DISPLAYLOGIC definida en esta instalación, de los cuales 193 usan variables de sesión (@$). La sintaxis @field_name@ causa errores JavaScript documentados en el codebase. Con más de 2.000 campos afectados, este bug impacta prácticamente todas las ventanas con lógica de visibilidad condicional.",
+        "ad_count": 2461,
+        "code_evidence": []
+      },
+      {
+        "section": "26",
+        "title": "Filtros y Orden por Defecto de Tab (HQLFILTERCLAUSE)",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "alta",
+        "reason": "40 tabs tienen HQLFILTERCLAUSE definida y 56 tienen FILTERCLAUSE. TabBuilder.java no envía estos filtros al UI y el UI no los consume. Las tabs con filtro por defecto (ej. extractos bancarios de una cuenta específica) mostrarán datos sin filtrar. Impacto en módulos financieros con subtabs filtrados por FK padre.",
+        "ad_count": 96,
+        "code_evidence": []
+      },
+      {
+        "section": "3.A.2b",
+        "title": "Procesos en Background (ISBACKGROUND=Y)",
+        "status": "NOT DONE",
+        "completion_pct": 10,
+        "priority": "alta",
+        "reason": "21 procesos configurados como background en esta instalación. Falta: integración con Process Monitor para estado en tiempo real, notificación al usuario al completar, polling/websocket de estado. Afecta a procesos de contabilización masiva, cálculo de comisiones y reportes de larga duración.",
+        "ad_count": 21,
+        "code_evidence": []
+      },
+      {
+        "section": "1.4",
+        "title": "Pick and Execute Windows",
+        "status": "PARCIAL",
+        "completion_pct": 55,
+        "priority": "alta",
+        "reason": "48 ventanas OBUIAPP_PickAndExecute en esta instalación (usado extensamente por Financial Extensions para selección de pagos, facturas, albaranes). Gaps: validación de campos inline obligatorios antes de Execute, modo single-select (ismultirecord=N), forwarding de contexto del padre, respuesta openDirectTab.",
+        "ad_count": 48,
+        "code_evidence": []
+      },
+      {
+        "section": "8",
+        "title": "Selectores OBUISEL",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "media",
+        "reason": "155 selectores OBUISEL definidos. Sin parámetros out (ISOUTPARAMETER=Y = 0), lo que elimina uno de los bloqueadores principales. Hay 1 columna SelectorAsLink (NOT DONE 0%). Gaps: popup con columnas extra, extra search fields (isfilterfield=Y), ad_val_rule restrictions.",
+        "ad_count": 155,
+        "code_evidence": []
+      },
+      {
+        "section": "5",
+        "title": "Comportamientos de Tab (ISREADONLY, Display Logic, Filtros)",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "1.814 tabs con ISREADONLY=Y y 44 tabs con DISPLAYLOGIC. La visibilidad de tabs re-evaluada en cambio de registro padre no está completamente validada. Grandchild tabs (nivel 2) con filtrado por doble FK pendiente. El tab de Contabilidad (DISPLAYLOGIC='@Posted@=Y') depende del bug de sección 4.",
+        "ad_count": 1858,
+        "code_evidence": []
+      },
+      {
+        "section": "9",
+        "title": "Comportamientos de Grid",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "245 columnas con ISSELECTIONCOLUMN=Y (columnas de filtro rápido por defecto) no verificadas en el nuevo UI. Sin grids ED (editable) ni tabs con ISSHOWNINITIALGRIDMODE=Y en módulos custom — solo en core.",
+        "ad_count": 245,
+        "code_evidence": []
+      },
+      {
+        "section": "12",
+        "title": "Navegación y Menú",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "504 entradas de menú: 273 ventanas (W), 85 informes (R), 34 procesos clásicos (P), 18 Process Definition (OBUIAPP_Process), 17 formularios (X). Los formularios X dependen de AD_FORM (sección 18). Gaps: iconos por tipo de entrada, persistencia del estado collapse/expand, historial de accesos recientes.",
+        "ad_count": 504,
+        "code_evidence": []
+      },
+      {
+        "section": "29",
+        "title": "Vistas de Árbol",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "media",
+        "reason": "2 tabs con HASTREE=Y (probablemente plan de cuentas u organización). El drag & drop está implementado. Riesgo de performance: carga de todos los nodos de una vez sin lazy loading — el plan de cuentas puede tener miles de nodos.",
+        "ad_count": 2,
+        "code_evidence": []
+      },
+      {
+        "section": "10",
+        "title": "Comportamientos transversales (READONLYLOGIC, Adjuntos, Notas)",
+        "status": "TO CHECK",
+        "completion_pct": 73,
+        "priority": "media",
+        "reason": "1.017 columnas con READONLYLOGIC (21 con variables de sesión @$). 9 columnas ISENCRYPTED=Y. Los adjuntos (ISALLOWATTACHMENT) y notas (ISALLOWNOTES) no tienen configuración explícita en módulos custom (se heredan del core). Copy Record con enablecopyfull=N — no hay tabs configurados para copia profunda.",
+        "ad_count": 1017,
+        "code_evidence": []
+      },
+      {
+        "section": "3.B.1_3.B.3",
+        "title": "Process Definitions (Action y PickAndExecute)",
+        "status": "TO CHECK",
+        "completion_pct": 73,
+        "priority": "media",
+        "reason": "28 PD Action (A) y 79 PD PickAndExecute. ProcessDefinitionModal implementado. Gaps: default values con referencias a campos del padre (@C_BPartner_ID@), parameter grouping por obuiapp_param_group, display logic en parámetros. 8 PD Report implementados con Jasper.",
+        "ad_count": 115,
+        "code_evidence": []
+      },
+      {
+        "section": "23",
+        "title": "Status Bar (campos en barra de estado)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "201 campos marcados ISSHOWNINSTATUSBAR=Y. Implementado. Gap: actualización en tiempo real mientras el usuario escribe (vs solo al perder foco); navegación Anterior/Siguiente respeta sort y filtros activos.",
+        "ad_count": 201,
+        "code_evidence": []
+      },
+      {
+        "section": "24",
+        "title": "Layout del Formulario (columnas, saltos de línea)",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "media",
+        "reason": "198 campos con STARTNEWLINE=Y y 1.235 columnas ISIDENTIFIER=Y. El algoritmo de layout está implementado. Gap: interacción precisa entre numcolumn, startnewline y startrow; campos ISENCRYPTED=Y (9 columnas) deben mostrarse como '●●●●●●'.",
+        "ad_count": 198,
+        "code_evidence": []
+      },
+      {
+        "section": "1.1",
+        "title": "Ventanas Maintain (maestros)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "228 ventanas Maintain (maestros: clientes, proveedores, productos, cuentas contables, etc.). La estructura está implementada. Gaps pendientes de validación: multi-record delete desde grid, Copy Record en tabs hijo (enablecopyfull), propagación del flag Active a registros hijo.",
+        "ad_count": 228,
+        "code_evidence": []
+      },
+      {
+        "section": "1.2",
+        "title": "Ventanas Transaction (documentos con ciclo de vida)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "39 ventanas Transaction (facturas, pedidos, albaranes, asientos). Estructura implementada. Gaps: el tab de Contabilidad con displaylogic='@Posted@=Y' depende del bug de display logic (sección 4); protección contra edición concurrente no validada.",
+        "ad_count": 39,
+        "code_evidence": []
+      },
+      {
+        "section": "1.3",
+        "title": "Ventanas Query / Info (consulta)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "8 ventanas Query en esta instalación. Gaps: lista exacta de botones toolbar a ocultar en modo Q no validada; comportamiento como popup selector difiere del modo ventana.",
+        "ad_count": 8,
+        "code_evidence": []
+      },
+      {
+        "section": "22",
+        "title": "Field Groups (secciones colapsables del formulario)",
+        "status": "TO CHECK",
+        "completion_pct": 78,
+        "priority": "media",
+        "reason": "1.478 campos asignados a grupos en esta instalación (numerosos formularios financieros con secciones como 'Información Contable', 'Datos Bancarios'). Implementado con collapse/expand. Gap: estado collapse persistido entre navegación de registros.",
+        "ad_count": 1478,
+        "code_evidence": []
+      },
+      {
+        "section": "6",
+        "title": "Callouts",
+        "status": "TO CHECK",
+        "completion_pct": 82,
+        "priority": "media",
+        "reason": "411 referencias a callouts en columnas de esta instalación. La infraestructura GlobalCalloutManager está bien implementada. Gaps pendientes: callout chaining prevention (callout A cambia campo X, X no debe re-disparar callout B), callout que retorna WARNING/ERROR, callout al limpiar un campo (set null).",
+        "ad_count": 411,
+        "code_evidence": []
+      },
+      {
+        "section": "34",
+        "title": "Vistas de Calendario",
+        "status": "NOT DONE",
+        "completion_pct": 0,
+        "priority": "no_aplica",
+        "reason": "0 referencias a OBCalendar/OBMultiCalendar en ficheros XML. El cliente no usa calendarios — no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "21",
+        "title": "Workspace / Dashboard (Widgets)",
+        "status": "NOT DONE",
+        "completion_pct": 5,
+        "priority": "no_aplica",
+        "reason": "0 widget classes y 0 widget instances encontrados en esta instalación. El cliente no tiene widgets custom de dashboard — no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "33",
+        "title": "Personalización de Vistas",
+        "status": "NOT DONE",
+        "completion_pct": 10,
+        "priority": "no_aplica",
+        "reason": "0 personalizaciones OBUIAPP_UIPERSONALIZATION. Sin vistas guardadas en esta instalación — no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "11",
+        "title": "Autenticación y Sesión",
+        "status": "PARCIAL",
+        "completion_pct": 45,
+        "priority": "no_aplica",
+        "reason": "JWT/login es configuración Java, no tiene representación en la AD XML. No greepable. Evaluación requiere prueba manual.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "17",
+        "title": "Botones de Toolbar (estándar)",
+        "status": "PARCIAL",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "reason": "Botones estándar hardcodeados en JS. No hay configuración específica de toolbar en módulos custom de este cliente (ENABLECOPYFULL=0).",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "28",
+        "title": "Atajos de Teclado",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "reason": "Configuración global en preference OBUIAPP_KeyboardShortcuts — no es dato per-ventana AD. Sin personalización en este cliente.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "32",
+        "title": "Sistema de Alertas",
+        "status": "TO CHECK",
+        "completion_pct": 70,
+        "priority": "no_aplica",
+        "reason": "0 reglas de alerta (AD_ALERTRULE) en esta instalación. El cliente no usa alertas configuradas — no aplica.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "27",
+        "title": "MDI — Interfaz Multi-Ventana",
+        "status": "TO CHECK",
+        "completion_pct": 72,
+        "priority": "no_aplica",
+        "reason": "Comportamiento de shell de aplicación — sin datos en AD XML. Evaluación por QA manual.",
+        "ad_count": 0,
+        "code_evidence": []
+      },
+      {
+        "section": "15",
+        "title": "Indicadores de Carga y Feedback",
+        "status": "TO CHECK",
+        "completion_pct": 75,
+        "priority": "no_aplica",
+        "reason": "Comportamiento puro de UI shell — sin datos en AD XML. Evaluación por QA manual.",
+        "ad_count": 0,
+        "code_evidence": []
+      }
+    ]
+  }
+}
