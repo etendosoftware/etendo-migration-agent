@@ -11,7 +11,7 @@
     "gradle_jar": [
       {
         "java_package": "com.etendoerp.asyncprocess",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.asyncprocess",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.asyncprocess",
         "latest_version": "2.6.1",
         "bundle": "com.etendoerp.platform.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.asyncprocess.git",
@@ -21,7 +21,7 @@
       },
       {
         "java_package": "com.etendoerp.copilot.agents",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.copilot.agents",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.copilot.agents",
         "latest_version": "2.12.1",
         "bundle": "com.etendoerp.copilot.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.copilot.agents.git",
@@ -31,7 +31,7 @@
       },
       {
         "java_package": "com.etendoerp.copilot.devassistant",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.copilot.devassistant",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.copilot.devassistant",
         "latest_version": "2.12.1",
         "bundle": "com.etendoerp.copilot.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.copilot.devassistant.git",
@@ -41,7 +41,7 @@
       },
       {
         "java_package": "com.etendoerp.copilot.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.copilot.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.copilot.template",
         "latest_version": "2.3.0",
         "bundle": "com.etendoerp.copilot.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.copilot.template.git",
@@ -51,7 +51,7 @@
       },
       {
         "java_package": "com.etendoerp.copilot.toolpack",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.copilot.toolpack",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.copilot.toolpack",
         "latest_version": "2.12.1",
         "bundle": "com.etendoerp.copilot.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.copilot.toolpack.git",
@@ -61,7 +61,7 @@
       },
       {
         "java_package": "com.etendoerp.docker",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.docker",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.docker",
         "latest_version": "2.9.0",
         "bundle": "com.etendoerp.platform.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.docker.git",
@@ -71,7 +71,7 @@
       },
       {
         "java_package": "com.etendoerp.dynamic.app",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.dynamic.app",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.dynamic.app",
         "latest_version": "2.3.0",
         "bundle": "com.etendoerp.platform.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.dynamic.app.git",
@@ -81,7 +81,7 @@
       },
       {
         "java_package": "com.etendoerp.etendorx",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.etendorx",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.etendorx",
         "latest_version": "3.15.1",
         "bundle": "com.etendoerp.platform.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.etendorx.git",
@@ -91,7 +91,7 @@
       },
       {
         "java_package": "com.etendoerp.openapi",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.openapi",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.openapi",
         "latest_version": "2.5.0",
         "bundle": "com.etendoerp.platform.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.openapi.git",
@@ -101,7 +101,7 @@
       },
       {
         "java_package": "com.etendoerp.reactor",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.reactor",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.reactor",
         "latest_version": "2.3.0",
         "bundle": "com.etendoerp.platform.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.reactor.git",
@@ -111,7 +111,7 @@
       },
       {
         "java_package": "com.etendoerp.subapp.copilot",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.subapp.copilot",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.subapp.copilot",
         "latest_version": "2.12.1",
         "bundle": "com.etendoerp.copilot.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.subapp.copilot.git",
@@ -121,7 +121,7 @@
       },
       {
         "java_package": "com.etendoerp.task",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.task",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.task",
         "latest_version": "3.15.1",
         "bundle": "com.etendoerp.platform.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.task.git",
@@ -131,7 +131,7 @@
       },
       {
         "java_package": "com.etendoerp.telemetry",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.telemetry",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.telemetry",
         "latest_version": "3.1.0",
         "bundle": "com.etendoerp.platform.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.telemetry.git",
@@ -141,7 +141,7 @@
       },
       {
         "java_package": "com.etendoerp.webhookevents",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/build/etendo/modules/com.etendoerp.webhookevents",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/build/etendo/modules/com.etendoerp.webhookevents",
         "latest_version": "2.6.1",
         "bundle": "com.etendoerp.platform.extensions",
         "git_url": "git@github.com:etendosoftware/com.etendoerp.webhookevents.git",
@@ -153,7 +153,7 @@
     "gradle_source": [
       {
         "java_package": "com.etendoerp.copilot",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.copilot",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.copilot",
         "name": "Etendo Copilot",
         "version": "2.12.1",
         "author": "Futit Services S.L.",
@@ -162,9 +162,9 @@
         "latest_version": "2.12.1",
         "diff": {
           "modified_files": 21,
-          "added_files": 40,
+          "added_files": 41,
           "deleted_files": 3,
-          "diff_lines_added": 1294,
+          "diff_lines_added": 1298,
           "diff_lines_removed": 164,
           "files": [
             {
@@ -321,6 +321,12 @@
               "path": "com.etendoerp.copilot.chat/.gitignore",
               "status": "added",
               "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
               "lines_removed": 0
             },
             {
@@ -556,7 +562,7 @@
       },
       {
         "java_package": "com.etendoerp.copilot.extensions",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.copilot.extensions",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.copilot.extensions",
         "name": "Copilot Extensions",
         "version": "3.12.0",
         "author": "Futit Services S.L.",
@@ -575,7 +581,7 @@
     "local_maintained": [
       {
         "java_package": "com.etendoerp.accounting.dimensions.assets",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.accounting.dimensions.assets",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.accounting.dimensions.assets",
         "name": "Accounting Dimensions Assets",
         "version": "1.2.2",
         "author": "Futit Services S.L.",
@@ -584,9 +590,9 @@
         "latest_version": "2.3.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -600,13 +606,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.accounting.dimensions.assets.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.accounting.dimensions.assets.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.accounting.dimensions.assets.template",
         "name": "Accounting Dimensions Assets Template",
         "version": "1.2.1",
         "author": "Futit Services S.L.",
@@ -624,7 +636,7 @@
       },
       {
         "java_package": "com.etendoerp.accounting.templates",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.accounting.templates",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.accounting.templates",
         "name": "New Accounting Templates",
         "version": "1.14.1",
         "author": "Futit Services S.L.",
@@ -649,7 +661,7 @@
       },
       {
         "java_package": "com.etendoerp.advanced.bank.account.management",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.advanced.bank.account.management",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.advanced.bank.account.management",
         "name": "Advanced Bank Account Management",
         "version": "1.4.1",
         "author": "Futit Services S.L.",
@@ -658,9 +670,9 @@
         "latest_version": "2.3.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -674,13 +686,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.advanced.bank.account.management.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.advanced.bank.account.management.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.advanced.bank.account.management.template",
         "name": "Advanced Bank Account Management Template",
         "version": "1.2.1",
         "author": "Futit Services S.L.",
@@ -705,7 +723,7 @@
       },
       {
         "java_package": "com.etendoerp.advanced.bpsettlement",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.advanced.bpsettlement",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.advanced.bpsettlement",
         "name": "Advanced Business Partner Settlement",
         "version": "1.13.1",
         "author": "Futit Services S.L.",
@@ -714,9 +732,9 @@
         "latest_version": "2.5.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -730,13 +748,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.advanced.financial.docs.processing",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.advanced.financial.docs.processing",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.advanced.financial.docs.processing",
         "name": "Advanced Financial Documents Processing",
         "version": "1.12.1",
         "author": "Futit Services S.L.",
@@ -745,9 +769,9 @@
         "latest_version": "2.4.0",
         "diff": {
           "modified_files": 4,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 4,
+          "diff_lines_added": 8,
           "diff_lines_removed": 4,
           "files": [
             {
@@ -779,13 +803,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.advanced.financial.docs.processing.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.advanced.financial.docs.processing.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.advanced.financial.docs.processing.template",
         "name": "Advanced Financial Documents Processing Template",
         "version": "1.13.1",
         "author": "Futit Services S.L.",
@@ -803,7 +833,7 @@
       },
       {
         "java_package": "com.etendoerp.advanced.intercompany",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.advanced.intercompany",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.advanced.intercompany",
         "name": "Advanced Intercompany",
         "version": "1.15.1",
         "author": "Futit Services S.L.",
@@ -812,9 +842,9 @@
         "latest_version": "2.3.0",
         "diff": {
           "modified_files": 7,
-          "added_files": 149,
+          "added_files": 150,
           "deleted_files": 3,
-          "diff_lines_added": 87,
+          "diff_lines_added": 91,
           "diff_lines_removed": 45,
           "files": [
             {
@@ -881,6 +911,12 @@
               "path": ".gitignore",
               "status": "added",
               "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
               "lines_removed": 0
             },
             {
@@ -1776,7 +1812,7 @@
       },
       {
         "java_package": "com.etendoerp.automated.remittance",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.automated.remittance",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.automated.remittance",
         "name": "Automated Remittance",
         "version": "1.4.1",
         "author": "Futit Services S.L.",
@@ -1785,9 +1821,9 @@
         "latest_version": "2.4.1",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -1801,13 +1837,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.bankingpool",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.bankingpool",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.bankingpool",
         "name": "Banking Pool",
         "version": "1.14.1",
         "author": "Futit Services S.L.",
@@ -1816,9 +1858,9 @@
         "latest_version": "2.4.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -1832,13 +1874,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.bulk.posting",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.bulk.posting",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.bulk.posting",
         "name": "Bulk Posting",
         "version": "1.16.1",
         "author": "Futit Services S.L.",
@@ -1847,9 +1895,9 @@
         "latest_version": "2.4.1",
         "diff": {
           "modified_files": 3,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 2,
-          "diff_lines_added": 3,
+          "diff_lines_added": 7,
           "diff_lines_removed": 3,
           "files": [
             {
@@ -1881,13 +1929,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.financial.reports.advanced",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.financial.reports.advanced",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.financial.reports.advanced",
         "name": "Financial Reports Advanced",
         "version": "1.15.1",
         "author": "Futit Services S.L.",
@@ -1896,9 +1950,9 @@
         "latest_version": "2.9.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -1912,13 +1966,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.gljournal.advanced",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.gljournal.advanced",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.gljournal.advanced",
         "name": "GL Journal Advanced",
         "version": "1.15.1",
         "author": "Futit Services S.L.",
@@ -1949,7 +2009,7 @@
       },
       {
         "java_package": "com.etendoerp.gljournal.clone",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.gljournal.clone",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.gljournal.clone",
         "name": "Clone GL Journal",
         "version": "1.4.1",
         "author": "Futit Services S.L.",
@@ -1958,9 +2018,9 @@
         "latest_version": "2.3.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -1974,13 +2034,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.gljournal.clone.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.gljournal.clone.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.gljournal.clone.template",
         "name": "Clone GL Journal Template",
         "version": "1.4.1",
         "author": "Futit Services S.L.",
@@ -1998,7 +2064,7 @@
       },
       {
         "java_package": "com.etendoerp.payment.removal",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.payment.removal",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.payment.removal",
         "name": "Payment Removal",
         "version": "1.12.1",
         "author": "Futit Services S.L.",
@@ -2007,9 +2073,9 @@
         "latest_version": "2.4.0",
         "diff": {
           "modified_files": 9,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 9,
+          "diff_lines_added": 13,
           "diff_lines_removed": 9,
           "files": [
             {
@@ -2071,13 +2137,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.payment.removal.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.payment.removal.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.payment.removal.template",
         "name": "Payment Removal Template",
         "version": "1.13.1",
         "author": "Futit Services S.L.",
@@ -2095,7 +2167,7 @@
       },
       {
         "java_package": "com.etendoerp.quotation",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.quotation",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.quotation",
         "name": "Additional Etendo Quotation Features",
         "version": "1.11.0",
         "author": "Futit Services S.L.",
@@ -2104,9 +2176,9 @@
         "latest_version": "2.3.0",
         "diff": {
           "modified_files": 2,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 2,
+          "diff_lines_added": 6,
           "diff_lines_removed": 2,
           "files": [
             {
@@ -2126,13 +2198,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.quotation.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.quotation.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.quotation.template",
         "name": "Additional Etendo Quotation Features Template",
         "version": "1.11.0",
         "author": "Futit Services S.L.",
@@ -2150,7 +2228,7 @@
       },
       {
         "java_package": "com.etendoerp.rappels.advanced",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.rappels.advanced",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.rappels.advanced",
         "name": "Rappels Advanced",
         "version": "1.7.0",
         "author": "Futit Services S.L.",
@@ -2159,9 +2237,9 @@
         "latest_version": "2.3.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 3,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -2187,13 +2265,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.etendoerp.rappels.advanced.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.rappels.advanced.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.rappels.advanced.template",
         "name": "Rappels Advanced Template",
         "version": "1.7.0",
         "author": "Futit Services S.L.",
@@ -2211,7 +2295,7 @@
       },
       {
         "java_package": "com.etendoerp.reportvaluationstock.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.reportvaluationstock.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.reportvaluationstock.es_es",
         "name": "Report Valuation Stock - Spanish Translation",
         "version": "1.8.0",
         "author": "Etendo Software",
@@ -2229,7 +2313,7 @@
       },
       {
         "java_package": "com.etendoerp.vat.regularization",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.vat.regularization",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.vat.regularization",
         "name": "VAT Regularization",
         "version": "1.5.1",
         "author": "Futit Services S.L.",
@@ -2238,9 +2322,9 @@
         "latest_version": "2.4.0",
         "diff": {
           "modified_files": 3,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 3,
+          "diff_lines_added": 7,
           "diff_lines_removed": 3,
           "files": [
             {
@@ -2266,13 +2350,19 @@
               "status": "modified",
               "lines_added": 1,
               "lines_removed": 1
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.smf.asset.amortization.report",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.asset.amortization.report",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.asset.amortization.report",
         "name": "Asset Amortization Report",
         "version": "1.13.1",
         "author": "Futit Services S.L.",
@@ -2297,7 +2387,7 @@
       },
       {
         "java_package": "com.smf.currency.apiconfig",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.currency.apiconfig",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.currency.apiconfig",
         "name": "Currency API Configuration",
         "version": "1.14.1",
         "author": "Futit Services S.L.",
@@ -2322,7 +2412,7 @@
       },
       {
         "java_package": "com.smf.currency.conversionrate",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.currency.conversionrate",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.currency.conversionrate",
         "name": "Conversion Rate Downloader",
         "version": "1.14.1",
         "author": "Futit Services S.L.",
@@ -2347,7 +2437,7 @@
       },
       {
         "java_package": "com.smf.gljournal.reverse",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.gljournal.reverse",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.gljournal.reverse",
         "name": "Reverse GL Journal",
         "version": "1.12.1",
         "author": "Futit Services S.L.",
@@ -2356,9 +2446,9 @@
         "latest_version": "2.3.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -2372,13 +2462,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.smf.gljournal.reverse.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.gljournal.reverse.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.gljournal.reverse.template",
         "name": "Reverse GL Journal Template",
         "version": "2.1.0",
         "author": "Futit Services S.L.",
@@ -2571,7 +2667,7 @@
       },
       {
         "java_package": "com.smf.jasperutilities",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.jasperutilities",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.jasperutilities",
         "name": "SMF Jasper Utilities",
         "version": "1.0.2",
         "author": "SMF",
@@ -2580,9 +2676,9 @@
         "latest_version": "1.0.2",
         "diff": {
           "modified_files": 0,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 0,
+          "diff_lines_added": 4,
           "diff_lines_removed": 0,
           "files": [
             {
@@ -2590,13 +2686,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "com.smf.jobs.defaults.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.jobs.defaults.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.jobs.defaults.es_es",
         "name": "Default Jobs (es_ES)",
         "version": "1.11.0",
         "author": null,
@@ -2614,7 +2716,7 @@
       },
       {
         "java_package": "com.smf.jobs.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.jobs.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.jobs.es_es",
         "name": "Jobs - Spanish Translation",
         "version": "1.5.0",
         "author": "Etendo Software",
@@ -2632,7 +2734,7 @@
       },
       {
         "java_package": "com.smf.securewebservices.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.securewebservices.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.securewebservices.es_es",
         "name": "Secure web services implentation - Spanish Translation",
         "version": "1.5.0",
         "author": "Etendo Software",
@@ -2650,7 +2752,7 @@
       },
       {
         "java_package": "com.smf.ticketbai",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.ticketbai",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.ticketbai",
         "name": "TicketBAI Integration",
         "version": "1.14.0",
         "author": "SMF Consulting",
@@ -2659,9 +2761,9 @@
         "latest_version": "2.10.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -2675,13 +2777,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.advpaymentmngt.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.advpaymentmngt.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.advpaymentmngt.es_es",
         "name": "Advanced Payables and Receivables - Spanish Translation",
         "version": "3.11.0",
         "author": "Openbravo S.L.U.",
@@ -2706,7 +2814,7 @@
       },
       {
         "java_package": "org.openbravo.alerts.accounting30",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.alerts.accounting30",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.alerts.accounting30",
         "name": "Alerts: Accounting",
         "version": "3.11.0",
         "author": "Openbravo SLU",
@@ -2731,7 +2839,7 @@
       },
       {
         "java_package": "org.openbravo.alerts.accounting30.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.alerts.accounting30.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.alerts.accounting30.es_es",
         "name": "Alerts: Accounting - Spanish Translation",
         "version": "3.11.0",
         "author": "Openbravo, S.L.U.",
@@ -2756,7 +2864,7 @@
       },
       {
         "java_package": "org.openbravo.client.application.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.client.application.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.client.application.es_es",
         "name": "User Interface Application Translation Spanish Spain (es_ES)",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -2781,7 +2889,7 @@
       },
       {
         "java_package": "org.openbravo.client.htmlwidget.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.client.htmlwidget.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.client.htmlwidget.es_es",
         "name": "HTML Widget Translation Spanish Spain (es_ES)",
         "version": "1.11.0",
         "author": null,
@@ -2806,7 +2914,7 @@
       },
       {
         "java_package": "org.openbravo.client.kernel.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.client.kernel.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.client.kernel.es_es",
         "name": "User Interface Client Kernel Translation Spanish Spain(esES)",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -2831,7 +2939,7 @@
       },
       {
         "java_package": "org.openbravo.client.myob.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.client.myob.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.client.myob.es_es",
         "name": "Workspace & Widgets Translation: Spanish Spain (es_ES)",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -2856,7 +2964,7 @@
       },
       {
         "java_package": "org.openbravo.client.querylist.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.client.querylist.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.client.querylist.es_es",
         "name": "Query/List Widget Translation Spanish Spain (es_ES)",
         "version": "1.11.0",
         "author": null,
@@ -2881,7 +2989,7 @@
       },
       {
         "java_package": "org.openbravo.client.widgets.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.client.widgets.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.client.widgets.es_es",
         "name": "Widgets Collection Translation Spanish Spain (es_ES)",
         "version": "1.11.0",
         "author": null,
@@ -2906,7 +3014,7 @@
       },
       {
         "java_package": "org.openbravo.finance.checkprinting",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.finance.checkprinting",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.finance.checkprinting",
         "name": "Check Printing",
         "version": "1.14.0",
         "author": "Openbravo S.L.U.",
@@ -2915,9 +3023,9 @@
         "latest_version": "2.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -2931,13 +3039,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.finance.checkprinting.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.finance.checkprinting.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.finance.checkprinting.es_es",
         "name": "Check Printing Spanish Translation",
         "version": "1.12.0",
         "author": "Openbravo S.L.U.",
@@ -2962,7 +3076,7 @@
       },
       {
         "java_package": "org.openbravo.financial.bpsettlement",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.financial.bpsettlement",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.financial.bpsettlement",
         "name": "Business Partner Settlements",
         "version": "1.16.1",
         "author": "Openbravo S.L.U.",
@@ -2971,9 +3085,9 @@
         "latest_version": "2.4.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -2987,13 +3101,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.financial.paymentreport.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.financial.paymentreport.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.financial.paymentreport.es_es",
         "name": "Payment Report - Spanish Translation",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -3018,7 +3138,7 @@
       },
       {
         "java_package": "org.openbravo.localization.spain.referencedata.accounts",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.localization.spain.referencedata.accounts",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.localization.spain.referencedata.accounts",
         "name": "Chart of accounts: PGC 2007 General",
         "version": "3.11.0",
         "author": "Openbravo SLU",
@@ -3043,7 +3163,7 @@
       },
       {
         "java_package": "org.openbravo.localization.spain.referencedata.accounts.pymes",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.localization.spain.referencedata.accounts.pymes",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.localization.spain.referencedata.accounts.pymes",
         "name": "Chart of accounts: PGC 2007 PYMEs",
         "version": "3.11.0",
         "author": "Openbravo SLU",
@@ -3068,7 +3188,7 @@
       },
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.localization.spain.referencedata.taxes",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.localization.spain.referencedata.taxes",
         "name": "Taxes: configuration for Spain (Impuestos para Espa\u00f1a)",
         "version": "1.15.0",
         "author": "Openbravo S.L.U.",
@@ -3093,7 +3213,7 @@
       },
       {
         "java_package": "org.openbravo.localization.spain.referencedata.taxes.cashvat",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.localization.spain.referencedata.taxes.cashvat",
         "name": "Cash VAT Spain Taxes (Impuestos IVA de Caja Espa\u00f1a)",
         "version": "1.9.0",
         "author": "Openbravo S.L.U.",
@@ -3111,7 +3231,7 @@
       },
       {
         "java_package": "org.openbravo.localization.spain.referencedata.translation.eses",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.localization.spain.referencedata.translation.eses",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.localization.spain.referencedata.translation.eses",
         "name": "Translation: Spanish-Spain (es_ES) espa\u00f1ol-Espa\u00f1a",
         "version": "3.13.0",
         "author": "Openbravo SLU",
@@ -3136,7 +3256,7 @@
       },
       {
         "java_package": "org.openbravo.localization.spain30",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.localization.spain30",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.localization.spain30",
         "name": "Localization pack Spain (Espa\u00f1a)",
         "version": "3.20.0",
         "author": "Openbravo S.L.U.",
@@ -3161,7 +3281,7 @@
       },
       {
         "java_package": "org.openbravo.module.aeat190.cashvat.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat190.cashvat.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat190.cashvat.es",
         "name": "Withholding Report: Modelo 190 (Spain) Cash VAT compatible",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -3179,7 +3299,7 @@
       },
       {
         "java_package": "org.openbravo.module.aeat190.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat190.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat190.es",
         "name": "Withholding Report: Modelo 190 (Spain)",
         "version": "3.22.0",
         "author": "Openbravo S.L.U.",
@@ -3188,9 +3308,9 @@
         "latest_version": "4.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3204,13 +3324,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.aeat303.cashvat.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat303.cashvat.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat303.cashvat.es",
         "name": "Tax Report: Modelo 303 (Spain) Cash VAT compatible",
         "version": "1.15.0",
         "author": "Openbravo S.L.U.",
@@ -3228,7 +3354,7 @@
       },
       {
         "java_package": "org.openbravo.module.aeat303.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat303.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat303.es",
         "name": "Tax Report: Modelo 303 (Spain)",
         "version": "1.26.0",
         "author": "Openbravo S.L.U.",
@@ -3237,9 +3363,9 @@
         "latest_version": "2.5.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3253,13 +3379,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.aeat347apr.cashvat.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat347apr.cashvat.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat347apr.cashvat.es",
         "name": "Spain AEAT Modelo 347 for APR Cash VAT compatible",
         "version": "1.10.0",
         "author": "Openbravo S.L.U.",
@@ -3277,7 +3409,7 @@
       },
       {
         "java_package": "org.openbravo.module.aeat347apr.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat347apr.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat347apr.es",
         "name": "Spain AEAT Modelo 347 for APR",
         "version": "4.19.0",
         "author": "Openbravo SLU",
@@ -3286,9 +3418,9 @@
         "latest_version": "5.3.0",
         "diff": {
           "modified_files": 2,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 3,
+          "diff_lines_added": 7,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3308,13 +3440,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.aeat347apr.es.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat347apr.es.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat347apr.es.es_es",
         "name": "Spain AEAT Modelo 347 for APR- Spanish Translation",
         "version": "1.15.0",
         "author": "Openbravo SLU",
@@ -3339,7 +3477,7 @@
       },
       {
         "java_package": "org.openbravo.module.aeat349.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat349.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat349.es",
         "name": "Modelo 349",
         "version": "2.17.0",
         "author": "Openbravo SLU",
@@ -3348,9 +3486,9 @@
         "latest_version": "3.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3364,13 +3502,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.aeat390.cashvat.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat390.cashvat.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat390.cashvat.es",
         "name": "Tax Report: Modelo 390 (Spain) Cash VAT compatible",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -3388,7 +3532,7 @@
       },
       {
         "java_package": "org.openbravo.module.aeat390.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat390.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat390.es",
         "name": "Tax Report: Modelo 390 (Spain)",
         "version": "3.18.0",
         "author": "Openbravo S.L.U.",
@@ -3397,9 +3541,9 @@
         "latest_version": "4.4.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3413,13 +3557,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.bptaxidkey",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.bptaxidkey",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.bptaxidkey",
         "name": "Tipo de N\u00famero de Identificaci\u00f3n de Tercero",
         "version": "0.11.0",
         "author": "Openbravo S.L.U.",
@@ -3444,7 +3594,7 @@
       },
       {
         "java_package": "org.openbravo.module.cashvat",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.cashvat",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.cashvat",
         "name": "Cash VAT Management",
         "version": "1.7.0",
         "author": "Openbravo SLU",
@@ -3487,7 +3637,7 @@
       },
       {
         "java_package": "org.openbravo.module.cifnifvalidator",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.cifnifvalidator",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.cifnifvalidator",
         "name": "CIF and NIF validator",
         "version": "1.11.0",
         "author": "Openbravo SLU",
@@ -3496,9 +3646,9 @@
         "latest_version": "2.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3512,13 +3662,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.cifnifvalidator.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.cifnifvalidator.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.cifnifvalidator.es_es",
         "name": "Validador de CIF y NIF",
         "version": "1.11.0",
         "author": "Openbravo SLU",
@@ -3543,7 +3699,7 @@
       },
       {
         "java_package": "org.openbravo.module.countryisocode",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.countryisocode",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.countryisocode",
         "name": "3 digits ISO country codes",
         "version": "1.11.0",
         "author": "Openbravo S.L.U",
@@ -3568,7 +3724,7 @@
       },
       {
         "java_package": "org.openbravo.module.cuaderno43.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.cuaderno43.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.cuaderno43.es",
         "name": "Cuaderno 43",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -3577,9 +3733,9 @@
         "latest_version": "2.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3593,13 +3749,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.epigrafes.iae.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.epigrafes.iae.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.epigrafes.iae.es",
         "name": "I.A.E. Epigraphs (Ep\u00edgrafes del I.A.E.)",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -3624,7 +3786,7 @@
       },
       {
         "java_package": "org.openbravo.module.eucountries",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.eucountries",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.eucountries",
         "name": "European Union countries",
         "version": "1.11.0",
         "author": "Openbravo S.L.U",
@@ -3633,9 +3795,9 @@
         "latest_version": "2.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3649,13 +3811,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.finactvalidator.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.finactvalidator.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.finactvalidator.es",
         "name": "Validador de n\u00famero de cuenta financiera",
         "version": "3.12.0",
         "author": "Openbravo S.L.U.",
@@ -3664,9 +3832,9 @@
         "latest_version": "4.2.1",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3680,13 +3848,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.incoterms",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.incoterms",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.incoterms",
         "name": "Incoterms",
         "version": "1.11.0",
         "author": "Openbravo S.L.U",
@@ -3711,7 +3885,7 @@
       },
       {
         "java_package": "org.openbravo.module.intrastat",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.intrastat",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.intrastat",
         "name": "Intrastat",
         "version": "3.14.1",
         "author": "Openbravo SLU",
@@ -3720,9 +3894,9 @@
         "latest_version": "4.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3736,13 +3910,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.intrastat.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.intrastat.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.intrastat.es_es",
         "name": "Intrastat \u2013 Spanish translation",
         "version": "1.14.1",
         "author": "Openbravo S.L.U",
@@ -3767,7 +3947,7 @@
       },
       {
         "java_package": "org.openbravo.module.intrastat.spain",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.intrastat.spain",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.intrastat.spain",
         "name": "Intrastat for Spain",
         "version": "1.14.1",
         "author": "Openbravo S.L.U",
@@ -3776,9 +3956,9 @@
         "latest_version": "2.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3792,13 +3972,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.invoicesregisterbook",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.invoicesregisterbook",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.invoicesregisterbook",
         "name": "Invoices Register Book",
         "version": "2.14.0",
         "author": "Openbravo S.L.U.",
@@ -3807,9 +3993,9 @@
         "latest_version": "3.3.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 3,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3835,13 +4021,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.invoicesregisterbook.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.invoicesregisterbook.es_es",
         "name": "Libro de Facturas",
         "version": "1.13.0",
         "author": "Openbravo S.L.U.",
@@ -3866,7 +4058,7 @@
       },
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.invoicesregisterbook.estaxes",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.invoicesregisterbook.estaxes",
         "name": "Configuraci\u00f3n de Impuestos para el Libro de Facturas",
         "version": "3.13.0",
         "author": "Openbravo S.L.U.",
@@ -3891,7 +4083,7 @@
       },
       {
         "java_package": "org.openbravo.module.invoicetaxreportenhanced30",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.invoicetaxreportenhanced30",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.invoicetaxreportenhanced30",
         "name": "Multidimensional Tax Report",
         "version": "3.11.1",
         "author": "Openbravo S.L.U.",
@@ -3900,9 +4092,9 @@
         "latest_version": "4.3.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 87,
+          "added_files": 88,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -3921,6 +4113,12 @@
               "path": ".gitignore",
               "status": "added",
               "lines_added": 0,
+              "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
               "lines_removed": 0
             },
             {
@@ -4444,7 +4642,7 @@
       },
       {
         "java_package": "org.openbravo.module.invoicetaxreportenhanced30.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.invoicetaxreportenhanced30.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.invoicetaxreportenhanced30.es_es",
         "name": "Multidimensional Tax Report Spanish (es_ES)",
         "version": "3.11.1",
         "author": "Openbravo S.L.U.",
@@ -4469,7 +4667,7 @@
       },
       {
         "java_package": "org.openbravo.module.organization.representative.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.organization.representative.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.organization.representative.es",
         "name": "Legal Representative of the Organization",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -4494,7 +4692,7 @@
       },
       {
         "java_package": "org.openbravo.module.paymentmethod.type",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.paymentmethod.type",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.paymentmethod.type",
         "name": "Payment Method Type",
         "version": "1.11.0",
         "author": "Openbravo SLU",
@@ -4519,7 +4717,7 @@
       },
       {
         "java_package": "org.openbravo.module.remittance",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.remittance",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.remittance",
         "name": "Remittances infrastructure",
         "version": "3.18.1",
         "author": "Openbravo S.L.U.",
@@ -4528,9 +4726,9 @@
         "latest_version": "4.3.1",
         "diff": {
           "modified_files": 3,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 11,
-          "diff_lines_added": 6,
+          "diff_lines_added": 10,
           "diff_lines_removed": 5,
           "files": [
             {
@@ -4616,13 +4814,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.remittance.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.remittance.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.remittance.template",
         "name": "Remittance Infrastructure Template",
         "version": "1.12.1",
         "author": "Futit Services S.L.",
@@ -4640,7 +4844,7 @@
       },
       {
         "java_package": "org.openbravo.module.sii",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.sii",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.sii",
         "name": "Spain SII",
         "version": "1.25.0",
         "author": "IMonferrer @ Opentix",
@@ -4649,9 +4853,9 @@
         "latest_version": "2.9.0",
         "diff": {
           "modified_files": 2,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 5,
+          "diff_lines_added": 9,
           "diff_lines_removed": 2,
           "files": [
             {
@@ -4671,13 +4875,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.sii.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.sii.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.sii.es_es",
         "name": "Spain SII Translation Spanish",
         "version": "1.25.0",
         "author": "IMonferrer @ Opentix",
@@ -4702,7 +4912,7 @@
       },
       {
         "java_package": "org.openbravo.module.sii.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.sii.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.sii.template",
         "name": "Spain SII Template",
         "version": "1.25.0",
         "author": "IMonferrer @ Opentix",
@@ -4727,7 +4937,7 @@
       },
       {
         "java_package": "org.openbravo.module.taximprovements.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.taximprovements.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.taximprovements.es",
         "name": "Spanish Tax Module Improvements",
         "version": "0.11.0",
         "author": "Openbravo SLU",
@@ -4752,7 +4962,7 @@
       },
       {
         "java_package": "org.openbravo.module.taximprovements.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.taximprovements.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.taximprovements.es_es",
         "name": "M\u00f3dulo de Impuestos para Espa\u00f1a mejorado",
         "version": "0.11.0",
         "author": "Openbravo SLU",
@@ -4777,7 +4987,7 @@
       },
       {
         "java_package": "org.openbravo.module.taxreportlauncher",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.taxreportlauncher",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.taxreportlauncher",
         "name": "Tax Report Launcher",
         "version": "1.12.0",
         "author": "Openbravo SLU",
@@ -4786,9 +4996,9 @@
         "latest_version": "2.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -4802,13 +5012,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.module.taxreportlauncher.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.taxreportlauncher.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.taxreportlauncher.es",
         "name": "Generador de declaraciones de impuestos",
         "version": "1.12.0",
         "author": "Openbravo S.L.U",
@@ -4833,7 +5049,7 @@
       },
       {
         "java_package": "org.openbravo.numbertoword",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.numbertoword",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.numbertoword",
         "name": "Number To Word",
         "version": "1.22.0",
         "author": "Openbravo S.L.U.",
@@ -4842,9 +5058,9 @@
         "latest_version": "2.3.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -4858,13 +5074,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.numbertoword.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.numbertoword.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.numbertoword.es_es",
         "name": "Number To Word Spanish Translation",
         "version": "1.13.0",
         "author": "Openbravo S.L.U.",
@@ -4882,7 +5104,7 @@
       },
       {
         "java_package": "org.openbravo.numbertoword_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.numbertoword_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.numbertoword_es",
         "name": "Number To Word (Spanish)",
         "version": "1.13.0",
         "author": "Openbravo SLU",
@@ -4891,9 +5113,9 @@
         "latest_version": "1.13.0",
         "diff": {
           "modified_files": 0,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 0,
+          "diff_lines_added": 4,
           "diff_lines_removed": 0,
           "files": [
             {
@@ -4901,13 +5123,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.proflocalization.spain.dataset",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.proflocalization.spain.dataset",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.proflocalization.spain.dataset",
         "name": "Professional Localization pack Spain (Espa\u00f1a) Datasets",
         "version": "1.17.1",
         "author": "Openbravo SLU",
@@ -4932,7 +5160,7 @@
       },
       {
         "java_package": "org.openbravo.reports.ordersawaitingdelivery.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.reports.ordersawaitingdelivery.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.reports.ordersawaitingdelivery.es_es",
         "name": "Orders Awaiting Delivery Spanish (Spain) Translation",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -4957,7 +5185,7 @@
       },
       {
         "java_package": "org.openbravo.service.datasource.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.service.datasource.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.service.datasource.es_es",
         "name": "JSON Datasource Translation: Spanish Spain (es_ES)",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -4982,7 +5210,7 @@
       },
       {
         "java_package": "org.openbravo.service.integration.google.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.service.integration.google.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.service.integration.google.es_es",
         "name": "Integration with Google APIs Translation Spanish Spain",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -5007,7 +5235,7 @@
       },
       {
         "java_package": "org.openbravo.service.integration.openid.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.service.integration.openid.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.service.integration.openid.es_es",
         "name": "OpenID Service Integration Translation Spanish Spain",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -5032,7 +5260,7 @@
       },
       {
         "java_package": "org.openbravo.spain.regions",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.spain.regions",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.spain.regions",
         "name": "Provincias de Espa\u00f1a",
         "version": "1.11.0",
         "author": "Openbravo SLU",
@@ -5057,7 +5285,7 @@
       },
       {
         "java_package": "org.openbravo.spanishdefaultdata.paymentmethods",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.spanishdefaultdata.paymentmethods",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.spanishdefaultdata.paymentmethods",
         "name": "M\u00e9todos de Pago",
         "version": "1.12.0",
         "author": "Openbravo S.L.U.",
@@ -5082,7 +5310,7 @@
       },
       {
         "java_package": "org.openbravo.spanishdefaultdata.paymentterms",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.spanishdefaultdata.paymentterms",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.spanishdefaultdata.paymentterms",
         "name": "Condiciones de pago",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -5091,9 +5319,9 @@
         "latest_version": "2.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -5107,13 +5335,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.userinterface.selector.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.userinterface.selector.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.userinterface.selector.es_es",
         "name": "User Interface Selector Translation: Spanish Spain (es_ES)",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -5138,7 +5372,7 @@
       },
       {
         "java_package": "org.openbravo.userinterface.smartclient.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.userinterface.smartclient.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.userinterface.smartclient.es_es",
         "name": "Smartclient Translation: Spanish Spain (es_ES)",
         "version": "1.11.0",
         "author": "Openbravo S.L.U.",
@@ -5163,7 +5397,7 @@
       },
       {
         "java_package": "org.openbravo.utility.multiplebpselector",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.utility.multiplebpselector",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.utility.multiplebpselector",
         "name": "Openbravo Multi Business Partner Selector",
         "version": "1.12.0",
         "author": "Etendo Software",
@@ -5172,9 +5406,9 @@
         "latest_version": "2.2.0",
         "diff": {
           "modified_files": 1,
-          "added_files": 0,
+          "added_files": 1,
           "deleted_files": 1,
-          "diff_lines_added": 1,
+          "diff_lines_added": 5,
           "diff_lines_removed": 1,
           "files": [
             {
@@ -5188,13 +5422,19 @@
               "status": "deleted",
               "lines_added": 0,
               "lines_removed": 0
+            },
+            {
+              "path": "bin/main/META-INF/beans.xml",
+              "status": "added",
+              "lines_added": 4,
+              "lines_removed": 0
             }
           ]
         }
       },
       {
         "java_package": "org.openbravo.utility.multiplebpselector.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.utility.multiplebpselector.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.utility.multiplebpselector.es_es",
         "name": "Openbravo Multi Business Partner Selector Spanish (Spain)",
         "version": "1.12.0",
         "author": "Openbravo S.L.U.",
@@ -5212,7 +5452,7 @@
       },
       {
         "java_package": "org.openbravo.v3.translation.pack.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.v3.translation.pack.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.v3.translation.pack.es_es",
         "name": "Openbravo 3.0 Translation Pack: Spanish Spain (es_ES)",
         "version": "3.17.0",
         "author": "Openbravo SLU",
@@ -5239,700 +5479,700 @@
     "local_not_maintained": [
       {
         "java_package": "com.etendoerp.accounting.templates.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.accounting.templates.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.accounting.templates.es_es",
         "name": "Nuevas plantillas de contabilidad",
         "version": "1.4.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.advanced.bank.account.management.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.advanced.bank.account.management.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.advanced.bank.account.management.es_es",
         "name": "Advanced Bank Account Management - Spanish translation",
         "version": "1.1.0",
         "author": null
       },
       {
         "java_package": "com.etendoerp.advanced.bpsettlement.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.advanced.bpsettlement.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.advanced.bpsettlement.es_es",
         "name": "Liquidaci\u00f3n Avanzada de Socios Comerciales",
         "version": "1.2.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.advanced.financial.docs.processing.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.advanced.financial.docs.processing.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.advanced.financial.docs.processing.es_es",
         "name": "Procesamiento Avanzado de Documentos Financieros",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.advanced.intercompany.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.advanced.intercompany.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.advanced.intercompany.es_es",
         "name": "Intercompany Avanzado",
         "version": "1.4.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.analytics.exporter",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.analytics.exporter",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.analytics.exporter",
         "name": "Etendo Analytics Exporter",
         "version": "3.2.0",
         "author": "Futit Services S.L."
       },
       {
         "java_package": "com.etendoerp.bankingpool.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.bankingpool.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.bankingpool.es_es",
         "name": "Pool Bancario",
         "version": "1.4.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.bulk.posting.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.bulk.posting.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.bulk.posting.es_es",
         "name": "Contabilizaci\u00f3n Masiva",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.financial.extensions",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.financial.extensions",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.financial.extensions",
         "name": "Financial Extensions",
         "version": "1.26.2",
         "author": "Futit Services S.L."
       },
       {
         "java_package": "com.etendoerp.financial.extensions.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.financial.extensions.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.financial.extensions.es_es",
         "name": "Financial Extensions - Spanish Translation",
         "version": "1.9.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.financial.reports.advanced.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.financial.reports.advanced.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.financial.reports.advanced.es_es",
         "name": "Informes Financieros Avanzados",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.gljournal.advanced.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.gljournal.advanced.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.gljournal.advanced.es_es",
         "name": "Asientos Manuales Avanzados",
         "version": "1.6.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.localization.spain.extensions",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.localization.spain.extensions",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.localization.spain.extensions",
         "name": "Spain Localization Extensions",
         "version": "1.27.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.payment.removal.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.payment.removal.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.payment.removal.es_es",
         "name": "Eliminaci\u00f3n de Pagos",
         "version": "1.5.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.quotation.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.quotation.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.quotation.es_es",
         "name": "Etendo Quotation Features Translation: Spanish Spain (es_ES)",
         "version": "1.5.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.rappels.advanced.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.rappels.advanced.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.rappels.advanced.es_es",
         "name": "Rappels Avanzados",
         "version": "1.1.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.sales.extensions",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.sales.extensions",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.sales.extensions",
         "name": "Sales Extensions",
         "version": "1.12.0",
         "author": "Futit Services S.L."
       },
       {
         "java_package": "com.etendoerp.sales.extensions.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.sales.extensions.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.sales.extensions.es_es",
         "name": "Sales Extensions - Spanish Translation",
         "version": "1.6.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.etendoerp.vat.regularization.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.etendoerp.vat.regularization.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.etendoerp.vat.regularization.es_es",
         "name": "VAT Regularization - Spanish Translation",
         "version": "1.0.1",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.openbravo.gps.finance.balanceexcelexport.report",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.openbravo.gps.finance.balanceexcelexport.report",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.openbravo.gps.finance.balanceexcelexport.report",
         "name": "P&L and Balance Sheet export to excel",
         "version": "1.0.7",
         "author": "GPS"
       },
       {
         "java_package": "com.openbravo.gps.finance.balanceexcelexport.report.es_ES",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.openbravo.gps.finance.balanceexcelexport.report.es_ES",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.openbravo.gps.finance.balanceexcelexport.report.es_ES",
         "name": "PyG y Balance exportaci\u00f3n a excel",
         "version": "1.0.1",
         "author": "GPS"
       },
       {
         "java_package": "com.openbravo.gps.idl.invoices",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.openbravo.gps.idl.invoices",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.openbravo.gps.idl.invoices",
         "name": "Initial Data Load Extension for Invoices",
         "version": "1.0.5",
         "author": "GPS"
       },
       {
         "java_package": "com.openbravo.gps.idl.stock",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.openbravo.gps.idl.stock",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.openbravo.gps.idl.stock",
         "name": "Initial Data Load extension for Stock",
         "version": "1.1.1",
         "author": "GPS - Openbravo"
       },
       {
         "java_package": "com.openbravo.gps.manageattributes",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.openbravo.gps.manageattributes",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.openbravo.gps.manageattributes",
         "name": "Manage Attributes",
         "version": "1.0.2",
         "author": "Openbravo - GPS"
       },
       {
         "java_package": "com.openbravo.gps.showpostedgrid",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.openbravo.gps.showpostedgrid",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.openbravo.gps.showpostedgrid",
         "name": "Show Posted Column in Grid Mode",
         "version": "1.0.0",
         "author": "GPS - Openbravo"
       },
       {
         "java_package": "com.smf.additionalpocolumns",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.additionalpocolumns",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.additionalpocolumns",
         "name": "Additional PO Columns",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.smf.additionalpocolumns.es_ES",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.additionalpocolumns.es_ES",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.additionalpocolumns.es_ES",
         "name": "Additional PO Columns Translation Spanish",
         "version": "1.0.1",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.additionalpocolumns.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.additionalpocolumns.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.additionalpocolumns.template",
         "name": "Additional PO Columns Template",
         "version": "1.0.1",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.asset.amortization.report.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.asset.amortization.report.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.asset.amortization.report.es_es",
         "name": "Asset Amortization Report - Spanish translation",
         "version": "1.1.0",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.acctcostadjustment",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.acctcostadjustment",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.acctcostadjustment",
         "name": "SMF Plantilla Contable Ajuste de Costo",
         "version": "1.0.0",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.bed4u.alertwidget",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.alertwidget",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.alertwidget",
         "name": "SMF Alert Widget",
         "version": "1.0.1",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.bed4u.alertwidget.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.alertwidget.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.alertwidget.es_es",
         "name": "SMF Alert Widget Translation sp",
         "version": "1.0.1",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.bed4u.contract.dimensions",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.contract.dimensions",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.contract.dimensions",
         "name": "SMF Contract Dimensions",
         "version": "1.0.1",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.bed4u.contract.dimensions.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.contract.dimensions.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.contract.dimensions.es_es",
         "name": "SMF Contract Dimensions Translation sp",
         "version": "1.0.1",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.bed4u.cube.invoice",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.cube.invoice",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.cube.invoice",
         "name": "SMF Cube Invoice",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.customizations",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.customizations",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.customizations",
         "name": "Customizaciones Bed4U",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.dataintegration",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.dataintegration",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.dataintegration",
         "name": "Integracion Datos Bed4U",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.dimensional",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.dimensional",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.dimensional",
         "name": "SMF Dimensional",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.dimensional.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.dimensional.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.dimensional.es_es",
         "name": "SMF Dimensional Translation Sp",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.invoicebutton",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.invoicebutton",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.invoicebutton",
         "name": "SMF Invoice Button",
         "version": "1.0.1",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.bed4u.invoicebutton.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.invoicebutton.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.invoicebutton.es_es",
         "name": "SMF Invoice Button Translation Sp",
         "version": "1.0.1",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.bed4u.journalreports",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.journalreports",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.journalreports",
         "name": "Journal Reports BII",
         "version": "1.0.0",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.bed4u.ledger",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.ledger",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.ledger",
         "name": "SMF General Ledger",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.ledger.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.ledger.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.ledger.es_es",
         "name": "SMF General Ledger Translation Sp",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.movementacctprocess",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.movementacctprocess",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.movementacctprocess",
         "name": "SMF BED4U Movement Acct Process",
         "version": "1.0.0",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.bed4u.printing.reports",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.printing.reports",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.printing.reports",
         "name": "Informes Imprimibles",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.remittanceselector",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.remittanceselector",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.remittanceselector",
         "name": "Remittance Selector",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.report.trialbalance",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.report.trialbalance",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.report.trialbalance",
         "name": "SMF Trial Balance",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.report.trialbalance.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.report.trialbalance.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.report.trialbalance.es_es",
         "name": "SMF Trial Balance Translation Sp",
         "version": "1.0.1",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.scan",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.scan",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.scan",
         "name": "Escanear y adjuntar documentos",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.bed4u.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bed4u.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bed4u.template",
         "name": "Plantilla Bed4U",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.bedu.acctfinacctransaction",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bedu.acctfinacctransaction",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bedu.acctfinacctransaction",
         "name": "SMF Accounting Template FinaccTransaction",
         "version": "1.0.1",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.bef4u.goodsmovements.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bef4u.goodsmovements.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bef4u.goodsmovements.template",
         "name": "Goods Movements Template",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.budget.report.base",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.budget.report.base",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.budget.report.base",
         "name": "Budget Reports",
         "version": "1.0.0",
         "author": "SMF"
       },
       {
         "java_package": "com.smf.currency.apiconfig.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.currency.apiconfig.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.currency.apiconfig.es_es",
         "name": "Configuraci\u00f3n de la API de Moneda",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "com.smf.currency.conversionrate.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.currency.conversionrate.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.currency.conversionrate.es_es",
         "name": "Descargador de Tasa de Conversi\u00f3n",
         "version": "1.3.0",
         "author": null
       },
       {
         "java_package": "com.smf.directprint",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.directprint",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.directprint",
         "name": "Direct Print",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.gljournal.reverse.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.gljournal.reverse.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.gljournal.reverse.es_es",
         "name": "Anulaci\u00f3n de Asientos Manuales",
         "version": "1.1.0",
         "author": null
       },
       {
         "java_package": "com.smf.goodsreceipt.createfromorder",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.goodsreceipt.createfromorder",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.goodsreceipt.createfromorder",
         "name": "Crear Albar\u00e1n Proveedor desde Pedido de Compra",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.importdata",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.importdata",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.importdata",
         "name": "Importar Datos",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.inventoryreport",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.inventoryreport",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.inventoryreport",
         "name": "Informe de Inventario",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.invoicevalidation",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.invoicevalidation",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.invoicevalidation",
         "name": "Validacion de Facturas",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.invoicevalidation.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.invoicevalidation.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.invoicevalidation.template",
         "name": "Template Validacion de Facturas",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.product.fixedprice",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.product.fixedprice",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.product.fixedprice",
         "name": "Productos con Precio Fijo",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.product.fixedprice.template",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.product.fixedprice.template",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.product.fixedprice.template",
         "name": "Template Productos con Precio Fijo",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.productcategory.variationofexistences",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.productcategory.variationofexistences",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.productcategory.variationofexistences",
         "name": "Variacion de Existencias",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.scan",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.scan",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.scan",
         "name": "Scan and attach documents",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "com.smf.ticketbai.es_ES",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.ticketbai.es_ES",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.ticketbai.es_ES",
         "name": "Modulo de traduccion al espa\u00f1ol de TicketBAI",
         "version": "1.0.0",
         "author": null
       },
       {
         "java_package": "org.openbravo.bankstatement.importer.generic.csv",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.bankstatement.importer.generic.csv",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.bankstatement.importer.generic.csv",
         "name": "CSV Generic Bank Statement Importer",
         "version": "1.1.100",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.contract",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.contract",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.contract",
         "name": "Contract Management Infrastructure",
         "version": "1.1.101",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.contract.services",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.contract.services",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.contract.services",
         "name": "Service Contract Management",
         "version": "1.2.200",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.financial.bpsettlement.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.financial.bpsettlement.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.financial.bpsettlement.es_es",
         "name": "Liquidaciones de Terceros",
         "version": "1.3.0",
         "author": "Etendo Software"
       },
       {
         "java_package": "org.openbravo.financialmgmt.accounting.report.notposted",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.financialmgmt.accounting.report.notposted",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.financialmgmt.accounting.report.notposted",
         "name": "Not Posted Transactions",
         "version": "1.1.1000",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.idl",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.idl",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.idl",
         "name": "Initial Data Load",
         "version": "3.0.204000",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.aeat340.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.aeat340.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.aeat340.es",
         "name": "Tax Report: Modelo 340 (Spain)",
         "version": "3.8.200",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.cuaderno19.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.cuaderno19.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.cuaderno19.es",
         "name": "Cuaderno 19",
         "version": "1.2.12",
         "author": null
       },
       {
         "java_package": "org.openbravo.module.cuaderno34.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.cuaderno34.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.cuaderno34.es",
         "name": "Cuaderno 34",
         "version": "1.2.9",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.cuaderno58.es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.cuaderno58.es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.cuaderno58.es",
         "name": "Cuaderno 58",
         "version": "3.0.4",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.einvoice",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.einvoice",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.einvoice",
         "name": "Electronic Invoice",
         "version": "0.1.300",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.module.einvoice.es_ES",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.einvoice.es_ES",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.einvoice.es_ES",
         "name": "Facturaci\u00f3n Electr\u00f3nica",
         "version": "0.1.204000",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.module.facturae",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.facturae",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.facturae",
         "name": "Facturae API",
         "version": "2.0.100",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.module.facturae31",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.facturae31",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.facturae31",
         "name": "Facturaci\u00f3n Electr\u00f3nica - Facturae 3.1",
         "version": "0.3.100",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.facturae32",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.facturae32",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.facturae32",
         "name": "Facturaci\u00f3n Electr\u00f3nica - Facturae 3.2",
         "version": "0.1.0",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.idljava",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.idljava",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.idljava",
         "name": "Initial Data Load Extension for Java",
         "version": "1.4.0",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.invoiceTaxReportEnhanced30.cashvat",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.invoiceTaxReportEnhanced30.cashvat",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.invoiceTaxReportEnhanced30.cashvat",
         "name": "Multidimensional Tax Report Cash VAT",
         "version": "1.3.200",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.invoiceTaxReportEnhanced30.cashvat.es_ES",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.invoiceTaxReportEnhanced30.cashvat.es_ES",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.invoiceTaxReportEnhanced30.cashvat.es_ES",
         "name": "Multidimensional Tax Report Cash VAT Spanish (es_ES)",
         "version": "1.0.1",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.invoicematchingalgorithm",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.invoicematchingalgorithm",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.invoicematchingalgorithm",
         "name": "Advanced Matching Algorithm",
         "version": "2.0.301",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.invoicesregisterbook.estaxes.cashvat",
         "name": "Configuraci\u00f3n IVA de Caja para el Libro de Facturas",
         "version": "1.2.0",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.remittance.es_es",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.remittance.es_es",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.remittance.es_es",
         "name": "Remittances infrastructure - Spanish Translation",
         "version": "1.6.0",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.module.wscamerfactura",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.module.wscamerfactura",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.module.wscamerfactura",
         "name": "Camerfactura",
         "version": "0.2.400",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.proflocalization.spain.dataset.cashvat",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.proflocalization.spain.dataset.cashvat",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.proflocalization.spain.dataset.cashvat",
         "name": "Professional Localization pack Spain Cash VAT Datasets",
         "version": "1.3.0",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.proflocalization.spain30.cashvat",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.proflocalization.spain30.cashvat",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.proflocalization.spain30.cashvat",
         "name": "Professional Localization pack Spain (Espa\u00f1a) Cash VAT",
         "version": "1.18.0",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.sepa.iso20022",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.sepa.iso20022",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.sepa.iso20022",
         "name": "SEPA Framework and Utilities",
         "version": "1.0.204000",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.sepa.iso20022.camt",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.sepa.iso20022.camt",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.sepa.iso20022.camt",
         "name": "SEPA Bank-to-Customer Statement",
         "version": "1.0.400",
         "author": "Openbravo S.L.U"
       },
       {
         "java_package": "org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.sepa.iso20022.coredirectdebit.customertobank",
         "name": "SEPA Direct Debit Customer-to-Bank (CORE and B2B)",
         "version": "1.0.204000",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.sepa.iso20022.credittransfer.customertobank",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.sepa.iso20022.credittransfer.customertobank",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.sepa.iso20022.credittransfer.customertobank",
         "name": "SEPA Credit Transfer Customer-to-Bank",
         "version": "1.0.204000",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.util.jaxws",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.util.jaxws",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.util.jaxws",
         "name": "JAX-WS Java API for XML Web Services",
         "version": "2.3.3",
         "author": "Openbravo S.L.U."
       },
       {
         "java_package": "org.openbravo.utility.draganddropselector3lists",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.utility.draganddropselector3lists",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.utility.draganddropselector3lists",
         "name": "Drag And Drop Selector Three Lists",
         "version": "1.0.100",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.utility.draganddropselector3listsimplementation",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.utility.draganddropselector3listsimplementation",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.utility.draganddropselector3listsimplementation",
         "name": "Drag And Drop Selector Three Lists Implementation",
         "version": "1.0.301",
         "author": "Openbravo SLU"
       },
       {
         "java_package": "org.openbravo.utility.opencsv",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/org.openbravo.utility.opencsv",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/org.openbravo.utility.opencsv",
         "name": "OpenCSV",
         "version": "1.0.0",
         "author": null
@@ -5941,7 +6181,7 @@
     "custom": [
       {
         "java_package": "com.smf.bercaber.purchaseinvoiceexpert",
-        "path": "/home/pixel/Escritorio/Futit/Workspaces/Bercaber/backups/Bercaber/modules/com.smf.bercaber.purchaseinvoiceexpert",
+        "path": "/home/pixel/Escritorio/Futit/Environment/etendo-migration-agent-opencode/backups/Bercaber/Bercaber/sources/modules/com.smf.bercaber.purchaseinvoiceexpert",
         "name": "Purchase Invoice Expert Custom",
         "version": "1.0.0",
         "author": null,
@@ -6001,584 +6241,6 @@
         "status": "modified",
         "lines_added": 59,
         "lines_removed": 56
-      }
-    ]
-  },
-  "custom_assessment": {
-    "assessor_version": "2.0",
-    "generated": "2026-04-21",
-    "mixpanel_source_instance": "Bercaber",
-    "mixpanel_date_range": "90 días",
-    "core_customizations": [
-      {
-        "name": "Formal changes script autogenerado",
-        "description": "Archivo de migracion de base de datos autogenerado por export/update.database. No contiene logica de negocio y refleja cambios del entorno expandido.",
-        "files": [
-          "src-db/database/formalChangesScript.xml"
-        ],
-        "lines_changed": 7720,
-        "conclusion": "eliminate",
-        "justification": "Es un artefacto generado del baseline expandido. No conviene migrarlo como customizacion funcional: al subir a 25.4.x debe regenerarse desde el modelo correcto.",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 0
-      },
-      {
-        "name": "Espejo exportado de columna custom en C_Invoice",
-        "description": "Cambio minimo en el modelo core exportado para reflejar la columna EM_PIC_CREATEDBYCOPILOT usada por Purchase Invoice Expert.",
-        "files": [
-          "src-db/database/model/tables/C_INVOICE.xml"
-        ],
-        "lines_changed": 2,
-        "conclusion": "eliminate",
-        "justification": "La customizacion real vive en el modulo com.smf.bercaber.purchaseinvoiceexpert. El cambio en core es solo el espejo exportado del modelo y no debe mantenerse como parche separado.",
-        "api_changes_applicable": [],
-        "effort_update_hours": 1,
-        "effort_saas_hours": 0
-      },
-      {
-        "name": "Parche de infraestructura en HttpBaseUtils",
-        "description": "Override local de la deteccion de host para forzar esquema HTTPS al construir URLs absolutas desde el backend.",
-        "files": [
-          "src-core/src/org/openbravo/base/HttpBaseUtils.java"
-        ],
-        "lines_changed": 2,
-        "conclusion": "eliminate",
-        "justification": "Es un parche de entorno, no una mejora generalizable de negocio. En 25.4.x debe resolverse con proxy/cabeceras correctas o con configuracion soportada, no con un fork de core.",
-        "api_changes_applicable": [
-          "Revisar cambios de infraestructura web y generacion de URLs al migrar a 25.4.x para evitar hardcodes de esquema"
-        ],
-        "effort_update_hours": 2,
-        "effort_saas_hours": 2
-      },
-      {
-        "name": "Ajuste local en importacion de extractos bancarios APRM",
-        "description": "Parche pequeno sobre FIN_BankStatementImport dentro de advanced payments para adaptar el flujo legacy de importacion bancaria del cliente.",
-        "files": [
-          "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/utility/FIN_BankStatementImport.java"
-        ],
-        "lines_changed": 6,
-        "conclusion": "eliminate",
-        "justification": "Es una variacion de comportamiento sobre modulo core legacy de pagos. Conviene absorberla en una extension mantenida o descartarla si 25.4.x ya cubre el caso, evitando seguir con un fork en modules_core.",
-        "api_changes_applicable": [
-          "Validar compatibilidad del flujo APRM y de importadores bancarios legacy al pasar a 25.4.x"
-        ],
-        "effort_update_hours": 4,
-        "effort_saas_hours": 3
-      },
-      {
-        "name": "Customizacion del selector Add Payment Order/Invoices",
-        "description": "Transformacion HQL custom para la grilla de add payment sobre pedidos/facturas, agregando columnas y reglas especificas del flujo financiero actual.",
-        "files": [
-          "modules_core/org.openbravo.advpaymentmngt/src/org/openbravo/advpaymentmngt/hqlinjections/AddPaymentOrderInvoicesTransformer.java"
-        ],
-        "lines_changed": 115,
-        "conclusion": "eliminate",
-        "justification": "Es un ajuste funcional puntual del selector de pagos. Mantenerlo como fork de modules_core encarece cada upgrade; para 25.4.x conviene revalidar el requerimiento y moverlo a extension soportada solo si sigue siendo necesario.",
-        "api_changes_applicable": [
-          "Revisar compatibilidad de HQLDataSourceService y transformers custom del modulo APRM en 25.4.x"
-        ],
-        "effort_update_hours": 10,
-        "effort_saas_hours": 6
-      }
-    ],
-    "custom_modules": [
-      {
-        "java_package": "com.smf.bercaber.purchaseinvoiceexpert",
-        "name": "Purchase Invoice Expert Custom",
-        "description": "Modulo grande y claramente cliente-especifico para automatizar la creacion y ajuste de facturas de compra asistidas por Copilot. Agrega dos ventanas de configuracion, un selector, cinco webhooks para obtener configuracion/modificar factura y lineas, un proceso background para ejecutar tareas Copilot y una marca tecnica en C_Invoice (EM_PIC_CREATEDBYCOPILOT).",
-        "generalization": "client_specific",
-        "complexity": "critical",
-        "usage_score": 2,
-        "windows_used": [
-          "Purchase Invoice"
-        ],
-        "windows_unused": [],
-        "elimination_candidate": false,
-        "api_changes_applicable": [
-          "Apache Commons Lang 2 -> 3: el modulo usa org.apache.commons.lang.StringUtils en webhooks y procesos, import que debe migrarse en Etendo 25.x",
-          "Hibernate 5.4 -> 5.6: usa Criteria/Restrictions y tipos legacy que requieren smoke test y posible refactor menor",
-          "Alineacion de dependencias Copilot/Webhook Events: depende de Copilot Agents >= 1.3.6 y del stack async actual para ejecutar tareas de IA"
-        ],
-        "effort_update_hours": 24,
-        "effort_saas_hours": 40,
-        "recommendation": "Mantenerlo como modulo cliente-especifico para Ruta A, migrando imports legacy y validando end-to-end webhooks, background task y persistencia en facturas. Para Ruta B no parece bundle candidate: conviene desacoplar la parte de ingesta/IA hacia servicios soportados de Etendo RX o Copilot y simplificar el flujo a configuracion por cliente."
-      }
-    ],
-    "unmaintained_modules": [
-      {
-        "java_package": "_official_etendo_bundle_copies",
-        "name": "Copias locales de bundles Etendo/Spain sin seguimiento de release",
-        "function": "Agrupa Financial Extensions, Sales Extensions, Spain Localization Extensions y sus packs asociados/translations instalados como modulos locales sin metadata de version objetivo dentro del reporte actual.",
-        "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "Bundles oficiales Etendo 25.4.x publicados y mantenidos externamente",
-        "generalization": "redundant",
-        "api_changes_applicable": [
-          "Reemplazar copias locales por releases oficiales de 25.4.x para evitar seguir manteniendo variantes sin trazabilidad"
-        ],
-        "effort_update_hours": 24,
-        "effort_saas_hours": 12,
-        "recommendation": "Priorizar la sustitucion por bundles oficiales. El mayor riesgo no es funcional sino operativo: hoy el cliente arrastra snapshots locales de bundles amplios y eso dificulta saber que esta realmente soportado."
-      },
-      {
-        "java_package": "_spain_einvoice_stack",
-        "name": "Stack de facturacion electronica Espana",
-        "function": "Agrupa org.openbravo.module.einvoice, org.openbravo.module.facturae, facturae31, facturae32 y org.openbravo.module.wscamerfactura para generacion e intercambio de factura electronica.",
-        "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "bundle_candidate",
-        "api_changes_applicable": [
-          "Auditar compatibilidad de librerias XML/WS y formatos Facturae al actualizar a 25.4.x"
-        ],
-        "effort_update_hours": 24,
-        "effort_saas_hours": 12,
-        "recommendation": "Es un frente legal/fiscal, asi que no conviene ignorarlo. Si no existe reemplazo oficial claro en Etendo, hay que forkar y probar el stack completo cuanto antes o mover este frente a un proveedor externo especializado."
-      },
-      {
-        "java_package": "_sepa_and_banking_formats",
-        "name": "SEPA y formatos bancarios legacy",
-        "function": "Agrupa org.openbravo.sepa.iso20022, camt, direct debit, credit transfer y los formatos Cuaderno 19/34/58 todavia presentes en la instalacion.",
-        "risk": "high",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "bundle_candidate",
-        "usage_score": 1,
-        "windows_used": [
-          "Create Remittance File"
-        ],
-        "windows_unused": [],
-        "elimination_candidate": false,
-        "api_changes_applicable": [
-          "Validar compatibilidad de generacion/parseo bancario y librerias XML al migrar a 25.4.x"
-        ],
-        "effort_update_hours": 20,
-        "effort_saas_hours": 8,
-        "recommendation": "Separar lo obligatorio de lo obsoleto. SEPA sigue siendo critico; los cuadernos legacy hay que confirmar si realmente siguen activos para no migrar peso muerto."
-      },
-      {
-        "java_package": "_legacy_import_stack",
-        "name": "IDL e importadores legacy",
-        "function": "Agrupa org.openbravo.idl, org.openbravo.module.idljava, com.openbravo.gps.idl.invoices, com.openbravo.gps.idl.stock y com.smf.importdata.",
-        "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "Etendo RX / ETL moderno / integraciones soportadas",
-        "generalization": "redundant",
-        "api_changes_applicable": [
-          "El framework IDL es legacy y conviene reemplazarlo por integraciones modernas o APIs RX"
-        ],
-        "effort_update_hours": 8,
-        "effort_saas_hours": 6,
-        "recommendation": "No invertir demasiado en modernizar IDL si el objetivo real es SaaS o integracion moderna. Para Ruta A alcanza con mantener lo minimo que siga usandose; para Ruta B conviene migrarlo fuera del stack legacy."
-      },
-      {
-        "java_package": "_legacy_ui_utilities",
-        "name": "Utilidades UI/operativas legacy del cliente",
-        "function": "Agrupa com.smf.directprint, com.smf.scan, com.smf.invoicevalidation, com.smf.additionalpocolumns, com.smf.goodsreceipt.createfromorder y org.openbravo.utility.draganddropselector3lists*.",
-        "risk": "medium",
-        "has_official_replacement": true,
-        "official_replacement_name": "Process Definitions, APIs de adjuntos y componentes React/selector soportados",
-        "generalization": "client_specific",
-        "api_changes_applicable": [
-          "Estas utilidades dependen fuerte de la UI legacy y deben revisarse junto con la migracion a React UI"
-        ],
-        "effort_update_hours": 14,
-        "effort_saas_hours": 10,
-        "recommendation": "Cruzar estas utilidades con la nueva UI antes de actualizar. Varias pueden eliminarse o reescribirse como procesos puntuales en vez de seguir cargando modulos enteros legacy."
-      },
-      {
-        "java_package": "_legacy_reporting_tools",
-        "name": "Reportes y ayudas financieras legacy GPS/SMF",
-        "function": "Agrupa com.openbravo.gps.finance.balanceexcelexport.report, com.smf.inventoryreport, com.smf.budget.report.base, com.smf.product.fixedprice* y com.smf.productcategory.variationofexistences.",
-        "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "bundle_candidate",
-        "usage_score": 1,
-        "windows_used": [
-          "Material Transaction Report",
-          "Trial Balance SMF",
-          "SMF Report General Ledger"
-        ],
-        "windows_unused": [],
-        "elimination_candidate": false,
-        "api_changes_applicable": [
-          "Revisar compatibilidad de Jasper/POI/exportacion Excel y de reportes legacy al pasar a 25.4.x"
-        ],
-        "effort_update_hours": 16,
-        "effort_saas_hours": 10,
-        "recommendation": "Primero confirmar uso real. Si estos reportes siguen siendo clave, conviene reagruparlos en un paquete mantenible; si no, son buenos candidatos a limpieza antes de la migracion."
-      },
-      {
-        "java_package": "_openbravo_contracts_and_finance_helpers",
-        "name": "Contratos y helpers financieros Openbravo antiguos",
-        "function": "Agrupa org.openbravo.contract, org.openbravo.contract.services y org.openbravo.bankstatement.importer.generic.csv que siguen presentes como dependencias legacy.",
-        "risk": "medium",
-        "has_official_replacement": false,
-        "official_replacement_name": null,
-        "generalization": "client_specific",
-        "api_changes_applicable": [
-          "Validar compatibilidad de contratos, servicios y bank statement CSV con el stack actual de 25.4.x"
-        ],
-        "effort_update_hours": 10,
-        "effort_saas_hours": 6,
-        "recommendation": "Revisar si estas piezas siguen siendo dependencias vivas o quedaron por arrastre historico. Si no tienen uso, conviene retirarlas antes de encarar la actualizacion."
-      },
-      {
-        "java_package": "_translations_low_risk_group",
-        "name": "Packs de traduccion y modulos satelite de bajo riesgo",
-        "function": "Agrupa el volumen grande de traducciones es_ES y satelites sin codigo propio relevante detectados dentro de local_not_maintained.",
-        "risk": "low",
-        "has_official_replacement": true,
-        "official_replacement_name": "Packs oficiales de traduccion y de localizacion asociados a cada bundle principal",
-        "generalization": "redundant",
-        "api_changes_applicable": [],
-        "effort_update_hours": 0,
-        "effort_saas_hours": 0,
-        "recommendation": "No tratarlos como frente separado. Deben seguir el destino de sus modulos principales y reemplazarse por las versiones oficiales cuando se normalicen los bundles base."
-      }
-    ],
-    "effort_summary": {
-      "update_core_hours": 18,
-      "update_custom_hours": 24,
-      "update_unmaintained_hours": 116,
-      "update_total_hours": 158,
-      "saas_core_hours": 11,
-      "saas_custom_hours": 40,
-      "saas_unmaintained_hours": 64,
-      "saas_total_hours": 115
-    }
-  },
-  "ui_readiness": {
-    "generated": "2026-04-21",
-    "global_status": "blocked",
-    "summary": {
-      "critica": 8,
-      "alta": 8,
-      "media": 5,
-      "no_aplica": 11
-    },
-    "features": [
-      {
-        "section": "1.2",
-        "title": "Transaction windows",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "critica",
-        "reason": "El AD del cliente tiene 39 ventanas Transaction y ademas 58 botones hardcoded asociados al ciclo documental. Segun la seccion 1.2 del analisis, la base de Transaction esta avanzada pero siguen abiertos gaps en DocAction/Posted, copy de documentos y proteccion de edicion concurrente. Para Bercaber esto pega directo en compras, pagos y contabilizacion.",
-        "ad_count": 39,
-        "code_evidence": []
-      },
-      {
-        "section": "2.B",
-        "title": "Hardcoded button columns",
-        "status": "PARCIAL",
-        "completion_pct": 35,
-        "priority": "critica",
-        "reason": "Se detectaron 58 columnas hardcoded: 6 DocAction, 34 Posted, 8 CreateFrom, 9 PaymentRule y 1 ChangeProjectStatus. La seccion 2.B sigue parcial porque Posted y ChangeProjectStatus tienen gaps fuertes, y Bercaber depende mucho del flujo financiero/documental legacy.",
-        "ad_count": 58,
-        "code_evidence": []
-      },
-      {
-        "section": "4",
-        "title": "Display logic",
-        "status": "BUG ACTIVO",
-        "completion_pct": 65,
-        "priority": "critica",
-        "reason": "Hay 2704 campos con DISPLAYLOGIC en el AD. La seccion 4 reporta un bug activo con la sintaxis @field_name@ y varias brechas de reevaluacion; en un cliente con tanta logica condicional esto no es cosmetic, rompe formularios completos y flujos de captura.",
-        "ad_count": 2704,
-        "code_evidence": []
-      },
-      {
-        "section": "5",
-        "title": "Tab behaviors",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "critica",
-        "reason": "Bercaber tiene 49 tabs con DISPLAYLOGIC, 39 tabs read-only y 192 tabs con filtros HQL/filter clause. La seccion 5 sigue pendiente de validar readonly tabs, jerarquia profunda, SR/ED y re-evaluacion de visibilidad; para este cliente eso impacta fuerte porque la estructura tabular del AD es muy cargada.",
-        "ad_count": 280,
-        "code_evidence": []
-      },
-      {
-        "section": "7",
-        "title": "Record state machine",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "critica",
-        "reason": "La maquina de estados documental esta muy presente: 39 ventanas Transaction conviven con 58 botones DocAction/Posted/CreateFrom. Segun la seccion 7, el principal bloqueador sigue siendo la paridad real de estados y botones por docstatus, algo critico para el circuito de facturas y pagos del cliente.",
-        "ad_count": 58,
-        "code_evidence": []
-      },
-      {
-        "section": "18",
-        "title": "Application forms",
-        "status": "NO IMPLEMENTADO",
-        "completion_pct": 15,
-        "priority": "critica",
-        "reason": "Se encontraron 27 AD_FORM activos. La seccion 18 sigue practicamente sin implementar y depende de una decision iframe vs reimplementacion React; con este volumen, Bercaber tiene demasiados puntos de friccion si quiere operar solo sobre la nueva UI.",
-        "ad_count": 27,
-        "code_evidence": []
-      },
-      {
-        "section": "21",
-        "title": "Workspace / Dashboard widgets",
-        "status": "NO IMPLEMENTADO",
-        "completion_pct": 5,
-        "priority": "critica",
-        "reason": "Se detectaron 32 archivos XML con referencias a OBKMO widgets/linked items. La seccion 21 sigue sin contrato de widgets en React, asi que cualquier dashboard tipo My Openbravo que siga vivo en este entorno queda sin migracion real.",
-        "ad_count": 32,
-        "code_evidence": []
-      },
-      {
-        "section": "26",
-        "title": "Tab default filters and sort order",
-        "status": "NOT DONE",
-        "completion_pct": 0,
-        "priority": "critica",
-        "reason": "Hay 192 tabs con HQL/filter clause detectados en el AD. La seccion 26 indica que el nuevo UI no envia ni consume estas propiedades de forma explicita; en Bercaber eso es un riesgo serio porque muchos tabs dependen de filtros server-side por contexto para no mostrar datos incorrectos.",
-        "ad_count": 192,
-        "code_evidence": []
-      },
-      {
-        "section": "1.4",
-        "title": "Pick and Execute windows",
-        "status": "PARCIAL",
-        "completion_pct": 55,
-        "priority": "alta",
-        "reason": "El cliente tiene 58 ventanas Pick and Execute. La seccion 1.4 esta parcial: faltan validaciones de inline mandatory, forwarding de contexto y algunos redirects post-ejecucion. Con este volumen de P&E, no es un edge case sino parte de la operacion diaria.",
-        "ad_count": 58,
-        "code_evidence": []
-      },
-      {
-        "section": "2",
-        "title": "Reference types with pending widgets",
-        "status": "PARCIAL",
-        "completion_pct": 65,
-        "priority": "alta",
-        "reason": "Aparecen referencias todavia incompletas en la nueva UI: 14 Image BLOB, 31 PAttribute, 5 Binary, 4 Link y 3 Assignment. La seccion 2 confirma que varios widgets especiales siguen sin paridad completa, asi que Bercaber no puede asumir que todos sus campos avanzados renderizan igual en React.",
-        "ad_count": 57,
-        "code_evidence": []
-      },
-      {
-        "section": "3",
-        "title": "Process types",
-        "status": "PARCIAL",
-        "completion_pct": 55,
-        "priority": "alta",
-        "reason": "El AD contiene 364 procesos con UIPATTERN S/M y ademas el modulo custom agrega al menos un proceso background manual. La seccion 3 sigue penalizada por procesos Manual JS y background monitoring; eso pega especialmente en un cliente que mezcla procesos legacy con automatizacion Copilot.",
-        "ad_count": 364,
-        "code_evidence": []
-      },
-      {
-        "section": "6",
-        "title": "Callouts",
-        "status": "TO CHECK",
-        "completion_pct": 82,
-        "priority": "alta",
-        "reason": "Hay 95 columnas con CALLOUT. La seccion 6 esta bastante mejor que el audit original, pero todavia falta validar chaining prevention, warning/error handling y refiltro de selectores. En un entorno con este nivel de callouts, una cobertura parcial sigue siendo relevante.",
-        "ad_count": 95,
-        "code_evidence": []
-      },
-      {
-        "section": "8",
-        "title": "Selectors and FK fields",
-        "status": "TO CHECK",
-        "completion_pct": 65,
-        "priority": "alta",
-        "reason": "Se detectaron 192 selectores OBUISEL y cero out parameters declarados, pero el volumen de selectores sigue siendo alto. La seccion 8 mantiene como gap critico la paridad de popup, filtros extra y reglas de valor; eso impacta navegacion y carga de datos maestros.",
-        "ad_count": 192,
-        "code_evidence": []
-      },
-      {
-        "section": "14",
-        "title": "Reports from menu",
-        "status": "TO CHECK",
-        "completion_pct": 60,
-        "priority": "alta",
-        "reason": "El menu del cliente incluye 89 entradas ACTION=R. La seccion 14 reconoce soporte para PD Reports, pero los reportes legacy via iframe siguen siendo una deuda; con este numero de reportes, Bercaber todavia tiene una dependencia visible de la UI/classic stack.",
-        "ad_count": 89,
-        "code_evidence": []
-      },
-      {
-        "section": "23",
-        "title": "Status bar",
-        "status": "TO CHECK",
-        "completion_pct": 75,
-        "priority": "alta",
-        "reason": "Se encontraron 234 campos marcados para status bar. La seccion 23 esta avanzada, pero todavia faltan validaciones de refresh en tiempo real y navegacion previous/next; en un cliente con tanto dato operacional, perder esa barra baja la usabilidad del formulario.",
-        "ad_count": 234,
-        "code_evidence": []
-      },
-      {
-        "section": "25",
-        "title": "Default value expressions",
-        "status": "PARCIAL",
-        "completion_pct": 45,
-        "priority": "alta",
-        "reason": "Hay 4761 columnas con DEFAULTVALUE. La seccion 25 indica que el server los calcula en NEW pero el UI no los reaplica ni reevalua client-side; en un entorno tan cargado, eso deja muchos defaults dependientes de roundtrip o callouts y complica la paridad funcional.",
-        "ad_count": 4761,
-        "code_evidence": []
-      },
-      {
-        "section": "1.1",
-        "title": "Maintain windows",
-        "status": "TO CHECK",
-        "completion_pct": 78,
-        "priority": "media",
-        "reason": "Hay 263 ventanas Maintain. La seccion 1.1 esta mayormente cubierta y los gaps son edge cases de delete multiple, copy de tabs hijas y algunos readonly after first save, por eso hoy no parece un bloqueo principal para este cliente.",
-        "ad_count": 263,
-        "code_evidence": []
-      },
-      {
-        "section": "1.3",
-        "title": "Query / info windows",
-        "status": "TO CHECK",
-        "completion_pct": 75,
-        "priority": "media",
-        "reason": "Solo se detectaron 10 ventanas Query/Info. La seccion 1.3 tiene gaps de toolbar y popup selector read-only, pero por volumen e impacto estan por debajo de las deudas de documentos y formularios especiales.",
-        "ad_count": 10,
-        "code_evidence": []
-      },
-      {
-        "section": "12",
-        "title": "Navigation and application structure",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "media",
-        "reason": "El cliente expone 554 nodos de menu. La seccion 12 esta relativamente madura y los gaps se concentran en persistencia de estado, breadcrumbs y confirmacion al cerrar; duele en UX, pero no es el primer bloqueador tecnico de migracion.",
-        "ad_count": 554,
-        "code_evidence": []
-      },
-      {
-        "section": "22",
-        "title": "Field groups",
-        "status": "TO CHECK",
-        "completion_pct": 78,
-        "priority": "media",
-        "reason": "Se detectaron 1612 referencias a field groups. La seccion 22 esta bien encaminada y solo quedan detalles de traduccion y persistencia de collapse/expand, asi que el riesgo hoy es mas de UX que de bloqueo funcional.",
-        "ad_count": 1612,
-        "code_evidence": []
-      },
-      {
-        "section": "29",
-        "title": "Tree views",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "media",
-        "reason": "Solo aparecen 2 tabs con HASTREE=Y. La seccion 29 mejoro bastante y la brecha real es performance/lazy loading para arboles grandes, asi que en Bercaber no parece de alta prioridad salvo que esas dos vistas sean operativas criticas.",
-        "ad_count": 2,
-        "code_evidence": []
-      },
-      {
-        "section": "11",
-        "title": "Authentication and session",
-        "status": "PARCIAL",
-        "completion_pct": 45,
-        "priority": "no_aplica",
-        "reason": "Esta seccion no se puede priorizar por AD XML del cliente; depende del stack de autenticacion global de la nueva UI, no de una customizacion puntual de Bercaber.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "15",
-        "title": "Loading indicators and feedback",
-        "status": "TO CHECK",
-        "completion_pct": 75,
-        "priority": "no_aplica",
-        "reason": "Es un comportamiento transversal de UX sin huella medible en el AD del cliente. No corresponde subirlo como prioridad cliente-especifica con la evidencia disponible.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "16",
-        "title": "Final consistency validation",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "no_aplica",
-        "reason": "Es una checklist de QA global de la plataforma, no una feature cuyo peso pueda inferirse por metadatos del cliente.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "17",
-        "title": "Toolbar buttons",
-        "status": "PARCIAL",
-        "completion_pct": 70,
-        "priority": "no_aplica",
-        "reason": "La toolbar depende del shell general del nuevo UI. Aunque afecta al cliente, no hay una metrica AD propia para Bercaber que justifique subirla por encima de los gaps documentales y de formularios.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "27",
-        "title": "MDI tab interface",
-        "status": "TO CHECK",
-        "completion_pct": 72,
-        "priority": "no_aplica",
-        "reason": "Es comportamiento del contenedor MDI global. No hay evidencia AD cliente-especifica para priorizarlo en este assessment.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "28",
-        "title": "Keyboard shortcuts",
-        "status": "TO CHECK",
-        "completion_pct": 70,
-        "priority": "no_aplica",
-        "reason": "Los shortcuts son configuracion/plataforma global y no pueden ponderarse con datos del AD del cliente.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "30",
-        "title": "Grouping in grid",
-        "status": "TO CHECK",
-        "completion_pct": 65,
-        "priority": "no_aplica",
-        "reason": "El grouping depende de preferencias globales y no hay evidencia cliente-especifica fuerte en el AD de Bercaber para priorizarlo.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "31",
-        "title": "Data import system",
-        "status": "NO IMPLEMENTADO",
-        "completion_pct": 20,
-        "priority": "no_aplica",
-        "reason": "Aunque el cliente tiene stack IDL legacy, la feature 31 describe la infraestructura generica del nuevo UI y no una necesidad cuantificable por AD XML puntual.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "32",
-        "title": "Alert system",
-        "status": "TO CHECK",
-        "completion_pct": 70,
-        "priority": "no_aplica",
-        "reason": "No se detectaron reglas AD_ALERTRULE en el source analizado, asi que por ahora no hay evidencia de uso que justifique priorizar alertas para este cliente.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "33",
-        "title": "View personalization",
-        "status": "NOT DONE",
-        "completion_pct": 10,
-        "priority": "no_aplica",
-        "reason": "No se detectaron registros OBUIAPP_UIPERSONALIZATION en el source. Aunque la feature global esta muy atrasada, no hay senal de uso activo en Bercaber.",
-        "ad_count": 0,
-        "code_evidence": []
-      },
-      {
-        "section": "34",
-        "title": "Calendar views",
-        "status": "NO IMPLEMENTADO",
-        "completion_pct": 0,
-        "priority": "no_aplica",
-        "reason": "No aparecio evidencia de calendarios OBCalendar/OBMultiCalendar en el source del cliente, asi que no aplica como prioridad real para esta migracion.",
-        "ad_count": 0,
-        "code_evidence": []
       }
     ]
   },
